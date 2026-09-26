@@ -1,10 +1,10 @@
 {
- "version": "1.1.0",
+ "version": "1.2.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.1.0.zip",
- "size": 1027012,
- "sha256": "792dff547eabbcd19c320b7f97b849da2d53af16cbcf2155a840a49d3548bcb2",
- "sig": "l+X86rmFKuMCfAr1W7lLCu62II05o8M9t+t8AYYAvBuZidx/GUD2FCkLMRDXdSh20Ov6EhMFLPXjOAwPOZO/BA==",
- "notes": "Aggiornamenti automatici: le nuove versioni arrivano da sole\nExport zoom più stabile nei video lunghi",
- "date": "2026-09-26"
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.2.0.zip",
+ "size": 1038003,
+ "sha256": "d0780af4273839b0ba2067e409c279a6d88a633437e48dd9c0d3b782ac31d40c",
+ "sig": "jJZYNXNeB2sKLoDRS6p0iZ1xlxgzuIIzn3TR1+v5a2BKLYOYrYIfzXsL8TejVIhM7qbEXAZ3flpdXQCI0XB0Bg==",
+ "notes": "Nuovo pulsante Feedback: segnala un problema o chiedi una modifica\nGli errori restano a schermo e si possono segnalare con un clic, anche con screenshot\nPiù sicurezza: l'app accetta comandi solo da se stessa\nAggiornamenti automatici: le nuove versioni arrivano da sole",
+ "date": "2026-09-27"
 }
