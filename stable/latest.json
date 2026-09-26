@@ -1,0 +1,10 @@
+{
+ "version": "1.1.0",
+ "runtime": 1,
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.1.0.zip",
+ "size": 1027012,
+ "sha256": "792dff547eabbcd19c320b7f97b849da2d53af16cbcf2155a840a49d3548bcb2",
+ "sig": "l+X86rmFKuMCfAr1W7lLCu62II05o8M9t+t8AYYAvBuZidx/GUD2FCkLMRDXdSh20Ov6EhMFLPXjOAwPOZO/BA==",
+ "notes": "Aggiornamenti automatici: le nuove versioni arrivano da sole\nExport zoom più stabile nei video lunghi",
+ "date": "2026-09-26"
+}
