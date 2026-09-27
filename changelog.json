@@ -1,5 +1,23 @@
 [
  {
+  "version": "1.5.16",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)"
+   },
+   {
+    "type": "feat",
+    "text": "Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola"
+   },
+   {
+    "type": "impr",
+    "text": "Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima"
+   }
+  ]
+ },
+ {
   "version": "1.5.15",
   "date": "2026-09-27",
   "items": [

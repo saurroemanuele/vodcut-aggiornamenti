@@ -1,13 +1,31 @@
 {
- "version": "1.5.15",
+ "version": "1.5.16",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.15.zip",
- "size": 6005297,
- "sha256": "e329cf9448760194673a163e9e76ef624d04d168dbf2168fae041ebf8b62304e",
- "sig": "0ltRT5jMj2IMfe296FIP9Z+ioEgi98OZpqqb7e8Pdz3s8k++pn9OHNrtWEDSa3GzGkY6n1KksXGW1uWc1hGMDg==",
- "notes": "Novità: Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)\nNovità: Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse\nMiglioramento: I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.16.zip",
+ "size": 6008541,
+ "sha256": "ff1d2c6652a3963d07711a53be38ed42c732d8fe53e35aa5eacea86370fd58ec",
+ "sig": "Bc3BYc2vfZ0C8JBvTZ2mfguJi6m/tWOnlfhEH09S4o1B04mZqHRc9TcaIjOK2n3g5V8mpilC4iGpOZl4d/FiBw==",
+ "notes": "Novità: Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)\nNovità: Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola\nMiglioramento: Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.16",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)"
+    },
+    {
+     "type": "feat",
+     "text": "Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola"
+    },
+    {
+     "type": "impr",
+     "text": "Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima"
+    }
+   ]
+  },
   {
    "version": "1.5.15",
    "date": "2026-09-27",
