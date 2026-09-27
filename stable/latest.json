@@ -1,10 +1,10 @@
 {
- "version": "1.2.0",
+ "version": "1.2.1",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.2.0.zip",
- "size": 1038003,
- "sha256": "d0780af4273839b0ba2067e409c279a6d88a633437e48dd9c0d3b782ac31d40c",
- "sig": "jJZYNXNeB2sKLoDRS6p0iZ1xlxgzuIIzn3TR1+v5a2BKLYOYrYIfzXsL8TejVIhM7qbEXAZ3flpdXQCI0XB0Bg==",
- "notes": "Nuovo pulsante Feedback: segnala un problema o chiedi una modifica\nGli errori restano a schermo e si possono segnalare con un clic, anche con screenshot\nPiù sicurezza: l'app accetta comandi solo da se stessa\nAggiornamenti automatici: le nuove versioni arrivano da sole",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.2.1.zip",
+ "size": 1038070,
+ "sha256": "b66d63867f4a4550c043a49991fe86fe7e5df14fd0a815124a35991826fafa0a",
+ "sig": "QPuX40QY5m+h6DctP3lTGw3HOITvwZhsAx+K22eFKF+NJgYZYgB2O/Z3Ba9aaOW/NARbC9te4834XnPk2y3GBA==",
+ "notes": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log",
  "date": "2026-09-27"
 }
