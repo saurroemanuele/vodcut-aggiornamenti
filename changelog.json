@@ -1,5 +1,35 @@
 [
  {
+  "version": "1.5.8",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Tasti J, K, L: indietro, pausa, avanti (premendo più volte 2x e 4x)"
+   },
+   {
+    "type": "feat",
+    "text": "Frecce su e giù: salti al taglio, alla clip o al marcatore precedente / successivo"
+   },
+   {
+    "type": "feat",
+    "text": "Marcatori sulla timeline con il tasto M (clic per andarci, tasto destro per toglierlo)"
+   },
+   {
+    "type": "feat",
+    "text": "Scorciatoie da tastiera personalizzabili (Altro → Scorciatoie da tastiera)"
+   },
+   {
+    "type": "fix",
+    "text": "Mac: i filtri e i look ora si vedono nell'anteprima e nei riquadri dei filtri (Safari non li applicava: ora li disegna VODcut)"
+   },
+   {
+    "type": "impr",
+    "text": "Mac: zoom della timeline con il pizzico a due dita sul trackpad"
+   }
+  ]
+ },
+ {
   "version": "1.5.7",
   "date": "2026-09-27",
   "items": [
