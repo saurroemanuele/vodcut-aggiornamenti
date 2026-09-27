@@ -1,13 +1,35 @@
 {
- "version": "1.5.3",
+ "version": "1.5.4",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.3.zip",
- "size": 1063861,
- "sha256": "b194450f19453904b4dc6f418f212e719da616223aa3ec4922e0c1fb7f81c7e5",
- "sig": "Sa6E8HvHtWuzEJC11w8KQQ9uUHb1mtkcO9m1iAnKrOVp3bayGChwWmv2qleXN6oaSG8xPlOx91RxRZ8+MW9wCQ==",
- "notes": "Novità: Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home\nNovità: Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa\nCorrezione: Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona\nMiglioramento: Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.4.zip",
+ "size": 1065791,
+ "sha256": "d3ef5d5847cd93c7f499220bada10594410d0cfba1c075aa0a3789cce81c16a1",
+ "sig": "bKXtcdme5bg5lh1NdI3SD39DFvP27JhSvAjdg50/8IYNWkVY31/Q/nYSqDthxbk3NQjWPWB9HOBF3YzVtwYdBA==",
+ "notes": "Correzione: La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima\nCorrezione: Mac: niente più errori nel log quando il video salta in un altro punto\nMiglioramento: Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra\nMiglioramento: Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.4",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima"
+    },
+    {
+     "type": "fix",
+     "text": "Mac: niente più errori nel log quando il video salta in un altro punto"
+    },
+    {
+     "type": "impr",
+     "text": "Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra"
+    },
+    {
+     "type": "impr",
+     "text": "Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse"
+    }
+   ]
+  },
   {
    "version": "1.5.3",
    "date": "2026-09-27",

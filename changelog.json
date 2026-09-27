@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.5.4",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima"
+   },
+   {
+    "type": "fix",
+    "text": "Mac: niente più errori nel log quando il video salta in un altro punto"
+   },
+   {
+    "type": "impr",
+    "text": "Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra"
+   },
+   {
+    "type": "impr",
+    "text": "Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse"
+   }
+  ]
+ },
+ {
   "version": "1.5.3",
   "date": "2026-09-27",
   "items": [
