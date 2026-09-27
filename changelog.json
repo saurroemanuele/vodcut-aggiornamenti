@@ -1,5 +1,15 @@
 [
  {
+  "version": "1.5.21",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto"
+   }
+  ]
+ },
+ {
   "version": "1.5.20",
   "date": "2026-09-27",
   "items": [

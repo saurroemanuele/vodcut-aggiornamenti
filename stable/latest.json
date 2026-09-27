@@ -1,13 +1,23 @@
 {
- "version": "1.5.20",
+ "version": "1.5.21",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.20.zip",
- "size": 6012390,
- "sha256": "e1d9e1987adc02406e4f42835eb8d7ddc1c51d90039463cc454c5d9ac2b6b009",
- "sig": "NiFKCNanMK6zdrjDy61UVDSVrOw23kzypUO8oFqM0lFapm5wn25aV4QXPbixmgkzagjpC9JI7aJXZ69Jo0bXCQ==",
- "notes": "Novità: Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)\nNovità: Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme\nNovità: Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.21.zip",
+ "size": 6012657,
+ "sha256": "6e9f19fb3e85b2e59b2651e3e0d93cddbab0e83a4ddd0f334397472c5103d3dc",
+ "sig": "jN/5SnGgoK5ScvcemMVdLcu2GGTd9po2vNHINvgK1POViFBMuIsqxTFQRqtywvZgGQ/xDBsxBdhXfDObCv1/Bw==",
+ "notes": "Correzione: Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.21",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto"
+    }
+   ]
+  },
   {
    "version": "1.5.20",
    "date": "2026-09-27",
