@@ -1,5 +1,23 @@
 [
  {
+  "version": "1.5.15",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)"
+   },
+   {
+    "type": "feat",
+    "text": "Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse"
+   },
+   {
+    "type": "impr",
+    "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
+   }
+  ]
+ },
+ {
   "version": "1.5.14",
   "date": "2026-09-27",
   "items": [

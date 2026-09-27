@@ -1,13 +1,31 @@
 {
- "version": "1.5.14",
+ "version": "1.5.15",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.14.zip",
- "size": 5994954,
- "sha256": "28d1c11e8577ec8fd58459fe2dadbefae6e991aa3ee189e812158fbd87894e0e",
- "sig": "RDTOsKIBfWZGs0Gy8URS13lfu+pnB1DBO3fzzrvu8xgXdWlIxOTF5Kj55FEnCtHCwyFK9jRbvi1OArc1psIbCw==",
- "notes": "Correzione: Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.15.zip",
+ "size": 6005297,
+ "sha256": "e329cf9448760194673a163e9e76ef624d04d168dbf2168fae041ebf8b62304e",
+ "sig": "0ltRT5jMj2IMfe296FIP9Z+ioEgi98OZpqqb7e8Pdz3s8k++pn9OHNrtWEDSa3GzGkY6n1KksXGW1uWc1hGMDg==",
+ "notes": "Novità: Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)\nNovità: Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse\nMiglioramento: I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.15",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)"
+    },
+    {
+     "type": "feat",
+     "text": "Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse"
+    },
+    {
+     "type": "impr",
+     "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
+    }
+   ]
+  },
   {
    "version": "1.5.14",
    "date": "2026-09-27",
