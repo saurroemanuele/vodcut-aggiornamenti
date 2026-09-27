@@ -1,13 +1,23 @@
 {
- "version": "1.5.10",
+ "version": "1.5.11",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.10.zip",
- "size": 5979240,
- "sha256": "d49f636125371f34f50022ba0e0b978e1ba13bb493d66c51dea241c39a5ddd9c",
- "sig": "wc1tVbi1IK6zOxmTjtfXZo6ub19NhQOiWxccgsXfP6bA2cNqOO0YLOsJtEwysPt2+jDHsAQyY9TvXsznGLUEAQ==",
- "notes": "Correzione: Freccia su/giù: ora salta sempre al punto precedente/successivo, anche vicino ai tagli\nMiglioramento: J/K/L senza avvisi a comparsa: la velocità si vede nel pulsante della velocità (◀ per l'indietro)\nMiglioramento: Premendo Spazio alla fine, l'anteprima riparte dall'inizio\nMiglioramento: Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.11.zip",
+ "size": 5979357,
+ "sha256": "69a5f47e559339b55ab4313a5539b866a29fee8b15d9011f20a22c54b1b3754c",
+ "sig": "UZ+xuJjdWEZ+5ntv4cxlboaGeejOZXrUH5zgjXufuqiTwecxRtJPJ330ADhLoHL8MSMAfGRGvSrZDZzj7qI5Bw==",
+ "notes": "Novità: Sottotitoli parola per parola: in Sottotitoli → Parole per riga scegli \"Una\" e ogni parola compare da sola, a tempo con la voce",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.11",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Sottotitoli parola per parola: in Sottotitoli → Parole per riga scegli \"Una\" e ogni parola compare da sola, a tempo con la voce"
+    }
+   ]
+  },
   {
    "version": "1.5.10",
    "date": "2026-09-27",
