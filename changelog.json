@@ -1,5 +1,15 @@
 [
  {
+  "version": "1.5.14",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)"
+   }
+  ]
+ },
+ {
   "version": "1.5.13",
   "date": "2026-09-27",
   "items": [
