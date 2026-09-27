@@ -1,13 +1,27 @@
 {
- "version": "1.5.16",
+ "version": "1.5.17",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.16.zip",
- "size": 6008541,
- "sha256": "ff1d2c6652a3963d07711a53be38ed42c732d8fe53e35aa5eacea86370fd58ec",
- "sig": "Bc3BYc2vfZ0C8JBvTZ2mfguJi6m/tWOnlfhEH09S4o1B04mZqHRc9TcaIjOK2n3g5V8mpilC4iGpOZl4d/FiBw==",
- "notes": "Novità: Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)\nNovità: Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola\nMiglioramento: Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.17.zip",
+ "size": 6008765,
+ "sha256": "4873203ade44e18130773c5a286531b4fd4e72fd2b844b4364bdd305c7fd53a4",
+ "sig": "SboIY+IeoJdw7D/+Y/MC3/dKcbo+/mad0n21Bg3c6x/jyq1TevTXq+E6JBzheMFNaUR+VySL7+ST/2vUpmF/Bg==",
+ "notes": "Correzione: Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero\nCorrezione: Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.17",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero"
+    },
+    {
+     "type": "fix",
+     "text": "Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte"
+    }
+   ]
+  },
   {
    "version": "1.5.16",
    "date": "2026-09-27",

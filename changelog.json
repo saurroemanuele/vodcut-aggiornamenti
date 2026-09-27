@@ -1,5 +1,19 @@
 [
  {
+  "version": "1.5.17",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero"
+   },
+   {
+    "type": "fix",
+    "text": "Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte"
+   }
+  ]
+ },
+ {
   "version": "1.5.16",
   "date": "2026-09-27",
   "items": [
