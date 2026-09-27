@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.4.0",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Calamita della traccia principale: spegnila per lasciare spazi vuoti tra le clip e spostarle liberamente"
+   },
+   {
+    "type": "feat",
+    "text": "Seleziona tutto a destra o a sinistra della testina, poi trascina per fare spazio e mettere una clip in mezzo"
+   },
+   {
+    "type": "feat",
+    "text": "Copia e incolla di una clip intera: alla fine si mette di fianco, in mezzo va su un'altra traccia"
+   },
+   {
+    "type": "impr",
+    "text": "Lo spazio vuoto nella traccia principale si vede come una traccia vuota"
+   }
+  ]
+ },
+ {
   "version": "1.3.1",
   "date": "2026-09-27",
   "items": [

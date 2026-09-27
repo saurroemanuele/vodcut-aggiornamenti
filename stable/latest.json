@@ -1,13 +1,35 @@
 {
- "version": "1.3.1",
+ "version": "1.4.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.3.1.zip",
- "size": 1042431,
- "sha256": "b916e55b2634411ef1490440da30fc8c426b9804d5be380e971dc92f2460df4c",
- "sig": "smI70aOZUbTz78PjvqrR+HX+cu0TP3xaWPtCtGSslDQltlxMqbMQ+wPiPw8TVPe6guejkyaAr90iLSxklZAGAw==",
- "notes": "Novità: Progetto vuoto senza durata da scegliere: parte da zero e si allunga o si accorcia con le clip che metti\nMiglioramento: Progetto vuoto: la timeline mostra solo quello che c'è, più un po' di spazio libero per aggiungere",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.0.zip",
+ "size": 1046958,
+ "sha256": "8b7c77ee2459723281f36cbeb3f62c04e5fe9d229ed9e8fcae8e71eb61c47d0b",
+ "sig": "Ou5MOcZSMmlC8I5eyM7uSCiTZ0m620LEwzUCW/JLtguYHt4ZVVfGLqXA0vrOe5byBlBTlm21sInZpsYhgBX5Bw==",
+ "notes": "Novità: Calamita della traccia principale: spegnila per lasciare spazi vuoti tra le clip e spostarle liberamente\nNovità: Seleziona tutto a destra o a sinistra della testina, poi trascina per fare spazio e mettere una clip in mezzo\nNovità: Copia e incolla di una clip intera: alla fine si mette di fianco, in mezzo va su un'altra traccia\nMiglioramento: Lo spazio vuoto nella traccia principale si vede come una traccia vuota",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.4.0",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Calamita della traccia principale: spegnila per lasciare spazi vuoti tra le clip e spostarle liberamente"
+    },
+    {
+     "type": "feat",
+     "text": "Seleziona tutto a destra o a sinistra della testina, poi trascina per fare spazio e mettere una clip in mezzo"
+    },
+    {
+     "type": "feat",
+     "text": "Copia e incolla di una clip intera: alla fine si mette di fianco, in mezzo va su un'altra traccia"
+    },
+    {
+     "type": "impr",
+     "text": "Lo spazio vuoto nella traccia principale si vede come una traccia vuota"
+    }
+   ]
+  },
   {
    "version": "1.3.1",
    "date": "2026-09-27",
