@@ -1,13 +1,35 @@
 {
- "version": "1.5.9",
+ "version": "1.5.10",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.9.zip",
- "size": 5977646,
- "sha256": "b7add07824bbd939fc9acf4fedba2c6955cd07ff0a1506c1787a6997f948a4be",
- "sig": "OvrSBga+HcPWYzeIwz3zpEpoJP4z/FfdXh1e4Lr0TuJfMDz90urBiwrSU/nvmpV+YZvkSTIbKr/qRlrLHpRHBA==",
- "notes": "Novità: Griglia dei terzi nell'anteprima (Guide → Griglia)\nNovità: Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia\nMiglioramento: Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)\nMiglioramento: Spostando la testina mentre il video va, il video si ferma\nMiglioramento: La traccia audio dei progetti che non sono live si chiama 'Audio dei video'",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.10.zip",
+ "size": 5979240,
+ "sha256": "d49f636125371f34f50022ba0e0b978e1ba13bb493d66c51dea241c39a5ddd9c",
+ "sig": "wc1tVbi1IK6zOxmTjtfXZo6ub19NhQOiWxccgsXfP6bA2cNqOO0YLOsJtEwysPt2+jDHsAQyY9TvXsznGLUEAQ==",
+ "notes": "Correzione: Freccia su/giù: ora salta sempre al punto precedente/successivo, anche vicino ai tagli\nMiglioramento: J/K/L senza avvisi a comparsa: la velocità si vede nel pulsante della velocità (◀ per l'indietro)\nMiglioramento: Premendo Spazio alla fine, l'anteprima riparte dall'inizio\nMiglioramento: Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.10",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Freccia su/giù: ora salta sempre al punto precedente/successivo, anche vicino ai tagli"
+    },
+    {
+     "type": "impr",
+     "text": "J/K/L senza avvisi a comparsa: la velocità si vede nel pulsante della velocità (◀ per l'indietro)"
+    },
+    {
+     "type": "impr",
+     "text": "Premendo Spazio alla fine, l'anteprima riparte dall'inizio"
+    },
+    {
+     "type": "impr",
+     "text": "Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia"
+    }
+   ]
+  },
   {
    "version": "1.5.9",
    "date": "2026-09-27",
