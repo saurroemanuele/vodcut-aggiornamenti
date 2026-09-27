@@ -1,13 +1,23 @@
 {
- "version": "1.5.6",
+ "version": "1.5.7",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.6.zip",
- "size": 5969193,
- "sha256": "351741e7ff18ffec620da7f8dab3aa8d93321aad89cbee9d1ff99ba37797fb7c",
- "sig": "WRYsZbyf7Pui7DB4QngQ2gqDn64eLRxOznw0ZJMklxwFhOJtqK5t6lU8XBM0+hVnKu8VTpqIGOT5EYxkwnhXBA==",
- "notes": "Correzione: Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.7.zip",
+ "size": 5969485,
+ "sha256": "3e7898e45a7ce0629d75ba934ca4498d67b9ae760c65df124c26ee9c1084635e",
+ "sig": "3TJFC8L47gKQhoNHpLlZGEUuJivuXwEu8dqlpgzVNDHvUo0bC6XSdFMtRyYJXuDij7Q5njs3QUiIpYr3efUQAQ==",
+ "notes": "Correzione: Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.7",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta"
+    }
+   ]
+  },
   {
    "version": "1.5.6",
    "date": "2026-09-27",
