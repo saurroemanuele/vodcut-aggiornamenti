@@ -1,13 +1,39 @@
 {
- "version": "1.5.8",
+ "version": "1.5.9",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.8.zip",
- "size": 5975932,
- "sha256": "c924bc2f74a442d50f58b027eae09a799f76e99904b8d07f6abe9bd2c1fe8d17",
- "sig": "ufmoJTl0saksDx9FlAuu9AEVz2yeBoqQWOdG+y7R6//Rykj2I1q9jsXoezmP1EO8xmtdCJyGWGOBcXySH6A4Dw==",
- "notes": "Novità: Tasti J, K, L: indietro, pausa, avanti (premendo più volte 2x e 4x)\nNovità: Frecce su e giù: salti al taglio, alla clip o al marcatore precedente / successivo\nNovità: Marcatori sulla timeline con il tasto M (clic per andarci, tasto destro per toglierlo)\nNovità: Scorciatoie da tastiera personalizzabili (Altro → Scorciatoie da tastiera)\nCorrezione: Mac: i filtri e i look ora si vedono nell'anteprima e nei riquadri dei filtri (Safari non li applicava: ora li disegna VODcut)\nMiglioramento: Mac: zoom della timeline con il pizzico a due dita sul trackpad",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.9.zip",
+ "size": 5977646,
+ "sha256": "b7add07824bbd939fc9acf4fedba2c6955cd07ff0a1506c1787a6997f948a4be",
+ "sig": "OvrSBga+HcPWYzeIwz3zpEpoJP4z/FfdXh1e4Lr0TuJfMDz90urBiwrSU/nvmpV+YZvkSTIbKr/qRlrLHpRHBA==",
+ "notes": "Novità: Griglia dei terzi nell'anteprima (Guide → Griglia)\nNovità: Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia\nMiglioramento: Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)\nMiglioramento: Spostando la testina mentre il video va, il video si ferma\nMiglioramento: La traccia audio dei progetti che non sono live si chiama 'Audio dei video'",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.9",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Griglia dei terzi nell'anteprima (Guide → Griglia)"
+    },
+    {
+     "type": "feat",
+     "text": "Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia"
+    },
+    {
+     "type": "impr",
+     "text": "Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)"
+    },
+    {
+     "type": "impr",
+     "text": "Spostando la testina mentre il video va, il video si ferma"
+    },
+    {
+     "type": "impr",
+     "text": "La traccia audio dei progetti che non sono live si chiama 'Audio dei video'"
+    }
+   ]
+  },
   {
    "version": "1.5.8",
    "date": "2026-09-27",
