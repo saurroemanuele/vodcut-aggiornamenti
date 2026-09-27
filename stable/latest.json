@@ -1,13 +1,35 @@
 {
- "version": "1.5.2",
+ "version": "1.5.3",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.2.zip",
- "size": 1059646,
- "sha256": "83fcfc689ad20137bb49d8d96c78719a740f4c3312b0a3494f481068e94c67a0",
- "sig": "8nitWjB23wUSJuE5jlLPgxfFG6hAucd6ulZLw9QcJSwryKkYdiGZQDWewwIDT3ZQ7xZaCN/Lbyu7ftv51wCZDQ==",
- "notes": "Novità: Immagini nella traccia principale: trascinale lì come un video e tira il bordo destro per farle durare quanto vuoi\nCorrezione: Progetto vuoto: il fondo nero non si seleziona più per sbaglio (niente più 'Clip video' nera da spostare o eliminare) e i progetti che l'avevano eliminato tornano a posto da soli\nCorrezione: Le miniature delle clip non spariscono più dopo averle spostate\nCorrezione: Con tante tracce la timeline non schiaccia più l'anteprima: le tracce si scorrono su e giù con la rotella (Maiusc + rotella per andare avanti e indietro nel tempo)\nMiglioramento: Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.3.zip",
+ "size": 1063861,
+ "sha256": "b194450f19453904b4dc6f418f212e719da616223aa3ec4922e0c1fb7f81c7e5",
+ "sig": "Sa6E8HvHtWuzEJC11w8KQQ9uUHb1mtkcO9m1iAnKrOVp3bayGChwWmv2qleXN6oaSG8xPlOx91RxRZ8+MW9wCQ==",
+ "notes": "Novità: Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home\nNovità: Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa\nCorrezione: Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona\nMiglioramento: Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.3",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home"
+    },
+    {
+     "type": "feat",
+     "text": "Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa"
+    },
+    {
+     "type": "fix",
+     "text": "Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona"
+    },
+    {
+     "type": "impr",
+     "text": "Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi"
+    }
+   ]
+  },
   {
    "version": "1.5.2",
    "date": "2026-09-27",

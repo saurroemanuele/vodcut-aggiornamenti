@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.5.3",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home"
+   },
+   {
+    "type": "feat",
+    "text": "Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa"
+   },
+   {
+    "type": "fix",
+    "text": "Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona"
+   },
+   {
+    "type": "impr",
+    "text": "Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi"
+   }
+  ]
+ },
+ {
   "version": "1.5.2",
   "date": "2026-09-27",
   "items": [
