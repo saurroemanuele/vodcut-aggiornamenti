@@ -1,5 +1,23 @@
 [
  {
+  "version": "1.5.24",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono"
+   },
+   {
+    "type": "fix",
+    "text": "App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto"
+   },
+   {
+    "type": "impr",
+    "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
+   }
+  ]
+ },
+ {
   "version": "1.5.23",
   "date": "2026-09-28",
   "items": [

@@ -1,13 +1,31 @@
 {
- "version": "1.5.23",
+ "version": "1.5.24",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.23.zip",
- "size": 6014722,
- "sha256": "baa9bd85634942a4ac92f875ed235a1937cda55dfd3972ca2032152977e699c7",
- "sig": "JrZdvgcVO9UMGhKWJNU3bI68tPZcHN6VOKVSlDCccTP0POYhSfHLriSdQ9/NrPIiXVSQqlOQAUf0otQhJFIQAg==",
- "notes": "Correzione: Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script\nMiglioramento: Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.24.zip",
+ "size": 6015436,
+ "sha256": "de8a1b580397e40056a6f99b1aa6c4d8592d435f9542968dcff901f619a76ba6",
+ "sig": "Xp4N/Tg5NXnXABPIe6hkSP0SPeaMybrxeUdFFHql/s2JoGrDTRjr4l+DS7+m/euGjPuIRhj/W7yj2LUxq1JvAA==",
+ "notes": "Novità: VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono\nCorrezione: App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto\nMiglioramento: Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.24",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono"
+    },
+    {
+     "type": "fix",
+     "text": "App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto"
+    },
+    {
+     "type": "impr",
+     "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
+    }
+   ]
+  },
   {
    "version": "1.5.23",
    "date": "2026-09-28",
@@ -575,16 +593,6 @@
     {
      "type": "fix",
      "text": "Progetto vuoto: il nero dopo l'ultima clip non finisce nel video esportato"
-    }
-   ]
-  },
-  {
-   "version": "1.2.1",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log"
     }
    ]
   }
