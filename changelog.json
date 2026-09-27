@@ -1,5 +1,19 @@
 [
  {
+  "version": "1.3.1",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Progetto vuoto senza durata da scegliere: parte da zero e si allunga o si accorcia con le clip che metti"
+   },
+   {
+    "type": "impr",
+    "text": "Progetto vuoto: la timeline mostra solo quello che c'è, più un po' di spazio libero per aggiungere"
+   }
+  ]
+ },
+ {
   "version": "1.3.0",
   "date": "2026-09-27",
   "items": [
