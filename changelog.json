@@ -1,5 +1,19 @@
 [
  {
+  "version": "1.5.23",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script"
+   },
+   {
+    "type": "impr",
+    "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
+   }
+  ]
+ },
+ {
   "version": "1.5.22",
   "date": "2026-09-28",
   "items": [

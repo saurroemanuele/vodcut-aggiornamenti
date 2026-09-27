@@ -1,13 +1,27 @@
 {
- "version": "1.5.22",
+ "version": "1.5.23",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.22.zip",
- "size": 6013626,
- "sha256": "964844b4918918f8edc1a97ddcef7c090ccbbd6f69de15bb18fc5a2cc47cb0b9",
- "sig": "BbwC9KKGO8DRMyV+i8Nm2T6Xovnq0mpcVFuiO9fjPhX5qxRdz+yfJrWxb9yyJ05oQ/AIWb1j2cgztRK1rqDwAw==",
- "notes": "Correzione: Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento\nCorrezione: Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.23.zip",
+ "size": 6014722,
+ "sha256": "baa9bd85634942a4ac92f875ed235a1937cda55dfd3972ca2032152977e699c7",
+ "sig": "JrZdvgcVO9UMGhKWJNU3bI68tPZcHN6VOKVSlDCccTP0POYhSfHLriSdQ9/NrPIiXVSQqlOQAUf0otQhJFIQAg==",
+ "notes": "Correzione: Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script\nMiglioramento: Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.23",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script"
+    },
+    {
+     "type": "impr",
+     "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
+    }
+   ]
+  },
   {
    "version": "1.5.22",
    "date": "2026-09-28",
@@ -571,24 +585,6 @@
     {
      "type": "fix",
      "text": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log"
-    }
-   ]
-  },
-  {
-   "version": "1.2.0",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Pulsante Feedback in alto: segnala un problema o chiedi una modifica"
-    },
-    {
-     "type": "feat",
-     "text": "Gli errori restano a schermo e si segnalano con un clic, anche con screenshot"
-    },
-    {
-     "type": "impr",
-     "text": "Più sicurezza: l'app accetta comandi solo da se stessa"
     }
    ]
   }
