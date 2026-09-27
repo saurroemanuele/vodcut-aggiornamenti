@@ -1,0 +1,70 @@
+[
+ {
+  "version": "1.3.0",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Sposta le clip nella traccia principale trascinandole (anche i pezzi della live)"
+   },
+   {
+    "type": "feat",
+    "text": "Progetto vuoto: la traccia principale è libera, i video si mettono uno dopo l'altro"
+   },
+   {
+    "type": "feat",
+    "text": "Note degli aggiornamenti divise in novità, correzioni e miglioramenti, con riepilogo"
+   },
+   {
+    "type": "fix",
+    "text": "Storie con immagini: niente più fotogramma nero tra un'immagine e l'altra"
+   },
+   {
+    "type": "fix",
+    "text": "Progetto vuoto: il nero dopo l'ultima clip non finisce nel video esportato"
+   }
+  ]
+ },
+ {
+  "version": "1.2.1",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log"
+   }
+  ]
+ },
+ {
+  "version": "1.2.0",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Pulsante Feedback in alto: segnala un problema o chiedi una modifica"
+   },
+   {
+    "type": "feat",
+    "text": "Gli errori restano a schermo e si segnalano con un clic, anche con screenshot"
+   },
+   {
+    "type": "impr",
+    "text": "Più sicurezza: l'app accetta comandi solo da se stessa"
+   }
+  ]
+ },
+ {
+  "version": "1.1.0",
+  "date": "2026-09-26",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Aggiornamenti automatici: le nuove versioni arrivano da sole"
+   },
+   {
+    "type": "fix",
+    "text": "Export con gli zoom più stabile nei video lunghi"
+   }
+  ]
+ }
+]

@@ -1,10 +1,80 @@
 {
- "version": "1.2.1",
+ "version": "1.3.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.2.1.zip",
- "size": 1038070,
- "sha256": "b66d63867f4a4550c043a49991fe86fe7e5df14fd0a815124a35991826fafa0a",
- "sig": "QPuX40QY5m+h6DctP3lTGw3HOITvwZhsAx+K22eFKF+NJgYZYgB2O/Z3Ba9aaOW/NARbC9te4834XnPk2y3GBA==",
- "notes": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log",
- "date": "2026-09-27"
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.3.0.zip",
+ "size": 1041527,
+ "sha256": "10c6aa11d2ef202b9eb119356c95f7bce7a15b80309937b5fae7630229d2f487",
+ "sig": "m7JExIPDAMSf0lBRWEUu2IVoC+1U7M5qpql+mmRzngGcSoWrDWYt1g9bbsCtCeP2wIk6c+Zf33TrKLakimn7Cg==",
+ "notes": "Novità: Sposta le clip nella traccia principale trascinandole (anche i pezzi della live)\nNovità: Progetto vuoto: la traccia principale è libera, i video si mettono uno dopo l'altro\nNovità: Note degli aggiornamenti divise in novità, correzioni e miglioramenti, con riepilogo\nCorrezione: Storie con immagini: niente più fotogramma nero tra un'immagine e l'altra\nCorrezione: Progetto vuoto: il nero dopo l'ultima clip non finisce nel video esportato",
+ "date": "2026-09-27",
+ "history": [
+  {
+   "version": "1.3.0",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Sposta le clip nella traccia principale trascinandole (anche i pezzi della live)"
+    },
+    {
+     "type": "feat",
+     "text": "Progetto vuoto: la traccia principale è libera, i video si mettono uno dopo l'altro"
+    },
+    {
+     "type": "feat",
+     "text": "Note degli aggiornamenti divise in novità, correzioni e miglioramenti, con riepilogo"
+    },
+    {
+     "type": "fix",
+     "text": "Storie con immagini: niente più fotogramma nero tra un'immagine e l'altra"
+    },
+    {
+     "type": "fix",
+     "text": "Progetto vuoto: il nero dopo l'ultima clip non finisce nel video esportato"
+    }
+   ]
+  },
+  {
+   "version": "1.2.1",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Segnalazioni ancora più riservate: il nome utente del PC viene tolto da tutti i log"
+    }
+   ]
+  },
+  {
+   "version": "1.2.0",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Pulsante Feedback in alto: segnala un problema o chiedi una modifica"
+    },
+    {
+     "type": "feat",
+     "text": "Gli errori restano a schermo e si segnalano con un clic, anche con screenshot"
+    },
+    {
+     "type": "impr",
+     "text": "Più sicurezza: l'app accetta comandi solo da se stessa"
+    }
+   ]
+  },
+  {
+   "version": "1.1.0",
+   "date": "2026-09-26",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Aggiornamenti automatici: le nuove versioni arrivano da sole"
+    },
+    {
+     "type": "fix",
+     "text": "Export con gli zoom più stabile nei video lunghi"
+    }
+   ]
+  }
+ ]
 }
