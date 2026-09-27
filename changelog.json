@@ -1,5 +1,35 @@
 [
  {
+  "version": "1.5.13",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare"
+   },
+   {
+    "type": "feat",
+    "text": "Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)"
+   },
+   {
+    "type": "feat",
+    "text": "Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli"
+   },
+   {
+    "type": "fix",
+    "text": "Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows"
+   },
+   {
+    "type": "impr",
+    "text": "Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)"
+   },
+   {
+    "type": "impr",
+    "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
+   }
+  ]
+ },
+ {
   "version": "1.5.12",
   "date": "2026-09-27",
   "items": [

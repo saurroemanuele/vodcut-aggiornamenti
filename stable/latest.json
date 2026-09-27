@@ -1,13 +1,43 @@
 {
- "version": "1.5.12",
+ "version": "1.5.13",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.12.zip",
- "size": 5987227,
- "sha256": "bc999015b6a68e673fa2749127b37956c354161717a288ce89fb12b68e5dac9f",
- "sig": "3nGvm6WwkMTtdDhl5PNLK3UH61GWJBseLGMqcBwMb0NaJPZRPmJELAoVFRnfqo5YYJRuYLXEyipJ0Cl6D0vmCg==",
- "notes": "Novità: Più timeline nello stesso progetto, come CapCut: schede sopra la timeline, «Nuova timeline» dal menu Altro o col tasto destro su un elemento dei Media, e all'esportazione scegli una, alcune o tutte\nNovità: La mia libreria: salva GIF, video e suoni con la stellina e li ritrovi in ogni progetto (Media → La mia libreria)\nNovità: Layout per video verticali: anteprima alta a destra, pannelli e timeline a sinistra (pulsante sotto l'anteprima)\nNovità: Zoom dell'anteprima per guardare i dettagli: pizzica sul trackpad o Ctrl/Cmd + rotella con niente selezionato\nCorrezione: Un doppio clic su «Nuovo progetto» non crea più due progetti\nMiglioramento: Zoom della timeline più fluido con il trackpad del Mac\nMiglioramento: Il computer lavora meno quando l'editor è fermo (meno calore e ventole su Mac)\nMiglioramento: Progetti vuoti e nuove timeline si creano all'istante",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.13.zip",
+ "size": 5994831,
+ "sha256": "18bf22e3055ec39cbd608fae7978b24d6106009e3192a752f02fed7da700358c",
+ "sig": "Pe79Q9SyO4yletfK0DZwXPpxUDlNPK+G4FFMJ95GKA0Ne6U+iBf2JoccaoVX8wK804az1YuK6B/1/K+nZGBTAw==",
+ "notes": "Novità: Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare\nNovità: Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)\nNovità: Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli\nCorrezione: Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows\nMiglioramento: Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)\nMiglioramento: Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.13",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare"
+    },
+    {
+     "type": "feat",
+     "text": "Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)"
+    },
+    {
+     "type": "feat",
+     "text": "Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli"
+    },
+    {
+     "type": "fix",
+     "text": "Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows"
+    },
+    {
+     "type": "impr",
+     "text": "Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)"
+    },
+    {
+     "type": "impr",
+     "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
+    }
+   ]
+  },
   {
    "version": "1.5.12",
    "date": "2026-09-27",
