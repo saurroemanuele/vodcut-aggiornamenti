@@ -1,13 +1,27 @@
 {
- "version": "1.5.21",
+ "version": "1.5.22",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.21.zip",
- "size": 6012657,
- "sha256": "6e9f19fb3e85b2e59b2651e3e0d93cddbab0e83a4ddd0f334397472c5103d3dc",
- "sig": "jN/5SnGgoK5ScvcemMVdLcu2GGTd9po2vNHINvgK1POViFBMuIsqxTFQRqtywvZgGQ/xDBsxBdhXfDObCv1/Bw==",
- "notes": "Correzione: Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
- "date": "2026-09-27",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.22.zip",
+ "size": 6013626,
+ "sha256": "964844b4918918f8edc1a97ddcef7c090ccbbd6f69de15bb18fc5a2cc47cb0b9",
+ "sig": "BbwC9KKGO8DRMyV+i8Nm2T6Xovnq0mpcVFuiO9fjPhX5qxRdz+yfJrWxb9yyJ05oQ/AIWb1j2cgztRK1rqDwAw==",
+ "notes": "Correzione: Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento\nCorrezione: Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma",
+ "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.22",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento"
+    },
+    {
+     "type": "fix",
+     "text": "Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma"
+    }
+   ]
+  },
   {
    "version": "1.5.21",
    "date": "2026-09-27",
@@ -575,20 +589,6 @@
     {
      "type": "impr",
      "text": "Più sicurezza: l'app accetta comandi solo da se stessa"
-    }
-   ]
-  },
-  {
-   "version": "1.1.0",
-   "date": "2026-09-26",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Aggiornamenti automatici: le nuove versioni arrivano da sole"
-    },
-    {
-     "type": "fix",
-     "text": "Export con gli zoom più stabile nei video lunghi"
     }
    ]
   }
