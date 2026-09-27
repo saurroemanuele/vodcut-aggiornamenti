@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.5.0",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Home nuova: crei un progetto in un clic scegliendo il formato"
+   },
+   {
+    "type": "feat",
+    "text": "I progetti sono in una griglia con copertina, formato (16:9, 9:16…), durata e tipo"
+   },
+   {
+    "type": "feat",
+    "text": "Cerca tra i tuoi progetti"
+   },
+   {
+    "type": "fix",
+    "text": "Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero"
+   }
+  ]
+ },
+ {
   "version": "1.4.2",
   "date": "2026-09-27",
   "items": [

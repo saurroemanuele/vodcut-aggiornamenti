@@ -1,13 +1,35 @@
 {
- "version": "1.4.2",
+ "version": "1.5.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.2.zip",
- "size": 1051051,
- "sha256": "9498784fed4e16cff21f31daef875cd651e2f943d346ac7cf66f191493761b77",
- "sig": "9Wf/mpVeRG+7IjiYYbkl/7LDU1bqpZEaHw0r+I6JeVPnvs/wJfBe3y83ZegyShYcPo9jWBag2Vo681p0wRh6Dg==",
- "notes": "Correzione: Miniature più veloci: dopo uno spostamento restano al loro posto\nMiglioramento: Trascinando una clip si sposta tutta, con miniature e audio, non solo il bordo\nMiglioramento: Una sola calamita nella barra: quella della traccia principale (l'aggancio ai bordi ora è in Altro)\nMiglioramento: La clip si mette prima o dopo le altre in base a dove sta il puntatore",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.0.zip",
+ "size": 1055328,
+ "sha256": "9a2b220f39be6aafe53d59128d532ff2ab6b26458aee33817d52468b944c1e59",
+ "sig": "KVIyUF5CcA8JaB/iMhCN7moB1T37M2i4vMOnZY2wrm/ytKiCVPKjEwV/PGScTLjvxLWriDfOK5bChbujh/gNDQ==",
+ "notes": "Novità: Home nuova: crei un progetto in un clic scegliendo il formato\nNovità: I progetti sono in una griglia con copertina, formato (16:9, 9:16…), durata e tipo\nNovità: Cerca tra i tuoi progetti\nCorrezione: Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.0",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Home nuova: crei un progetto in un clic scegliendo il formato"
+    },
+    {
+     "type": "feat",
+     "text": "I progetti sono in una griglia con copertina, formato (16:9, 9:16…), durata e tipo"
+    },
+    {
+     "type": "feat",
+     "text": "Cerca tra i tuoi progetti"
+    },
+    {
+     "type": "fix",
+     "text": "Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero"
+    }
+   ]
+  },
   {
    "version": "1.4.2",
    "date": "2026-09-27",
