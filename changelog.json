@@ -1,5 +1,23 @@
 [
  {
+  "version": "1.5.20",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)"
+   },
+   {
+    "type": "feat",
+    "text": "Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme"
+   },
+   {
+    "type": "feat",
+    "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
+   }
+  ]
+ },
+ {
   "version": "1.5.19",
   "date": "2026-09-27",
   "items": [

@@ -1,13 +1,31 @@
 {
- "version": "1.5.19",
+ "version": "1.5.20",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.19.zip",
- "size": 6009958,
- "sha256": "a9dedf07192e1e34f4a6aaccb502ec44c35d103a56750665cb4eb0647f5c1fd7",
- "sig": "Y6fTwGzZiudvhz1G0L2/rcs8C/TndXkbU1HLbclpANPdfaBGe3kBk+yfFk6Px79EXOuDEtMxHNFGkDnqcn0kBg==",
- "notes": "Correzione: Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico\nCorrezione: Esportare un progetto appena eliminato non dà più un errore incomprensibile",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.20.zip",
+ "size": 6012390,
+ "sha256": "e1d9e1987adc02406e4f42835eb8d7ddc1c51d90039463cc454c5d9ac2b6b009",
+ "sig": "NiFKCNanMK6zdrjDy61UVDSVrOw23kzypUO8oFqM0lFapm5wn25aV4QXPbixmgkzagjpC9JI7aJXZ69Jo0bXCQ==",
+ "notes": "Novità: Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)\nNovità: Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme\nNovità: Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.20",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)"
+    },
+    {
+     "type": "feat",
+     "text": "Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme"
+    },
+    {
+     "type": "feat",
+     "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
+    }
+   ]
+  },
   {
    "version": "1.5.19",
    "date": "2026-09-27",
