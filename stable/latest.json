@@ -1,13 +1,39 @@
 {
- "version": "1.5.1",
+ "version": "1.5.2",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.1.zip",
- "size": 1057768,
- "sha256": "31a515e4bd089046b0e64c63d95fdb3a46cc00175d8c8fe521be5c487901611b",
- "sig": "9im9ZpqsSoNUUHLpIbGtnxjugPtrostCKtQdjVuW0qkNSuXFMTADZ8YvUlVKaFS6uRzP/qo6H2hhWqlIZ8TyBA==",
- "notes": "Novità: VODcut arriva su Mac (chip Apple e Intel)\nCorrezione: Se il video di un progetto viene sostituito sul PC con un altro file con lo stesso nome, l'app se ne accorge: rifà l'anteprima e ti avvisa (prima l'anteprima mostrava il video vecchio e l'esportazione quello nuovo)\nMiglioramento: Scorciatoie mostrate con i simboli del Mac (⌘, ⇧) su Mac\nMiglioramento: Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.2.zip",
+ "size": 1059646,
+ "sha256": "83fcfc689ad20137bb49d8d96c78719a740f4c3312b0a3494f481068e94c67a0",
+ "sig": "8nitWjB23wUSJuE5jlLPgxfFG6hAucd6ulZLw9QcJSwryKkYdiGZQDWewwIDT3ZQ7xZaCN/Lbyu7ftv51wCZDQ==",
+ "notes": "Novità: Immagini nella traccia principale: trascinale lì come un video e tira il bordo destro per farle durare quanto vuoi\nCorrezione: Progetto vuoto: il fondo nero non si seleziona più per sbaglio (niente più 'Clip video' nera da spostare o eliminare) e i progetti che l'avevano eliminato tornano a posto da soli\nCorrezione: Le miniature delle clip non spariscono più dopo averle spostate\nCorrezione: Con tante tracce la timeline non schiaccia più l'anteprima: le tracce si scorrono su e giù con la rotella (Maiusc + rotella per andare avanti e indietro nel tempo)\nMiglioramento: Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.2",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Immagini nella traccia principale: trascinale lì come un video e tira il bordo destro per farle durare quanto vuoi"
+    },
+    {
+     "type": "fix",
+     "text": "Progetto vuoto: il fondo nero non si seleziona più per sbaglio (niente più 'Clip video' nera da spostare o eliminare) e i progetti che l'avevano eliminato tornano a posto da soli"
+    },
+    {
+     "type": "fix",
+     "text": "Le miniature delle clip non spariscono più dopo averle spostate"
+    },
+    {
+     "type": "fix",
+     "text": "Con tante tracce la timeline non schiaccia più l'anteprima: le tracce si scorrono su e giù con la rotella (Maiusc + rotella per andare avanti e indietro nel tempo)"
+    },
+    {
+     "type": "impr",
+     "text": "Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto"
+    }
+   ]
+  },
   {
    "version": "1.5.1",
    "date": "2026-09-27",

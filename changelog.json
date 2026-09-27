@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.2",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Immagini nella traccia principale: trascinale lì come un video e tira il bordo destro per farle durare quanto vuoi"
+   },
+   {
+    "type": "fix",
+    "text": "Progetto vuoto: il fondo nero non si seleziona più per sbaglio (niente più 'Clip video' nera da spostare o eliminare) e i progetti che l'avevano eliminato tornano a posto da soli"
+   },
+   {
+    "type": "fix",
+    "text": "Le miniature delle clip non spariscono più dopo averle spostate"
+   },
+   {
+    "type": "fix",
+    "text": "Con tante tracce la timeline non schiaccia più l'anteprima: le tracce si scorrono su e giù con la rotella (Maiusc + rotella per andare avanti e indietro nel tempo)"
+   },
+   {
+    "type": "impr",
+    "text": "Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto"
+   }
+  ]
+ },
+ {
   "version": "1.5.1",
   "date": "2026-09-27",
   "items": [
