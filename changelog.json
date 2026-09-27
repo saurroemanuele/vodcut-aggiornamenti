@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.4.2",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Miniature più veloci: dopo uno spostamento restano al loro posto"
+   },
+   {
+    "type": "impr",
+    "text": "Trascinando una clip si sposta tutta, con miniature e audio, non solo il bordo"
+   },
+   {
+    "type": "impr",
+    "text": "Una sola calamita nella barra: quella della traccia principale (l'aggancio ai bordi ora è in Altro)"
+   },
+   {
+    "type": "impr",
+    "text": "La clip si mette prima o dopo le altre in base a dove sta il puntatore"
+   }
+  ]
+ },
+ {
   "version": "1.4.1",
   "date": "2026-09-27",
   "items": [

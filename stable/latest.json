@@ -1,13 +1,35 @@
 {
- "version": "1.4.1",
+ "version": "1.4.2",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.1.zip",
- "size": 1049705,
- "sha256": "648c3e7b7ca3f287c16bc03a4ff0e86bba0277cb89638a44e9650ff859b7e41b",
- "sig": "RgPg9aN3KSvZ7DTepL7txXm70mzUmPZ73WK74jD9fZQ6ebJ+z8sQ5WcvNag/SaZTXZw3vwspdkMK9KjwX3qGAw==",
- "notes": "Correzione: Calamita spenta: trascinando una clip si sposta solo quella (al suo posto resta spazio vuoto)\nCorrezione: Spostando le clip avanti e poi indietro la durata del video torna giusta\nCorrezione: Seleziona a destra funziona anche con la testina all'inizio\nCorrezione: Progetto vuoto: al posto di \"Questa parte verrà tagliata\" c'è l'invito ad aggiungere una clip\nMiglioramento: Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.2.zip",
+ "size": 1051051,
+ "sha256": "9498784fed4e16cff21f31daef875cd651e2f943d346ac7cf66f191493761b77",
+ "sig": "9Wf/mpVeRG+7IjiYYbkl/7LDU1bqpZEaHw0r+I6JeVPnvs/wJfBe3y83ZegyShYcPo9jWBag2Vo681p0wRh6Dg==",
+ "notes": "Correzione: Miniature più veloci: dopo uno spostamento restano al loro posto\nMiglioramento: Trascinando una clip si sposta tutta, con miniature e audio, non solo il bordo\nMiglioramento: Una sola calamita nella barra: quella della traccia principale (l'aggancio ai bordi ora è in Altro)\nMiglioramento: La clip si mette prima o dopo le altre in base a dove sta il puntatore",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.4.2",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Miniature più veloci: dopo uno spostamento restano al loro posto"
+    },
+    {
+     "type": "impr",
+     "text": "Trascinando una clip si sposta tutta, con miniature e audio, non solo il bordo"
+    },
+    {
+     "type": "impr",
+     "text": "Una sola calamita nella barra: quella della traccia principale (l'aggancio ai bordi ora è in Altro)"
+    },
+    {
+     "type": "impr",
+     "text": "La clip si mette prima o dopo le altre in base a dove sta il puntatore"
+    }
+   ]
+  },
   {
    "version": "1.4.1",
    "date": "2026-09-27",
