@@ -1,5 +1,19 @@
 [
  {
+  "version": "1.5.19",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico"
+   },
+   {
+    "type": "fix",
+    "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
+   }
+  ]
+ },
+ {
   "version": "1.5.18",
   "date": "2026-09-27",
   "items": [

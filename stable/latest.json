@@ -1,13 +1,27 @@
 {
- "version": "1.5.18",
+ "version": "1.5.19",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.18.zip",
- "size": 6009179,
- "sha256": "a333ec3fe5434418b8cc7f3b267ef41eec8c781d9badadcb0c390fb265e5d6cf",
- "sig": "7kPthG6bFlU0uj5v+a7J4f057MZT1gMwQ9iGopvqSa1i85D2JVpGUr72/PbaarRlZ6bsFVCto6bEfnqd3qaaBg==",
- "notes": "Correzione: Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi\nMiglioramento: Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.19.zip",
+ "size": 6009958,
+ "sha256": "a9dedf07192e1e34f4a6aaccb502ec44c35d103a56750665cb4eb0647f5c1fd7",
+ "sig": "Y6fTwGzZiudvhz1G0L2/rcs8C/TndXkbU1HLbclpANPdfaBGe3kBk+yfFk6Px79EXOuDEtMxHNFGkDnqcn0kBg==",
+ "notes": "Correzione: Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico\nCorrezione: Esportare un progetto appena eliminato non dà più un errore incomprensibile",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.19",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico"
+    },
+    {
+     "type": "fix",
+     "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
+    }
+   ]
+  },
   {
    "version": "1.5.18",
    "date": "2026-09-27",
