@@ -1,5 +1,15 @@
 [
  {
+  "version": "1.5.6",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura"
+   }
+  ]
+ },
+ {
   "version": "1.5.5",
   "date": "2026-09-27",
   "items": [
