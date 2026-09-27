@@ -1,13 +1,39 @@
 {
- "version": "1.4.0",
+ "version": "1.4.1",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.0.zip",
- "size": 1046958,
- "sha256": "8b7c77ee2459723281f36cbeb3f62c04e5fe9d229ed9e8fcae8e71eb61c47d0b",
- "sig": "Ou5MOcZSMmlC8I5eyM7uSCiTZ0m620LEwzUCW/JLtguYHt4ZVVfGLqXA0vrOe5byBlBTlm21sInZpsYhgBX5Bw==",
- "notes": "Novità: Calamita della traccia principale: spegnila per lasciare spazi vuoti tra le clip e spostarle liberamente\nNovità: Seleziona tutto a destra o a sinistra della testina, poi trascina per fare spazio e mettere una clip in mezzo\nNovità: Copia e incolla di una clip intera: alla fine si mette di fianco, in mezzo va su un'altra traccia\nMiglioramento: Lo spazio vuoto nella traccia principale si vede come una traccia vuota",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.4.1.zip",
+ "size": 1049705,
+ "sha256": "648c3e7b7ca3f287c16bc03a4ff0e86bba0277cb89638a44e9650ff859b7e41b",
+ "sig": "RgPg9aN3KSvZ7DTepL7txXm70mzUmPZ73WK74jD9fZQ6ebJ+z8sQ5WcvNag/SaZTXZw3vwspdkMK9KjwX3qGAw==",
+ "notes": "Correzione: Calamita spenta: trascinando una clip si sposta solo quella (al suo posto resta spazio vuoto)\nCorrezione: Spostando le clip avanti e poi indietro la durata del video torna giusta\nCorrezione: Seleziona a destra funziona anche con la testina all'inizio\nCorrezione: Progetto vuoto: al posto di \"Questa parte verrà tagliata\" c'è l'invito ad aggiungere una clip\nMiglioramento: Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.4.1",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Calamita spenta: trascinando una clip si sposta solo quella (al suo posto resta spazio vuoto)"
+    },
+    {
+     "type": "fix",
+     "text": "Spostando le clip avanti e poi indietro la durata del video torna giusta"
+    },
+    {
+     "type": "fix",
+     "text": "Seleziona a destra funziona anche con la testina all'inizio"
+    },
+    {
+     "type": "fix",
+     "text": "Progetto vuoto: al posto di \"Questa parte verrà tagliata\" c'è l'invito ad aggiungere una clip"
+    },
+    {
+     "type": "impr",
+     "text": "Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più"
+    }
+   ]
+  },
   {
    "version": "1.4.0",
    "date": "2026-09-27",

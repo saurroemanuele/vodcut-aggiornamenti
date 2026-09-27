@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.4.1",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Calamita spenta: trascinando una clip si sposta solo quella (al suo posto resta spazio vuoto)"
+   },
+   {
+    "type": "fix",
+    "text": "Spostando le clip avanti e poi indietro la durata del video torna giusta"
+   },
+   {
+    "type": "fix",
+    "text": "Seleziona a destra funziona anche con la testina all'inizio"
+   },
+   {
+    "type": "fix",
+    "text": "Progetto vuoto: al posto di \"Questa parte verrà tagliata\" c'è l'invito ad aggiungere una clip"
+   },
+   {
+    "type": "impr",
+    "text": "Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più"
+   }
+  ]
+ },
+ {
   "version": "1.4.0",
   "date": "2026-09-27",
   "items": [
