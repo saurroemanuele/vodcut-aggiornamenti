@@ -1,5 +1,15 @@
 [
  {
+  "version": "1.5.26",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora"
+   }
+  ]
+ },
+ {
   "version": "1.5.25",
   "date": "2026-09-28",
   "items": [

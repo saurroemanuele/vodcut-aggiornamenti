@@ -1,13 +1,23 @@
 {
- "version": "1.5.25",
+ "version": "1.5.26",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.25.zip",
- "size": 5948957,
- "sha256": "9ac3d0d9d5579776f4d9387eedce8dd3ae8e99a6de9d24a228d44f3dde6934c3",
- "sig": "FtehIupoPEdmZVOMxivuS1Az0W5Qjet2jbg1W7oRmdxvMPO0DyKm5OnrgmBflqabfOBMUUHeR7g33hZY2qDyBw==",
- "notes": "Novità: Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.26.zip",
+ "size": 5949288,
+ "sha256": "eb48895fd311638124146800db35f2a1cfb011c537ec4ee05942f8ebcc692132",
+ "sig": "nr4qQ1NwXAT92OZ6ioY4d8wN4VnTy1FIJXc8Yl6dLFz9WTlmwpRKXnOxaZYumT104Sr0t/9J5XulQWiEwlOCCA==",
+ "notes": "Miglioramento: Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.26",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora"
+    }
+   ]
+  },
   {
    "version": "1.5.25",
    "date": "2026-09-28",
@@ -563,20 +573,6 @@
     {
      "type": "impr",
      "text": "Lo spazio vuoto nella traccia principale si vede come una traccia vuota"
-    }
-   ]
-  },
-  {
-   "version": "1.3.1",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Progetto vuoto senza durata da scegliere: parte da zero e si allunga o si accorcia con le clip che metti"
-    },
-    {
-     "type": "impr",
-     "text": "Progetto vuoto: la timeline mostra solo quello che c'è, più un po' di spazio libero per aggiungere"
     }
    ]
   }
