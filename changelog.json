@@ -1,5 +1,27 @@
 [
  {
+  "version": "1.5.1",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "VODcut arriva su Mac (chip Apple e Intel)"
+   },
+   {
+    "type": "fix",
+    "text": "Se il video di un progetto viene sostituito sul PC con un altro file con lo stesso nome, l'app se ne accorge: rifà l'anteprima e ti avvisa (prima l'anteprima mostrava il video vecchio e l'esportazione quello nuovo)"
+   },
+   {
+    "type": "impr",
+    "text": "Scorciatoie mostrate con i simboli del Mac (⌘, ⇧) su Mac"
+   },
+   {
+    "type": "impr",
+    "text": "Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è"
+   }
+  ]
+ },
+ {
   "version": "1.5.0",
   "date": "2026-09-27",
   "items": [

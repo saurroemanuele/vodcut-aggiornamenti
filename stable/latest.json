@@ -1,13 +1,35 @@
 {
- "version": "1.5.0",
+ "version": "1.5.1",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.0.zip",
- "size": 1055328,
- "sha256": "9a2b220f39be6aafe53d59128d532ff2ab6b26458aee33817d52468b944c1e59",
- "sig": "KVIyUF5CcA8JaB/iMhCN7moB1T37M2i4vMOnZY2wrm/ytKiCVPKjEwV/PGScTLjvxLWriDfOK5bChbujh/gNDQ==",
- "notes": "Novità: Home nuova: crei un progetto in un clic scegliendo il formato\nNovità: I progetti sono in una griglia con copertina, formato (16:9, 9:16…), durata e tipo\nNovità: Cerca tra i tuoi progetti\nCorrezione: Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.1.zip",
+ "size": 1057768,
+ "sha256": "31a515e4bd089046b0e64c63d95fdb3a46cc00175d8c8fe521be5c487901611b",
+ "sig": "9im9ZpqsSoNUUHLpIbGtnxjugPtrostCKtQdjVuW0qkNSuXFMTADZ8YvUlVKaFS6uRzP/qo6H2hhWqlIZ8TyBA==",
+ "notes": "Novità: VODcut arriva su Mac (chip Apple e Intel)\nCorrezione: Se il video di un progetto viene sostituito sul PC con un altro file con lo stesso nome, l'app se ne accorge: rifà l'anteprima e ti avvisa (prima l'anteprima mostrava il video vecchio e l'esportazione quello nuovo)\nMiglioramento: Scorciatoie mostrate con i simboli del Mac (⌘, ⇧) su Mac\nMiglioramento: Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.1",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "VODcut arriva su Mac (chip Apple e Intel)"
+    },
+    {
+     "type": "fix",
+     "text": "Se il video di un progetto viene sostituito sul PC con un altro file con lo stesso nome, l'app se ne accorge: rifà l'anteprima e ti avvisa (prima l'anteprima mostrava il video vecchio e l'esportazione quello nuovo)"
+    },
+    {
+     "type": "impr",
+     "text": "Scorciatoie mostrate con i simboli del Mac (⌘, ⇧) su Mac"
+    },
+    {
+     "type": "impr",
+     "text": "Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è"
+    }
+   ]
+  },
   {
    "version": "1.5.0",
    "date": "2026-09-27",
