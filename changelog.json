@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.5",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali"
+   },
+   {
+    "type": "feat",
+    "text": "Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font"
+   },
+   {
+    "type": "feat",
+    "text": "Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli"
+   },
+   {
+    "type": "fix",
+    "text": "Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video"
+   },
+   {
+    "type": "impr",
+    "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
+   }
+  ]
+ },
+ {
   "version": "1.5.4",
   "date": "2026-09-27",
   "items": [

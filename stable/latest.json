@@ -1,13 +1,39 @@
 {
- "version": "1.5.4",
+ "version": "1.5.5",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.4.zip",
- "size": 1065791,
- "sha256": "d3ef5d5847cd93c7f499220bada10594410d0cfba1c075aa0a3789cce81c16a1",
- "sig": "bKXtcdme5bg5lh1NdI3SD39DFvP27JhSvAjdg50/8IYNWkVY31/Q/nYSqDthxbk3NQjWPWB9HOBF3YzVtwYdBA==",
- "notes": "Correzione: La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima\nCorrezione: Mac: niente più errori nel log quando il video salta in un altro punto\nMiglioramento: Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra\nMiglioramento: Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.5.zip",
+ "size": 5968472,
+ "sha256": "f48ed61d40174aeddf77629f2155f05b33b4368f4788b106ce911836e085b479",
+ "sig": "Ego47IVT/0foj1WYLik4hpUx+qzXcJx0reGS8b9ZXjF8HEsY+uVWZZAHHRZpnnH1XuoiF8JSRxme8GbR+O/RBw==",
+ "notes": "Novità: 60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali\nNovità: Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font\nNovità: Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli\nCorrezione: Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video\nMiglioramento: Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.5",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali"
+    },
+    {
+     "type": "feat",
+     "text": "Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font"
+    },
+    {
+     "type": "feat",
+     "text": "Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli"
+    },
+    {
+     "type": "fix",
+     "text": "Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video"
+    },
+    {
+     "type": "impr",
+     "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
+    }
+   ]
+  },
   {
    "version": "1.5.4",
    "date": "2026-09-27",
