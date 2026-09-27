@@ -1,5 +1,43 @@
 [
  {
+  "version": "1.5.12",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Più timeline nello stesso progetto, come CapCut: schede sopra la timeline, «Nuova timeline» dal menu Altro o col tasto destro su un elemento dei Media, e all'esportazione scegli una, alcune o tutte"
+   },
+   {
+    "type": "feat",
+    "text": "La mia libreria: salva GIF, video e suoni con la stellina e li ritrovi in ogni progetto (Media → La mia libreria)"
+   },
+   {
+    "type": "feat",
+    "text": "Layout per video verticali: anteprima alta a destra, pannelli e timeline a sinistra (pulsante sotto l'anteprima)"
+   },
+   {
+    "type": "feat",
+    "text": "Zoom dell'anteprima per guardare i dettagli: pizzica sul trackpad o Ctrl/Cmd + rotella con niente selezionato"
+   },
+   {
+    "type": "fix",
+    "text": "Un doppio clic su «Nuovo progetto» non crea più due progetti"
+   },
+   {
+    "type": "impr",
+    "text": "Zoom della timeline più fluido con il trackpad del Mac"
+   },
+   {
+    "type": "impr",
+    "text": "Il computer lavora meno quando l'editor è fermo (meno calore e ventole su Mac)"
+   },
+   {
+    "type": "impr",
+    "text": "Progetti vuoti e nuove timeline si creano all'istante"
+   }
+  ]
+ },
+ {
   "version": "1.5.11",
   "date": "2026-09-27",
   "items": [
