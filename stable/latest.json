@@ -1,13 +1,27 @@
 {
- "version": "1.5.17",
+ "version": "1.5.18",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.17.zip",
- "size": 6008765,
- "sha256": "4873203ade44e18130773c5a286531b4fd4e72fd2b844b4364bdd305c7fd53a4",
- "sig": "SboIY+IeoJdw7D/+Y/MC3/dKcbo+/mad0n21Bg3c6x/jyq1TevTXq+E6JBzheMFNaUR+VySL7+ST/2vUpmF/Bg==",
- "notes": "Correzione: Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero\nCorrezione: Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.18.zip",
+ "size": 6009179,
+ "sha256": "a333ec3fe5434418b8cc7f3b267ef41eec8c781d9badadcb0c390fb265e5d6cf",
+ "sig": "7kPthG6bFlU0uj5v+a7J4f057MZT1gMwQ9iGopvqSa1i85D2JVpGUr72/PbaarRlZ6bsFVCto6bEfnqd3qaaBg==",
+ "notes": "Correzione: Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi\nMiglioramento: Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»",
  "date": "2026-09-27",
  "history": [
+  {
+   "version": "1.5.18",
+   "date": "2026-09-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi"
+    },
+    {
+     "type": "impr",
+     "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
+    }
+   ]
+  },
   {
    "version": "1.5.17",
    "date": "2026-09-27",

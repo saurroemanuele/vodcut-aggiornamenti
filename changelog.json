@@ -1,5 +1,19 @@
 [
  {
+  "version": "1.5.18",
+  "date": "2026-09-27",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi"
+   },
+   {
+    "type": "impr",
+    "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
+   }
+  ]
+ },
+ {
   "version": "1.5.17",
   "date": "2026-09-27",
   "items": [
