@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.46",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Le chiavi Anthropic di organizzazione ora si collegano: basta aggiungere l'ID del workspace (wrkspc_…) nel campo che compare",
+    "en": "Anthropic organization keys now connect: just add the workspace ID (wrkspc_…) in the field that appears"
+   },
+   {
+    "type": "fix",
+    "text": "Video esportati che si bloccavano dopo tagli e zoom con le live scaricate da Twitch (file MPEG-TS): ora il file si prepara una volta e i tagli sono precisi",
+    "en": "Exported videos freezing after cuts and zooms with streams downloaded from Twitch (MPEG-TS files): the file is now prepared once and cuts are precise"
+   },
+   {
+    "type": "fix",
+    "text": "Mac: tolto l'errore interno che compariva all'avvio",
+    "en": "Mac: removed the internal error shown at startup"
+   }
+  ]
+ },
+ {
   "version": "1.5.45",
   "date": "2026-09-28",
   "items": [
