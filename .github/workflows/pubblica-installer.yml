@@ -1,0 +1,27 @@
+# Rimette insieme gli installer (spezzati in pezzi da 90 MB per stare sotto il limite di GitHub)
+# e li pubblica come release: i link ".../releases/latest/download/<file>" puntano sempre all'ultima.
+name: Pubblica installer
+on:
+  push:
+    branches: [installer]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ricompone i file
+        run: |
+          mkdir out
+          cat parts/Noonframe-Setup.exe.part* > out/Noonframe-Setup.exe
+          cat parts/Noonframe-Mac.zip.part* > out/Noonframe-Mac.zip
+          cd out && sha256sum -c ../parts/SHA256SUMS
+      - name: Crea la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          V=$(cat parts/VERSION)
+          gh release delete "installer-$V" --yes --cleanup-tag || true
+          gh release create "installer-$V" out/Noonframe-Setup.exe out/Noonframe-Mac.zip \
+            --title "Noonframe $V" --notes "Installer di Noonframe $V per Windows e Mac." --latest --target installer
