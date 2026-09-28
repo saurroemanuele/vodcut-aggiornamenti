@@ -1,13 +1,23 @@
 {
- "version": "1.5.30",
+ "version": "1.5.31",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.30.zip",
- "size": 5961979,
- "sha256": "fda6ae7b5cd6d73374dce2dac78263bab331a968fd9bfc5aed288e592ef0c7bf",
- "sig": "T6A5w5E47zglSk+kZhDhQ2MHOkk7q+ejfinXkc4w5h1rNnozoDhiQ5gXk2CngFoqMS71GgkU7gnRzcdgIb4xAA==",
- "notes": "Miglioramento: Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.31.zip",
+ "size": 5962049,
+ "sha256": "7dfbcb80e9addf869a6931a50835157f9efdb94df1df361e608c3be1bcf52971",
+ "sig": "ejpaOlt43hjoD+vKBrh+gB3StM6lUaxxMGxlG9SquACBu0jiQ6Q0d54kn2HxSfQJxYd18xGHewPKzRuPPZpnAw==",
+ "notes": "Miglioramento: Preparato l'accesso con Google (in prova, ancora spento per tutti) ||| Google sign-in prepared (in testing, still off for everyone)",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.31",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Preparato l'accesso con Google (in prova, ancora spento per tutti) ||| Google sign-in prepared (in testing, still off for everyone)"
+    }
+   ]
+  },
   {
    "version": "1.5.30",
    "date": "2026-09-28",
@@ -512,28 +522,6 @@
     {
      "type": "impr",
      "text": "Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto"
-    }
-   ]
-  },
-  {
-   "version": "1.5.1",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "VODcut arriva su Mac (chip Apple e Intel)"
-    },
-    {
-     "type": "fix",
-     "text": "Se il video di un progetto viene sostituito sul PC con un altro file con lo stesso nome, l'app se ne accorge: rifà l'anteprima e ti avvisa (prima l'anteprima mostrava il video vecchio e l'esportazione quello nuovo)"
-    },
-    {
-     "type": "impr",
-     "text": "Scorciatoie mostrate con i simboli del Mac (⌘, ⇧) su Mac"
-    },
-    {
-     "type": "impr",
-     "text": "Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è"
     }
    ]
   }
