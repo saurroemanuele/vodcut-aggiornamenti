@@ -1,13 +1,34 @@
 {
- "version": "1.5.41",
+ "version": "1.5.42",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.41.zip",
- "size": 6063000,
- "sha256": "a8d120d44ac07c468597e70d3a8dc999b8c4573c81cc4fb8f5b469370354116a",
- "sig": "KCGBEL0tteNTKRmqitdQhnHm2W0lhzwK7h/ev1yX0XPMr/IxHiqh8P/j1w0OSBsSex9VDBSA4FEkQAyDp+5HAQ==",
- "notes": "Correzione: Analisi dei video dei Formati circa 10 volte più veloce: il video si legge una volta sola\nMiglioramento: Views, like, commenti e condivisioni si leggono da soli dal link; visual e numeri non si modificano più a mano\nMiglioramento: Ogni video diventa Top / Ok / Flop in automatico",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.42.zip",
+ "size": 6066895,
+ "sha256": "09e87a3c2efc7ab59f572f2f362340f5d650a068c7a86543db0d503262bd9027",
+ "sig": "t0LcJgIf3ix58rUI6xLjnaPWgNp1YWMp1ivhWhAJ94WUs/v2tXbeRVdV2HgatqWadV02Yxn3dJe6vCmTYH5ODQ==",
+ "notes": "Correzione: Incollando un link mentre i video si caricano, il testo e il cursore non spariscono più; il link si aggiunge appena lo incolli\nMiglioramento: Prima di creare il formato scegli chi lo analizza: per ogni modello vedi quanto costa, perché sceglierlo e quale ti consigliamo\nMiglioramento: I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.42",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Incollando un link mentre i video si caricano, il testo e il cursore non spariscono più; il link si aggiunge appena lo incolli",
+     "en": "Pasting a link while videos are loading no longer clears the text or the cursor; the link is added as soon as you paste it"
+    },
+    {
+     "type": "impr",
+     "text": "Prima di creare il formato scegli chi lo analizza: per ogni modello vedi quanto costa, perché sceglierlo e quale ti consigliamo",
+     "en": "Before creating a format you choose who analyzes it: for each model you see the cost, why to pick it and which one we recommend"
+    },
+    {
+     "type": "impr",
+     "text": "I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
+     "en": "Videos posted less than 3 days ago are 'Too new' instead of Flop"
+    }
+   ]
+  },
   {
    "version": "1.5.41",
    "date": "2026-09-28",
@@ -451,44 +472,6 @@
     {
      "type": "impr",
      "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
-    }
-   ]
-  },
-  {
-   "version": "1.5.12",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Più timeline nello stesso progetto, come CapCut: schede sopra la timeline, «Nuova timeline» dal menu Altro o col tasto destro su un elemento dei Media, e all'esportazione scegli una, alcune o tutte"
-    },
-    {
-     "type": "feat",
-     "text": "La mia libreria: salva GIF, video e suoni con la stellina e li ritrovi in ogni progetto (Media → La mia libreria)"
-    },
-    {
-     "type": "feat",
-     "text": "Layout per video verticali: anteprima alta a destra, pannelli e timeline a sinistra (pulsante sotto l'anteprima)"
-    },
-    {
-     "type": "feat",
-     "text": "Zoom dell'anteprima per guardare i dettagli: pizzica sul trackpad o Ctrl/Cmd + rotella con niente selezionato"
-    },
-    {
-     "type": "fix",
-     "text": "Un doppio clic su «Nuovo progetto» non crea più due progetti"
-    },
-    {
-     "type": "impr",
-     "text": "Zoom della timeline più fluido con il trackpad del Mac"
-    },
-    {
-     "type": "impr",
-     "text": "Il computer lavora meno quando l'editor è fermo (meno calore e ventole su Mac)"
-    },
-    {
-     "type": "impr",
-     "text": "Progetti vuoti e nuove timeline si creano all'istante"
     }
    ]
   }

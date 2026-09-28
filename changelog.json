@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.42",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Incollando un link mentre i video si caricano, il testo e il cursore non spariscono più; il link si aggiunge appena lo incolli",
+    "en": "Pasting a link while videos are loading no longer clears the text or the cursor; the link is added as soon as you paste it"
+   },
+   {
+    "type": "impr",
+    "text": "Prima di creare il formato scegli chi lo analizza: per ogni modello vedi quanto costa, perché sceglierlo e quale ti consigliamo",
+    "en": "Before creating a format you choose who analyzes it: for each model you see the cost, why to pick it and which one we recommend"
+   },
+   {
+    "type": "impr",
+    "text": "I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
+    "en": "Videos posted less than 3 days ago are 'Too new' instead of Flop"
+   }
+  ]
+ },
+ {
   "version": "1.5.41",
   "date": "2026-09-28",
   "items": [
