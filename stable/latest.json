@@ -1,13 +1,39 @@
 {
- "version": "1.5.51",
+ "version": "1.5.52",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.51.zip",
- "size": 6083572,
- "sha256": "cb04ddedda5101cdf5fa78566ba94dbd02c81e5343499a6fa5994bed1c0bfcd9",
- "sig": "3RA2jeWEAOI18m55YlxtcJK8ZwgO/E4DIdRONqlxnPUImjH8GddFRBIKsUjoI3oK1NcdW2fC5pNyCJhrf1hVCg==",
- "notes": "Miglioramento: Storie AI: nel passaggio Voce c'è 'Chi parla', dove colleghi ogni nome dello script a un personaggio o a una voce (es. RAGAZZA = Martina)\nMiglioramento: Pulsante 'Crea tutto' in alto nella storia: immagini, voci e animazioni che mancano in un colpo, poi il video montato\nMiglioramento: Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
- "date": "2026-09-28",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.52.zip",
+ "size": 6085908,
+ "sha256": "53164e8be6ec3f57b43f15111bee3f3245fe0652f34fb0b486c949f48ff834b5",
+ "sig": "+Vo4tIGo5500mFKUFy76ydjxRSVLVf6q2rQdgqJmtbYjjFeQZ70Fwd5u5Pz6shsL7S2q3pt6XJjS0IGslxPEDw==",
+ "notes": "Correzione: Video AI: la stima ora usa il prezzo vero del modello scelto e la durata vera della clip pagata\nCorrezione: Video AI: si chiede sempre la clip più corta possibile (da 3 secondi con Kling 3) invece di 5 o 10: si spende molto meno\nCorrezione: Se la rete cade mentre si manda una richiesta a fal.ai non viene più rimandata (evita di pagarla due volte)\nMiglioramento: Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
+ "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.52",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Video AI: la stima ora usa il prezzo vero del modello scelto e la durata vera della clip pagata",
+     "en": "AI video: the estimate now uses the real price of the chosen model and the real billed clip length"
+    },
+    {
+     "type": "fix",
+     "text": "Video AI: si chiede sempre la clip più corta possibile (da 3 secondi con Kling 3) invece di 5 o 10: si spende molto meno",
+     "en": "AI video: always requests the shortest possible clip (3 seconds with Kling 3) instead of 5 or 10: much cheaper"
+    },
+    {
+     "type": "fix",
+     "text": "Se la rete cade mentre si manda una richiesta a fal.ai non viene più rimandata (evita di pagarla due volte)",
+     "en": "If the network drops while sending a request to fal.ai it is no longer resent (avoids paying twice)"
+    },
+    {
+     "type": "impr",
+     "text": "Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
+     "en": "Choose AI video quality (Budget, Good, High, Best) with the price of each clip"
+    }
+   ]
+  },
   {
    "version": "1.5.51",
    "date": "2026-09-28",
@@ -431,21 +457,6 @@
     {
      "type": "impr",
      "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.22",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento",
-     "en": "Mac: story voice and subtitles no longer download an unneeded 1.6 GB model"
-    },
-    {
-     "type": "fix",
-     "text": "Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma"
     }
    ]
   }

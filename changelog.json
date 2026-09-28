@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.52",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Video AI: la stima ora usa il prezzo vero del modello scelto e la durata vera della clip pagata",
+    "en": "AI video: the estimate now uses the real price of the chosen model and the real billed clip length"
+   },
+   {
+    "type": "fix",
+    "text": "Video AI: si chiede sempre la clip più corta possibile (da 3 secondi con Kling 3) invece di 5 o 10: si spende molto meno",
+    "en": "AI video: always requests the shortest possible clip (3 seconds with Kling 3) instead of 5 or 10: much cheaper"
+   },
+   {
+    "type": "fix",
+    "text": "Se la rete cade mentre si manda una richiesta a fal.ai non viene più rimandata (evita di pagarla due volte)",
+    "en": "If the network drops while sending a request to fal.ai it is no longer resent (avoids paying twice)"
+   },
+   {
+    "type": "impr",
+    "text": "Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
+    "en": "Choose AI video quality (Budget, Good, High, Best) with the price of each clip"
+   }
+  ]
+ },
+ {
   "version": "1.5.51",
   "date": "2026-09-28",
   "items": [
