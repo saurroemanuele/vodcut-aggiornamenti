@@ -1,13 +1,24 @@
 {
- "version": "1.5.46",
+ "version": "1.5.47",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.46.zip",
- "size": 6075626,
- "sha256": "f47e828b9f18d3a70453a67d364e272118fd0271d9b2dbbba2534a56aa0e5ce2",
- "sig": "3Ii/1ZArKCBSSme2LBpLFa8my8VRqHyyHTZ2gUGSxGsC5igOz715EYyNN1237x6g+xqD3J/P5JuGZMahpxWKCg==",
- "notes": "Correzione: Le chiavi Anthropic di organizzazione ora si collegano: basta aggiungere l'ID del workspace (wrkspc_…) nel campo che compare\nCorrezione: Video esportati che si bloccavano dopo tagli e zoom con le live scaricate da Twitch (file MPEG-TS): ora il file si prepara una volta e i tagli sono precisi\nCorrezione: Mac: tolto l'errore interno che compariva all'avvio",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.47.zip",
+ "size": 6075657,
+ "sha256": "35ca14b2d903828d94351db404076f1ae5dd8cedc2caa0bc448c2b48d7da6e0d",
+ "sig": "d44JJC7bZ2hYeu5SIz4ldtb2KxmeRseGahulrWs5feTSSsa8I3AvHJCCsQNCv7Mp5p522N3CheWr6l6FvfrEDQ==",
+ "notes": "Correzione: Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.47",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
+     "en": "The ready-made 'App / digital products' format now shows up even on computers where you never created a format"
+    }
+   ]
+  },
   {
    "version": "1.5.46",
    "date": "2026-09-28",
@@ -436,20 +447,6 @@
     {
      "type": "impr",
      "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
-    }
-   ]
-  },
-  {
-   "version": "1.5.17",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero"
-    },
-    {
-     "type": "fix",
-     "text": "Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte"
     }
    ]
   }

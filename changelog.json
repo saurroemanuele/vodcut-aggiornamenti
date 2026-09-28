@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.47",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
+    "en": "The ready-made 'App / digital products' format now shows up even on computers where you never created a format"
+   }
+  ]
+ },
+ {
   "version": "1.5.46",
   "date": "2026-09-28",
   "items": [
