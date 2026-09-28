@@ -1,529 +1,525 @@
 {
- "version": "1.5.31",
- "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.31.zip",
- "size": 5962049,
- "sha256": "7dfbcb80e9addf869a6931a50835157f9efdb94df1df361e608c3be1bcf52971",
- "sig": "ejpaOlt43hjoD+vKBrh+gB3StM6lUaxxMGxlG9SquACBu0jiQ6Q0d54kn2HxSfQJxYd18xGHewPKzRuPPZpnAw==",
- "notes": "Miglioramento: Preparato l'accesso con Google (in prova, ancora spento per tutti) ||| Google sign-in prepared (in testing, still off for everyone)",
- "date": "2026-09-28",
- "history": [
-  {
-   "version": "1.5.31",
-   "date": "2026-09-28",
-   "items": [
+  "version": "1.5.32",
+  "runtime": 1,
+  "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.32.zip",
+  "size": 5974680,
+  "sha256": "b5b2ec23ed491b6231dcde2867891dd43ac0c8ee8967fa33d11cea863aca8cb3",
+  "sig": "2lQX8p6v7iUOIqPlJEj5LCknPqTN2Zw20PVpS/eN/FusDYYbDgG/WTyo/I6RGpuI5nRnSKKByi5wwsmPdzI1Cw==",
+  "notes": "Miglioramento: Accesso con Google in una finestra nuova, direttamente sopra l'app\nMiglioramento: Nuova pagina profilo: foto, nome utente e ID Nuvora\nMiglioramento: Più sicurezza: controlli nuovi su progetti importati, aggiornamenti e dati dell'account",
+  "date": "2026-09-28",
+  "history": [
     {
-     "type": "impr",
-     "text": "Preparato l'accesso con Google (in prova, ancora spento per tutti) ||| Google sign-in prepared (in testing, still off for everyone)"
+      "version": "1.5.32",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Accesso con Google in una finestra nuova, direttamente sopra l'app",
+          "en": "Google sign-in in a new window, right on top of the app"
+        },
+        {
+          "type": "impr",
+          "text": "Nuova pagina profilo: foto, nome utente e ID Nuvora",
+          "en": "New profile page: photo, username and Nuvora ID"
+        },
+        {
+          "type": "impr",
+          "text": "Più sicurezza: controlli nuovi su progetti importati, aggiornamenti e dati dell'account",
+          "en": "More security: new checks on imported projects, updates and account data"
+        }
+      ]
+    },
+    {
+      "version": "1.5.31",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Preparato l'accesso con Google (in prova, ancora spento per tutti)",
+          "en": "Google sign-in prepared (in testing, still off for everyone)"
+        }
+      ]
+    },
+    {
+      "version": "1.5.30",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
+          "en": "Nuvora accounts: Google sign-in only for now (still off)"
+        }
+      ]
+    },
+    {
+      "version": "1.5.29",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
+          "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
+        }
+      ]
+    },
+    {
+      "version": "1.5.28",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
+          "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
+        }
+      ]
+    },
+    {
+      "version": "1.5.27",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
+          "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
+        }
+      ]
+    },
+    {
+      "version": "1.5.26",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "impr",
+          "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
+          "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
+        }
+      ]
+    },
+    {
+      "version": "1.5.25",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
+          "en": "New Nuvora logo"
+        }
+      ]
+    },
+    {
+      "version": "1.5.24",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "feat",
+          "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono",
+          "en": "VODcut is now Nuvora: new name, same app, all your projects stay where they are"
+        },
+        {
+          "type": "fix",
+          "text": "App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto"
+        },
+        {
+          "type": "impr",
+          "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
+        }
+      ]
+    },
+    {
+      "version": "1.5.23",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script",
+          "en": "Stories: on-screen text now follows what the voice actually says"
+        },
+        {
+          "type": "impr",
+          "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
+        }
+      ]
+    },
+    {
+      "version": "1.5.22",
+      "date": "2026-09-28",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento",
+          "en": "Mac: story voice and subtitles no longer download an unneeded 1.6 GB model"
+        },
+        {
+          "type": "fix",
+          "text": "Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma"
+        }
+      ]
+    },
+    {
+      "version": "1.5.21",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
+          "en": "Removing every video from the timeline now shows a black preview"
+        }
+      ]
+    },
+    {
+      "version": "1.5.20",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)",
+          "en": "Text: highlighted words, glow, gradient, gloss and a second line"
+        },
+        {
+          "type": "feat",
+          "text": "Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme"
+        },
+        {
+          "type": "feat",
+          "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
+        }
+      ]
+    },
+    {
+      "version": "1.5.19",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico",
+          "en": "Incomplete or damaged videos are now explained clearly instead of a technical error"
+        },
+        {
+          "type": "fix",
+          "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
+        }
+      ]
+    },
+    {
+      "version": "1.5.18",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi",
+          "en": "Windows: the light preview now always finishes when the file is busy"
+        },
+        {
+          "type": "impr",
+          "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
+        }
+      ]
+    },
+    {
+      "version": "1.5.17",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero"
+        },
+        {
+          "type": "fix",
+          "text": "Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte"
+        }
+      ]
+    },
+    {
+      "version": "1.5.16",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)"
+        },
+        {
+          "type": "feat",
+          "text": "Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola"
+        },
+        {
+          "type": "impr",
+          "text": "Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima"
+        }
+      ]
+    },
+    {
+      "version": "1.5.15",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)"
+        },
+        {
+          "type": "feat",
+          "text": "Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse"
+        },
+        {
+          "type": "impr",
+          "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
+        }
+      ]
+    },
+    {
+      "version": "1.5.14",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)"
+        }
+      ]
+    },
+    {
+      "version": "1.5.13",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare"
+        },
+        {
+          "type": "feat",
+          "text": "Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)"
+        },
+        {
+          "type": "feat",
+          "text": "Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli"
+        },
+        {
+          "type": "fix",
+          "text": "Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows"
+        },
+        {
+          "type": "impr",
+          "text": "Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)"
+        },
+        {
+          "type": "impr",
+          "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
+        }
+      ]
+    },
+    {
+      "version": "1.5.12",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Più timeline nello stesso progetto, come CapCut: schede sopra la timeline, «Nuova timeline» dal menu Altro o col tasto destro su un elemento dei Media, e all'esportazione scegli una, alcune o tutte"
+        },
+        {
+          "type": "feat",
+          "text": "La mia libreria: salva GIF, video e suoni con la stellina e li ritrovi in ogni progetto (Media → La mia libreria)"
+        },
+        {
+          "type": "feat",
+          "text": "Layout per video verticali: anteprima alta a destra, pannelli e timeline a sinistra (pulsante sotto l'anteprima)"
+        },
+        {
+          "type": "feat",
+          "text": "Zoom dell'anteprima per guardare i dettagli: pizzica sul trackpad o Ctrl/Cmd + rotella con niente selezionato"
+        },
+        {
+          "type": "fix",
+          "text": "Un doppio clic su «Nuovo progetto» non crea più due progetti"
+        },
+        {
+          "type": "impr",
+          "text": "Zoom della timeline più fluido con il trackpad del Mac"
+        },
+        {
+          "type": "impr",
+          "text": "Il computer lavora meno quando l'editor è fermo (meno calore e ventole su Mac)"
+        },
+        {
+          "type": "impr",
+          "text": "Progetti vuoti e nuove timeline si creano all'istante"
+        }
+      ]
+    },
+    {
+      "version": "1.5.11",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Sottotitoli parola per parola: in Sottotitoli → Parole per riga scegli \"Una\" e ogni parola compare da sola, a tempo con la voce"
+        }
+      ]
+    },
+    {
+      "version": "1.5.10",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Freccia su/giù: ora salta sempre al punto precedente/successivo, anche vicino ai tagli"
+        },
+        {
+          "type": "impr",
+          "text": "J/K/L senza avvisi a comparsa: la velocità si vede nel pulsante della velocità (◀ per l'indietro)"
+        },
+        {
+          "type": "impr",
+          "text": "Premendo Spazio alla fine, l'anteprima riparte dall'inizio"
+        },
+        {
+          "type": "impr",
+          "text": "Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia"
+        }
+      ]
+    },
+    {
+      "version": "1.5.9",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Griglia dei terzi nell'anteprima (Guide → Griglia)"
+        },
+        {
+          "type": "feat",
+          "text": "Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia"
+        },
+        {
+          "type": "impr",
+          "text": "Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)"
+        },
+        {
+          "type": "impr",
+          "text": "Spostando la testina mentre il video va, il video si ferma"
+        },
+        {
+          "type": "impr",
+          "text": "La traccia audio dei progetti che non sono live si chiama 'Audio dei video'"
+        }
+      ]
+    },
+    {
+      "version": "1.5.8",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Tasti J, K, L: indietro, pausa, avanti (premendo più volte 2x e 4x)"
+        },
+        {
+          "type": "feat",
+          "text": "Frecce su e giù: salti al taglio, alla clip o al marcatore precedente / successivo"
+        },
+        {
+          "type": "feat",
+          "text": "Marcatori sulla timeline con il tasto M (clic per andarci, tasto destro per toglierlo)"
+        },
+        {
+          "type": "feat",
+          "text": "Scorciatoie da tastiera personalizzabili (Altro → Scorciatoie da tastiera)"
+        },
+        {
+          "type": "fix",
+          "text": "Mac: i filtri e i look ora si vedono nell'anteprima e nei riquadri dei filtri (Safari non li applicava: ora li disegna VODcut)"
+        },
+        {
+          "type": "impr",
+          "text": "Mac: zoom della timeline con il pizzico a due dita sul trackpad"
+        }
+      ]
+    },
+    {
+      "version": "1.5.7",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta"
+        }
+      ]
+    },
+    {
+      "version": "1.5.6",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura"
+        }
+      ]
+    },
+    {
+      "version": "1.5.5",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali"
+        },
+        {
+          "type": "feat",
+          "text": "Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font"
+        },
+        {
+          "type": "feat",
+          "text": "Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli"
+        },
+        {
+          "type": "fix",
+          "text": "Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video"
+        },
+        {
+          "type": "impr",
+          "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
+        }
+      ]
+    },
+    {
+      "version": "1.5.4",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "fix",
+          "text": "La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima"
+        },
+        {
+          "type": "fix",
+          "text": "Mac: niente più errori nel log quando il video salta in un altro punto"
+        },
+        {
+          "type": "impr",
+          "text": "Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra"
+        },
+        {
+          "type": "impr",
+          "text": "Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse"
+        }
+      ]
+    },
+    {
+      "version": "1.5.3",
+      "date": "2026-09-27",
+      "items": [
+        {
+          "type": "feat",
+          "text": "Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home"
+        },
+        {
+          "type": "feat",
+          "text": "Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa"
+        },
+        {
+          "type": "fix",
+          "text": "Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona"
+        },
+        {
+          "type": "impr",
+          "text": "Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "version": "1.5.30",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
-     "en": "Nuvora accounts: Google sign-in only for now (still off)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.29",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
-     "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.28",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
-     "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
-    }
-   ]
-  },
-  {
-   "version": "1.5.27",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
-     "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
-    }
-   ]
-  },
-  {
-   "version": "1.5.26",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
-     "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
-    }
-   ]
-  },
-  {
-   "version": "1.5.25",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
-     "en": "New Nuvora logo"
-    }
-   ]
-  },
-  {
-   "version": "1.5.24",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "feat",
-     "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono",
-     "en": "VODcut is now Nuvora: new name, same app, all your projects stay where they are"
-    },
-    {
-     "type": "fix",
-     "text": "App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto"
-    },
-    {
-     "type": "impr",
-     "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
-    }
-   ]
-  },
-  {
-   "version": "1.5.23",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script",
-     "en": "Stories: on-screen text now follows what the voice actually says"
-    },
-    {
-     "type": "impr",
-     "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.22",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento",
-     "en": "Mac: story voice and subtitles no longer download an unneeded 1.6 GB model"
-    },
-    {
-     "type": "fix",
-     "text": "Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma"
-    }
-   ]
-  },
-  {
-   "version": "1.5.21",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
-     "en": "Removing every video from the timeline now shows a black preview"
-    }
-   ]
-  },
-  {
-   "version": "1.5.20",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)",
-     "en": "Text: highlighted words, glow, gradient, gloss and a second line"
-    },
-    {
-     "type": "feat",
-     "text": "Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme"
-    },
-    {
-     "type": "feat",
-     "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
-    }
-   ]
-  },
-  {
-   "version": "1.5.19",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico",
-     "en": "Incomplete or damaged videos are now explained clearly instead of a technical error"
-    },
-    {
-     "type": "fix",
-     "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
-    }
-   ]
-  },
-  {
-   "version": "1.5.18",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi",
-     "en": "Windows: the light preview now always finishes when the file is busy"
-    },
-    {
-     "type": "impr",
-     "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
-    }
-   ]
-  },
-  {
-   "version": "1.5.17",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Una clip nella traccia principale non si allunga più oltre la fine (o prima dell'inizio) del suo video: niente più schermo nero"
-    },
-    {
-     "type": "fix",
-     "text": "Un video spostato dalla traccia principale a una traccia sopra non si allunga oltre la sua parte"
-    }
-   ]
-  },
-  {
-   "version": "1.5.16",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Titoli animati tutti nuovi: 27 titoli in 5 categorie (Virali, Social, Titoli, Eleganti, Tech) con bagliore, effetto lucido, ombra morbida e due font insieme (es. «Morning» + «routine» in corsivo)"
-    },
-    {
-     "type": "feat",
-     "text": "Guru rifatto: riquadro giallo sfumato con bagliore che si allarga parola per parola"
-    },
-    {
-     "type": "impr",
-     "text": "Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima"
-    }
-   ]
-  },
-  {
-   "version": "1.5.15",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)"
-    },
-    {
-     "type": "feat",
-     "text": "Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse"
-    },
-    {
-     "type": "impr",
-     "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
-    }
-   ]
-  },
-  {
-   "version": "1.5.14",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.13",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare"
-    },
-    {
-     "type": "feat",
-     "text": "Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)"
-    },
-    {
-     "type": "feat",
-     "text": "Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli"
-    },
-    {
-     "type": "fix",
-     "text": "Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows"
-    },
-    {
-     "type": "impr",
-     "text": "Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)"
-    },
-    {
-     "type": "impr",
-     "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
-    }
-   ]
-  },
-  {
-   "version": "1.5.12",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Più timeline nello stesso progetto, come CapCut: schede sopra la timeline, «Nuova timeline» dal menu Altro o col tasto destro su un elemento dei Media, e all'esportazione scegli una, alcune o tutte"
-    },
-    {
-     "type": "feat",
-     "text": "La mia libreria: salva GIF, video e suoni con la stellina e li ritrovi in ogni progetto (Media → La mia libreria)"
-    },
-    {
-     "type": "feat",
-     "text": "Layout per video verticali: anteprima alta a destra, pannelli e timeline a sinistra (pulsante sotto l'anteprima)"
-    },
-    {
-     "type": "feat",
-     "text": "Zoom dell'anteprima per guardare i dettagli: pizzica sul trackpad o Ctrl/Cmd + rotella con niente selezionato"
-    },
-    {
-     "type": "fix",
-     "text": "Un doppio clic su «Nuovo progetto» non crea più due progetti"
-    },
-    {
-     "type": "impr",
-     "text": "Zoom della timeline più fluido con il trackpad del Mac"
-    },
-    {
-     "type": "impr",
-     "text": "Il computer lavora meno quando l'editor è fermo (meno calore e ventole su Mac)"
-    },
-    {
-     "type": "impr",
-     "text": "Progetti vuoti e nuove timeline si creano all'istante"
-    }
-   ]
-  },
-  {
-   "version": "1.5.11",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Sottotitoli parola per parola: in Sottotitoli → Parole per riga scegli \"Una\" e ogni parola compare da sola, a tempo con la voce"
-    }
-   ]
-  },
-  {
-   "version": "1.5.10",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Freccia su/giù: ora salta sempre al punto precedente/successivo, anche vicino ai tagli"
-    },
-    {
-     "type": "impr",
-     "text": "J/K/L senza avvisi a comparsa: la velocità si vede nel pulsante della velocità (◀ per l'indietro)"
-    },
-    {
-     "type": "impr",
-     "text": "Premendo Spazio alla fine, l'anteprima riparte dall'inizio"
-    },
-    {
-     "type": "impr",
-     "text": "Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia"
-    }
-   ]
-  },
-  {
-   "version": "1.5.9",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Griglia dei terzi nell'anteprima (Guide → Griglia)"
-    },
-    {
-     "type": "feat",
-     "text": "Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia"
-    },
-    {
-     "type": "impr",
-     "text": "Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)"
-    },
-    {
-     "type": "impr",
-     "text": "Spostando la testina mentre il video va, il video si ferma"
-    },
-    {
-     "type": "impr",
-     "text": "La traccia audio dei progetti che non sono live si chiama 'Audio dei video'"
-    }
-   ]
-  },
-  {
-   "version": "1.5.8",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Tasti J, K, L: indietro, pausa, avanti (premendo più volte 2x e 4x)"
-    },
-    {
-     "type": "feat",
-     "text": "Frecce su e giù: salti al taglio, alla clip o al marcatore precedente / successivo"
-    },
-    {
-     "type": "feat",
-     "text": "Marcatori sulla timeline con il tasto M (clic per andarci, tasto destro per toglierlo)"
-    },
-    {
-     "type": "feat",
-     "text": "Scorciatoie da tastiera personalizzabili (Altro → Scorciatoie da tastiera)"
-    },
-    {
-     "type": "fix",
-     "text": "Mac: i filtri e i look ora si vedono nell'anteprima e nei riquadri dei filtri (Safari non li applicava: ora li disegna VODcut)"
-    },
-    {
-     "type": "impr",
-     "text": "Mac: zoom della timeline con il pizzico a due dita sul trackpad"
-    }
-   ]
-  },
-  {
-   "version": "1.5.7",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta"
-    }
-   ]
-  },
-  {
-   "version": "1.5.6",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura"
-    }
-   ]
-  },
-  {
-   "version": "1.5.5",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali"
-    },
-    {
-     "type": "feat",
-     "text": "Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font"
-    },
-    {
-     "type": "feat",
-     "text": "Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli"
-    },
-    {
-     "type": "fix",
-     "text": "Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video"
-    },
-    {
-     "type": "impr",
-     "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
-    }
-   ]
-  },
-  {
-   "version": "1.5.4",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima"
-    },
-    {
-     "type": "fix",
-     "text": "Mac: niente più errori nel log quando il video salta in un altro punto"
-    },
-    {
-     "type": "impr",
-     "text": "Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra"
-    },
-    {
-     "type": "impr",
-     "text": "Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse"
-    }
-   ]
-  },
-  {
-   "version": "1.5.3",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Cestino: i progetti eliminati restano 30 giorni e si recuperano dal pulsante Cestino nella home"
-    },
-    {
-     "type": "feat",
-     "text": "Foto e video si spostano trascinandoli dalla traccia principale a una traccia sopra, e viceversa"
-    },
-    {
-     "type": "fix",
-     "text": "Foto nella traccia principale: il riquadro per spostarla e ingrandirla è quello della foto, non tutto lo schermo; cliccando sul nero intorno non si seleziona"
-    },
-    {
-     "type": "impr",
-     "text": "Ingrandimento delle clip fino a 30 volte (prima 8), anche quando escono dai bordi"
-    }
-   ]
-  },
-  {
-   "version": "1.5.2",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Immagini nella traccia principale: trascinale lì come un video e tira il bordo destro per farle durare quanto vuoi"
-    },
-    {
-     "type": "fix",
-     "text": "Progetto vuoto: il fondo nero non si seleziona più per sbaglio (niente più 'Clip video' nera da spostare o eliminare) e i progetti che l'avevano eliminato tornano a posto da soli"
-    },
-    {
-     "type": "fix",
-     "text": "Le miniature delle clip non spariscono più dopo averle spostate"
-    },
-    {
-     "type": "fix",
-     "text": "Con tante tracce la timeline non schiaccia più l'anteprima: le tracce si scorrono su e giù con la rotella (Maiusc + rotella per andare avanti e indietro nel tempo)"
-    },
-    {
-     "type": "impr",
-     "text": "Lo zoom della timeline resta quello scelto: spostando una clip lontano non si rimpicciolisce più tutto"
-    }
-   ]
-  }
- ]
+  ]
 }
