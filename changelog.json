@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.37",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "I link TikTok nei Formati ora si scaricano: al primo link Noonframe prepara da solo quello che serve",
+    "en": "TikTok links in Formats now download: on the first link Noonframe sets up what it needs by itself"
+   },
+   {
+    "type": "fix",
+    "text": "Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
+    "en": "If a video can't be downloaded, the message explains what to do instead of a technical error"
+   }
+  ]
+ },
+ {
   "version": "1.5.36",
   "date": "2026-09-28",
   "items": [

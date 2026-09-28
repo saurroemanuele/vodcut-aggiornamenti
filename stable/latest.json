@@ -1,13 +1,29 @@
 {
- "version": "1.5.36",
+ "version": "1.5.37",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.36.zip",
- "size": 6049959,
- "sha256": "4a1d2db31497a820a095e2307248da9b027a7d5ca573c41d93a5190a664ea225",
- "sig": "m/HkBQ3o6xszz5OJBk3aED1E/8Xg/r42Dn1XYzwHOzgF1aeHM2oxePR3lcyajb/ABu1OTqc/Gd9jc9a/Q9HVBA==",
- "notes": "Miglioramento: Nuovi Formati nelle Storie AI: carica i video che funzionano (file o link), Noonframe li trascrive, conta le visual e salva i fotogrammi; l'AI ne ricava un formato da usare quando scrivi una storia\nMiglioramento: Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.37.zip",
+ "size": 6053373,
+ "sha256": "9b8e20d5e4a5b3d956f3733e4bc40347db730fa1fc4d7d6bf4d09446e60830d5",
+ "sig": "KNoyybI8+iX76tCaBpTQD4JUC0eXh5ZWuL2atHpt6K5fXy6n9GJG4ofWSDZkPd5il91EWa9npzQvQMP4mSsfBg==",
+ "notes": "Correzione: I link TikTok nei Formati ora si scaricano: al primo link Noonframe prepara da solo quello che serve\nCorrezione: Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.37",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "I link TikTok nei Formati ora si scaricano: al primo link Noonframe prepara da solo quello che serve",
+     "en": "TikTok links in Formats now download: on the first link Noonframe sets up what it needs by itself"
+    },
+    {
+     "type": "fix",
+     "text": "Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
+     "en": "If a video can't be downloaded, the message explains what to do instead of a technical error"
+    }
+   ]
+  },
   {
    "version": "1.5.36",
    "date": "2026-09-28",
@@ -497,16 +513,6 @@
     {
      "type": "impr",
      "text": "Mac: zoom della timeline con il pizzico a due dita sul trackpad"
-    }
-   ]
-  },
-  {
-   "version": "1.5.7",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta"
     }
    ]
   }
