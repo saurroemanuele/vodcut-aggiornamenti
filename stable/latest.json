@@ -1,13 +1,39 @@
 {
- "version": "1.5.52",
+ "version": "1.5.53",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.52.zip",
- "size": 6085908,
- "sha256": "53164e8be6ec3f57b43f15111bee3f3245fe0652f34fb0b486c949f48ff834b5",
- "sig": "+Vo4tIGo5500mFKUFy76ydjxRSVLVf6q2rQdgqJmtbYjjFeQZ70Fwd5u5Pz6shsL7S2q3pt6XJjS0IGslxPEDw==",
- "notes": "Correzione: Video AI: la stima ora usa il prezzo vero del modello scelto e la durata vera della clip pagata\nCorrezione: Video AI: si chiede sempre la clip più corta possibile (da 3 secondi con Kling 3) invece di 5 o 10: si spende molto meno\nCorrezione: Se la rete cade mentre si manda una richiesta a fal.ai non viene più rimandata (evita di pagarla due volte)\nMiglioramento: Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.53.zip",
+ "size": 6097326,
+ "sha256": "3fbbd4df7b6b18c75ee781a8a026be331a19a3a8344ce7c3895f5b10a1731948",
+ "sig": "BZbVVEUV/Rqwg+4W95X0WYJX0ITv5w2lvFUq8lL8IZ6etOq43x/67iDO7cFx6nFl26M/h35SqWvZfSu8OP1KAA==",
+ "notes": "Correzione: Anteprima delle storie fluida: niente fotogramma nero tra le scene e i video AI non restano più fermi sul primo fotogramma\nCorrezione: Schermo intero dell'anteprima funzionante anche sul Mac\nMiglioramento: Tutti i modelli video di fal.ai (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) con il prezzo esatto calcolato sulle tue frasi. Puoi cambiare modello a tutta la storia o a una sola scena\nMiglioramento: Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.53",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Anteprima delle storie fluida: niente fotogramma nero tra le scene e i video AI non restano più fermi sul primo fotogramma",
+     "en": "Smooth story preview: no black frame between scenes and AI videos no longer freeze on the first frame"
+    },
+    {
+     "type": "fix",
+     "text": "Schermo intero dell'anteprima funzionante anche sul Mac",
+     "en": "Preview fullscreen now works on Mac too"
+    },
+    {
+     "type": "impr",
+     "text": "Tutti i modelli video di fal.ai (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) con il prezzo esatto calcolato sulle tue frasi. Puoi cambiare modello a tutta la storia o a una sola scena",
+     "en": "Every fal.ai video model (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) with the exact price calculated on your lines. Change the model for the whole story or for a single scene"
+    },
+    {
+     "type": "impr",
+     "text": "Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
+     "en": "Pauses between lines: automatic after questions, exclamations and speaker changes, or set by hand (no more hard cuts)"
+    }
+   ]
+  },
   {
    "version": "1.5.52",
    "date": "2026-09-29",
@@ -442,21 +468,6 @@
     {
      "type": "impr",
      "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
-    }
-   ]
-  },
-  {
-   "version": "1.5.23",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script",
-     "en": "Stories: on-screen text now follows what the voice actually says"
-    },
-    {
-     "type": "impr",
-     "text": "Storie: la voce si ascolta usando lo script come guida, così le parole vengono capite molto meglio (soprattutto su Mac)"
     }
    ]
   }

@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.53",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima delle storie fluida: niente fotogramma nero tra le scene e i video AI non restano più fermi sul primo fotogramma",
+    "en": "Smooth story preview: no black frame between scenes and AI videos no longer freeze on the first frame"
+   },
+   {
+    "type": "fix",
+    "text": "Schermo intero dell'anteprima funzionante anche sul Mac",
+    "en": "Preview fullscreen now works on Mac too"
+   },
+   {
+    "type": "impr",
+    "text": "Tutti i modelli video di fal.ai (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) con il prezzo esatto calcolato sulle tue frasi. Puoi cambiare modello a tutta la storia o a una sola scena",
+    "en": "Every fal.ai video model (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) with the exact price calculated on your lines. Change the model for the whole story or for a single scene"
+   },
+   {
+    "type": "impr",
+    "text": "Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
+    "en": "Pauses between lines: automatic after questions, exclamations and speaker changes, or set by hand (no more hard cuts)"
+   }
+  ]
+ },
+ {
   "version": "1.5.52",
   "date": "2026-09-29",
   "items": [
