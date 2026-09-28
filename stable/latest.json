@@ -1,13 +1,23 @@
 {
- "version": "1.5.26",
+ "version": "1.5.27",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.26.zip",
- "size": 5949288,
- "sha256": "eb48895fd311638124146800db35f2a1cfb011c537ec4ee05942f8ebcc692132",
- "sig": "nr4qQ1NwXAT92OZ6ioY4d8wN4VnTy1FIJXc8Yl6dLFz9WTlmwpRKXnOxaZYumT104Sr0t/9J5XulQWiEwlOCCA==",
- "notes": "Miglioramento: Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.27.zip",
+ "size": 5951130,
+ "sha256": "500c362164427ab490b4cdc99d4cadafc46efd141e41dd937d977164d8b11099",
+ "sig": "wCGWoWhLkTsap67IDp9PYZwyJbjJqt5aRnYkRzdLxPSG954aoTGQxMzDFTq6r+T6h1C95MYdKkyH/gQyH67PAA==",
+ "notes": "Miglioramento: Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.27",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni"
+    }
+   ]
+  },
   {
    "version": "1.5.26",
    "date": "2026-09-28",
@@ -551,28 +561,6 @@
     {
      "type": "impr",
      "text": "Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più"
-    }
-   ]
-  },
-  {
-   "version": "1.4.0",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Calamita della traccia principale: spegnila per lasciare spazi vuoti tra le clip e spostarle liberamente"
-    },
-    {
-     "type": "feat",
-     "text": "Seleziona tutto a destra o a sinistra della testina, poi trascina per fare spazio e mettere una clip in mezzo"
-    },
-    {
-     "type": "feat",
-     "text": "Copia e incolla di una clip intera: alla fine si mette di fianco, in mezzo va su un'altra traccia"
-    },
-    {
-     "type": "impr",
-     "text": "Lo spazio vuoto nella traccia principale si vede come una traccia vuota"
     }
    ]
   }
