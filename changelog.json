@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.54",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
+    "en": "Mac: AI videos in the preview now actually play and stay in sync with the voice (macOS was blocking them: choppy and out of sync)"
+   }
+  ]
+ },
+ {
   "version": "1.5.53",
   "date": "2026-09-29",
   "items": [

@@ -1,13 +1,24 @@
 {
- "version": "1.5.53",
+ "version": "1.5.54",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.53.zip",
- "size": 6097326,
- "sha256": "3fbbd4df7b6b18c75ee781a8a026be331a19a3a8344ce7c3895f5b10a1731948",
- "sig": "BZbVVEUV/Rqwg+4W95X0WYJX0ITv5w2lvFUq8lL8IZ6etOq43x/67iDO7cFx6nFl26M/h35SqWvZfSu8OP1KAA==",
- "notes": "Correzione: Anteprima delle storie fluida: niente fotogramma nero tra le scene e i video AI non restano più fermi sul primo fotogramma\nCorrezione: Schermo intero dell'anteprima funzionante anche sul Mac\nMiglioramento: Tutti i modelli video di fal.ai (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) con il prezzo esatto calcolato sulle tue frasi. Puoi cambiare modello a tutta la storia o a una sola scena\nMiglioramento: Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.54.zip",
+ "size": 6098172,
+ "sha256": "ce2a49f09af933120c682f5877f59389b1cd1a7fde7904dab60826a67d7ccaf8",
+ "sig": "ZnTM7m4LI5YmFaAxknfVuaDCsKAyEo30oD3DWpsgIUIu0X4N5jDtZZZMN7NYXWtn/SsiN2ozuLaXizN3huX/CQ==",
+ "notes": "Correzione: Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.54",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
+     "en": "Mac: AI videos in the preview now actually play and stay in sync with the voice (macOS was blocking them: choppy and out of sync)"
+    }
+   ]
+  },
   {
    "version": "1.5.53",
    "date": "2026-09-29",
@@ -449,25 +460,6 @@
      "type": "feat",
      "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
      "en": "New Nuvora logo"
-    }
-   ]
-  },
-  {
-   "version": "1.5.24",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "feat",
-     "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono",
-     "en": "VODcut is now Nuvora: new name, same app, all your projects stay where they are"
-    },
-    {
-     "type": "fix",
-     "text": "App in inglese: \"{n} hours ago\" nella lista dei progetti ora mostra il numero giusto"
-    },
-    {
-     "type": "impr",
-     "text": "Su Windows i collegamenti sul desktop e nel menu Start diventano \"Nuvora\" da soli"
     }
    ]
   }
