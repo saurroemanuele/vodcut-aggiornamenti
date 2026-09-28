@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.34",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovo: Storie AI. Da un argomento al video 9:16 con storia, immagini, voce, sottotitoli e musica, usando le tue chiavi AI (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)",
+    "en": "New: AI Stories. From a topic to a 9:16 video with story, images, voice, subtitles and music, using your own AI keys (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)"
+   },
+   {
+    "type": "impr",
+    "text": "Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
+    "en": "Pages with style, characters with reference photos and voices that stay the same in every story"
+   }
+  ]
+ },
+ {
   "version": "1.5.33",
   "date": "2026-09-28",
   "items": [

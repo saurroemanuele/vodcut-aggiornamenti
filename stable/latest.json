@@ -1,13 +1,29 @@
 {
- "version": "1.5.33",
+ "version": "1.5.34",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.33.zip",
- "size": 5976509,
- "sha256": "7788696de05a289600990532437f0a73fe0c95420da7eb340db9c084bc829314",
- "sig": "evncHSPfVH7VMBIgIpR53enS5ZZ0uI9y5jHh8SAs8DRLSdRW47yRW3lnXwQnVynELvTID8cYHPszCgGR5iDyAA==",
- "notes": "Miglioramento: Nuovo nome: Nuvora diventa Noonframe, con il nuovo logo",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.34.zip",
+ "size": 6018240,
+ "sha256": "d5cbb0f6b8809c742813b0171e393d1cc458c3a0f8451eb119ccf20ac9ad7f4b",
+ "sig": "N8G0q4kuKYkgoFS8cw0DD5OGYwzcNE105UqGydp1bMmnud1LjCWTrA5ivBNa9ffdZG0Y+JXHBgTdWqA86upiDw==",
+ "notes": "Miglioramento: Nuovo: Storie AI. Da un argomento al video 9:16 con storia, immagini, voce, sottotitoli e musica, usando le tue chiavi AI (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)\nMiglioramento: Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.34",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo: Storie AI. Da un argomento al video 9:16 con storia, immagini, voce, sottotitoli e musica, usando le tue chiavi AI (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)",
+     "en": "New: AI Stories. From a topic to a 9:16 video with story, images, voice, subtitles and music, using your own AI keys (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)"
+    },
+    {
+     "type": "impr",
+     "text": "Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
+     "en": "Pages with style, characters with reference photos and voices that stay the same in every story"
+    }
+   ]
+  },
   {
    "version": "1.5.33",
    "date": "2026-09-28",
@@ -485,28 +501,6 @@
     {
      "type": "impr",
      "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
-    }
-   ]
-  },
-  {
-   "version": "1.5.4",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "La guida orizzontale del centro ora compare quando sposti foto e video nell'anteprima"
-    },
-    {
-     "type": "fix",
-     "text": "Mac: niente più errori nel log quando il video salta in un altro punto"
-    },
-    {
-     "type": "impr",
-     "text": "Trascinare le clip come in CapCut: la clip segue il mouse, si appoggia sulla traccia sotto il puntatore e se lì si sovrappone a un'altra (o la lasci tra due tracce) nasce da sola una traccia nuova subito sopra"
-    },
-    {
-     "type": "impr",
-     "text": "Portando una clip dalla traccia principale verso l'alto, la clip sale insieme al mouse"
     }
    ]
   }
