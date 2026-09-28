@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.41",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Analisi dei video dei Formati circa 10 volte più veloce: il video si legge una volta sola",
+    "en": "Format video analysis is about 10x faster: the video is read only once"
+   },
+   {
+    "type": "impr",
+    "text": "Views, like, commenti e condivisioni si leggono da soli dal link; visual e numeri non si modificano più a mano",
+    "en": "Views, likes, comments and shares are read automatically from the link; shots and numbers are no longer edited by hand"
+   },
+   {
+    "type": "impr",
+    "text": "Ogni video diventa Top / Ok / Flop in automatico",
+    "en": "Each video becomes Top / Ok / Flop automatically"
+   }
+  ]
+ },
+ {
   "version": "1.5.40",
   "date": "2026-09-28",
   "items": [

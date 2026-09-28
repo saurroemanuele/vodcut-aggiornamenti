@@ -1,13 +1,34 @@
 {
- "version": "1.5.40",
+ "version": "1.5.41",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.40.zip",
- "size": 6061702,
- "sha256": "c3be25524a166929fe17b38616c2e9a5c0310134739c87c88934eaa1ba3b6487",
- "sig": "qUIVexHgq22UEh71R1YciN4dHZ1Two3mg7fwZyThAfU1AOqJxg7yYEf3sM79OywhvnwOU8Fcl+gjrsnyGYu9AA==",
- "notes": "Miglioramento: Conteggio delle visual molto più preciso: guarda tutti i fotogrammi solo nella parte dove c'è il video (senza bande, titoli e sottotitoli) e scarta i falsi tagli\nMiglioramento: Pulsante per ricontare le visual in automatico, per un video o per tutti\nMiglioramento: I video dei Formati sono divisi per piattaforma: TikTok, Instagram, YouTube, dal computer",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.41.zip",
+ "size": 6063000,
+ "sha256": "a8d120d44ac07c468597e70d3a8dc999b8c4573c81cc4fb8f5b469370354116a",
+ "sig": "KCGBEL0tteNTKRmqitdQhnHm2W0lhzwK7h/ev1yX0XPMr/IxHiqh8P/j1w0OSBsSex9VDBSA4FEkQAyDp+5HAQ==",
+ "notes": "Correzione: Analisi dei video dei Formati circa 10 volte più veloce: il video si legge una volta sola\nMiglioramento: Views, like, commenti e condivisioni si leggono da soli dal link; visual e numeri non si modificano più a mano\nMiglioramento: Ogni video diventa Top / Ok / Flop in automatico",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.41",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Analisi dei video dei Formati circa 10 volte più veloce: il video si legge una volta sola",
+     "en": "Format video analysis is about 10x faster: the video is read only once"
+    },
+    {
+     "type": "impr",
+     "text": "Views, like, commenti e condivisioni si leggono da soli dal link; visual e numeri non si modificano più a mano",
+     "en": "Views, likes, comments and shares are read automatically from the link; shots and numbers are no longer edited by hand"
+    },
+    {
+     "type": "impr",
+     "text": "Ogni video diventa Top / Ok / Flop in automatico",
+     "en": "Each video becomes Top / Ok / Flop automatically"
+    }
+   ]
+  },
   {
    "version": "1.5.40",
    "date": "2026-09-28",
@@ -468,16 +489,6 @@
     {
      "type": "impr",
      "text": "Progetti vuoti e nuove timeline si creano all'istante"
-    }
-   ]
-  },
-  {
-   "version": "1.5.11",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Sottotitoli parola per parola: in Sottotitoli → Parole per riga scegli \"Una\" e ogni parola compare da sola, a tempo con la voce"
     }
    ]
   }
