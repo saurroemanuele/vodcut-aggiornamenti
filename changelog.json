@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.29",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
+    "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
+   }
+  ]
+ },
+ {
   "version": "1.5.28",
   "date": "2026-09-28",
   "items": [

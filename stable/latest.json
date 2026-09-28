@@ -1,13 +1,24 @@
 {
- "version": "1.5.28",
+ "version": "1.5.29",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.28.zip",
- "size": 5961878,
- "sha256": "d5e0625d836cc8bc226fe2e38bc29278be21a473473fe98f754c60cfe2469238",
- "sig": "MqQEvC8M/LR4YsOKwDGPgCOMf96wpoyesKF8Om04vvIn4esOpy1gQAda0nM+NMICp9HwgyZPtwybrT6QVF3wCA==",
- "notes": "Miglioramento: Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.29.zip",
+ "size": 5961876,
+ "sha256": "e669457a6a7791435db40b80dd606093d505519674b96c6f3dd0d5b142ed5ef1",
+ "sig": "SD4GYSjkhQaefdiurqWXrSEMBEX5nb5Cn6Bf+FA7PVa+3SCCILt0TA/cfdH9W7lgYnxfoU9K5Y+NqcJb+BGABg==",
+ "notes": "Miglioramento: Account Nuvora: accesso solo con Google o Apple (ancora spento)",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.29",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
+     "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
+    }
+   ]
+  },
   {
    "version": "1.5.28",
    "date": "2026-09-28",
@@ -534,28 +545,6 @@
     {
      "type": "fix",
      "text": "Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero"
-    }
-   ]
-  },
-  {
-   "version": "1.4.2",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Miniature più veloci: dopo uno spostamento restano al loro posto"
-    },
-    {
-     "type": "impr",
-     "text": "Trascinando una clip si sposta tutta, con miniature e audio, non solo il bordo"
-    },
-    {
-     "type": "impr",
-     "text": "Una sola calamita nella barra: quella della traccia principale (l'aggancio ai bordi ora è in Altro)"
-    },
-    {
-     "type": "impr",
-     "text": "La clip si mette prima o dopo le altre in base a dove sta il puntatore"
     }
    ]
   }
