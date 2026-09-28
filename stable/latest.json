@@ -1,13 +1,39 @@
 {
- "version": "1.5.34",
+ "version": "1.5.35",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.34.zip",
- "size": 6018240,
- "sha256": "d5cbb0f6b8809c742813b0171e393d1cc458c3a0f8451eb119ccf20ac9ad7f4b",
- "sig": "N8G0q4kuKYkgoFS8cw0DD5OGYwzcNE105UqGydp1bMmnud1LjCWTrA5ivBNa9ffdZG0Y+JXHBgTdWqA86upiDw==",
- "notes": "Miglioramento: Nuovo: Storie AI. Da un argomento al video 9:16 con storia, immagini, voce, sottotitoli e musica, usando le tue chiavi AI (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)\nMiglioramento: Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.35.zip",
+ "size": 6034372,
+ "sha256": "32fce1231ce551db0540e3cc87e350abe17eeb5bf2cc296e57769649bfa6e418",
+ "sig": "bNHmp0uECNT1pQo+NIuXjEsSZDJjmylDC0ikZv09Gr+L7BsgtyzAnBcczcfVyOa0+SKvUhcxdB4+z2ou2U1kBQ==",
+ "notes": "Miglioramento: Storie AI: video AI con fal.ai (Kling). Scegli quante scene diventano clip vere, le altre restano immagini animate gratis\nMiglioramento: Storie AI: puoi usare la tua registrazione al posto della voce AI\nMiglioramento: Storie AI più chiara e più bella: guida \"Come funziona\", spiegazioni a ogni passaggio, costi prima di generare\nMiglioramento: In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.35",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Storie AI: video AI con fal.ai (Kling). Scegli quante scene diventano clip vere, le altre restano immagini animate gratis",
+     "en": "AI Stories: AI video with fal.ai (Kling). Choose how many scenes become real clips, the others stay free animated images"
+    },
+    {
+     "type": "impr",
+     "text": "Storie AI: puoi usare la tua registrazione al posto della voce AI",
+     "en": "AI Stories: you can use your own recording instead of the AI voice"
+    },
+    {
+     "type": "impr",
+     "text": "Storie AI più chiara e più bella: guida \"Come funziona\", spiegazioni a ogni passaggio, costi prima di generare",
+     "en": "AI Stories clearer and nicer: \"How it works\" guide, explanations at every step, costs before generating"
+    },
+    {
+     "type": "impr",
+     "text": "In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
+     "en": "On the home screen \"Image stories\" and \"AI Stories\" are now separate cards"
+    }
+   ]
+  },
   {
    "version": "1.5.34",
    "date": "2026-09-28",
@@ -475,32 +501,6 @@
     {
      "type": "fix",
      "text": "Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura"
-    }
-   ]
-  },
-  {
-   "version": "1.5.5",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "60 font nuovi tra i più usati sui social (Montserrat, Poppins, Bebas Neue, Anton, TikTok Sans, Luckiest Guy, Bangers e tanti altri), tutti liberi anche per i video commerciali"
-    },
-    {
-     "type": "feat",
-     "text": "Nuovo selettore dei font con ricerca, categorie (Virali, Moderni, Titoli, Eleganti, A mano, Tech) e anteprima di ogni font"
-    },
-    {
-     "type": "feat",
-     "text": "Aggiungi i tuoi font personalizzati (.ttf, .otf): funzionano nei testi e nei sottotitoli"
-    },
-    {
-     "type": "fix",
-     "text": "Spostando un pezzo di un video diviso si sposta solo quel pezzo, non tutto il video"
-    },
-    {
-     "type": "impr",
-     "text": "Il video che sta arrivando nella timeline ha una barra di avanzamento pulita e non si sovrappone più alle scritte"
     }
    ]
   }

@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.35",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Storie AI: video AI con fal.ai (Kling). Scegli quante scene diventano clip vere, le altre restano immagini animate gratis",
+    "en": "AI Stories: AI video with fal.ai (Kling). Choose how many scenes become real clips, the others stay free animated images"
+   },
+   {
+    "type": "impr",
+    "text": "Storie AI: puoi usare la tua registrazione al posto della voce AI",
+    "en": "AI Stories: you can use your own recording instead of the AI voice"
+   },
+   {
+    "type": "impr",
+    "text": "Storie AI più chiara e più bella: guida \"Come funziona\", spiegazioni a ogni passaggio, costi prima di generare",
+    "en": "AI Stories clearer and nicer: \"How it works\" guide, explanations at every step, costs before generating"
+   },
+   {
+    "type": "impr",
+    "text": "In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
+    "en": "On the home screen \"Image stories\" and \"AI Stories\" are now separate cards"
+   }
+  ]
+ },
+ {
   "version": "1.5.34",
   "date": "2026-09-28",
   "items": [
