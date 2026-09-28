@@ -1,13 +1,24 @@
 {
- "version": "1.5.44",
+ "version": "1.5.45",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.44.zip",
- "size": 6067700,
- "sha256": "de350d126d8d98d6b2e4d766e82160519bf7849d059224d7f5e5ff8d974c67f6",
- "sig": "sO7Dkq1guVMeJ/07VCSsqh4sy19sPACHQ4AT4VCRodjw1MzMyb1mNKV7PpixPKoQ3QI9iz81Tziidk0gXQ9NCQ==",
- "notes": "Miglioramento: L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.45.zip",
+ "size": 6073399,
+ "sha256": "e331d461df5b8b4d139ac6b2bd467beff6f9acead6fb36542ceac36a39f06e4d",
+ "sig": "W5Ow72JF2/JbD1Ni06m7n+hMmRfvEghXrfnN09Wq8SRjyMcOC0sN/B7sYbds/GeHLJgVOonqBn3uMdgnuS9WBA==",
+ "notes": "Miglioramento: Formati pronti di Noonframe: il primo è 'App / prodotti digitali', studiato su 10 video TikTok di successo. È già su ogni computer, si usa subito in 'Nuova storia' e si può duplicare per modificarlo",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.45",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Formati pronti di Noonframe: il primo è 'App / prodotti digitali', studiato su 10 video TikTok di successo. È già su ogni computer, si usa subito in 'Nuova storia' e si può duplicare per modificarlo",
+     "en": "Ready-made Noonframe formats: the first is 'App / digital products', studied on 10 successful TikTok videos. It's already on every computer, usable right away in 'New story', and can be duplicated to edit it"
+    }
+   ]
+  },
   {
    "version": "1.5.44",
    "date": "2026-09-28",
@@ -436,24 +447,6 @@
     {
      "type": "impr",
      "text": "Testi più belli anche nell'esportazione: bagliore e lucido identici all'anteprima"
-    }
-   ]
-  },
-  {
-   "version": "1.5.15",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Animazione delle lettere: 18 animazioni in cui ogni lettera o parola si muove da sola (evidenziatore, colpi, parole pop, sale dal basso, karaoke, lettere che saltano, macchina da scrivere, messa a fuoco, zoom, ribalta 3D, decodifica, onda, arcobaleno, riflesso, neon, glitch, VHS…)"
-    },
-    {
-     "type": "feat",
-     "text": "Titoli animati rifatti con le nuove animazioni, più 7 nuovi (Karaoke, Oro, Arcobaleno, Onda, Ribalta, Glitch, VHS); le anteprime si animano al passaggio del mouse"
-    },
-    {
-     "type": "impr",
-     "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
     }
    ]
   }
