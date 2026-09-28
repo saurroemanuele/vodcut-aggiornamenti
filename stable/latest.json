@@ -1,13 +1,29 @@
 {
- "version": "1.5.49",
+ "version": "1.5.50",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.49.zip",
- "size": 6077791,
- "sha256": "b7dc62cf73b7c4f4df4f1cad0ad97249edc64297a395820607b0a44b730f5bb6",
- "sig": "KIUC4CyL6Nt63IstbI7DzR7sAaQmjSDczQIkpSBj17029E1T4Y/qCF2+sRqLZJhsAST4FJA2C2aJSR5ie7ldBQ==",
- "notes": "Miglioramento: Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.50.zip",
+ "size": 6080363,
+ "sha256": "a09ffa7e5add3191a1ef2577431a017e89a296e5dac318ed1b9ec6a46525621f",
+ "sig": "Tc+oQSmO3FFN5kCT8WevzRQWn1ENfpSFyohdZ0LDa0MR8u+JJezw/o8eNvZxvLD+JBlRDHAyYciS8tUrRG9vAg==",
+ "notes": "Miglioramento: Voci: 'Ascolta' fa sentire la voce nella lingua della pagina (non più il campione in inglese), le voci che parlano italiano hanno la ★ e genere, età e accento sono in italiano\nMiglioramento: Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.50",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Voci: 'Ascolta' fa sentire la voce nella lingua della pagina (non più il campione in inglese), le voci che parlano italiano hanno la ★ e genere, età e accento sono in italiano",
+     "en": "Voices: 'Listen' plays the voice in the page's language (no more English samples), voices that speak the language get a ★, and gender, age and accent are translated"
+    },
+    {
+     "type": "impr",
+     "text": "Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
+     "en": "New 'Italian voices' button: find native-speaker voices in the ElevenLabs library, listen to them and add them with 'Use this one'"
+    }
+   ]
+  },
   {
    "version": "1.5.49",
    "date": "2026-09-28",
@@ -420,25 +436,6 @@
      "type": "fix",
      "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
      "en": "Removing every video from the timeline now shows a black preview"
-    }
-   ]
-  },
-  {
-   "version": "1.5.20",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)",
-     "en": "Text: highlighted words, glow, gradient, gloss and a second line"
-    },
-    {
-     "type": "feat",
-     "text": "Zoom: «Applica a tutti gli zoom» nel pannello dello zoom e scelta dell'ingrandimento per più zoom selezionati insieme"
-    },
-    {
-     "type": "feat",
-     "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
     }
    ]
   }

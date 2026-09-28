@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.50",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Voci: 'Ascolta' fa sentire la voce nella lingua della pagina (non più il campione in inglese), le voci che parlano italiano hanno la ★ e genere, età e accento sono in italiano",
+    "en": "Voices: 'Listen' plays the voice in the page's language (no more English samples), voices that speak the language get a ★, and gender, age and accent are translated"
+   },
+   {
+    "type": "impr",
+    "text": "Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
+    "en": "New 'Italian voices' button: find native-speaker voices in the ElevenLabs library, listen to them and add them with 'Use this one'"
+   }
+  ]
+ },
+ {
   "version": "1.5.49",
   "date": "2026-09-28",
   "items": [
