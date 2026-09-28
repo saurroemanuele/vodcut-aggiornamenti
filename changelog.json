@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.55",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Storie AI: voce, sottotitoli e scene allineati al millesimo per tutta la durata (prima si sfasavano di qualche centesimo a ogni frase e alla fine erano oltre un secondo fuori)",
+    "en": "AI stories: voice, subtitles and scenes aligned to the millisecond for the whole video (before they drifted a few hundredths per line, over a second by the end)"
+   },
+   {
+    "type": "impr",
+    "text": "Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
+    "en": "\"Rebuild\" button in the story editor: redoes the edit with correct timing without regenerating anything (free)"
+   }
+  ]
+ },
+ {
   "version": "1.5.54",
   "date": "2026-09-29",
   "items": [

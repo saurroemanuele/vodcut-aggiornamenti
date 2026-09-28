@@ -1,13 +1,29 @@
 {
- "version": "1.5.54",
+ "version": "1.5.55",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.54.zip",
- "size": 6098172,
- "sha256": "ce2a49f09af933120c682f5877f59389b1cd1a7fde7904dab60826a67d7ccaf8",
- "sig": "ZnTM7m4LI5YmFaAxknfVuaDCsKAyEo30oD3DWpsgIUIu0X4N5jDtZZZMN7NYXWtn/SsiN2ozuLaXizN3huX/CQ==",
- "notes": "Correzione: Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.55.zip",
+ "size": 6098987,
+ "sha256": "1a97f6cb1618c22b646f12d2aa5c268833455fd832836ac8c8ecc43d9fc67ae6",
+ "sig": "pHWcVHPnsQ2/pk6ZzSeb51WEdKzRdBriSjRkXnnly+FjAkv1Zs4d7EwJcKKctENuI2GtCkw9tfH/xW3sHJ/oDA==",
+ "notes": "Correzione: Storie AI: voce, sottotitoli e scene allineati al millesimo per tutta la durata (prima si sfasavano di qualche centesimo a ogni frase e alla fine erano oltre un secondo fuori)\nMiglioramento: Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.55",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Storie AI: voce, sottotitoli e scene allineati al millesimo per tutta la durata (prima si sfasavano di qualche centesimo a ogni frase e alla fine erano oltre un secondo fuori)",
+     "en": "AI stories: voice, subtitles and scenes aligned to the millisecond for the whole video (before they drifted a few hundredths per line, over a second by the end)"
+    },
+    {
+     "type": "impr",
+     "text": "Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
+     "en": "\"Rebuild\" button in the story editor: redoes the edit with correct timing without regenerating anything (free)"
+    }
+   ]
+  },
   {
    "version": "1.5.54",
    "date": "2026-09-29",
@@ -449,17 +465,6 @@
      "type": "impr",
      "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
      "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
-    }
-   ]
-  },
-  {
-   "version": "1.5.25",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
-     "en": "New Nuvora logo"
     }
    ]
   }
