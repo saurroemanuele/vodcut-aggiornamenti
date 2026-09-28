@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.43",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
+    "en": "Reports with a very long log were not delivered: now they always arrive"
+   }
+  ]
+ },
+ {
   "version": "1.5.42",
   "date": "2026-09-28",
   "items": [

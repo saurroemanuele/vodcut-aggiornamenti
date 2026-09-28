@@ -1,13 +1,24 @@
 {
- "version": "1.5.42",
+ "version": "1.5.43",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.42.zip",
- "size": 6066895,
- "sha256": "09e87a3c2efc7ab59f572f2f362340f5d650a068c7a86543db0d503262bd9027",
- "sig": "t0LcJgIf3ix58rUI6xLjnaPWgNp1YWMp1ivhWhAJ94WUs/v2tXbeRVdV2HgatqWadV02Yxn3dJe6vCmTYH5ODQ==",
- "notes": "Correzione: Incollando un link mentre i video si caricano, il testo e il cursore non spariscono più; il link si aggiunge appena lo incolli\nMiglioramento: Prima di creare il formato scegli chi lo analizza: per ogni modello vedi quanto costa, perché sceglierlo e quale ti consigliamo\nMiglioramento: I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.43.zip",
+ "size": 6066933,
+ "sha256": "b204a0180aedd7645e28371cae93bf511a41c92770527e64bf372bb29d78def6",
+ "sig": "euGfZS/x87WnutrOQPG0LawUqsQQ1XIQTeHQ6ofbzP9lXXIguHSFeH7hFCZkuwa5dkiaz65nGTGM+l/xM9kXBg==",
+ "notes": "Correzione: Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.43",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
+     "en": "Reports with a very long log were not delivered: now they always arrive"
+    }
+   ]
+  },
   {
    "version": "1.5.42",
    "date": "2026-09-28",
@@ -442,36 +453,6 @@
     {
      "type": "fix",
      "text": "Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.13",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Titoli animati: 17 testi pronti in stile social (guru, parole evidenziate, didascalie, 3D, fumetto, neon, eleganti…) con font e animazioni. Nella tab Testo → Titoli animati; metti tra *asterischi* le parole da colorare"
-    },
-    {
-     "type": "feat",
-     "text": "Nuove animazioni: Colpo, Sale, Inclinato (entrata), Saltella e Battito (continue)"
-    },
-    {
-     "type": "feat",
-     "text": "Marcatori: tasto Marcatore nella barra, trascinali per spostarli, tasto destro per dargli un nome, bloccarli o rimuoverli"
-    },
-    {
-     "type": "fix",
-     "text": "Lo zoom dell'anteprima (Ctrl/Cmd + rotella o pizzico) ingrandisce sempre solo la vista, anche con una clip selezionata, ed è più fluido su Mac e Windows"
-    },
-    {
-     "type": "impr",
-     "text": "Una clip della traccia principale trascinata in alto crea subito una traccia nuova sopra (funziona anche con i pezzi del video di partenza)"
-    },
-    {
-     "type": "impr",
-     "text": "Le tracce Testo e Zoom compaiono solo quando c'è qualcosa dentro; «Crea i sottotitoli» è anche nel menu Altro"
     }
    ]
   }
