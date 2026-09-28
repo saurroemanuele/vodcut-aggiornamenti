@@ -1,13 +1,24 @@
 {
- "version": "1.5.43",
+ "version": "1.5.44",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.43.zip",
- "size": 6066933,
- "sha256": "b204a0180aedd7645e28371cae93bf511a41c92770527e64bf372bb29d78def6",
- "sig": "euGfZS/x87WnutrOQPG0LawUqsQQ1XIQTeHQ6ofbzP9lXXIguHSFeH7hFCZkuwa5dkiaz65nGTGM+l/xM9kXBg==",
- "notes": "Correzione: Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.44.zip",
+ "size": 6067700,
+ "sha256": "de350d126d8d98d6b2e4d766e82160519bf7849d059224d7f5e5ff8d974c67f6",
+ "sig": "sO7Dkq1guVMeJ/07VCSsqh4sy19sPACHQ4AT4VCRodjw1MzMyb1mNKV7PpixPKoQ3QI9iz81Tziidk0gXQ9NCQ==",
+ "notes": "Miglioramento: L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.44",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
+     "en": "Export now checks the final video by itself (missing or repeated frames at cuts and zooms) and writes it to the log, to find the cause of stutters"
+    }
+   ]
+  },
   {
    "version": "1.5.43",
    "date": "2026-09-28",
@@ -443,16 +454,6 @@
     {
      "type": "impr",
      "text": "I font dei testi si caricano prima di disegnare: niente più testi disegnati per un attimo con il font sbagliato"
-    }
-   ]
-  },
-  {
-   "version": "1.5.14",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Tolto un errore che poteva comparire trascinando i testi o le clip nella timeline («setPointerCapture»)"
     }
    ]
   }

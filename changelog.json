@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.44",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
+    "en": "Export now checks the final video by itself (missing or repeated frames at cuts and zooms) and writes it to the log, to find the cause of stutters"
+   }
+  ]
+ },
+ {
   "version": "1.5.43",
   "date": "2026-09-28",
   "items": [
