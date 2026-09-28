@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.28",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
+    "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
+   }
+  ]
+ },
+ {
   "version": "1.5.27",
   "date": "2026-09-28",
   "items": [

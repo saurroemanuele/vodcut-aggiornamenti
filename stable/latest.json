@@ -1,20 +1,32 @@
 {
- "version": "1.5.27",
+ "version": "1.5.28",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.27.zip",
- "size": 5951130,
- "sha256": "500c362164427ab490b4cdc99d4cadafc46efd141e41dd937d977164d8b11099",
- "sig": "wCGWoWhLkTsap67IDp9PYZwyJbjJqt5aRnYkRzdLxPSG954aoTGQxMzDFTq6r+T6h1C95MYdKkyH/gQyH67PAA==",
- "notes": "Miglioramento: Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.28.zip",
+ "size": 5961878,
+ "sha256": "d5e0625d836cc8bc226fe2e38bc29278be21a473473fe98f754c60cfe2469238",
+ "sig": "MqQEvC8M/LR4YsOKwDGPgCOMf96wpoyesKF8Om04vvIn4esOpy1gQAda0nM+NMICp9HwgyZPtwybrT6QVF3wCA==",
+ "notes": "Miglioramento: Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.28",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
+     "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
+    }
+   ]
+  },
   {
    "version": "1.5.27",
    "date": "2026-09-28",
    "items": [
     {
      "type": "impr",
-     "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni"
+     "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
+     "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
     }
    ]
   },
@@ -24,7 +36,8 @@
    "items": [
     {
      "type": "impr",
-     "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora"
+     "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
+     "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
     }
    ]
   },
@@ -34,7 +47,8 @@
    "items": [
     {
      "type": "feat",
-     "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti"
+     "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
+     "en": "New Nuvora logo"
     }
    ]
   },
@@ -44,7 +58,8 @@
    "items": [
     {
      "type": "feat",
-     "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono"
+     "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono",
+     "en": "VODcut is now Nuvora: new name, same app, all your projects stay where they are"
     },
     {
      "type": "fix",
@@ -62,7 +77,8 @@
    "items": [
     {
      "type": "fix",
-     "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script"
+     "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script",
+     "en": "Stories: on-screen text now follows what the voice actually says"
     },
     {
      "type": "impr",
@@ -76,7 +92,8 @@
    "items": [
     {
      "type": "fix",
-     "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento"
+     "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento",
+     "en": "Mac: story voice and subtitles no longer download an unneeded 1.6 GB model"
     },
     {
      "type": "fix",
@@ -90,7 +107,8 @@
    "items": [
     {
      "type": "fix",
-     "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto"
+     "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
+     "en": "Removing every video from the timeline now shows a black preview"
     }
    ]
   },
@@ -100,7 +118,8 @@
    "items": [
     {
      "type": "feat",
-     "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)"
+     "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)",
+     "en": "Text: highlighted words, glow, gradient, gloss and a second line"
     },
     {
      "type": "feat",
@@ -118,7 +137,8 @@
    "items": [
     {
      "type": "fix",
-     "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico"
+     "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico",
+     "en": "Incomplete or damaged videos are now explained clearly instead of a technical error"
     },
     {
      "type": "fix",
@@ -132,7 +152,8 @@
    "items": [
     {
      "type": "fix",
-     "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi"
+     "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi",
+     "en": "Windows: the light preview now always finishes when the file is busy"
     },
     {
      "type": "impr",
@@ -535,32 +556,6 @@
     {
      "type": "impr",
      "text": "La clip si mette prima o dopo le altre in base a dove sta il puntatore"
-    }
-   ]
-  },
-  {
-   "version": "1.4.1",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Calamita spenta: trascinando una clip si sposta solo quella (al suo posto resta spazio vuoto)"
-    },
-    {
-     "type": "fix",
-     "text": "Spostando le clip avanti e poi indietro la durata del video torna giusta"
-    },
-    {
-     "type": "fix",
-     "text": "Seleziona a destra funziona anche con la testina all'inizio"
-    },
-    {
-     "type": "fix",
-     "text": "Progetto vuoto: al posto di \"Questa parte verrà tagliata\" c'è l'invito ad aggiungere una clip"
-    },
-    {
-     "type": "impr",
-     "text": "Spostare o incollare clip è molto più veloce: le miniature non si ricaricano più"
     }
    ]
   }
