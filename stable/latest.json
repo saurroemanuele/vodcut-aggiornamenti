@@ -1,13 +1,24 @@
 {
- "version": "1.5.38",
+ "version": "1.5.39",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.38.zip",
- "size": 6053635,
- "sha256": "ab9a0a1b74231d8c324f272e73560433fccc27e5c0844a74474512e4ced6ab00",
- "sig": "0nNFhOIeC9ErNEe53JSXFx+VGpteV+avx+wrTmWHvxFsD9JAOrFly/FLq8POkIsp+lthf/vx66EDZKjg0wjSDg==",
- "notes": "Correzione: Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.39.zip",
+ "size": 6058206,
+ "sha256": "c16b27e8955c2d3c2721dd827cfd0a16ed3190932b30b15eab04247b12008368",
+ "sig": "UXMqF67f4J6zgGOEPdPAy6mqsq3PpaOhZWgqNiKrIwE6kfNIADiy9P5/o3jfYkgZQWV2QpMS9vbIhD+myPFgBw==",
+ "notes": "Miglioramento: Collega TikTok nei Formati: accedi una volta nella pagina ufficiale di TikTok e i link si scaricano con il tuo account. La sessione resta solo sul tuo computer, cifrata",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.39",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Collega TikTok nei Formati: accedi una volta nella pagina ufficiale di TikTok e i link si scaricano con il tuo account. La sessione resta solo sul tuo computer, cifrata",
+     "en": "Connect TikTok in Formats: sign in once on TikTok's official page and links download with your account. The session stays only on your computer, encrypted"
+    }
+   ]
+  },
   {
    "version": "1.5.38",
    "date": "2026-09-28",
@@ -468,32 +479,6 @@
     {
      "type": "impr",
      "text": "Zone delle app (TikTok, Reels, Shorts) più discrete: una sagoma bianca leggera di pulsanti, nome e didascalia"
-    }
-   ]
-  },
-  {
-   "version": "1.5.9",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Griglia dei terzi nell'anteprima (Guide → Griglia)"
-    },
-    {
-     "type": "feat",
-     "text": "Zone coperte dalle app per TikTok, Instagram Reels e YouTube Shorts: vedi dove finiscono pulsanti e didascalia"
-    },
-    {
-     "type": "impr",
-     "text": "Frecce sinistra/destra: un fotogramma alla volta (con Maiusc: 1 secondo)"
-    },
-    {
-     "type": "impr",
-     "text": "Spostando la testina mentre il video va, il video si ferma"
-    },
-    {
-     "type": "impr",
-     "text": "La traccia audio dei progetti che non sono live si chiama 'Audio dei video'"
     }
    ]
   }
