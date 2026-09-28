@@ -1,13 +1,34 @@
 {
- "version": "1.5.50",
+ "version": "1.5.51",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.50.zip",
- "size": 6080363,
- "sha256": "a09ffa7e5add3191a1ef2577431a017e89a296e5dac318ed1b9ec6a46525621f",
- "sig": "Tc+oQSmO3FFN5kCT8WevzRQWn1ENfpSFyohdZ0LDa0MR8u+JJezw/o8eNvZxvLD+JBlRDHAyYciS8tUrRG9vAg==",
- "notes": "Miglioramento: Voci: 'Ascolta' fa sentire la voce nella lingua della pagina (non più il campione in inglese), le voci che parlano italiano hanno la ★ e genere, età e accento sono in italiano\nMiglioramento: Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.51.zip",
+ "size": 6083572,
+ "sha256": "cb04ddedda5101cdf5fa78566ba94dbd02c81e5343499a6fa5994bed1c0bfcd9",
+ "sig": "3RA2jeWEAOI18m55YlxtcJK8ZwgO/E4DIdRONqlxnPUImjH8GddFRBIKsUjoI3oK1NcdW2fC5pNyCJhrf1hVCg==",
+ "notes": "Miglioramento: Storie AI: nel passaggio Voce c'è 'Chi parla', dove colleghi ogni nome dello script a un personaggio o a una voce (es. RAGAZZA = Martina)\nMiglioramento: Pulsante 'Crea tutto' in alto nella storia: immagini, voci e animazioni che mancano in un colpo, poi il video montato\nMiglioramento: Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.51",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Storie AI: nel passaggio Voce c'è 'Chi parla', dove colleghi ogni nome dello script a un personaggio o a una voce (es. RAGAZZA = Martina)",
+     "en": "AI Stories: the Voice step has 'Who speaks', where you link each name in the script to a character or a voice (e.g. GIRL = Martina)"
+    },
+    {
+     "type": "impr",
+     "text": "Pulsante 'Crea tutto' in alto nella storia: immagini, voci e animazioni che mancano in un colpo, poi il video montato",
+     "en": "'Create everything' button at the top of the story: missing images, voices and animations in one go, then the assembled video"
+    },
+    {
+     "type": "impr",
+     "text": "Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
+     "en": "Social badges: 'Repeat in the video' places them mid-video, at the start and end, or every 5/10/15 minutes"
+    }
+   ]
+  },
   {
    "version": "1.5.50",
    "date": "2026-09-28",
@@ -425,17 +446,6 @@
     {
      "type": "fix",
      "text": "Scegliendo un'altra voce mentre la prima si sta ancora ascoltando, la prima si ferma"
-    }
-   ]
-  },
-  {
-   "version": "1.5.21",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
-     "en": "Removing every video from the timeline now shows a black preview"
     }
    ]
   }

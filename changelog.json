@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.51",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Storie AI: nel passaggio Voce c'è 'Chi parla', dove colleghi ogni nome dello script a un personaggio o a una voce (es. RAGAZZA = Martina)",
+    "en": "AI Stories: the Voice step has 'Who speaks', where you link each name in the script to a character or a voice (e.g. GIRL = Martina)"
+   },
+   {
+    "type": "impr",
+    "text": "Pulsante 'Crea tutto' in alto nella storia: immagini, voci e animazioni che mancano in un colpo, poi il video montato",
+    "en": "'Create everything' button at the top of the story: missing images, voices and animations in one go, then the assembled video"
+   },
+   {
+    "type": "impr",
+    "text": "Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
+    "en": "Social badges: 'Repeat in the video' places them mid-video, at the start and end, or every 5/10/15 minutes"
+   }
+  ]
+ },
+ {
   "version": "1.5.50",
   "date": "2026-09-28",
   "items": [
