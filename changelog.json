@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.48",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
+    "en": "Listen to voices before choosing: 'Listen' plays the sample (free with ElevenLabs), 'Try with settings' reads a sentence with the page's speed and expressiveness. For characters too"
+   }
+  ]
+ },
+ {
   "version": "1.5.47",
   "date": "2026-09-28",
   "items": [

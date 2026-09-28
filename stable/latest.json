@@ -1,13 +1,24 @@
 {
- "version": "1.5.47",
+ "version": "1.5.48",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.47.zip",
- "size": 6075657,
- "sha256": "35ca14b2d903828d94351db404076f1ae5dd8cedc2caa0bc448c2b48d7da6e0d",
- "sig": "d44JJC7bZ2hYeu5SIz4ldtb2KxmeRseGahulrWs5feTSSsa8I3AvHJCCsQNCv7Mp5p522N3CheWr6l6FvfrEDQ==",
- "notes": "Correzione: Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.48.zip",
+ "size": 6077441,
+ "sha256": "83f8b42db14a1158359847a5e0a4b3bbd20b3a662b78c5a74e45e54f911abf18",
+ "sig": "uqmog/iCUhF+dtW9R9SI/gisW+M4+FLaJnkMs4skUQ9q23EcrjQ+OCbpQTS3HMV9i0KPJFhUaSNKjgBhQlVwBw==",
+ "notes": "Miglioramento: Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.48",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
+     "en": "Listen to voices before choosing: 'Listen' plays the sample (free with ElevenLabs), 'Try with settings' reads a sentence with the page's speed and expressiveness. For characters too"
+    }
+   ]
+  },
   {
    "version": "1.5.47",
    "date": "2026-09-28",
@@ -432,21 +443,6 @@
     {
      "type": "fix",
      "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
-    }
-   ]
-  },
-  {
-   "version": "1.5.18",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi",
-     "en": "Windows: the light preview now always finishes when the file is busy"
-    },
-    {
-     "type": "impr",
-     "text": "Progetto vuoto: nell'anteprima compare «Aggiungi un video o una foto per iniziare»"
     }
    ]
   }
