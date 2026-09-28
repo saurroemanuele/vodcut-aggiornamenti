@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.40",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Conteggio delle visual molto più preciso: guarda tutti i fotogrammi solo nella parte dove c'è il video (senza bande, titoli e sottotitoli) e scarta i falsi tagli",
+    "en": "Much more accurate shot counting: it checks every frame only where the video actually is (ignoring bars, titles and subtitles) and discards false cuts"
+   },
+   {
+    "type": "impr",
+    "text": "Pulsante per ricontare le visual in automatico, per un video o per tutti",
+    "en": "Button to recount shots automatically, for one video or all of them"
+   },
+   {
+    "type": "impr",
+    "text": "I video dei Formati sono divisi per piattaforma: TikTok, Instagram, YouTube, dal computer",
+    "en": "Format videos are grouped by platform: TikTok, Instagram, YouTube, from computer"
+   }
+  ]
+ },
+ {
   "version": "1.5.39",
   "date": "2026-09-28",
   "items": [
