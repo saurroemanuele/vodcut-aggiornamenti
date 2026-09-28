@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.49",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
+    "en": "In the Voices tab you now pick and hear each character's voice, together with the narrator's"
+   }
+  ]
+ },
+ {
   "version": "1.5.48",
   "date": "2026-09-28",
   "items": [

@@ -1,13 +1,24 @@
 {
- "version": "1.5.48",
+ "version": "1.5.49",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.48.zip",
- "size": 6077441,
- "sha256": "83f8b42db14a1158359847a5e0a4b3bbd20b3a662b78c5a74e45e54f911abf18",
- "sig": "uqmog/iCUhF+dtW9R9SI/gisW+M4+FLaJnkMs4skUQ9q23EcrjQ+OCbpQTS3HMV9i0KPJFhUaSNKjgBhQlVwBw==",
- "notes": "Miglioramento: Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.49.zip",
+ "size": 6077791,
+ "sha256": "b7dc62cf73b7c4f4df4f1cad0ad97249edc64297a395820607b0a44b730f5bb6",
+ "sig": "KIUC4CyL6Nt63IstbI7DzR7sAaQmjSDczQIkpSBj17029E1T4Y/qCF2+sRqLZJhsAST4FJA2C2aJSR5ie7ldBQ==",
+ "notes": "Miglioramento: Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.49",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
+     "en": "In the Voices tab you now pick and hear each character's voice, together with the narrator's"
+    }
+   ]
+  },
   {
    "version": "1.5.48",
    "date": "2026-09-28",
@@ -428,21 +439,6 @@
     {
      "type": "feat",
      "text": "Prima dell'editor puoi scegliere quanto ingrandire gli zoom (2× … 4×), con l'anteprima che si aggiorna subito"
-    }
-   ]
-  },
-  {
-   "version": "1.5.19",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico",
-     "en": "Incomplete or damaged videos are now explained clearly instead of a technical error"
-    },
-    {
-     "type": "fix",
-     "text": "Esportare un progetto appena eliminato non dà più un errore incomprensibile"
     }
    ]
   }
