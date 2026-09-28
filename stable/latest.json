@@ -1,13 +1,24 @@
 {
- "version": "1.5.29",
+ "version": "1.5.30",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.29.zip",
- "size": 5961876,
- "sha256": "e669457a6a7791435db40b80dd606093d505519674b96c6f3dd0d5b142ed5ef1",
- "sig": "SD4GYSjkhQaefdiurqWXrSEMBEX5nb5Cn6Bf+FA7PVa+3SCCILt0TA/cfdH9W7lgYnxfoU9K5Y+NqcJb+BGABg==",
- "notes": "Miglioramento: Account Nuvora: accesso solo con Google o Apple (ancora spento)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.30.zip",
+ "size": 5961979,
+ "sha256": "fda6ae7b5cd6d73374dce2dac78263bab331a968fd9bfc5aed288e592ef0c7bf",
+ "sig": "T6A5w5E47zglSk+kZhDhQ2MHOkk7q+ejfinXkc4w5h1rNnozoDhiQ5gXk2CngFoqMS71GgkU7gnRzcdgIb4xAA==",
+ "notes": "Miglioramento: Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.30",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
+     "en": "Nuvora accounts: Google sign-in only for now (still off)"
+    }
+   ]
+  },
   {
    "version": "1.5.29",
    "date": "2026-09-28",
@@ -523,28 +534,6 @@
     {
      "type": "impr",
      "text": "Esportazione con l'encoder video del Mac (VideoToolbox) quando c'è"
-    }
-   ]
-  },
-  {
-   "version": "1.5.0",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Home nuova: crei un progetto in un clic scegliendo il formato"
-    },
-    {
-     "type": "feat",
-     "text": "I progetti sono in una griglia con copertina, formato (16:9, 9:16…), durata e tipo"
-    },
-    {
-     "type": "feat",
-     "text": "Cerca tra i tuoi progetti"
-    },
-    {
-     "type": "fix",
-     "text": "Le copertine dei progetti vuoti e delle storie ora mostrano il contenuto vero, non il nero"
     }
    ]
   }

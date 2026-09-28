@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.30",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
+    "en": "Nuvora accounts: Google sign-in only for now (still off)"
+   }
+  ]
+ },
+ {
   "version": "1.5.29",
   "date": "2026-09-28",
   "items": [
