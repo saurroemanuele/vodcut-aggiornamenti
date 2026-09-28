@@ -1,13 +1,24 @@
 {
- "version": "1.5.37",
+ "version": "1.5.38",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.37.zip",
- "size": 6053373,
- "sha256": "9b8e20d5e4a5b3d956f3733e4bc40347db730fa1fc4d7d6bf4d09446e60830d5",
- "sig": "KNoyybI8+iX76tCaBpTQD4JUC0eXh5ZWuL2atHpt6K5fXy6n9GJG4ofWSDZkPd5il91EWa9npzQvQMP4mSsfBg==",
- "notes": "Correzione: I link TikTok nei Formati ora si scaricano: al primo link Noonframe prepara da solo quello che serve\nCorrezione: Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.38.zip",
+ "size": 6053635,
+ "sha256": "ab9a0a1b74231d8c324f272e73560433fccc27e5c0844a74474512e4ced6ab00",
+ "sig": "0nNFhOIeC9ErNEe53JSXFx+VGpteV+avx+wrTmWHvxFsD9JAOrFly/FLq8POkIsp+lthf/vx66EDZKjg0wjSDg==",
+ "notes": "Correzione: Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.38",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
+     "en": "TikTok links: if TikTok asks for login, Noonframe retries as other browsers"
+    }
+   ]
+  },
   {
    "version": "1.5.37",
    "date": "2026-09-28",
@@ -483,36 +494,6 @@
     {
      "type": "impr",
      "text": "La traccia audio dei progetti che non sono live si chiama 'Audio dei video'"
-    }
-   ]
-  },
-  {
-   "version": "1.5.8",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "feat",
-     "text": "Tasti J, K, L: indietro, pausa, avanti (premendo più volte 2x e 4x)"
-    },
-    {
-     "type": "feat",
-     "text": "Frecce su e giù: salti al taglio, alla clip o al marcatore precedente / successivo"
-    },
-    {
-     "type": "feat",
-     "text": "Marcatori sulla timeline con il tasto M (clic per andarci, tasto destro per toglierlo)"
-    },
-    {
-     "type": "feat",
-     "text": "Scorciatoie da tastiera personalizzabili (Altro → Scorciatoie da tastiera)"
-    },
-    {
-     "type": "fix",
-     "text": "Mac: i filtri e i look ora si vedono nell'anteprima e nei riquadri dei filtri (Safari non li applicava: ora li disegna VODcut)"
-    },
-    {
-     "type": "impr",
-     "text": "Mac: zoom della timeline con il pizzico a due dita sul trackpad"
     }
    ]
   }

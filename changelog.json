@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.38",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
+    "en": "TikTok links: if TikTok asks for login, Noonframe retries as other browsers"
+   }
+  ]
+ },
+ {
   "version": "1.5.37",
   "date": "2026-09-28",
   "items": [
