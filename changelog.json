@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.36",
+  "date": "2026-09-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovi Formati nelle Storie AI: carica i video che funzionano (file o link), Noonframe li trascrive, conta le visual e salva i fotogrammi; l'AI ne ricava un formato da usare quando scrivi una storia",
+    "en": "New Formats in AI Stories: upload videos that work (files or links), Noonframe transcribes them, counts the shots and saves the frames; the AI turns them into a format you can use when writing a story"
+   },
+   {
+    "type": "impr",
+    "text": "Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
+    "en": "New Product tab on the page: sales scripts only use your product's information"
+   }
+  ]
+ },
+ {
   "version": "1.5.35",
   "date": "2026-09-28",
   "items": [

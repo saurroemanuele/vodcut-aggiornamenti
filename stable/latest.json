@@ -1,13 +1,29 @@
 {
- "version": "1.5.35",
+ "version": "1.5.36",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.35.zip",
- "size": 6034372,
- "sha256": "32fce1231ce551db0540e3cc87e350abe17eeb5bf2cc296e57769649bfa6e418",
- "sig": "bNHmp0uECNT1pQo+NIuXjEsSZDJjmylDC0ikZv09Gr+L7BsgtyzAnBcczcfVyOa0+SKvUhcxdB4+z2ou2U1kBQ==",
- "notes": "Miglioramento: Storie AI: video AI con fal.ai (Kling). Scegli quante scene diventano clip vere, le altre restano immagini animate gratis\nMiglioramento: Storie AI: puoi usare la tua registrazione al posto della voce AI\nMiglioramento: Storie AI più chiara e più bella: guida \"Come funziona\", spiegazioni a ogni passaggio, costi prima di generare\nMiglioramento: In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.36.zip",
+ "size": 6049959,
+ "sha256": "4a1d2db31497a820a095e2307248da9b027a7d5ca573c41d93a5190a664ea225",
+ "sig": "m/HkBQ3o6xszz5OJBk3aED1E/8Xg/r42Dn1XYzwHOzgF1aeHM2oxePR3lcyajb/ABu1OTqc/Gd9jc9a/Q9HVBA==",
+ "notes": "Miglioramento: Nuovi Formati nelle Storie AI: carica i video che funzionano (file o link), Noonframe li trascrive, conta le visual e salva i fotogrammi; l'AI ne ricava un formato da usare quando scrivi una storia\nMiglioramento: Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
  "date": "2026-09-28",
  "history": [
+  {
+   "version": "1.5.36",
+   "date": "2026-09-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovi Formati nelle Storie AI: carica i video che funzionano (file o link), Noonframe li trascrive, conta le visual e salva i fotogrammi; l'AI ne ricava un formato da usare quando scrivi una storia",
+     "en": "New Formats in AI Stories: upload videos that work (files or links), Noonframe transcribes them, counts the shots and saves the frames; the AI turns them into a format you can use when writing a story"
+    },
+    {
+     "type": "impr",
+     "text": "Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
+     "en": "New Product tab on the page: sales scripts only use your product's information"
+    }
+   ]
+  },
   {
    "version": "1.5.35",
    "date": "2026-09-28",
@@ -491,16 +507,6 @@
     {
      "type": "fix",
      "text": "Niente più sfarfallio delle miniature quando sposti o allunghi una clip tagliata: restano ferme e si aggiornano solo quando la nuova è pronta"
-    }
-   ]
-  },
-  {
-   "version": "1.5.6",
-   "date": "2026-09-27",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video girati col telefono (verticali): ora VODcut li riconosce come 9:16 e il riquadro per spostarli e ingrandirli ha la forma giusta. I progetti già fatti si correggono da soli all'apertura"
     }
    ]
   }
