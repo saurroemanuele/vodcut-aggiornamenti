@@ -5,7 +5,8 @@
   "items": [
    {
     "type": "impr",
-    "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni"
+    "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
+    "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
    }
   ]
  },
@@ -15,7 +16,8 @@
   "items": [
    {
     "type": "impr",
-    "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora"
+    "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
+    "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
    }
   ]
  },
@@ -25,7 +27,8 @@
   "items": [
    {
     "type": "feat",
-    "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti"
+    "text": "Nuovo look Nuvora: nuovo logo e tutta l'app con la palette di blu del brand, colori piatti e puliti",
+    "en": "New Nuvora logo"
    }
   ]
  },
@@ -35,7 +38,8 @@
   "items": [
    {
     "type": "feat",
-    "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono"
+    "text": "VODcut ora si chiama Nuvora: nuovo nome, stessa app. I tuoi progetti, i video e le impostazioni restano tutti dove sono",
+    "en": "VODcut is now Nuvora: new name, same app, all your projects stay where they are"
    },
    {
     "type": "fix",
@@ -53,7 +57,8 @@
   "items": [
    {
     "type": "fix",
-    "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script"
+    "text": "Storie: il testo a schermo ora segue quello che si sente davvero nella voce (frasi riscritte, parole aggiunte o tolte); i piccoli errori di ascolto restano scritti come nello script",
+    "en": "Stories: on-screen text now follows what the voice actually says"
    },
    {
     "type": "impr",
@@ -67,7 +72,8 @@
   "items": [
    {
     "type": "fix",
-    "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento"
+    "text": "Voce della storia e sottotitoli su Mac (e PC senza scheda NVIDIA): niente più download inutile di 1,6 GB che sembrava bloccare il caricamento; si scarica solo il modello giusto (circa 500 MB, una volta sola) e si vede l'avanzamento",
+    "en": "Mac: story voice and subtitles no longer download an unneeded 1.6 GB model"
    },
    {
     "type": "fix",
@@ -81,7 +87,8 @@
   "items": [
    {
     "type": "fix",
-    "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto"
+    "text": "Tolti tutti i video dalla timeline, l'anteprima diventa nera invece di mostrare l'ultimo fotogramma del video tolto",
+    "en": "Removing every video from the timeline now shows a black preview"
    }
   ]
  },
@@ -91,7 +98,8 @@
   "items": [
    {
     "type": "feat",
-    "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)"
+    "text": "Testi: nuove sezioni Parole evidenziate (colore del riquadro e della parola, inclinazione, alone, pulsante «Evidenzia la parola selezionata»), Bagliore, Sfumatura, Effetto lucido e Seconda scritta (font, colore, grandezza, posizione)",
+    "en": "Text: highlighted words, glow, gradient, gloss and a second line"
    },
    {
     "type": "feat",
@@ -109,7 +117,8 @@
   "items": [
    {
     "type": "fix",
-    "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico"
+    "text": "Video non completo (registrazione ancora in corso o file rovinato): ora VODcut lo spiega chiaramente invece di un errore tecnico",
+    "en": "Incomplete or damaged videos are now explained clearly instead of a technical error"
    },
    {
     "type": "fix",
@@ -123,7 +132,8 @@
   "items": [
    {
     "type": "fix",
-    "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi"
+    "text": "Anteprima leggera che a volte non si completava su Windows («file utilizzato da un altro processo»): ora aspetta che il file si liberi",
+    "en": "Windows: the light preview now always finishes when the file is busy"
    },
    {
     "type": "impr",
