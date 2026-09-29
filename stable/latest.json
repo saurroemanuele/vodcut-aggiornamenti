@@ -1,13 +1,59 @@
 {
- "version": "1.5.72",
+ "version": "1.5.73",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.72.zip",
- "size": 6656437,
- "sha256": "d7e28492def65ac5fc5f8631251973405fa95dc413ea631a9afacd01336f2945",
- "sig": "ijc+mMoJmFVdoIu6an1aHjNFACBP52dNnXTgeg9LVQmfaw2FK+um1SGsLlN+M9TwCx88wNKZ7EMDOs6ZnRW7CQ==",
- "notes": "Miglioramento: Nuovo logo di NoonFrame: nell'app, nell'icona del Mac e in quella di Windows",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.73.zip",
+ "size": 6658531,
+ "sha256": "b5ecb01be5c02ddbe41c904609b6c0fbfa7b5039c519ecfc66ca23f32a5cc25c",
+ "sig": "CYrwLe6rRs5evsib6V5/s5/b7vnydNTEDY/ZqVe83v+pMk1GEU1PIZhwzXbU30kmLscUgSMcm05wPXz5T5H2CA==",
+ "notes": "Correzione: Reference: mentre analizza, la pagina non torna più in alto da sola e non va a scatti\nCorrezione: Le rotelline di caricamento girano fluide in tutta l'app\nCorrezione: Timeline: zoom col pizzico molto più fluido e senza sfarfallio delle anteprime dei media\nCorrezione: Play e pausa rispondono subito\nCorrezione: Stile del video senza webcam: spiego perché gli zoom sono spenti e come attivarli\nMiglioramento: Reference molto più veloci con i video lunghi: da YouTube scarico e analizzo solo i primi 8 minuti, il parlato solo nei primi 4 (bastano per capire ritmo e stile)\nMiglioramento: Reference: per ogni video vedi a che punto è e quanto manca, più o meno\nMiglioramento: Trascrizione: doppio clic su una parola per correggerla",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.73",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Reference: mentre analizza, la pagina non torna più in alto da sola e non va a scatti",
+     "en": "References: while analyzing, the page no longer jumps back to the top or stutters"
+    },
+    {
+     "type": "fix",
+     "text": "Le rotelline di caricamento girano fluide in tutta l'app",
+     "en": "Loading spinners spin smoothly across the app"
+    },
+    {
+     "type": "fix",
+     "text": "Timeline: zoom col pizzico molto più fluido e senza sfarfallio delle anteprime dei media",
+     "en": "Timeline: much smoother pinch zoom with no flickering media thumbnails"
+    },
+    {
+     "type": "fix",
+     "text": "Play e pausa rispondono subito",
+     "en": "Play and pause respond instantly"
+    },
+    {
+     "type": "fix",
+     "text": "Stile del video senza webcam: spiego perché gli zoom sono spenti e come attivarli",
+     "en": "Video style without webcam: I explain why zooms are off and how to turn them on"
+    },
+    {
+     "type": "impr",
+     "text": "Reference molto più veloci con i video lunghi: da YouTube scarico e analizzo solo i primi 8 minuti, il parlato solo nei primi 4 (bastano per capire ritmo e stile)",
+     "en": "Much faster references with long videos: from YouTube I download and analyze only the first 8 minutes, the speech only in the first 4 (enough to understand pacing and style)"
+    },
+    {
+     "type": "impr",
+     "text": "Reference: per ogni video vedi a che punto è e quanto manca, più o meno",
+     "en": "References: for each video you see where it's at and roughly how long is left"
+    },
+    {
+     "type": "impr",
+     "text": "Trascrizione: doppio clic su una parola per correggerla",
+     "en": "Transcript: double-click a word to correct it"
+    }
+   ]
+  },
   {
    "version": "1.5.72",
    "date": "2026-09-29",
@@ -469,17 +515,6 @@
      "type": "impr",
      "text": "L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
      "en": "Export now checks the final video by itself (missing or repeated frames at cuts and zooms) and writes it to the log, to find the cause of stutters"
-    }
-   ]
-  },
-  {
-   "version": "1.5.43",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
-     "en": "Reports with a very long log were not delivered: now they always arrive"
     }
    ]
   }
