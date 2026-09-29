@@ -1,13 +1,24 @@
 {
- "version": "1.5.56",
+ "version": "1.5.57",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.56.zip",
- "size": 6106221,
- "sha256": "3c0ad599cb0d6a0cf2266005ba16b2cd8622babde1c641111bf3e611adb3e5d1",
- "sig": "6jtrg5xuqkM17dmvGCbVrLcSXNdQpJ2fNf75aWzPbZB4KNK3xROsRTdfxR5yUIIun4nL4UyQM16lAnWmENxRCw==",
- "notes": "Miglioramento: Crea le voci dei personaggi da una descrizione (ElevenLabs Voice Design): 3 proposte da ascoltare, tieni quella giusta e resta per tutte le storie della pagina\nMiglioramento: Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.57.zip",
+ "size": 6106969,
+ "sha256": "1b7cef31a8e44c9e16652ed0f1d424ce5fcfc4d90c03240a1ecb6db40d150197",
+ "sig": "uYzDbvhym0Otg39L7Huml7Q2YZ7fNhqEifUsSUsmGwL1h/udDUhLPq79fNY9CDkJMq2ZSxOeKgA5WYW8hgoGCQ==",
+ "notes": "Correzione: ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.57",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
+     "en": "ElevenLabs: when an operation isn't allowed we now explain the exact reason (restricted key, free plan, voice slots full) and what to do"
+    }
+   ]
+  },
   {
    "version": "1.5.56",
    "date": "2026-09-29",
@@ -459,17 +470,6 @@
      "type": "impr",
      "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
      "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
-    }
-   ]
-  },
-  {
-   "version": "1.5.27",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
-     "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
     }
    ]
   }

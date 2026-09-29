@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.57",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
+    "en": "ElevenLabs: when an operation isn't allowed we now explain the exact reason (restricted key, free plan, voice slots full) and what to do"
+   }
+  ]
+ },
+ {
   "version": "1.5.56",
   "date": "2026-09-29",
   "items": [
