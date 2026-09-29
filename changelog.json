@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.75",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche",
+    "en": "AI edit: long silences are always cut, even with reference styles; subtitles are always added when requested; re-running the edit replaces the previous one instead of doubling titles and graphics"
+   },
+   {
+    "type": "impr",
+    "text": "Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica",
+    "en": "AI panel redesigned: choose what the AI does (pauses, cuts, zooms, subtitles, titles, graphics, sound effects) and how much: light or bold cuts, few or many zooms, graphic types"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto",
+    "en": "AI edit: titles use the animated templates and graphics are PNG assets (icons, charts, tables, diagrams), not photos"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
+    "en": "AI edit: free built-in sound effects synced with zooms, titles and graphics; longer zooms (3-8 seconds)"
+   }
+  ]
+ },
+ {
   "version": "1.5.74",
   "date": "2026-09-30",
   "items": [

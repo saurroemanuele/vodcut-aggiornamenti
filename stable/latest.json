@@ -1,13 +1,39 @@
 {
- "version": "1.5.74",
+ "version": "1.5.75",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.74.zip",
- "size": 6661366,
- "sha256": "79b1e8e323fea01bc1406739755dd71165f6a32901803f32cbdda213e2536f8e",
- "sig": "a+bRd/SwI/i3ZC7ke1dOf2Y4B9YQHP/6rJW+JUwkoDHzPGpB1I0BxmDJ0S2bvsff3BEqDyyAJuD75KgC723lCg==",
- "notes": "Correzione: Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà\nMiglioramento: Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare\nMiglioramento: Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.75.zip",
+ "size": 7194641,
+ "sha256": "aed9c5bce22fd6d6a7daf7f843d8c414dbe5ee7deb738adf0d744eedabe80842",
+ "sig": "OPap236+H5hspBS/odiffEAPWQt39J5LLYbMd9/1Yh/w5cCahu1ieHjwsAwjiQSg0ao0pVcAUxCvqZ6RwFQUBA==",
+ "notes": "Correzione: Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche\nMiglioramento: Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica\nMiglioramento: Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto\nMiglioramento: Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.75",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche",
+     "en": "AI edit: long silences are always cut, even with reference styles; subtitles are always added when requested; re-running the edit replaces the previous one instead of doubling titles and graphics"
+    },
+    {
+     "type": "impr",
+     "text": "Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica",
+     "en": "AI panel redesigned: choose what the AI does (pauses, cuts, zooms, subtitles, titles, graphics, sound effects) and how much: light or bold cuts, few or many zooms, graphic types"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto",
+     "en": "AI edit: titles use the animated templates and graphics are PNG assets (icons, charts, tables, diagrams), not photos"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
+     "en": "AI edit: free built-in sound effects synced with zooms, titles and graphics; longer zooms (3-8 seconds)"
+    }
+   ]
+  },
   {
    "version": "1.5.74",
    "date": "2026-09-30",
@@ -514,17 +540,6 @@
      "type": "fix",
      "text": "Mac: tolto l'errore interno che compariva all'avvio",
      "en": "Mac: removed the internal error shown at startup"
-    }
-   ]
-  },
-  {
-   "version": "1.5.45",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Formati pronti di Noonframe: il primo è 'App / prodotti digitali', studiato su 10 video TikTok di successo. È già su ogni computer, si usa subito in 'Nuova storia' e si può duplicare per modificarlo",
-     "en": "Ready-made Noonframe formats: the first is 'App / digital products', studied on 10 successful TikTok videos. It's already on every computer, usable right away in 'New story', and can be duplicated to edit it"
     }
    ]
   }
