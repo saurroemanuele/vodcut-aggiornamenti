@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.74",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà",
+    "en": "AI edit: no more «invalid answer» error on long videos, the plan is split into smaller parts and recovered even if the answer is cut off"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare",
+    "en": "AI edit: see what you spend before starting (video reading and cost per graphic) and the total before applying"
+   },
+   {
+    "type": "impr",
+    "text": "Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
+    "en": "References: «Publish for everyone» shares your edit or image style with every user, after approval"
+   }
+  ]
+ },
+ {
   "version": "1.5.73",
   "date": "2026-09-29",
   "items": [

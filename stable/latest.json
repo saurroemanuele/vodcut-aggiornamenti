@@ -1,13 +1,34 @@
 {
- "version": "1.5.73",
+ "version": "1.5.74",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.73.zip",
- "size": 6658531,
- "sha256": "b5ecb01be5c02ddbe41c904609b6c0fbfa7b5039c519ecfc66ca23f32a5cc25c",
- "sig": "CYrwLe6rRs5evsib6V5/s5/b7vnydNTEDY/ZqVe83v+pMk1GEU1PIZhwzXbU30kmLscUgSMcm05wPXz5T5H2CA==",
- "notes": "Correzione: Reference: mentre analizza, la pagina non torna più in alto da sola e non va a scatti\nCorrezione: Le rotelline di caricamento girano fluide in tutta l'app\nCorrezione: Timeline: zoom col pizzico molto più fluido e senza sfarfallio delle anteprime dei media\nCorrezione: Play e pausa rispondono subito\nCorrezione: Stile del video senza webcam: spiego perché gli zoom sono spenti e come attivarli\nMiglioramento: Reference molto più veloci con i video lunghi: da YouTube scarico e analizzo solo i primi 8 minuti, il parlato solo nei primi 4 (bastano per capire ritmo e stile)\nMiglioramento: Reference: per ogni video vedi a che punto è e quanto manca, più o meno\nMiglioramento: Trascrizione: doppio clic su una parola per correggerla",
- "date": "2026-09-29",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.74.zip",
+ "size": 6661366,
+ "sha256": "79b1e8e323fea01bc1406739755dd71165f6a32901803f32cbdda213e2536f8e",
+ "sig": "a+bRd/SwI/i3ZC7ke1dOf2Y4B9YQHP/6rJW+JUwkoDHzPGpB1I0BxmDJ0S2bvsff3BEqDyyAJuD75KgC723lCg==",
+ "notes": "Correzione: Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà\nMiglioramento: Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare\nMiglioramento: Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
+ "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.74",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà",
+     "en": "AI edit: no more «invalid answer» error on long videos, the plan is split into smaller parts and recovered even if the answer is cut off"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare",
+     "en": "AI edit: see what you spend before starting (video reading and cost per graphic) and the total before applying"
+    },
+    {
+     "type": "impr",
+     "text": "Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
+     "en": "References: «Publish for everyone» shares your edit or image style with every user, after approval"
+    }
+   ]
+  },
   {
    "version": "1.5.73",
    "date": "2026-09-29",
@@ -504,17 +525,6 @@
      "type": "impr",
      "text": "Formati pronti di Noonframe: il primo è 'App / prodotti digitali', studiato su 10 video TikTok di successo. È già su ogni computer, si usa subito in 'Nuova storia' e si può duplicare per modificarlo",
      "en": "Ready-made Noonframe formats: the first is 'App / digital products', studied on 10 successful TikTok videos. It's already on every computer, usable right away in 'New story', and can be duplicated to edit it"
-    }
-   ]
-  },
-  {
-   "version": "1.5.44",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "L'esportazione controlla da sola il video finale (fotogrammi mancanti o ripetuti nei punti di taglio e zoom) e lo scrive nel registro, per trovare la causa degli scatti",
-     "en": "Export now checks the final video by itself (missing or repeated frames at cuts and zooms) and writes it to the log, to find the cause of stutters"
     }
    ]
   }
