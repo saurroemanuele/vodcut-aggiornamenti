@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.63",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Video AI e scene che parlano: niente più scritte o sottotitoli inventati dentro i video (la battuta non va più nel prompt e il divieto di testo è esplicito)",
+    "en": "AI videos and talking scenes: no more made-up text or subtitles inside the videos (the line is no longer in the prompt and text is explicitly forbidden)"
+   },
+   {
+    "type": "fix",
+    "text": "Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
+    "en": "If fal.ai or ElevenLabs credit runs out, creation stops right away with a clear message instead of trying every scene"
+   }
+  ]
+ },
+ {
   "version": "1.5.62",
   "date": "2026-09-29",
   "items": [

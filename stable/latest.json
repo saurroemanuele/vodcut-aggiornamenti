@@ -1,13 +1,29 @@
 {
- "version": "1.5.62",
+ "version": "1.5.63",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.62.zip",
- "size": 6111994,
- "sha256": "87845b8b73c3f10e726b1b3bd60ae53666f418ac36f321427264187f0de916a2",
- "sig": "xXRCLkhWEx+1ZbssXbQN4gr60Ii3g8V2xhzDN1A7MB1+kKpM73CLCMExJF2bUeQasF0HngdVv58XNuwhyQYzCg==",
- "notes": "Correzione: Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.63.zip",
+ "size": 6112305,
+ "sha256": "0da1331cf1f7999b4790c79c08187651401494c7c872e2d854a98225366cc6bc",
+ "sig": "UE+nX0rSRpuTss1OGESSyvmfVusJlhexUufVIxosYBhyZqfr3Pj9qRZfqXSvB+zL9K9xKAqjCx80bm8Y6Xj+Bw==",
+ "notes": "Correzione: Video AI e scene che parlano: niente più scritte o sottotitoli inventati dentro i video (la battuta non va più nel prompt e il divieto di testo è esplicito)\nCorrezione: Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.63",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Video AI e scene che parlano: niente più scritte o sottotitoli inventati dentro i video (la battuta non va più nel prompt e il divieto di testo è esplicito)",
+     "en": "AI videos and talking scenes: no more made-up text or subtitles inside the videos (the line is no longer in the prompt and text is explicitly forbidden)"
+    },
+    {
+     "type": "fix",
+     "text": "Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
+     "en": "If fal.ai or ElevenLabs credit runs out, creation stops right away with a clear message instead of trying every scene"
+    }
+   ]
+  },
   {
    "version": "1.5.62",
    "date": "2026-09-29",
@@ -459,17 +475,6 @@
      "type": "impr",
      "text": "Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
      "en": "Pages with style, characters with reference photos and voices that stay the same in every story"
-    }
-   ]
-  },
-  {
-   "version": "1.5.33",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo nome: Nuvora diventa Noonframe, con il nuovo logo",
-     "en": "New name: Nuvora is now Noonframe, with a new logo"
     }
    ]
   }
