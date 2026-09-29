@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.66",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
+    "en": "Noonframe credits: in AI keys you can choose “Use credits” and generate images, videos, voices and texts without creating keys. Prices and estimates shown in credits"
+   }
+  ]
+ },
+ {
   "version": "1.5.65",
   "date": "2026-09-29",
   "items": [

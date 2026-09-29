@@ -1,13 +1,24 @@
 {
- "version": "1.5.65",
+ "version": "1.5.66",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.65.zip",
- "size": 6115457,
- "sha256": "c76361cc1f25eb2b95408c009c09345ee4d0837abe0473f19b8304d9a34e0a6d",
- "sig": "4t+hJa//83TUYmQJeSy3tEVmS2b8nf0HsgZO+CP4EeY2vkykFY+qyzW6sJkxU7bT0rAT0pGrsk1N1DawW4ZVDw==",
- "notes": "Miglioramento: Ogni scena mostra cosa sta succedendo: in attesa, in coda su fal.ai, in creazione, con il tempo che passa\nMiglioramento: Selezione delle scene in Animazioni: seleziona tutti / deseleziona / solo quelli da fare, e crea solo i selezionati con il costo totale\nMiglioramento: 8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.66.zip",
+ "size": 6117979,
+ "sha256": "18318830bfbdb65ae654eac4002ab085fe8ac2a1220ca46989d7182e5583e709",
+ "sig": "GM4R2Byjje8DthcEPODn1M2wSvqx5bueJ5Z7hkeqaSGJQyei9DSbDTTOHK48qyQ8dkgJSQmNz4mbXnRoNa1/DA==",
+ "notes": "Miglioramento: Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.66",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
+     "en": "Noonframe credits: in AI keys you can choose “Use credits” and generate images, videos, voices and texts without creating keys. Prices and estimates shown in credits"
+    }
+   ]
+  },
   {
    "version": "1.5.65",
    "date": "2026-09-29",
@@ -449,22 +460,6 @@
      "type": "fix",
      "text": "Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
      "en": "If a video can't be downloaded, the message explains what to do instead of a technical error"
-    }
-   ]
-  },
-  {
-   "version": "1.5.36",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovi Formati nelle Storie AI: carica i video che funzionano (file o link), Noonframe li trascrive, conta le visual e salva i fotogrammi; l'AI ne ricava un formato da usare quando scrivi una storia",
-     "en": "New Formats in AI Stories: upload videos that work (files or links), Noonframe transcribes them, counts the shots and saves the frames; the AI turns them into a format you can use when writing a story"
-    },
-    {
-     "type": "impr",
-     "text": "Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
-     "en": "New Product tab on the page: sales scripts only use your product's information"
     }
    ]
   }
