@@ -1,13 +1,49 @@
 {
- "version": "1.5.66",
+ "version": "1.5.67",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.66.zip",
- "size": 6117979,
- "sha256": "18318830bfbdb65ae654eac4002ab085fe8ac2a1220ca46989d7182e5583e709",
- "sig": "GM4R2Byjje8DthcEPODn1M2wSvqx5bueJ5Z7hkeqaSGJQyei9DSbDTTOHK48qyQ8dkgJSQmNz4mbXnRoNa1/DA==",
- "notes": "Miglioramento: Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.67.zip",
+ "size": 6124604,
+ "sha256": "f35a70236f18799161547ebd1675761a21dde66a8bd15a077cba8d27e2a3d8da",
+ "sig": "RAEQbR/JicpDft1+gL+YBuldCZOc/qGfGizMbwlPF6FOrfNRsEHaXHIGE16v91BbdhO467CPS0ERaYqUtiZzBw==",
+ "notes": "Miglioramento: Nuova storia: scegli subito «Storia con video» o «Storia con immagini» (immagini animate e frase a schermo, costa pochissimo)\nMiglioramento: Personaggi che parlano senza lip sync: con «Muove la bocca» il personaggio parla in una clip normale e poi ci mettiamo la sua voce, molto più economico. Il lip sync resta come «Labbra sincronizzate»\nMiglioramento: Nelle scene del narratore nessuna bocca si muove\nMiglioramento: Storie AI rifatte: schermate più pulite, aiuto a comparsa, nuova schermata finale del video e nuova finestra Servizi AI\nMiglioramento: Modello video predefinito più economico: Seedance 1.0 Pro Fast 720p (circa 2 centesimi al secondo)\nMiglioramento: Il nome ora si scrive NoonFrame",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.67",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuova storia: scegli subito «Storia con video» o «Storia con immagini» (immagini animate e frase a schermo, costa pochissimo)",
+     "en": "New story: choose right away between “Video story” and “Image story” (animated images and on-screen lines, very cheap)"
+    },
+    {
+     "type": "impr",
+     "text": "Personaggi che parlano senza lip sync: con «Muove la bocca» il personaggio parla in una clip normale e poi ci mettiamo la sua voce, molto più economico. Il lip sync resta come «Labbra sincronizzate»",
+     "en": "Talking characters without lip sync: with “Mouth moves” the character talks in a normal clip and then we add their voice, much cheaper. Lip sync stays as “Lip sync”"
+    },
+    {
+     "type": "impr",
+     "text": "Nelle scene del narratore nessuna bocca si muove",
+     "en": "In narrator scenes no mouth moves"
+    },
+    {
+     "type": "impr",
+     "text": "Storie AI rifatte: schermate più pulite, aiuto a comparsa, nuova schermata finale del video e nuova finestra Servizi AI",
+     "en": "AI Stories redesigned: cleaner screens, pop-up help, new final video screen and new AI services window"
+    },
+    {
+     "type": "impr",
+     "text": "Modello video predefinito più economico: Seedance 1.0 Pro Fast 720p (circa 2 centesimi al secondo)",
+     "en": "Cheaper default video model: Seedance 1.0 Pro Fast 720p (about 2 cents per second)"
+    },
+    {
+     "type": "impr",
+     "text": "Il nome ora si scrive NoonFrame",
+     "en": "The name is now written NoonFrame"
+    }
+   ]
+  },
   {
    "version": "1.5.66",
    "date": "2026-09-29",
@@ -444,22 +480,6 @@
      "type": "fix",
      "text": "Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
      "en": "TikTok links: if TikTok asks for login, Noonframe retries as other browsers"
-    }
-   ]
-  },
-  {
-   "version": "1.5.37",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "I link TikTok nei Formati ora si scaricano: al primo link Noonframe prepara da solo quello che serve",
-     "en": "TikTok links in Formats now download: on the first link Noonframe sets up what it needs by itself"
-    },
-    {
-     "type": "fix",
-     "text": "Se un video non si scarica, il messaggio spiega cosa fare invece di mostrare un errore tecnico",
-     "en": "If a video can't be downloaded, the message explains what to do instead of a technical error"
     }
    ]
   }

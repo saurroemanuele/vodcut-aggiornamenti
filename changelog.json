@@ -1,5 +1,41 @@
 [
  {
+  "version": "1.5.67",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuova storia: scegli subito «Storia con video» o «Storia con immagini» (immagini animate e frase a schermo, costa pochissimo)",
+    "en": "New story: choose right away between “Video story” and “Image story” (animated images and on-screen lines, very cheap)"
+   },
+   {
+    "type": "impr",
+    "text": "Personaggi che parlano senza lip sync: con «Muove la bocca» il personaggio parla in una clip normale e poi ci mettiamo la sua voce, molto più economico. Il lip sync resta come «Labbra sincronizzate»",
+    "en": "Talking characters without lip sync: with “Mouth moves” the character talks in a normal clip and then we add their voice, much cheaper. Lip sync stays as “Lip sync”"
+   },
+   {
+    "type": "impr",
+    "text": "Nelle scene del narratore nessuna bocca si muove",
+    "en": "In narrator scenes no mouth moves"
+   },
+   {
+    "type": "impr",
+    "text": "Storie AI rifatte: schermate più pulite, aiuto a comparsa, nuova schermata finale del video e nuova finestra Servizi AI",
+    "en": "AI Stories redesigned: cleaner screens, pop-up help, new final video screen and new AI services window"
+   },
+   {
+    "type": "impr",
+    "text": "Modello video predefinito più economico: Seedance 1.0 Pro Fast 720p (circa 2 centesimi al secondo)",
+    "en": "Cheaper default video model: Seedance 1.0 Pro Fast 720p (about 2 cents per second)"
+   },
+   {
+    "type": "impr",
+    "text": "Il nome ora si scrive NoonFrame",
+    "en": "The name is now written NoonFrame"
+   }
+  ]
+ },
+ {
   "version": "1.5.66",
   "date": "2026-09-29",
   "items": [
