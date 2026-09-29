@@ -1,13 +1,24 @@
 {
- "version": "1.5.59",
+ "version": "1.5.60",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.59.zip",
- "size": 6109661,
- "sha256": "dc89b362caec1dc8c297636cd26c84daa219a721fdebfd6658d370dcb1f4e62f",
- "sig": "aT3wpVkCrOabmSdzk/NfSKCH3/Vl1EVbpi2zi7Mm5ULI5f2kGSik9h1uurr4fy9eu2QRLl6S/ozRUKq3CBURDw==",
- "notes": "Miglioramento: Prodotto: carica gli screen della tua app, compaiono sul telefono nelle scene che mostrano l'app (pulsante App su ogni immagine)\nMiglioramento: Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.60.zip",
+ "size": 6110013,
+ "sha256": "6996fe98c76cab48f49c5f69d4f9a286924ab3c8adae4deb55c2bf3106adf4be",
+ "sig": "c9CrCc+476kCCF7nlnNDhvOuFMKH7lmRh33JOReHu9NrikChFhuIrV1tCzMWOmfv6ldYLjGJDPwGpzZSyNe6Cg==",
+ "notes": "Correzione: Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.60",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
+     "en": "AI images: if one gets stuck on fal.ai for 2.5 minutes it is cancelled and redone automatically (before it could hang for many minutes)"
+    }
+   ]
+  },
   {
    "version": "1.5.59",
    "date": "2026-09-29",
@@ -464,17 +475,6 @@
      "type": "impr",
      "text": "Preparato l'accesso con Google (in prova, ancora spento per tutti)",
      "en": "Google sign-in prepared (in testing, still off for everyone)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.30",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
-     "en": "Nuvora accounts: Google sign-in only for now (still off)"
     }
    ]
   }

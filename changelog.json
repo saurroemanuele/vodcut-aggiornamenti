@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.60",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
+    "en": "AI images: if one gets stuck on fal.ai for 2.5 minutes it is cancelled and redone automatically (before it could hang for many minutes)"
+   }
+  ]
+ },
+ {
   "version": "1.5.59",
   "date": "2026-09-29",
   "items": [
