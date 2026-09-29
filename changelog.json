@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.68",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Se fal.ai ha un intoppo momentaneo (errore 502/503/504) mentre controllo lo stato di un video, riprovo da solo invece di dare errore",
+    "en": "If fal.ai has a temporary hiccup (502/503/504) while I check a video's status, I retry by myself instead of failing"
+   },
+   {
+    "type": "fix",
+    "text": "In alto il riquadro «Da fare» non va più a capo",
+    "en": "The “To do” box at the top no longer wraps"
+   },
+   {
+    "type": "impr",
+    "text": "Schede delle clip rifatte: meno scritte, tipo di scena con tre icone (immagine, video, parla), prezzo e bottone Crea/Rifai sulla stessa riga, modello in piccolo sotto",
+    "en": "Clip cards redesigned: less text, scene type with three icons (image, video, talks), price and Create/Redo button on one row, model in small text below"
+   }
+  ]
+ },
+ {
   "version": "1.5.67",
   "date": "2026-09-29",
   "items": [

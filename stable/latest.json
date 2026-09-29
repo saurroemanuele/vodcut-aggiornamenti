@@ -1,13 +1,34 @@
 {
- "version": "1.5.67",
+ "version": "1.5.68",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.67.zip",
- "size": 6124604,
- "sha256": "f35a70236f18799161547ebd1675761a21dde66a8bd15a077cba8d27e2a3d8da",
- "sig": "RAEQbR/JicpDft1+gL+YBuldCZOc/qGfGizMbwlPF6FOrfNRsEHaXHIGE16v91BbdhO467CPS0ERaYqUtiZzBw==",
- "notes": "Miglioramento: Nuova storia: scegli subito «Storia con video» o «Storia con immagini» (immagini animate e frase a schermo, costa pochissimo)\nMiglioramento: Personaggi che parlano senza lip sync: con «Muove la bocca» il personaggio parla in una clip normale e poi ci mettiamo la sua voce, molto più economico. Il lip sync resta come «Labbra sincronizzate»\nMiglioramento: Nelle scene del narratore nessuna bocca si muove\nMiglioramento: Storie AI rifatte: schermate più pulite, aiuto a comparsa, nuova schermata finale del video e nuova finestra Servizi AI\nMiglioramento: Modello video predefinito più economico: Seedance 1.0 Pro Fast 720p (circa 2 centesimi al secondo)\nMiglioramento: Il nome ora si scrive NoonFrame",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.68.zip",
+ "size": 6125638,
+ "sha256": "531951fbdc6fa53d976166e4a17899b58f0ddde559f0c072bb60d5f301d20934",
+ "sig": "eNSSv3wcChiQ9ZL2knqegPi9oUNmWnAiIBfNCXb5DYPDhukNT0GEif8+bjSHPYMo4dvQ1m/lTXr1CkVE/sJcCA==",
+ "notes": "Correzione: Se fal.ai ha un intoppo momentaneo (errore 502/503/504) mentre controllo lo stato di un video, riprovo da solo invece di dare errore\nCorrezione: In alto il riquadro «Da fare» non va più a capo\nMiglioramento: Schede delle clip rifatte: meno scritte, tipo di scena con tre icone (immagine, video, parla), prezzo e bottone Crea/Rifai sulla stessa riga, modello in piccolo sotto",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.68",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Se fal.ai ha un intoppo momentaneo (errore 502/503/504) mentre controllo lo stato di un video, riprovo da solo invece di dare errore",
+     "en": "If fal.ai has a temporary hiccup (502/503/504) while I check a video's status, I retry by myself instead of failing"
+    },
+    {
+     "type": "fix",
+     "text": "In alto il riquadro «Da fare» non va più a capo",
+     "en": "The “To do” box at the top no longer wraps"
+    },
+    {
+     "type": "impr",
+     "text": "Schede delle clip rifatte: meno scritte, tipo di scena con tre icone (immagine, video, parla), prezzo e bottone Crea/Rifai sulla stessa riga, modello in piccolo sotto",
+     "en": "Clip cards redesigned: less text, scene type with three icons (image, video, talks), price and Create/Redo button on one row, model in small text below"
+    }
+   ]
+  },
   {
    "version": "1.5.67",
    "date": "2026-09-29",
@@ -469,17 +490,6 @@
      "type": "impr",
      "text": "Collega TikTok nei Formati: accedi una volta nella pagina ufficiale di TikTok e i link si scaricano con il tuo account. La sessione resta solo sul tuo computer, cifrata",
      "en": "Connect TikTok in Formats: sign in once on TikTok's official page and links download with your account. The session stays only on your computer, encrypted"
-    }
-   ]
-  },
-  {
-   "version": "1.5.38",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Link TikTok: se TikTok chiede l'accesso, Noonframe riprova presentandosi come altri browser",
-     "en": "TikTok links: if TikTok asks for login, Noonframe retries as other browsers"
     }
    ]
   }
