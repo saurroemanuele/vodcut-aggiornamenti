@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.70",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuova sezione «Reference» nella home: tutti i video e le immagini da cui l'AI impara, divisi per uso (Storie AI · script, Montaggio video, Storie AI · immagini) e per categoria (es. Imprenditoria, Prodotti digitali)",
+    "en": "New «References» section on the home: all the videos and images the AI learns from, split by use (AI Stories · script, Video editing, AI Stories · images) and by category (e.g. Entrepreneurship, Digital products)"
+   },
+   {
+    "type": "impr",
+    "text": "Reference di immagini: carica le immagini di uno stile, l'AI ne ricava il prompt e lo applichi a una pagina delle Storie AI in un clic",
+    "en": "Image references: upload images of a style, the AI extracts the prompt and you apply it to an AI Stories page in one click"
+   },
+   {
+    "type": "impr",
+    "text": "Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
+    "en": "In the editor's AI panel your styles show their category"
+   }
+  ]
+ },
+ {
   "version": "1.5.69",
   "date": "2026-09-29",
   "items": [

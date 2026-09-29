@@ -1,13 +1,34 @@
 {
- "version": "1.5.69",
+ "version": "1.5.70",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.69.zip",
- "size": 6145216,
- "sha256": "0ed42ca10b1dacfc91058ef12e37e6ac7bee200070458f15247d6d7ddc8245e6",
- "sig": "Xf5PoCS/a3wLRB5g66yPQaK6fVeS91jHez6Kf/UJ+zsjGv0wOd1/yEv8tovEitjqZUKNEk8o1aAVcefRc2KIBA==",
- "notes": "Miglioramento: Montaggio con l'AI: nell'editor c'è il nuovo pannello «AI». Scegli uno stile (Finanza e business, Gaming, Storytelling, Podcast o uno tuo) e l'AI prepara il montaggio: pause, tagli di errori e ripetizioni, zoom, sottotitoli, scritte e grafiche generate. Scegli cosa tenere e premi Applica: Annulla torna indietro in un colpo\nMiglioramento: Stile di montaggio dai tuoi video di riferimento: in Formati carica i video e premi «Analizza lo stile», l'AI guarda i fotogrammi e ne ricava ritmo, zoom, sottotitoli e grafiche\nMiglioramento: Grafiche AI con lo sfondo trasparente, pronte da usare come sticker",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.70.zip",
+ "size": 6150344,
+ "sha256": "e700567d2a1b0dae4afac881341b154f03353143d104e4b3235dd872fb2a70af",
+ "sig": "/3zPbnLt4Jifje/hp67Y1TKz3FhQO1+H4lWw6ntw9zH6Y2CgPkexHf5C07ZoeRKkKrJoc37lxDDGS3jyDMBNAQ==",
+ "notes": "Miglioramento: Nuova sezione «Reference» nella home: tutti i video e le immagini da cui l'AI impara, divisi per uso (Storie AI · script, Montaggio video, Storie AI · immagini) e per categoria (es. Imprenditoria, Prodotti digitali)\nMiglioramento: Reference di immagini: carica le immagini di uno stile, l'AI ne ricava il prompt e lo applichi a una pagina delle Storie AI in un clic\nMiglioramento: Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.70",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuova sezione «Reference» nella home: tutti i video e le immagini da cui l'AI impara, divisi per uso (Storie AI · script, Montaggio video, Storie AI · immagini) e per categoria (es. Imprenditoria, Prodotti digitali)",
+     "en": "New «References» section on the home: all the videos and images the AI learns from, split by use (AI Stories · script, Video editing, AI Stories · images) and by category (e.g. Entrepreneurship, Digital products)"
+    },
+    {
+     "type": "impr",
+     "text": "Reference di immagini: carica le immagini di uno stile, l'AI ne ricava il prompt e lo applichi a una pagina delle Storie AI in un clic",
+     "en": "Image references: upload images of a style, the AI extracts the prompt and you apply it to an AI Stories page in one click"
+    },
+    {
+     "type": "impr",
+     "text": "Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
+     "en": "In the editor's AI panel your styles show their category"
+    }
+   ]
+  },
   {
    "version": "1.5.69",
    "date": "2026-09-29",
@@ -479,27 +500,6 @@
      "type": "impr",
      "text": "Ogni video diventa Top / Ok / Flop in automatico",
      "en": "Each video becomes Top / Ok / Flop automatically"
-    }
-   ]
-  },
-  {
-   "version": "1.5.40",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Conteggio delle visual molto più preciso: guarda tutti i fotogrammi solo nella parte dove c'è il video (senza bande, titoli e sottotitoli) e scarta i falsi tagli",
-     "en": "Much more accurate shot counting: it checks every frame only where the video actually is (ignoring bars, titles and subtitles) and discards false cuts"
-    },
-    {
-     "type": "impr",
-     "text": "Pulsante per ricontare le visual in automatico, per un video o per tutti",
-     "en": "Button to recount shots automatically, for one video or all of them"
-    },
-    {
-     "type": "impr",
-     "text": "I video dei Formati sono divisi per piattaforma: TikTok, Instagram, YouTube, dal computer",
-     "en": "Format videos are grouped by platform: TikTok, Instagram, YouTube, from computer"
     }
    ]
   }
