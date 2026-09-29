@@ -1,13 +1,29 @@
 {
- "version": "1.5.60",
+ "version": "1.5.61",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.60.zip",
- "size": 6110013,
- "sha256": "6996fe98c76cab48f49c5f69d4f9a286924ab3c8adae4deb55c2bf3106adf4be",
- "sig": "c9CrCc+476kCCF7nlnNDhvOuFMKH7lmRh33JOReHu9NrikChFhuIrV1tCzMWOmfv6ldYLjGJDPwGpzZSyNe6Cg==",
- "notes": "Correzione: Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.61.zip",
+ "size": 6111710,
+ "sha256": "7909831da504393bd6ffefa0ba3bd8856c20d10ab37fb82aef104992ad153034",
+ "sig": "Q5yRtvnyTWGne/+lqz0gOlilbT7Jv5AJ4rYIaGBdamrqF3KK4IvwdYYpIT9aehfMCYmTjwIl3vOyRQ1nxAuWDw==",
+ "notes": "Correzione: Animazioni fluide: le anteprime delle clip non partono più tutte insieme in loop, si guardano passandoci sopra\nMiglioramento: Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.61",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Animazioni fluide: le anteprime delle clip non partono più tutte insieme in loop, si guardano passandoci sopra",
+     "en": "Smooth Animations step: clip previews no longer all loop at once, they play on hover"
+    },
+    {
+     "type": "impr",
+     "text": "Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
+     "en": "Animations: at the top the \"Do the characters talk?\" choice for the whole story, the scene count (talk / AI video / images) and a warning before creating videos where a character doesn't talk. In new stories characters already talk"
+    }
+   ]
+  },
   {
    "version": "1.5.60",
    "date": "2026-09-29",
@@ -464,17 +480,6 @@
      "type": "impr",
      "text": "Più sicurezza: controlli nuovi su progetti importati, aggiornamenti e dati dell'account",
      "en": "More security: new checks on imported projects, updates and account data"
-    }
-   ]
-  },
-  {
-   "version": "1.5.31",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Preparato l'accesso con Google (in prova, ancora spento per tutti)",
-     "en": "Google sign-in prepared (in testing, still off for everyone)"
     }
    ]
   }

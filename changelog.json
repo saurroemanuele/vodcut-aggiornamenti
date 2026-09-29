@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.61",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Animazioni fluide: le anteprime delle clip non partono più tutte insieme in loop, si guardano passandoci sopra",
+    "en": "Smooth Animations step: clip previews no longer all loop at once, they play on hover"
+   },
+   {
+    "type": "impr",
+    "text": "Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
+    "en": "Animations: at the top the \"Do the characters talk?\" choice for the whole story, the scene count (talk / AI video / images) and a warning before creating videos where a character doesn't talk. In new stories characters already talk"
+   }
+  ]
+ },
+ {
   "version": "1.5.60",
   "date": "2026-09-29",
   "items": [
