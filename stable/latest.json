@@ -1,13 +1,24 @@
 {
- "version": "1.5.70",
+ "version": "1.5.71",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.70.zip",
- "size": 6150344,
- "sha256": "e700567d2a1b0dae4afac881341b154f03353143d104e4b3235dd872fb2a70af",
- "sig": "/3zPbnLt4Jifje/hp67Y1TKz3FhQO1+H4lWw6ntw9zH6Y2CgPkexHf5C07ZoeRKkKrJoc37lxDDGS3jyDMBNAQ==",
- "notes": "Miglioramento: Nuova sezione «Reference» nella home: tutti i video e le immagini da cui l'AI impara, divisi per uso (Storie AI · script, Montaggio video, Storie AI · immagini) e per categoria (es. Imprenditoria, Prodotti digitali)\nMiglioramento: Reference di immagini: carica le immagini di uno stile, l'AI ne ricava il prompt e lo applichi a una pagina delle Storie AI in un clic\nMiglioramento: Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.71.zip",
+ "size": 6150312,
+ "sha256": "f9b67f68b922bbf192b90176ca0763bb0153122f7d4614ee37747733fd05771b",
+ "sig": "yVA+tG8bTt9OZ6ACwSz4ypEAwArTH/nSCVzSwnAvAo1HZC4fpL1eOTnKRhai8gpeVI5dqgaeA9w6L1xqGWk5Cw==",
+ "notes": "Miglioramento: I Reference ora si aprono dal menu della foto profilo (in alto a destra), non più dalla home",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.71",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "I Reference ora si aprono dal menu della foto profilo (in alto a destra), non più dalla home",
+     "en": "References now open from the profile picture menu (top right), no longer from the home"
+    }
+   ]
+  },
   {
    "version": "1.5.70",
    "date": "2026-09-29",
@@ -479,27 +490,6 @@
      "type": "impr",
      "text": "I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
      "en": "Videos posted less than 3 days ago are 'Too new' instead of Flop"
-    }
-   ]
-  },
-  {
-   "version": "1.5.41",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Analisi dei video dei Formati circa 10 volte più veloce: il video si legge una volta sola",
-     "en": "Format video analysis is about 10x faster: the video is read only once"
-    },
-    {
-     "type": "impr",
-     "text": "Views, like, commenti e condivisioni si leggono da soli dal link; visual e numeri non si modificano più a mano",
-     "en": "Views, likes, comments and shares are read automatically from the link; shots and numbers are no longer edited by hand"
-    },
-    {
-     "type": "impr",
-     "text": "Ogni video diventa Top / Ok / Flop in automatico",
-     "en": "Each video becomes Top / Ok / Flop automatically"
     }
    ]
   }

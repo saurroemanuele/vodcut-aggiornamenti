@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.71",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "I Reference ora si aprono dal menu della foto profilo (in alto a destra), non più dalla home",
+    "en": "References now open from the profile picture menu (top right), no longer from the home"
+   }
+  ]
+ },
+ {
   "version": "1.5.70",
   "date": "2026-09-29",
   "items": [
