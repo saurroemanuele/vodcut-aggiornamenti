@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.69",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Montaggio con l'AI: nell'editor c'è il nuovo pannello «AI». Scegli uno stile (Finanza e business, Gaming, Storytelling, Podcast o uno tuo) e l'AI prepara il montaggio: pause, tagli di errori e ripetizioni, zoom, sottotitoli, scritte e grafiche generate. Scegli cosa tenere e premi Applica: Annulla torna indietro in un colpo",
+    "en": "AI editing: the editor has a new «AI» panel. Choose a style (Finance and business, Gaming, Storytelling, Podcast or your own) and the AI prepares the edit: pauses, cuts of mistakes and repetitions, zooms, subtitles, text and generated graphics. Pick what to keep and press Apply: Undo reverts it all at once"
+   },
+   {
+    "type": "impr",
+    "text": "Stile di montaggio dai tuoi video di riferimento: in Formati carica i video e premi «Analizza lo stile», l'AI guarda i fotogrammi e ne ricava ritmo, zoom, sottotitoli e grafiche",
+    "en": "Editing style from your reference videos: in Formats upload the videos and press «Analyze the style», the AI looks at the frames and extracts pacing, zooms, subtitles and graphics"
+   },
+   {
+    "type": "impr",
+    "text": "Grafiche AI con lo sfondo trasparente, pronte da usare come sticker",
+    "en": "AI graphics with a transparent background, ready to use as stickers"
+   }
+  ]
+ },
+ {
   "version": "1.5.68",
   "date": "2026-09-29",
   "items": [
