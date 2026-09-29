@@ -1,13 +1,29 @@
 {
- "version": "1.5.58",
+ "version": "1.5.59",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.58.zip",
- "size": 6107617,
- "sha256": "67fd6719bf51d919d8d6d5b8988b415f0ef9cf3a3e4961cc62ba5b90be00de74",
- "sig": "fL9Am5E/pVa++82ajE1xdAnKJAY46HHwCXxX4abVVB+AUy1Mp77fuEgyF20WPjCeiy9paGRSo11UehDmMaAzDQ==",
- "notes": "Correzione: Storie AI: niente più errore \"Expecting ',' delimiter\" quando la storia ha dialoghi tra virgolette (la risposta dell'AI si ripara da sola o viene richiesta di nuovo)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.59.zip",
+ "size": 6109661,
+ "sha256": "dc89b362caec1dc8c297636cd26c84daa219a721fdebfd6658d370dcb1f4e62f",
+ "sig": "aT3wpVkCrOabmSdzk/NfSKCH3/Vl1EVbpi2zi7Mm5ULI5f2kGSik9h1uurr4fy9eu2QRLl6S/ozRUKq3CBURDw==",
+ "notes": "Miglioramento: Prodotto: carica gli screen della tua app, compaiono sul telefono nelle scene che mostrano l'app (pulsante App su ogni immagine)\nMiglioramento: Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.59",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Prodotto: carica gli screen della tua app, compaiono sul telefono nelle scene che mostrano l'app (pulsante App su ogni immagine)",
+     "en": "Product: upload your app screenshots, they appear on the phone in scenes that show the app (App button on each image)"
+    },
+    {
+     "type": "impr",
+     "text": "Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
+     "en": "\"Make everyone talk\" button: character lines become talking scenes, and images frame the speaker's face"
+    }
+   ]
+  },
   {
    "version": "1.5.58",
    "date": "2026-09-29",
@@ -459,17 +475,6 @@
      "type": "impr",
      "text": "Account Nuvora: per iniziare solo accesso con Google (ancora spento)",
      "en": "Nuvora accounts: Google sign-in only for now (still off)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.29",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
-     "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
     }
    ]
   }

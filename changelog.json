@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.59",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Prodotto: carica gli screen della tua app, compaiono sul telefono nelle scene che mostrano l'app (pulsante App su ogni immagine)",
+    "en": "Product: upload your app screenshots, they appear on the phone in scenes that show the app (App button on each image)"
+   },
+   {
+    "type": "impr",
+    "text": "Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
+    "en": "\"Make everyone talk\" button: character lines become talking scenes, and images frame the speaker's face"
+   }
+  ]
+ },
+ {
   "version": "1.5.58",
   "date": "2026-09-29",
   "items": [
