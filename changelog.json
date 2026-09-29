@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.64",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
+    "en": "More accurate cost estimates: images now use the model's real price (Nano Banana 2 on fal.ai costs $0.08, not $0.04) and story writing counts the tokens actually used"
+   }
+  ]
+ },
+ {
   "version": "1.5.63",
   "date": "2026-09-29",
   "items": [

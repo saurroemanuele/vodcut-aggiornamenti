@@ -1,13 +1,24 @@
 {
- "version": "1.5.63",
+ "version": "1.5.64",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.63.zip",
- "size": 6112305,
- "sha256": "0da1331cf1f7999b4790c79c08187651401494c7c872e2d854a98225366cc6bc",
- "sig": "UE+nX0rSRpuTss1OGESSyvmfVusJlhexUufVIxosYBhyZqfr3Pj9qRZfqXSvB+zL9K9xKAqjCx80bm8Y6Xj+Bw==",
- "notes": "Correzione: Video AI e scene che parlano: niente più scritte o sottotitoli inventati dentro i video (la battuta non va più nel prompt e il divieto di testo è esplicito)\nCorrezione: Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.64.zip",
+ "size": 6112649,
+ "sha256": "0a8c178a2fc43a6157695bd0dc576c10b0dc4382ce94039bf8da5231bd66e485",
+ "sig": "Sw7RyzZtFdH0j8BN7FRnmxnubs1JhkyqnywEpFeGmERcvl8LHQwPNo63tX1J5O53/NQ65b4msZCs+NbMELWACQ==",
+ "notes": "Correzione: Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.64",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
+     "en": "More accurate cost estimates: images now use the model's real price (Nano Banana 2 on fal.ai costs $0.08, not $0.04) and story writing counts the tokens actually used"
+    }
+   ]
+  },
   {
    "version": "1.5.63",
    "date": "2026-09-29",
@@ -459,22 +470,6 @@
      "type": "impr",
      "text": "In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
      "en": "On the home screen \"Image stories\" and \"AI Stories\" are now separate cards"
-    }
-   ]
-  },
-  {
-   "version": "1.5.34",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo: Storie AI. Da un argomento al video 9:16 con storia, immagini, voce, sottotitoli e musica, usando le tue chiavi AI (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)",
-     "en": "New: AI Stories. From a topic to a 9:16 video with story, images, voice, subtitles and music, using your own AI keys (OpenAI, Anthropic, Gemini, ElevenLabs, fal.ai)"
-    },
-    {
-     "type": "impr",
-     "text": "Pagine con stile, personaggi con foto di riferimento e voci che restano uguali in ogni storia",
-     "en": "Pages with style, characters with reference photos and voices that stay the same in every story"
     }
    ]
   }
