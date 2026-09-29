@@ -1,13 +1,24 @@
 {
- "version": "1.5.57",
+ "version": "1.5.58",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.57.zip",
- "size": 6106969,
- "sha256": "1b7cef31a8e44c9e16652ed0f1d424ce5fcfc4d90c03240a1ecb6db40d150197",
- "sig": "uYzDbvhym0Otg39L7Huml7Q2YZ7fNhqEifUsSUsmGwL1h/udDUhLPq79fNY9CDkJMq2ZSxOeKgA5WYW8hgoGCQ==",
- "notes": "Correzione: ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.58.zip",
+ "size": 6107617,
+ "sha256": "67fd6719bf51d919d8d6d5b8988b415f0ef9cf3a3e4961cc62ba5b90be00de74",
+ "sig": "fL9Am5E/pVa++82ajE1xdAnKJAY46HHwCXxX4abVVB+AUy1Mp77fuEgyF20WPjCeiy9paGRSo11UehDmMaAzDQ==",
+ "notes": "Correzione: Storie AI: niente più errore \"Expecting ',' delimiter\" quando la storia ha dialoghi tra virgolette (la risposta dell'AI si ripara da sola o viene richiesta di nuovo)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.58",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Storie AI: niente più errore \"Expecting ',' delimiter\" quando la storia ha dialoghi tra virgolette (la risposta dell'AI si ripara da sola o viene richiesta di nuovo)",
+     "en": "AI stories: no more \"Expecting ',' delimiter\" error when the story has quoted dialogue (the AI answer is repaired or requested again)"
+    }
+   ]
+  },
   {
    "version": "1.5.57",
    "date": "2026-09-29",
@@ -459,17 +470,6 @@
      "type": "impr",
      "text": "Account Nuvora: accesso solo con Google o Apple (ancora spento)",
      "en": "Nuvora accounts: sign in with Google or Apple only (still off)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.28",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Preparato l'account Nuvora (accesso con Google o con codice via email): resta spento finché non viene attivato",
-     "en": "Nuvora accounts prepared (Google or email code sign-in): off until activated"
     }
    ]
   }
