@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.62",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
+    "en": "Animations: previews play on hover while videos are being created (before the page redrew every 2 seconds and stopped them)"
+   }
+  ]
+ },
+ {
   "version": "1.5.61",
   "date": "2026-09-29",
   "items": [

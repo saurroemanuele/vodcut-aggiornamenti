@@ -1,13 +1,24 @@
 {
- "version": "1.5.61",
+ "version": "1.5.62",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.61.zip",
- "size": 6111710,
- "sha256": "7909831da504393bd6ffefa0ba3bd8856c20d10ab37fb82aef104992ad153034",
- "sig": "Q5yRtvnyTWGne/+lqz0gOlilbT7Jv5AJ4rYIaGBdamrqF3KK4IvwdYYpIT9aehfMCYmTjwIl3vOyRQ1nxAuWDw==",
- "notes": "Correzione: Animazioni fluide: le anteprime delle clip non partono più tutte insieme in loop, si guardano passandoci sopra\nMiglioramento: Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.62.zip",
+ "size": 6111994,
+ "sha256": "87845b8b73c3f10e726b1b3bd60ae53666f418ac36f321427264187f0de916a2",
+ "sig": "xXRCLkhWEx+1ZbssXbQN4gr60Ii3g8V2xhzDN1A7MB1+kKpM73CLCMExJF2bUeQasF0HngdVv58XNuwhyQYzCg==",
+ "notes": "Correzione: Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.62",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
+     "en": "Animations: previews play on hover while videos are being created (before the page redrew every 2 seconds and stopped them)"
+    }
+   ]
+  },
   {
    "version": "1.5.61",
    "date": "2026-09-29",
@@ -459,27 +470,6 @@
      "type": "impr",
      "text": "Nuovo nome: Nuvora diventa Noonframe, con il nuovo logo",
      "en": "New name: Nuvora is now Noonframe, with a new logo"
-    }
-   ]
-  },
-  {
-   "version": "1.5.32",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Accesso con Google in una finestra nuova, direttamente sopra l'app",
-     "en": "Google sign-in in a new window, right on top of the app"
-    },
-    {
-     "type": "impr",
-     "text": "Nuova pagina profilo: foto, nome utente e ID Nuvora",
-     "en": "New profile page: photo, username and Nuvora ID"
-    },
-    {
-     "type": "impr",
-     "text": "Più sicurezza: controlli nuovi su progetti importati, aggiornamenti e dati dell'account",
-     "en": "More security: new checks on imported projects, updates and account data"
     }
    ]
   }
