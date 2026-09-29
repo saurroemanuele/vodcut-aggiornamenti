@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.56",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Crea le voci dei personaggi da una descrizione (ElevenLabs Voice Design): 3 proposte da ascoltare, tieni quella giusta e resta per tutte le storie della pagina",
+    "en": "Create character voices from a description (ElevenLabs Voice Design): 3 options to listen to, keep the right one and it stays for every story on the page"
+   },
+   {
+    "type": "impr",
+    "text": "Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
+    "en": "Talking scenes: the character really says their line with lips in sync (lip sync), 7 fal.ai models with exact price"
+   }
+  ]
+ },
+ {
   "version": "1.5.55",
   "date": "2026-09-29",
   "items": [

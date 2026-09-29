@@ -1,13 +1,29 @@
 {
- "version": "1.5.55",
+ "version": "1.5.56",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.55.zip",
- "size": 6098987,
- "sha256": "1a97f6cb1618c22b646f12d2aa5c268833455fd832836ac8c8ecc43d9fc67ae6",
- "sig": "pHWcVHPnsQ2/pk6ZzSeb51WEdKzRdBriSjRkXnnly+FjAkv1Zs4d7EwJcKKctENuI2GtCkw9tfH/xW3sHJ/oDA==",
- "notes": "Correzione: Storie AI: voce, sottotitoli e scene allineati al millesimo per tutta la durata (prima si sfasavano di qualche centesimo a ogni frase e alla fine erano oltre un secondo fuori)\nMiglioramento: Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.56.zip",
+ "size": 6106221,
+ "sha256": "3c0ad599cb0d6a0cf2266005ba16b2cd8622babde1c641111bf3e611adb3e5d1",
+ "sig": "6jtrg5xuqkM17dmvGCbVrLcSXNdQpJ2fNf75aWzPbZB4KNK3xROsRTdfxR5yUIIun4nL4UyQM16lAnWmENxRCw==",
+ "notes": "Miglioramento: Crea le voci dei personaggi da una descrizione (ElevenLabs Voice Design): 3 proposte da ascoltare, tieni quella giusta e resta per tutte le storie della pagina\nMiglioramento: Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.56",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crea le voci dei personaggi da una descrizione (ElevenLabs Voice Design): 3 proposte da ascoltare, tieni quella giusta e resta per tutte le storie della pagina",
+     "en": "Create character voices from a description (ElevenLabs Voice Design): 3 options to listen to, keep the right one and it stays for every story on the page"
+    },
+    {
+     "type": "impr",
+     "text": "Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
+     "en": "Talking scenes: the character really says their line with lips in sync (lip sync), 7 fal.ai models with exact price"
+    }
+   ]
+  },
   {
    "version": "1.5.55",
    "date": "2026-09-29",
@@ -454,17 +470,6 @@
      "type": "impr",
      "text": "Informativa privacy aggiornata e più chiara: cosa resta sul computer, quando Nuvora usa internet, cosa contengono le segnalazioni",
      "en": "Clearer privacy notice: what stays on your computer, when Nuvora goes online, what reports contain"
-    }
-   ]
-  },
-  {
-   "version": "1.5.26",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Tornano i colori di prima dell'interfaccia; in timeline gli oggetti (zoom, filtri, sottotitoli, tracce) hanno i colori piatti della palette Nuvora",
-     "en": "Flat Nuvora colors for clips, zooms and subtitles in the timeline"
     }
    ]
   }
