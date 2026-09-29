@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.65",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Ogni scena mostra cosa sta succedendo: in attesa, in coda su fal.ai, in creazione, con il tempo che passa",
+    "en": "Each scene shows what's happening: waiting, queued on fal.ai, being created, with elapsed time"
+   },
+   {
+    "type": "impr",
+    "text": "Selezione delle scene in Animazioni: seleziona tutti / deseleziona / solo quelli da fare, e crea solo i selezionati con il costo totale",
+    "en": "Scene selection in Animations: select all / deselect / only missing ones, and create only the selected with the total cost"
+   },
+   {
+    "type": "impr",
+    "text": "8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
+    "en": "8 budget video models at 720p or lower (2 to 4 cents per second), tagged Budget"
+   }
+  ]
+ },
+ {
   "version": "1.5.64",
   "date": "2026-09-29",
   "items": [

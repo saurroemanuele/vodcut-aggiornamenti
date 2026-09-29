@@ -1,13 +1,34 @@
 {
- "version": "1.5.64",
+ "version": "1.5.65",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.64.zip",
- "size": 6112649,
- "sha256": "0a8c178a2fc43a6157695bd0dc576c10b0dc4382ce94039bf8da5231bd66e485",
- "sig": "Sw7RyzZtFdH0j8BN7FRnmxnubs1JhkyqnywEpFeGmERcvl8LHQwPNo63tX1J5O53/NQ65b4msZCs+NbMELWACQ==",
- "notes": "Correzione: Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.65.zip",
+ "size": 6115457,
+ "sha256": "c76361cc1f25eb2b95408c009c09345ee4d0837abe0473f19b8304d9a34e0a6d",
+ "sig": "4t+hJa//83TUYmQJeSy3tEVmS2b8nf0HsgZO+CP4EeY2vkykFY+qyzW6sJkxU7bT0rAT0pGrsk1N1DawW4ZVDw==",
+ "notes": "Miglioramento: Ogni scena mostra cosa sta succedendo: in attesa, in coda su fal.ai, in creazione, con il tempo che passa\nMiglioramento: Selezione delle scene in Animazioni: seleziona tutti / deseleziona / solo quelli da fare, e crea solo i selezionati con il costo totale\nMiglioramento: 8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.65",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Ogni scena mostra cosa sta succedendo: in attesa, in coda su fal.ai, in creazione, con il tempo che passa",
+     "en": "Each scene shows what's happening: waiting, queued on fal.ai, being created, with elapsed time"
+    },
+    {
+     "type": "impr",
+     "text": "Selezione delle scene in Animazioni: seleziona tutti / deseleziona / solo quelli da fare, e crea solo i selezionati con il costo totale",
+     "en": "Scene selection in Animations: select all / deselect / only missing ones, and create only the selected with the total cost"
+    },
+    {
+     "type": "impr",
+     "text": "8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
+     "en": "8 budget video models at 720p or lower (2 to 4 cents per second), tagged Budget"
+    }
+   ]
+  },
   {
    "version": "1.5.64",
    "date": "2026-09-29",
@@ -444,32 +465,6 @@
      "type": "impr",
      "text": "Nuova scheda Prodotto nella pagina: gli script di vendita usano solo le informazioni del tuo prodotto",
      "en": "New Product tab on the page: sales scripts only use your product's information"
-    }
-   ]
-  },
-  {
-   "version": "1.5.35",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Storie AI: video AI con fal.ai (Kling). Scegli quante scene diventano clip vere, le altre restano immagini animate gratis",
-     "en": "AI Stories: AI video with fal.ai (Kling). Choose how many scenes become real clips, the others stay free animated images"
-    },
-    {
-     "type": "impr",
-     "text": "Storie AI: puoi usare la tua registrazione al posto della voce AI",
-     "en": "AI Stories: you can use your own recording instead of the AI voice"
-    },
-    {
-     "type": "impr",
-     "text": "Storie AI più chiara e più bella: guida \"Come funziona\", spiegazioni a ogni passaggio, costi prima di generare",
-     "en": "AI Stories clearer and nicer: \"How it works\" guide, explanations at every step, costs before generating"
-    },
-    {
-     "type": "impr",
-     "text": "In home \"Storie con immagini\" e \"Storie AI\" sono due schede separate",
-     "en": "On the home screen \"Image stories\" and \"AI Stories\" are now separate cards"
     }
    ]
   }
