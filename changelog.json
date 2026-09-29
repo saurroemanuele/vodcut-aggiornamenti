@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.72",
+  "date": "2026-09-29",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovo logo di NoonFrame: nell'app, nell'icona del Mac e in quella di Windows",
+    "en": "New NoonFrame logo: in the app, in the Mac icon and in the Windows icon"
+   }
+  ]
+ },
+ {
   "version": "1.5.71",
   "date": "2026-09-29",
   "items": [

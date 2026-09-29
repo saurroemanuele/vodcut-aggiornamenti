@@ -1,13 +1,24 @@
 {
- "version": "1.5.71",
+ "version": "1.5.72",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.71.zip",
- "size": 6150312,
- "sha256": "f9b67f68b922bbf192b90176ca0763bb0153122f7d4614ee37747733fd05771b",
- "sig": "yVA+tG8bTt9OZ6ACwSz4ypEAwArTH/nSCVzSwnAvAo1HZC4fpL1eOTnKRhai8gpeVI5dqgaeA9w6L1xqGWk5Cw==",
- "notes": "Miglioramento: I Reference ora si aprono dal menu della foto profilo (in alto a destra), non più dalla home",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.72.zip",
+ "size": 6656437,
+ "sha256": "d7e28492def65ac5fc5f8631251973405fa95dc413ea631a9afacd01336f2945",
+ "sig": "ijc+mMoJmFVdoIu6an1aHjNFACBP52dNnXTgeg9LVQmfaw2FK+um1SGsLlN+M9TwCx88wNKZ7EMDOs6ZnRW7CQ==",
+ "notes": "Miglioramento: Nuovo logo di NoonFrame: nell'app, nell'icona del Mac e in quella di Windows",
  "date": "2026-09-29",
  "history": [
+  {
+   "version": "1.5.72",
+   "date": "2026-09-29",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo logo di NoonFrame: nell'app, nell'icona del Mac e in quella di Windows",
+     "en": "New NoonFrame logo: in the app, in the Mac icon and in the Windows icon"
+    }
+   ]
+  },
   {
    "version": "1.5.71",
    "date": "2026-09-29",
@@ -469,27 +480,6 @@
      "type": "fix",
      "text": "Le segnalazioni con un registro molto lungo non venivano consegnate: ora arrivano sempre",
      "en": "Reports with a very long log were not delivered: now they always arrive"
-    }
-   ]
-  },
-  {
-   "version": "1.5.42",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Incollando un link mentre i video si caricano, il testo e il cursore non spariscono più; il link si aggiunge appena lo incolli",
-     "en": "Pasting a link while videos are loading no longer clears the text or the cursor; the link is added as soon as you paste it"
-    },
-    {
-     "type": "impr",
-     "text": "Prima di creare il formato scegli chi lo analizza: per ogni modello vedi quanto costa, perché sceglierlo e quale ti consigliamo",
-     "en": "Before creating a format you choose who analyzes it: for each model you see the cost, why to pick it and which one we recommend"
-    },
-    {
-     "type": "impr",
-     "text": "I video usciti da meno di 3 giorni sono 'Troppo nuovo' invece di Flop",
-     "en": "Videos posted less than 3 days ago are 'Too new' instead of Flop"
     }
    ]
   }
