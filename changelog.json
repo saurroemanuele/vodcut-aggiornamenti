@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.84",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
+    "en": "New «Remove background»: on a video or image above the stream, remove a green, blue or any solid-color backdrop (eyedropper, auto-detect, soft edges, spill removal and mask view)"
+   }
+  ]
+ },
+ {
   "version": "1.5.83",
   "date": "2026-09-30",
   "items": [

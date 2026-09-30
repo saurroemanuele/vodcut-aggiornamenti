@@ -1,13 +1,24 @@
 {
- "version": "1.5.83",
+ "version": "1.5.84",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.83.zip",
- "size": 7239061,
- "sha256": "2b8b96fc84e6763f1c2dc77e41de9b879193f6bcbeb9b13d01566e40e46f105c",
- "sig": "wbacjzzHqpfjlIaMJHxvvx9zuMoZkVv8T1ooudwgIV4pOSqyUFmz2vdkaX4fvlw1A7Tz+S7OZftB69UG4wB+BQ==",
- "notes": "Correzione: Il pannello AI non mostra più la scritta «null» mentre crea le grafiche\nMiglioramento: Grafiche AI e ritagli per i titoli dietro di te già fatti vengono riusati: niente attese né costi di nuovo se riapri il progetto o riapplichi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.84.zip",
+ "size": 7245611,
+ "sha256": "265281bd615fe40c44d3b98c6f9e01c006bc5d8b758bda07bd07e59f1dccf305",
+ "sig": "hqNETdQK/e+FzHoWhou/6FDmb/wo7ZhrrQiPuW919b1ujmHdY2fxvtoiQA9QA8LR9n1GctbMWtEswRIl9LYIAQ==",
+ "notes": "Miglioramento: Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.84",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
+     "en": "New «Remove background»: on a video or image above the stream, remove a green, blue or any solid-color backdrop (eyedropper, auto-detect, soft edges, spill removal and mask view)"
+    }
+   ]
+  },
   {
    "version": "1.5.83",
    "date": "2026-09-30",
@@ -539,17 +550,6 @@
      "type": "impr",
      "text": "Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
      "en": "\"Rebuild\" button in the story editor: redoes the edit with correct timing without regenerating anything (free)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.54",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
-     "en": "Mac: AI videos in the preview now actually play and stay in sync with the voice (macOS was blocking them: choppy and out of sync)"
     }
    ]
   }
