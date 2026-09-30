@@ -1,13 +1,24 @@
 {
- "version": "1.5.86",
+ "version": "1.5.87",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.86.zip",
- "size": 7253182,
- "sha256": "f3b9d7de25a62fe9b570cd23c4d3bed14f815a79902cc597b2edd27d3dabe473",
- "sig": "rURpd0YLnUJ0pwbkuhMnTmJpkr9XJYK5JiP3T+fv+IUsWpwtMdyBjY82XUqXAXSmUymX1b5mdNrOAu6Xzi58AQ==",
- "notes": "Miglioramento: Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.87.zip",
+ "size": 7253792,
+ "sha256": "fadd79fb6c87b9e9948cf7763e27e075fa54521af71507444016dd32e1123042",
+ "sig": "izkEoJFoe6CBR2ue08eDv9lGsyebLGVn2lcZclT9C3ZgiUuLdzfB0BpJh8KQfYqyVAg8tJrhoI5P8YTMvQ4NAw==",
+ "notes": "Miglioramento: «Rimuovi sfondo» anche sulle clip della traccia principale: un clic porta la clip su una traccia sopra e toglie lo sfondo (tinta unita o AI)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.87",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "«Rimuovi sfondo» anche sulle clip della traccia principale: un clic porta la clip su una traccia sopra e toglie lo sfondo (tinta unita o AI)",
+     "en": "«Remove background» also on main-track clips: one click moves the clip to a track above and removes the background (solid color or AI)"
+    }
+   ]
+  },
   {
    "version": "1.5.86",
    "date": "2026-09-30",
@@ -529,17 +540,6 @@
      "type": "fix",
      "text": "Storie AI: niente più errore \"Expecting ',' delimiter\" quando la storia ha dialoghi tra virgolette (la risposta dell'AI si ripara da sola o viene richiesta di nuovo)",
      "en": "AI stories: no more \"Expecting ',' delimiter\" error when the story has quoted dialogue (the AI answer is repaired or requested again)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.57",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
-     "en": "ElevenLabs: when an operation isn't allowed we now explain the exact reason (restricted key, free plan, voice slots full) and what to do"
     }
    ]
   }
