@@ -1,13 +1,39 @@
 {
- "version": "1.5.79",
+ "version": "1.5.80",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.79.zip",
- "size": 7224022,
- "sha256": "ac3475818d937ac7a7de902d190f5c2804e58ff1aa2678fe70d9fddf42493e21",
- "sig": "7102YGVQb/pXEP8hHNMuHJDWcKMPdojeyEIV6X8uVnzTKvAAw+nQC8632PPfemNMcYENlx9TD5HPkHjAV5scAg==",
- "notes": "Miglioramento: Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole\nMiglioramento: Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra\nMiglioramento: Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI\nMiglioramento: Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella\nMiglioramento: Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.80.zip",
+ "size": 7237015,
+ "sha256": "1979df7bb2ea8ab4f4a01fc5f9a9c98c907307ed3d5a0dbda904a4c03779d581",
+ "sig": "wdbm4t9ZMDMhyIj9b6nCMzXwdlIoaHxtqzkcDvfdVBJRzmzmNH2M59h/AeLbkJZVh9+A9MIegQMg6C4iw+wgCg==",
+ "notes": "Correzione: Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura\nMiglioramento: Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile\nMiglioramento: Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)\nMiglioramento: Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.80",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura",
+     "en": "AI zooms centered on you (the app looks where your face is), no longer on the top of the frame"
+    },
+    {
+     "type": "impr",
+     "text": "Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile",
+     "en": "Titles behind you: big, at the top, with animated viral styles and the person cut out in front (green screen effect without a green screen). Still editable: click the title to change text or style"
+    },
+    {
+     "type": "impr",
+     "text": "Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)",
+     "en": "New clean animated graphics without boxes: big, centered, each element appears when you say it"
+    },
+    {
+     "type": "impr",
+     "text": "Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
+     "en": "AI images: choose the model (Ideogram 3 with transparent background, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)"
+    }
+   ]
+  },
   {
    "version": "1.5.79",
    "date": "2026-09-30",
@@ -559,22 +585,6 @@
      "type": "impr",
      "text": "Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
      "en": "Social badges: 'Repeat in the video' places them mid-video, at the start and end, or every 5/10/15 minutes"
-    }
-   ]
-  },
-  {
-   "version": "1.5.50",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Voci: 'Ascolta' fa sentire la voce nella lingua della pagina (non più il campione in inglese), le voci che parlano italiano hanno la ★ e genere, età e accento sono in italiano",
-     "en": "Voices: 'Listen' plays the voice in the page's language (no more English samples), voices that speak the language get a ★, and gender, age and accent are translated"
-    },
-    {
-     "type": "impr",
-     "text": "Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
-     "en": "New 'Italian voices' button: find native-speaker voices in the ElevenLabs library, listen to them and add them with 'Use this one'"
     }
    ]
   }

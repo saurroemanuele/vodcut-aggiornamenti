@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.80",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura",
+    "en": "AI zooms centered on you (the app looks where your face is), no longer on the top of the frame"
+   },
+   {
+    "type": "impr",
+    "text": "Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile",
+    "en": "Titles behind you: big, at the top, with animated viral styles and the person cut out in front (green screen effect without a green screen). Still editable: click the title to change text or style"
+   },
+   {
+    "type": "impr",
+    "text": "Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)",
+    "en": "New clean animated graphics without boxes: big, centered, each element appears when you say it"
+   },
+   {
+    "type": "impr",
+    "text": "Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
+    "en": "AI images: choose the model (Ideogram 3 with transparent background, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)"
+   }
+  ]
+ },
+ {
   "version": "1.5.79",
   "date": "2026-09-30",
   "items": [
