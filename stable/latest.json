@@ -1,13 +1,24 @@
 {
- "version": "1.5.81",
+ "version": "1.5.82",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.81.zip",
- "size": 7237928,
- "sha256": "cc0de4ba7a91e751d175ee322fc3b6937184bc807de9b97188dc6fd980ea3234",
- "sig": "DiPaV70W4I32q4bjVPhARae9Z/nl29ONZCMsyEROrpHOvna5cGj8/jXqh6vbVmUkMP2Df2CA5YfkYCJubs02Bg==",
- "notes": "Correzione: Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.82.zip",
+ "size": 7238638,
+ "sha256": "2e352841bb98496acfa43c3c72e0a5d5a9712f10450db86a3ece8e4fe2cbd3a4",
+ "sig": "fQD8d+aBk5d+yeYsjRU4plSpvKTWUVAjYzE/6GGXs+QcwlW27Eq6cqvcX1rYTJsKmFOq84E/eFbup5LNmu5RDw==",
+ "notes": "Correzione: Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.82",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
+     "en": "Titles behind you: 4x lighter person cut-out model (44 MB), visible progress and a button to skip and put titles over the video"
+    }
+   ]
+  },
   {
    "version": "1.5.81",
    "date": "2026-09-30",
@@ -549,32 +560,6 @@
      "type": "impr",
      "text": "Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
      "en": "Pauses between lines: automatic after questions, exclamations and speaker changes, or set by hand (no more hard cuts)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.52",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video AI: la stima ora usa il prezzo vero del modello scelto e la durata vera della clip pagata",
-     "en": "AI video: the estimate now uses the real price of the chosen model and the real billed clip length"
-    },
-    {
-     "type": "fix",
-     "text": "Video AI: si chiede sempre la clip più corta possibile (da 3 secondi con Kling 3) invece di 5 o 10: si spende molto meno",
-     "en": "AI video: always requests the shortest possible clip (3 seconds with Kling 3) instead of 5 or 10: much cheaper"
-    },
-    {
-     "type": "fix",
-     "text": "Se la rete cade mentre si manda una richiesta a fal.ai non viene più rimandata (evita di pagarla due volte)",
-     "en": "If the network drops while sending a request to fal.ai it is no longer resent (avoids paying twice)"
-    },
-    {
-     "type": "impr",
-     "text": "Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
-     "en": "Choose AI video quality (Budget, Good, High, Best) with the price of each clip"
     }
    ]
   }

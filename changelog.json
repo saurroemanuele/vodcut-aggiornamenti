@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.82",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
+    "en": "Titles behind you: 4x lighter person cut-out model (44 MB), visible progress and a button to skip and put titles over the video"
+   }
+  ]
+ },
+ {
   "version": "1.5.81",
   "date": "2026-09-30",
   "items": [
