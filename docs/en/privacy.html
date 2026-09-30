@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy · NoonFrame</title>
+<link rel="icon" href="../favicon.png">
+<style>
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(../fonts/inter-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(../fonts/inter-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
+:root { --bg: #FFFFFF; --ink: #071D4D; --ink-2: #3D5485; --ink-3: #6E83AE; --line: #DCE8FF; --accent: #1E6BFF; color-scheme: light;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font); letter-spacing: -0.012em; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); }
+.nav { border-bottom: 1px solid var(--line); }
+.wrap { width: min(760px, 100%); margin: 0 auto; padding-inline: 24px; }
+.nav .wrap { height: 64px; display: flex; align-items: center; justify-content: space-between; width: min(1160px, 100%); }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); font-weight: 600; font-size: 21px; letter-spacing: -0.02em; }
+.brand img { width: 32px; height: 32px; }
+.back { font-size: 15px; text-decoration: none; }
+.right { display: flex; gap: 18px; align-items: center; }
+.lng { font-size: 14px; font-weight: 600; color: var(--ink-2); text-decoration: none; }
+main { padding-block: 56px 80px; }
+h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.05; letter-spacing: -0.03em; margin: 0; }
+.ver { color: var(--ink-3); font-size: 15px; margin: 12px 0 0; }
+.lead { font-size: 21px; line-height: 1.45; color: var(--ink); margin: 28px 0 8px; }
+h2 { font-size: 22px; letter-spacing: -0.02em; margin: 40px 0 10px; }
+p, li { color: var(--ink-2); }
+p { margin: 10px 0; }
+ul { margin: 10px 0; padding-left: 22px; display: grid; gap: 6px; }
+footer { border-top: 1px solid var(--line); padding-block: 28px; font-size: 14px; color: var(--ink-3); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 20px; width: min(1160px, 100%); }
+footer a { color: var(--ink-3); text-decoration: none; }
+footer a:hover { color: var(--ink); }
+@media (max-width: 640px) { .wrap { padding-inline: 16px; } body { font-size: 16px; } .lead { font-size: 19px; } }
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><a class="brand" href="index.html"><img src="../logo.png" alt="">NoonFrame</a><span class="right"><a class="lng" href="../privacy.html">IT</a><a class="back" href="index.html#download">Download NoonFrame</a></span></div></header>
+<main class="wrap">
+<h1>Privacy</h1>
+<p class="ver">Version 2.2 · 28 September 2026</p>
+<p class="lead">NoonFrame works on your computer. Your videos, projects, subtitles and audio stay there: we don&#x27;t upload them anywhere. To use the app you need a free account: here is what data it handles and why.</p>
+<h2>Who is responsible</h2>
+<p>The data controller is Emanuele Saurro. For any privacy question write to <a href="mailto:business@noonframe.com">business@noonframe.com</a>.</p>
+<h2>Your account</h2>
+<p>To use NoonFrame you sign in with Google. From Google we only receive your email address, your name and the address of your profile picture: never your password and nothing else from your Google account.</p>
+<p>In your NoonFrame profile we also store:</p>
+<ul><li>the username and name you choose, and your photo if you upload one (resized to 256×256);</li><li>a random 8-digit NoonFrame ID that identifies your account;</li><li>the date you joined and your last sign-in.</li></ul>
+<p>For now only we can see your profile. If in the future other people can see your username or photo, we will say so here and in the app before turning it on.</p>
+<h2>Devices and app usage</h2>
+<ul><li>Devices: for each computer you sign in from we store the operating system, processor type, NoonFrame version, app language, whether there is an NVIDIA graphics card, and the date of the first and last sign-in.</li><li>Feature usage: we record which tools you use (for example &quot;export finished in 40 seconds&quot; or &quot;title added&quot;). Only action names, outcomes and durations: never your videos, texts, subtitles or file names.</li></ul>
+<p>We need them to run your account, protect it from abuse (for example suspending an account that breaks the terms) and understand what to improve.</p>
+<h2>What stays on your computer</h2>
+<ul><li>Projects, previews and exported videos, in the VODcut folder inside your user folder.</li><li>Transcription and subtitles: created by an AI model that runs on your computer.</li><li>Background removal from images: also done on your computer.</li><li>Your account session, so you stay signed in without internet. On Windows it is encrypted with your computer user; on Mac it is in a file only your user can read.</li><li>A log file, used only to understand errors. It is sent only if you attach it to a report.</li></ul>
+<h2>Reports you send us</h2>
+<p>With &quot;Report a problem&quot; or &quot;Request a change&quot; you can send us a message. It is sent only when you press Send, it is linked to your account and contains:</p>
+<ul><li>the text you write and, if you enter it, a contact so we can reply;</li><li>the screenshots you add;</li><li>technical information: NoonFrame version, operating system, processor, graphics card, app language, the screen you were on and the latest errors;</li><li>only if you leave the box ticked: the app log and the open project, without the words of the subtitles.</li></ul>
+<p>We remove your computer user name from the log and file paths before sending. Only we read them, to fix problems and decide new features.</p>
+<h2>Where the data is and how it is protected</h2>
+<p>Account, profile, devices, feature usage and reports are stored in a Supabase database (Supabase Inc.) on servers in the European Union, in Frankfurt. The connection is always encrypted.</p>
+<p>The database is locked down: each account can only read its own data, and the app can only write through controlled functions. No other user can see your data.</p>
+<p>Supabase and Google are companies based in the United States: where needed, they process data under the Standard Contractual Clauses approved by the European Commission.</p>
+<h2>When NoonFrame uses the internet</h2>
+<p>Besides your account, your computer contacts these services directly. They see your IP address as with any download and apply their own privacy rules. NoonFrame never sends them your videos.</p>
+<ul><li>Updates: at every start NoonFrame checks GitHub for a new version and downloads it. It only sends the file request.</li><li>Subtitles: the first time, it downloads the transcription model from Hugging Face.</li><li>NVIDIA graphics (Windows only): if your computer has one, NoonFrame downloads the acceleration components from PyPI once.</li><li>Background removal: the first time, it downloads the tool from PyPI and its model.</li><li>Stream links: if you paste a Twitch, Kick or YouTube link, NoonFrame downloads that video from the platform.</li></ul>
+<h2>AI Stories with your own keys</h2>
+<p>If you use AI Stories, you connect your own AI service accounts (for example OpenAI, Anthropic, Google Gemini, ElevenLabs or fal.ai) with your keys. The keys stay only on your computer: encrypted with your user on Windows, in the Keychain on Mac. We never receive them.</p>
+<p>Topics, scripts, scene descriptions, character reference photos and texts to read go from your computer directly to the service you chose, with your account: that service handles them under its own rules and the costs are yours. NoonFrame does not receive or store them.</p>
+<p>Generated images, voices, video clips and stories stay on your computer, in the VODcut folder. In feature usage we only record the name of the service used and how many images or voices were created, never the content.</p>
+<p>In Formats you can analyze reference videos: transcription, shots and frames are processed on your computer and stay there. If you connect TikTok to download videos from links, you sign in on TikTok&#x27;s official page (only TikTok sees your password); the session stays only on your computer, encrypted, and you can disconnect it at any time. NoonFrame never receives it.</p>
+<h2>Legal basis and how long we keep data</h2>
+<ul><li>Account, profile and devices: needed to provide the app (performance of a contract). Kept as long as the account exists.</li><li>Feature usage: our legitimate interest in improving NoonFrame and protecting it from abuse. Kept for up to 24 months.</li><li>Reports: your consent, given by pressing Send. Kept for up to 24 months.</li></ul>
+<h2>Deleting your account</h2>
+<p>On your profile page, &quot;Delete account&quot; immediately and permanently deletes your account, profile, photo, devices, feature usage and reports. Projects and videos on your computer stay.</p>
+<h2>This website</h2>
+<ul><li>It uses no cookies, analytics, advertising or tracking tools.</li><li>Fonts are served from our own server: the site doesn&#x27;t contact Google or other font services.</li><li>The installers are hosted on GitHub: when you press Download, the file comes from there.</li><li>The &quot;Latest updates&quot; list is read from GitHub when you open the page.</li><li>The service hosting the site may log, for technical and security reasons, data such as IP address, date and requested page.</li></ul>
+<h2>What we don&#x27;t do</h2>
+<ul><li>No uploading of your videos, projects or subtitles to our servers or anyone else&#x27;s.</li><li>No advertising and no selling of data.</li><li>No tracking outside the app and no sharing of your data with other users.</li></ul>
+<h2>Your rights</h2>
+<p>You can ask at any time to see, correct, export or delete your data, to restrict its use or to object, by writing to <a href="mailto:business@noonframe.com">business@noonframe.com</a>. If you think your data is handled unfairly you can complain to your data protection authority (in Italy, the Garante per la protezione dei dati personali, garanteprivacy.it).</p>
+<h2>Deleting everything from your computer</h2>
+<p>On Windows uninstall NoonFrame from Settings &gt; Apps: at the end it asks whether to delete projects and videos too. On Mac drag NoonFrame to the Trash and delete the VODcut folder in your Home folder.</p>
+<h2>Changes</h2>
+<p>If we change this notice we update the date at the top. Important changes are also written in the app&#x27;s update notes.</p>
+</main>
+<footer><div class="wrap"><span>© 2026 NoonFrame</span><a href="privacy.html">Privacy</a><a href="terms.html">Terms of use</a><a href="index.html">Home</a></div></footer>
+</body>
+</html>
