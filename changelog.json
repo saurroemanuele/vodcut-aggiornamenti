@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.81",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
+    "en": "Titles behind you much faster to prepare: no more tool installation the first time (it hung for minutes), only the model is downloaded once with visible progress"
+   }
+  ]
+ },
+ {
   "version": "1.5.80",
   "date": "2026-09-30",
   "items": [

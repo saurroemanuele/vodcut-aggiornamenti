@@ -1,13 +1,24 @@
 {
- "version": "1.5.80",
+ "version": "1.5.81",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.80.zip",
- "size": 7237015,
- "sha256": "1979df7bb2ea8ab4f4a01fc5f9a9c98c907307ed3d5a0dbda904a4c03779d581",
- "sig": "wdbm4t9ZMDMhyIj9b6nCMzXwdlIoaHxtqzkcDvfdVBJRzmzmNH2M59h/AeLbkJZVh9+A9MIegQMg6C4iw+wgCg==",
- "notes": "Correzione: Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura\nMiglioramento: Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile\nMiglioramento: Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)\nMiglioramento: Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.81.zip",
+ "size": 7237928,
+ "sha256": "cc0de4ba7a91e751d175ee322fc3b6937184bc807de9b97188dc6fd980ea3234",
+ "sig": "DiPaV70W4I32q4bjVPhARae9Z/nl29ONZCMsyEROrpHOvna5cGj8/jXqh6vbVmUkMP2Df2CA5YfkYCJubs02Bg==",
+ "notes": "Correzione: Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.81",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
+     "en": "Titles behind you much faster to prepare: no more tool installation the first time (it hung for minutes), only the model is downloaded once with visible progress"
+    }
+   ]
+  },
   {
    "version": "1.5.80",
    "date": "2026-09-30",
@@ -564,27 +575,6 @@
      "type": "impr",
      "text": "Scegli la qualità dei video AI (Economica, Buona, Alta, Massima) con il prezzo di ogni clip",
      "en": "Choose AI video quality (Budget, Good, High, Best) with the price of each clip"
-    }
-   ]
-  },
-  {
-   "version": "1.5.51",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Storie AI: nel passaggio Voce c'è 'Chi parla', dove colleghi ogni nome dello script a un personaggio o a una voce (es. RAGAZZA = Martina)",
-     "en": "AI Stories: the Voice step has 'Who speaks', where you link each name in the script to a character or a voice (e.g. GIRL = Martina)"
-    },
-    {
-     "type": "impr",
-     "text": "Pulsante 'Crea tutto' in alto nella storia: immagini, voci e animazioni che mancano in un colpo, poi il video montato",
-     "en": "'Create everything' button at the top of the story: missing images, voices and animations in one go, then the assembled video"
-    },
-    {
-     "type": "impr",
-     "text": "Badge social: 'Ripeti nel video' li mette a metà video, all'inizio e alla fine o ogni 5/10/15 minuti",
-     "en": "Social badges: 'Repeat in the video' places them mid-video, at the start and end, or every 5/10/15 minutes"
     }
    ]
   }
