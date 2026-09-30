@@ -1,5 +1,36 @@
 [
  {
+  "version": "1.5.76",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima: niente più scatti quando il video salta le parti tagliate",
+    "en": "Preview: no more stutter when playback skips cut parts"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI: nuovo studio a tutto schermo con anteprime vere di titoli, grafiche e suoni; nel pannello resta un riassunto con Personalizza e Prepara",
+    "en": "AI edit: new full-screen studio with real previews of titles, graphics and sounds; the panel keeps a summary with Customize and Prepare"
+   },
+   {
+    "type": "impr",
+    "text": "Grafiche animate gratis: numeri che contano, grafici a barre e linee che crescono, checklist, confronti, passi e percentuali, con dati presi dal video e modificabili",
+    "en": "Free animated graphics: counting numbers, growing bar and line charts, checklists, comparisons, steps and percentages, with data from the video and editable"
+   },
+   {
+    "type": "impr",
+    "text": "Zoom 'Avvicina piano' per i video business: si avvicina lentamente per tutta la frase e torna indietro sul taglio; zoom meno frequenti e più lunghi",
+    "en": "'Slow push-in' zoom for business videos: slowly pushes in over the whole sentence and returns on the cut; fewer, longer zooms"
+   },
+   {
+    "type": "impr",
+    "text": "Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
+    "en": "Smaller, cleaner AI titles (Clean, Label, Minimal) and you choose which ones it can use; styles for AI images"
+   }
+  ]
+ },
+ {
   "version": "1.5.75",
   "date": "2026-09-30",
   "items": [

@@ -1,13 +1,44 @@
 {
- "version": "1.5.75",
+ "version": "1.5.76",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.75.zip",
- "size": 7194641,
- "sha256": "aed9c5bce22fd6d6a7daf7f843d8c414dbe5ee7deb738adf0d744eedabe80842",
- "sig": "OPap236+H5hspBS/odiffEAPWQt39J5LLYbMd9/1Yh/w5cCahu1ieHjwsAwjiQSg0ao0pVcAUxCvqZ6RwFQUBA==",
- "notes": "Correzione: Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche\nMiglioramento: Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica\nMiglioramento: Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto\nMiglioramento: Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.76.zip",
+ "size": 7210974,
+ "sha256": "ccda71b76f7241d5c0bf8ff6b0d820f10c4759d1c2113f665fb01feed98cc560",
+ "sig": "Dhu0fhEzmXOvgNhny+CzySpstVCqUn/Mk/d79TVp+H3rwSUscU+9Molwi0Afv/vUAREGT4fmAhbbCKbzW3rKCA==",
+ "notes": "Correzione: Anteprima: niente più scatti quando il video salta le parti tagliate\nMiglioramento: Montaggio AI: nuovo studio a tutto schermo con anteprime vere di titoli, grafiche e suoni; nel pannello resta un riassunto con Personalizza e Prepara\nMiglioramento: Grafiche animate gratis: numeri che contano, grafici a barre e linee che crescono, checklist, confronti, passi e percentuali, con dati presi dal video e modificabili\nMiglioramento: Zoom 'Avvicina piano' per i video business: si avvicina lentamente per tutta la frase e torna indietro sul taglio; zoom meno frequenti e più lunghi\nMiglioramento: Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.76",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Anteprima: niente più scatti quando il video salta le parti tagliate",
+     "en": "Preview: no more stutter when playback skips cut parts"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI: nuovo studio a tutto schermo con anteprime vere di titoli, grafiche e suoni; nel pannello resta un riassunto con Personalizza e Prepara",
+     "en": "AI edit: new full-screen studio with real previews of titles, graphics and sounds; the panel keeps a summary with Customize and Prepare"
+    },
+    {
+     "type": "impr",
+     "text": "Grafiche animate gratis: numeri che contano, grafici a barre e linee che crescono, checklist, confronti, passi e percentuali, con dati presi dal video e modificabili",
+     "en": "Free animated graphics: counting numbers, growing bar and line charts, checklists, comparisons, steps and percentages, with data from the video and editable"
+    },
+    {
+     "type": "impr",
+     "text": "Zoom 'Avvicina piano' per i video business: si avvicina lentamente per tutta la frase e torna indietro sul taglio; zoom meno frequenti e più lunghi",
+     "en": "'Slow push-in' zoom for business videos: slowly pushes in over the whole sentence and returns on the cut; fewer, longer zooms"
+    },
+    {
+     "type": "impr",
+     "text": "Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
+     "en": "Smaller, cleaner AI titles (Clean, Label, Minimal) and you choose which ones it can use; styles for AI images"
+    }
+   ]
+  },
   {
    "version": "1.5.75",
    "date": "2026-09-30",
@@ -519,27 +550,6 @@
      "type": "fix",
      "text": "Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
      "en": "The ready-made 'App / digital products' format now shows up even on computers where you never created a format"
-    }
-   ]
-  },
-  {
-   "version": "1.5.46",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le chiavi Anthropic di organizzazione ora si collegano: basta aggiungere l'ID del workspace (wrkspc_…) nel campo che compare",
-     "en": "Anthropic organization keys now connect: just add the workspace ID (wrkspc_…) in the field that appears"
-    },
-    {
-     "type": "fix",
-     "text": "Video esportati che si bloccavano dopo tagli e zoom con le live scaricate da Twitch (file MPEG-TS): ora il file si prepara una volta e i tagli sono precisi",
-     "en": "Exported videos freezing after cuts and zooms with streams downloaded from Twitch (MPEG-TS files): the file is now prepared once and cuts are precise"
-    },
-    {
-     "type": "fix",
-     "text": "Mac: tolto l'errore interno che compariva all'avvio",
-     "en": "Mac: removed the internal error shown at startup"
     }
    ]
   }
