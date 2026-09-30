@@ -1,13 +1,24 @@
 {
- "version": "1.5.87",
+ "version": "1.5.88",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.87.zip",
- "size": 7253792,
- "sha256": "fadd79fb6c87b9e9948cf7763e27e075fa54521af71507444016dd32e1123042",
- "sig": "izkEoJFoe6CBR2ue08eDv9lGsyebLGVn2lcZclT9C3ZgiUuLdzfB0BpJh8KQfYqyVAg8tJrhoI5P8YTMvQ4NAw==",
- "notes": "Miglioramento: «Rimuovi sfondo» anche sulle clip della traccia principale: un clic porta la clip su una traccia sopra e toglie lo sfondo (tinta unita o AI)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.88.zip",
+ "size": 7256340,
+ "sha256": "b954c9f05950037f66e1bab214a22c3a28d12e2f1e63d4b90f2d03ff8d93b8ce",
+ "sig": "P6po60FidvESUUzyidbwdxuRqQrjjlbKWWfF6mu9bAg8/u82HCCG5cCMbIgKJrxjRIjzdgivSPFfmNWBHexhAg==",
+ "notes": "Correzione: Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.88",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
+     "en": "Remove background on the main track: the clip stays where it is and the background becomes black (no more moving to another track). Faster AI cut-out on Macs (Neural Engine) and on long clips"
+    }
+   ]
+  },
   {
    "version": "1.5.87",
    "date": "2026-09-30",
@@ -529,17 +540,6 @@
      "type": "impr",
      "text": "Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
      "en": "\"Make everyone talk\" button: character lines become talking scenes, and images frame the speaker's face"
-    }
-   ]
-  },
-  {
-   "version": "1.5.58",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Storie AI: niente più errore \"Expecting ',' delimiter\" quando la storia ha dialoghi tra virgolette (la risposta dell'AI si ripara da sola o viene richiesta di nuovo)",
-     "en": "AI stories: no more \"Expecting ',' delimiter\" error when the story has quoted dialogue (the AI answer is repaired or requested again)"
     }
    ]
   }

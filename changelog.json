@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.88",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
+    "en": "Remove background on the main track: the clip stays where it is and the background becomes black (no more moving to another track). Faster AI cut-out on Macs (Neural Engine) and on long clips"
+   }
+  ]
+ },
+ {
   "version": "1.5.87",
   "date": "2026-09-30",
   "items": [
