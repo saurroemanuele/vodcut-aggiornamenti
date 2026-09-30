@@ -59,10 +59,12 @@ p { margin: 0; }
 .nav-links { display: flex; gap: 24px; margin-left: auto; font-size: 15px; font-weight: 500; color: var(--ink-2); }
 .nav-links a { text-decoration: none; }
 .nav-links a:hover { color: var(--ink); }
-.lang { font-size: 14px; font-weight: 600; color: var(--ink-2); text-decoration: none; padding: 6px 10px; border-radius: 8px; }
-.lang:hover { background: var(--accent-soft); color: var(--ink); }
-@media (max-width: 640px) { .lang { margin-left: auto; } .nav .btn { margin-left: 0; } }
-@media (max-width: 420px) { .nav .wrap { gap: 12px; } .nav .btn.sm { padding: 0 12px; } .brand { min-width: 0; } }
+.langs { display: inline-flex; padding: 3px; gap: 2px; border-radius: 999px; background: var(--accent-soft); }
+.lang { font-size: 13px; font-weight: 600; color: var(--ink-2); text-decoration: none; padding: 5px 10px; border-radius: 999px; line-height: 1; }
+a.lang:hover { color: var(--ink); }
+.lang.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(7,29,77,.14); }
+@media (max-width: 640px) { .langs { margin-left: auto; } .nav .btn { margin-left: 0; } }
+@media (max-width: 480px) { .nav .wrap { gap: 12px; } .nav .btn.sm { display: none; } .brand { min-width: 0; } }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; border-radius: 14px; border: 0; font: 600 17px/1 var(--body); text-decoration: none; cursor: pointer; transition: background .15s, transform .15s; white-space: nowrap; }
 .btn svg { flex-shrink: 0; }
 .btn.primary { background: var(--accent); color: var(--on-accent); }
@@ -333,7 +335,7 @@ h1, h2, h3 { letter-spacing: -0.028em; }
       <a href="#community">Updates</a>
       <a href="#domande">FAQ</a>
     </nav>
-    <a class="lang" href="../index.html" data-lang="it" lang="it">IT</a>
+    <span class="langs" role="group" aria-label="Language"><a class="lang" href="../index.html" data-lang="it" lang="it">IT</a><span class="lang on" aria-current="true" lang="en">EN</span></span>
     <a class="btn primary sm" href="#download">Free download</a>
   </div>
 </header>
