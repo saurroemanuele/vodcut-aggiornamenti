@@ -1,13 +1,24 @@
 {
- "version": "1.5.85",
+ "version": "1.5.86",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.85.zip",
- "size": 7250278,
- "sha256": "f729e682f823df1baed9e8e258049909e8adb22dd03f47895675e63afe0618df",
- "sig": "0uqKjyVF8QQie1WzdDkKbw50oA3vxEeinQqBghtG1FOrA/BsPocZkA6edXVxtBBuJt4UOs0z8Kbc/0HnxfrtDg==",
- "notes": "Miglioramento: Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.86.zip",
+ "size": 7253182,
+ "sha256": "f3b9d7de25a62fe9b570cd23c4d3bed14f815a79902cc597b2edd27d3dabe473",
+ "sig": "rURpd0YLnUJ0pwbkuhMnTmJpkr9XJYK5JiP3T+fv+IUsWpwtMdyBjY82XUqXAXSmUymX1b5mdNrOAu6Xzi58AQ==",
+ "notes": "Miglioramento: Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.86",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
+     "en": "AI Stories: several lines in the same clip. In Animations press the link on a scene to merge it into the previous clip: one clip (and one cost) for all the lines, even when characters take turns talking"
+    }
+   ]
+  },
   {
    "version": "1.5.85",
    "date": "2026-09-30",
@@ -529,22 +540,6 @@
      "type": "fix",
      "text": "ElevenLabs: quando un'operazione non è permessa ora spieghiamo il motivo preciso (chiave limitata, piano gratuito, posti voce finiti) e cosa fare",
      "en": "ElevenLabs: when an operation isn't allowed we now explain the exact reason (restricted key, free plan, voice slots full) and what to do"
-    }
-   ]
-  },
-  {
-   "version": "1.5.56",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Crea le voci dei personaggi da una descrizione (ElevenLabs Voice Design): 3 proposte da ascoltare, tieni quella giusta e resta per tutte le storie della pagina",
-     "en": "Create character voices from a description (ElevenLabs Voice Design): 3 options to listen to, keep the right one and it stays for every story on the page"
-    },
-    {
-     "type": "impr",
-     "text": "Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
-     "en": "Talking scenes: the character really says their line with lips in sync (lip sync), 7 fal.ai models with exact price"
     }
    ]
   }

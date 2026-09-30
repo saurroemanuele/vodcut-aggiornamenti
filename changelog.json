@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.86",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
+    "en": "AI Stories: several lines in the same clip. In Animations press the link on a scene to merge it into the previous clip: one clip (and one cost) for all the lines, even when characters take turns talking"
+   }
+  ]
+ },
+ {
   "version": "1.5.85",
   "date": "2026-09-30",
   "items": [
