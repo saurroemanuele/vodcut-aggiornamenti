@@ -1,13 +1,29 @@
 {
- "version": "1.5.82",
+ "version": "1.5.83",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.82.zip",
- "size": 7238638,
- "sha256": "2e352841bb98496acfa43c3c72e0a5d5a9712f10450db86a3ece8e4fe2cbd3a4",
- "sig": "fQD8d+aBk5d+yeYsjRU4plSpvKTWUVAjYzE/6GGXs+QcwlW27Eq6cqvcX1rYTJsKmFOq84E/eFbup5LNmu5RDw==",
- "notes": "Correzione: Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.83.zip",
+ "size": 7239061,
+ "sha256": "2b8b96fc84e6763f1c2dc77e41de9b879193f6bcbeb9b13d01566e40e46f105c",
+ "sig": "wbacjzzHqpfjlIaMJHxvvx9zuMoZkVv8T1ooudwgIV4pOSqyUFmz2vdkaX4fvlw1A7Tz+S7OZftB69UG4wB+BQ==",
+ "notes": "Correzione: Il pannello AI non mostra più la scritta «null» mentre crea le grafiche\nMiglioramento: Grafiche AI e ritagli per i titoli dietro di te già fatti vengono riusati: niente attese né costi di nuovo se riapri il progetto o riapplichi",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.83",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Il pannello AI non mostra più la scritta «null» mentre crea le grafiche",
+     "en": "The AI panel no longer shows «null» while creating graphics"
+    },
+    {
+     "type": "impr",
+     "text": "Grafiche AI e ritagli per i titoli dietro di te già fatti vengono riusati: niente attese né costi di nuovo se riapri il progetto o riapplichi",
+     "en": "AI graphics and cut-outs for titles behind you are reused: no waiting or extra cost when you reopen the project or apply again"
+    }
+   ]
+  },
   {
    "version": "1.5.82",
    "date": "2026-09-30",
@@ -534,32 +550,6 @@
      "type": "fix",
      "text": "Mac: i video AI nell'anteprima partono davvero e restano a tempo con la voce (il Mac li bloccava: andavano a scatti e fuori sincro)",
      "en": "Mac: AI videos in the preview now actually play and stay in sync with the voice (macOS was blocking them: choppy and out of sync)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.53",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima delle storie fluida: niente fotogramma nero tra le scene e i video AI non restano più fermi sul primo fotogramma",
-     "en": "Smooth story preview: no black frame between scenes and AI videos no longer freeze on the first frame"
-    },
-    {
-     "type": "fix",
-     "text": "Schermo intero dell'anteprima funzionante anche sul Mac",
-     "en": "Preview fullscreen now works on Mac too"
-    },
-    {
-     "type": "impr",
-     "text": "Tutti i modelli video di fal.ai (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) con il prezzo esatto calcolato sulle tue frasi. Puoi cambiare modello a tutta la storia o a una sola scena",
-     "en": "Every fal.ai video model (Seedance 2.5, Veo 3.1, Kling, Wan, Hailuo, LTX, PixVerse, Vidu, Luma…) with the exact price calculated on your lines. Change the model for the whole story or for a single scene"
-    },
-    {
-     "type": "impr",
-     "text": "Pause tra le battute: automatiche dopo domande, esclamazioni e cambi di personaggio, o scelte a mano (niente più tagli netti)",
-     "en": "Pauses between lines: automatic after questions, exclamations and speaker changes, or set by hand (no more hard cuts)"
     }
    ]
   }

@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.83",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Il pannello AI non mostra più la scritta «null» mentre crea le grafiche",
+    "en": "The AI panel no longer shows «null» while creating graphics"
+   },
+   {
+    "type": "impr",
+    "text": "Grafiche AI e ritagli per i titoli dietro di te già fatti vengono riusati: niente attese né costi di nuovo se riapri il progetto o riapplichi",
+    "en": "AI graphics and cut-outs for titles behind you are reused: no waiting or extra cost when you reopen the project or apply again"
+   }
+  ]
+ },
+ {
   "version": "1.5.82",
   "date": "2026-09-30",
   "items": [
