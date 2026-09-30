@@ -1,0 +1,9 @@
+Modelli scaricati da NoonFrame alla prima volta che servono (tutto gira sul computer dell'utente).
+
+persona_u2net_q8.onnx  U-2-Net "u2net_human_seg" (Xuebin Qin), versione quantizzata - Apache License 2.0
+                       https://github.com/xuebinqin/U-2-Net
+mano_palmo.onnx        MediaPipe Hands palm detection (Google LLC), ONNX di PINTO0309 - Apache License 2.0
+mano_punti.onnx        MediaPipe Hands hand landmark (Google LLC), ONNX di PINTO0309 - Apache License 2.0
+                       https://github.com/google-ai-edge/mediapipe
+                       https://github.com/PINTO0309/hand-gesture-recognition-using-onnx
+Testo completo della licenza: https://www.apache.org/licenses/LICENSE-2.0

@@ -1,13 +1,24 @@
 {
- "version": "1.5.89",
+ "version": "1.5.90",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.89.zip",
- "size": 7271933,
- "sha256": "f99ee7ac1937aa9ca533009aee4053e4cbac4c5ce06bcbb27d322ac60324735d",
- "sig": "62bCWQdqxIA1ZOEVws+jR/jUr+KSv4OmPjDwse1pj+ZYtzz5o9G8nJyHFbKOb2bHzf+qUfN768gyktJOLNygBw==",
- "notes": "Miglioramento: Nuovo «Effetto AI»: descrivi un effetto e l'AI scrive l'animazione da zero (stili Premium, Olografico, Neon, Minimal, Cinematico), con anteprima e modifiche a parole. Gira in una sandbox sicura sul tuo computer\nMiglioramento: Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.90.zip",
+ "size": 7281727,
+ "sha256": "6c6b996038f6885ba475c067a7be8f081d9b6f04cb2f0259d15b8379d01fe638",
+ "sig": "Yh3pYKOIoGgvSuWbeBDq6c7+xZxvB0a0gtGKHPhtJSJK1TFxFMhreDTHXSWs9i9JW94XkW2lqRhAuhGmnlpLCg==",
+ "notes": "Miglioramento: Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.90",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
+     "en": "AI effect that follows your hand: turn on «Follow the hand» and the effect sticks to your palm, moves with you and reacts to gestures (open hand, fist, pointing, victory, thumbs up). The hand is tracked on your computer, for free"
+    }
+   ]
+  },
   {
    "version": "1.5.89",
    "date": "2026-09-30",
@@ -529,17 +540,6 @@
      "type": "impr",
      "text": "Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
      "en": "Animations: at the top the \"Do the characters talk?\" choice for the whole story, the scene count (talk / AI video / images) and a warning before creating videos where a character doesn't talk. In new stories characters already talk"
-    }
-   ]
-  },
-  {
-   "version": "1.5.60",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
-     "en": "AI images: if one gets stuck on fal.ai for 2.5 minutes it is cancelled and redone automatically (before it could hang for many minutes)"
     }
    ]
   }

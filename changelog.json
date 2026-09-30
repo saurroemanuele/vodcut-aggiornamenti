@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.90",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
+    "en": "AI effect that follows your hand: turn on «Follow the hand» and the effect sticks to your palm, moves with you and reacts to gestures (open hand, fist, pointing, victory, thumbs up). The hand is tracked on your computer, for free"
+   }
+  ]
+ },
+ {
   "version": "1.5.89",
   "date": "2026-09-30",
   "items": [
