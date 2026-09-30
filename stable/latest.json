@@ -1,13 +1,29 @@
 {
- "version": "1.5.88",
+ "version": "1.5.89",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.88.zip",
- "size": 7256340,
- "sha256": "b954c9f05950037f66e1bab214a22c3a28d12e2f1e63d4b90f2d03ff8d93b8ce",
- "sig": "P6po60FidvESUUzyidbwdxuRqQrjjlbKWWfF6mu9bAg8/u82HCCG5cCMbIgKJrxjRIjzdgivSPFfmNWBHexhAg==",
- "notes": "Correzione: Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.89.zip",
+ "size": 7271933,
+ "sha256": "f99ee7ac1937aa9ca533009aee4053e4cbac4c5ce06bcbb27d322ac60324735d",
+ "sig": "62bCWQdqxIA1ZOEVws+jR/jUr+KSv4OmPjDwse1pj+ZYtzz5o9G8nJyHFbKOb2bHzf+qUfN768gyktJOLNygBw==",
+ "notes": "Miglioramento: Nuovo «Effetto AI»: descrivi un effetto e l'AI scrive l'animazione da zero (stili Premium, Olografico, Neon, Minimal, Cinematico), con anteprima e modifiche a parole. Gira in una sandbox sicura sul tuo computer\nMiglioramento: Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.89",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo «Effetto AI»: descrivi un effetto e l'AI scrive l'animazione da zero (stili Premium, Olografico, Neon, Minimal, Cinematico), con anteprima e modifiche a parole. Gira in una sandbox sicura sul tuo computer",
+     "en": "New «AI effect»: describe an effect and AI writes the animation from scratch (Premium, Holographic, Neon, Minimal, Cinematic), with preview and edits in words. Runs in a secure sandbox on your computer"
+    },
+    {
+     "type": "impr",
+     "text": "Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
+     "en": "Video script: paste it and subtitles spell names, brands and terms right (even after transcription)"
+    }
+   ]
+  },
   {
    "version": "1.5.88",
    "date": "2026-09-30",
@@ -524,22 +540,6 @@
      "type": "fix",
      "text": "Immagini AI: se una resta bloccata su fal.ai dopo 2 minuti e mezzo viene annullata e rifatta da sola (prima poteva restare ferma per molti minuti)",
      "en": "AI images: if one gets stuck on fal.ai for 2.5 minutes it is cancelled and redone automatically (before it could hang for many minutes)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.59",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Prodotto: carica gli screen della tua app, compaiono sul telefono nelle scene che mostrano l'app (pulsante App su ogni immagine)",
-     "en": "Product: upload your app screenshots, they appear on the phone in scenes that show the app (App button on each image)"
-    },
-    {
-     "type": "impr",
-     "text": "Pulsante \"Fai parlare tutti\": le battute dei personaggi diventano scene che parlano, e le immagini inquadrano il viso di chi parla",
-     "en": "\"Make everyone talk\" button: character lines become talking scenes, and images frame the speaker's face"
     }
    ]
   }

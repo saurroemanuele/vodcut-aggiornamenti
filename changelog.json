@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.89",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovo «Effetto AI»: descrivi un effetto e l'AI scrive l'animazione da zero (stili Premium, Olografico, Neon, Minimal, Cinematico), con anteprima e modifiche a parole. Gira in una sandbox sicura sul tuo computer",
+    "en": "New «AI effect»: describe an effect and AI writes the animation from scratch (Premium, Holographic, Neon, Minimal, Cinematic), with preview and edits in words. Runs in a secure sandbox on your computer"
+   },
+   {
+    "type": "impr",
+    "text": "Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
+    "en": "Video script: paste it and subtitles spell names, brands and terms right (even after transcription)"
+   }
+  ]
+ },
+ {
   "version": "1.5.88",
   "date": "2026-09-30",
   "items": [
