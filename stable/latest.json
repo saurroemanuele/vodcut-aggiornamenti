@@ -1,13 +1,44 @@
 {
- "version": "1.5.78",
+ "version": "1.5.79",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.78.zip",
- "size": 7214644,
- "sha256": "1cccdf25b9139008bf9c3afb3ce42d686fa1acb1b77460dd9032f1ae708bfee0",
- "sig": "yRzZVPacwsMQnVSBfNL9Gl9Ru3PLqooAvKUVTeB9oefhkDhSmHQY3djBfN+vl/IoxB7LqdhI2GKXf099vdYvBQ==",
- "notes": "Miglioramento: Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.79.zip",
+ "size": 7224022,
+ "sha256": "ac3475818d937ac7a7de902d190f5c2804e58ff1aa2678fe70d9fddf42493e21",
+ "sig": "7102YGVQb/pXEP8hHNMuHJDWcKMPdojeyEIV6X8uVnzTKvAAw+nQC8632PPfemNMcYENlx9TD5HPkHjAV5scAg==",
+ "notes": "Miglioramento: Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole\nMiglioramento: Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra\nMiglioramento: Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI\nMiglioramento: Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella\nMiglioramento: Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.79",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole",
+     "en": "AI edit: the plan stays saved in the project (reopening shows it again, no new analysis) and there's a chat to ask for changes in words"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra",
+     "en": "More polished AI edit: cuts on the right silent point, hesitations always removed, pro editor instructions, one element on screen at a time, bigger chapter-like titles, overlays placed beside the face, never over it"
+    },
+    {
+     "type": "impr",
+     "text": "Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI",
+     "en": "More accurate AI transcription (OpenAI or ElevenLabs) from the AI panel"
+    },
+    {
+     "type": "impr",
+     "text": "Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella",
+     "en": "Home: rename videos (also from the editor by clicking the title) and group them in folders: when exported they all end up in the same folder"
+    },
+    {
+     "type": "impr",
+     "text": "Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
+     "en": "AI images with sticker-style white border and shadow; off by default in favor of animated graphics"
+    }
+   ]
+  },
   {
    "version": "1.5.78",
    "date": "2026-09-30",
@@ -544,17 +575,6 @@
      "type": "impr",
      "text": "Nuovo pulsante 'Voci italiane': cerca voci madrelingua nella libreria di ElevenLabs, le ascolti in italiano e con 'Usa questa' le aggiungi",
      "en": "New 'Italian voices' button: find native-speaker voices in the ElevenLabs library, listen to them and add them with 'Use this one'"
-    }
-   ]
-  },
-  {
-   "version": "1.5.49",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
-     "en": "In the Voices tab you now pick and hear each character's voice, together with the narrator's"
     }
    ]
   }

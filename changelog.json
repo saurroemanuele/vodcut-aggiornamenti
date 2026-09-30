@@ -1,5 +1,36 @@
 [
  {
+  "version": "1.5.79",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole",
+    "en": "AI edit: the plan stays saved in the project (reopening shows it again, no new analysis) and there's a chat to ask for changes in words"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra",
+    "en": "More polished AI edit: cuts on the right silent point, hesitations always removed, pro editor instructions, one element on screen at a time, bigger chapter-like titles, overlays placed beside the face, never over it"
+   },
+   {
+    "type": "impr",
+    "text": "Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI",
+    "en": "More accurate AI transcription (OpenAI or ElevenLabs) from the AI panel"
+   },
+   {
+    "type": "impr",
+    "text": "Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella",
+    "en": "Home: rename videos (also from the editor by clicking the title) and group them in folders: when exported they all end up in the same folder"
+   },
+   {
+    "type": "impr",
+    "text": "Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
+    "en": "AI images with sticker-style white border and shadow; off by default in favor of animated graphics"
+   }
+  ]
+ },
+ {
   "version": "1.5.78",
   "date": "2026-09-30",
   "items": [
