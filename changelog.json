@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.85",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
+    "en": "Remove background with AI: cut the person out of any background in videos and images, free and on your computer. Lighter cut-out for titles behind you on long clips"
+   }
+  ]
+ },
+ {
   "version": "1.5.84",
   "date": "2026-09-30",
   "items": [

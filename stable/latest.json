@@ -1,13 +1,24 @@
 {
- "version": "1.5.84",
+ "version": "1.5.85",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.84.zip",
- "size": 7245611,
- "sha256": "265281bd615fe40c44d3b98c6f9e01c006bc5d8b758bda07bd07e59f1dccf305",
- "sig": "hqNETdQK/e+FzHoWhou/6FDmb/wo7ZhrrQiPuW919b1ujmHdY2fxvtoiQA9QA8LR9n1GctbMWtEswRIl9LYIAQ==",
- "notes": "Miglioramento: Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.85.zip",
+ "size": 7250278,
+ "sha256": "f729e682f823df1baed9e8e258049909e8adb22dd03f47895675e63afe0618df",
+ "sig": "0uqKjyVF8QQie1WzdDkKbw50oA3vxEeinQqBghtG1FOrA/BsPocZkA6edXVxtBBuJt4UOs0z8Kbc/0HnxfrtDg==",
+ "notes": "Miglioramento: Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.85",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
+     "en": "Remove background with AI: cut the person out of any background in videos and images, free and on your computer. Lighter cut-out for titles behind you on long clips"
+    }
+   ]
+  },
   {
    "version": "1.5.84",
    "date": "2026-09-30",
@@ -534,22 +545,6 @@
      "type": "impr",
      "text": "Scene che parlano: il personaggio dice davvero la sua battuta con la bocca a tempo (lip sync), 7 modelli di fal.ai con prezzo esatto",
      "en": "Talking scenes: the character really says their line with lips in sync (lip sync), 7 fal.ai models with exact price"
-    }
-   ]
-  },
-  {
-   "version": "1.5.55",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Storie AI: voce, sottotitoli e scene allineati al millesimo per tutta la durata (prima si sfasavano di qualche centesimo a ogni frase e alla fine erano oltre un secondo fuori)",
-     "en": "AI stories: voice, subtitles and scenes aligned to the millisecond for the whole video (before they drifted a few hundredths per line, over a second by the end)"
-    },
-    {
-     "type": "impr",
-     "text": "Pulsante \"Rimonta\" nell'editor delle storie: rifà il montaggio con i tempi giusti senza rigenerare niente (gratis)",
-     "en": "\"Rebuild\" button in the story editor: redoes the edit with correct timing without regenerating anything (free)"
     }
    ]
   }
