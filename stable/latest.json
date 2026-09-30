@@ -1,13 +1,24 @@
 {
- "version": "1.5.77",
+ "version": "1.5.78",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.77.zip",
- "size": 7211467,
- "sha256": "4645f4b704d16cd61bbbbb60970d1ad3354231f2822ebd28f68b4820cefe6c1f",
- "sig": "adZ0rWTMmCkIfu/0Ow1KMp61F4hfQ7SZIhdtHXhCh3jaklET8ANcOkaSGGWPyiOP/rk2abnjzwWfAemzR0WEBw==",
- "notes": "Correzione: Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio\nCorrezione: Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.78.zip",
+ "size": 7214644,
+ "sha256": "1cccdf25b9139008bf9c3afb3ce42d686fa1acb1b77460dd9032f1ae708bfee0",
+ "sig": "yRzZVPacwsMQnVSBfNL9Gl9Ru3PLqooAvKUVTeB9oefhkDhSmHQY3djBfN+vl/IoxB7LqdhI2GKXf099vdYvBQ==",
+ "notes": "Miglioramento: Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.78",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
+     "en": "New «Remove cut parts» button in the timeline: darkened parts disappear and the preview becomes smooth (a pre-edited video prepared in the background). In the transcript the words stay struck through and can be restored any time"
+    }
+   ]
+  },
   {
    "version": "1.5.77",
    "date": "2026-09-30",
@@ -544,17 +555,6 @@
      "type": "impr",
      "text": "Nella scheda Voci ora scegli e ascolti la voce di ogni personaggio, insieme a quella del narratore",
      "en": "In the Voices tab you now pick and hear each character's voice, together with the narrator's"
-    }
-   ]
-  },
-  {
-   "version": "1.5.48",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
-     "en": "Listen to voices before choosing: 'Listen' plays the sample (free with ElevenLabs), 'Try with settings' reads a sentence with the page's speed and expressiveness. For characters too"
     }
    ]
   }
