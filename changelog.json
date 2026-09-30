@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.77",
+  "date": "2026-09-30",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio",
+    "en": "Smooth preview over cuts: as soon as there are cut parts the preview uses a copy made to jump instantly (prepared in the background), plus two players taking turns"
+   },
+   {
+    "type": "fix",
+    "text": "Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
+    "en": "Much faster AI edit with Claude: the model no longer wastes all tokens «thinking» (the answer came back empty after minutes and had to be retried)"
+   }
+  ]
+ },
+ {
   "version": "1.5.76",
   "date": "2026-09-30",
   "items": [

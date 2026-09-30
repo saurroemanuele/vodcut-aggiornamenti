@@ -1,13 +1,29 @@
 {
- "version": "1.5.76",
+ "version": "1.5.77",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.76.zip",
- "size": 7210974,
- "sha256": "ccda71b76f7241d5c0bf8ff6b0d820f10c4759d1c2113f665fb01feed98cc560",
- "sig": "Dhu0fhEzmXOvgNhny+CzySpstVCqUn/Mk/d79TVp+H3rwSUscU+9Molwi0Afv/vUAREGT4fmAhbbCKbzW3rKCA==",
- "notes": "Correzione: Anteprima: niente più scatti quando il video salta le parti tagliate\nMiglioramento: Montaggio AI: nuovo studio a tutto schermo con anteprime vere di titoli, grafiche e suoni; nel pannello resta un riassunto con Personalizza e Prepara\nMiglioramento: Grafiche animate gratis: numeri che contano, grafici a barre e linee che crescono, checklist, confronti, passi e percentuali, con dati presi dal video e modificabili\nMiglioramento: Zoom 'Avvicina piano' per i video business: si avvicina lentamente per tutta la frase e torna indietro sul taglio; zoom meno frequenti e più lunghi\nMiglioramento: Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.77.zip",
+ "size": 7211467,
+ "sha256": "4645f4b704d16cd61bbbbb60970d1ad3354231f2822ebd28f68b4820cefe6c1f",
+ "sig": "adZ0rWTMmCkIfu/0Ow1KMp61F4hfQ7SZIhdtHXhCh3jaklET8ANcOkaSGGWPyiOP/rk2abnjzwWfAemzR0WEBw==",
+ "notes": "Correzione: Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio\nCorrezione: Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
  "date": "2026-09-30",
  "history": [
+  {
+   "version": "1.5.77",
+   "date": "2026-09-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio",
+     "en": "Smooth preview over cuts: as soon as there are cut parts the preview uses a copy made to jump instantly (prepared in the background), plus two players taking turns"
+    },
+    {
+     "type": "fix",
+     "text": "Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
+     "en": "Much faster AI edit with Claude: the model no longer wastes all tokens «thinking» (the answer came back empty after minutes and had to be retried)"
+    }
+   ]
+  },
   {
    "version": "1.5.76",
    "date": "2026-09-30",
@@ -539,17 +555,6 @@
      "type": "impr",
      "text": "Ascolta le voci prima di sceglierle: 'Ascolta' fa sentire il campione (gratis con ElevenLabs), 'Prova con le impostazioni' legge una frase con velocità ed espressività della pagina. Anche per i personaggi",
      "en": "Listen to voices before choosing: 'Listen' plays the sample (free with ElevenLabs), 'Try with settings' reads a sentence with the page's speed and expressiveness. For characters too"
-    }
-   ]
-  },
-  {
-   "version": "1.5.47",
-   "date": "2026-09-28",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Il formato pronto 'App / prodotti digitali' ora compare anche sui computer dove non hai mai creato un formato",
-     "en": "The ready-made 'App / digital products' format now shows up even on computers where you never created a format"
     }
    ]
   }
