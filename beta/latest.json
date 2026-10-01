@@ -1,13 +1,30 @@
 {
- "version": "1.5.101",
+ "version": "1.5.102",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.101.zip",
- "size": 7613552,
- "sha256": "545e75b8600908467986a6cbde45f3d06a40f1bf70f27d40018bc5f2c752b959",
- "sig": "Ruj72PkIbiE6KmUXtkYOmRt1qpE8Zx05hwA6QEfc7FdemidbcXnQT4x5i3TzFjksOZcaopG88DJbZ12shMQiDA==",
- "notes": "Miglioramento: Versioni di prova (beta) per i tester invitati: ricevono le correzioni prima di tutti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.102.zip",
+ "size": 7613961,
+ "sha256": "8bfff1a2f0f3e689c2e04185861b55eaebb4a44e7a14f4936b8f61e37a831b01",
+ "sig": "k7eCpS5X2UqtXsIOoKCGHb7MdxmDwJSww05KyvzEFyRpV7nvyLJL925ErFE+duM9A42eLTiB2chh7T7HthD+Cg==",
+ "notes": "Correzione: Anteprima bloccata con le registrazioni OBS (.mkv) dove l'audio parte qualche millisecondo dopo il video\nMiglioramento: Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.102",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Anteprima bloccata con le registrazioni OBS (.mkv) dove l'audio parte qualche millisecondo dopo il video",
+     "en": "Preview stuck with OBS recordings (.mkv) where audio starts a few milliseconds after the video"
+    },
+    {
+     "type": "impr",
+     "text": "Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
+     "en": "If a video preview can't be read, NoonFrame rebuilds it on its own"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.101",
    "date": "2026-10-01",
@@ -459,17 +476,6 @@
      "type": "impr",
      "text": "Trascrizione: doppio clic su una parola per correggerla",
      "en": "Transcript: double-click a word to correct it"
-    }
-   ]
-  },
-  {
-   "version": "1.5.72",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo logo di NoonFrame: nell'app, nell'icona del Mac e in quella di Windows",
-     "en": "New NoonFrame logo: in the app, in the Mac icon and in the Windows icon"
     }
    ]
   }
