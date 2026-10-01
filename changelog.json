@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.95",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
+    "en": "Graphics: clipping masks, layer styles (inner shadow, bevel, color and gradient overlay), curves, levels, exposure, vibrance, color balance, shadows/highlights, photo filter, gradient map and .cube LUTs"
+   }
+  ]
+ },
+ {
   "version": "1.5.94",
   "date": "2026-10-01",
   "items": [

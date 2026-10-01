@@ -1,13 +1,24 @@
 {
- "version": "1.5.94",
+ "version": "1.5.95",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.94.zip",
- "size": 7541836,
- "sha256": "ecc907af39c126f98effffdf5fbc145b86656b1f500834f02b87ad326dfd6588",
- "sig": "0n/MNFdtpb52pFnELasPWrJzdqRZ6NXYGJVhiC8CqEIYySgb9uY2o14KuQ6vuNWquwFEWzhCmESQwJJELfFrBA==",
- "notes": "Miglioramento: Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.95.zip",
+ "size": 7551732,
+ "sha256": "1d375987fee6397eceb924dd1ecc3aa9938c61bf40515f33be2457bbad4fd3f2",
+ "sig": "Uspadth+ij5KpQrve3Mxdp5zZgvTsaXPQxk+ZXLGPTX9LaQtS7N1UfsGPSg6clBr25WeSjXir4H2srFS2mAhCg==",
+ "notes": "Miglioramento: Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.95",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
+     "en": "Graphics: clipping masks, layer styles (inner shadow, bevel, color and gradient overlay), curves, levels, exposure, vibrance, color balance, shadows/highlights, photo filter, gradient map and .cube LUTs"
+    }
+   ]
+  },
   {
    "version": "1.5.94",
    "date": "2026-10-01",
@@ -514,27 +525,6 @@
      "type": "impr",
      "text": "Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
      "en": "Noonframe credits: in AI keys you can choose “Use credits” and generate images, videos, voices and texts without creating keys. Prices and estimates shown in credits"
-    }
-   ]
-  },
-  {
-   "version": "1.5.65",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Ogni scena mostra cosa sta succedendo: in attesa, in coda su fal.ai, in creazione, con il tempo che passa",
-     "en": "Each scene shows what's happening: waiting, queued on fal.ai, being created, with elapsed time"
-    },
-    {
-     "type": "impr",
-     "text": "Selezione delle scene in Animazioni: seleziona tutti / deseleziona / solo quelli da fare, e crea solo i selezionati con il costo totale",
-     "en": "Scene selection in Animations: select all / deselect / only missing ones, and create only the selected with the total cost"
-    },
-    {
-     "type": "impr",
-     "text": "8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
-     "en": "8 budget video models at 720p or lower (2 to 4 cents per second), tagged Budget"
     }
    ]
   }
