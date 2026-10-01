@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.102",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima bloccata con le registrazioni OBS (.mkv) dove l'audio parte qualche millisecondo dopo il video",
+    "en": "Preview stuck with OBS recordings (.mkv) where audio starts a few milliseconds after the video"
+   },
+   {
+    "type": "impr",
+    "text": "Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
+    "en": "If a video preview can't be read, NoonFrame rebuilds it on its own"
+   }
+  ]
+ },
+ {
   "version": "1.5.101",
   "date": "2026-10-01",
   "items": [

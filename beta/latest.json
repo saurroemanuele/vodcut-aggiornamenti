@@ -22,8 +22,7 @@
      "text": "Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
      "en": "If a video preview can't be read, NoonFrame rebuilds it on its own"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.101",
