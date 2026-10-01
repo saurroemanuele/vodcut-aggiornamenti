@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.91",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
+    "en": "New Graphics section: a Photoshop-style layer editor inside NoonFrame. Ready-made formats for posts, stories, thumbnails, carousels and banners; text, shapes, brush, eraser, masks, adjustment layers, blending, shadow, stroke and glow; AI background removal, AI-generated images, PSD opening; export to PNG, JPG, WebP and PDF"
+   }
+  ]
+ },
+ {
   "version": "1.5.90",
   "date": "2026-09-30",
   "items": [

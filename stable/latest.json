@@ -1,13 +1,24 @@
 {
- "version": "1.5.90",
+ "version": "1.5.91",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.90.zip",
- "size": 7281727,
- "sha256": "6c6b996038f6885ba475c067a7be8f081d9b6f04cb2f0259d15b8379d01fe638",
- "sig": "Yh3pYKOIoGgvSuWbeBDq6c7+xZxvB0a0gtGKHPhtJSJK1TFxFMhreDTHXSWs9i9JW94XkW2lqRhAuhGmnlpLCg==",
- "notes": "Miglioramento: Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
- "date": "2026-09-30",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.91.zip",
+ "size": 7516846,
+ "sha256": "c497bb161777756386af4f0d2a7abf9f047183c70c23f455afa46bc953a158b4",
+ "sig": "4uu6T8sS8y+8HkcTVvf585a9DCaOCmon33EIobvCPLcYdLXTUC98FpTkm7bSwBbJSs0KwQNiAO8p8sIqfwXAAw==",
+ "notes": "Miglioramento: Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
+ "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.91",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
+     "en": "New Graphics section: a Photoshop-style layer editor inside NoonFrame. Ready-made formats for posts, stories, thumbnails, carousels and banners; text, shapes, brush, eraser, masks, adjustment layers, blending, shadow, stroke and glow; AI background removal, AI-generated images, PSD opening; export to PNG, JPG, WebP and PDF"
+    }
+   ]
+  },
   {
    "version": "1.5.90",
    "date": "2026-09-30",
@@ -524,22 +535,6 @@
      "type": "fix",
      "text": "Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
      "en": "Animations: previews play on hover while videos are being created (before the page redrew every 2 seconds and stopped them)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.61",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Animazioni fluide: le anteprime delle clip non partono più tutte insieme in loop, si guardano passandoci sopra",
-     "en": "Smooth Animations step: clip previews no longer all loop at once, they play on hover"
-    },
-    {
-     "type": "impr",
-     "text": "Animazioni: in alto la scelta \"I personaggi parlano?\" per tutta la storia, il conteggio delle scene (parlano / video AI / immagini) e un avviso prima di creare video in cui un personaggio non parla. Nelle nuove storie i personaggi parlano già",
-     "en": "Animations: at the top the \"Do the characters talk?\" choice for the whole story, the scene count (talk / AI video / images) and a warning before creating videos where a character doesn't talk. In new stories characters already talk"
     }
    ]
   }
