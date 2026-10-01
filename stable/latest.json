@@ -1,13 +1,24 @@
 {
- "version": "1.5.93",
+ "version": "1.5.94",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.93.zip",
- "size": 7539265,
- "sha256": "2c8e3224023470a310b01233ebabd9d68d3237f87010b3f131c57c243396266d",
- "sig": "4mijMgeBkB9mMi2bnqsobF4TWmoAn97+warz7SIlxCdQIuwd9rRpyUT0mfsRDbq/NZupABTXiWqeSTXtGhb8BQ==",
- "notes": "Miglioramento: Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.94.zip",
+ "size": 7541836,
+ "sha256": "ecc907af39c126f98effffdf5fbc145b86656b1f500834f02b87ad326dfd6588",
+ "sig": "0n/MNFdtpb52pFnELasPWrJzdqRZ6NXYGJVhiC8CqEIYySgb9uY2o14KuQ6vuNWquwFEWzhCmESQwJJELfFrBA==",
+ "notes": "Miglioramento: Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.94",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
+     "en": "Graphics: text that follows a path drawn with the pen (editable), print-ready CMYK PDF with print resolution (72/150/300 dpi), PNG with sRGB color profile"
+    }
+   ]
+  },
   {
    "version": "1.5.93",
    "date": "2026-10-01",
@@ -524,17 +535,6 @@
      "type": "impr",
      "text": "8 modelli video economici in 720p o meno (da 2 a 4 centesimi al secondo), segnati come Risparmio",
      "en": "8 budget video models at 720p or lower (2 to 4 cents per second), tagged Budget"
-    }
-   ]
-  },
-  {
-   "version": "1.5.64",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
-     "en": "More accurate cost estimates: images now use the model's real price (Nano Banana 2 on fal.ai costs $0.08, not $0.04) and story writing counts the tokens actually used"
     }
    ]
   }

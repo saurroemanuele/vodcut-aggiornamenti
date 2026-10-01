@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.94",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
+    "en": "Graphics: text that follows a path drawn with the pen (editable), print-ready CMYK PDF with print resolution (72/150/300 dpi), PNG with sRGB color profile"
+   }
+  ]
+ },
+ {
   "version": "1.5.93",
   "date": "2026-10-01",
   "items": [
