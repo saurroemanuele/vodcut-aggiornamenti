@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.93",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
+    "en": "Graphics: healing brush (removes blemishes and small objects), pen with editable paths, curved text, brand kit with colors/fonts/logos per client, templates, create the same design in other formats in one click, save as layered PSD, pressure-sensitive brush for tablets, use a design in a video project"
+   }
+  ]
+ },
+ {
   "version": "1.5.92",
   "date": "2026-10-01",
   "items": [

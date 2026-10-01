@@ -1,13 +1,24 @@
 {
- "version": "1.5.92",
+ "version": "1.5.93",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.92.zip",
- "size": 7524238,
- "sha256": "ba4b907a1732b8887a24d0ff2d855d5dd7729e2d4072b0981fa854966c2199e6",
- "sig": "UWAWkvsa/iDLLzMHS/vPzm59sdD2TqDhIi3bj4kOsHPeZHpucwoQ3H3VIC5GA0QqvbI8UbaUlYP2I4ZQB5v9AA==",
- "notes": "Correzione: Grafica: i filtri colore non compaiono più su forme e testi (resta la sfocatura negli Effetti)\nMiglioramento: Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.93.zip",
+ "size": 7539265,
+ "sha256": "2c8e3224023470a310b01233ebabd9d68d3237f87010b3f131c57c243396266d",
+ "sig": "4mijMgeBkB9mMi2bnqsobF4TWmoAn97+warz7SIlxCdQIuwd9rRpyUT0mfsRDbq/NZupABTXiWqeSTXtGhb8BQ==",
+ "notes": "Miglioramento: Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.93",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
+     "en": "Graphics: healing brush (removes blemishes and small objects), pen with editable paths, curved text, brand kit with colors/fonts/logos per client, templates, create the same design in other formats in one click, save as layered PSD, pressure-sensitive brush for tablets, use a design in a video project"
+    }
+   ]
+  },
   {
    "version": "1.5.92",
    "date": "2026-10-01",
@@ -524,22 +535,6 @@
      "type": "fix",
      "text": "Stime dei costi più precise: le immagini ora usano il prezzo vero del modello (Nano Banana 2 su fal.ai costa $0.08, non $0.04) e la scrittura della storia conta i token davvero usati",
      "en": "More accurate cost estimates: images now use the model's real price (Nano Banana 2 on fal.ai costs $0.08, not $0.04) and story writing counts the tokens actually used"
-    }
-   ]
-  },
-  {
-   "version": "1.5.63",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Video AI e scene che parlano: niente più scritte o sottotitoli inventati dentro i video (la battuta non va più nel prompt e il divieto di testo è esplicito)",
-     "en": "AI videos and talking scenes: no more made-up text or subtitles inside the videos (the line is no longer in the prompt and text is explicitly forbidden)"
-    },
-    {
-     "type": "fix",
-     "text": "Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
-     "en": "If fal.ai or ElevenLabs credit runs out, creation stops right away with a clear message instead of trying every scene"
     }
    ]
   }
