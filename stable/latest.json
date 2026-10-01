@@ -1,13 +1,24 @@
 {
- "version": "1.5.98",
+ "version": "1.5.99",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.98.zip",
- "size": 7575978,
- "sha256": "a20cce28543ffec529c051eb657d26011a8cface87535abba2335d3d60a8f98e",
- "sig": "Y+bWukJDVlGUTOJdGgNL1q6YLtr5pYyEb0BegNc6D/vyM6+vkc0vjRKWay4gHFxJy8L/BVkWRw8YPngNWVubBA==",
- "notes": "Miglioramento: Grafica: Selezione rapida (dipingi sull'oggetto e arriva ai bordi), Lazo poligonale, Migliora bordo per capelli e pelo, Espandi/Contrai/Arrotonda/Bordo della selezione",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.99.zip",
+ "size": 7580987,
+ "sha256": "691be9fb051b114895e00b1ae7872485b2f991cac71ea8ad9abad141550961cc",
+ "sig": "9qc2C+zMjY1UMPf+y8LQ8MuAFGjZIZKxLg0S0BFL02WWUE3/d+AR3cwMkhR96+DpyrLS7J5h/KYK6hiw9IVkDw==",
+ "notes": "Miglioramento: Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.99",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
+     "en": "Graphics: Generative fill (select an area and AI redoes it as you describe, or removes it; without AI it's rebuilt from the surroundings) and Liquify (push, bloat, pinch, twirl)"
+    }
+   ]
+  },
   {
    "version": "1.5.98",
    "date": "2026-10-01",
@@ -469,27 +480,6 @@
      "type": "impr",
      "text": "Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
      "en": "In the editor's AI panel your styles show their category"
-    }
-   ]
-  },
-  {
-   "version": "1.5.69",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Montaggio con l'AI: nell'editor c'è il nuovo pannello «AI». Scegli uno stile (Finanza e business, Gaming, Storytelling, Podcast o uno tuo) e l'AI prepara il montaggio: pause, tagli di errori e ripetizioni, zoom, sottotitoli, scritte e grafiche generate. Scegli cosa tenere e premi Applica: Annulla torna indietro in un colpo",
-     "en": "AI editing: the editor has a new «AI» panel. Choose a style (Finance and business, Gaming, Storytelling, Podcast or your own) and the AI prepares the edit: pauses, cuts of mistakes and repetitions, zooms, subtitles, text and generated graphics. Pick what to keep and press Apply: Undo reverts it all at once"
-    },
-    {
-     "type": "impr",
-     "text": "Stile di montaggio dai tuoi video di riferimento: in Formati carica i video e premi «Analizza lo stile», l'AI guarda i fotogrammi e ne ricava ritmo, zoom, sottotitoli e grafiche",
-     "en": "Editing style from your reference videos: in Formats upload the videos and press «Analyze the style», the AI looks at the frames and extracts pacing, zooms, subtitles and graphics"
-    },
-    {
-     "type": "impr",
-     "text": "Grafiche AI con lo sfondo trasparente, pronte da usare come sticker",
-     "en": "AI graphics with a transparent background, ready to use as stickers"
     }
    ]
   }

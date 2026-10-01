@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.99",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
+    "en": "Graphics: Generative fill (select an area and AI redoes it as you describe, or removes it; without AI it's rebuilt from the surroundings) and Liquify (push, bloat, pinch, twirl)"
+   }
+  ]
+ },
+ {
   "version": "1.5.98",
   "date": "2026-10-01",
   "items": [
