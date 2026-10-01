@@ -1,13 +1,25 @@
 {
- "version": "1.5.102",
+ "version": "1.5.103",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.102.zip",
- "size": 7613961,
- "sha256": "8bfff1a2f0f3e689c2e04185861b55eaebb4a44e7a14f4936b8f61e37a831b01",
- "sig": "k7eCpS5X2UqtXsIOoKCGHb7MdxmDwJSww05KyvzEFyRpV7nvyLJL925ErFE+duM9A42eLTiB2chh7T7HthD+Cg==",
- "notes": "Correzione: Anteprima bloccata con le registrazioni OBS (.mkv) dove l'audio parte qualche millisecondo dopo il video\nMiglioramento: Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.103.zip",
+ "size": 7614652,
+ "sha256": "f9e96ca3435c530a96d150e4342cc4f4425f9c553bf26d900851f8c3159ef130",
+ "sig": "IE9wSVkJ1OzINZtngn8Mdj7nFackRhVaMuJPoS7M6jd4tFvxqb4luM6uRwLv7Y9E+Iy2r2YWSsIxgDHYdwsaDg==",
+ "notes": "Miglioramento: Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.103",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
+     "en": "Freeze frame: right-click the clip, the frame at the playhead holds for 2 seconds (drag the edge to extend)"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.102",
    "date": "2026-10-01",
@@ -429,52 +441,6 @@
      "type": "impr",
      "text": "Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
      "en": "References: «Publish for everyone» shares your edit or image style with every user, after approval"
-    }
-   ]
-  },
-  {
-   "version": "1.5.73",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Reference: mentre analizza, la pagina non torna più in alto da sola e non va a scatti",
-     "en": "References: while analyzing, the page no longer jumps back to the top or stutters"
-    },
-    {
-     "type": "fix",
-     "text": "Le rotelline di caricamento girano fluide in tutta l'app",
-     "en": "Loading spinners spin smoothly across the app"
-    },
-    {
-     "type": "fix",
-     "text": "Timeline: zoom col pizzico molto più fluido e senza sfarfallio delle anteprime dei media",
-     "en": "Timeline: much smoother pinch zoom with no flickering media thumbnails"
-    },
-    {
-     "type": "fix",
-     "text": "Play e pausa rispondono subito",
-     "en": "Play and pause respond instantly"
-    },
-    {
-     "type": "fix",
-     "text": "Stile del video senza webcam: spiego perché gli zoom sono spenti e come attivarli",
-     "en": "Video style without webcam: I explain why zooms are off and how to turn them on"
-    },
-    {
-     "type": "impr",
-     "text": "Reference molto più veloci con i video lunghi: da YouTube scarico e analizzo solo i primi 8 minuti, il parlato solo nei primi 4 (bastano per capire ritmo e stile)",
-     "en": "Much faster references with long videos: from YouTube I download and analyze only the first 8 minutes, the speech only in the first 4 (enough to understand pacing and style)"
-    },
-    {
-     "type": "impr",
-     "text": "Reference: per ogni video vedi a che punto è e quanto manca, più o meno",
-     "en": "References: for each video you see where it's at and roughly how long is left"
-    },
-    {
-     "type": "impr",
-     "text": "Trascrizione: doppio clic su una parola per correggerla",
-     "en": "Transcript: double-click a word to correct it"
     }
    ]
   }
