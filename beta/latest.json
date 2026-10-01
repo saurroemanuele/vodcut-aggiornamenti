@@ -1,13 +1,25 @@
 {
- "version": "1.5.105",
+ "version": "1.5.106",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.105.zip",
- "size": 7620909,
- "sha256": "9cdb98489756c902850874dc25e6eb71482228f134e5221a013ffb0917cd0199",
- "sig": "6W53utSiIJvGjcbzjL6/5o1oUggmTkDADsiq0muV4fHeKBBJS8b13/eyEBhP/EjH+iQal5xNzhKuNbBqTXlgBQ==",
- "notes": "Miglioramento: Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.106.zip",
+ "size": 7623693,
+ "sha256": "955d5f84853bebeda8258cf73792fe8eb480ae40bbb2ab446d1d59c948442cdd",
+ "sig": "1rtLHWwG729jXwe8PVh7Uconj79ABm/A2T4Yeoei9F13UxtZq2NW7I5Ey6uicxV3isoexDIlBpERFrACXFJfCw==",
+ "notes": "Miglioramento: Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.106",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
+     "en": "Credits in your profile menu and a new store for plans and top-ups"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.105",
    "date": "2026-10-02",
@@ -410,32 +422,6 @@
      "type": "impr",
      "text": "Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
      "en": "Smaller, cleaner AI titles (Clean, Label, Minimal) and you choose which ones it can use; styles for AI images"
-    }
-   ]
-  },
-  {
-   "version": "1.5.75",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche",
-     "en": "AI edit: long silences are always cut, even with reference styles; subtitles are always added when requested; re-running the edit replaces the previous one instead of doubling titles and graphics"
-    },
-    {
-     "type": "impr",
-     "text": "Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica",
-     "en": "AI panel redesigned: choose what the AI does (pauses, cuts, zooms, subtitles, titles, graphics, sound effects) and how much: light or bold cuts, few or many zooms, graphic types"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto",
-     "en": "AI edit: titles use the animated templates and graphics are PNG assets (icons, charts, tables, diagrams), not photos"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
-     "en": "AI edit: free built-in sound effects synced with zooms, titles and graphics; longer zooms (3-8 seconds)"
     }
    ]
   }
