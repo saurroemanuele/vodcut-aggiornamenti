@@ -1,13 +1,25 @@
 {
- "version": "1.5.104",
+ "version": "1.5.105",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.104.zip",
- "size": 7614948,
- "sha256": "331cb7b4281403f3cb43d64ab48723078d4fd33892b47370d430d4e063e0cb84",
- "sig": "LdyBq6i1uXCRLLxS60ynA46bZTHY4Sq8XRxtHJH29OqdKAy1Dkxfa0/Hzcp8IjRzu7CWpecPQhDg6jZci4qSCA==",
- "notes": "Correzione: «Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore\nMiglioramento: Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
- "date": "2026-10-01",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.105.zip",
+ "size": 7620909,
+ "sha256": "9cdb98489756c902850874dc25e6eb71482228f134e5221a013ffb0917cd0199",
+ "sig": "6W53utSiIJvGjcbzjL6/5o1oUggmTkDADsiq0muV4fHeKBBJS8b13/eyEBhP/EjH+iQal5xNzhKuNbBqTXlgBQ==",
+ "notes": "Miglioramento: Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
+ "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.105",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
+     "en": "NoonFrame credits: monthly plans, top-ups and flash deals, with your balance always at the top"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.104",
    "date": "2026-10-01",
@@ -424,27 +436,6 @@
      "type": "impr",
      "text": "Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
      "en": "AI edit: free built-in sound effects synced with zooms, titles and graphics; longer zooms (3-8 seconds)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.74",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà",
-     "en": "AI edit: no more «invalid answer» error on long videos, the plan is split into smaller parts and recovered even if the answer is cut off"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare",
-     "en": "AI edit: see what you spend before starting (video reading and cost per graphic) and the total before applying"
-    },
-    {
-     "type": "impr",
-     "text": "Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
-     "en": "References: «Publish for everyone» shares your edit or image style with every user, after approval"
     }
    ]
   }
