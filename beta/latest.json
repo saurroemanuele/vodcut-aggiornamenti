@@ -2,10 +2,10 @@
  "version": "1.5.106",
  "runtime": 1,
  "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.106.zip",
- "size": 7623850,
- "sha256": "7a8a8a52cf940a368dc0c2f5b3d22a2460d2be8726ddb4916eabca600026d045",
- "sig": "wHynx3ULTJG+EY4/CC4BKznx3Y2Fz56hq4DL6P6m4hQ5S3VOF6vCYsKNM36G5KgoP+eIqS8uNZYJcTKv1Qy7Dg==",
- "notes": "Miglioramento: Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
+ "size": 7623693,
+ "sha256": "955d5f84853bebeda8258cf73792fe8eb480ae40bbb2ab446d1d59c948442cdd",
+ "sig": "1rtLHWwG729jXwe8PVh7Uconj79ABm/A2T4Yeoei9F13UxtZq2NW7I5Ey6uicxV3isoexDIlBpERFrACXFJfCw==",
+ "notes": "Miglioramento: Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
  "date": "2026-10-02",
  "history": [
   {
@@ -14,8 +14,8 @@
    "items": [
     {
      "type": "impr",
-     "text": "Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
-     "en": "Redesigned credits card in your profile, new prices, long offers show their end date"
+     "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
+     "en": "Credits in your profile menu and a new store for plans and top-ups"
     }
    ],
    "channel": "beta"
