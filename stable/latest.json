@@ -1,13 +1,24 @@
 {
- "version": "1.5.99",
+ "version": "1.5.100",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.99.zip",
- "size": 7580987,
- "sha256": "691be9fb051b114895e00b1ae7872485b2f991cac71ea8ad9abad141550961cc",
- "sig": "9qc2C+zMjY1UMPf+y8LQ8MuAFGjZIZKxLg0S0BFL02WWUE3/d+AR3cwMkhR96+DpyrLS7J5h/KYK6hiw9IVkDw==",
- "notes": "Miglioramento: Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.100.zip",
+ "size": 7611475,
+ "sha256": "5a4cb63c9eb8517ac5dba48210ece218be9b54275f7ba7bc4207f707a01835ef",
+ "sig": "k7WhXo7EWaOnOjWHROSannxMksgxfHtymZ2YS2FteDxDNi+gYPtkRixLUSNEUf0R1GHXx7Klj7fKw8UZ2Na4Cg==",
+ "notes": "Miglioramento: Grafica: testo con più stili nella stessa casella (grassetto, colori, misure, sottolineato), spazio tra i paragrafi, testo verticale; libreria di forme (frecce, cuore, fumetto, nuvola…), linee con frecce, forme combinate (unisci, sottrai, interseca, escludi); importa ed esporta SVG; GIF e MP4 dalle pagine; schede delle grafiche aperte",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.100",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: testo con più stili nella stessa casella (grassetto, colori, misure, sottolineato), spazio tra i paragrafi, testo verticale; libreria di forme (frecce, cuore, fumetto, nuvola…), linee con frecce, forme combinate (unisci, sottrai, interseca, escludi); importa ed esporta SVG; GIF e MP4 dalle pagine; schede delle grafiche aperte",
+     "en": "Graphics: mixed styles in one text box (bold, colors, sizes, underline), paragraph spacing, vertical text; shape library (arrows, heart, speech bubble, cloud…), lines with arrowheads, combined shapes (unite, subtract, intersect, exclude); SVG import and export; GIF and MP4 from pages; tabs for open designs"
+    }
+   ]
+  },
   {
    "version": "1.5.99",
    "date": "2026-10-01",
@@ -459,27 +470,6 @@
      "type": "impr",
      "text": "I Reference ora si aprono dal menu della foto profilo (in alto a destra), non più dalla home",
      "en": "References now open from the profile picture menu (top right), no longer from the home"
-    }
-   ]
-  },
-  {
-   "version": "1.5.70",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuova sezione «Reference» nella home: tutti i video e le immagini da cui l'AI impara, divisi per uso (Storie AI · script, Montaggio video, Storie AI · immagini) e per categoria (es. Imprenditoria, Prodotti digitali)",
-     "en": "New «References» section on the home: all the videos and images the AI learns from, split by use (AI Stories · script, Video editing, AI Stories · images) and by category (e.g. Entrepreneurship, Digital products)"
-    },
-    {
-     "type": "impr",
-     "text": "Reference di immagini: carica le immagini di uno stile, l'AI ne ricava il prompt e lo applichi a una pagina delle Storie AI in un clic",
-     "en": "Image references: upload images of a style, the AI extracts the prompt and you apply it to an AI Stories page in one click"
-    },
-    {
-     "type": "impr",
-     "text": "Nel pannello AI dell'editor gli stili tuoi mostrano la categoria",
-     "en": "In the editor's AI panel your styles show their category"
     }
    ]
   }

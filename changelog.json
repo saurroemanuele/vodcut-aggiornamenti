@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.100",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: testo con più stili nella stessa casella (grassetto, colori, misure, sottolineato), spazio tra i paragrafi, testo verticale; libreria di forme (frecce, cuore, fumetto, nuvola…), linee con frecce, forme combinate (unisci, sottrai, interseca, escludi); importa ed esporta SVG; GIF e MP4 dalle pagine; schede delle grafiche aperte",
+    "en": "Graphics: mixed styles in one text box (bold, colors, sizes, underline), paragraph spacing, vertical text; shape library (arrows, heart, speech bubble, cloud…), lines with arrowheads, combined shapes (unite, subtract, intersect, exclude); SVG import and export; GIF and MP4 from pages; tabs for open designs"
+   }
+  ]
+ },
+ {
   "version": "1.5.99",
   "date": "2026-10-01",
   "items": [
