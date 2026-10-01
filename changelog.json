@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.92",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Grafica: i filtri colore non compaiono più su forme e testi (resta la sfocatura negli Effetti)",
+    "en": "Graphics: color filters no longer show on shapes and text (blur stays in Effects)"
+   },
+   {
+    "type": "impr",
+    "text": "Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
+    "en": "Graphics: selections (rectangle, ellipse, lasso, magic wand and AI Select subject) with fill, delete, new layer, mask, invert and feather; brush and eraser stay inside the selection; new clone stamp"
+   }
+  ]
+ },
+ {
   "version": "1.5.91",
   "date": "2026-10-01",
   "items": [

@@ -1,13 +1,29 @@
 {
- "version": "1.5.91",
+ "version": "1.5.92",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.91.zip",
- "size": 7516846,
- "sha256": "c497bb161777756386af4f0d2a7abf9f047183c70c23f455afa46bc953a158b4",
- "sig": "4uu6T8sS8y+8HkcTVvf585a9DCaOCmon33EIobvCPLcYdLXTUC98FpTkm7bSwBbJSs0KwQNiAO8p8sIqfwXAAw==",
- "notes": "Miglioramento: Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.92.zip",
+ "size": 7524238,
+ "sha256": "ba4b907a1732b8887a24d0ff2d855d5dd7729e2d4072b0981fa854966c2199e6",
+ "sig": "UWAWkvsa/iDLLzMHS/vPzm59sdD2TqDhIi3bj4kOsHPeZHpucwoQ3H3VIC5GA0QqvbI8UbaUlYP2I4ZQB5v9AA==",
+ "notes": "Correzione: Grafica: i filtri colore non compaiono più su forme e testi (resta la sfocatura negli Effetti)\nMiglioramento: Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.92",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Grafica: i filtri colore non compaiono più su forme e testi (resta la sfocatura negli Effetti)",
+     "en": "Graphics: color filters no longer show on shapes and text (blur stays in Effects)"
+    },
+    {
+     "type": "impr",
+     "text": "Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
+     "en": "Graphics: selections (rectangle, ellipse, lasso, magic wand and AI Select subject) with fill, delete, new layer, mask, invert and feather; brush and eraser stay inside the selection; new clone stamp"
+    }
+   ]
+  },
   {
    "version": "1.5.91",
    "date": "2026-10-01",
@@ -524,17 +540,6 @@
      "type": "fix",
      "text": "Se finisce il credito di fal.ai o ElevenLabs la creazione si ferma subito con un messaggio chiaro, invece di provare tutte le scene",
      "en": "If fal.ai or ElevenLabs credit runs out, creation stops right away with a clear message instead of trying every scene"
-    }
-   ]
-  },
-  {
-   "version": "1.5.62",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Animazioni: mentre si creano i video le anteprime si guardano passandoci sopra (prima la pagina si ridisegnava ogni 2 secondi e le fermava)",
-     "en": "Animations: previews play on hover while videos are being created (before the page redrew every 2 seconds and stopped them)"
     }
    ]
   }
