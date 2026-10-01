@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.98",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: Selezione rapida (dipingi sull'oggetto e arriva ai bordi), Lazo poligonale, Migliora bordo per capelli e pelo, Espandi/Contrai/Arrotonda/Bordo della selezione",
+    "en": "Graphics: Quick selection (paint over the object and it snaps to the edges), Polygonal lasso, Refine edge for hair and fur, Expand/Contract/Smooth/Border selection"
+   }
+  ]
+ },
+ {
   "version": "1.5.97",
   "date": "2026-10-01",
   "items": [

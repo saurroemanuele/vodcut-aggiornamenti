@@ -1,13 +1,24 @@
 {
- "version": "1.5.97",
+ "version": "1.5.98",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.97.zip",
- "size": 7571737,
- "sha256": "4fd1f18ec2efe9ed9759ddd4b5f2693114435b34c7aeaa3060624d8eea70b423",
- "sig": "8EJPfZKtew7PzknRviG0m7YrOi5GZnq4tEENOWPbNrqcVIadlA6B5Hd2xYI7NZmWR/HkgW/u0GP3MnR1zBsaCw==",
- "notes": "Miglioramento: Grafica: strumento Sfumatura e Secchiello, Scherma/Brucia/Spugna, Sfoca/Nitidezza a pennello, menu Filtri (sfocatura gaussiana, di movimento e radiale, maschera di contrasto, grana, riduci disturbo, mosaico, onda, vortice, rilievo) con anteprima dal vivo",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.98.zip",
+ "size": 7575978,
+ "sha256": "a20cce28543ffec529c051eb657d26011a8cface87535abba2335d3d60a8f98e",
+ "sig": "Y+bWukJDVlGUTOJdGgNL1q6YLtr5pYyEb0BegNc6D/vyM6+vkc0vjRKWay4gHFxJy8L/BVkWRw8YPngNWVubBA==",
+ "notes": "Miglioramento: Grafica: Selezione rapida (dipingi sull'oggetto e arriva ai bordi), Lazo poligonale, Migliora bordo per capelli e pelo, Espandi/Contrai/Arrotonda/Bordo della selezione",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.98",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: Selezione rapida (dipingi sull'oggetto e arriva ai bordi), Lazo poligonale, Migliora bordo per capelli e pelo, Espandi/Contrai/Arrotonda/Bordo della selezione",
+     "en": "Graphics: Quick selection (paint over the object and it snaps to the edges), Polygonal lasso, Refine edge for hair and fur, Expand/Contract/Smooth/Border selection"
+    }
+   ]
+  },
   {
    "version": "1.5.97",
    "date": "2026-10-01",
@@ -479,27 +490,6 @@
      "type": "impr",
      "text": "Grafiche AI con lo sfondo trasparente, pronte da usare come sticker",
      "en": "AI graphics with a transparent background, ready to use as stickers"
-    }
-   ]
-  },
-  {
-   "version": "1.5.68",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Se fal.ai ha un intoppo momentaneo (errore 502/503/504) mentre controllo lo stato di un video, riprovo da solo invece di dare errore",
-     "en": "If fal.ai has a temporary hiccup (502/503/504) while I check a video's status, I retry by myself instead of failing"
-    },
-    {
-     "type": "fix",
-     "text": "In alto il riquadro «Da fare» non va più a capo",
-     "en": "The “To do” box at the top no longer wraps"
-    },
-    {
-     "type": "impr",
-     "text": "Schede delle clip rifatte: meno scritte, tipo di scena con tre icone (immagine, video, parla), prezzo e bottone Crea/Rifai sulla stessa riga, modello in piccolo sotto",
-     "en": "Clip cards redesigned: less text, scene type with three icons (image, video, talks), price and Create/Redo button on one row, model in small text below"
     }
    ]
   }
