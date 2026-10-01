@@ -1,24 +1,28 @@
 {
- "version": "1.5.103",
+ "version": "1.5.104",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.103.zip",
- "size": 7614652,
- "sha256": "f9e96ca3435c530a96d150e4342cc4f4425f9c553bf26d900851f8c3159ef130",
- "sig": "IE9wSVkJ1OzINZtngn8Mdj7nFackRhVaMuJPoS7M6jd4tFvxqb4luM6uRwLv7Y9E+Iy2r2YWSsIxgDHYdwsaDg==",
- "notes": "Miglioramento: Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.104.zip",
+ "size": 7614948,
+ "sha256": "331cb7b4281403f3cb43d64ab48723078d4fd33892b47370d430d4e063e0cb84",
+ "sig": "LdyBq6i1uXCRLLxS60ynA46bZTHY4Sq8XRxtHJH29OqdKAy1Dkxfa0/Hzcp8IjRzu7CWpecPQhDg6jZci4qSCA==",
+ "notes": "Correzione: «Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore\nMiglioramento: Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
  "date": "2026-10-01",
  "history": [
   {
-   "version": "1.5.103",
+   "version": "1.5.104",
    "date": "2026-10-01",
    "items": [
+    {
+     "type": "fix",
+     "text": "«Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore",
+     "en": "«Choose file» didn't open after closing and reopening NoonFrame while it was preparing a preview; the update could be wrongly discarded"
+    },
     {
      "type": "impr",
      "text": "Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
      "en": "Freeze frame: right-click the clip, the frame at the playhead holds for 2 seconds (drag the edge to extend)"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.102",

@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.104",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "fix",
+    "text": "«Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore",
+    "en": "«Choose file» didn't open after closing and reopening NoonFrame while it was preparing a preview; the update could be wrongly discarded"
+   },
+   {
+    "type": "impr",
+    "text": "Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
+    "en": "Freeze frame: right-click the clip, the frame at the playhead holds for 2 seconds (drag the edge to extend)"
+   }
+  ]
+ },
+ {
   "version": "1.5.102",
   "date": "2026-10-01",
   "items": [
