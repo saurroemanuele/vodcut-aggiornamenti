@@ -1,13 +1,24 @@
 {
- "version": "1.5.96",
+ "version": "1.5.97",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.96.zip",
- "size": 7563659,
- "sha256": "b7a424f1a0173c2f64955e1bcdc3ba896ed93b944a0e165a11e98371b119965e",
- "sig": "KZXz6ifHoMAyLAAI11DAGkFMFQv+kRU22SJsbPMBuI002g/zkvKAphpTS9ASudQMfMDLfm/6Ej9OzD4I6rYxCA==",
- "notes": "Miglioramento: Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.97.zip",
+ "size": 7571737,
+ "sha256": "4fd1f18ec2efe9ed9759ddd4b5f2693114435b34c7aeaa3060624d8eea70b423",
+ "sig": "8EJPfZKtew7PzknRviG0m7YrOi5GZnq4tEENOWPbNrqcVIadlA6B5Hd2xYI7NZmWR/HkgW/u0GP3MnR1zBsaCw==",
+ "notes": "Miglioramento: Grafica: strumento Sfumatura e Secchiello, Scherma/Brucia/Spugna, Sfoca/Nitidezza a pennello, menu Filtri (sfocatura gaussiana, di movimento e radiale, maschera di contrasto, grana, riduci disturbo, mosaico, onda, vortice, rilievo) con anteprima dal vivo",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.97",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: strumento Sfumatura e Secchiello, Scherma/Brucia/Spugna, Sfoca/Nitidezza a pennello, menu Filtri (sfocatura gaussiana, di movimento e radiale, maschera di contrasto, grana, riduci disturbo, mosaico, onda, vortice, rilievo) con anteprima dal vivo",
+     "en": "Graphics: Gradient and Paint Bucket tools, Dodge/Burn/Sponge, Blur/Sharpen brushes, Filters menu (gaussian, motion and radial blur, unsharp mask, grain, reduce noise, pixelate, wave, twirl, emboss) with live preview"
+    }
+   ]
+  },
   {
    "version": "1.5.96",
    "date": "2026-10-01",
@@ -489,42 +500,6 @@
      "type": "impr",
      "text": "Schede delle clip rifatte: meno scritte, tipo di scena con tre icone (immagine, video, parla), prezzo e bottone Crea/Rifai sulla stessa riga, modello in piccolo sotto",
      "en": "Clip cards redesigned: less text, scene type with three icons (image, video, talks), price and Create/Redo button on one row, model in small text below"
-    }
-   ]
-  },
-  {
-   "version": "1.5.67",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuova storia: scegli subito «Storia con video» o «Storia con immagini» (immagini animate e frase a schermo, costa pochissimo)",
-     "en": "New story: choose right away between “Video story” and “Image story” (animated images and on-screen lines, very cheap)"
-    },
-    {
-     "type": "impr",
-     "text": "Personaggi che parlano senza lip sync: con «Muove la bocca» il personaggio parla in una clip normale e poi ci mettiamo la sua voce, molto più economico. Il lip sync resta come «Labbra sincronizzate»",
-     "en": "Talking characters without lip sync: with “Mouth moves” the character talks in a normal clip and then we add their voice, much cheaper. Lip sync stays as “Lip sync”"
-    },
-    {
-     "type": "impr",
-     "text": "Nelle scene del narratore nessuna bocca si muove",
-     "en": "In narrator scenes no mouth moves"
-    },
-    {
-     "type": "impr",
-     "text": "Storie AI rifatte: schermate più pulite, aiuto a comparsa, nuova schermata finale del video e nuova finestra Servizi AI",
-     "en": "AI Stories redesigned: cleaner screens, pop-up help, new final video screen and new AI services window"
-    },
-    {
-     "type": "impr",
-     "text": "Modello video predefinito più economico: Seedance 1.0 Pro Fast 720p (circa 2 centesimi al secondo)",
-     "en": "Cheaper default video model: Seedance 1.0 Pro Fast 720p (about 2 cents per second)"
-    },
-    {
-     "type": "impr",
-     "text": "Il nome ora si scrive NoonFrame",
-     "en": "The name is now written NoonFrame"
     }
    ]
   }

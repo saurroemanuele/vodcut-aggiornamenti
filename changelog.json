@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.97",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: strumento Sfumatura e Secchiello, Scherma/Brucia/Spugna, Sfoca/Nitidezza a pennello, menu Filtri (sfocatura gaussiana, di movimento e radiale, maschera di contrasto, grana, riduci disturbo, mosaico, onda, vortice, rilievo) con anteprima dal vivo",
+    "en": "Graphics: Gradient and Paint Bucket tools, Dodge/Burn/Sponge, Blur/Sharpen brushes, Filters menu (gaussian, motion and radial blur, unsharp mask, grain, reduce noise, pixelate, wave, twirl, emboss) with live preview"
+   }
+  ]
+ },
+ {
   "version": "1.5.96",
   "date": "2026-10-01",
   "items": [
