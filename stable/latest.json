@@ -1,13 +1,24 @@
 {
- "version": "1.5.95",
+ "version": "1.5.96",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.95.zip",
- "size": 7551732,
- "sha256": "1d375987fee6397eceb924dd1ecc3aa9938c61bf40515f33be2457bbad4fd3f2",
- "sig": "Uspadth+ij5KpQrve3Mxdp5zZgvTsaXPQxk+ZXLGPTX9LaQtS7N1UfsGPSg6clBr25WeSjXir4H2srFS2mAhCg==",
- "notes": "Miglioramento: Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.96.zip",
+ "size": 7563659,
+ "sha256": "b7a424f1a0173c2f64955e1bcdc3ba896ed93b944a0e165a11e98371b119965e",
+ "sig": "KZXz6ifHoMAyLAAI11DAGkFMFQv+kRU22SJsbPMBuI002g/zkvKAphpTS9ASudQMfMDLfm/6Ej9OzD4I6rYxCA==",
+ "notes": "Miglioramento: Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
  "date": "2026-10-01",
  "history": [
+  {
+   "version": "1.5.96",
+   "date": "2026-10-01",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
+     "en": "Graphics: free transform (distort, perspective, skew, warp with arc/flag styles), rulers, guides and grid, History panel, merge down/visible, rasterize, distribute, lock transparency, copy to another page"
+    }
+   ]
+  },
   {
    "version": "1.5.95",
    "date": "2026-10-01",
@@ -514,17 +525,6 @@
      "type": "impr",
      "text": "Il nome ora si scrive NoonFrame",
      "en": "The name is now written NoonFrame"
-    }
-   ]
-  },
-  {
-   "version": "1.5.66",
-   "date": "2026-09-29",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Crediti Noonframe: in Chiavi AI puoi scegliere «Usa i crediti» e generare immagini, video, voci e testi senza creare chiavi. Prezzi e stime mostrati in crediti",
-     "en": "Noonframe credits: in AI keys you can choose “Use credits” and generate images, videos, voices and texts without creating keys. Prices and estimates shown in credits"
     }
    ]
   }

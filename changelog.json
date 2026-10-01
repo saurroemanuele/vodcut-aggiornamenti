@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.96",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
+    "en": "Graphics: free transform (distort, perspective, skew, warp with arc/flag styles), rulers, guides and grid, History panel, merge down/visible, rasterize, distribute, lock transparency, copy to another page"
+   }
+  ]
+ },
+ {
   "version": "1.5.95",
   "date": "2026-10-01",
   "items": [
