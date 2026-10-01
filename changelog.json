@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.101",
+  "date": "2026-10-01",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Versioni di prova (beta) per i tester invitati: ricevono le correzioni prima di tutti",
+    "en": "Beta versions for invited testers: they get fixes before everyone else"
+   }
+  ]
+ },
+ {
   "version": "1.5.100",
   "date": "2026-10-01",
   "items": [
