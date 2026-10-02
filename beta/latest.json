@@ -1,13 +1,29 @@
 {
- "version": "1.5.111",
+ "version": "1.5.112",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.111.zip",
- "size": 7631211,
- "sha256": "e14f4afee5e63270c0209f0bad36256052a87743afae72e553669af1c0d95851",
- "sig": "Il+LmXNrhtAAqGLg21yuCVOsqBcbYm3OXCle0Iu6lMHyEYksABbVrjQdC2jhICCzbsyMtgP7FdTRFvFvJ57aAQ==",
- "notes": "Correzione: Sicurezza: la pagina dell'app si apre solo dalla finestra di NoonFrame; progetti condivisi senza percorsi di rete; chiavi del Mac salvate senza passare dagli argomenti\nMiglioramento: Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.112.zip",
+ "size": 7632344,
+ "sha256": "bcef648b8747c8baec0378b0905c1d99090bfa23b5d2f814748b72860f6ab5b0",
+ "sig": "ZKthWLIn1L4M4EhY5ii+grRvHRMfkdPx0YZc1JXI27Md0UHfn4dIXCmBVN7Gr930jmpnRypDe+Jz3YOsw1jxAA==",
+ "notes": "Correzione: Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato\nMiglioramento: ",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.112",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
+     "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
+    },
+    {
+     "type": "impr",
+     "text": ""
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.111",
    "date": "2026-10-02",
@@ -361,17 +377,6 @@
      "type": "fix",
      "text": "Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
      "en": "Titles behind you: 4x lighter person cut-out model (44 MB), visible progress and a button to skip and put titles over the video"
-    }
-   ]
-  },
-  {
-   "version": "1.5.81",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
-     "en": "Titles behind you much faster to prepare: no more tool installation the first time (it hung for minutes), only the model is downloaded once with visible progress"
     }
    ]
   }
