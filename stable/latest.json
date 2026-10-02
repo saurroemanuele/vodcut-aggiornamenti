@@ -1,13 +1,24 @@
 {
- "version": "1.5.115",
+ "version": "1.5.116",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.115.zip",
- "size": 7639096,
- "sha256": "c2a3cf047ca441b46b0f2e6e8606ccac695203451b63189de4dea9690655b0a4",
- "sig": "3KYjVtfK3+40c8NaDElaBNFMXqgTKnfrD1qSE2h/sgLjWBtbA2SQSlf/vYwr4MXJx5t70PzR13Xuo5SV5OtHDA==",
- "notes": "Correzione: Timeline: miniature e onda non diventano più nere quando scorri o fai zoom (soprattutto sul Mac)\nMiglioramento: Calamite più furbe: spostando testi e immagini si agganciano anche agli altri elementi, e restano agganciate senza scatti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.116.zip",
+ "size": 7639923,
+ "sha256": "d3ec64608a571743879ec48450d335f82f2cd66fb1bd28822051f62d40a1252d",
+ "sig": "YVng/TbQssIwa772voZA+YuyrhsD0UgDaKRg7FK3PTozF2Ed0f/W0DRinFfz1ZGBBXm1pU6ICR1GWV1OCcHRBw==",
+ "notes": "Miglioramento: Play più immediato: l'uscita audio resta sveglia mentre l'editor è aperto e in verticale l'anteprima si ridisegna appena arriva il fotogramma nuovo",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.116",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Play più immediato: l'uscita audio resta sveglia mentre l'editor è aperto e in verticale l'anteprima si ridisegna appena arriva il fotogramma nuovo",
+     "en": "Faster play: the audio output stays awake while the editor is open and in vertical the preview redraws as soon as the new frame arrives"
+    }
+   ]
+  },
   {
    "version": "1.5.115",
    "date": "2026-10-02",
@@ -424,17 +435,6 @@
      "type": "impr",
      "text": "Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
      "en": "AI Stories: several lines in the same clip. In Animations press the link on a scene to merge it into the previous clip: one clip (and one cost) for all the lines, even when characters take turns talking"
-    }
-   ]
-  },
-  {
-   "version": "1.5.85",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
-     "en": "Remove background with AI: cut the person out of any background in videos and images, free and on your computer. Lighter cut-out for titles behind you on long clips"
     }
    ]
   }

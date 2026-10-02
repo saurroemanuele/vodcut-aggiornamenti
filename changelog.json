@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.116",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Play più immediato: l'uscita audio resta sveglia mentre l'editor è aperto e in verticale l'anteprima si ridisegna appena arriva il fotogramma nuovo",
+    "en": "Faster play: the audio output stays awake while the editor is open and in vertical the preview redraws as soon as the new frame arrives"
+   }
+  ]
+ },
+ {
   "version": "1.5.115",
   "date": "2026-10-02",
   "items": [
