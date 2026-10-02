@@ -1,13 +1,29 @@
 {
- "version": "1.5.114",
+ "version": "1.5.115",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.114.zip",
- "size": 7638590,
- "sha256": "05efd3b03955a0dee43ae4a7a65e0ae503a6f61fc541578e84ce4d3b93f5f3ec",
- "sig": "RtNZkoeGK+XEUyaEmVdQ+SoUW860aZFQzjwq6ZKt5uBEHxynrZm9WPw7XxeL4yZkcocCh1IzsXGGhCkrrCqhDQ==",
- "notes": "Correzione: Sul Mac «Rimuovi lo sfondo» nella sezione Grafica non chiude più l'app\nCorrezione: L'app non torna più a una versione vecchia se la chiudi mentre si apre\nMiglioramento: Zoom con i keyframe: l'inquadratura può spostarsi mentre lo zoom è attivo\nMiglioramento: Scegliendo un effetto di zoom o un'animazione lo vedi subito sul video\nMiglioramento: Miniature della timeline senza sfarfallio quando fai zoom o scorri, e pronte molto prima\nMiglioramento: Con poche tracce la timeline sta in mezzo, non attaccata in alto\nMiglioramento: Play e pausa più immediati sui video del telefono inseriti nel progetto\nMiglioramento: Qualità dell'anteprima: solo le scelte che cambiano davvero qualcosa, e resta salvata",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.115.zip",
+ "size": 7639096,
+ "sha256": "c2a3cf047ca441b46b0f2e6e8606ccac695203451b63189de4dea9690655b0a4",
+ "sig": "3KYjVtfK3+40c8NaDElaBNFMXqgTKnfrD1qSE2h/sgLjWBtbA2SQSlf/vYwr4MXJx5t70PzR13Xuo5SV5OtHDA==",
+ "notes": "Correzione: Timeline: miniature e onda non diventano più nere quando scorri o fai zoom (soprattutto sul Mac)\nMiglioramento: Calamite più furbe: spostando testi e immagini si agganciano anche agli altri elementi, e restano agganciate senza scatti",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.115",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Timeline: miniature e onda non diventano più nere quando scorri o fai zoom (soprattutto sul Mac)",
+     "en": "Timeline: thumbnails and waveform no longer turn black when you scroll or zoom (especially on Mac)"
+    },
+    {
+     "type": "impr",
+     "text": "Calamite più furbe: spostando testi e immagini si agganciano anche agli altri elementi, e restano agganciate senza scatti",
+     "en": "Smarter snapping: moving texts and images also snaps to other elements, and stays snapped without jitter"
+    }
+   ]
+  },
   {
    "version": "1.5.114",
    "date": "2026-10-02",
@@ -419,17 +435,6 @@
      "type": "impr",
      "text": "Rimuovi sfondo con l'AI: ritaglia la persona da qualsiasi sfondo in video e immagini, gratis e sul tuo computer. Più leggero anche il ritaglio dei titoli dietro di te sui pezzi lunghi",
      "en": "Remove background with AI: cut the person out of any background in videos and images, free and on your computer. Lighter cut-out for titles behind you on long clips"
-    }
-   ]
-  },
-  {
-   "version": "1.5.84",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
-     "en": "New «Remove background»: on a video or image above the stream, remove a green, blue or any solid-color backdrop (eyedropper, auto-detect, soft edges, spill removal and mask view)"
     }
    ]
   }

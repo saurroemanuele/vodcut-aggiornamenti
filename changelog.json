@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.115",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Timeline: miniature e onda non diventano più nere quando scorri o fai zoom (soprattutto sul Mac)",
+    "en": "Timeline: thumbnails and waveform no longer turn black when you scroll or zoom (especially on Mac)"
+   },
+   {
+    "type": "impr",
+    "text": "Calamite più furbe: spostando testi e immagini si agganciano anche agli altri elementi, e restano agganciate senza scatti",
+    "en": "Smarter snapping: moving texts and images also snaps to other elements, and stays snapped without jitter"
+   }
+  ]
+ },
+ {
   "version": "1.5.114",
   "date": "2026-10-02",
   "items": [
