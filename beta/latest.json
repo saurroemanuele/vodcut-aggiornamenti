@@ -1,13 +1,25 @@
 {
- "version": "1.5.107",
+ "version": "1.5.108",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.107.zip",
- "size": 7623851,
- "sha256": "5e8d52b79a94fb22cb83278c3f441de992412cdfb18b5a2e45ac7bd340e6c58b",
- "sig": "cLkQXk2YuMVYROQzRgqUHGyO6o/Aw3H1fYVlj1sJEJonx2m9ueTaSwMMlDvDindfd0wNl9qo9HDC5fzNB5WhDw==",
- "notes": "Miglioramento: Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.108.zip",
+ "size": 7623864,
+ "sha256": "2d33568a793d39b97aede71b1b76469302eb3672139adc150a47a303f8977856",
+ "sig": "mqkPKmLvxiaBZC01DBkwSyzdo9sQkKS5HOdRf0fAbmYF9BUF5g2amqouIhmATDmNGADmKPDp4dqfflF5PoaRDg==",
+ "notes": "Miglioramento: Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.108",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
+     "en": "Leaner usage stats: no part of your file paths is ever sent"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.107",
    "date": "2026-10-02",
@@ -387,22 +399,6 @@
      "type": "impr",
      "text": "Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
      "en": "New «Remove cut parts» button in the timeline: darkened parts disappear and the preview becomes smooth (a pre-edited video prepared in the background). In the transcript the words stay struck through and can be restored any time"
-    }
-   ]
-  },
-  {
-   "version": "1.5.77",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio",
-     "en": "Smooth preview over cuts: as soon as there are cut parts the preview uses a copy made to jump instantly (prepared in the background), plus two players taking turns"
-    },
-    {
-     "type": "fix",
-     "text": "Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
-     "en": "Much faster AI edit with Claude: the model no longer wastes all tokens «thinking» (the answer came back empty after minutes and had to be retried)"
     }
    ]
   }
