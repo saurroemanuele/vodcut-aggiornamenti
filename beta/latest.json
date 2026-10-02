@@ -1,13 +1,25 @@
 {
- "version": "1.5.109",
+ "version": "1.5.110",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.109.zip",
- "size": 7628799,
- "sha256": "3191cd80f6d265d2c3ce2458476ba4a783e70da4a4068c0c87d1d260ece53bfe",
- "sig": "ScEGiS3fdvTXkqsqqgYnPRmTm5/qqeT6+lGiv3q5zjF3czAWt3Lt5m0m2KVjHoOd5/Li8fwlhZB/Uol4r2lhBQ==",
- "notes": "Miglioramento: Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.110.zip",
+ "size": 7628955,
+ "sha256": "b0481879867059ab5cd17f2feb6b709751aed1e79a9caa5c8075dc719ac6a776",
+ "sig": "g6WiAJyy2bMz/XR5Xj1JLEQt3fb1lLdz44xLERTltO/pi5qBRjyJiSZ3QgCM9WhxB22WOT7+o4f5D/RPzDKFBQ==",
+ "notes": "Miglioramento: Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.110",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
+     "en": "Notifications: the notification card now closes when you open the bell and no longer gets stuck"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.109",
    "date": "2026-10-02",
@@ -369,37 +381,6 @@
      "type": "impr",
      "text": "Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
      "en": "AI images: choose the model (Ideogram 3 with transparent background, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.79",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole",
-     "en": "AI edit: the plan stays saved in the project (reopening shows it again, no new analysis) and there's a chat to ask for changes in words"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra",
-     "en": "More polished AI edit: cuts on the right silent point, hesitations always removed, pro editor instructions, one element on screen at a time, bigger chapter-like titles, overlays placed beside the face, never over it"
-    },
-    {
-     "type": "impr",
-     "text": "Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI",
-     "en": "More accurate AI transcription (OpenAI or ElevenLabs) from the AI panel"
-    },
-    {
-     "type": "impr",
-     "text": "Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella",
-     "en": "Home: rename videos (also from the editor by clicking the title) and group them in folders: when exported they all end up in the same folder"
-    },
-    {
-     "type": "impr",
-     "text": "Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
-     "en": "AI images with sticker-style white border and shadow; off by default in favor of animated graphics"
     }
    ]
   }
