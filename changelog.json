@@ -1,5 +1,51 @@
 [
  {
+  "version": "1.5.114",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Sul Mac «Rimuovi lo sfondo» nella sezione Grafica non chiude più l'app",
+    "en": "On Mac «Remove background» in Graphics no longer closes the app"
+   },
+   {
+    "type": "fix",
+    "text": "L'app non torna più a una versione vecchia se la chiudi mentre si apre",
+    "en": "The app no longer goes back to an old version if you close it while it opens"
+   },
+   {
+    "type": "impr",
+    "text": "Zoom con i keyframe: l'inquadratura può spostarsi mentre lo zoom è attivo",
+    "en": "Zoom keyframes: the framing can move while the zoom is active"
+   },
+   {
+    "type": "impr",
+    "text": "Scegliendo un effetto di zoom o un'animazione lo vedi subito sul video",
+    "en": "Pick a zoom effect or an animation and see it right away on the video"
+   },
+   {
+    "type": "impr",
+    "text": "Miniature della timeline senza sfarfallio quando fai zoom o scorri, e pronte molto prima",
+    "en": "Timeline thumbnails no longer flicker when you zoom or scroll, and load much faster"
+   },
+   {
+    "type": "impr",
+    "text": "Con poche tracce la timeline sta in mezzo, non attaccata in alto",
+    "en": "With few tracks the timeline sits in the middle, not stuck at the top"
+   },
+   {
+    "type": "impr",
+    "text": "Play e pausa più immediati sui video del telefono inseriti nel progetto",
+    "en": "Play and pause respond faster with phone videos added to the project"
+   },
+   {
+    "type": "impr",
+    "text": "Qualità dell'anteprima: solo le scelte che cambiano davvero qualcosa, e resta salvata",
+    "en": "Preview quality: only the choices that really change something, and it stays saved"
+   }
+  ]
+ },
+ {
   "version": "1.5.113",
   "date": "2026-10-02",
   "items": [

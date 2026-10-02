@@ -1,13 +1,59 @@
 {
- "version": "1.5.113",
+ "version": "1.5.114",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.113.zip",
- "size": 7633974,
- "sha256": "0878c10bcf00a49aff821af41abcedeff44b6768a0e0da4e365828c6dc10502c",
- "sig": "tDDshnHAEdAtaYVKGjDjB0p7PqpPBFDAqEGEYa+lFdAQeEDHb2hNc/NW7+gWgPEcY1kfS2u4B0xgjxN2O6J4Cw==",
- "notes": "Correzione: Rifare gli zoom automatici non cancella più quelli messi a mano\nCorrezione: Messaggio più chiaro quando i crediti AI non sono ancora attivi\nMiglioramento: Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca\nMiglioramento: Anteprima più fluida quando nel video ci sono clip inserite\nMiglioramento: Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso\nMiglioramento: Storie AI: le schede delle animazioni sono più ordinate\nMiglioramento: Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso\nMiglioramento: Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.114.zip",
+ "size": 7638590,
+ "sha256": "05efd3b03955a0dee43ae4a7a65e0ae503a6f61fc541578e84ce4d3b93f5f3ec",
+ "sig": "RtNZkoeGK+XEUyaEmVdQ+SoUW860aZFQzjwq6ZKt5uBEHxynrZm9WPw7XxeL4yZkcocCh1IzsXGGhCkrrCqhDQ==",
+ "notes": "Correzione: Sul Mac «Rimuovi lo sfondo» nella sezione Grafica non chiude più l'app\nCorrezione: L'app non torna più a una versione vecchia se la chiudi mentre si apre\nMiglioramento: Zoom con i keyframe: l'inquadratura può spostarsi mentre lo zoom è attivo\nMiglioramento: Scegliendo un effetto di zoom o un'animazione lo vedi subito sul video\nMiglioramento: Miniature della timeline senza sfarfallio quando fai zoom o scorri, e pronte molto prima\nMiglioramento: Con poche tracce la timeline sta in mezzo, non attaccata in alto\nMiglioramento: Play e pausa più immediati sui video del telefono inseriti nel progetto\nMiglioramento: Qualità dell'anteprima: solo le scelte che cambiano davvero qualcosa, e resta salvata",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.114",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Sul Mac «Rimuovi lo sfondo» nella sezione Grafica non chiude più l'app",
+     "en": "On Mac «Remove background» in Graphics no longer closes the app"
+    },
+    {
+     "type": "fix",
+     "text": "L'app non torna più a una versione vecchia se la chiudi mentre si apre",
+     "en": "The app no longer goes back to an old version if you close it while it opens"
+    },
+    {
+     "type": "impr",
+     "text": "Zoom con i keyframe: l'inquadratura può spostarsi mentre lo zoom è attivo",
+     "en": "Zoom keyframes: the framing can move while the zoom is active"
+    },
+    {
+     "type": "impr",
+     "text": "Scegliendo un effetto di zoom o un'animazione lo vedi subito sul video",
+     "en": "Pick a zoom effect or an animation and see it right away on the video"
+    },
+    {
+     "type": "impr",
+     "text": "Miniature della timeline senza sfarfallio quando fai zoom o scorri, e pronte molto prima",
+     "en": "Timeline thumbnails no longer flicker when you zoom or scroll, and load much faster"
+    },
+    {
+     "type": "impr",
+     "text": "Con poche tracce la timeline sta in mezzo, non attaccata in alto",
+     "en": "With few tracks the timeline sits in the middle, not stuck at the top"
+    },
+    {
+     "type": "impr",
+     "text": "Play e pausa più immediati sui video del telefono inseriti nel progetto",
+     "en": "Play and pause respond faster with phone videos added to the project"
+    },
+    {
+     "type": "impr",
+     "text": "Qualità dell'anteprima: solo le scelte che cambiano davvero qualcosa, e resta salvata",
+     "en": "Preview quality: only the choices that really change something, and it stays saved"
+    }
+   ]
+  },
   {
    "version": "1.5.113",
    "date": "2026-10-02",
@@ -384,22 +430,6 @@
      "type": "impr",
      "text": "Nuovo «Rimuovi sfondo»: su un video o un'immagine sopra la live togli il telo verde, blu o di qualsiasi colore (contagocce, rilevamento automatico, bordi morbidi, niente alone e vista maschera)",
      "en": "New «Remove background»: on a video or image above the stream, remove a green, blue or any solid-color backdrop (eyedropper, auto-detect, soft edges, spill removal and mask view)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.83",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Il pannello AI non mostra più la scritta «null» mentre crea le grafiche",
-     "en": "The AI panel no longer shows «null» while creating graphics"
-    },
-    {
-     "type": "impr",
-     "text": "Grafiche AI e ritagli per i titoli dietro di te già fatti vengono riusati: niente attese né costi di nuovo se riapri il progetto o riapplichi",
-     "en": "AI graphics and cut-outs for titles behind you are reused: no waiting or extra cost when you reopen the project or apply again"
     }
    ]
   }
