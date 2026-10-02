@@ -1,5 +1,51 @@
 [
  {
+  "version": "1.5.113",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Rifare gli zoom automatici non cancella più quelli messi a mano",
+    "en": "Redoing automatic zooms no longer removes the ones you added by hand"
+   },
+   {
+    "type": "fix",
+    "text": "Messaggio più chiaro quando i crediti AI non sono ancora attivi",
+    "en": "Clearer message when AI credits aren't active yet"
+   },
+   {
+    "type": "impr",
+    "text": "Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca",
+    "en": "See how much time is left while the app prepares the preview, exports or creates with AI"
+   },
+   {
+    "type": "impr",
+    "text": "Anteprima più fluida quando nel video ci sono clip inserite",
+    "en": "Smoother preview when the video has inserted clips"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso",
+    "en": "Better AI edits: longer, smoother zooms and tighter pause cuts"
+   },
+   {
+    "type": "impr",
+    "text": "Storie AI: le schede delle animazioni sono più ordinate",
+    "en": "AI Stories: tidier animation cards"
+   },
+   {
+    "type": "impr",
+    "text": "Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso",
+    "en": "If one part of the AI edit fails, the rest still goes ahead"
+   },
+   {
+    "type": "impr",
+    "text": "Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
+    "en": "AI voices: a default voice is used if you haven't picked one"
+   }
+  ]
+ },
+ {
   "version": "1.5.112",
   "date": "2026-10-02",
   "items": [

@@ -52,8 +52,7 @@
      "text": "Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
      "en": "AI voices: a default voice is used if you haven't picked one"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.112",
