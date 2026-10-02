@@ -1,13 +1,29 @@
 {
- "version": "1.5.116",
+ "version": "1.5.117",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.116.zip",
- "size": 7639923,
- "sha256": "d3ec64608a571743879ec48450d335f82f2cd66fb1bd28822051f62d40a1252d",
- "sig": "YVng/TbQssIwa772voZA+YuyrhsD0UgDaKRg7FK3PTozF2Ed0f/W0DRinFfz1ZGBBXm1pU6ICR1GWV1OCcHRBw==",
- "notes": "Miglioramento: Play più immediato: l'uscita audio resta sveglia mentre l'editor è aperto e in verticale l'anteprima si ridisegna appena arriva il fotogramma nuovo",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.117.zip",
+ "size": 7640429,
+ "sha256": "5c93045c94251ed77d69e5cf9366e79da317c274aab03047d7f70decaedf2e2d",
+ "sig": "w+JEUQc/KSc7LdwnyCkOi7y4Fs+STXYfcrQ7c79B2PVi141m9UZrMxANaMuvYguD7+m5DN40fx9tm/5kc/rTBw==",
+ "notes": "Correzione: Il menu «Altro» (e gli altri menu) non esce più dalla finestra: si apre dove c'è spazio e si scorre\nCorrezione: Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.117",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Il menu «Altro» (e gli altri menu) non esce più dalla finestra: si apre dove c'è spazio e si scorre",
+     "en": "The «More» menu (and the other menus) no longer goes off the window: it opens where there is room and scrolls"
+    },
+    {
+     "type": "fix",
+     "text": "Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
+     "en": "Timeline: no more dark gap at the start of a clip moved after an empty space"
+    }
+   ]
+  },
   {
    "version": "1.5.116",
    "date": "2026-10-02",
@@ -424,17 +440,6 @@
      "type": "impr",
      "text": "«Rimuovi sfondo» anche sulle clip della traccia principale: un clic porta la clip su una traccia sopra e toglie lo sfondo (tinta unita o AI)",
      "en": "«Remove background» also on main-track clips: one click moves the clip to a track above and removes the background (solid color or AI)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.86",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Storie AI: più battute nella stessa clip. Nelle Animazioni premi l'anello su una scena per unirla alla clip di quella prima: una sola clip (e un solo costo) per tutte le battute, anche quando i personaggi parlano a turno",
-     "en": "AI Stories: several lines in the same clip. In Animations press the link on a scene to merge it into the previous clip: one clip (and one cost) for all the lines, even when characters take turns talking"
     }
    ]
   }

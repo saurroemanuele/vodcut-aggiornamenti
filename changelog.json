@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.117",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Il menu «Altro» (e gli altri menu) non esce più dalla finestra: si apre dove c'è spazio e si scorre",
+    "en": "The «More» menu (and the other menus) no longer goes off the window: it opens where there is room and scrolls"
+   },
+   {
+    "type": "fix",
+    "text": "Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
+    "en": "Timeline: no more dark gap at the start of a clip moved after an empty space"
+   }
+  ]
+ },
+ {
   "version": "1.5.116",
   "date": "2026-10-02",
   "items": [
