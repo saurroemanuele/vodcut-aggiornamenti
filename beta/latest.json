@@ -5,7 +5,7 @@
  "size": 7633974,
  "sha256": "0878c10bcf00a49aff821af41abcedeff44b6768a0e0da4e365828c6dc10502c",
  "sig": "tDDshnHAEdAtaYVKGjDjB0p7PqpPBFDAqEGEYa+lFdAQeEDHb2hNc/NW7+gWgPEcY1kfS2u4B0xgjxN2O6J4Cw==",
- "notes": "Correzione: Rifare gli zoom automatici non cancella più quelli messi a mano|Messaggio più chiaro quando i crediti AI non sono ancora attivi\nMiglioramento: Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca|Anteprima più fluida quando nel video ci sono clip inserite|Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso|Storie AI: le schede delle animazioni sono più ordinate|Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso|Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
+ "notes": "Correzione: Rifare gli zoom automatici non cancella più quelli messi a mano\nCorrezione: Messaggio più chiaro quando i crediti AI non sono ancora attivi\nMiglioramento: Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca\nMiglioramento: Anteprima più fluida quando nel video ci sono clip inserite\nMiglioramento: Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso\nMiglioramento: Storie AI: le schede delle animazioni sono più ordinate\nMiglioramento: Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso\nMiglioramento: Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
  "date": "2026-10-02",
  "history": [
   {
@@ -14,13 +14,43 @@
    "items": [
     {
      "type": "fix",
-     "text": "Rifare gli zoom automatici non cancella più quelli messi a mano|Messaggio più chiaro quando i crediti AI non sono ancora attivi",
-     "en": "Redoing automatic zooms no longer removes the ones you added by hand|Clearer message when AI credits aren't active yet"
+     "text": "Rifare gli zoom automatici non cancella più quelli messi a mano",
+     "en": "Redoing automatic zooms no longer removes the ones you added by hand"
+    },
+    {
+     "type": "fix",
+     "text": "Messaggio più chiaro quando i crediti AI non sono ancora attivi",
+     "en": "Clearer message when AI credits aren't active yet"
     },
     {
      "type": "impr",
-     "text": "Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca|Anteprima più fluida quando nel video ci sono clip inserite|Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso|Storie AI: le schede delle animazioni sono più ordinate|Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso|Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
-     "en": "See how much time is left while the app prepares the preview, exports or creates with AI|Smoother preview when the video has inserted clips|Better AI edits: longer, smoother zooms and tighter pause cuts|AI Stories: tidier animation cards|If one part of the AI edit fails, the rest still goes ahead|AI voices: a default voice is used if you haven't picked one"
+     "text": "Mentre l'app prepara l'anteprima, esporta o crea con l'AI vedi quanto manca",
+     "en": "See how much time is left while the app prepares the preview, exports or creates with AI"
+    },
+    {
+     "type": "impr",
+     "text": "Anteprima più fluida quando nel video ci sono clip inserite",
+     "en": "Smoother preview when the video has inserted clips"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI più curato: zoom più lunghi e morbidi, pause tagliate in modo più deciso",
+     "en": "Better AI edits: longer, smoother zooms and tighter pause cuts"
+    },
+    {
+     "type": "impr",
+     "text": "Storie AI: le schede delle animazioni sono più ordinate",
+     "en": "AI Stories: tidier animation cards"
+    },
+    {
+     "type": "impr",
+     "text": "Se un pezzo del montaggio AI non riesce, il resto va avanti lo stesso",
+     "en": "If one part of the AI edit fails, the rest still goes ahead"
+    },
+    {
+     "type": "impr",
+     "text": "Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
+     "en": "AI voices: a default voice is used if you haven't picked one"
     }
    ],
    "channel": "beta"
