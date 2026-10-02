@@ -1,13 +1,30 @@
 {
- "version": "1.5.110",
+ "version": "1.5.111",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.110.zip",
- "size": 7628955,
- "sha256": "b0481879867059ab5cd17f2feb6b709751aed1e79a9caa5c8075dc719ac6a776",
- "sig": "g6WiAJyy2bMz/XR5Xj1JLEQt3fb1lLdz44xLERTltO/pi5qBRjyJiSZ3QgCM9WhxB22WOT7+o4f5D/RPzDKFBQ==",
- "notes": "Miglioramento: Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.111.zip",
+ "size": 7631211,
+ "sha256": "e14f4afee5e63270c0209f0bad36256052a87743afae72e553669af1c0d95851",
+ "sig": "Il+LmXNrhtAAqGLg21yuCVOsqBcbYm3OXCle0Iu6lMHyEYksABbVrjQdC2jhICCzbsyMtgP7FdTRFvFvJ57aAQ==",
+ "notes": "Correzione: Sicurezza: la pagina dell'app si apre solo dalla finestra di NoonFrame; progetti condivisi senza percorsi di rete; chiavi del Mac salvate senza passare dagli argomenti\nMiglioramento: Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.111",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Sicurezza: la pagina dell'app si apre solo dalla finestra di NoonFrame; progetti condivisi senza percorsi di rete; chiavi del Mac salvate senza passare dagli argomenti",
+     "en": "Security: the app page only opens from the NoonFrame window; shared projects can't point to network paths; Mac keys are saved without passing through command arguments"
+    },
+    {
+     "type": "impr",
+     "text": "Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
+     "en": "Yearly subscriptions too (2 months free) in the credits store"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.110",
    "date": "2026-10-02",
@@ -355,32 +372,6 @@
      "type": "fix",
      "text": "Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
      "en": "Titles behind you much faster to prepare: no more tool installation the first time (it hung for minutes), only the model is downloaded once with visible progress"
-    }
-   ]
-  },
-  {
-   "version": "1.5.80",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura",
-     "en": "AI zooms centered on you (the app looks where your face is), no longer on the top of the frame"
-    },
-    {
-     "type": "impr",
-     "text": "Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile",
-     "en": "Titles behind you: big, at the top, with animated viral styles and the person cut out in front (green screen effect without a green screen). Still editable: click the title to change text or style"
-    },
-    {
-     "type": "impr",
-     "text": "Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)",
-     "en": "New clean animated graphics without boxes: big, centered, each element appears when you say it"
-    },
-    {
-     "type": "impr",
-     "text": "Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
-     "en": "AI images: choose the model (Ideogram 3 with transparent background, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)"
     }
    ]
   }
