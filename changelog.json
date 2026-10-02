@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.119",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Curve dei keyframe come CapCut: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto (su immagini, testi, zoom, filtri e colori)",
+    "en": "CapCut-style keyframe curves: linear, ease in, ease out, ease in-out, overshoot, bounce, hold (on images, texts, zooms, filters and colors)"
+   },
+   {
+    "type": "impr",
+    "text": "Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
+    "en": "Volume keyframes on clips, sounds and overlay videos, in the exported video too"
+   }
+  ]
+ },
+ {
   "version": "1.5.118",
   "date": "2026-10-02",
   "items": [

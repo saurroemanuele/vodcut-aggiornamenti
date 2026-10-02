@@ -1,13 +1,29 @@
 {
- "version": "1.5.118",
+ "version": "1.5.119",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.118.zip",
- "size": 7643836,
- "sha256": "08bf6d2b98e46199cd6f8956e27c264128e01c3ed35d753e50e5611118bda48e",
- "sig": "K1Jo4PISGHC4Lrg7W1/qDXC0MX8JVaeH5d7T2Hll4wwz0ul8X+pM44D+iDhZ05VzVUwVBBb5ZfhAWre/9bmHDg==",
- "notes": "Correzione: Lo zoom della timeline non si resetta più quando sposti, dividi o elimini una clip\nCorrezione: Progetto vuoto con calamita accesa: eliminare una clip la toglie davvero e le altre si avvicinano, senza spazi\nMiglioramento: Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.119.zip",
+ "size": 7648027,
+ "sha256": "ab066e2305c035aadc1114370747dfa7e9e998ac146cbc71da8b7ae6b8136bb6",
+ "sig": "XFPYcBLxchF04fUtBx0R7BLFAi5z1Rg2f4k1uolcLgZD58x1g4eHVmUckoZergW2pS8notu8oe6qWb12Id8aDw==",
+ "notes": "Miglioramento: Curve dei keyframe come CapCut: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto (su immagini, testi, zoom, filtri e colori)\nMiglioramento: Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.119",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Curve dei keyframe come CapCut: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto (su immagini, testi, zoom, filtri e colori)",
+     "en": "CapCut-style keyframe curves: linear, ease in, ease out, ease in-out, overshoot, bounce, hold (on images, texts, zooms, filters and colors)"
+    },
+    {
+     "type": "impr",
+     "text": "Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
+     "en": "Volume keyframes on clips, sounds and overlay videos, in the exported video too"
+    }
+   ]
+  },
   {
    "version": "1.5.118",
    "date": "2026-10-02",
@@ -439,17 +455,6 @@
      "type": "impr",
      "text": "Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
      "en": "Video script: paste it and subtitles spell names, brands and terms right (even after transcription)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.88",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
-     "en": "Remove background on the main track: the clip stays where it is and the background becomes black (no more moving to another track). Faster AI cut-out on Macs (Neural Engine) and on long clips"
     }
    ]
   }
