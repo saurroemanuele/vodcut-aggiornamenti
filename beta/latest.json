@@ -1,13 +1,29 @@
 {
- "version": "1.5.120",
+ "version": "1.5.121",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.120.zip",
- "size": 7651075,
- "sha256": "28daa7500c9d86f0aff89843799850a41dea65d1c8b4004df5aef6da1617c3c8",
- "sig": "ZIT15+mfqEnLpqAp1QrDVsymWYoMF/60QWr1sN4nlWEWEaDIAKWWBpIHbVjsgSJ4+bhKRfCQmRErJBzTvH2PCg==",
- "notes": "Miglioramento: Keyframe sui video sovrapposti: posizione, dimensione e trasparenza che cambiano nel tempo, anche nel video esportato\nMiglioramento: Keyframe sull'ingrandimento dello zoom sulla webcam\nMiglioramento: Keyframe su posizione e zoom delle clip, sul volume (clip, suoni, video sovrapposti), sui colori e sui filtri\nMiglioramento: Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.121.zip",
+ "size": 7653034,
+ "sha256": "3618c52533a21aae743fb41646a979c705349eeb3461916d17ed5b7e99460eff",
+ "sig": "aGz9QnFWGztaSFYtk2CG2OY/QWgJSqSrR+NZh0SRjOj0fvolBW71sVeQvxJEc3TgTPfcXOzJurAHqJeQSxHtCg==",
+ "notes": "Miglioramento: Rampe di velocità: keyframe sulla velocità delle clip, il video accelera o rallenta piano piano (anteprima, timeline ed export)\nMiglioramento: Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.121",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Rampe di velocità: keyframe sulla velocità delle clip, il video accelera o rallenta piano piano (anteprima, timeline ed export)",
+     "en": "Speed ramps: keyframes on clip speed, the video speeds up or slows down gradually (preview, timeline and export)"
+    },
+    {
+     "type": "impr",
+     "text": "Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
+     "en": "Ready-made speed curves: Hero, Bullet, Flash in, Flash out"
+    }
+   ]
+  },
   {
    "version": "1.5.120",
    "date": "2026-10-02",
@@ -454,17 +470,6 @@
      "type": "impr",
      "text": "Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
      "en": "New Graphics section: a Photoshop-style layer editor inside NoonFrame. Ready-made formats for posts, stories, thumbnails, carousels and banners; text, shapes, brush, eraser, masks, adjustment layers, blending, shadow, stroke and glow; AI background removal, AI-generated images, PSD opening; export to PNG, JPG, WebP and PDF"
-    }
-   ]
-  },
-  {
-   "version": "1.5.90",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
-     "en": "AI effect that follows your hand: turn on «Follow the hand» and the effect sticks to your palm, moves with you and reacts to gestures (open hand, fist, pointing, victory, thumbs up). The hand is tracked on your computer, for free"
     }
    ]
   }

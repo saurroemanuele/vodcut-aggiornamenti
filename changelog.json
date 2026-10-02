@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.121",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Rampe di velocità: keyframe sulla velocità delle clip, il video accelera o rallenta piano piano (anteprima, timeline ed export)",
+    "en": "Speed ramps: keyframes on clip speed, the video speeds up or slows down gradually (preview, timeline and export)"
+   },
+   {
+    "type": "impr",
+    "text": "Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
+    "en": "Ready-made speed curves: Hero, Bullet, Flash in, Flash out"
+   }
+  ]
+ },
+ {
   "version": "1.5.120",
   "date": "2026-10-02",
   "items": [
