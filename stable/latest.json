@@ -1,13 +1,110 @@
 {
- "version": "1.5.104",
+ "version": "1.5.112",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.104.zip",
- "size": 7614948,
- "sha256": "331cb7b4281403f3cb43d64ab48723078d4fd33892b47370d430d4e063e0cb84",
- "sig": "LdyBq6i1uXCRLLxS60ynA46bZTHY4Sq8XRxtHJH29OqdKAy1Dkxfa0/Hzcp8IjRzu7CWpecPQhDg6jZci4qSCA==",
- "notes": "Correzione: «Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore\nMiglioramento: Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
- "date": "2026-10-01",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.112.zip",
+ "size": 7632344,
+ "sha256": "bcef648b8747c8baec0378b0905c1d99090bfa23b5d2f814748b72860f6ab5b0",
+ "sig": "ZKthWLIn1L4M4EhY5ii+grRvHRMfkdPx0YZc1JXI27Md0UHfn4dIXCmBVN7Gr930jmpnRypDe+Jz3YOsw1jxAA==",
+ "notes": "Correzione: Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato\nMiglioramento: ",
+ "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.112",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
+     "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
+    },
+    {
+     "type": "impr",
+     "text": ""
+    }
+   ]
+  },
+  {
+   "version": "1.5.111",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Sicurezza: la pagina dell'app si apre solo dalla finestra di NoonFrame; progetti condivisi senza percorsi di rete; chiavi del Mac salvate senza passare dagli argomenti",
+     "en": "Security: the app page only opens from the NoonFrame window; shared projects can't point to network paths; Mac keys are saved without passing through command arguments"
+    },
+    {
+     "type": "impr",
+     "text": "Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
+     "en": "Yearly subscriptions too (2 months free) in the credits store"
+    }
+   ]
+  },
+  {
+   "version": "1.5.110",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
+     "en": "Notifications: the notification card now closes when you open the bell and no longer gets stuck"
+    }
+   ]
+  },
+  {
+   "version": "1.5.109",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
+     "en": "Notifications: a bell at the top with the team's replies to your reports and what's new"
+    }
+   ]
+  },
+  {
+   "version": "1.5.108",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
+     "en": "Leaner usage stats: no part of your file paths is ever sent"
+    }
+   ]
+  },
+  {
+   "version": "1.5.107",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
+     "en": "Redesigned credits card in your profile, new prices, long offers show their end date"
+    }
+   ]
+  },
+  {
+   "version": "1.5.106",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
+     "en": "Credits in your profile menu and a new store for plans and top-ups"
+    }
+   ]
+  },
+  {
+   "version": "1.5.105",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
+     "en": "NoonFrame credits: monthly plans, top-ups and flash deals, with your balance always at the top"
+    }
+   ]
+  },
   {
    "version": "1.5.104",
    "date": "2026-10-01",
@@ -272,179 +369,6 @@
      "type": "fix",
      "text": "Titoli dietro di te: modello per ritagliare la persona 4 volte più leggero (44 MB), avanzamento visibile e pulsante per saltare e mettere i titoli sopra il video",
      "en": "Titles behind you: 4x lighter person cut-out model (44 MB), visible progress and a button to skip and put titles over the video"
-    }
-   ]
-  },
-  {
-   "version": "1.5.81",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Titoli dietro di te molto più veloci da preparare: niente più installazione di strumenti la prima volta (restava ferma minuti), si scarica solo il modello una volta e si vede il progresso",
-     "en": "Titles behind you much faster to prepare: no more tool installation the first time (it hung for minutes), only the model is downloaded once with visible progress"
-    }
-   ]
-  },
-  {
-   "version": "1.5.80",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Zoom AI centrati su di te (l'app guarda dov'è il viso), non più sull'alto dell'inquadratura",
-     "en": "AI zooms centered on you (the app looks where your face is), no longer on the top of the frame"
-    },
-    {
-     "type": "impr",
-     "text": "Titoli dietro di te: grandi, in alto, con stili virali animati, e la persona ritagliata davanti (effetto green screen senza green screen). Restano modificabili: clicca il titolo per cambiare testo o stile",
-     "en": "Titles behind you: big, at the top, with animated viral styles and the person cut out in front (green screen effect without a green screen). Still editable: click the title to change text or style"
-    },
-    {
-     "type": "impr",
-     "text": "Grafiche animate nuove, pulite e senza box: grandi, al centro, e ogni elemento compare quando lo dici (es. 2x → 5x → 10x)",
-     "en": "New clean animated graphics without boxes: big, centered, each element appears when you say it"
-    },
-    {
-     "type": "impr",
-     "text": "Immagini AI: scegli il modello (Ideogram 3 con sfondo trasparente, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)",
-     "en": "AI images: choose the model (Ideogram 3 with transparent background, Recraft V3, Nano Banana, FLUX, GPT Image, Gemini)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.79",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Montaggio AI: il piano resta salvato nel progetto (riaprendo lo ritrovi, senza rifare l'analisi) e c'è la chat per chiedere modifiche a parole",
-     "en": "AI edit: the plan stays saved in the project (reopening shows it again, no new analysis) and there's a chat to ask for changes in words"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI più curato: tagli sul punto di silenzio giusto, esitazioni (ehm, uhm) tolte sempre, istruzioni da montatore professionista, un solo elemento a schermo alla volta, titoli come capitoli più grandi, scritte e grafiche messe accanto al viso e mai sopra",
-     "en": "More polished AI edit: cuts on the right silent point, hesitations always removed, pro editor instructions, one element on screen at a time, bigger chapter-like titles, overlays placed beside the face, never over it"
-    },
-    {
-     "type": "impr",
-     "text": "Trascrizione con l'AI (OpenAI o ElevenLabs) più precisa, dal pannello AI",
-     "en": "More accurate AI transcription (OpenAI or ElevenLabs) from the AI panel"
-    },
-    {
-     "type": "impr",
-     "text": "Home: rinomina i video (anche dall'editor cliccando sul titolo) e raccoglili in cartelle: esportati finiscono tutti nella stessa cartella",
-     "en": "Home: rename videos (also from the editor by clicking the title) and group them in folders: when exported they all end up in the same folder"
-    },
-    {
-     "type": "impr",
-     "text": "Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
-     "en": "AI images with sticker-style white border and shadow; off by default in favor of animated graphics"
-    }
-   ]
-  },
-  {
-   "version": "1.5.78",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
-     "en": "New «Remove cut parts» button in the timeline: darkened parts disappear and the preview becomes smooth (a pre-edited video prepared in the background). In the transcript the words stay struck through and can be restored any time"
-    }
-   ]
-  },
-  {
-   "version": "1.5.77",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima fluida sui tagli: appena ci sono parti tagliate l'anteprima usa una copia del video fatta apposta per saltare all'istante (si prepara da sola in sottofondo), più due lettori che si danno il cambio",
-     "en": "Smooth preview over cuts: as soon as there are cut parts the preview uses a copy made to jump instantly (prepared in the background), plus two players taking turns"
-    },
-    {
-     "type": "fix",
-     "text": "Montaggio AI con Claude molto più veloce: il modello non spreca più tutti i token a «ragionare» (la risposta arrivava vuota dopo minuti e l'app doveva riprovare)",
-     "en": "Much faster AI edit with Claude: the model no longer wastes all tokens «thinking» (the answer came back empty after minutes and had to be retried)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.76",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Anteprima: niente più scatti quando il video salta le parti tagliate",
-     "en": "Preview: no more stutter when playback skips cut parts"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: nuovo studio a tutto schermo con anteprime vere di titoli, grafiche e suoni; nel pannello resta un riassunto con Personalizza e Prepara",
-     "en": "AI edit: new full-screen studio with real previews of titles, graphics and sounds; the panel keeps a summary with Customize and Prepare"
-    },
-    {
-     "type": "impr",
-     "text": "Grafiche animate gratis: numeri che contano, grafici a barre e linee che crescono, checklist, confronti, passi e percentuali, con dati presi dal video e modificabili",
-     "en": "Free animated graphics: counting numbers, growing bar and line charts, checklists, comparisons, steps and percentages, with data from the video and editable"
-    },
-    {
-     "type": "impr",
-     "text": "Zoom 'Avvicina piano' per i video business: si avvicina lentamente per tutta la frase e torna indietro sul taglio; zoom meno frequenti e più lunghi",
-     "en": "'Slow push-in' zoom for business videos: slowly pushes in over the whole sentence and returns on the cut; fewer, longer zooms"
-    },
-    {
-     "type": "impr",
-     "text": "Titoli AI più sobri e piccoli (Pulito, Etichetta, Minimal) e scegli tu quali può usare; stili per le immagini AI (Business, Linee, Vetro, Piatto, 3D, Neon)",
-     "en": "Smaller, cleaner AI titles (Clean, Label, Minimal) and you choose which ones it can use; styles for AI images"
-    }
-   ]
-  },
-  {
-   "version": "1.5.75",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Montaggio AI: i silenzi lunghi ora si tagliano sempre, anche con stili presi dai reference; i sottotitoli ci sono sempre se li chiedi; rifare il montaggio sostituisce quello di prima invece di raddoppiare scritte e grafiche",
-     "en": "AI edit: long silences are always cut, even with reference styles; subtitles are always added when requested; re-running the edit replaces the previous one instead of doubling titles and graphics"
-    },
-    {
-     "type": "impr",
-     "text": "Pannello AI rifatto: scegli tu cosa fa l'AI (pause, tagli, zoom, sottotitoli, titoli, grafiche, effetti sonori) e quanto: tagli leggeri o decisi, pochi o tanti zoom, tipi di grafica",
-     "en": "AI panel redesigned: choose what the AI does (pauses, cuts, zooms, subtitles, titles, graphics, sound effects) and how much: light or bold cuts, few or many zooms, graphic types"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: le scritte usano i titoli animati (evidenziatore, oro, colpo rosso…) e le grafiche sono asset PNG (icone, grafici, tabelle, schemi), non foto",
-     "en": "AI edit: titles use the animated templates and graphics are PNG assets (icons, charts, tables, diagrams), not photos"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: effetti sonori inclusi e gratis (whoosh, pop, colpi, ding) sincronizzati con zoom, scritte e grafiche; zoom più lunghi (3-8 secondi)",
-     "en": "AI edit: free built-in sound effects synced with zooms, titles and graphics; longer zooms (3-8 seconds)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.74",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Montaggio AI: niente più errore «risposta non valida» sui video lunghi, il piano si divide in parti più piccole e si recupera anche se la risposta arriva a metà",
-     "en": "AI edit: no more «invalid answer» error on long videos, the plan is split into smaller parts and recovered even if the answer is cut off"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: vedi quanto spendi prima di iniziare (lettura del video e costo di ogni grafica) e il totale prima di applicare",
-     "en": "AI edit: see what you spend before starting (video reading and cost per graphic) and the total before applying"
-    },
-    {
-     "type": "impr",
-     "text": "Reference: «Pubblica per tutti» condivide il tuo stile di montaggio o delle immagini con tutti gli utenti, dopo l'approvazione",
-     "en": "References: «Publish for everyone» shares your edit or image style with every user, after approval"
     }
    ]
   }

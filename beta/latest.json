@@ -21,8 +21,7 @@
      "type": "impr",
      "text": ""
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.111",
@@ -38,8 +37,7 @@
      "text": "Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
      "en": "Yearly subscriptions too (2 months free) in the credits store"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.110",
@@ -50,8 +48,7 @@
      "text": "Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
      "en": "Notifications: the notification card now closes when you open the bell and no longer gets stuck"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.109",
@@ -62,8 +59,7 @@
      "text": "Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
      "en": "Notifications: a bell at the top with the team's replies to your reports and what's new"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.108",
@@ -74,8 +70,7 @@
      "text": "Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
      "en": "Leaner usage stats: no part of your file paths is ever sent"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.107",
@@ -86,8 +81,7 @@
      "text": "Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
      "en": "Redesigned credits card in your profile, new prices, long offers show their end date"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.106",
@@ -98,8 +92,7 @@
      "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
      "en": "Credits in your profile menu and a new store for plans and top-ups"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.105",
@@ -110,8 +103,7 @@
      "text": "Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
      "en": "NoonFrame credits: monthly plans, top-ups and flash deals, with your balance always at the top"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.104",
