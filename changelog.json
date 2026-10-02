@@ -1,5 +1,26 @@
 [
  {
+  "version": "1.5.118",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Lo zoom della timeline non si resetta più quando sposti, dividi o elimini una clip",
+    "en": "The timeline zoom no longer resets when you move, split or delete a clip"
+   },
+   {
+    "type": "fix",
+    "text": "Progetto vuoto con calamita accesa: eliminare una clip la toglie davvero e le altre si avvicinano, senza spazi",
+    "en": "Empty project with magnet on: deleting a clip really removes it and the others close up, no gaps"
+   },
+   {
+    "type": "impr",
+    "text": "Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
+    "en": "Keyframes for colors and filter intensity too (on color/filter tracks and on a single clip): values move from one keyframe to the next, in the exported video too"
+   }
+  ]
+ },
+ {
   "version": "1.5.117",
   "date": "2026-10-02",
   "items": [

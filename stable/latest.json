@@ -1,13 +1,34 @@
 {
- "version": "1.5.117",
+ "version": "1.5.118",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.117.zip",
- "size": 7640429,
- "sha256": "5c93045c94251ed77d69e5cf9366e79da317c274aab03047d7f70decaedf2e2d",
- "sig": "w+JEUQc/KSc7LdwnyCkOi7y4Fs+STXYfcrQ7c79B2PVi141m9UZrMxANaMuvYguD7+m5DN40fx9tm/5kc/rTBw==",
- "notes": "Correzione: Il menu «Altro» (e gli altri menu) non esce più dalla finestra: si apre dove c'è spazio e si scorre\nCorrezione: Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.118.zip",
+ "size": 7643836,
+ "sha256": "08bf6d2b98e46199cd6f8956e27c264128e01c3ed35d753e50e5611118bda48e",
+ "sig": "K1Jo4PISGHC4Lrg7W1/qDXC0MX8JVaeH5d7T2Hll4wwz0ul8X+pM44D+iDhZ05VzVUwVBBb5ZfhAWre/9bmHDg==",
+ "notes": "Correzione: Lo zoom della timeline non si resetta più quando sposti, dividi o elimini una clip\nCorrezione: Progetto vuoto con calamita accesa: eliminare una clip la toglie davvero e le altre si avvicinano, senza spazi\nMiglioramento: Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.118",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Lo zoom della timeline non si resetta più quando sposti, dividi o elimini una clip",
+     "en": "The timeline zoom no longer resets when you move, split or delete a clip"
+    },
+    {
+     "type": "fix",
+     "text": "Progetto vuoto con calamita accesa: eliminare una clip la toglie davvero e le altre si avvicinano, senza spazi",
+     "en": "Empty project with magnet on: deleting a clip really removes it and the others close up, no gaps"
+    },
+    {
+     "type": "impr",
+     "text": "Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
+     "en": "Keyframes for colors and filter intensity too (on color/filter tracks and on a single clip): values move from one keyframe to the next, in the exported video too"
+    }
+   ]
+  },
   {
    "version": "1.5.117",
    "date": "2026-10-02",
@@ -429,17 +450,6 @@
      "type": "fix",
      "text": "Rimuovi sfondo sulla traccia principale: la clip resta dove sta e dietro diventa nero (niente più spostamenti su un'altra traccia). Ritaglio AI più veloce sui Mac (chip neurale) e sui pezzi lunghi",
      "en": "Remove background on the main track: the clip stays where it is and the background becomes black (no more moving to another track). Faster AI cut-out on Macs (Neural Engine) and on long clips"
-    }
-   ]
-  },
-  {
-   "version": "1.5.87",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "«Rimuovi sfondo» anche sulle clip della traccia principale: un clic porta la clip su una traccia sopra e toglie lo sfondo (tinta unita o AI)",
-     "en": "«Remove background» also on main-track clips: one click moves the clip to a track above and removes the background (solid color or AI)"
     }
    ]
   }
