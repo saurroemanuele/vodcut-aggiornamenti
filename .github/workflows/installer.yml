@@ -1,0 +1,87 @@
+# Ogni volta che una versione diventa stabile, rifà l'installer di Windows e il pacchetto Mac con quella versione
+# e li pubblica come ultima release: chi scarica dal sito parte sempre dalla versione attuale.
+# Python, ffmpeg e le librerie (che cambiano solo con un nuovo "runtime") si prendono dall'installer precedente.
+name: Installer aggiornato
+
+on:
+  push:
+    branches: [main]
+    paths: ['stable/latest.json']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: installer
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            stable
+            build
+          sparse-checkout-cone-mode: true
+
+      - name: Versione stabile
+        run: |
+          V=$(jq -r .version stable/latest.json)
+          echo "V=$V" >> "$GITHUB_ENV"
+          if gh release view "installer-$V" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then echo "SKIP=1" >> "$GITHUB_ENV"; echo "installer-$V esiste gia'"; fi
+
+      - name: Strumenti
+        if: env.SKIP != '1'
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq nsis p7zip-full zip jq >/dev/null
+
+      - name: App della versione (controllo dell'impronta firmata)
+        if: env.SKIP != '1'
+        run: |
+          URL=$(jq -r .url stable/latest.json); SHA=$(jq -r .sha256 stable/latest.json)
+          curl -fsSL "$URL" -o app.zip
+          echo "$SHA  app.zip" | sha256sum -c -
+
+      - name: Base dall'installer precedente
+        if: env.SKIP != '1'
+        run: |
+          mkdir -p prev
+          gh release download -R "$GITHUB_REPOSITORY" -p 'Noonframe-Setup.exe' -p 'Noonframe-Mac.zip' -D prev
+
+      - name: Installer Windows
+        if: env.SKIP != '1'
+        run: |
+          7z x prev/Noonframe-Setup.exe -obase -y >/dev/null
+          test -f base/python/python.exe && test -d base/ffmpeg
+          mkdir -p w/installer w/offline
+          mv base/python w/offline/python
+          mv base/ffmpeg w/offline/ffmpeg
+          unzip -q app.zip -d w/installer/app
+          cp build/installer/* w/installer/
+          sed -i "s/^!define VERSION .*/!define VERSION \"$V\"/" w/installer/vodcut.nsi
+          (cd w/installer && makensis -V2 vodcut.nsi)
+          7z e -so w/installer/Noonframe-Setup.exe app/engine/version.py | grep -q "VERSION = \"$V\""
+          mkdir -p out && mv w/installer/Noonframe-Setup.exe out/
+
+      - name: Pacchetto Mac
+        if: env.SKIP != '1'
+        run: |
+          mkdir mac && unzip -q prev/Noonframe-Mac.zip -d mac
+          APP=mac/Noonframe.app
+          test -d "$APP/Contents/Resources/app"
+          rm -rf "$APP/Contents/Resources/app"
+          unzip -q app.zip -d "$APP/Contents/Resources/app"
+          sed -i -E "s#(<key>CFBundle(Short)?VersionString</key><string>)[^<]*#\1$V#; s#(<key>CFBundleVersion</key><string>)[^<]*#\1$V#" "$APP/Contents/Info.plist"
+          (cd mac && zip -qry -9 ../out/Noonframe-Mac.zip Noonframe.app)
+
+      - name: Pubblica come ultima release
+        if: env.SKIP != '1'
+        run: |
+          gh release create "installer-$V" out/Noonframe-Setup.exe out/Noonframe-Mac.zip -R "$GITHUB_REPOSITORY" \
+            --title "NoonFrame $V" --notes "Installer di NoonFrame $V per Windows e Mac." --latest

@@ -7,10 +7,6 @@
     "type": "fix",
     "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
     "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
-   },
-   {
-    "type": "impr",
-    "text": ""
    }
   ]
  },

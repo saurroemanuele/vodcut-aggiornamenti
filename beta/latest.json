@@ -5,7 +5,7 @@
  "size": 7632344,
  "sha256": "bcef648b8747c8baec0378b0905c1d99090bfa23b5d2f814748b72860f6ab5b0",
  "sig": "ZKthWLIn1L4M4EhY5ii+grRvHRMfkdPx0YZc1JXI27Md0UHfn4dIXCmBVN7Gr930jmpnRypDe+Jz3YOsw1jxAA==",
- "notes": "Correzione: Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato\nMiglioramento: ",
+ "notes": "Correzione: Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
  "date": "2026-10-02",
  "history": [
   {
@@ -16,10 +16,6 @@
      "type": "fix",
      "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
      "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
-    },
-    {
-     "type": "impr",
-     "text": ""
     }
    ]
   },
