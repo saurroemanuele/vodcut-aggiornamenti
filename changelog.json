@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.120",
+  "date": "2026-10-02",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Keyframe sui video sovrapposti: posizione, dimensione e trasparenza che cambiano nel tempo, anche nel video esportato",
+    "en": "Keyframes on overlay videos: position, size and opacity change over time, also in the exported video"
+   },
+   {
+    "type": "impr",
+    "text": "Keyframe sull'ingrandimento dello zoom sulla webcam",
+    "en": "Keyframes on the webcam zoom level"
+   },
+   {
+    "type": "impr",
+    "text": "Keyframe su posizione e zoom delle clip, sul volume (clip, suoni, video sovrapposti), sui colori e sui filtri",
+    "en": "Keyframes on clip position and zoom, on volume (clips, sounds, overlay videos), on colors and filters"
+   },
+   {
+    "type": "impr",
+    "text": "Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
+    "en": "Pick the curve for each keyframe: linear, ease in, ease out, ease in-out, overshoot, bounce, hold"
+   }
+  ]
+ },
+ {
   "version": "1.5.119",
   "date": "2026-10-02",
   "items": [

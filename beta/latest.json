@@ -1,13 +1,39 @@
 {
- "version": "1.5.119",
+ "version": "1.5.120",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.119.zip",
- "size": 7648027,
- "sha256": "ab066e2305c035aadc1114370747dfa7e9e998ac146cbc71da8b7ae6b8136bb6",
- "sig": "XFPYcBLxchF04fUtBx0R7BLFAi5z1Rg2f4k1uolcLgZD58x1g4eHVmUckoZergW2pS8notu8oe6qWb12Id8aDw==",
- "notes": "Miglioramento: Curve dei keyframe come CapCut: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto (su immagini, testi, zoom, filtri e colori)\nMiglioramento: Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.120.zip",
+ "size": 7651075,
+ "sha256": "28daa7500c9d86f0aff89843799850a41dea65d1c8b4004df5aef6da1617c3c8",
+ "sig": "ZIT15+mfqEnLpqAp1QrDVsymWYoMF/60QWr1sN4nlWEWEaDIAKWWBpIHbVjsgSJ4+bhKRfCQmRErJBzTvH2PCg==",
+ "notes": "Miglioramento: Keyframe sui video sovrapposti: posizione, dimensione e trasparenza che cambiano nel tempo, anche nel video esportato\nMiglioramento: Keyframe sull'ingrandimento dello zoom sulla webcam\nMiglioramento: Keyframe su posizione e zoom delle clip, sul volume (clip, suoni, video sovrapposti), sui colori e sui filtri\nMiglioramento: Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.120",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Keyframe sui video sovrapposti: posizione, dimensione e trasparenza che cambiano nel tempo, anche nel video esportato",
+     "en": "Keyframes on overlay videos: position, size and opacity change over time, also in the exported video"
+    },
+    {
+     "type": "impr",
+     "text": "Keyframe sull'ingrandimento dello zoom sulla webcam",
+     "en": "Keyframes on the webcam zoom level"
+    },
+    {
+     "type": "impr",
+     "text": "Keyframe su posizione e zoom delle clip, sul volume (clip, suoni, video sovrapposti), sui colori e sui filtri",
+     "en": "Keyframes on clip position and zoom, on volume (clips, sounds, overlay videos), on colors and filters"
+    },
+    {
+     "type": "impr",
+     "text": "Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
+     "en": "Pick the curve for each keyframe: linear, ease in, ease out, ease in-out, overshoot, bounce, hold"
+    }
+   ]
+  },
   {
    "version": "1.5.119",
    "date": "2026-10-02",
@@ -439,22 +465,6 @@
      "type": "impr",
      "text": "Effetto AI che segue la mano: attiva «Segui la mano» e l'effetto si aggancia al palmo, si muove con te e reagisce ai gesti (mano aperta, pugno, indice, vittoria, pollice). La mano si cerca sul tuo computer, gratis",
      "en": "AI effect that follows your hand: turn on «Follow the hand» and the effect sticks to your palm, moves with you and reacts to gestures (open hand, fist, pointing, victory, thumbs up). The hand is tracked on your computer, for free"
-    }
-   ]
-  },
-  {
-   "version": "1.5.89",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo «Effetto AI»: descrivi un effetto e l'AI scrive l'animazione da zero (stili Premium, Olografico, Neon, Minimal, Cinematico), con anteprima e modifiche a parole. Gira in una sandbox sicura sul tuo computer",
-     "en": "New «AI effect»: describe an effect and AI writes the animation from scratch (Premium, Holographic, Neon, Minimal, Cinematic), with preview and edits in words. Runs in a secure sandbox on your computer"
-    },
-    {
-     "type": "impr",
-     "text": "Script del video: incollalo e i sottotitoli scrivono giusti nomi, marchi e termini (anche dopo la trascrizione)",
-     "en": "Video script: paste it and subtitles spell names, brands and terms right (even after transcription)"
     }
    ]
   }
