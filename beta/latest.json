@@ -1,13 +1,25 @@
 {
- "version": "1.5.108",
+ "version": "1.5.109",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.108.zip",
- "size": 7623864,
- "sha256": "2d33568a793d39b97aede71b1b76469302eb3672139adc150a47a303f8977856",
- "sig": "mqkPKmLvxiaBZC01DBkwSyzdo9sQkKS5HOdRf0fAbmYF9BUF5g2amqouIhmATDmNGADmKPDp4dqfflF5PoaRDg==",
- "notes": "Miglioramento: Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.109.zip",
+ "size": 7628799,
+ "sha256": "3191cd80f6d265d2c3ce2458476ba4a783e70da4a4068c0c87d1d260ece53bfe",
+ "sig": "ScEGiS3fdvTXkqsqqgYnPRmTm5/qqeT6+lGiv3q5zjF3czAWt3Lt5m0m2KVjHoOd5/Li8fwlhZB/Uol4r2lhBQ==",
+ "notes": "Miglioramento: Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
  "date": "2026-10-02",
  "history": [
+  {
+   "version": "1.5.109",
+   "date": "2026-10-02",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
+     "en": "Notifications: a bell at the top with the team's replies to your reports and what's new"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.108",
    "date": "2026-10-02",
@@ -388,17 +400,6 @@
      "type": "impr",
      "text": "Immagini AI con bordo bianco e ombra stile sticker; spente di base, al loro posto le grafiche animate",
      "en": "AI images with sticker-style white border and shadow; off by default in favor of animated graphics"
-    }
-   ]
-  },
-  {
-   "version": "1.5.78",
-   "date": "2026-09-30",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo pulsante «Rimuovi le parti tagliate» nella timeline: le parti oscurate spariscono e l'anteprima diventa fluida (un video già montato preparato in sottofondo). Nella trascrizione le parole restano barrate e le rimetti quando vuoi",
-     "en": "New «Remove cut parts» button in the timeline: darkened parts disappear and the preview becomes smooth (a pre-edited video prepared in the background). In the transcript the words stay struck through and can be restored any time"
     }
    ]
   }
