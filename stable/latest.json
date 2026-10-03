@@ -1,13 +1,24 @@
 {
- "version": "1.5.131",
+ "version": "1.5.132",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.131.zip",
- "size": 7700583,
- "sha256": "22ec3fc987e2c0cd5e6265f385bbf7c2e9967c7625ab66b08d043538cb99af25",
- "sig": "iG18zpXWMjOOvJbea4UTk4MBHTLBCq5lHjH2u4o2yCK6HZDZlALfvfdYCw0XgWanW2m8jm/aJxbwMUDma1JzCg==",
- "notes": "Miglioramento: Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.132.zip",
+ "size": 7700775,
+ "sha256": "a37884bf0f689efd4509a33b8b6c87d2c8c69a86f5ae3a47e261de7c3b955948",
+ "sig": "SBJwGZ88MJXTtMmUkxKqrfKOl69iphnvFL+H51TsQRyc1dKpojgzLG2trFN/XAwkCVYjAX1CuZtBpqM7ILadCw==",
+ "notes": "Miglioramento: La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.132",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
+     "en": "The «From a live» section is now its own page: just the VOD upload, without tabs or the project list."
+    }
+   ]
+  },
   {
    "version": "1.5.131",
    "date": "2026-10-03",
@@ -489,17 +500,6 @@
      "type": "impr",
      "text": "Se l'anteprima di un video non si legge, NoonFrame la rifà da sola",
      "en": "If a video preview can't be read, NoonFrame rebuilds it on its own"
-    }
-   ]
-  },
-  {
-   "version": "1.5.101",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Versioni di prova (beta) per i tester invitati: ricevono le correzioni prima di tutti",
-     "en": "Beta versions for invited testers: they get fixes before everyone else"
     }
    ]
   }

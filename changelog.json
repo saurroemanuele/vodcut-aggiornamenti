@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.132",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
+    "en": "The «From a live» section is now its own page: just the VOD upload, without tabs or the project list."
+   }
+  ]
+ },
+ {
   "version": "1.5.131",
   "date": "2026-10-03",
   "items": [
