@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.136",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
+    "en": "Much faster transcription for long lives: it works in chunks, several at once, and if you close the app or an update arrives it resumes where it left off instead of starting over."
+   }
+  ]
+ },
+ {
   "version": "1.5.135",
   "date": "2026-10-03",
   "items": [

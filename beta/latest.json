@@ -1,13 +1,24 @@
 {
- "version": "1.5.135",
+ "version": "1.5.136",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.135.zip",
- "size": 7705218,
- "sha256": "fe19892ac385132421749021fbfecf1785554c6fc5143e0c5943ca4b99323bbd",
- "sig": "U1zQVItzOhISWCPucd696OkhiwZ1AIbu2GBR12MzT1CRCihVbX2q5v5k57hDygutz1R/lXQ1HGrJNcshuJz0BQ==",
- "notes": "Miglioramento: Keyframe anche per lo stile dei testi (colore, contorno, bagliore, parole evidenziate, sfondo) e rotazione e 3D, anche con i keyframe, per i video sopra la live.",
- "date": "2026-10-03",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.136.zip",
+ "size": 7707109,
+ "sha256": "e85fe7815d596bc04f975bc516c887cdc814beb68c12a6b7e168b7533466fe43",
+ "sig": "0EV1EJgufs36U20ZMsD05GKLUqdzi2CBoJVEbWuCF9jI1PBiNP/Lv6W3/Fn6fVLzJ7ISdwtM+EmLHDY7sj55Ag==",
+ "notes": "Miglioramento: Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
+ "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.136",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
+     "en": "Much faster transcription for long lives: it works in chunks, several at once, and if you close the app or an update arrives it resumes where it left off instead of starting over."
+    }
+   ]
+  },
   {
    "version": "1.5.135",
    "date": "2026-10-03",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
      "en": "Redesigned credits card in your profile, new prices, long offers show their end date"
-    }
-   ]
-  },
-  {
-   "version": "1.5.106",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
-     "en": "Credits in your profile menu and a new store for plans and top-ups"
     }
    ]
   }
