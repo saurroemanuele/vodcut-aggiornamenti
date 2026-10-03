@@ -1,13 +1,29 @@
 {
- "version": "1.5.122",
+ "version": "1.5.123",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.122.zip",
- "size": 7653889,
- "sha256": "44fd4a4fe510b7dd443869b39c53b8724ebb152dd2c1557d5215a32496ad35bf",
- "sig": "lvaROziAFpH26Nt0KDPjbjWgyUhngY7Ek25dYsb1UNw3/5XDUNa3TOfGQ8opB/WP4LrHKUifUG1wmf8tpsDSDw==",
- "notes": "Miglioramento: Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.123.zip",
+ "size": 7655006,
+ "sha256": "9f0b0336f9f2684afb3ce14d45c4ac85d6e843b873ead69532c0a35a27740382",
+ "sig": "QJTi1zgwxE/QE6Ts6sxnToWRlJB4rNhmZ9Z23F3V9g/d5hyPSGmZ45SkOQSbE8x2vhSb7E4I1EHe1WX7hXvtAQ==",
+ "notes": "Miglioramento: Persona ritagliata con l'AI (titoli dietro e Rimuovi sfondo): niente più buchi e macchie, bordi puliti che seguono la persona, più stabile da un fotogramma all'altro, anche nei video verticali\nMiglioramento: Anteprima: la persona ritagliata resta allineata al video mentre suona",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.123",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Persona ritagliata con l'AI (titoli dietro e Rimuovi sfondo): niente più buchi e macchie, bordi puliti che seguono la persona, più stabile da un fotogramma all'altro, anche nei video verticali",
+     "en": "AI person cutout (titles behind and Remove background): no more holes or blotches, clean edges that follow the person, steadier frame to frame, also in vertical videos"
+    },
+    {
+     "type": "impr",
+     "text": "Anteprima: la persona ritagliata resta allineata al video mentre suona",
+     "en": "Preview: the cut-out person stays aligned with the video during playback"
+    }
+   ]
+  },
   {
    "version": "1.5.122",
    "date": "2026-10-03",
@@ -454,22 +470,6 @@
      "type": "impr",
      "text": "Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
      "en": "Graphics: healing brush (removes blemishes and small objects), pen with editable paths, curved text, brand kit with colors/fonts/logos per client, templates, create the same design in other formats in one click, save as layered PSD, pressure-sensitive brush for tablets, use a design in a video project"
-    }
-   ]
-  },
-  {
-   "version": "1.5.92",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Grafica: i filtri colore non compaiono più su forme e testi (resta la sfocatura negli Effetti)",
-     "en": "Graphics: color filters no longer show on shapes and text (blur stays in Effects)"
-    },
-    {
-     "type": "impr",
-     "text": "Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
-     "en": "Graphics: selections (rectangle, ellipse, lasso, magic wand and AI Select subject) with fill, delete, new layer, mask, invert and feather; brush and eraser stay inside the selection; new clone stamp"
     }
    ]
   }

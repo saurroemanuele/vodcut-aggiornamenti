@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.123",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Persona ritagliata con l'AI (titoli dietro e Rimuovi sfondo): niente più buchi e macchie, bordi puliti che seguono la persona, più stabile da un fotogramma all'altro, anche nei video verticali",
+    "en": "AI person cutout (titles behind and Remove background): no more holes or blotches, clean edges that follow the person, steadier frame to frame, also in vertical videos"
+   },
+   {
+    "type": "impr",
+    "text": "Anteprima: la persona ritagliata resta allineata al video mentre suona",
+    "en": "Preview: the cut-out person stays aligned with the video during playback"
+   }
+  ]
+ },
+ {
   "version": "1.5.122",
   "date": "2026-10-03",
   "items": [
