@@ -152,7 +152,7 @@ const SUB = {
   Task: 'Le cose da fare del team. Trascina una card per cambiarne lo stato.',
   'Team e permessi': 'Chi può entrare in questo pannello e cosa può fare.',
   Persone: 'Solo per i founder: quanto lavora ogni persona del team, creator trovati, email, risposte e task.',
-  Creator: 'Le email dei creator trovate dal team. Scrivi nome ed email e assegna la bozza da mandare.',
+  Creator: 'I creator trovati dal team. Con l\'email ricevono la bozza; senza email si scrivono su Instagram.',
   'Email ai creator': 'Le bozze e l\'invio: ogni creator riceve la sua bozza con il suo nome, dalla casella ufficiale di NoonFrame.',
   Stato: 'Se i servizi di NoonFrame funzionano. Se qualcosa diventa rosso, è da sistemare.',
   Messaggi: 'Avvisi e novità che arrivano nella campanella dell\'app.',
