@@ -1,13 +1,24 @@
 {
- "version": "1.5.133",
+ "version": "1.5.134",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.133.zip",
- "size": 7701216,
- "sha256": "fcfc6e061f420a6e1c59d71e44e2cb0371356f0ebde05b9068b31d9fabd11be0",
- "sig": "kXjOOIMdTS1zR0rjXGYrvEsaLzbCWHm3Eavwi5OgSskf9tjc29Wz0iC/adD/ZzBL2mtQoUfCQLnwjTKYgx89BQ==",
- "notes": "Miglioramento: Scegli lo stile: ora la pagina scorre fino in fondo, c'è l'opzione «Nessuno» per tagli e zoom, ed è scritto chiaro che tagli e zoom sono gratis (fatti sul tuo computer, senza AI).",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.134.zip",
+ "size": 7702340,
+ "sha256": "ceff8e0c41b500074fe93c02da6b718ffed1dac63cfe1a40625993fc5a68ac20",
+ "sig": "+nQX19dqnJIGj1FnXcTSANgOMYoy9lVq6d8slo1822pFzPm+blICiO1Skou7811Xw/zJjLV5nkR40mngwvm/Cg==",
+ "notes": "Miglioramento: Zoom automatici più intelligenti: se in quel momento nel riquadro della webcam non c'è nessuno (scena solo cam, webcam vuota, altra scena) lo zoom non viene messo, così non inquadra più il vuoto. Vale anche per gli zoom del montaggio AI.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.134",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Zoom automatici più intelligenti: se in quel momento nel riquadro della webcam non c'è nessuno (scena solo cam, webcam vuota, altra scena) lo zoom non viene messo, così non inquadra più il vuoto. Vale anche per gli zoom del montaggio AI.",
+     "en": "Smarter automatic zooms: if nobody is in the webcam box at that moment (full-cam scene, empty webcam, another scene) the zoom is skipped, so it no longer frames an empty spot. Also applies to AI edit zooms."
+    }
+   ]
+  },
   {
    "version": "1.5.133",
    "date": "2026-10-03",
@@ -479,22 +490,6 @@
      "type": "impr",
      "text": "Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
      "en": "NoonFrame credits: monthly plans, top-ups and flash deals, with your balance always at the top"
-    }
-   ]
-  },
-  {
-   "version": "1.5.104",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "fix",
-     "text": "«Scegli file» non si apriva dopo aver chiuso e riaperto NoonFrame mentre preparava un'anteprima; l'aggiornamento poteva essere scartato per errore",
-     "en": "«Choose file» didn't open after closing and reopening NoonFrame while it was preparing a preview; the update could be wrongly discarded"
-    },
-    {
-     "type": "impr",
-     "text": "Fermo immagine: tasto destro sulla clip, il fotogramma alla testina resta fermo 2 secondi (si allunga tirando il bordo)",
-     "en": "Freeze frame: right-click the clip, the frame at the playhead holds for 2 seconds (drag the edge to extend)"
     }
    ]
   }

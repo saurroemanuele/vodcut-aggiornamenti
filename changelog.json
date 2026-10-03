@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.134",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Zoom automatici più intelligenti: se in quel momento nel riquadro della webcam non c'è nessuno (scena solo cam, webcam vuota, altra scena) lo zoom non viene messo, così non inquadra più il vuoto. Vale anche per gli zoom del montaggio AI.",
+    "en": "Smarter automatic zooms: if nobody is in the webcam box at that moment (full-cam scene, empty webcam, another scene) the zoom is skipped, so it no longer frames an empty spot. Also applies to AI edit zooms."
+   }
+  ]
+ },
+ {
   "version": "1.5.133",
   "date": "2026-10-03",
   "items": [
