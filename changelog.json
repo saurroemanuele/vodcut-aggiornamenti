@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.125",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
+    "en": "AI edit: the cost now includes custom animations, before applying you see what you pay for images and animations"
+   }
+  ]
+ },
+ {
   "version": "1.5.124",
   "date": "2026-10-03",
   "items": [

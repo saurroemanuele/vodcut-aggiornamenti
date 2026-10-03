@@ -1,13 +1,24 @@
 {
- "version": "1.5.124",
+ "version": "1.5.125",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.124.zip",
- "size": 7658594,
- "sha256": "d7ac9098deb81ccec8cd6c57e8b55c71849597fa446718d7ce8b0eca3d90ed4b",
- "sig": "NsV9q3TgxBthPONtF8fCTtrBTqT+uoW+H7p/dVzx2WvaR2N0GMboCspRVsg9V5zvPTK9+P91Z3asR8ZeR274CQ==",
- "notes": "Miglioramento: Montaggio AI: animazioni su misura, l'AI inventa e disegna un'animazione nuova per ogni momento giusto (scegli Su misura o Modelli pronti)\nMiglioramento: Le grafiche animate e le immagini AI non coprono più la faccia: vanno dove c'è spazio e si rimpiccioliscono se serve\nMiglioramento: Le anteprime degli stili dei titoli sono grandi e centrate\nMiglioramento: Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.125.zip",
+ "size": 7658993,
+ "sha256": "c823357ec10a41b980fe5781bb93aa015efa928a43f6856510cc16812fe59288",
+ "sig": "w4jBaQGrAuMRoXEUyCIsjzJMKT2/hVLVGs7YN9R/Q8U65WzvgAyaxD7rPys9giOqRKcnTs0NFr9VHp1ZDdDCCg==",
+ "notes": "Miglioramento: Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.125",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
+     "en": "AI edit: the cost now includes custom animations, before applying you see what you pay for images and animations"
+    }
+   ]
+  },
   {
    "version": "1.5.124",
    "date": "2026-10-03",
@@ -474,17 +485,6 @@
      "type": "impr",
      "text": "Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
      "en": "Graphics: clipping masks, layer styles (inner shadow, bevel, color and gradient overlay), curves, levels, exposure, vibrance, color balance, shadows/highlights, photo filter, gradient map and .cube LUTs"
-    }
-   ]
-  },
-  {
-   "version": "1.5.94",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
-     "en": "Graphics: text that follows a path drawn with the pen (editable), print-ready CMYK PDF with print resolution (72/150/300 dpi), PNG with sRGB color profile"
     }
    ]
   }
