@@ -1,13 +1,39 @@
 {
- "version": "1.5.123",
+ "version": "1.5.124",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.123.zip",
- "size": 7655006,
- "sha256": "9f0b0336f9f2684afb3ce14d45c4ac85d6e843b873ead69532c0a35a27740382",
- "sig": "QJTi1zgwxE/QE6Ts6sxnToWRlJB4rNhmZ9Z23F3V9g/d5hyPSGmZ45SkOQSbE8x2vhSb7E4I1EHe1WX7hXvtAQ==",
- "notes": "Miglioramento: Persona ritagliata con l'AI (titoli dietro e Rimuovi sfondo): niente più buchi e macchie, bordi puliti che seguono la persona, più stabile da un fotogramma all'altro, anche nei video verticali\nMiglioramento: Anteprima: la persona ritagliata resta allineata al video mentre suona",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.124.zip",
+ "size": 7658594,
+ "sha256": "d7ac9098deb81ccec8cd6c57e8b55c71849597fa446718d7ce8b0eca3d90ed4b",
+ "sig": "NsV9q3TgxBthPONtF8fCTtrBTqT+uoW+H7p/dVzx2WvaR2N0GMboCspRVsg9V5zvPTK9+P91Z3asR8ZeR274CQ==",
+ "notes": "Miglioramento: Montaggio AI: animazioni su misura, l'AI inventa e disegna un'animazione nuova per ogni momento giusto (scegli Su misura o Modelli pronti)\nMiglioramento: Le grafiche animate e le immagini AI non coprono più la faccia: vanno dove c'è spazio e si rimpiccioliscono se serve\nMiglioramento: Le anteprime degli stili dei titoli sono grandi e centrate\nMiglioramento: Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.124",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Montaggio AI: animazioni su misura, l'AI inventa e disegna un'animazione nuova per ogni momento giusto (scegli Su misura o Modelli pronti)",
+     "en": "AI edit: custom animations, the AI invents and draws a new animation for each right moment (choose Custom or Ready-made)"
+    },
+    {
+     "type": "impr",
+     "text": "Le grafiche animate e le immagini AI non coprono più la faccia: vanno dove c'è spazio e si rimpiccioliscono se serve",
+     "en": "Animated graphics and AI images no longer cover the face: they go where there is room and shrink if needed"
+    },
+    {
+     "type": "impr",
+     "text": "Le anteprime degli stili dei titoli sono grandi e centrate",
+     "en": "Title style previews are large and centered"
+    },
+    {
+     "type": "impr",
+     "text": "Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
+     "en": "Clicking an option no longer scrolls the AI edit window back to the top"
+    }
+   ]
+  },
   {
    "version": "1.5.123",
    "date": "2026-10-03",
@@ -459,17 +485,6 @@
      "type": "impr",
      "text": "Grafica: testo che segue un tracciato disegnato con la penna (modificabile), PDF per la tipografia in CMYK con risoluzione di stampa (72/150/300 dpi), PNG con profilo colore sRGB",
      "en": "Graphics: text that follows a path drawn with the pen (editable), print-ready CMYK PDF with print resolution (72/150/300 dpi), PNG with sRGB color profile"
-    }
-   ]
-  },
-  {
-   "version": "1.5.93",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: pennello correttivo (toglie macchie e piccoli oggetti), penna con tracciati modificabili, testo curvo, brand kit con colori/font/loghi per ogni cliente, modelli, crea la stessa grafica in altri formati in un clic, salva in PSD a livelli, pennello sensibile alla pressione della tavoletta, usa una grafica in un progetto video",
-     "en": "Graphics: healing brush (removes blemishes and small objects), pen with editable paths, curved text, brand kit with colors/fonts/logos per client, templates, create the same design in other formats in one click, save as layered PSD, pressure-sensitive brush for tablets, use a design in a video project"
     }
    ]
   }

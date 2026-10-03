@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.124",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Montaggio AI: animazioni su misura, l'AI inventa e disegna un'animazione nuova per ogni momento giusto (scegli Su misura o Modelli pronti)",
+    "en": "AI edit: custom animations, the AI invents and draws a new animation for each right moment (choose Custom or Ready-made)"
+   },
+   {
+    "type": "impr",
+    "text": "Le grafiche animate e le immagini AI non coprono più la faccia: vanno dove c'è spazio e si rimpiccioliscono se serve",
+    "en": "Animated graphics and AI images no longer cover the face: they go where there is room and shrink if needed"
+   },
+   {
+    "type": "impr",
+    "text": "Le anteprime degli stili dei titoli sono grandi e centrate",
+    "en": "Title style previews are large and centered"
+   },
+   {
+    "type": "impr",
+    "text": "Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
+    "en": "Clicking an option no longer scrolls the AI edit window back to the top"
+   }
+  ]
+ },
+ {
   "version": "1.5.123",
   "date": "2026-10-03",
   "items": [
