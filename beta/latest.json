@@ -1,13 +1,24 @@
 {
- "version": "1.5.121",
+ "version": "1.5.122",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.121.zip",
- "size": 7653034,
- "sha256": "3618c52533a21aae743fb41646a979c705349eeb3461916d17ed5b7e99460eff",
- "sig": "aGz9QnFWGztaSFYtk2CG2OY/QWgJSqSrR+NZh0SRjOj0fvolBW71sVeQvxJEc3TgTPfcXOzJurAHqJeQSxHtCg==",
- "notes": "Miglioramento: Rampe di velocità: keyframe sulla velocità delle clip, il video accelera o rallenta piano piano (anteprima, timeline ed export)\nMiglioramento: Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
- "date": "2026-10-02",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.122.zip",
+ "size": 7653889,
+ "sha256": "44fd4a4fe510b7dd443869b39c53b8724ebb152dd2c1557d5215a32496ad35bf",
+ "sig": "lvaROziAFpH26Nt0KDPjbjWgyUhngY7Ek25dYsb1UNw3/5XDUNa3TOfGQ8opB/WP4LrHKUifUG1wmf8tpsDSDw==",
+ "notes": "Miglioramento: Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
+ "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.122",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
+     "en": "Beta testers: «Use my API keys» switch in the profile picture menu, to use your own keys instead of credits"
+    }
+   ]
+  },
   {
    "version": "1.5.121",
    "date": "2026-10-02",
@@ -459,17 +470,6 @@
      "type": "impr",
      "text": "Grafica: selezioni (rettangolo, ellisse, lazo, bacchetta magica e Seleziona soggetto con l'AI) con riempi, cancella, nuovo livello, maschera, inverti e sfuma; pennello e gomma restano dentro la selezione; nuovo timbro clone",
      "en": "Graphics: selections (rectangle, ellipse, lasso, magic wand and AI Select subject) with fill, delete, new layer, mask, invert and feather; brush and eraser stay inside the selection; new clone stamp"
-    }
-   ]
-  },
-  {
-   "version": "1.5.91",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuova sezione Grafica: un editor a livelli come Photoshop dentro NoonFrame. Formati pronti per post, storie, miniature, caroselli e banner; testi, forme, pennello, gomma, maschere, livelli di regolazione, fusione, ombra, contorno e bagliore; rimuovi sfondo con l'AI, immagini create dall'AI, apertura dei PSD; esporta in PNG, JPG, WebP e PDF",
-     "en": "New Graphics section: a Photoshop-style layer editor inside NoonFrame. Ready-made formats for posts, stories, thumbnails, carousels and banners; text, shapes, brush, eraser, masks, adjustment layers, blending, shadow, stroke and glow; AI background removal, AI-generated images, PSD opening; export to PNG, JPG, WebP and PDF"
     }
    ]
   }

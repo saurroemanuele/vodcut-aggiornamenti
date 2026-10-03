@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.122",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
+    "en": "Beta testers: «Use my API keys» switch in the profile picture menu, to use your own keys instead of credits"
+   }
+  ]
+ },
+ {
   "version": "1.5.121",
   "date": "2026-10-02",
   "items": [
