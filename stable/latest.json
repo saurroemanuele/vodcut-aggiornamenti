@@ -1,13 +1,24 @@
 {
- "version": "1.5.128",
+ "version": "1.5.129",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.128.zip",
- "size": 7697446,
- "sha256": "927c158a032511341efb2d56bb6f81d0af06cfbf3269d38d478590ae89fa1388",
- "sig": "t5yzr6PhN09xHPJQaDi1HH/VuKRyb9qmYFZE5R8pjwIYesx+QFsVtiSD5c5sqd/EWLNQ+hwyxMepzTmuzuL9Dg==",
- "notes": "Miglioramento: Clip virali dalle live: l'AI trova i momenti migliori del VOD e li trasforma in clip verticali già montate (webcam sopra, gioco sotto, sottotitoli grandi, zoom sulle reazioni), con punteggio di viralità, titolo e motivo, in una galleria stile Opus. Nuovo stile Live nel Montaggio AI: l'AI guarda parole e volume e scegli quanto deve durare il video per YouTube.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.129.zip",
+ "size": 7698588,
+ "sha256": "db36e38a3649e851242ab3e0ef5904a32c1f16e828e057da03caf34763089ce0",
+ "sig": "ZlSKmUHMuvCO09wKT420NcrUXWulTw8ys4qEqVVjBCe+hQQRIG3RYwIO1QsLJvCf9P7omp5KODR/IIv5WpOjBg==",
+ "notes": "Miglioramento: Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.129",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
+     "en": "Fixed downloading Kick VODs from a link (404 error): NoonFrame now finds them even when Kick changes its address."
+    }
+   ]
+  },
   {
    "version": "1.5.128",
    "date": "2026-10-03",
@@ -489,17 +500,6 @@
      "type": "impr",
      "text": "Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
      "en": "Graphics: Generative fill (select an area and AI redoes it as you describe, or removes it; without AI it's rebuilt from the surroundings) and Liquify (push, bloat, pinch, twirl)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.98",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: Selezione rapida (dipingi sull'oggetto e arriva ai bordi), Lazo poligonale, Migliora bordo per capelli e pelo, Espandi/Contrai/Arrotonda/Bordo della selezione",
-     "en": "Graphics: Quick selection (paint over the object and it snaps to the edges), Polygonal lasso, Refine edge for hair and fur, Expand/Contract/Smooth/Border selection"
     }
    ]
   }

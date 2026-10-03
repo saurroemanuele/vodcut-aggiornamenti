@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.129",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
+    "en": "Fixed downloading Kick VODs from a link (404 error): NoonFrame now finds them even when Kick changes its address."
+   }
+  ]
+ },
+ {
   "version": "1.5.128",
   "date": "2026-10-03",
   "items": [
