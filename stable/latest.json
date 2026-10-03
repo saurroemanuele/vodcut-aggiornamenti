@@ -1,13 +1,24 @@
 {
- "version": "1.5.134",
+ "version": "1.5.135",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.134.zip",
- "size": 7702340,
- "sha256": "ceff8e0c41b500074fe93c02da6b718ffed1dac63cfe1a40625993fc5a68ac20",
- "sig": "+nQX19dqnJIGj1FnXcTSANgOMYoy9lVq6d8slo1822pFzPm+blICiO1Skou7811Xw/zJjLV5nkR40mngwvm/Cg==",
- "notes": "Miglioramento: Zoom automatici più intelligenti: se in quel momento nel riquadro della webcam non c'è nessuno (scena solo cam, webcam vuota, altra scena) lo zoom non viene messo, così non inquadra più il vuoto. Vale anche per gli zoom del montaggio AI.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.135.zip",
+ "size": 7705218,
+ "sha256": "fe19892ac385132421749021fbfecf1785554c6fc5143e0c5943ca4b99323bbd",
+ "sig": "U1zQVItzOhISWCPucd696OkhiwZ1AIbu2GBR12MzT1CRCihVbX2q5v5k57hDygutz1R/lXQ1HGrJNcshuJz0BQ==",
+ "notes": "Miglioramento: Keyframe anche per lo stile dei testi (colore, contorno, bagliore, parole evidenziate, sfondo) e rotazione e 3D, anche con i keyframe, per i video sopra la live.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.135",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Keyframe anche per lo stile dei testi (colore, contorno, bagliore, parole evidenziate, sfondo) e rotazione e 3D, anche con i keyframe, per i video sopra la live.",
+     "en": "Keyframes for text style too (colour, outline, glow, highlighted words, background), plus rotation and 3D, keyframes included, for videos on top of the live."
+    }
+   ]
+  },
   {
    "version": "1.5.134",
    "date": "2026-10-03",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Crediti nel menu della foto profilo e nuovo store di piani e ricariche",
      "en": "Credits in your profile menu and a new store for plans and top-ups"
-    }
-   ]
-  },
-  {
-   "version": "1.5.105",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Crediti NoonFrame: piani mensili, ricariche e offerte lampo, con il saldo sempre in alto",
-     "en": "NoonFrame credits: monthly plans, top-ups and flash deals, with your balance always at the top"
     }
    ]
   }

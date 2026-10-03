@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.135",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Keyframe anche per lo stile dei testi (colore, contorno, bagliore, parole evidenziate, sfondo) e rotazione e 3D, anche con i keyframe, per i video sopra la live.",
+    "en": "Keyframes for text style too (colour, outline, glow, highlighted words, background), plus rotation and 3D, keyframes included, for videos on top of the live."
+   }
+  ]
+ },
+ {
   "version": "1.5.134",
   "date": "2026-10-03",
   "items": [
