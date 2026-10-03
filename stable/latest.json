@@ -1,13 +1,24 @@
 {
- "version": "1.5.136",
+ "version": "1.5.137",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.136.zip",
- "size": 7707109,
- "sha256": "e85fe7815d596bc04f975bc516c887cdc814beb68c12a6b7e168b7533466fe43",
- "sig": "0EV1EJgufs36U20ZMsD05GKLUqdzi2CBoJVEbWuCF9jI1PBiNP/Lv6W3/Fn6fVLzJ7ISdwtM+EmLHDY7sj55Ag==",
- "notes": "Miglioramento: Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.137.zip",
+ "size": 7707456,
+ "sha256": "2173ad6a1d2f99837eab3649882b878d1037fa65762e00a7cce41f9741d78014",
+ "sig": "pGnpfxdzsROXHCWxI/nOhwwGNKlDkFpL06tF/8usD8yfmSdsgn5LTKoz6yt5juP4OhbA6T3zgAAA/XjPXVSrAQ==",
+ "notes": "Miglioramento: Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.137",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
+     "en": "Reports sent from projects with long lives now arrive: before, they stayed stuck in the queue on your computer."
+    }
+   ]
+  },
   {
    "version": "1.5.136",
    "date": "2026-10-04",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
      "en": "Leaner usage stats: no part of your file paths is ever sent"
-    }
-   ]
-  },
-  {
-   "version": "1.5.107",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Carta crediti nel profilo ridisegnata, nuovi prezzi, offerte lunghe con data di scadenza",
-     "en": "Redesigned credits card in your profile, new prices, long offers show their end date"
     }
    ]
   }

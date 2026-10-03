@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.137",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
+    "en": "Reports sent from projects with long lives now arrive: before, they stayed stuck in the queue on your computer."
+   }
+  ]
+ },
+ {
   "version": "1.5.136",
   "date": "2026-10-04",
   "items": [
