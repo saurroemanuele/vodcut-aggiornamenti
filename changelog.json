@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.133",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Scegli lo stile: ora la pagina scorre fino in fondo, c'è l'opzione «Nessuno» per tagli e zoom, ed è scritto chiaro che tagli e zoom sono gratis (fatti sul tuo computer, senza AI).",
+    "en": "Choose the style: the page now scrolls to the bottom, there's a «None» option for cuts and zooms, and it says clearly that cuts and zooms are free (done on your computer, no AI)."
+   }
+  ]
+ },
+ {
   "version": "1.5.132",
   "date": "2026-10-03",
   "items": [
