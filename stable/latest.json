@@ -1,13 +1,39 @@
 {
- "version": "1.5.125",
+ "version": "1.5.126",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.125.zip",
- "size": 7658993,
- "sha256": "c823357ec10a41b980fe5781bb93aa015efa928a43f6856510cc16812fe59288",
- "sig": "w4jBaQGrAuMRoXEUyCIsjzJMKT2/hVLVGs7YN9R/Q8U65WzvgAyaxD7rPys9giOqRKcnTs0NFr9VHp1ZDdDCCg==",
- "notes": "Miglioramento: Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.126.zip",
+ "size": 7662502,
+ "sha256": "7a334cfa9b8661c5d65f9be8cc273979bec01b0b95fdea846cdfa02138913c51",
+ "sig": "r6jxqOa+sqXAGQOcJLXpHge7hsnf6pJ3CpuqZapA+KtF9IAf6fUtFkOAqa70FZWgzILoHQedc8hG6t0KBnfiDA==",
+ "notes": "Miglioramento: Animazioni su misura: restano nel riquadro lontano dalla faccia, testi nella lingua del video e leggibili, partono quando dici la parola giusta\nMiglioramento: Montaggio AI: i tagli non spezzano più le frasi, l'intro parte da una frase completa e la conclusione finale non viene tagliata\nMiglioramento: Persona ritagliata: maschera per ogni fotogramma nei titoli dietro e anteprima sempre allineata, niente più alone fermo quando ti muovi\nMiglioramento: Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.126",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Animazioni su misura: restano nel riquadro lontano dalla faccia, testi nella lingua del video e leggibili, partono quando dici la parola giusta",
+     "en": "Custom animations: they stay in the box away from the face, text in the video's language and readable, they start when you say the right word"
+    },
+    {
+     "type": "impr",
+     "text": "Montaggio AI: i tagli non spezzano più le frasi, l'intro parte da una frase completa e la conclusione finale non viene tagliata",
+     "en": "AI edit: cuts no longer break sentences, the intro starts from a full sentence and the final conclusion is not cut"
+    },
+    {
+     "type": "impr",
+     "text": "Persona ritagliata: maschera per ogni fotogramma nei titoli dietro e anteprima sempre allineata, niente più alone fermo quando ti muovi",
+     "en": "Cut-out person: a mask for every frame in titles behind and a preview always aligned, no more static halo when you move"
+    },
+    {
+     "type": "impr",
+     "text": "Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
+     "en": "Titles behind you: 5 new styles (Cinema white, Chrome, Sunset, Fire, Ice) and options for size, height, entrance and color"
+    }
+   ]
+  },
   {
    "version": "1.5.125",
    "date": "2026-10-03",
@@ -474,17 +500,6 @@
      "type": "impr",
      "text": "Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
      "en": "Graphics: free transform (distort, perspective, skew, warp with arc/flag styles), rulers, guides and grid, History panel, merge down/visible, rasterize, distribute, lock transparency, copy to another page"
-    }
-   ]
-  },
-  {
-   "version": "1.5.95",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: maschere di ritaglio, stili di livello (ombra interna, smusso, sovrapposizione colore e sfumatura), curve, livelli, esposizione, vividezza, bilanciamento colore, ombre/luci, filtro fotografico, mappa sfumatura e LUT .cube",
-     "en": "Graphics: clipping masks, layer styles (inner shadow, bevel, color and gradient overlay), curves, levels, exposure, vibrance, color balance, shadows/highlights, photo filter, gradient map and .cube LUTs"
     }
    ]
   }

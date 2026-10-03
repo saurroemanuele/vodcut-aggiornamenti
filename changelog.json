@@ -1,5 +1,31 @@
 [
  {
+  "version": "1.5.126",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Animazioni su misura: restano nel riquadro lontano dalla faccia, testi nella lingua del video e leggibili, partono quando dici la parola giusta",
+    "en": "Custom animations: they stay in the box away from the face, text in the video's language and readable, they start when you say the right word"
+   },
+   {
+    "type": "impr",
+    "text": "Montaggio AI: i tagli non spezzano più le frasi, l'intro parte da una frase completa e la conclusione finale non viene tagliata",
+    "en": "AI edit: cuts no longer break sentences, the intro starts from a full sentence and the final conclusion is not cut"
+   },
+   {
+    "type": "impr",
+    "text": "Persona ritagliata: maschera per ogni fotogramma nei titoli dietro e anteprima sempre allineata, niente più alone fermo quando ti muovi",
+    "en": "Cut-out person: a mask for every frame in titles behind and a preview always aligned, no more static halo when you move"
+   },
+   {
+    "type": "impr",
+    "text": "Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
+    "en": "Titles behind you: 5 new styles (Cinema white, Chrome, Sunset, Fire, Ice) and options for size, height, entrance and color"
+   }
+  ]
+ },
+ {
   "version": "1.5.125",
   "date": "2026-10-03",
   "items": [
