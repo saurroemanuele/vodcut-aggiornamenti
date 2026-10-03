@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.130",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
+    "en": "Kick VOD downloads: newer VODs (links with IDs like 01a1…), which Kick stores in a different system, now work too."
+   }
+  ]
+ },
+ {
   "version": "1.5.129",
   "date": "2026-10-03",
   "items": [

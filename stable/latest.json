@@ -1,13 +1,24 @@
 {
- "version": "1.5.129",
+ "version": "1.5.130",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.129.zip",
- "size": 7698588,
- "sha256": "db36e38a3649e851242ab3e0ef5904a32c1f16e828e057da03caf34763089ce0",
- "sig": "ZlSKmUHMuvCO09wKT420NcrUXWulTw8ys4qEqVVjBCe+hQQRIG3RYwIO1QsLJvCf9P7omp5KODR/IIv5WpOjBg==",
- "notes": "Miglioramento: Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.130.zip",
+ "size": 7699266,
+ "sha256": "ff818be2031b30d53da162a258f5b8fea74050d043974be60e18799d6b026b97",
+ "sig": "DZ81AoSIQZQCz03/R36n+1+H+jfDgaXoCf3wnVEZlY7jW/adYjWut09Tis09cCGOy8VYK5E0Uwg8PQ+biWG6Cg==",
+ "notes": "Miglioramento: Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.130",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
+     "en": "Kick VOD downloads: newer VODs (links with IDs like 01a1…), which Kick stores in a different system, now work too."
+    }
+   ]
+  },
   {
    "version": "1.5.129",
    "date": "2026-10-03",
@@ -489,17 +500,6 @@
      "type": "impr",
      "text": "Grafica: testo con più stili nella stessa casella (grassetto, colori, misure, sottolineato), spazio tra i paragrafi, testo verticale; libreria di forme (frecce, cuore, fumetto, nuvola…), linee con frecce, forme combinate (unisci, sottrai, interseca, escludi); importa ed esporta SVG; GIF e MP4 dalle pagine; schede delle grafiche aperte",
      "en": "Graphics: mixed styles in one text box (bold, colors, sizes, underline), paragraph spacing, vertical text; shape library (arrows, heart, speech bubble, cloud…), lines with arrowheads, combined shapes (unite, subtract, intersect, exclude); SVG import and export; GIF and MP4 from pages; tabs for open designs"
-    }
-   ]
-  },
-  {
-   "version": "1.5.99",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: Riempimento generativo (selezioni una zona e l'AI la rifà come descrivi, o la toglie; senza AI la ricostruisce dal contorno) e Fluidifica (spingi, gonfia, pizzica, vortice)",
-     "en": "Graphics: Generative fill (select an area and AI redoes it as you describe, or removes it; without AI it's rebuilt from the surroundings) and Liquify (push, bloat, pinch, twirl)"
     }
    ]
   }
