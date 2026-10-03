@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.128",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip virali dalle live: l'AI trova i momenti migliori del VOD e li trasforma in clip verticali già montate (webcam sopra, gioco sotto, sottotitoli grandi, zoom sulle reazioni), con punteggio di viralità, titolo e motivo, in una galleria stile Opus. Nuovo stile Live nel Montaggio AI: l'AI guarda parole e volume e scegli quanto deve durare il video per YouTube.",
+    "en": "Viral clips from streams: the AI finds the best moments of your VOD and turns them into ready-made vertical clips (webcam on top, gameplay below, big captions, zooms on reactions), with a virality score, title and reason, in an Opus-style gallery. New Live style in AI Edit: the AI looks at words and volume, and you choose how long the YouTube video should be."
+   }
+  ]
+ },
+ {
   "version": "1.5.127",
   "date": "2026-10-03",
   "items": [
