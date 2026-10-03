@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.131",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
+    "en": "Much cleaner AI background removal: a new edge model (hair, shoulders), no more halo around the person even on low-quality video, and about 3x faster cutouts."
+   }
+  ]
+ },
+ {
   "version": "1.5.130",
   "date": "2026-10-03",
   "items": [

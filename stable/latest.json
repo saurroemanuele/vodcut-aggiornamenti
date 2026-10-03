@@ -1,13 +1,24 @@
 {
- "version": "1.5.130",
+ "version": "1.5.131",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.130.zip",
- "size": 7699266,
- "sha256": "ff818be2031b30d53da162a258f5b8fea74050d043974be60e18799d6b026b97",
- "sig": "DZ81AoSIQZQCz03/R36n+1+H+jfDgaXoCf3wnVEZlY7jW/adYjWut09Tis09cCGOy8VYK5E0Uwg8PQ+biWG6Cg==",
- "notes": "Miglioramento: Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.131.zip",
+ "size": 7700583,
+ "sha256": "22ec3fc987e2c0cd5e6265f385bbf7c2e9967c7625ab66b08d043538cb99af25",
+ "sig": "iG18zpXWMjOOvJbea4UTk4MBHTLBCq5lHjH2u4o2yCK6HZDZlALfvfdYCw0XgWanW2m8jm/aJxbwMUDma1JzCg==",
+ "notes": "Miglioramento: Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.131",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
+     "en": "Much cleaner AI background removal: a new edge model (hair, shoulders), no more halo around the person even on low-quality video, and about 3x faster cutouts."
+    }
+   ]
+  },
   {
    "version": "1.5.130",
    "date": "2026-10-03",
@@ -489,17 +500,6 @@
      "type": "impr",
      "text": "Versioni di prova (beta) per i tester invitati: ricevono le correzioni prima di tutti",
      "en": "Beta versions for invited testers: they get fixes before everyone else"
-    }
-   ]
-  },
-  {
-   "version": "1.5.100",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: testo con più stili nella stessa casella (grassetto, colori, misure, sottolineato), spazio tra i paragrafi, testo verticale; libreria di forme (frecce, cuore, fumetto, nuvola…), linee con frecce, forme combinate (unisci, sottrai, interseca, escludi); importa ed esporta SVG; GIF e MP4 dalle pagine; schede delle grafiche aperte",
-     "en": "Graphics: mixed styles in one text box (bold, colors, sizes, underline), paragraph spacing, vertical text; shape library (arrows, heart, speech bubble, cloud…), lines with arrowheads, combined shapes (unite, subtract, intersect, exclude); SVG import and export; GIF and MP4 from pages; tabs for open designs"
     }
    ]
   }
