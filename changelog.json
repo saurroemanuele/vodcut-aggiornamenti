@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.127",
+  "date": "2026-10-03",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Animazioni AI migliori: l'AI usa 10 nuovi componenti premium (imbuto, linea del tempo, formula, classifica, torta, citazione e altri) e disegna su misura solo le idee che non coprono, controllandole a occhio prima di metterle. Negli effetti su misura puoi allegare uno screenshot di esempio da replicare.",
+    "en": "Better AI animations: the AI uses 10 new premium components (funnel, timeline, formula, ranking, pie, quote and more) and custom-designs only the ideas they don't cover, visually checking them before adding them. In custom effects you can attach an example screenshot to replicate."
+   }
+  ]
+ },
+ {
   "version": "1.5.126",
   "date": "2026-10-03",
   "items": [

@@ -1,13 +1,24 @@
 {
- "version": "1.5.126",
+ "version": "1.5.127",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.126.zip",
- "size": 7662502,
- "sha256": "7a334cfa9b8661c5d65f9be8cc273979bec01b0b95fdea846cdfa02138913c51",
- "sig": "r6jxqOa+sqXAGQOcJLXpHge7hsnf6pJ3CpuqZapA+KtF9IAf6fUtFkOAqa70FZWgzILoHQedc8hG6t0KBnfiDA==",
- "notes": "Miglioramento: Animazioni su misura: restano nel riquadro lontano dalla faccia, testi nella lingua del video e leggibili, partono quando dici la parola giusta\nMiglioramento: Montaggio AI: i tagli non spezzano più le frasi, l'intro parte da una frase completa e la conclusione finale non viene tagliata\nMiglioramento: Persona ritagliata: maschera per ogni fotogramma nei titoli dietro e anteprima sempre allineata, niente più alone fermo quando ti muovi\nMiglioramento: Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.127.zip",
+ "size": 7671918,
+ "sha256": "9f0d79c22ec51d3b1aa3537519645ae83d2e1fca11d94a6ad3abeae32990ed1b",
+ "sig": "Kqp5P2QTVxYvBlQ+F0sx3g1e6u7Z1luvNpo71xJo0RBwJzw38UGrNaZDWwFMSULNhYWWPSnpod1LQzsNSM0HBg==",
+ "notes": "Miglioramento: Animazioni AI migliori: l'AI usa 10 nuovi componenti premium (imbuto, linea del tempo, formula, classifica, torta, citazione e altri) e disegna su misura solo le idee che non coprono, controllandole a occhio prima di metterle. Negli effetti su misura puoi allegare uno screenshot di esempio da replicare.",
  "date": "2026-10-03",
  "history": [
+  {
+   "version": "1.5.127",
+   "date": "2026-10-03",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Animazioni AI migliori: l'AI usa 10 nuovi componenti premium (imbuto, linea del tempo, formula, classifica, torta, citazione e altri) e disegna su misura solo le idee che non coprono, controllandole a occhio prima di metterle. Negli effetti su misura puoi allegare uno screenshot di esempio da replicare.",
+     "en": "Better AI animations: the AI uses 10 new premium components (funnel, timeline, formula, ranking, pie, quote and more) and custom-designs only the ideas they don't cover, visually checking them before adding them. In custom effects you can attach an example screenshot to replicate."
+    }
+   ]
+  },
   {
    "version": "1.5.126",
    "date": "2026-10-03",
@@ -489,17 +500,6 @@
      "type": "impr",
      "text": "Grafica: strumento Sfumatura e Secchiello, Scherma/Brucia/Spugna, Sfoca/Nitidezza a pennello, menu Filtri (sfocatura gaussiana, di movimento e radiale, maschera di contrasto, grana, riduci disturbo, mosaico, onda, vortice, rilievo) con anteprima dal vivo",
      "en": "Graphics: Gradient and Paint Bucket tools, Dodge/Burn/Sponge, Blur/Sharpen brushes, Filters menu (gaussian, motion and radial blur, unsharp mask, grain, reduce noise, pixelate, wave, twirl, emboss) with live preview"
-    }
-   ]
-  },
-  {
-   "version": "1.5.96",
-   "date": "2026-10-01",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Grafica: trasformazione libera (distorci, prospettiva, inclina, altera con stili come arco e bandiera), righelli, guide e griglia, pannello Cronologia, unisci sotto/visibili, trasforma in immagine, distribuisci, blocca trasparenza, copia in un'altra pagina",
-     "en": "Graphics: free transform (distort, perspective, skew, warp with arc/flag styles), rulers, guides and grid, History panel, merge down/visible, rasterize, distribute, lock transparency, copy to another page"
     }
    ]
   }
