@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.139",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
+    "en": "Cleaner AI edit cuts: they never cut in the middle of a word (even with a prompt) and don't leave tiny pieces between cuts, so the video no longer jumps constantly."
+   }
+  ]
+ },
+ {
   "version": "1.5.138",
   "date": "2026-10-04",
   "items": [

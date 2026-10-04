@@ -1,13 +1,24 @@
 {
- "version": "1.5.138",
+ "version": "1.5.139",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.138.zip",
- "size": 7795405,
- "sha256": "fcaf035873d3775d957215c3c9f6102f5824c4c526b2689f04d201b51350f923",
- "sig": "D7+WxlK/mANIWihGPbqoLCe83fUNyT0TfWunePAhugws+N4z0vr6OOtVAKzKgfD6dnxslFeIbNXToZvgZMAvAA==",
- "notes": "Miglioramento: Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.139.zip",
+ "size": 7796350,
+ "sha256": "b1dd9e72b869b718d173b1cada6989f48a4a490432301994ac297c39cb352518",
+ "sig": "H80dk5CxeKtLTGpeEdgtRhB94Qjw9rAdzYMGGVEOYW17dBbgaFwH/CjdQhHjBpNtPLmrTVGcHKrdN1haPItVCw==",
+ "notes": "Miglioramento: Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.139",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
+     "en": "Cleaner AI edit cuts: they never cut in the middle of a word (even with a prompt) and don't leave tiny pieces between cuts, so the video no longer jumps constantly."
+    }
+   ]
+  },
   {
    "version": "1.5.138",
    "date": "2026-10-04",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
      "en": "Notifications: the notification card now closes when you open the bell and no longer gets stuck"
-    }
-   ]
-  },
-  {
-   "version": "1.5.109",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
-     "en": "Notifications: a bell at the top with the team's replies to your reports and what's new"
     }
    ]
   }
