@@ -1,13 +1,24 @@
 {
- "version": "1.5.155",
+ "version": "1.5.156",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.155.zip",
- "size": 7820174,
- "sha256": "9c9bbbee3c907170477b116534b5585b777fb36a02ddce3de4145a599ae3e54e",
- "sig": "0Nt91BNkM+FCuliDy7WMCdnPPfHndz3xaH5pcp0rzodQpmAwkbA/7xdI5VkyIfCHifJywt9DQxeUf01L/c/yCg==",
- "notes": "Correzione: Icona del pulsante Zoom nelle clip\nMiglioramento: Clip a mano: scegli un momento qualsiasi della live, anche uno che l'AI non ha preso, e diventa una clip montata come le altre. Lingua della live da scegliere prima di cercare le clip. Per ogni clip l'AI indica dove può funzionare meglio: TikTok, Reels o Shorts",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.156.zip",
+ "size": 7824296,
+ "sha256": "163b925c1bb5ef2e79a27275390444075405617bb42c98bf36dc3cf14f5e0f66",
+ "sig": "KladuyUPNieIKe0q6plsSWTJGhyppLrg9uiGyBolAkLJc13aTkgpT5NABoUhrywxOj+EsOEbSFVAhNUZBM2TDg==",
+ "notes": "Miglioramento: Allunga o accorcia una clip prendendola dalla live: se l'AI ha tagliato l'inizio che serve a capire, sposti l'inizio prima (o la fine dopo) e le modifiche fatte restano. Dalla galleria e dall'editor della clip",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.156",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Allunga o accorcia una clip prendendola dalla live: se l'AI ha tagliato l'inizio che serve a capire, sposti l'inizio prima (o la fine dopo) e le modifiche fatte restano. Dalla galleria e dall'editor della clip",
+     "en": "Lengthen or shorten a clip using the stream: if the AI cut the start you need for context, move the start earlier (or the end later) and your edits stay. From the gallery and the clip editor"
+    }
+   ]
+  },
   {
    "version": "1.5.155",
    "date": "2026-10-04",
@@ -329,32 +340,6 @@
      "type": "impr",
      "text": "Animazioni AI migliori: l'AI usa 10 nuovi componenti premium (imbuto, linea del tempo, formula, classifica, torta, citazione e altri) e disegna su misura solo le idee che non coprono, controllandole a occhio prima di metterle. Negli effetti su misura puoi allegare uno screenshot di esempio da replicare.",
      "en": "Better AI animations: the AI uses 10 new premium components (funnel, timeline, formula, ranking, pie, quote and more) and custom-designs only the ideas they don't cover, visually checking them before adding them. In custom effects you can attach an example screenshot to replicate."
-    }
-   ]
-  },
-  {
-   "version": "1.5.126",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Animazioni su misura: restano nel riquadro lontano dalla faccia, testi nella lingua del video e leggibili, partono quando dici la parola giusta",
-     "en": "Custom animations: they stay in the box away from the face, text in the video's language and readable, they start when you say the right word"
-    },
-    {
-     "type": "impr",
-     "text": "Montaggio AI: i tagli non spezzano più le frasi, l'intro parte da una frase completa e la conclusione finale non viene tagliata",
-     "en": "AI edit: cuts no longer break sentences, the intro starts from a full sentence and the final conclusion is not cut"
-    },
-    {
-     "type": "impr",
-     "text": "Persona ritagliata: maschera per ogni fotogramma nei titoli dietro e anteprima sempre allineata, niente più alone fermo quando ti muovi",
-     "en": "Cut-out person: a mask for every frame in titles behind and a preview always aligned, no more static halo when you move"
-    },
-    {
-     "type": "impr",
-     "text": "Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
-     "en": "Titles behind you: 5 new styles (Cinema white, Chrome, Sunset, Fire, Ice) and options for size, height, entrance and color"
     }
    ]
   }

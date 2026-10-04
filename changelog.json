@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.156",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Allunga o accorcia una clip prendendola dalla live: se l'AI ha tagliato l'inizio che serve a capire, sposti l'inizio prima (o la fine dopo) e le modifiche fatte restano. Dalla galleria e dall'editor della clip",
+    "en": "Lengthen or shorten a clip using the stream: if the AI cut the start you need for context, move the start earlier (or the end later) and your edits stay. From the gallery and the clip editor"
+   }
+  ]
+ },
+ {
   "version": "1.5.155",
   "date": "2026-10-04",
   "items": [
