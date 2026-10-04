@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.151",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
+    "en": "Editor: if the preview freezes on a frame (smooth preview after cuts, seen on Mac with long lives) it notices within 2-3 seconds and continues from the live at the same point"
+   }
+  ]
+ },
+ {
   "version": "1.5.150",
   "date": "2026-10-04",
   "items": [

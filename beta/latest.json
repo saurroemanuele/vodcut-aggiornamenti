@@ -1,13 +1,24 @@
 {
- "version": "1.5.150",
+ "version": "1.5.151",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.150.zip",
- "size": 7809354,
- "sha256": "a1016dcd8c54aea88963c835f81c9c71b032a2d83cff52b02eeab68739dbd447",
- "sig": "8jtr9sEXmqBarS4YeVo+XESahdFSfdi4O40rd3RxS8/+1CKUu2iQpnzSiBaWUYu92ioO2tx8NQKmlspgPQtABQ==",
- "notes": "Miglioramento: Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.151.zip",
+ "size": 7809792,
+ "sha256": "65b2e1b89fc3a94c48cd8c5deb3bdf88bef92cdab519f03b0b90e450a8b1fdda",
+ "sig": "Ea8VSD5fSNNezdmrGUTQGG+RP1XFS5EL0gSwEFWDY5Z+bS7LRINxP2ppvHP59emeB5tnKPHsKYG/UOa90WKgDQ==",
+ "notes": "Miglioramento: Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.151",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
+     "en": "Editor: if the preview freezes on a frame (smooth preview after cuts, seen on Mac with long lives) it notices within 2-3 seconds and continues from the live at the same point"
+    }
+   ]
+  },
   {
    "version": "1.5.150",
    "date": "2026-10-04",
@@ -359,22 +370,6 @@
      "type": "impr",
      "text": "Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
      "en": "Beta testers: «Use my API keys» switch in the profile picture menu, to use your own keys instead of credits"
-    }
-   ]
-  },
-  {
-   "version": "1.5.121",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Rampe di velocità: keyframe sulla velocità delle clip, il video accelera o rallenta piano piano (anteprima, timeline ed export)",
-     "en": "Speed ramps: keyframes on clip speed, the video speeds up or slows down gradually (preview, timeline and export)"
-    },
-    {
-     "type": "impr",
-     "text": "Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
-     "en": "Ready-made speed curves: Hero, Bullet, Flash in, Flash out"
     }
    ]
   }
