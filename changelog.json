@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.149",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: niente più clip dalla schermata starting soon, pause o fine live; la webcam si riconosce guardando un fotogramma al secondo (basta vedere lo streamer nel suo riquadro una volta per non passare a solo cam); le clip finite in formato gioco per sbaglio si correggono da sole",
+    "en": "Clips: no more clips from starting soon, BRB or outro screens; webcam detection checks one frame per second (seeing the streamer in their box once keeps the cam layout); clips wrongly set to game layout fix themselves"
+   }
+  ]
+ },
+ {
   "version": "1.5.148",
   "date": "2026-10-04",
   "items": [

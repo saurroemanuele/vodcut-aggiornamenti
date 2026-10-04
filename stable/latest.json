@@ -1,13 +1,24 @@
 {
- "version": "1.5.148",
+ "version": "1.5.149",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.148.zip",
- "size": 7807939,
- "sha256": "79d5156d02150453db2e23823c24d300fad2cbbd65f86801cee3728a8aab6882",
- "sig": "VJjoIxuRtsOU+valeZB41lsjIrJGraIL1PIdGku7F2Ew4YQ+Fj8npZ+ufaBOGkrV2piHW5j46NtdV897QQ7rCw==",
- "notes": "Miglioramento: Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.149.zip",
+ "size": 7808565,
+ "sha256": "21d67b1b4f919405b0098b60fd57b22dbd63b4148f3a1e6b30bb54025c511998",
+ "sig": "5HWU5gqxpUtnuyrYMiHIWrzZB6b5855CVJ1IDWdJKyUbLSW8YCrFVXpxkdHBxsSUaN9hw/9sTBIbCxjG6s7hDg==",
+ "notes": "Miglioramento: Clip: niente più clip dalla schermata starting soon, pause o fine live; la webcam si riconosce guardando un fotogramma al secondo (basta vedere lo streamer nel suo riquadro una volta per non passare a solo cam); le clip finite in formato gioco per sbaglio si correggono da sole",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.149",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: niente più clip dalla schermata starting soon, pause o fine live; la webcam si riconosce guardando un fotogramma al secondo (basta vedere lo streamer nel suo riquadro una volta per non passare a solo cam); le clip finite in formato gioco per sbaglio si correggono da sole",
+     "en": "Clips: no more clips from starting soon, BRB or outro screens; webcam detection checks one frame per second (seeing the streamer in their box once keeps the cam layout); clips wrongly set to game layout fix themselves"
+    }
+   ]
+  },
   {
    "version": "1.5.148",
    "date": "2026-10-04",
@@ -379,22 +390,6 @@
      "type": "impr",
      "text": "Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
      "en": "Pick the curve for each keyframe: linear, ease in, ease out, ease in-out, overshoot, bounce, hold"
-    }
-   ]
-  },
-  {
-   "version": "1.5.119",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Curve dei keyframe come CapCut: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto (su immagini, testi, zoom, filtri e colori)",
-     "en": "CapCut-style keyframe curves: linear, ease in, ease out, ease in-out, overshoot, bounce, hold (on images, texts, zooms, filters and colors)"
-    },
-    {
-     "type": "impr",
-     "text": "Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
-     "en": "Volume keyframes on clips, sounds and overlay videos, in the exported video too"
     }
    ]
   }
