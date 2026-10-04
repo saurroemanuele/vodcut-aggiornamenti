@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.146",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
+    "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
+   }
+  ]
+ },
+ {
   "version": "1.5.145",
   "date": "2026-10-04",
   "items": [

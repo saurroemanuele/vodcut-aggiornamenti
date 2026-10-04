@@ -1,13 +1,24 @@
 {
- "version": "1.5.145",
+ "version": "1.5.146",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.145.zip",
- "size": 7804120,
- "sha256": "885860f415688a786947e87ecce680bf1d6b352294da61d50fc2f0fe3b8d23c2",
- "sig": "vIRnDRCtkxgWI/HjVcyJf7qFxj36z01M8ecbWuMjiyZpQdB7Hsag493tfJvNLQDmwtGQdCP2+O07kybwSZdaBQ==",
- "notes": "Miglioramento: Clip: sottotitoli attaccati sotto la webcam, sotto il titolo finché c'è e in basso durante gli zoom sulla faccia; riconosce le scene solo cam (niente zoom nel vuoto, persona a tutto schermo); niente zoom che parte a metà titolo; le clip nuove escono nella lingua scelta e il menu mostra la lingua vera",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.146.zip",
+ "size": 7805395,
+ "sha256": "190d3a9b561e0560dc81373832087f82f89352779e2df12a4c7f81cf3db1e475",
+ "sig": "Vqydj0ljvm40q9BMB6ybMbJpIcboq2y03n4RQApLH3GtTxCu80mI8f64xJWIvbZQsBNWOKWGTzSwrKr90prXAA==",
+ "notes": "Miglioramento: Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.146",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
+     "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
+    }
+   ]
+  },
   {
    "version": "1.5.145",
    "date": "2026-10-04",
@@ -399,17 +410,6 @@
      "type": "fix",
      "text": "Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
      "en": "Timeline: no more dark gap at the start of a clip moved after an empty space"
-    }
-   ]
-  },
-  {
-   "version": "1.5.116",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Play più immediato: l'uscita audio resta sveglia mentre l'editor è aperto e in verticale l'anteprima si ridisegna appena arriva il fotogramma nuovo",
-     "en": "Faster play: the audio output stays awake while the editor is open and in vertical the preview redraws as soon as the new frame arrives"
     }
    ]
   }
