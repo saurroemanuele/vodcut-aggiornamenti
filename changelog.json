@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.154",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
+    "en": "Profile: new Plan and billing section with plan, renewal or cancellation, credits and 'Manage subscription' (card, invoices, cancellation); the link is also in the profile photo menu"
+   }
+  ]
+ },
+ {
   "version": "1.5.153",
   "date": "2026-10-04",
   "items": [

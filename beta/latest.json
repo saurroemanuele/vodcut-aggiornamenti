@@ -1,13 +1,24 @@
 {
- "version": "1.5.153",
+ "version": "1.5.154",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.153.zip",
- "size": 7812273,
- "sha256": "662b072546b6675e677a742a20575ea424271b1533251033b8f6abfff29e77e6",
- "sig": "TFhSOLJKj/YUNPVeRThuQgW2keNSc4WMT7ZMiJW0+iMSxyEKfnaJdLSUI5HupcsBxOf10eCxNkNZmLHglf45DQ==",
- "notes": "Miglioramento: Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.154.zip",
+ "size": 7813060,
+ "sha256": "d3ee6b6be39bd19eca5626d4ac619247580c6463448f61186b42c54afd6eac7d",
+ "sig": "O8pSDIYrM3z4iuLuQTu6A12oJTMjSAFBHfeGorP4FPWh/EgLk6guhgIdRDIi468cwE2dZ+FO43JDuZZ/BW12BA==",
+ "notes": "Miglioramento: Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.154",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
+     "en": "Profile: new Plan and billing section with plan, renewal or cancellation, credits and 'Manage subscription' (card, invoices, cancellation); the link is also in the profile photo menu"
+    }
+   ]
+  },
   {
    "version": "1.5.153",
    "date": "2026-10-04",
@@ -339,32 +350,6 @@
      "type": "impr",
      "text": "Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
      "en": "AI edit: the cost now includes custom animations, before applying you see what you pay for images and animations"
-    }
-   ]
-  },
-  {
-   "version": "1.5.124",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Montaggio AI: animazioni su misura, l'AI inventa e disegna un'animazione nuova per ogni momento giusto (scegli Su misura o Modelli pronti)",
-     "en": "AI edit: custom animations, the AI invents and draws a new animation for each right moment (choose Custom or Ready-made)"
-    },
-    {
-     "type": "impr",
-     "text": "Le grafiche animate e le immagini AI non coprono più la faccia: vanno dove c'è spazio e si rimpiccioliscono se serve",
-     "en": "Animated graphics and AI images no longer cover the face: they go where there is room and shrink if needed"
-    },
-    {
-     "type": "impr",
-     "text": "Le anteprime degli stili dei titoli sono grandi e centrate",
-     "en": "Title style previews are large and centered"
-    },
-    {
-     "type": "impr",
-     "text": "Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
-     "en": "Clicking an option no longer scrolls the AI edit window back to the top"
     }
    ]
   }
