@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.142",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
+    "en": "Viral clips: new «Subtitles» button to choose in advance where they go (below the cam, in the middle, at the bottom), how many words at a time, font and colours; by default they pop in with a few words at a time. Also applies to clips already made."
+   }
+  ]
+ },
+ {
   "version": "1.5.141",
   "date": "2026-10-04",
   "items": [

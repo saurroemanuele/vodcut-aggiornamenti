@@ -1,13 +1,24 @@
 {
- "version": "1.5.141",
+ "version": "1.5.142",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.141.zip",
- "size": 7797617,
- "sha256": "0739a9f0111f460e025cc9b3120f50388e66a655117c97d84d814146fa438117",
- "sig": "9+lrwVwlGpRrSVQcO6SiLeGZYUa0TmkXe2BNwa9CptU45iLsu7cikq5hCraV5pyBoiF23o1e8nWcBl2v3r6OAw==",
- "notes": "Miglioramento: Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.142.zip",
+ "size": 7800198,
+ "sha256": "162c539d233d42ca14dac3617dfe43f57e825dcbd7a2d3e6dfc188c7212b4b76",
+ "sig": "/OGzWwYJfxF4gL1R6yH49GBKGXFBMvKfRG2A0r0hwAnp8a7cwqFfysec+CyuK4Y9NZYhbb51s22PthMOsYzYBQ==",
+ "notes": "Miglioramento: Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.142",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
+     "en": "Viral clips: new «Subtitles» button to choose in advance where they go (below the cam, in the middle, at the bottom), how many words at a time, font and colours; by default they pop in with a few words at a time. Also applies to clips already made."
+    }
+   ]
+  },
   {
    "version": "1.5.141",
    "date": "2026-10-04",
@@ -474,17 +485,6 @@
      "type": "impr",
      "text": "Voci AI: se non hai scelto una voce ne uso una predefinita invece di fermarmi",
      "en": "AI voices: a default voice is used if you haven't picked one"
-    }
-   ]
-  },
-  {
-   "version": "1.5.112",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
-     "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
     }
    ]
   }
