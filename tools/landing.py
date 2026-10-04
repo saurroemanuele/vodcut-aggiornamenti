@@ -159,6 +159,43 @@ S = {
 }"""),
 }
 
+# ------------------------------------------------------------------ testi della versione 2 (stile software, meno testo)
+S.update({
+    "title": ("NoonFrame · Lo studio AI per creator", "NoonFrame · The AI studio for creators"),
+    "pill_new": ("Novità", "New"), "pill_t": ("Clip AI con la piattaforma migliore per ogni clip", "AI clips with the best platform for each clip"),
+    "h1a": ("Lo studio AI", "The AI studio"), "h1b": ("per creator.", "for creators."),
+    "sub2": ("Clip virali dalle tue live, editor video, grafica e video AI. In un'app gratuita per Windows e Mac.",
+             "Viral clips from your streams, video editor, design and AI video. In one free app for Windows and Mac."),
+    "st1": ("per gli strumenti", "for the tools"), "st2": ("piattaforme valutate per ogni clip", "platforms scored for every clip"),
+    "st3": ("lingue per sottotitoli e clip", "languages for subtitles and clips"), "st4": ("aggiornamenti dal lancio", "updates since launch"),
+    "bn_h": ("Tutto quello che serve a un creator.", "Everything a creator needs."),
+    "bn_p": ("Un'app sola al posto di quattro abbonamenti.", "One app instead of four subscriptions."),
+    "b1h": ("Clip AI", "AI clips"), "b1p": ("L'AI trova i momenti virali della live e li monta in verticale, con punteggio e piattaforma migliore.",
+                                         "AI finds the viral moments in your stream and edits them vertically, with a score and the best platform."),
+    "b2h": ("Punteggio di viralità", "Virality score"), "b2p": ("Pubblichi prima le clip che hanno più possibilità.", "Post the clips with the best chance first."),
+    "b3h": ("Allunga o accorcia", "Lengthen or shorten"), "b3p": ("Prendi il contesto prima o il finale dopo, direttamente dalla live.", "Grab context before or the ending after, straight from the stream."),
+    "b4h": ("Grafica come Photoshop", "Photoshop-style design"), "b4p": ("Miniature con livelli, rimozione sfondo con l'AI, PSD.", "Thumbnails with layers, AI background removal, PSD."),
+    "b5h": ("Sottotitoli che si leggono", "Subtitles people read"), "b5p": ("Parola per parola, nel tuo stile, in sei lingue.", "Word by word, in your style, in six languages."),
+    "b6h": ("Video AI dalla A alla Z", "AI video from A to Z"), "b6p": ("Script, immagini, voce e montaggio per vendere un prodotto digitale o lanciare una pagina faceless.",
+                                                                       "Script, images, voice and editing to sell a digital product or launch a faceless page."),
+    "ai_s1": ("Script", "Script"), "ai_s2": ("Immagini", "Images"), "ai_s3": ("Voce", "Voice"), "ai_s4": ("Video", "Video"),
+    "ext_was": ("clip dell'AI", "AI clip"), "ext_add": ("+ 18 s di contesto", "+ 18 s of context"),
+    "ed2_k": ("Editor", "Editor"), "ed2_h": ("Dalla live al video. Da solo.", "From stream to video. On its own."),
+    "ed2_p": ("Pause tagliate, zoom su di te, sottotitoli e titoli animati in automatico. Poi rifinisci in una timeline vera.",
+              "Pauses cut, zooms on you, subtitles and animated titles, automatically. Then polish it in a real timeline."),
+    "ed2_1": ("Montaggio automatico delle live", "Automatic stream editing"), "ed2_2": ("Timeline con tracce, testi ed effetti", "Timeline with tracks, text and effects"),
+    "ed2_3": ("Esporti per YouTube, TikTok, Reels e Shorts", "Export for YouTube, TikTok, Reels and Shorts"),
+    "cm2_h": ("Migliora ogni giorno, con chi lo usa.", "Better every day, with the people who use it."),
+    "cm2_p": ("Chiedi una funzione dall'app: la community decide, noi la costruiamo, l'aggiornamento arriva da solo.",
+              "Request a feature from the app: the community decides, we build it, the update arrives on its own."),
+    "pr2_h": ("Gratis. L'AI solo se la usi.", "Free. AI only if you use it."),
+    "faq2_h": ("Domande", "FAQ"),
+    "shot_alt1": ("La galleria delle clip AI di NoonFrame con punteggio e piattaforma", "NoonFrame's AI clip gallery with score and platform"),
+    "shot_alt2": ("Dettaglio di una clip: dove funziona meglio", "Clip detail: where it works best"),
+    "shot_alt3": ("L'editor di NoonFrame con anteprima e timeline", "NoonFrame's editor with preview and timeline"),
+    "shot_alt4": ("La grafica di NoonFrame con una miniatura", "NoonFrame design with a thumbnail"),
+})
+
 DISCORD = "https://discord.gg/5cQvNEBfee"
 
 TPL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "landing.tpl.html"), encoding="utf-8").read()
