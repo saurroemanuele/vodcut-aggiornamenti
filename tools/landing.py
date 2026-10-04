@@ -196,6 +196,18 @@ S.update({
     "shot_alt4": ("La grafica di NoonFrame con una miniatura", "NoonFrame design with a thumbnail"),
 })
 
+# ------------------------------------------------------------------ testi della versione 3 (capitoli, niente box)
+S.update({
+    "c1_h": ("Dalla live alle clip, in pochi minuti.", "From stream to clips, in minutes."),
+    "c1_p": ("L'AI ascolta parole, urla e reazioni, sceglie i momenti che funzionano da soli e li monta in verticale, pronti da pubblicare.",
+             "AI listens to words, screams and reactions, picks the moments that work on their own and edits them vertically, ready to post."),
+    "f1t": ("Punteggio di viralità", "Virality score"), "f1p": ("Da 0 a 100 per ogni clip, con il motivo.", "From 0 to 100 for every clip, with the reason."),
+    "f2t": ("Dove funziona meglio", "Where it works best"), "f2p": ("TikTok, Reels o Shorts: l'AI te lo dice per ogni clip.", "TikTok, Reels or Shorts: the AI tells you for every clip."),
+    "f3t": ("Allunga o accorcia", "Lengthen or shorten"), "f3p": ("Il contesto che serve, preso direttamente dalla live.", "The context you need, taken straight from the stream."),
+    "f4t": ("Sottotitoli che si leggono", "Subtitles people read"), "f4p": ("Parola per parola, nel tuo stile, in sei lingue.", "Word by word, in your style, in six languages."),
+    "g_list": ("Livelli e maschere · Rimozione sfondo con l'AI · Riempimento generativo · Apre e salva PSD", "Layers and masks · AI background removal · Generative fill · Opens and saves PSD"),
+})
+
 DISCORD = "https://discord.gg/5cQvNEBfee"
 
 TPL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "landing.tpl.html"), encoding="utf-8").read()
