@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.145",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: sottotitoli attaccati sotto la webcam, sotto il titolo finché c'è e in basso durante gli zoom sulla faccia; riconosce le scene solo cam (niente zoom nel vuoto, persona a tutto schermo); niente zoom che parte a metà titolo; le clip nuove escono nella lingua scelta e il menu mostra la lingua vera",
+    "en": "Clips: subtitles hug the webcam, sit under the title while it shows and move down during face zooms; full-cam scenes are detected (no zooms into empty space, person full screen); no zoom starting mid-title; new clips use the chosen language and the menu shows the real one"
+   }
+  ]
+ },
+ {
   "version": "1.5.144",
   "date": "2026-10-04",
   "items": [
