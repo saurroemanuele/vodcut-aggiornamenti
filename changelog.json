@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.141",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
+    "en": "Subtitle language: the menu shows the language they're actually written in and, if it isn't the one you chose, there's a button to rewrite them right away (before, choosing «Italian» did nothing)."
+   }
+  ]
+ },
+ {
   "version": "1.5.140",
   "date": "2026-10-04",
   "items": [

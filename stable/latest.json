@@ -1,13 +1,24 @@
 {
- "version": "1.5.140",
+ "version": "1.5.141",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.140.zip",
- "size": 7797323,
- "sha256": "f763ac7ba466bb59c06949cac20e0d475f26ad689e698e823d80a3de5f4faec9",
- "sig": "e6RwRP85QtoeHgzKolXmhI4MSttfm4MWomMP8hiscCG0TvDvRsb0/8AuIW9jy0uNd4nYpazxiQUDzdQomOCEDw==",
- "notes": "Miglioramento: Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.141.zip",
+ "size": 7797617,
+ "sha256": "0739a9f0111f460e025cc9b3120f50388e66a655117c97d84d814146fa438117",
+ "sig": "9+lrwVwlGpRrSVQcO6SiLeGZYUa0TmkXe2BNwa9CptU45iLsu7cikq5hCraV5pyBoiF23o1e8nWcBl2v3r6OAw==",
+ "notes": "Miglioramento: Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.141",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
+     "en": "Subtitle language: the menu shows the language they're actually written in and, if it isn't the one you chose, there's a button to rewrite them right away (before, choosing «Italian» did nothing)."
+    }
+   ]
+  },
   {
    "version": "1.5.140",
    "date": "2026-10-04",
@@ -474,22 +485,6 @@
      "type": "fix",
      "text": "Trascinare una live lunga nella finestra non blocca più l'app: il file si apre dov'è, senza essere copiato",
      "en": "Dragging a long live into the window no longer freezes the app: the file opens where it is, without being copied"
-    }
-   ]
-  },
-  {
-   "version": "1.5.111",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Sicurezza: la pagina dell'app si apre solo dalla finestra di NoonFrame; progetti condivisi senza percorsi di rete; chiavi del Mac salvate senza passare dagli argomenti",
-     "en": "Security: the app page only opens from the NoonFrame window; shared projects can't point to network paths; Mac keys are saved without passing through command arguments"
-    },
-    {
-     "type": "impr",
-     "text": "Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
-     "en": "Yearly subscriptions too (2 months free) in the credits store"
     }
    ]
   }
