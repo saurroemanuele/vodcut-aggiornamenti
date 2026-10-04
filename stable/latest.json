@@ -1,13 +1,24 @@
 {
- "version": "1.5.147",
+ "version": "1.5.148",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.147.zip",
- "size": 7807687,
- "sha256": "c948dea30c3617cdaaa85abdd6f365725890edbd0fc0dca93e0397efa33a6da2",
- "sig": "m/MeVZrSXO3f9kqNaBsMFXXO2ZESY8Ah0vPtvtSZ2NeFk/JiDPU3vUcrJz9Ii1FidhFNcmKbBvKLx1PVCto9Cg==",
- "notes": "Miglioramento: Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.148.zip",
+ "size": 7807939,
+ "sha256": "79d5156d02150453db2e23823c24d300fad2cbbd65f86801cee3728a8aab6882",
+ "sig": "VJjoIxuRtsOU+valeZB41lsjIrJGraIL1PIdGku7F2Ew4YQ+Fj8npZ+ufaBOGkrV2piHW5j46NtdV897QQ7rCw==",
+ "notes": "Miglioramento: Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.148",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
+     "en": "Fixed the Mac crash when opening the live clips: face detection was used by two jobs at once and closed the app"
+    }
+   ]
+  },
   {
    "version": "1.5.147",
    "date": "2026-10-04",
@@ -384,27 +395,6 @@
      "type": "impr",
      "text": "Keyframe del volume su clip, suoni e video sovrapposti, anche nel video esportato",
      "en": "Volume keyframes on clips, sounds and overlay videos, in the exported video too"
-    }
-   ]
-  },
-  {
-   "version": "1.5.118",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Lo zoom della timeline non si resetta più quando sposti, dividi o elimini una clip",
-     "en": "The timeline zoom no longer resets when you move, split or delete a clip"
-    },
-    {
-     "type": "fix",
-     "text": "Progetto vuoto con calamita accesa: eliminare una clip la toglie davvero e le altre si avvicinano, senza spazi",
-     "en": "Empty project with magnet on: deleting a clip really removes it and the others close up, no gaps"
-    },
-    {
-     "type": "impr",
-     "text": "Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
-     "en": "Keyframes for colors and filter intensity too (on color/filter tracks and on a single clip): values move from one keyframe to the next, in the exported video too"
     }
    ]
   }

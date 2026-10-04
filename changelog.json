@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.148",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
+    "en": "Fixed the Mac crash when opening the live clips: face detection was used by two jobs at once and closed the app"
+   }
+  ]
+ },
+ {
   "version": "1.5.147",
   "date": "2026-10-04",
   "items": [
