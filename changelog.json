@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.150",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
+    "en": "Clips: new Zoom button in the gallery to choose how many zooms per clip (Auto, none or 1 to 5), for existing and future clips"
+   }
+  ]
+ },
+ {
   "version": "1.5.149",
   "date": "2026-10-04",
   "items": [

@@ -1,13 +1,24 @@
 {
- "version": "1.5.149",
+ "version": "1.5.150",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.149.zip",
- "size": 7808565,
- "sha256": "21d67b1b4f919405b0098b60fd57b22dbd63b4148f3a1e6b30bb54025c511998",
- "sig": "5HWU5gqxpUtnuyrYMiHIWrzZB6b5855CVJ1IDWdJKyUbLSW8YCrFVXpxkdHBxsSUaN9hw/9sTBIbCxjG6s7hDg==",
- "notes": "Miglioramento: Clip: niente più clip dalla schermata starting soon, pause o fine live; la webcam si riconosce guardando un fotogramma al secondo (basta vedere lo streamer nel suo riquadro una volta per non passare a solo cam); le clip finite in formato gioco per sbaglio si correggono da sole",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.150.zip",
+ "size": 7809354,
+ "sha256": "a1016dcd8c54aea88963c835f81c9c71b032a2d83cff52b02eeab68739dbd447",
+ "sig": "8jtr9sEXmqBarS4YeVo+XESahdFSfdi4O40rd3RxS8/+1CKUu2iQpnzSiBaWUYu92ioO2tx8NQKmlspgPQtABQ==",
+ "notes": "Miglioramento: Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.150",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
+     "en": "Clips: new Zoom button in the gallery to choose how many zooms per clip (Auto, none or 1 to 5), for existing and future clips"
+    }
+   ]
+  },
   {
    "version": "1.5.149",
    "date": "2026-10-04",
@@ -364,32 +375,6 @@
      "type": "impr",
      "text": "Curve di velocità pronte: Eroe, Proiettile, Entrata veloce, Uscita veloce",
      "en": "Ready-made speed curves: Hero, Bullet, Flash in, Flash out"
-    }
-   ]
-  },
-  {
-   "version": "1.5.120",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Keyframe sui video sovrapposti: posizione, dimensione e trasparenza che cambiano nel tempo, anche nel video esportato",
-     "en": "Keyframes on overlay videos: position, size and opacity change over time, also in the exported video"
-    },
-    {
-     "type": "impr",
-     "text": "Keyframe sull'ingrandimento dello zoom sulla webcam",
-     "en": "Keyframes on the webcam zoom level"
-    },
-    {
-     "type": "impr",
-     "text": "Keyframe su posizione e zoom delle clip, sul volume (clip, suoni, video sovrapposti), sui colori e sui filtri",
-     "en": "Keyframes on clip position and zoom, on volume (clips, sounds, overlay videos), on colors and filters"
-    },
-    {
-     "type": "impr",
-     "text": "Per ogni keyframe scegli la curva: lineare, ease in, ease out, ease in-out, oltre e torna, rimbalzo, a scatto",
-     "en": "Pick the curve for each keyframe: linear, ease in, ease out, ease in-out, overshoot, bounce, hold"
     }
    ]
   }
