@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.143",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: scritta d'apertura più pulita (niente alone, accenti non più tagliati), parola evidenziata gialla di base; quando si vede solo la webcam la scritta va in alto",
+    "en": "Clips: cleaner opening title (no halo, accents no longer clipped), highlighted word yellow by default; when only the webcam is visible the title moves to the top"
+   }
+  ]
+ },
+ {
   "version": "1.5.142",
   "date": "2026-10-04",
   "items": [
