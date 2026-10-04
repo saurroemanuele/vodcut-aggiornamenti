@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.153",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
+    "en": "Payments: plans, top-ups and offers are bought with Lemon Squeezy's secure checkout; credits arrive by themselves as soon as the payment goes through; new 'Manage subscription' for card, invoices and cancellation"
+   }
+  ]
+ },
+ {
   "version": "1.5.152",
   "date": "2026-10-04",
   "items": [

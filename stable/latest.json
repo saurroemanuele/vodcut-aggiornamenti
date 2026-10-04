@@ -1,13 +1,24 @@
 {
- "version": "1.5.152",
+ "version": "1.5.153",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.152.zip",
- "size": 7810725,
- "sha256": "20eaea22098d4732a98f3ce5317dd567aaf586be031ad4c83f8af7fc8c35bc20",
- "sig": "1MnqyOYnzUD5clnebHb+9F0uE77mS+lGTvGDsF5orqVzAc7xd/LPs1PSibT7LUyJm3/24xwXg2wePq3AQSj8CA==",
- "notes": "Miglioramento: Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.153.zip",
+ "size": 7812273,
+ "sha256": "662b072546b6675e677a742a20575ea424271b1533251033b8f6abfff29e77e6",
+ "sig": "TFhSOLJKj/YUNPVeRThuQgW2keNSc4WMT7ZMiJW0+iMSxyEKfnaJdLSUI5HupcsBxOf10eCxNkNZmLHglf45DQ==",
+ "notes": "Miglioramento: Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.153",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
+     "en": "Payments: plans, top-ups and offers are bought with Lemon Squeezy's secure checkout; credits arrive by themselves as soon as the payment goes through; new 'Manage subscription' for card, invoices and cancellation"
+    }
+   ]
+  },
   {
    "version": "1.5.152",
    "date": "2026-10-04",
@@ -354,22 +365,6 @@
      "type": "impr",
      "text": "Cliccando un'opzione la finestra del montaggio AI non torna più in cima",
      "en": "Clicking an option no longer scrolls the AI edit window back to the top"
-    }
-   ]
-  },
-  {
-   "version": "1.5.123",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Persona ritagliata con l'AI (titoli dietro e Rimuovi sfondo): niente più buchi e macchie, bordi puliti che seguono la persona, più stabile da un fotogramma all'altro, anche nei video verticali",
-     "en": "AI person cutout (titles behind and Remove background): no more holes or blotches, clean edges that follow the person, steadier frame to frame, also in vertical videos"
-    },
-    {
-     "type": "impr",
-     "text": "Anteprima: la persona ritagliata resta allineata al video mentre suona",
-     "en": "Preview: the cut-out person stays aligned with the video during playback"
     }
    ]
   }
