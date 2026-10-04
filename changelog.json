@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.152",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
+    "en": "Editor: if the picture freezes while time keeps going, the player recovers by itself and, if needed, switches to a lighter preview; the mouse wheel on the timeline moves back and forth in time (Shift + wheel scrolls the tracks)"
+   }
+  ]
+ },
+ {
   "version": "1.5.151",
   "date": "2026-10-04",
   "items": [

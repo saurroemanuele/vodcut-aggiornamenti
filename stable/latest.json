@@ -1,13 +1,24 @@
 {
- "version": "1.5.151",
+ "version": "1.5.152",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.151.zip",
- "size": 7809792,
- "sha256": "65b2e1b89fc3a94c48cd8c5deb3bdf88bef92cdab519f03b0b90e450a8b1fdda",
- "sig": "Ea8VSD5fSNNezdmrGUTQGG+RP1XFS5EL0gSwEFWDY5Z+bS7LRINxP2ppvHP59emeB5tnKPHsKYG/UOa90WKgDQ==",
- "notes": "Miglioramento: Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.152.zip",
+ "size": 7810725,
+ "sha256": "20eaea22098d4732a98f3ce5317dd567aaf586be031ad4c83f8af7fc8c35bc20",
+ "sig": "1MnqyOYnzUD5clnebHb+9F0uE77mS+lGTvGDsF5orqVzAc7xd/LPs1PSibT7LUyJm3/24xwXg2wePq3AQSj8CA==",
+ "notes": "Miglioramento: Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.152",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
+     "en": "Editor: if the picture freezes while time keeps going, the player recovers by itself and, if needed, switches to a lighter preview; the mouse wheel on the timeline moves back and forth in time (Shift + wheel scrolls the tracks)"
+    }
+   ]
+  },
   {
    "version": "1.5.151",
    "date": "2026-10-04",
@@ -359,17 +370,6 @@
      "type": "impr",
      "text": "Anteprima: la persona ritagliata resta allineata al video mentre suona",
      "en": "Preview: the cut-out person stays aligned with the video during playback"
-    }
-   ]
-  },
-  {
-   "version": "1.5.122",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Beta tester: switch «Usa le mie chiavi API» nel menu della foto profilo, per usare le proprie chiavi invece dei crediti",
-     "en": "Beta testers: «Use my API keys» switch in the profile picture menu, to use your own keys instead of credits"
     }
    ]
   }
