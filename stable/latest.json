@@ -1,13 +1,24 @@
 {
- "version": "1.5.143",
+ "version": "1.5.144",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.143.zip",
- "size": 7801094,
- "sha256": "e8e82224c5ee51d5d98b029c95a9dd135d9192e58a0994bc49f7119ba173c553",
- "sig": "G2rjrUSShz3+blQB60mH94+pCRDVVZENSeEQL3HuhMN/x7BibYP5cWXS3jD9Y7mvxIH8/4UcdQhIRw0hd1r1CQ==",
- "notes": "Miglioramento: Clip: scritta d'apertura più pulita (niente alone, accenti non più tagliati), parola evidenziata gialla di base; quando si vede solo la webcam la scritta va in alto",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.144.zip",
+ "size": 7801256,
+ "sha256": "936c906d3921e1051bc082b55b4265ea2ef5c0382924b7d7780e01c0e018d558",
+ "sig": "+lpEGameKXcAe6JieS/35HPVM49i4Tube/uw4x2lvcISXSbtW69wsH48Rcvu4XIG/NXUlAyhlSdBYEx3ymsbDw==",
+ "notes": "Miglioramento: Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.144",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
+     "en": "Clips: clicking Find clips no longer makes the status bar jump between search and previews: first it searches, then it prepares previews"
+    }
+   ]
+  },
   {
    "version": "1.5.143",
    "date": "2026-10-04",
@@ -404,52 +415,6 @@
      "type": "impr",
      "text": "Calamite più furbe: spostando testi e immagini si agganciano anche agli altri elementi, e restano agganciate senza scatti",
      "en": "Smarter snapping: moving texts and images also snaps to other elements, and stays snapped without jitter"
-    }
-   ]
-  },
-  {
-   "version": "1.5.114",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Sul Mac «Rimuovi lo sfondo» nella sezione Grafica non chiude più l'app",
-     "en": "On Mac «Remove background» in Graphics no longer closes the app"
-    },
-    {
-     "type": "fix",
-     "text": "L'app non torna più a una versione vecchia se la chiudi mentre si apre",
-     "en": "The app no longer goes back to an old version if you close it while it opens"
-    },
-    {
-     "type": "impr",
-     "text": "Zoom con i keyframe: l'inquadratura può spostarsi mentre lo zoom è attivo",
-     "en": "Zoom keyframes: the framing can move while the zoom is active"
-    },
-    {
-     "type": "impr",
-     "text": "Scegliendo un effetto di zoom o un'animazione lo vedi subito sul video",
-     "en": "Pick a zoom effect or an animation and see it right away on the video"
-    },
-    {
-     "type": "impr",
-     "text": "Miniature della timeline senza sfarfallio quando fai zoom o scorri, e pronte molto prima",
-     "en": "Timeline thumbnails no longer flicker when you zoom or scroll, and load much faster"
-    },
-    {
-     "type": "impr",
-     "text": "Con poche tracce la timeline sta in mezzo, non attaccata in alto",
-     "en": "With few tracks the timeline sits in the middle, not stuck at the top"
-    },
-    {
-     "type": "impr",
-     "text": "Play e pausa più immediati sui video del telefono inseriti nel progetto",
-     "en": "Play and pause respond faster with phone videos added to the project"
-    },
-    {
-     "type": "impr",
-     "text": "Qualità dell'anteprima: solo le scelte che cambiano davvero qualcosa, e resta salvata",
-     "en": "Preview quality: only the choices that really change something, and it stays saved"
     }
    ]
   }

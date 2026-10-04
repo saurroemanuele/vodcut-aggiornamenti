@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.144",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
+    "en": "Clips: clicking Find clips no longer makes the status bar jump between search and previews: first it searches, then it prepares previews"
+   }
+  ]
+ },
+ {
   "version": "1.5.143",
   "date": "2026-10-04",
   "items": [
