@@ -1,13 +1,24 @@
 {
- "version": "1.5.139",
+ "version": "1.5.140",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.139.zip",
- "size": 7796350,
- "sha256": "b1dd9e72b869b718d173b1cada6989f48a4a490432301994ac297c39cb352518",
- "sig": "H80dk5CxeKtLTGpeEdgtRhB94Qjw9rAdzYMGGVEOYW17dBbgaFwH/CjdQhHjBpNtPLmrTVGcHKrdN1haPItVCw==",
- "notes": "Miglioramento: Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.140.zip",
+ "size": 7797323,
+ "sha256": "f763ac7ba466bb59c06949cac20e0d475f26ad689e698e823d80a3de5f4faec9",
+ "sig": "e6RwRP85QtoeHgzKolXmhI4MSttfm4MWomMP8hiscCG0TvDvRsb0/8AuIW9jy0uNd4nYpazxiQUDzdQomOCEDw==",
+ "notes": "Miglioramento: Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.140",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
+     "en": "New «Start over» button (Project → Automatic edits): the same VOD goes back to how it was when imported, without redoing the transcript and webcam."
+    }
+   ]
+  },
   {
    "version": "1.5.139",
    "date": "2026-10-04",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Abbonamenti anche annuali (2 mesi gratis) nello store dei crediti",
      "en": "Yearly subscriptions too (2 months free) in the credits store"
-    }
-   ]
-  },
-  {
-   "version": "1.5.110",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Notifiche: la card della notifica si chiude quando apri la campanella e non resta più bloccata",
-     "en": "Notifications: the notification card now closes when you open the bell and no longer gets stuck"
     }
    ]
   }

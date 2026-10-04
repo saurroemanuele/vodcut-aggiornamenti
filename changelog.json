@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.140",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
+    "en": "New «Start over» button (Project → Automatic edits): the same VOD goes back to how it was when imported, without redoing the transcript and webcam."
+   }
+  ]
+ },
+ {
   "version": "1.5.139",
   "date": "2026-10-04",
   "items": [
