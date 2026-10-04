@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.147",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
+    "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
+   }
+  ]
+ },
+ {
   "version": "1.5.146",
   "date": "2026-10-04",
   "items": [

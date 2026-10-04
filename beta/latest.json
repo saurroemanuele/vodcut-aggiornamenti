@@ -1,13 +1,24 @@
 {
- "version": "1.5.146",
+ "version": "1.5.147",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.146.zip",
- "size": 7805395,
- "sha256": "190d3a9b561e0560dc81373832087f82f89352779e2df12a4c7f81cf3db1e475",
- "sig": "Vqydj0ljvm40q9BMB6ybMbJpIcboq2y03n4RQApLH3GtTxCu80mI8f64xJWIvbZQsBNWOKWGTzSwrKr90prXAA==",
- "notes": "Miglioramento: Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.147.zip",
+ "size": 7807687,
+ "sha256": "c948dea30c3617cdaaa85abdd6f365725890edbd0fc0dca93e0397efa33a6da2",
+ "sig": "m/MeVZrSXO3f9kqNaBsMFXXO2ZESY8Ah0vPtvtSZ2NeFk/JiDPU3vUcrJz9Ii1FidhFNcmKbBvKLx1PVCto9Cg==",
+ "notes": "Miglioramento: Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.147",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
+     "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
+    }
+   ]
+  },
   {
    "version": "1.5.146",
    "date": "2026-10-04",
@@ -394,22 +405,6 @@
      "type": "impr",
      "text": "Keyframe anche per i colori e l'intensità dei filtri (sulle tracce colori/filtri e sulla singola clip): i valori passano da un keyframe all'altro, anche nel video esportato",
      "en": "Keyframes for colors and filter intensity too (on color/filter tracks and on a single clip): values move from one keyframe to the next, in the exported video too"
-    }
-   ]
-  },
-  {
-   "version": "1.5.117",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Il menu «Altro» (e gli altri menu) non esce più dalla finestra: si apre dove c'è spazio e si scorre",
-     "en": "The «More» menu (and the other menus) no longer goes off the window: it opens where there is room and scrolls"
-    },
-    {
-     "type": "fix",
-     "text": "Timeline: niente più buco scuro all'inizio di una clip spostata dopo uno spazio vuoto",
-     "en": "Timeline: no more dark gap at the start of a clip moved after an empty space"
     }
    ]
   }
