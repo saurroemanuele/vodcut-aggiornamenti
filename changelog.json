@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.138",
+  "date": "2026-10-04",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
+    "en": "Better viral clips and zooms: clips no longer inherit the live's automatic zooms, zooms only when your face is visible, the webcam fills the screen properly, a deep swoosh on zooms; AI editing replaces automatic zooms; subtitle language (detected better and switchable in one click, also for clip titles and captions); title styles you can brand; more natural clip copy."
+   }
+  ]
+ },
+ {
   "version": "1.5.137",
   "date": "2026-10-04",
   "items": [

@@ -1,13 +1,24 @@
 {
- "version": "1.5.137",
+ "version": "1.5.138",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.137.zip",
- "size": 7707456,
- "sha256": "2173ad6a1d2f99837eab3649882b878d1037fa65762e00a7cce41f9741d78014",
- "sig": "pGnpfxdzsROXHCWxI/nOhwwGNKlDkFpL06tF/8usD8yfmSdsgn5LTKoz6yt5juP4OhbA6T3zgAAA/XjPXVSrAQ==",
- "notes": "Miglioramento: Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.138.zip",
+ "size": 7795405,
+ "sha256": "fcaf035873d3775d957215c3c9f6102f5824c4c526b2689f04d201b51350f923",
+ "sig": "D7+WxlK/mANIWihGPbqoLCe83fUNyT0TfWunePAhugws+N4z0vr6OOtVAKzKgfD6dnxslFeIbNXToZvgZMAvAA==",
+ "notes": "Miglioramento: Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.138",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
+     "en": "Better viral clips and zooms: clips no longer inherit the live's automatic zooms, zooms only when your face is visible, the webcam fills the screen properly, a deep swoosh on zooms; AI editing replaces automatic zooms; subtitle language (detected better and switchable in one click, also for clip titles and captions); title styles you can brand; more natural clip copy."
+    }
+   ]
+  },
   {
    "version": "1.5.137",
    "date": "2026-10-04",
@@ -479,17 +490,6 @@
      "type": "impr",
      "text": "Notifiche: campanella in alto con le risposte del team alle tue segnalazioni e le novità",
      "en": "Notifications: a bell at the top with the team's replies to your reports and what's new"
-    }
-   ]
-  },
-  {
-   "version": "1.5.108",
-   "date": "2026-10-02",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Statistiche d'uso più rispettose: nessun pezzo di percorso dei file viene più inviato",
-     "en": "Leaner usage stats: no part of your file paths is ever sent"
     }
    ]
   }
