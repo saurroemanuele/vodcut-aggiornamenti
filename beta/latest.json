@@ -1,13 +1,29 @@
 {
- "version": "1.5.154",
+ "version": "1.5.155",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.154.zip",
- "size": 7813060,
- "sha256": "d3ee6b6be39bd19eca5626d4ac619247580c6463448f61186b42c54afd6eac7d",
- "sig": "O8pSDIYrM3z4iuLuQTu6A12oJTMjSAFBHfeGorP4FPWh/EgLk6guhgIdRDIi468cwE2dZ+FO43JDuZZ/BW12BA==",
- "notes": "Miglioramento: Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.155.zip",
+ "size": 7820174,
+ "sha256": "9c9bbbee3c907170477b116534b5585b777fb36a02ddce3de4145a599ae3e54e",
+ "sig": "0Nt91BNkM+FCuliDy7WMCdnPPfHndz3xaH5pcp0rzodQpmAwkbA/7xdI5VkyIfCHifJywt9DQxeUf01L/c/yCg==",
+ "notes": "Correzione: Icona del pulsante Zoom nelle clip\nMiglioramento: Clip a mano: scegli un momento qualsiasi della live, anche uno che l'AI non ha preso, e diventa una clip montata come le altre. Lingua della live da scegliere prima di cercare le clip. Per ogni clip l'AI indica dove può funzionare meglio: TikTok, Reels o Shorts",
  "date": "2026-10-04",
  "history": [
+  {
+   "version": "1.5.155",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Icona del pulsante Zoom nelle clip",
+     "en": "Zoom button icon in clips"
+    },
+    {
+     "type": "impr",
+     "text": "Clip a mano: scegli un momento qualsiasi della live, anche uno che l'AI non ha preso, e diventa una clip montata come le altre. Lingua della live da scegliere prima di cercare le clip. Per ogni clip l'AI indica dove può funzionare meglio: TikTok, Reels o Shorts",
+     "en": "Manual clips: pick any moment of the stream, even one the AI didn't pick, and it becomes an edited clip like the others. Choose the stream language before finding clips. For each clip the AI shows where it could work best: TikTok, Reels or Shorts"
+    }
+   ]
+  },
   {
    "version": "1.5.154",
    "date": "2026-10-04",
@@ -339,17 +355,6 @@
      "type": "impr",
      "text": "Titoli dietro di te: 5 stili nuovi (Cinema bianco, Cromo, Tramonto, Fuoco, Ghiaccio) e scelte per grandezza, altezza, entrata e colore",
      "en": "Titles behind you: 5 new styles (Cinema white, Chrome, Sunset, Fire, Ice) and options for size, height, entrance and color"
-    }
-   ]
-  },
-  {
-   "version": "1.5.125",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Montaggio AI: il costo ora conta anche le animazioni su misura, prima di applicare vedi quanto paghi per immagini e animazioni",
-     "en": "AI edit: the cost now includes custom animations, before applying you see what you pay for images and animations"
     }
    ]
   }
