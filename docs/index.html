@@ -5,656 +5,473 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://raw.githubusercontent.com https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>NoonFrame · Video, grafica e AI gratis per creator</title>
-<meta name="description" content="NoonFrame è l'app gratuita per creator su Windows e Mac: monta le live da sola, crea miniature e grafiche come in Photoshop, clip verticali, sottotitoli e AI. Senza abbonamenti.">
+
+<title>NoonFrame · Lo studio AI per creator</title>
+<meta name="description" content="NoonFrame è lo studio gratuito per creator su Windows e Mac: l'AI trova i momenti virali delle tue live e li monta in clip verticali, editor video completo, grafica come Photoshop e video AI dalla A alla Z.">
+<meta name="theme-color" content="#050A1C">
 <link rel="icon" href="favicon.png">
+<link rel="preload" as="image" href="shots/clips.webp">
 <style>
 @font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(fonts/inter-latin-wght-normal.woff2) format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
 @font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(fonts/inter-latin-ext-wght-normal.woff2) format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 :root {
-  --bg: #FFFFFF;
-  --bg-alt: #EDF3FF;
-  --surface: #FFFFFF;
-  --ink: #071D4D;
-  --ink-2: #3D5485;
-  --ink-3: #6E83AE;
-  --line: #DCE8FF;
-  --accent: #1E6BFF;
-  --accent-hover: #1454D9;
-  --accent-press: #1045B8;
-  --accent-soft: #E6F0FF;
-  --on-accent: #FFFFFF;
-  --band: #071D4D;
-  --band-ink: #F2F7FF;
-  --band-ink-2: #A9C7FF;
-  /* colori dell'app (la finestra finta resta sempre scura, come l'app vera) */
-  --app-bg: #0E1117;
-  --app-panel: #151920;
-  --app-raised: #1D222C;
-  --app-line: rgba(160,180,220,.10);
-  --app-text: #E8EDF6;
-  --app-text-2: #A0AABB;
-  /* come Apple: SF Pro sui Mac e iPhone, Inter (molto simile) su Windows e Android */
-  --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
-  --body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
-  color-scheme: light;
+  --ink-0: #050A1C;
+  --ink-1: #0A1430;
+  --blue: #1E6BFF;
+  --blue-hi: #4C8DFF;
+  --sky: #8CC2FF;
+  --fg: #F2F6FF;
+  --fg-2: #A6B4D4;
+  --fg-3: #6C7DA6;
+  --line: rgba(160, 190, 255, .10);
+  --line-2: rgba(160, 190, 255, .18);
+  --paper: #F3F6FD;
+  --paper-2: #FFFFFF;
+  --p-ink: #0A1638;
+  --p-ink-2: #4A5A80;
+  --p-line: #DCE4F5;
+  --score: #22C55E;
+  --hook: #FFD60A;
+  --body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --wrap: 1200px;
 }
-
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
-body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ink-0); color: var(--fg); font: 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; font-feature-settings: "cv11", "ss01"; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
-:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-.wrap { width: min(1160px, 100%); margin: 0 auto; padding-inline: 24px; }
-h1, h2, h3 { font-family: var(--display); letter-spacing: -0.025em; text-wrap: balance; margin: 0; }
-p { margin: 0; }
-.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+:focus-visible { outline: 2px solid var(--blue-hi); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(var(--wrap), 100% - 40px); margin-inline: auto; }
+.skip { position: absolute; left: -999px; top: 8px; background: var(--blue); color: #fff; padding: 8px 14px; border-radius: 10px; z-index: 99; }
+.skip:focus { left: 12px; }
 
-/* ---------- barra */
-.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
-.nav .wrap { display: flex; align-items: center; gap: 28px; height: 64px; }
-.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--display); font-weight: 700; font-size: 21px; letter-spacing: -0.02em; }
-.brand .ic { width: 32px; height: 32px; }
-.nav-links { display: flex; gap: 24px; margin-left: auto; font-size: 15px; font-weight: 500; color: var(--ink-2); }
-.nav-links a { text-decoration: none; }
-.nav-links a:hover { color: var(--ink); }
-.langs { display: inline-flex; padding: 3px; gap: 2px; border-radius: 999px; background: var(--accent-soft); }
-.lang { font-size: 13px; font-weight: 600; color: var(--ink-2); text-decoration: none; padding: 5px 10px; border-radius: 999px; line-height: 1; }
-a.lang:hover { color: var(--ink); }
-.lang.on { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(7,29,77,.14); }
-@media (max-width: 640px) { .langs { margin-left: auto; } .nav .btn { margin-left: 0; } }
-@media (max-width: 480px) { .nav .wrap { gap: 12px; } .nav .btn.sm { display: none; } .brand { min-width: 0; } }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 26px; border-radius: 14px; border: 0; font: 600 17px/1 var(--body); text-decoration: none; cursor: pointer; transition: background .15s, transform .15s; white-space: nowrap; }
-.btn svg { flex-shrink: 0; }
-.btn.primary { background: var(--accent); color: var(--on-accent); }
-.btn.primary:hover { background: var(--accent-hover); }
-.btn.primary:active { background: var(--accent-press); transform: translateY(1px); }
-.btn.quiet { background: var(--accent-soft); color: var(--ink); }
-.btn.quiet:hover { background: var(--line); }
-.btn.sm { height: 40px; padding: 0 16px; border-radius: 11px; font-size: 15px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border-radius: 12px; font: 600 15px/1 var(--body);
+  text-decoration: none; border: 0; cursor: pointer; transition: background .2s, box-shadow .2s, transform .15s; white-space: nowrap; letter-spacing: -.01em; }
+.btn:active { transform: translateY(1px); }
+.btn svg { width: 17px; height: 17px; flex: none; }
+.btn-primary { background: var(--blue); color: #fff; box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 8px 28px -10px rgba(30,107,255,.9); }
+.btn-primary:hover { background: var(--blue-hi); }
+.btn-ghost { background: rgba(255,255,255,.06); color: var(--fg); box-shadow: inset 0 0 0 1px var(--line-2); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); }
+.btn-sm { height: 36px; padding: 0 14px; border-radius: 10px; font-size: 14px; }
 
-/* ---------- hero */
-.hero { padding-block: 72px 40px; text-align: center; }
-.hero h1 { font-size: clamp(42px, 7vw, 84px); line-height: .98; font-weight: 800; max-width: 14ch; margin: 18px auto 0; }
-.hero h1 em { font-style: normal; color: var(--accent); }
-.hero .lead { font-size: clamp(18px, 2.1vw, 21px); color: var(--ink-2); max-width: 36em; margin: 22px auto 0; }
-.cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 34px; }
-.cta-note { margin-top: 14px; font-size: 14px; color: var(--ink-3); }
-.cta-note a { color: var(--ink-2); }
-.free-pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--ink); font-size: 14px; font-weight: 600; }
-.free-pill b { background: var(--accent); color: #fff; border-radius: 999px; padding: 2px 9px; font-size: 12px; letter-spacing: .04em; }
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 50; transition: background .3s, border-color .3s; border-bottom: 1px solid transparent; }
+.nav.scrolled { background: rgba(5,10,28,.74); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%); border-color: var(--line); }
+.nav .wrap { display: flex; align-items: center; gap: 30px; height: 64px; }
+.brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 650; font-size: 16.5px; letter-spacing: -.02em; text-decoration: none; }
+.brand .ic { width: 26px; height: 26px; }
+.nav-links { display: flex; gap: 26px; }
+.nav-links a { font-size: 14px; color: var(--fg-2); text-decoration: none; transition: color .2s; }
+.nav-links a:hover { color: var(--fg); }
+.grow { flex: 1; }
+.langs { display: inline-flex; gap: 2px; font-size: 12px; font-weight: 600; padding: 3px; border-radius: 9px; background: rgba(255,255,255,.05); }
+.lang { padding: 4px 8px; border-radius: 7px; color: var(--fg-3); text-decoration: none; }
+.lang.on { background: rgba(255,255,255,.1); color: var(--fg); }
 
-/* ---------- finestra dell'app (illustrazione) */
-.shot { margin: 56px auto 0; width: min(1080px, 100%); max-width: 100%; border-radius: 18px; background: var(--app-bg); color: var(--app-text); border: 1px solid rgba(7,29,77,.12); box-shadow: 0 30px 80px -30px rgba(7,29,77,.45); overflow: hidden; text-align: left; font-size: 12px; font-family: -apple-system, "Segoe UI", system-ui, sans-serif; }
-.w-top { height: 38px; display: flex; align-items: center; gap: 10px; padding: 0 14px; border-bottom: 1px solid var(--app-line); }
-.w-top .ic { width: 18px; height: 18px; }
-.w-top b { font-weight: 600; }
-.w-top .crumb { margin: 0 auto; color: var(--app-text-2); }
-.w-top .exp { background: #2F8BFF; color: #fff; border-radius: 7px; padding: 5px 12px; font-weight: 600; }
-.w-stage { padding: 28px 28px 14px; display: grid; gap: 14px; justify-items: center; }
-.stage { position: relative; width: min(640px, 100%); aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #10213F; }
-.stage .game { position: absolute; inset: 0; transform-origin: 94.97% 11.9%; animation: camzoom 9s ease-in-out infinite; }
-.stage .scene { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.stage .sub {  position: absolute; left: 0; right: 0; bottom: 12%; text-align: center; font: 800 clamp(13px, 2.4vw, 26px)/1 var(--display); color: #fff; text-shadow: 0 2px 0 #000, 0 0 6px rgba(0,0,0,.6); }
-.stage .sub span, .stage .sub.first { opacity: 0; animation: 9s steps(1) infinite; }
-@keyframes camzoom { 0%, 22% { transform: none; } 30%, 52% { transform: scale(3.9); } 60%, 100% { transform: none; } }
-.stage .sub.first { animation: w0 9s steps(1) infinite; }
-@keyframes w0 { 0%, 3% { opacity: 0; } 4%, 24% { opacity: 1; } 25%, 100% { opacity: 0; } }
-.stage .sub span:nth-child(1) { animation-name: w1; } .stage .sub span:nth-child(2) { animation-name: w2; } .stage .sub span:nth-child(3) { animation-name: w3; }
-@keyframes w1 { 0%, 60% { opacity: 0; } 62%, 100% { opacity: 1; } }
-@keyframes w2 { 0%, 68% { opacity: 0; } 70%, 100% { opacity: 1; } }
-@keyframes w3 { 0%, 76% { opacity: 0; } 78%, 100% { opacity: 1; } }
-.controls { display: flex; justify-content: center; }
-.controls .play { width: 30px; height: 30px; border-radius: 50%; background: #E8EDF6; display: grid; place-items: center; }
-.tl { border-top: 1px solid var(--app-line); padding: 16px 20px 20px; }
-.lanes { position: relative; display: grid; gap: 6px; }
-.ruler { position: relative; height: 14px; border-bottom: 1px solid var(--app-line); margin-bottom: 2px; }
-.ruler span { position: absolute; top: 0; transform: translateX(-50%); font-size: 10px; line-height: 1; color: var(--app-text-2); font-variant-numeric: tabular-nums; }
-.ruler span:first-child { transform: none; } .ruler span:last-child { transform: translateX(-100%); }
-.track { position: relative; height: 24px; }
-.track.zm { height: 20px; }
-.track.v { height: 42px; }
-.track.a { height: 26px; border-radius: 6px; background: rgba(59,111,224,.08); }
-.track.a .wv { position: absolute; inset: 0; width: 100%; height: 100%; }
-.blk { position: absolute; top: 0; bottom: 0; border-radius: 6px; font-size: 11px; font-weight: 600; padding: 0 8px; display: flex; align-items: center; gap: 5px; overflow: hidden; white-space: nowrap; }
-.blk.z { background: rgba(110,165,255,.22); color: #BFD6FF; border: 1px solid rgba(110,165,255,.55); font-size: 10.5px; }
-.blk.s { background: #1B3A7A; color: #E4EEFF; font-weight: 500; }
-.blk.c { background: #102A66 url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2036%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230A1633%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%235C8FF0%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%2264%22%20height%3D%2236%22%20fill%3D%22url%28%23g%29%22/%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%2221%22%20r%3D%224%22%20fill%3D%22%23EAF2FF%22/%3E%3Cpath%20d%3D%22M0%2025%20L9%2019%20L17%2023%20L26%2017%20L36%2022%20L46%2018%20L56%2024%20L64%2022%20L64%2036%20L0%2036Z%22%20fill%3D%22%232B5BC4%22/%3E%3Cpath%20d%3D%22M0%2031%20C14%2029%2030%2032%2044%2030%20C52%2029%2058%2030%2064%2029%20L64%2036%20L0%2036Z%22%20fill%3D%22%23102A66%22/%3E%3Crect%20x%3D%2245%22%20y%3D%222%22%20width%3D%2216%22%20height%3D%2211%22%20rx%3D%221.5%22%20fill%3D%22%2312306E%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.3%22%20stroke-width%3D%22.5%22/%3E%3Ccircle%20cx%3D%2253%22%20cy%3D%227%22%20r%3D%222%22%20fill%3D%22%23E4EEFF%22/%3E%3Cpath%20d%3D%22M49%2013%20C49%2010%2057%2010%2057%2013Z%22%20fill%3D%22%23A9C7FF%22/%3E%3Crect%20x%3D%2263.5%22%20width%3D%22.5%22%20height%3D%2236%22%20fill%3D%22%23000%22%20opacity%3D%22.35%22/%3E%3C/svg%3E") repeat-x left center / auto 100%; border: 2px solid #3B82FF; border-radius: 7px; }
-.playhead { position: absolute; top: 12px; bottom: -4px; width: 2px; margin-left: -1px; background: #fff; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.25); animation: head 9s linear infinite; z-index: 2; }
-.playhead::before { content: ""; position: absolute; top: -4px; left: -4px; width: 10px; height: 10px; border-radius: 3px 3px 5px 5px; background: #fff; }
-@keyframes head { from { left: 2%; } to { left: 97%; } }
+.hero { position: relative; padding: 150px 0 0; overflow: hidden; isolation: isolate; }
+.hero::before { content: ""; position: absolute; z-index: -1; left: 50%; top: -260px; width: 1500px; height: 1100px; transform: translateX(-50%);
+  background: radial-gradient(closest-side, rgba(30,107,255,.38), rgba(30,107,255,.08) 55%, transparent 75%); pointer-events: none; }
+.hero-in { text-align: center; }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 5px 14px 5px 5px; border-radius: 999px; font-size: 13.5px; color: var(--fg-2); text-decoration: none;
+  background: rgba(255,255,255,.04); box-shadow: inset 0 0 0 1px var(--line-2); transition: background .2s; max-width: 100%; }
+.pill:hover { background: rgba(255,255,255,.08); }
+.pill b { padding: 3px 9px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 12px; font-weight: 600; flex: none; }
+.pill svg { width: 14px; height: 14px; opacity: .7; flex: none; }
+h1 { margin: 28px auto 0; font-size: clamp(44px, 7.6vw, 96px); line-height: 1; font-weight: 640; letter-spacing: -.055em; text-wrap: balance;
+  background: linear-gradient(180deg, #FFFFFF 30%, #A9C2F5); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .06em; }
+.sub { max-width: 620px; margin: 24px auto 0; font-size: clamp(17px, 1.7vw, 20px); line-height: 1.55; color: var(--fg-2); text-wrap: pretty; }
+.cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 34px; }
+.note { margin: 14px 0 0; font-size: 13px; color: var(--fg-3); }
+.mobile .only-desk { display: none !important; }
+body:not(.mobile) .only-mob { display: none !important; }
 
-/* ---------- sezioni */
-section { padding-block: 96px; }
-.sec-head { max-width: 720px; display: grid; gap: 14px; margin-bottom: 48px; }
-.sec-head h2 { font-size: clamp(32px, 4.4vw, 52px); line-height: 1.04; font-weight: 800; }
-.sec-head p { color: var(--ink-2); font-size: 19px; }
+.stage { position: relative; margin: 72px auto 0; width: min(1240px, 100% - 32px); perspective: 2200px; }
+.stage::before { content: ""; position: absolute; left: 10%; right: 10%; top: 6%; height: 70%; background: radial-gradient(closest-side, rgba(76,141,255,.55), transparent); filter: blur(40px); z-index: -1; }
+.shot { position: relative; border-radius: 16px; overflow: hidden; transform-origin: 50% 0; transform: rotateX(var(--rx, 24deg)) scale(var(--sc, .94)); will-change: transform;
+  box-shadow: 0 0 0 1px rgba(160,190,255,.16), 0 50px 120px -30px rgba(0,0,0,.9), 0 0 80px -20px rgba(30,107,255,.5); background: #0E1117; }
+.shot::before { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255,255,255,.07), transparent 18%); box-shadow: inset 0 1px 0 rgba(255,255,255,.18); }
+.shot img { width: 100%; height: auto; }
+.fade { position: absolute; left: 0; right: 0; bottom: 0; height: 40%; background: linear-gradient(180deg, transparent, var(--ink-0) 92%); z-index: 3; pointer-events: none; }
 
-/* prima / dopo */
-.ba { background: var(--bg-alt); }
-.ba-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.ba-card { min-width: 0; }
-.ba-card { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 26px; display: grid; gap: 18px; }
-.ba-card h3 { font-size: 22px; }
-.ba-card .time { font: 800 44px/1 var(--display); letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-.ba-card .time small { font: 500 15px var(--body); color: var(--ink-3); letter-spacing: 0; margin-left: 6px; }
-.wave { display: flex; align-items: center; gap: 2px; height: 64px; overflow: hidden; }
-.wave i { flex: 1 1 0; border-radius: 2px; background: var(--accent); min-width: 1px; }
-.wave i.off { background: var(--line); }
-.ba-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--ink-2); font-size: 16px; }
-.ba-card li { display: flex; gap: 10px; align-items: flex-start; }
-.ba-card li svg { flex-shrink: 0; margin-top: 4px; color: var(--accent); }
-.ba-foot { margin-top: 16px; font-size: 14px; color: var(--ink-3); }
+.stats { position: relative; z-index: 4; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: -40px; border-top: 1px solid var(--line); }
+.stat { padding: 30px 24px 10px; }
+.stat + .stat { border-left: 1px solid var(--line); }
+.stat b { display: block; font-size: clamp(24px, 2.8vw, 36px); font-weight: 640; letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat span { display: block; margin-top: 6px; font-size: 14px; color: var(--fg-2); }
 
-/* funzioni */
-.feats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.feat { border-top: 2px solid var(--ink); padding-top: 22px; display: grid; gap: 10px; align-content: start; }
-.feat .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; margin-bottom: 6px; }
-.feat h3 { font-size: 22px; line-height: 1.15; }
-.feat p { color: var(--ink-2); font-size: 16px; }
+section { position: relative; padding: 130px 0; }
+.k { font-size: 14px; font-weight: 600; color: var(--blue-hi); }
+h2 { margin: 12px 0 0; font-size: clamp(34px, 4.8vw, 60px); line-height: 1.02; font-weight: 640; letter-spacing: -.05em; text-wrap: balance; }
+.lead { margin: 18px 0 0; max-width: 560px; font-size: 18px; color: var(--fg-2); text-wrap: pretty; }
+.center { text-align: center; } .center .lead { margin-inline: auto; }
 
-/* passi */
-.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; counter-reset: step; }
-.step { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 26px; display: grid; gap: 10px; align-content: start; }
-.step .n { font: 800 15px/1 var(--display); color: var(--accent); }
-.step h3 { font-size: 24px; }
-.step p { color: var(--ink-2); font-size: 16px; }
+.light { background: var(--paper); color: var(--p-ink); }
+.light .lead { color: var(--p-ink-2); }
+.light .k { color: var(--blue); }
 
-/* download */
-.dl { background: var(--band); color: var(--band-ink); border-radius: 32px; padding: 64px 56px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
-.dl h2 { font-size: clamp(34px, 4.6vw, 56px); line-height: 1.02; font-weight: 800; }
-.dl .sub { color: var(--band-ink-2); margin-top: 16px; font-size: 18px; }
-.dl-list { display: grid; gap: 14px; }
-.dl-item { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 18px; padding: 18px 18px 18px 20px; }
-.dl-item .os { font: 700 20px/1.1 var(--display); }
-.dl-item small { display: block; color: var(--band-ink-2); font-size: 13.5px; margin-top: 4px; font-variant-numeric: tabular-nums; }
-.dl-item .btn { background: #fff; color: #071D4D; height: 46px; }
-.dl-item .btn:hover { background: #DCE8FF; }
-.dl-item svg.logo-os { color: var(--band-ink); }
+.bento { margin-top: 56px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.card { position: relative; border-radius: 22px; background: var(--paper-2); box-shadow: 0 0 0 1px var(--p-line), 0 1px 2px rgba(10,22,56,.04), 0 12px 32px -18px rgba(10,22,56,.18); overflow: hidden; display: flex; flex-direction: column; }
+.card .tx { padding: 26px 28px 0; }
+.card h3 { margin: 0; font-size: 19px; font-weight: 640; letter-spacing: -.025em; }
+.card p { margin: 6px 0 0; font-size: 15px; color: var(--p-ink-2); line-height: 1.5; max-width: 460px; }
+.card .vis { flex: 1; margin-top: 22px; position: relative; min-height: 160px; }
+.c-clips { grid-column: span 4; grid-row: span 2; }
+.c-score, .c-ext { grid-column: span 2; }
+.c-design, .c-subs { grid-column: span 3; }
+.c-ai { grid-column: span 6; }
+.dark-card { background: linear-gradient(180deg, #0E1630, #070D22); color: var(--fg); box-shadow: 0 0 0 1px rgba(10,22,56,.6), 0 20px 50px -24px rgba(10,22,56,.5); }
+.dark-card p { color: var(--fg-2); }
+.c-clips .vis { max-height: 560px; margin: 22px 0 0 28px; border-top-left-radius: 14px; overflow: hidden; box-shadow: -1px -1px 0 rgba(160,190,255,.18); }
+.c-clips .vis img { width: 112%; max-width: none; }
+.sc { display: flex; align-items: baseline; gap: 10px; padding: 0 28px; }
+.sc b { font-size: 76px; line-height: 1; font-weight: 700; letter-spacing: -.05em; color: var(--score); font-variant-numeric: tabular-nums; }
+.sc span { color: var(--p-ink-2); font-size: 14px; }
+.pfl { padding: 16px 28px 26px; display: flex; flex-direction: column; gap: 9px; }
+.pfr { display: grid; grid-template-columns: 58px 1fr 26px; gap: 10px; align-items: center; font-size: 13px; color: var(--p-ink-2); }
+.pfr i { display: block; height: 6px; border-radius: 4px; background: #E3E9F6; overflow: hidden; }
+.pfr i em { display: block; height: 100%; border-radius: 4px; background: #B7C3DE; }
+.pfr.best { color: var(--p-ink); font-weight: 600; }
+.pfr.best i em { background: var(--blue); }
+.pfr b { text-align: right; font-variant-numeric: tabular-nums; color: var(--p-ink); }
+.ext { padding: 6px 28px 28px; }
+.ext-bar { position: relative; height: 56px; border-radius: 12px; background: #0B1226; overflow: hidden; }
+.ext-bar .w { position: absolute; inset: 12px 10px; display: flex; align-items: center; gap: 2px; }
+.ext-bar .w i { flex: 1; border-radius: 2px; background: rgba(140,194,255,.35); }
+.ext-was { position: absolute; top: 6px; bottom: 6px; left: 52%; width: 30%; border-radius: 8px; border: 1.5px dashed rgba(255,255,255,.6); }
+.ext-new { position: absolute; top: 4px; bottom: 4px; left: 32%; width: 50%; border-radius: 9px; background: rgba(30,107,255,.25); box-shadow: inset 0 0 0 2px var(--blue); }
+.ext-new::before, .ext-new::after { content: ""; position: absolute; top: 0; bottom: 0; width: 8px; background: var(--blue); }
+.ext-new::before { left: -4px; border-radius: 6px 0 0 6px; } .ext-new::after { right: -4px; border-radius: 0 6px 6px 0; }
+.ext-lb { display: flex; justify-content: space-between; margin-top: 10px; font-size: 12.5px; color: var(--p-ink-2); }
+.ext-lb b { color: var(--blue); }
+.c-design .vis { max-height: 330px; margin: 22px 28px 0; border-radius: 14px 14px 0 0; overflow: hidden; box-shadow: 0 0 0 1px var(--p-line); }
+.c-design .vis img { width: 100%; }
+.c-subs .vis { display: flex; justify-content: center; gap: 14px; padding: 0 28px; align-items: flex-end; overflow: hidden; }
+.c-subs .vis { max-height: 330px; }
+.c-subs .vis img { width: 40%; border-radius: 14px 14px 0 0; box-shadow: 0 0 0 1px rgba(160,190,255,.16); object-fit: cover; object-position: 50% 30%; aspect-ratio: 9 / 12; }
+.chain { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 22px 28px 28px; }
+.ch { position: relative; padding: 16px; border-radius: 14px; background: rgba(255,255,255,.04); box-shadow: inset 0 0 0 1px rgba(160,190,255,.14); }
+.ch b { display: block; font-size: 14px; font-weight: 600; }
+.ch small { color: var(--fg-3); font-size: 12px; font-weight: 600; }
+.ch .v { margin-top: 12px; height: 46px; border-radius: 8px; background: rgba(5,10,28,.7); display: flex; align-items: center; gap: 3px; padding: 0 10px; overflow: hidden; }
+.ch:not(:last-child)::after { content: ""; position: absolute; right: -11px; top: 50%; width: 8px; height: 8px; border-top: 2px solid var(--blue-hi); border-right: 2px solid var(--blue-hi); transform: translateY(-50%) rotate(45deg); }
+.v-txt { flex-direction: column; align-items: stretch !important; justify-content: center; gap: 5px !important; }
+.v-txt i { height: 4px; border-radius: 2px; background: rgba(140,194,255,.35); }
+.v-txt i:first-child { background: var(--sky); width: 70%; }
+.v-img i { flex: 1; height: 32px; border-radius: 5px; background: linear-gradient(150deg, #4C8DFF, #071D4D); }
+.v-img i:nth-child(2) { background: linear-gradient(150deg, #FF4FD8, #1E6BFF); } .v-img i:nth-child(3) { background: linear-gradient(150deg, #FFD60A, #1E6BFF); }
+.v-voice i { flex: 1; border-radius: 2px; background: var(--sky); }
+.v-vid { justify-content: center; }
+.v-vid span { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); display: grid; place-items: center; box-shadow: 0 0 20px rgba(30,107,255,.8); }
+.v-vid svg { width: 11px; height: 11px; margin-left: 2px; }
 
-/* mac e faq */
-.help { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
-.help h3 { font-size: 26px; margin-bottom: 18px; }
-.ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; counter-reset: s; }
-.ol li { counter-increment: s; display: grid; grid-template-columns: 30px 1fr; gap: 12px; color: var(--ink-2); font-size: 16px; }
-.ol li::before { content: counter(s); width: 28px; height: 28px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font: 700 14px/28px var(--display); text-align: center; }
-.ol b { color: var(--ink); }
-code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 13.5px; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 7px; padding: 2px 6px; word-break: break-all; }
-.cmd { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
-.cmd code { flex: 1; padding: 8px 10px; display: block; }
-.copy { height: 34px; padding: 0 12px; border-radius: 9px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 13px var(--body); cursor: pointer; }
-.faq { display: grid; gap: 10px; }
-.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
-.faq summary { cursor: pointer; font-weight: 600; font-size: 17px; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; font: 600 22px/1 var(--display); color: var(--accent); }
-.faq details[open] summary::after { content: "–"; }
-.faq details p { margin-top: 10px; color: var(--ink-2); font-size: 16px; }
+.ed { display: grid; grid-template-columns: .8fr 1.6fr; gap: 56px; align-items: center; }
+.ed > * { min-width: 0; }
+.ed-list { list-style: none; margin: 32px 0 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.ed-list li { display: flex; gap: 12px; align-items: center; font-size: 15.5px; }
+.ed-list svg { width: 18px; height: 18px; color: var(--blue-hi); flex: none; }
+.ed-shot { margin-right: calc(-1 * max(20px, (100vw - var(--wrap)) / 2)); border-radius: 16px 0 0 16px; overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(160,190,255,.16), 0 40px 100px -30px rgba(0,0,0,.9), 0 0 90px -30px rgba(30,107,255,.6); }
+.ed-shot img { width: 100%; }
 
-/* community */
-.comm { display: grid; grid-template-columns: 1.15fr 1fr; gap: 56px; align-items: start; }
-.comm .sec-head { margin-bottom: 32px; }
-.loop { margin: 0; padding: 0; list-style: none; display: grid; gap: 16px; counter-reset: l; }
-.loop li { counter-increment: l; display: grid; grid-template-columns: 40px 1fr; column-gap: 14px; }
-.loop li::before { content: counter(l); grid-row: span 2; width: 40px; height: 40px; border-radius: 12px; background: var(--accent); color: #fff; font: 800 17px/40px var(--display); text-align: center; }
-.loop b { font-size: 18px; }
-.loop span { color: var(--ink-2); font-size: 16px; }
-.price { margin-top: 32px; padding: 18px 20px; border-radius: 16px; background: var(--accent-soft); color: var(--ink-2); font-size: 16px; }
-.price b { color: var(--ink); }
-.log { background: var(--app-bg); color: var(--app-text); border-radius: 20px; padding: 22px; font-size: 14px; }
-.log-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--app-line); font-weight: 600; }
-.log-head b { color: #6EA5FF; font-weight: 600; font-variant-numeric: tabular-nums; }
-.log ul { margin: 0; padding: 0; list-style: none; }
-.log li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--app-line); color: var(--app-text-2); line-height: 1.45; }
-.log li:last-child { border-bottom: 0; padding-bottom: 0; }
-.log time { color: #6F7A8E; font-variant-numeric: tabular-nums; }
-.log li b { color: var(--app-text); margin-right: 6px; font-variant-numeric: tabular-nums; }
-@media (max-width: 960px) { .comm { grid-template-columns: 1fr; gap: 36px; } }
+.cm { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.cm > * { min-width: 0; }
+.big-n { font-size: clamp(64px, 9vw, 120px); font-weight: 650; letter-spacing: -.06em; line-height: .9; font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, #fff, #7FA6F0); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.upd { list-style: none; margin: 0; padding: 0; }
+.upd li { display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 14.5px; color: var(--fg-2); }
+.upd li:last-child { border-bottom: 1px solid var(--line); }
+.upd time { color: var(--fg-3); font-variant-numeric: tabular-nums; }
+.upd b { color: var(--fg); font-weight: 600; margin-right: 8px; font-variant-numeric: tabular-nums; }
 
-footer { border-top: 1px solid var(--line); padding-block: 36px; color: var(--ink-3); font-size: 14px; }
-footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; }
-footer .brand { font-size: 17px; color: var(--ink); }
-footer .brand .ic { width: 24px; height: 24px; }
-footer nav { display: flex; gap: 20px; margin-left: auto; }
-footer a { text-decoration: none; }
-footer a:hover { color: var(--ink); }
+.pr { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
+.pr .card { padding: 30px; }
+.pr h3 { font-size: 14px; font-weight: 600; color: var(--blue); margin: 0; }
+.pr .pv { margin-top: 12px; font-size: 44px; font-weight: 650; letter-spacing: -.05em; line-height: 1; }
+.pr p { max-width: none; margin-top: 14px; }
+.soon { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; font-size: 14px; color: var(--fg) !important; }
+.soon i { flex: none; width: 7px; height: 7px; margin-top: 8px; border-radius: 50%; background: var(--hook); box-shadow: 0 0 10px var(--hook); }
 
-@media (max-width: 960px) {
-  .feats, .steps { grid-template-columns: 1fr 1fr; }
-  .dl { grid-template-columns: 1fr; padding: 44px 28px; }
-  .help { grid-template-columns: 1fr; }
+.dl { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 34px; }
+.dl > * { min-width: 0; }
+.os-row { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; background: var(--paper); box-shadow: inset 0 0 0 1px var(--p-line); }
+.os-row + .os-row { margin-top: 10px; }
+.os-row svg { width: 24px; height: 24px; flex: none; }
+.os-row div { flex: 1; min-width: 0; }
+.os-row b { display: block; font-size: 15.5px; font-weight: 640; }
+.os-row small { color: var(--p-ink-2); font-size: 12.5px; }
+.first h3 { font-size: 15px; margin: 0 0 8px; }
+.first ol { margin: 0; padding-left: 20px; font-size: 13.5px; color: var(--p-ink-2); display: flex; flex-direction: column; gap: 6px; }
+.first b { color: var(--p-ink); }
+.cmd { display: flex; align-items: center; gap: 8px; margin-top: 6px; padding: 7px 7px 7px 12px; border-radius: 10px; background: #0B1226; }
+.cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; font: 12px/1.4 ui-monospace, Menlo, Consolas, monospace; color: var(--sky); }
+.cmd button { height: 28px; padding: 0 10px; border-radius: 8px; border: 0; background: rgba(255,255,255,.12); color: #fff; font: 600 12px var(--body); cursor: pointer; }
+.phone { margin-bottom: 18px; }
+.phone p { margin: 0 0 10px; font-size: 14px; }
+.phone form { display: flex; gap: 8px; flex-wrap: wrap; }
+.phone input[type=email] { flex: 1; min-width: 190px; height: 44px; padding: 0 14px; border-radius: 12px; border: 0; background: #fff; box-shadow: inset 0 0 0 1px var(--p-line); color: var(--p-ink); font: 15px var(--body); }
+.phone input[type=email]:focus { outline: none; box-shadow: inset 0 0 0 2px var(--blue); }
+.mk { display: flex; gap: 8px; align-items: flex-start; margin-top: 10px; font-size: 12.5px; color: var(--p-ink-2); }
+.mk input { margin-top: 3px; accent-color: var(--blue); }
+.priv { margin: 8px 0 0; font-size: 11.5px; color: var(--p-ink-2); }
+.ph-msg { margin: 10px 0 0; font-size: 13px; min-height: 1em; }
+.ph-msg.ok { color: #15803D; } .ph-msg.err { color: #DC2626; }
+.hp { position: absolute; left: -9999px; }
+
+.faq { max-width: 780px; margin: 40px auto 0; }
+details { border-top: 1px solid var(--p-line); }
+details:last-child { border-bottom: 1px solid var(--p-line); }
+summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 2px; font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; flex: none; font-size: 22px; font-weight: 400; color: var(--blue); transition: transform .25s; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { margin: 0; padding: 0 2px 20px; color: var(--p-ink-2); }
+
+.end { padding: 120px 0 0; text-align: center; overflow: hidden; }
+.end h2 { max-width: 900px; margin-inline: auto; }
+.end .cta { margin-top: 30px; }
+.end-glow { height: 200px; margin-top: 60px; background: radial-gradient(60% 100% at 50% 100%, rgba(30,107,255,.45), transparent 70%); }
+footer { border-top: 1px solid var(--line); padding: 34px 0 48px; }
+footer .wrap { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+footer span, footer nav a { font-size: 13px; color: var(--fg-3); text-decoration: none; }
+footer nav { display: flex; gap: 18px; }
+footer nav a:hover { color: var(--fg); }
+
+.rv { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
+.rv.in { opacity: 1; transform: none; }
+
+@media (max-width: 1020px) {
+  .nav-links { display: none; }
+  .bento { grid-template-columns: 1fr 1fr; }
+  .c-clips, .c-ai { grid-column: span 2; grid-row: auto; }
+  .c-score, .c-ext, .c-design, .c-subs { grid-column: span 1; }
+  .ed, .cm, .pr, .dl { grid-template-columns: 1fr; }
+  .ed-shot { margin-right: 0; border-radius: 16px; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(3) { border-left: 0; }
 }
 @media (max-width: 640px) {
-  .w-stage { padding: 14px 12px 10px; }
-  .tl { padding: 12px; }
-  .blk { font-size: 10px; padding: 0 5px; }
-  .w-top .crumb { display: none; }
-  .w-top .exp { margin-left: auto; }
-  body { font-size: 16px; }
-  .wrap { padding-inline: 16px; }
-  .nav-links { display: none; }
-  .nav .btn { margin-left: auto; }
-  .hero { padding-block: 44px 24px; }
-  .ba-grid, .feats, .steps { grid-template-columns: minmax(0, 1fr); }
-  .wave { gap: 1px; }
-  .ba-card .time { font-size: 36px; }
-  section { padding-block: 64px; }
-  .dl-item { grid-template-columns: 1fr; }
-  .dl-item svg.logo-os { display: none; }
-  .dl-item .btn { width: 100%; }
-  .dl { border-radius: 24px; padding: 36px 20px; }
+  section { padding: 90px 0; }
+  .hero { padding-top: 112px; }
+  .pill { font-size: 12.5px; }
+  .stage { margin-top: 48px; perspective: 1200px; }
+  .shot { border-radius: 10px; }
+  .stats { margin-top: -10px; }
+  .stat { padding: 22px 14px 6px; }
+  .stat b { font-size: 22px; }
+  .bento { grid-template-columns: 1fr; }
+  .c-clips, .c-ai, .c-score, .c-ext, .c-design, .c-subs { grid-column: span 1; }
+  .chain { grid-template-columns: 1fr 1fr; }
+  .ch:nth-child(2)::after { display: none; }
+  .dl { padding: 22px; }
+  .nav .btn-sm { display: none; }
 }
-
-/* ================= stile Apple: meno decorazioni, tipografia pulita ================= */
-body { font-size: 17px; letter-spacing: -0.012em; }
-h1, h2, h3 { letter-spacing: -0.028em; }
-.hero h1 { font-weight: 700; font-size: clamp(40px, 6.4vw, 80px); line-height: 1.04; max-width: 15ch; margin-top: 10px; }
-.kicker { font-size: 21px; font-weight: 600; color: var(--accent); letter-spacing: -0.015em; }
-.hero .lead { font-size: clamp(19px, 2vw, 22px); line-height: 1.45; color: var(--ink-2); }
-.btn { border-radius: 980px; font-weight: 500; font-size: 17px; height: 48px; padding: 0 24px; }
-.btn.sm { height: 34px; font-size: 14px; padding: 0 16px; border-radius: 980px; }
-.btn.quiet { background: transparent; color: var(--accent); }
-.btn.quiet:hover { background: transparent; text-decoration: underline; }
-.eyebrow { text-transform: none; letter-spacing: -0.01em; font-size: 19px; font-weight: 600; }
-.sec-head { text-align: center; margin-inline: auto; justify-items: center; max-width: 780px; }
-.sec-head h2 { font-weight: 700; font-size: clamp(32px, 4.6vw, 56px); line-height: 1.06; }
-.sec-head p { font-size: 20px; line-height: 1.45; }
-.brand { font-weight: 600; letter-spacing: -0.02em; }
-.shot { border-radius: 16px; box-shadow: 0 24px 60px -28px rgba(7,29,77,.35); border: 0; }
-.ba-card { border: 0; border-radius: 22px; }
-.ba-card .time { font-weight: 700; }
-.feat { border-top: 0; padding-top: 0; }
-.feat .ico { background: none; width: auto; height: auto; justify-content: start; margin-bottom: 2px; }
-.feat .ico svg { width: 30px; height: 30px; }
-.feat h3 { font-weight: 600; font-size: 21px; }
-.feats { row-gap: 44px; column-gap: 40px; }
-.step { border: 0; border-radius: 22px; }
-.step .n { font-weight: 600; font-size: 17px; color: var(--ink-3); }
-.step h3 { font-weight: 600; }
-.comm .sec-head { text-align: left; justify-items: start; margin-inline: 0; }
-.loop li::before { background: none; color: var(--accent); width: auto; height: auto; font-weight: 600; font-size: 17px; line-height: 1.5; text-align: left; }
-.loop li { grid-template-columns: 22px 1fr; }
-.loop b { font-weight: 600; font-size: 17px; }
-.price { background: none; padding: 0; border-radius: 0; }
-.log { border-radius: 22px; }
-.dl { border-radius: 28px; }
-.dl h2 { font-weight: 700; }
-.dl-item { border: 0; background: rgba(255,255,255,.08); }
-.dl-item .os { font-weight: 600; }
-.dl-item .btn { height: 40px; font-size: 15px; }
-.help h3 { font-weight: 600; }
-.ol li::before { background: none; color: var(--ink-3); font-weight: 600; font-size: 16px; width: auto; text-align: left; line-height: 1.55; height: auto; }
-.ol li { grid-template-columns: 20px 1fr; }
-.faq details { border: 0; border-radius: 14px; }
-.faq summary { font-weight: 500; }
-.faq summary::after { font-weight: 400; }
-
-/* ================= più grafica, meno testo ================= */
-.hero .lead { max-width: 30em; }
-.ba-flow { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 20px; align-items: center; }
-.ba-card { gap: 10px; padding: 28px; }
-.ba-card .lbl { font-size: 15px; font-weight: 500; color: var(--ink-3); }
-.ba-card .time { font-size: clamp(40px, 5vw, 60px); }
-.ba-card.after .time { color: var(--accent); }
-.ba-card .wave { height: 80px; }
-.ba-arrow { color: var(--accent); }
-.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 28px; }
-.chips span { padding: 10px 18px; border-radius: 980px; background: var(--surface); font-weight: 500; font-size: 16px; }
-.ba-foot { text-align: center; }
-.feat p { font-size: 17px; }
-.flow { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
-.fstep { display: grid; justify-items: center; gap: 14px; min-width: 150px; }
-.fstep .fi { width: 76px; height: 76px; border-radius: 22px; background: var(--surface); color: var(--accent); display: grid; place-items: center; }
-.fstep b { font-size: 19px; font-weight: 600; }
-.farrow { width: 70px; height: 2px; background: var(--line); position: relative; margin-bottom: 36px; }
-.farrow::after { content: ""; position: absolute; right: -1px; top: -5px; width: 10px; height: 10px; border-top: 2px solid var(--line); border-right: 2px solid var(--line); transform: rotate(45deg); }
-#come-funziona .sec-head { margin-bottom: 40px; }
-.loop li { row-gap: 0; }
-.price { font-size: 22px; letter-spacing: -0.02em; }
-@media (max-width: 760px) {
-  .ba-flow { grid-template-columns: minmax(0,1fr); }
-  .ba-arrow { justify-self: center; transform: rotate(90deg); }
-  .flow { flex-direction: column; }
-  .farrow { width: 2px; height: 34px; margin: 0; }
-  .farrow::after { right: -5px; top: auto; bottom: -1px; transform: rotate(135deg); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .rv { opacity: 1; transform: none; transition: none; }
+  .shot { transform: none !important; }
 }
-
-/* ---------- al posto di quattro abbonamenti, per chi è */
-.swap { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-.sw { background: var(--bg-alt); border-radius: 22px; padding: 22px 20px; display: grid; gap: 8px; align-content: start; }
-.sw-was { font-size: 14px; color: var(--ink-3); text-decoration: line-through; text-decoration-color: rgba(110,131,174,.6); }
-.sw b { font: 700 20px/1.2 var(--display); letter-spacing: -0.015em; }
-.sw-ok { justify-self: start; font-size: 13px; font-weight: 700; color: #0A7A4B; background: #DDF7EA; border-radius: 999px; padding: 4px 10px; }
-.who { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
-.wh { border-top: 2px solid var(--ink); padding-top: 16px; display: grid; gap: 6px; }
-.wh b { font: 700 18px/1.2 var(--display); }
-.wh span { color: var(--ink-2); font-size: 15.5px; }
-/* ---------- finta finestra della grafica */
-.gshot { display: grid; grid-template-columns: 52px 1fr 220px; gap: 0; background: var(--app-bg); border-radius: 18px; overflow: hidden; margin-bottom: 56px; border: 1px solid rgba(7,29,77,.12); box-shadow: 0 30px 80px -30px rgba(7,29,77,.45); min-height: 340px; font-family: -apple-system, "Segoe UI", system-ui, sans-serif; }
-.g-tools { background: var(--app-panel); border-right: 1px solid var(--app-line); display: grid; align-content: start; gap: 10px; padding: 14px 10px; }
-.g-tools i { display: block; height: 30px; border-radius: 8px; background: var(--app-raised); }
-.g-tools i.on { background: var(--accent); }
-.g-canvas { display: grid; place-items: center; padding: 28px; background: #0A0C11; }
-.thumb { position: relative; width: min(520px, 100%); aspect-ratio: 16 / 9; border-radius: 6px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.5); }
-.thumb svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.thumb .t1, .thumb .t2 { position: absolute; left: 6%; font: 900 clamp(18px, 4vw, 40px)/1 var(--display); letter-spacing: -0.02em; color: #fff; text-shadow: 0 4px 0 #071D4D; }
-.thumb .t1 { top: 22%; } .thumb .t2 { top: 46%; color: #FFD43B; }
-.thumb .sel { position: absolute; left: 4.5%; top: 43%; width: 56%; height: 26%; border: 1.5px dashed #fff; outline: 1px dashed #000; outline-offset: -2.5px; }
-.g-layers { background: var(--app-panel); border-left: 1px solid var(--app-line); padding: 14px 12px; display: grid; align-content: start; gap: 6px; color: var(--app-text-2); font-size: 12.5px; }
-.g-layers b { color: var(--app-text); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 4px; }
-.ly { display: block; padding: 9px 10px; border-radius: 8px; background: var(--app-raised); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ly.on { background: rgba(47,139,255,.18); color: var(--app-text); box-shadow: inset 0 0 0 1px rgba(96,165,255,.45); }
-/* ---------- telefono: il link via email */
-.vh { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-.phone { display: none; gap: 12px; }
-.phone .ph-t { color: var(--band-ink); font-size: 17px; }
-.ph-row { display: flex; gap: 10px; }
-.ph-row input { flex: 1; min-width: 0; height: 50px; border-radius: 14px; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; font: 16px var(--body); padding: 0 16px; }
-.ph-row input::placeholder { color: var(--band-ink-2); }
-.ph-row .btn { height: 50px; background: #fff; color: #071D4D; border-radius: 14px; }
-.ph-ck { display: flex; gap: 10px; align-items: flex-start; color: var(--band-ink-2); font-size: 14.5px; }
-.ph-ck input { width: 18px; height: 18px; margin-top: 2px; accent-color: #fff; flex-shrink: 0; }
-.ph-legal { color: var(--band-ink-2); font-size: 13px; }
-.ph-legal a { color: #fff; }
-.ph-msg { font-size: 15px; font-weight: 600; min-height: 1.2em; }
-.ph-msg.ok { color: #7EF0B5; } .ph-msg.err { color: #FFB4AE; }
-#dl-phone { display: none; }
-body.mobile #dl-main, body.mobile #dl-other { display: none; }
-body.mobile #dl-phone { display: inline-flex; }
-body.mobile .dl-list { display: none; }
-body.mobile .phone { display: grid; }
-@media (max-width: 960px) { .swap, .who { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gshot { grid-template-columns: 44px 1fr; } .g-layers { display: none; } }
-@media (max-width: 560px) { .swap, .who { grid-template-columns: 1fr; } .gshot { grid-template-columns: 1fr; min-height: 0; } .g-tools { display: none; } .g-canvas { padding: 14px; } .ph-row { flex-direction: column; } .ph-row input { flex: none; } }
 </style>
 </head>
 <body>
-
-
+<a class="skip" href="#main">NoonFrame</a>
 <template id="logo-tpl"><img class="ic" src="logo.png" alt=""></template>
 
-<header class="nav">
+<header class="nav" id="nav">
   <div class="wrap">
     <a class="brand" href="#top" data-logo>NoonFrame</a>
     <nav class="nav-links" aria-label="Sezioni">
-      <a href="#video">Video</a>
-      <a href="#grafica">Grafica</a>
-      <a href="#per-chi">Per chi è</a>
-      <a href="#community">Aggiornamenti</a>
+      <a href="#prodotto">Clip AI</a>
+      <a href="#editor">Editor</a>
+      <a href="#community">Community</a>
+      <a href="#prezzo">Prezzo</a>
       <a href="#domande">Domande</a>
     </nav>
+    <span class="grow"></span>
     <span class="langs" role="group" aria-label="Lingua"><span class="lang on" aria-current="true" lang="it">IT</span><a class="lang" href="en/index.html" data-lang="en" lang="en">EN</a></span>
-    <a class="btn primary sm" href="#download">Scarica gratis</a>
+    <a class="btn btn-primary btn-sm" href="#download">Scarica gratis</a>
   </div>
 </header>
 
-<main id="top">
-  <div class="wrap hero">
-    <p class="kicker">Gratis per Windows e Mac · Per creator</p>
-    <h1>Video, grafica e AI. In un'app gratuita.</h1>
-    <p class="lead">Monta le live da sola, crea miniature come in Photoshop, taglia clip per i social. Senza abbonamenti.</p>
+<main id="main">
+<div class="hero" id="top">
+  <div class="wrap hero-in">
+    <a class="pill" href="#prodotto"><b>Novità</b><span>Clip AI con la piattaforma migliore per ogni clip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a>
+    <h1>Lo studio AI<br>per creator.</h1>
+    <p class="sub">Clip virali dalle tue live, editor video, grafica e video AI. In un'app gratuita per Windows e Mac.</p>
     <div class="cta">
-      <a class="btn primary" id="dl-main" href="#download">Scarica NoonFrame</a>
-      <a class="btn quiet" id="dl-other" href="#download">Tutti i download</a>
-      <a class="btn primary" id="dl-phone" href="#download">Mandami il link per il PC</a>
+      <a class="btn btn-primary only-desk" id="dl-main" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>Scarica NoonFrame</span></a>
+      <a class="btn btn-ghost only-desk" href="#download" id="dl-other">Tutti i download</a>
+      <a class="btn btn-primary only-mob" href="#download" id="dl-phone">Mandami il link per il PC</a>
     </div>
-    <p class="cta-note" id="dl-note">Windows 10 e 11 · macOS 13 o successivo · Accesso con Google</p>
+    <p class="note" id="dl-note">Windows 10 e 11 · macOS 13 o successivo · Accesso con Google</p>
+  </div>
+  <div class="stage">
+    <div class="shot" id="shot"><img src="shots/clips.webp" width="2400" height="1200" alt="La galleria delle clip AI di NoonFrame con punteggio e piattaforma" fetchpriority="high"></div>
+    <div class="fade"></div>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>0 €</b><span>per gli strumenti</span></div>
+      <div class="stat"><b>3</b><span>piattaforme valutate per ogni clip</span></div>
+      <div class="stat"><b>6</b><span>lingue per sottotitoli e clip</span></div>
+      <div class="stat"><b id="upd-n">150+</b><span>aggiornamenti dal lancio</span></div>
+    </div>
+  </div>
+</div>
 
-    <div class="shot" role="img" aria-label="La finestra di NoonFrame: l'anteprima del video con i sottotitoli e sotto la timeline">
-      <div class="w-top"><span data-logo-only></span><b>NoonFrame</b><span class="crumb">Live del venerdì</span><span class="exp">Esporta</span></div>
-      <div class="w-stage">
-        <div class="stage">
-          <div class="game"><svg class="scene" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-<defs>
-<linearGradient id="nfSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0A1633"/><stop offset=".55" stop-color="#1A3C8C"/><stop offset="1" stop-color="#5C8FF0"/></linearGradient>
-<radialGradient id="nfSun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#EAF2FF"/><stop offset=".45" stop-color="#BFD6FF" stop-opacity=".9"/><stop offset="1" stop-color="#BFD6FF" stop-opacity="0"/></radialGradient>
-<linearGradient id="nfRoom" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1C3F8F"/><stop offset="1" stop-color="#0A1B45"/></linearGradient>
-<clipPath id="nfCam"><rect x="452" y="22" width="164" height="112" rx="10"/></clipPath>
-</defs>
-<rect width="640" height="360" fill="url(#nfSky)"/>
-<circle cx="200" cy="150" r="90" fill="url(#nfSun)"/>
-<circle cx="200" cy="150" r="26" fill="#EAF2FF"/>
-<path d="M0 250 L70 196 L130 230 L210 168 L290 222 L360 180 L450 236 L530 190 L640 240 L640 360 L0 360 Z" fill="#2F5FC8"/>
-<path d="M0 284 L90 236 L170 270 L260 222 L350 272 L440 232 L540 276 L640 250 L640 360 L0 360 Z" fill="#1F4AA8"/>
-<path d="M0 360 L0 306 C120 286 220 318 330 300 C440 282 540 306 640 292 L640 360 Z" fill="#102A66"/>
-<g clip-path="url(#nfCam)">
-<rect x="452" y="22" width="164" height="112" fill="url(#nfRoom)"/>
-<circle cx="480" cy="40" r="46" fill="#6EA5FF" opacity=".16"/>
-<path d="M492 140 C492 108 510 96 534 96 C558 96 576 108 576 140 Z" fill="#A9C7FF"/>
-<rect x="527" y="84" width="14" height="16" rx="5" fill="#C9DBFF"/>
-<circle cx="534" cy="68" r="19" fill="#E4EEFF"/>
-<path d="M513 70 C513 44 555 44 555 70" fill="none" stroke="#6EA5FF" stroke-width="4" stroke-linecap="round"/>
-<rect x="508" y="64" width="8" height="14" rx="4" fill="#6EA5FF"/><rect x="552" y="64" width="8" height="14" rx="4" fill="#6EA5FF"/>
-</g>
-<rect x="452.5" y="22.5" width="163" height="111" rx="10" fill="none" stroke="#FFFFFF" stroke-opacity=".22"/>
-</svg></div>
-          <div class="sub first">Oggi proviamo</div>
-          <div class="sub"><span>NON </span><span>CI </span><span>CREDO</span></div>
-        </div>
-        <div class="controls"><span class="play"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 1 L9 5 L2 9 Z" fill="#0E1117"/></svg></span></div>
+<section class="light" id="prodotto">
+  <div class="wrap">
+    <div class="center rv">
+      <h2>Tutto quello che serve a un creator.</h2>
+      <p class="lead">Un'app sola al posto di quattro abbonamenti.</p>
+    </div>
+    <div class="bento">
+      <div class="card dark-card c-clips rv">
+        <div class="tx"><h3>Clip AI</h3><p>L'AI trova i momenti virali della live e li monta in verticale, con punteggio e piattaforma migliore.</p></div>
+        <div class="vis"><img src="shots/clip-detail.webp" width="1400" height="1329" alt="Dettaglio di una clip: dove funziona meglio" loading="lazy"></div>
       </div>
-      <div class="tl">
-        <div class="lanes">
-          <div class="ruler" aria-hidden="true"><span style="left:2%">0:00</span><span style="left:25.75%">0:15</span><span style="left:49.5%">0:30</span><span style="left:73.25%">0:45</span><span style="left:97%">1:00</span></div>
-          <div class="track t"><div class="blk s" style="left:5.8%;width:19%">Oggi proviamo</div><div class="blk s" style="left:59%;width:34%">non ci credo</div></div>
-          <div class="track zm"><div class="blk z" style="left:22.9%;width:36%"><svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true"><circle cx="5" cy="5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 8l2.6 2.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Zoom</div></div>
-          <div class="track v"><div class="blk c" style="left:0;width:31.5%"></div><div class="blk c" style="left:32.2%;width:37.8%"></div><div class="blk c" style="left:70.7%;width:29.3%"></div></div>
-          <div class="track a"><svg class="wv" viewBox="0 0 100 24" preserveAspectRatio="none" aria-hidden="true"><g fill="#3B6FE0"><rect x="0.00" y="7.9" width=".32" height="8.2" rx=".16"/><rect x="0.56" y="6.7" width=".32" height="10.5" rx=".16"/><rect x="1.11" y="6.8" width=".32" height="10.5" rx=".16"/><rect x="1.67" y="7.0" width=".32" height="9.9" rx=".16"/><rect x="2.22" y="5.5" width=".32" height="13.0" rx=".16"/><rect x="2.78" y="6.9" width=".32" height="10.2" rx=".16"/><rect x="3.33" y="3.8" width=".32" height="16.4" rx=".16"/><rect x="3.89" y="5.6" width=".32" height="12.8" rx=".16"/><rect x="4.44" y="7.8" width=".32" height="8.4" rx=".16"/><rect x="5.00" y="6.1" width=".32" height="11.8" rx=".16"/><rect x="5.56" y="5.9" width=".32" height="12.2" rx=".16"/><rect x="6.11" y="7.5" width=".32" height="9.0" rx=".16"/><rect x="6.67" y="7.4" width=".32" height="9.2" rx=".16"/><rect x="7.22" y="6.9" width=".32" height="10.3" rx=".16"/><rect x="7.78" y="6.6" width=".32" height="10.7" rx=".16"/><rect x="8.33" y="2.0" width=".32" height="20.0" rx=".16"/><rect x="8.89" y="5.7" width=".32" height="12.7" rx=".16"/><rect x="9.44" y="3.7" width=".32" height="16.6" rx=".16"/><rect x="10.00" y="7.4" width=".32" height="9.1" rx=".16"/><rect x="10.56" y="6.3" width=".32" height="11.4" rx=".16"/><rect x="11.11" y="6.6" width=".32" height="10.8" rx=".16"/><rect x="11.67" y="4.5" width=".32" height="15.1" rx=".16"/><rect x="12.22" y="7.4" width=".32" height="9.2" rx=".16"/><rect x="12.78" y="2.7" width=".32" height="18.5" rx=".16"/><rect x="13.33" y="7.2" width=".32" height="9.7" rx=".16"/><rect x="13.89" y="7.2" width=".32" height="9.6" rx=".16"/><rect x="14.44" y="4.8" width=".32" height="14.3" rx=".16"/><rect x="15.00" y="5.5" width=".32" height="13.0" rx=".16"/><rect x="15.56" y="6.3" width=".32" height="11.4" rx=".16"/><rect x="16.11" y="7.9" width=".32" height="8.1" rx=".16"/><rect x="16.67" y="6.8" width=".32" height="10.3" rx=".16"/><rect x="17.22" y="7.8" width=".32" height="8.4" rx=".16"/><rect x="17.78" y="3.0" width=".32" height="17.9" rx=".16"/><rect x="18.33" y="5.8" width=".32" height="12.3" rx=".16"/><rect x="18.89" y="5.8" width=".32" height="12.4" rx=".16"/><rect x="19.44" y="7.3" width=".32" height="9.3" rx=".16"/><rect x="20.00" y="5.0" width=".32" height="13.9" rx=".16"/><rect x="20.56" y="6.1" width=".32" height="11.8" rx=".16"/><rect x="21.11" y="4.1" width=".32" height="15.7" rx=".16"/><rect x="21.67" y="4.5" width=".32" height="15.1" rx=".16"/><rect x="22.22" y="5.2" width=".32" height="13.6" rx=".16"/><rect x="22.78" y="7.9" width=".32" height="8.3" rx=".16"/><rect x="23.33" y="5.7" width=".32" height="12.7" rx=".16"/><rect x="23.89" y="6.3" width=".32" height="11.3" rx=".16"/><rect x="24.44" y="6.8" width=".32" height="10.4" rx=".16"/><rect x="25.00" y="6.0" width=".32" height="11.9" rx=".16"/><rect x="25.56" y="7.7" width=".32" height="8.6" rx=".16"/><rect x="26.11" y="7.3" width=".32" height="9.5" rx=".16"/><rect x="26.67" y="4.4" width=".32" height="15.3" rx=".16"/><rect x="27.22" y="6.9" width=".32" height="10.2" rx=".16"/><rect x="27.78" y="7.4" width=".32" height="9.3" rx=".16"/><rect x="28.33" y="4.7" width=".32" height="14.6" rx=".16"/><rect x="28.89" y="5.6" width=".32" height="12.9" rx=".16"/><rect x="29.44" y="7.6" width=".32" height="8.9" rx=".16"/><rect x="30.00" y="6.2" width=".32" height="11.6" rx=".16"/><rect x="30.56" y="8.0" width=".32" height="8.1" rx=".16"/><rect x="32.78" y="6.4" width=".32" height="11.1" rx=".16"/><rect x="33.33" y="7.1" width=".32" height="9.9" rx=".16"/><rect x="33.89" y="6.5" width=".32" height="10.9" rx=".16"/><rect x="34.44" y="6.4" width=".32" height="11.2" rx=".16"/><rect x="35.00" y="5.2" width=".32" height="13.5" rx=".16"/><rect x="35.56" y="4.5" width=".32" height="15.0" rx=".16"/><rect x="36.11" y="6.5" width=".32" height="11.0" rx=".16"/><rect x="36.67" y="4.9" width=".32" height="14.2" rx=".16"/><rect x="37.22" y="7.0" width=".32" height="10.1" rx=".16"/><rect x="37.78" y="7.3" width=".32" height="9.4" rx=".16"/><rect x="38.33" y="6.2" width=".32" height="11.6" rx=".16"/><rect x="38.89" y="7.3" width=".32" height="9.5" rx=".16"/><rect x="39.44" y="7.6" width=".32" height="8.7" rx=".16"/><rect x="40.00" y="4.3" width=".32" height="15.4" rx=".16"/><rect x="40.56" y="7.8" width=".32" height="8.4" rx=".16"/><rect x="41.11" y="5.6" width=".32" height="12.8" rx=".16"/><rect x="41.67" y="6.7" width=".32" height="10.6" rx=".16"/><rect x="42.22" y="5.3" width=".32" height="13.4" rx=".16"/><rect x="42.78" y="4.0" width=".32" height="16.0" rx=".16"/><rect x="43.33" y="6.9" width=".32" height="10.2" rx=".16"/><rect x="43.89" y="2.7" width=".32" height="18.7" rx=".16"/><rect x="44.44" y="3.9" width=".32" height="16.2" rx=".16"/><rect x="45.00" y="7.4" width=".32" height="9.3" rx=".16"/><rect x="45.56" y="2.0" width=".32" height="20.0" rx=".16"/><rect x="46.11" y="5.8" width=".32" height="12.4" rx=".16"/><rect x="46.67" y="7.7" width=".32" height="8.5" rx=".16"/><rect x="47.22" y="3.4" width=".32" height="17.1" rx=".16"/><rect x="47.78" y="7.0" width=".32" height="10.0" rx=".16"/><rect x="48.33" y="2.5" width=".32" height="18.9" rx=".16"/><rect x="48.89" y="4.5" width=".32" height="14.9" rx=".16"/><rect x="49.44" y="4.4" width=".32" height="15.2" rx=".16"/><rect x="50.00" y="4.6" width=".32" height="14.8" rx=".16"/><rect x="50.56" y="7.5" width=".32" height="8.9" rx=".16"/><rect x="51.11" y="6.3" width=".32" height="11.4" rx=".16"/><rect x="51.67" y="6.6" width=".32" height="10.7" rx=".16"/><rect x="52.22" y="7.5" width=".32" height="9.0" rx=".16"/><rect x="52.78" y="2.9" width=".32" height="18.2" rx=".16"/><rect x="53.33" y="3.3" width=".32" height="17.3" rx=".16"/><rect x="53.89" y="7.8" width=".32" height="8.4" rx=".16"/><rect x="54.44" y="7.7" width=".32" height="8.6" rx=".16"/><rect x="55.00" y="6.4" width=".32" height="11.2" rx=".16"/><rect x="55.56" y="7.5" width=".32" height="8.9" rx=".16"/><rect x="56.11" y="7.5" width=".32" height="9.1" rx=".16"/><rect x="56.67" y="5.5" width=".32" height="13.0" rx=".16"/><rect x="57.22" y="7.7" width=".32" height="8.6" rx=".16"/><rect x="57.78" y="6.8" width=".32" height="10.4" rx=".16"/><rect x="58.33" y="5.2" width=".32" height="13.6" rx=".16"/><rect x="58.89" y="7.7" width=".32" height="8.6" rx=".16"/><rect x="59.44" y="7.8" width=".32" height="8.5" rx=".16"/><rect x="60.00" y="7.1" width=".32" height="9.8" rx=".16"/><rect x="60.56" y="6.5" width=".32" height="11.1" rx=".16"/><rect x="61.11" y="7.4" width=".32" height="9.1" rx=".16"/><rect x="61.67" y="7.3" width=".32" height="9.4" rx=".16"/><rect x="62.22" y="6.6" width=".32" height="10.8" rx=".16"/><rect x="62.78" y="5.0" width=".32" height="14.1" rx=".16"/><rect x="63.33" y="7.2" width=".32" height="9.6" rx=".16"/><rect x="63.89" y="7.9" width=".32" height="8.1" rx=".16"/><rect x="64.44" y="2.0" width=".32" height="20.0" rx=".16"/><rect x="65.00" y="5.6" width=".32" height="12.8" rx=".16"/><rect x="65.56" y="5.7" width=".32" height="12.6" rx=".16"/><rect x="66.11" y="7.6" width=".32" height="8.8" rx=".16"/><rect x="66.67" y="5.3" width=".32" height="13.5" rx=".16"/><rect x="67.22" y="4.9" width=".32" height="14.1" rx=".16"/><rect x="67.78" y="7.8" width=".32" height="8.5" rx=".16"/><rect x="68.33" y="7.9" width=".32" height="8.3" rx=".16"/><rect x="68.89" y="5.2" width=".32" height="13.5" rx=".16"/><rect x="69.44" y="5.3" width=".32" height="13.5" rx=".16"/><rect x="71.11" y="7.4" width=".32" height="9.3" rx=".16"/><rect x="71.67" y="7.9" width=".32" height="8.1" rx=".16"/><rect x="72.22" y="2.3" width=".32" height="19.3" rx=".16"/><rect x="72.78" y="6.5" width=".32" height="11.1" rx=".16"/><rect x="73.33" y="5.2" width=".32" height="13.5" rx=".16"/><rect x="73.89" y="6.0" width=".32" height="12.1" rx=".16"/><rect x="74.44" y="7.6" width=".32" height="8.8" rx=".16"/><rect x="75.00" y="7.9" width=".32" height="8.2" rx=".16"/><rect x="75.56" y="6.2" width=".32" height="11.7" rx=".16"/><rect x="76.11" y="7.4" width=".32" height="9.3" rx=".16"/><rect x="76.67" y="2.6" width=".32" height="18.8" rx=".16"/><rect x="77.22" y="7.4" width=".32" height="9.1" rx=".16"/><rect x="77.78" y="7.3" width=".32" height="9.4" rx=".16"/><rect x="78.33" y="4.9" width=".32" height="14.3" rx=".16"/><rect x="78.89" y="6.5" width=".32" height="11.0" rx=".16"/><rect x="79.44" y="5.3" width=".32" height="13.5" rx=".16"/><rect x="80.00" y="7.8" width=".32" height="8.3" rx=".16"/><rect x="80.56" y="4.8" width=".32" height="14.4" rx=".16"/><rect x="81.11" y="5.7" width=".32" height="12.6" rx=".16"/><rect x="81.67" y="6.9" width=".32" height="10.3" rx=".16"/><rect x="82.22" y="3.7" width=".32" height="16.6" rx=".16"/><rect x="82.78" y="6.8" width=".32" height="10.4" rx=".16"/><rect x="83.33" y="8.0" width=".32" height="8.1" rx=".16"/><rect x="83.89" y="6.7" width=".32" height="10.7" rx=".16"/><rect x="84.44" y="2.7" width=".32" height="18.7" rx=".16"/><rect x="85.00" y="3.0" width=".32" height="17.9" rx=".16"/><rect x="85.56" y="4.4" width=".32" height="15.2" rx=".16"/><rect x="86.11" y="6.0" width=".32" height="12.1" rx=".16"/><rect x="86.67" y="4.6" width=".32" height="14.8" rx=".16"/><rect x="87.22" y="6.8" width=".32" height="10.4" rx=".16"/><rect x="87.78" y="4.3" width=".32" height="15.4" rx=".16"/><rect x="88.33" y="6.7" width=".32" height="10.6" rx=".16"/><rect x="88.89" y="5.0" width=".32" height="14.1" rx=".16"/><rect x="89.44" y="5.7" width=".32" height="12.6" rx=".16"/><rect x="90.00" y="4.6" width=".32" height="14.8" rx=".16"/><rect x="90.56" y="7.3" width=".32" height="9.4" rx=".16"/><rect x="91.11" y="2.0" width=".32" height="20.0" rx=".16"/><rect x="91.67" y="7.0" width=".32" height="10.0" rx=".16"/><rect x="92.22" y="7.7" width=".32" height="8.6" rx=".16"/><rect x="92.78" y="2.0" width=".32" height="20.0" rx=".16"/><rect x="93.33" y="6.8" width=".32" height="10.5" rx=".16"/><rect x="93.89" y="7.6" width=".32" height="8.8" rx=".16"/><rect x="94.44" y="7.3" width=".32" height="9.4" rx=".16"/><rect x="95.00" y="6.9" width=".32" height="10.3" rx=".16"/><rect x="95.56" y="7.2" width=".32" height="9.7" rx=".16"/><rect x="96.11" y="4.1" width=".32" height="15.9" rx=".16"/><rect x="96.67" y="7.2" width=".32" height="9.6" rx=".16"/><rect x="97.22" y="6.5" width=".32" height="11.0" rx=".16"/><rect x="97.78" y="7.4" width=".32" height="9.2" rx=".16"/><rect x="98.33" y="5.7" width=".32" height="12.6" rx=".16"/><rect x="98.89" y="5.4" width=".32" height="13.3" rx=".16"/><rect x="99.44" y="7.9" width=".32" height="8.3" rx=".16"/></g></svg></div>
-          <div class="playhead"></div>
+      <div class="card c-score rv">
+        <div class="tx"><h3>Punteggio di viralità</h3><p>Pubblichi prima le clip che hanno più possibilità.</p></div>
+        <div class="vis" style="min-height:0">
+          <div class="sc"><b>96</b><span>/ 100</span></div>
+          <div class="pfl">
+            <div class="pfr best"><span>TikTok</span><i><em style="width:88%"></em></i><b>88</b></div>
+            <div class="pfr"><span>Shorts</span><i><em style="width:75%"></em></i><b>75</b></div>
+            <div class="pfr"><span>Reels</span><i><em style="width:64%"></em></i><b>64</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="card c-ext rv">
+        <div class="tx"><h3>Allunga o accorcia</h3><p>Prendi il contesto prima o il finale dopo, direttamente dalla live.</p></div>
+        <div class="vis ext" style="min-height:0">
+          <div class="ext-bar"><div class="w" id="extw"></div><div class="ext-new"></div><div class="ext-was"></div></div>
+          <div class="ext-lb"><span>clip dell'AI</span><b>+ 18 s di contesto</b></div>
+        </div>
+      </div>
+      <div class="card c-design rv">
+        <div class="tx"><h3>Grafica come Photoshop</h3><p>Miniature con livelli, rimozione sfondo con l'AI, PSD.</p></div>
+        <div class="vis"><img src="shots/design.webp" width="2000" height="1250" alt="La grafica di NoonFrame con una miniatura" loading="lazy"></div>
+      </div>
+      <div class="card dark-card c-subs rv">
+        <div class="tx"><h3>Sottotitoli che si leggono</h3><p>Parola per parola, nel tuo stile, in sei lingue.</p></div>
+        <div class="vis"><img src="shots/clip-a.webp" alt="" loading="lazy"><img src="shots/clip-b.webp" alt="" loading="lazy"></div>
+      </div>
+      <div class="card dark-card c-ai rv">
+        <div class="tx"><h3>Video AI dalla A alla Z</h3><p>Script, immagini, voce e montaggio per vendere un prodotto digitale o lanciare una pagina faceless.</p></div>
+        <div class="chain" aria-hidden="true">
+          <div class="ch"><small>01</small><b>Script</b><div class="v v-txt"><i></i><i></i><i style="width:80%"></i></div></div>
+          <div class="ch"><small>02</small><b>Immagini</b><div class="v v-img"><i></i><i></i><i></i></div></div>
+          <div class="ch"><small>03</small><b>Voce</b><div class="v v-voice" id="voice"></div></div>
+          <div class="ch"><small>04</small><b>Video</b><div class="v v-vid"><span><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4.5v15l13-7.5z"/></svg></span></div></div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <section id="per-chi" aria-labelledby="pc-t">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Un'app, tutto incluso</span>
-        <h2 id="pc-t">Al posto di quattro abbonamenti.</h2>
-        <p>Quello che di solito paghi ogni mese, qui è gratis e gira sul tuo computer.</p>
-      </div>
-      <div class="swap">
-        <div class="sw"><span class="sw-was">Editor video in abbonamento</span><b>Montaggio automatico</b><span class="sw-ok">Incluso</span></div>
-        <div class="sw"><span class="sw-was">Programma di grafica a pagamento</span><b>Grafica a livelli, PSD</b><span class="sw-ok">Incluso</span></div>
-        <div class="sw"><span class="sw-was">Tool per clip e sottotitoli</span><b>Clip verticali e sottotitoli</b><span class="sw-ok">Incluso</span></div>
-        <div class="sw"><span class="sw-was">Tool per togliere gli sfondi</span><b>Rimuovi sfondo con l'AI</b><span class="sw-ok">Incluso</span></div>
-      </div>
-      <div class="who">
-        <div class="wh"><b>Streamer</b><span>Dalla live di 3 ore al video per YouTube, da solo.</span></div>
-        <div class="wh"><b>YouTuber</b><span>Montaggio, sottotitoli e miniature nello stesso posto.</span></div>
-        <div class="wh"><b>Creator TikTok e Reels</b><span>Clip 9:16 con titoli animati, pronte da pubblicare.</span></div>
-        <div class="wh"><b>Grafici e piccole agenzie</b><span>Livelli, PSD e brand kit per ogni cliente.</span></div>
-      </div>
+<section id="editor">
+  <div class="wrap ed">
+    <div class="rv">
+      <span class="k">Editor</span>
+      <h2>Dalla live al video. Da solo.</h2>
+      <p class="lead">Pause tagliate, zoom su di te, sottotitoli e titoli animati in automatico. Poi rifinisci in una timeline vera.</p>
+      <ul class="ed-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Montaggio automatico delle live</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Timeline con tracce, testi ed effetti</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4.5 4.5L19 7"/></svg>Esporti per YouTube, TikTok, Reels e Shorts</li>
+      </ul>
     </div>
-  </section>
+    <div class="ed-shot rv"><img src="shots/editor.webp" width="2400" height="1500" alt="L'editor di NoonFrame con anteprima e timeline" loading="lazy"></div>
+  </div>
+</section>
 
-  <section class="ba" id="video" aria-labelledby="ba-t">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Video · Dalla live a YouTube</span>
-        <h2 id="ba-t">Via le pause. In automatico.</h2>
-      </div>
-      <div class="ba-flow">
-        <div class="ba-card">
-          <span class="lbl">La tua live</span>
-          <div class="time">2:14:08</div>
-          <div class="wave" id="wave-before" aria-hidden="true"></div>
-        </div>
-        <div class="ba-arrow" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40"><path d="M8 20h22M22 11l9 9-9 9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <div class="ba-card after">
-          <span class="lbl">Il video montato</span>
-          <div class="time">1:41:30</div>
-          <div class="wave" id="wave-after" aria-hidden="true"></div>
-        </div>
-      </div>
-      <div class="chips"><span>✂︎ Pause tagliate</span><span>＋ Zoom su di te</span><span>Aa Sottotitoli</span></div>
-      <p class="ba-foot">Durate di esempio.</p>
+<section id="community" style="padding-top:40px">
+  <div class="wrap cm">
+    <div class="rv">
+      <span class="k">Costruito con chi lo usa</span>
+      <h2>Migliora ogni giorno, con chi lo usa.</h2>
+      <p class="lead">Chiedi una funzione dall'app: la community decide, noi la costruiamo, l'aggiornamento arriva da solo.</p>
+      <div class="cta" style="justify-content:flex-start"><a class="btn btn-ghost" href="https://discord.gg/5cQvNEBfee" target="_blank" rel="noopener">Entra nel Discord</a></div>
     </div>
-  </section>
-
-  <section id="funzioni" aria-labelledby="f-t">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Video</span>
-        <h2 id="f-t">Il montaggio noioso lo fa lui.</h2>
-      </div>
-      <div class="feats">
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div><h3>Tagli automatici</h3><p>Via pause e silenzi.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></div><h3>Zoom sulla webcam</h3><p>Il primo piano quando parli.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 15h4M13 15h4M7 11h10"/></svg></div><h3>Sottotitoli</h3><p>Anche parola per parola.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></div><h3>Clip verticali</h3><p>9:16 per TikTok, Reels e Shorts.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></svg></div><h3>Titoli animati</h3><p>Oltre 25 stili pronti.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></div><h3>Storie AI</h3><p>Storia, immagini e voce con le tue chiavi AI.</p></div>
-      </div>
+    <div class="rv">
+      <div class="big-n" id="upd-big">150+</div>
+      <p style="margin:10px 0 22px;color:var(--fg-2)">aggiornamenti dal lancio</p>
+      <ul class="upd" id="upd-list"></ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="grafica" class="ba" aria-labelledby="g-t">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Grafica</span>
-        <h2 id="g-t">Miniature e grafiche, come in Photoshop.</h2>
-        <p>Livelli, maschere, selezioni e AI. Apri i tuoi PSD e salvali di nuovo.</p>
-      </div>
-      <div class="gshot" role="img" aria-label="L'editor grafico di NoonFrame: strumenti a sinistra, una miniatura al centro, i livelli a destra">
-        <div class="g-tools" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="g-canvas" aria-hidden="true">
-          <div class="thumb">
-            <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="gBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E6BFF"/><stop offset="1" stop-color="#071D4D"/></linearGradient></defs>
-            <rect width="320" height="180" fill="url(#gBg)"/><circle cx="250" cy="70" r="70" fill="#6EA5FF" opacity=".25"/>
-            <path d="M196 180 C196 128 214 112 242 112 C270 112 288 128 288 180 Z" fill="#E4EEFF"/><circle cx="242" cy="86" r="26" fill="#F2F7FF"/></svg>
-            <span class="t1">ULTIMA</span><span class="t2">PARTITA?!</span>
-            <span class="sel"></span>
-          </div>
-        </div>
-        <div class="g-layers" aria-hidden="true">
-          <b>Livelli</b>
-          <span class="ly on">T&nbsp; PARTITA?!</span><span class="ly">T&nbsp; ULTIMA</span><span class="ly">◐&nbsp; Curve</span><span class="ly">▣&nbsp; Io, senza sfondo</span><span class="ly">▤&nbsp; Sfondo</span>
-        </div>
-      </div>
-      <div class="feats">
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div><h3>Livelli ed effetti</h3><p>Maschere, ombre, contorni, curve e livelli.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><h3>Rimuovi lo sfondo</h3><p>Con l'AI, sul tuo computer. Anche i capelli.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><h3>Riempimento generativo</h3><p>Selezioni una zona e l'AI la rifà come descrivi.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div><h3>Apre e salva PSD</h3><p>Ed esporta PNG, JPG, PDF per la stampa, SVG e GIF.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div><h3>Formati pronti</h3><p>Miniature YouTube, post, storie: tutte le misure.</p></div>
-        <div class="feat"><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4A5.6 5.6 0 0 0 22 10c0-4.4-4.5-8-10-8z"/></svg></div><h3>Brand kit</h3><p>Colori, font e loghi tuoi o dei tuoi clienti.</p></div>
-      </div>
+<section class="light" id="prezzo">
+  <div class="wrap">
+    <div class="center rv"><span class="k">Prezzo</span><h2>Gratis. L'AI solo se la usi.</h2></div>
+    <div class="pr rv">
+      <div class="card"><h3>Gratis, per sempre</h3><div class="pv">0 €</div><p>Editor, grafica, sottotitoli, rimozione sfondo, esportazione senza filigrana. Gira sul tuo computer.</p></div>
+      <div class="card dark-card"><h3 style="color:var(--sky)">Crediti AI</h3><div class="pv">A consumo</div><p>Per clip AI, immagini e video AI usi i crediti: ne ricevi alcuni in regalo appena entri. Oppure collega le tue chiavi AI e paghi direttamente il servizio.</p><p class="soon"><i></i><span>Abbonamenti con più crediti in arrivo, con un'offerta di lancio per chi c'è dall'inizio.</span></p></div>
     </div>
-  </section>
 
-  <section id="come-funziona" aria-labelledby="c-t">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Come funziona</span>
-        <h2 id="c-t">Tre passaggi.</h2>
-      </div>
-      <div class="flow">
-        <div class="fstep"><span class="fi"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg></span><b>Apri un video o una foto</b></div>
-        <span class="farrow" aria-hidden="true"></span>
-        <div class="fstep"><span class="fi"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span><b>NoonFrame fa il lavoro noioso</b></div>
-        <span class="farrow" aria-hidden="true"></span>
-        <div class="fstep"><span class="fi"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12M7 11l5 5 5-5M4 20h16"/></svg></span><b>Esporta per ogni social</b></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="community" aria-labelledby="m-t">
-    <div class="wrap comm">
+    <div class="card dl rv" id="download">
       <div>
-        <div class="sec-head">
-          <span class="eyebrow">Costruito con chi lo usa</span>
-          <h2 id="m-t">Migliora ogni settimana. Con te.</h2>
+        <h2 style="font-size:clamp(30px,3.6vw,44px);margin:0">Scarica NoonFrame.</h2>
+        <p style="margin:12px 0 22px;color:var(--p-ink-2)"><b style="color:var(--p-ink)">È gratis.</b> Niente abbonamento. Niente filigrana. Solo un account gratuito.</p>
+        <div class="phone only-mob" id="phone">
+          <p>Sei sul telefono? NoonFrame si usa sul computer: ti mandiamo il link via email, così lo apri da lì.</p>
+          <form id="phone-form" novalidate>
+            <input type="email" id="ph-email" placeholder="La tua email" aria-label="La tua email" autocomplete="email" required>
+            <input type="text" id="ph-web" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-primary" id="ph-send" type="submit">Mandami il link</button>
+          </form>
+          <label class="mk"><input type="checkbox" id="ph-mk"><span>Voglio ricevere anche le novità di NoonFrame (al massimo una email al mese).</span></label>
+          <p class="priv">Usiamo la tua email per mandarti il link e, solo se spunti la casella, per le novità. Dettagli nella <a href="privacy.html">privacy</a>.</p>
+          <p class="ph-msg" id="ph-msg" role="status"></p>
         </div>
-        <ol class="loop">
-          <li><b>Chiedi dall'app</b><span>Un'idea o un problema.</span></li>
-          <li><b>La costruiamo</b><span>La community decide le priorità.</span></li>
-          <li><b>Arriva da sola</b><span>Aggiornamenti automatici.</span></li>
-        </ol>
-        <p class="price"><b>Più funzioni. Zero costi.</b></p>
+        <div class="os-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5 10 4.5v7H3zM11 4.3 21 3v8.5H11zM3 12.5h7v7L3 18.5zM11 12.5h10V21l-10-1.4z"/></svg>
+          <div><b>Windows</b><small>Windows 10 e 11, 64 bit · 155 MB</small></div><a class="btn btn-primary btn-sm" data-dl="win" href="#">Scarica</a></div>
+        <div class="os-row"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.1 1.1.1 2.3-.6 3.1-1.5z"/></svg>
+          <div><b>Mac</b><small>macOS 13 o successivo, Apple Silicon e Intel · 358 MB</small></div><a class="btn btn-primary btn-sm" data-dl="mac" href="#">Scarica</a></div>
       </div>
-      <div class="log" aria-live="polite">
-        <div class="log-head"><span>Ultimi aggiornamenti</span><b id="upd-count"></b></div>
-        <ul id="upd-list">
-          <li><time>28 set</time><div><b>1.5.26</b> Colori piatti per gli oggetti in timeline</div></li>
-          <li><time>28 set</time><div><b>1.5.24</b> Nuovo nome: VODcut diventa NoonFrame</div></li>
-          <li><time>28 set</time><div><b>1.5.23</b> Storie: il testo a schermo segue quello che si sente nella voce</div></li>
-          <li><time>28 set</time><div><b>1.5.22</b> Su Mac la trascrizione scarica il modello da sola, con l'avanzamento</div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="download" aria-labelledby="d-t">
-    <div class="wrap">
-      <div class="dl">
-        <div>
-          <h2 id="d-t">Scarica NoonFrame.<br>È gratis.</h2>
-          <p class="sub">Niente abbonamento. Niente filigrana. Solo un account gratuito.</p>
-        </div>
-        <form class="phone" id="phone-form" novalidate>
-          <p class="ph-t"><b>Sei sul telefono?</b> NoonFrame si usa sul computer: ti mandiamo il link via email, così lo apri da lì.</p>
-          <label class="vh" for="ph-email">La tua email</label>
-          <div class="ph-row"><input id="ph-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="La tua email" required maxlength="254"><button class="btn primary" type="submit" id="ph-send">Mandami il link</button></div>
-          <input class="vh" tabindex="-1" autocomplete="off" name="website" id="ph-web" aria-hidden="true">
-          <label class="ph-ck"><input type="checkbox" id="ph-mk"> Voglio ricevere anche le novità di NoonFrame (al massimo una email al mese).</label>
-          <p class="ph-legal">Usiamo la tua email per mandarti il link e, solo se spunti la casella, per le novità. Dettagli nella <a href="privacy.html">privacy</a>.</p>
-          <p class="ph-msg" id="ph-msg" role="status" aria-live="polite"></p>
-        </form>
-        <div class="dl-list">
-          <div class="dl-item">
-            <svg class="logo-os" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10.5 4.4v7.1H3zm0 13L10.5 19.6v-7H3zm8.5 1.3L21 21v-8.4h-9.5zm0-15.6v7.4H21V3z"/></svg>
-            <div><div class="os">Windows</div><small>Windows 10 e 11, 64 bit · 155 MB</small></div>
-            <a class="btn" data-dl="win" href="#download">Scarica</a>
-          </div>
-          <div class="dl-item">
-            <svg class="logo-os" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.5 1-1.4 1.3-2.7 1.4-2.8-.1 0-2.6-1-2.6-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3.1 1.1.1 2.2-.6 2.9-1.4z"/></svg>
-            <div><div class="os">Mac</div><small>macOS 13 o successivo, Apple Silicon e Intel · 358 MB</small></div>
-            <a class="btn" data-dl="mac" href="#download">Scarica</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="domande" class="ba" aria-labelledby="q-t">
-    <div class="wrap help">
-      <div>
+      <div class="first">
         <h3>Primo avvio</h3>
-        <ol class="ol">
-          <li><span><b>Windows:</b> apri <code>Noonframe-Setup.exe</code>. Se Windows avvisa, premi <b>Ulteriori informazioni</b> → <b>Esegui comunque</b>.</span></li>
-          <li><span><b>Mac:</b> trascina NoonFrame in Applicazioni.</span></li>
-          <li><span><b>Mac, solo la prima volta:</b> incolla nel Terminale.
-            <span class="cmd"><code id="mac-cmd">xattr -cr /Applications/NoonFrame.app &amp;&amp; open /Applications/NoonFrame.app</code><button class="copy" type="button" id="copy-cmd">Copia</button></span></span></li>
+        <ol>
+          <li><b>Windows:</b> apri Noonframe-Setup.exe. Se Windows avvisa, premi <b>Ulteriori informazioni</b> e poi <b>Esegui comunque</b>.</li>
+          <li><b>Mac:</b> trascina NoonFrame in Applicazioni.</li>
+          <li><b>Mac, solo la prima volta:</b> incolla nel Terminale<div class="cmd"><code id="mac-cmd">xattr -cr /Applications/NoonFrame.app &amp;&amp; open /Applications/NoonFrame.app</code><button type="button" id="copy-cmd">Copia</button></div></li>
         </ol>
       </div>
-      <div>
-        <h3 id="q-t">Domande</h3>
-        <div class="faq">
-          <details><summary>NoonFrame è davvero gratis?</summary><p>Sì. Video, grafica e tutte le funzioni che girano sul tuo computer, senza abbonamento e senza filigrana. Serve solo un account gratuito: entri con Google in un clic.</p></details>
-          <details><summary>E l'AI?</summary><p>Rimuovere lo sfondo e creare i sottotitoli sono gratis e girano sul tuo computer. Le funzioni che usano servizi AI esterni (immagini, riempimento generativo, storie) usano le tue chiavi AI: paghi solo quello che usi, direttamente al servizio.</p></details>
-          <details><summary>Posso aprire i file di Photoshop?</summary><p>Sì: apri i PSD con i livelli e li salvi di nuovo in PSD. Esporti anche in PNG, JPG, WebP, PDF (anche CMYK per la stampa), SVG, GIF e MP4.</p></details>
-          <details><summary>Perché serve un account?</summary><p>Per mandarti gli aggiornamenti, ascoltare le tue richieste e tenere NoonFrame gratis e al sicuro dagli abusi. Vediamo quali strumenti usi, mai i tuoi video.</p></details>
-          <details><summary>I miei video vengono caricati online?</summary><p>No. Tutto resta sul tuo computer.</p></details>
-          <details><summary>Serve un computer potente?</summary><p>No. Con una scheda NVIDIA i sottotitoli sono più veloci.</p></details>
-          <details><summary>Funziona anche senza live?</summary><p>Sì: qualsiasi video, in 16:9, 9:16, 1:1 o 4:5. E nella sezione Grafica crei miniature, post e grafiche da zero.</p></details>
-          <details><summary>In che lingue?</summary><p>Italiano e inglese. I sottotitoli riconoscono la tua lingua.</p></details>
-        </div>
+    </div>
+
+    <div id="domande" style="padding-top:110px">
+      <h2 class="center rv">Domande</h2>
+      <div class="faq rv">
+        <details><summary>NoonFrame è davvero gratis?</summary><p>Sì. Editor video, grafica e tutte le funzioni che girano sul tuo computer sono gratis, senza abbonamento e senza filigrana. Serve solo un account gratuito: entri con Google in un clic.</p></details>
+        <details><summary>Come funzionano le clip AI?</summary><p>Apri una live (o un video lungo), premi Trova le clip: l'AI legge la trascrizione e il volume, sceglie i momenti migliori e li monta in verticale con punteggio, titolo e piattaforma consigliata. Usa i crediti AI, oppure le tue chiavi.</p></details>
+        <details><summary>I miei video vengono caricati online?</summary><p>No. I video restano sul tuo computer. Per le funzioni AI inviamo solo quello che serve, per esempio il testo della trascrizione.</p></details>
+        <details><summary>Perché serve un account?</summary><p>Per mandarti gli aggiornamenti, ascoltare le tue richieste, gestire i crediti e tenere NoonFrame al sicuro dagli abusi. Vediamo quali strumenti usi, mai i tuoi video.</p></details>
+        <details><summary>Serve un computer potente?</summary><p>No. Con una scheda NVIDIA sottotitoli ed esportazioni sono più veloci.</p></details>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<div class="end">
+  <div class="wrap">
+    <h2>Lo studio AI per creator.</h2>
+    <div class="cta"><a class="btn btn-primary" href="#download">Scarica gratis</a></div>
+  </div>
+  <div class="end-glow"></div>
+</div>
 </main>
 
 <footer>
   <div class="wrap">
     <a class="brand" href="#top" data-logo>NoonFrame</a>
     <span>© 2026 NoonFrame · Ogni frame nella sua luce migliore.</span>
-    <nav aria-label="Informazioni"><a href="#download">Download</a><a href="privacy.html">Privacy</a><a href="termini.html">Termini d'uso</a></nav>
+    <span class="grow"></span>
+    <nav aria-label="Link"><a href="#download">Download</a><a href="privacy.html">Privacy</a><a href="termini.html">Termini d'uso</a></nav>
   </div>
 </footer>
 
 <script>
-// testi usati dallo script (la pagina inglese ha i suoi)
 const L = {
   lang: 'it', dlMac: 'Scarica per Mac', dlWin: 'Scarica per Windows', otherWin: 'Hai Windows?', otherMac: 'Hai un Mac?',
   noteMac: 'macOS 13 o successivo · 358 MB · Accesso con Google', noteWin: 'Windows 10 e 11 · 155 MB · Accesso con Google',
@@ -664,26 +481,39 @@ const L = {
   months: ['gen','feb','mar','apr','mag','giu','lug','ago','set','ott','nov','dic'], count: ' aggiornamenti dal lancio',
   types: { feat: 'Novità', impr: 'Miglioramenti', fix: 'Correzioni' }, copied: 'Copiato', pressCopy: 'Premi Ctrl+C', copy: 'Copia',
 };
-// indirizzi dei file da scaricare (si cambiano qui quando cambia l'hosting)
+const REDIRECT = true;
 const DL = {
   win: 'https://github.com/saurroemanuele/vodcut-aggiornamenti/releases/latest/download/Noonframe-Setup.exe',
   mac: 'https://github.com/saurroemanuele/vodcut-aggiornamenti/releases/latest/download/NoonFrame-Mac.zip',
 };
 const tpl = document.getElementById('logo-tpl');
 document.querySelectorAll('[data-logo]').forEach((a) => a.prepend(tpl.content.cloneNode(true)));
-document.querySelectorAll('[data-logo-only]').forEach((a) => a.replaceWith(tpl.content.cloneNode(true)));
 document.querySelectorAll('[data-dl]').forEach((a) => { a.href = DL[a.dataset.dl]; });
 
-// lingua: chi ha il browser in un'altra lingua va alla versione inglese (una volta scelta, resta quella)
 document.querySelectorAll('[data-lang]').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('nuvora.lang', a.dataset.lang); } catch (e) { /* */ } }));
-(function () {
+if (REDIRECT) (function () {
   let saved = null;
   try { saved = localStorage.getItem('nuvora.lang'); } catch (e) { /* */ }
   const want = saved || ((navigator.language || 'it').toLowerCase().startsWith('it') ? 'it' : 'en');
   if (want !== L.lang) { const a = document.querySelector('[data-lang="' + want + '"]'); if (a) location.replace(a.href); }
 })();
 
-// sistema del visitatore: il pulsante grande scarica la versione giusta
+// barra con sfondo quando si scorre; l'app si raddrizza mentre scorri
+const nav = document.getElementById('nav'), shot = document.getElementById('shot');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let ticking = false;
+function onScroll() {
+  ticking = false;
+  nav.classList.toggle('scrolled', scrollY > 10);
+  if (reduce) return;
+  const r = shot.getBoundingClientRect();
+  const k = Math.max(0, Math.min(1, (innerHeight - r.top) / (innerHeight * 0.85)));
+  shot.style.setProperty('--rx', (24 - 24 * k).toFixed(2) + 'deg');
+  shot.style.setProperty('--sc', (0.94 + 0.06 * k).toFixed(3));
+}
+addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+onScroll();
+
 const ua = navigator.userAgent || '';
 const plat = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
 const os = /Mac|iPhone|iPad/i.test(plat + ua) ? 'mac' : /Win/i.test(plat + ua) ? 'win' : null;
@@ -692,16 +522,13 @@ const main = document.getElementById('dl-main');
 const note = document.getElementById('dl-note');
 if (os && !mobile) {
   main.href = DL[os];
-  main.textContent = os === 'mac' ? L.dlMac : L.dlWin;
+  main.querySelector('span').textContent = os === 'mac' ? L.dlMac : L.dlWin;
   document.getElementById('dl-other').textContent = os === 'mac' ? L.otherWin : L.otherMac;
   note.textContent = os === 'mac' ? L.noteMac : L.noteWin;
-} else if (mobile) {
-  note.textContent = L.mobile;
-}
+} else if (mobile) note.textContent = L.mobile;
 if (mobile) document.body.classList.add('mobile');
 document.getElementById('dl-phone').addEventListener('click', () => setTimeout(() => document.getElementById('ph-email').focus({ preventScroll: true }), 450));
 
-// dal telefono: il link per il PC arriva via email
 const FN = 'https://jhoidpugjjvvkjccyrxg.supabase.co/functions/v1/download-link';
 const form = document.getElementById('phone-form');
 form.addEventListener('submit', async (e) => {
@@ -724,31 +551,24 @@ form.addEventListener('submit', async (e) => {
   btn.disabled = false;
 });
 
-// onde del prima/dopo (disegnate una volta, uguali a ogni caricamento)
-function wave(el, n, keepSilence) {
-  let s = 7;
-  const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
-  for (let i = 0; i < n; i++) {
-    const silent = ((i % 23) > 16) || ((i % 41) > 36);
-    if (silent && !keepSilence) continue;
-    const b = document.createElement('i');
-    const h = silent ? 6 + rnd() * 6 : 22 + rnd() * 78;
-    b.style.height = h + '%';
-    if (silent) b.className = 'off';
-    el.append(b);
-  }
-}
-wave(document.getElementById('wave-before'), 92, true);
-wave(document.getElementById('wave-after'), 92, false);
+let seed = 11;
+const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+const extw = document.getElementById('extw');
+for (let i = 0; i < 60; i++) { const b = document.createElement('i'); b.style.height = (20 + rnd() * 80) + '%'; extw.append(b); }
+const voice = document.getElementById('voice');
+for (let i = 0; i < 26; i++) { const b = document.createElement('i'); b.style.height = (18 + Math.abs(Math.sin(i * 0.6)) * 60 + rnd() * 12) + '%'; voice.append(b); }
 
-// ultimi aggiornamenti: li legge dallo stesso elenco che usa l'app (se non raggiungibile resta quello scritto sopra)
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.1 });
+document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+
 fetch('https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/changelog.json', { cache: 'no-store' })
   .then((r) => r.ok ? r.json() : Promise.reject())
   .then((list) => {
     if (!Array.isArray(list) || !list.length) return;
-    document.getElementById('upd-count').textContent = list.length + L.count;
+    document.getElementById('upd-n').textContent = list.length;
+    document.getElementById('upd-big').textContent = list.length;
     const ul = document.getElementById('upd-list');
-    ul.replaceChildren(...list.slice(0, 5).map((v) => {
+    ul.replaceChildren(...list.slice(0, 4).map((v) => {
       const li = document.createElement('li');
       const d = String(v.date || '').split('-');
       const t = document.createElement('time'); t.textContent = d.length === 3 ? (+d[2]) + ' ' + L.months[+d[1] - 1] : '';
@@ -757,7 +577,7 @@ fetch('https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/mai
       const it = (v.items || [])[0] || {};
       let txt = L.lang === 'en' ? (it.en || L.types[it.type] || '') : (it.text || '');
       txt = txt.split(/;\s|\s\(/)[0].trim();
-      if (txt.length > 78) txt = txt.slice(0, 76).replace(/\s+\S*$/, '') + '…';
+      if (txt.length > 84) txt = txt.slice(0, 82).replace(/\s+\S*$/, '') + '…';
       div.append(b, txt);
       li.append(t, div); return li;
     }));
@@ -771,6 +591,5 @@ document.getElementById('copy-cmd').addEventListener('click', async (e) => {
   setTimeout(() => { e.target.textContent = L.copy; }, 1800);
 });
 </script>
-
 </body>
 </html>
