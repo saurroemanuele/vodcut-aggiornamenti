@@ -1,13 +1,29 @@
 {
- "version": "1.5.157",
+ "version": "1.5.158",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.157.zip",
- "size": 7824723,
- "sha256": "ff51048222f33c0fc15f2f0f5c48722cd3994c0edd93267a89f2892ecfe30d1d",
- "sig": "lTaCcyVmN/Z7Qgy5TepTSQScN7LBh+4mG18nZnAj7UWJK4JhGjiuwafC9dT92TGSN8rSpIsj5r7rk7MsX56OBw==",
- "notes": "Miglioramento: Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
- "date": "2026-10-05",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.158.zip",
+ "size": 7829986,
+ "sha256": "a91e608554cd3046de872e5db94cd2bd22b6339e073db337cd274f1e29e5bc1b",
+ "sig": "Q16J5MepgyTNyvPDS769LME84PFFDC7/mo4I7+AlscZR9uAubKK/viLDD4SakloBNsWZjib9aDfTTsdPoMmiDQ==",
+ "notes": "Correzione: Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS\nMiglioramento: Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
+ "date": "2026-10-06",
  "history": [
+  {
+   "version": "1.5.158",
+   "date": "2026-10-06",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS",
+     "en": "Clip previews now really update after an edit. No more cryptic errors from the macOS video player"
+    },
+    {
+     "type": "impr",
+     "text": "Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
+     "en": "Clip format: choose right away between the person full screen or the whole video with a blurred background, also for all existing clips. In podcasts and videos without a webcam, clips start full screen on the person, and automatic zooms become gentle push-ins on the face"
+    }
+   ]
+  },
   {
    "version": "1.5.157",
    "date": "2026-10-05",
@@ -329,17 +345,6 @@
      "type": "impr",
      "text": "Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
      "en": "Fixed downloading Kick VODs from a link (404 error): NoonFrame now finds them even when Kick changes its address."
-    }
-   ]
-  },
-  {
-   "version": "1.5.128",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali dalle live: l'AI trova i momenti migliori del VOD e li trasforma in clip verticali già montate (webcam sopra, gioco sotto, sottotitoli grandi, zoom sulle reazioni), con punteggio di viralità, titolo e motivo, in una galleria stile Opus. Nuovo stile Live nel Montaggio AI: l'AI guarda parole e volume e scegli quanto deve durare il video per YouTube.",
-     "en": "Viral clips from streams: the AI finds the best moments of your VOD and turns them into ready-made vertical clips (webcam on top, gameplay below, big captions, zooms on reactions), with a virality score, title and reason, in an Opus-style gallery. New Live style in AI Edit: the AI looks at words and volume, and you choose how long the YouTube video should be."
     }
    ]
   }

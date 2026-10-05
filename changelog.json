@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.158",
+  "date": "2026-10-06",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS",
+    "en": "Clip previews now really update after an edit. No more cryptic errors from the macOS video player"
+   },
+   {
+    "type": "impr",
+    "text": "Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
+    "en": "Clip format: choose right away between the person full screen or the whole video with a blurred background, also for all existing clips. In podcasts and videos without a webcam, clips start full screen on the person, and automatic zooms become gentle push-ins on the face"
+   }
+  ]
+ },
+ {
   "version": "1.5.157",
   "date": "2026-10-05",
   "items": [
