@@ -214,6 +214,19 @@ S.update({
     "end_p": ("Gratis per Windows e Mac. Entri con Google e parti.", "Free for Windows and Mac. Sign in with Google and go."),
 })
 
+# ------------------------------------------------------------------ SEO
+S.update({
+    "title": ("Clip AI gratis dalle tue live per TikTok e Shorts | NoonFrame",
+              "Free AI clips from your streams for TikTok & Shorts | NoonFrame"),
+    "desc": ("Trasforma le live di Twitch, Kick e YouTube in clip virali con l'AI: punteggio, sottotitoli e zoom automatici. Editor e grafica inclusi. Gratis per PC e Mac.",
+             "Turn Twitch, Kick and YouTube streams into viral clips with AI: virality score, auto subtitles and zooms. Editor and design included. Free for PC and Mac."),
+    "sub2": ("Clip virali dalle tue live di Twitch, Kick e YouTube, editor video, grafica e video AI. In un'app gratuita per Windows e Mac.",
+             "Viral clips from your Twitch, Kick and YouTube streams, video editor, design and AI video. In one free app for Windows and Mac."),
+    "og_locale": ("it_IT", "en_US"), "og_alt": ("en_US", "it_IT"),
+    "canon": ("https://noonframe.com/", "https://noonframe.com/en/"),
+    "og_img_alt": ("NoonFrame, lo studio AI per creator", "NoonFrame, the AI studio for creators"),
+})
+
 DISCORD = "https://discord.gg/5cQvNEBfee"
 
 TPL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "landing.tpl.html"), encoding="utf-8").read()
@@ -227,6 +240,22 @@ def build(lang, prefix, other_href, self_is_it, out, preview, legal):
     html = (html.replace("{{P}}", prefix).replace("{{OTHER}}", other_href).replace("{{DISCORD}}", DISCORD).replace("{{LEGAL}}", legal)
             .replace("{{ROBOTS}}", '<meta name="robots" content="noindex">' if preview else "")
             .replace("{{REDIRECT}}", "false" if preview else "true"))
+    import json as _json
+    ld = [
+        {"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "NoonFrame",
+         "operatingSystem": "Windows 10, Windows 11, macOS 13+", "applicationCategory": "MultimediaApplication",
+         "applicationSubCategory": "Video editor",
+         "description": S["desc"][i], "url": S["canon"][i], "image": "https://noonframe.com/shots/og.png",
+         "inLanguage": ["it", "en"], "downloadUrl": S["canon"][i] + "#download",
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+         "publisher": {"@type": "Organization", "name": "NoonFrame", "url": "https://noonframe.com/", "logo": "https://noonframe.com/logo.png"}},
+        {"@context": "https://schema.org", "@type": "Organization", "name": "NoonFrame", "url": "https://noonframe.com/",
+         "logo": "https://noonframe.com/logo.png", "email": "business@noonframe.com", "sameAs": [DISCORD]},
+        {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": S[q][i], "acceptedAnswer": {"@type": "Answer", "text": S[a][i]}}
+            for q, a in (("q1", "a1"), ("q2", "a2"), ("q3", "a3"), ("q4", "a4"), ("q6", "a6"))]},
+    ]
+    html = html.replace("{{JSONLD}}", "".join('<script type="application/ld+json">' + _json.dumps(x, ensure_ascii=False).replace("</", "<\\/") + "</script>\n" for x in ld))
     if self_is_it:
         langs = ('<span class="lang on" aria-current="true" lang="it">IT</span>'
                  f'<a class="lang" href="{other_href}" data-lang="en" lang="en">EN</a>')

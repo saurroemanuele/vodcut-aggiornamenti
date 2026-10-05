@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /anteprima/
+
+Sitemap: https://noonframe.com/sitemap.xml
