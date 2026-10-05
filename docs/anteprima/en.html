@@ -334,6 +334,30 @@ figure { margin: 0; }
 .chap.w .bleed.right img { max-height: none; }
 .chap.w#download .phone input[type=email] { background: #fff; color: var(--p-ink); box-shadow: inset 0 0 0 1px var(--p-line); }
 
+/* striscia di clip che scorre */
+.reel { padding: 120px 0 130px; overflow: hidden; }
+.reel-h { font-size: clamp(30px, 4vw, 48px); }
+.reel-track { margin-top: 36px; padding: 20px 0 40px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
+.reel-row { display: flex; gap: 18px; width: max-content; animation: reel 70s linear infinite; }
+.reel-track:hover .reel-row { animation-play-state: paused; }
+@keyframes reel { to { transform: translateX(calc(-50% - 9px)); } }
+.rc { position: relative; margin: 0; width: 200px; flex: none; border-radius: 16px; overflow: hidden; box-shadow: 0 0 0 1px rgba(160,190,255,.16), 0 24px 60px -24px rgba(0,0,0,.9); }
+.rc:nth-child(odd) { transform: translateY(18px); }
+.rc img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
+.rc figcaption { position: absolute; left: 8px; right: 8px; bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+.rc b { padding: 3px 8px; border-radius: 8px; background: rgba(5,10,28,.82); color: var(--score); font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.rc span { padding: 4px 8px; border-radius: 8px; background: rgba(30,107,255,.9); color: #fff; font-size: 11px; font-weight: 700; }
+/* chiusura con l'app in prospettiva */
+.end { padding-bottom: 0; }
+.end .lead { text-align: center; }
+.end-stage { position: relative; width: min(1100px, 100% - 32px); margin: 64px auto 0; perspective: 1800px; height: 340px; overflow: hidden; }
+.end-stage::before { content: ""; position: absolute; left: 15%; right: 15%; top: 10%; height: 80%; background: radial-gradient(closest-side, rgba(76,141,255,.55), transparent); filter: blur(40px); }
+.end-stage img { position: relative; width: 100%; border-radius: 16px; transform-origin: 50% 0; transform: rotateX(28deg); box-shadow: 0 0 0 1px rgba(160,190,255,.18), 0 0 80px -20px rgba(30,107,255,.6);
+  -webkit-mask-image: linear-gradient(180deg, #000 12%, transparent 46%); mask-image: linear-gradient(180deg, #000 12%, transparent 46%); }
+.end-glow { display: none; }
+@media (max-width: 640px) { .rc { width: 150px; } .end-stage { height: 200px; } .reel { padding: 80px 0 90px; } }
+@media (prefers-reduced-motion: reduce) { .reel-row { animation: none; } .reel-track { overflow-x: auto; } }
+
 .rv { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
 .rv.in { opacity: 1; transform: none; }
 
@@ -417,6 +441,11 @@ figure { margin: 0; }
     </div>
   </div>
 </div>
+
+<section class="reel" aria-label="From one stream, clips like these.">
+  <div class="wrap center rv"><h2 class="reel-h">From one stream, clips like these.</h2><p class="lead">Each with a virality score and a suggested platform.</p></div>
+  <div class="reel-track rv" aria-hidden="true"><div class="reel-row"><figure class="rc"><img src="../shots/reel0.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>96</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel1.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>93</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel2.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>91</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel3.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>88</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel4.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>86</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel5.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>82</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel6.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>94</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel7.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>90</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel8.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>87</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel9.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>85</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel10.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>89</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel11.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>84</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel0.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>96</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel1.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>93</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel2.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>91</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel3.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>88</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel4.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>86</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel5.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>82</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel6.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>94</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel7.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>90</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel8.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>87</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="../shots/reel9.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>85</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="../shots/reel10.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>89</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="../shots/reel11.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>84</b><span>Shorts</span></figcaption></figure></div></div>
+</section>
 
 <section class="chap w" id="prodotto">
   <div class="wrap chap-grid">
@@ -552,9 +581,10 @@ figure { margin: 0; }
 <div class="end">
   <div class="wrap">
     <h2>The AI studio for creators.</h2>
-    <div class="cta"><a class="btn btn-primary" href="#download">Download free</a></div>
+    <p class="lead" style="margin-inline:auto">Free for Windows and Mac. Sign in with Google and go.</p>
+    <div class="cta"><a class="btn btn-primary" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download free</a></div>
   </div>
-  <div class="end-glow"></div>
+  <div class="end-stage"><img src="../shots/editor.webp" width="2400" height="1500" alt="" loading="lazy"></div>
 </div>
 </main>
 

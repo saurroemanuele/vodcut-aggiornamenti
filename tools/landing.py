@@ -208,6 +208,12 @@ S.update({
     "g_list": ("Livelli e maschere · Rimozione sfondo con l'AI · Riempimento generativo · Apre e salva PSD", "Layers and masks · AI background removal · Generative fill · Opens and saves PSD"),
 })
 
+S.update({
+    "reel_h": ("Da una sola live, clip così.", "From one stream, clips like these."),
+    "reel_p": ("Ognuna con punteggio di viralità e piattaforma consigliata.", "Each with a virality score and a suggested platform."),
+    "end_p": ("Gratis per Windows e Mac. Entri con Google e parti.", "Free for Windows and Mac. Sign in with Google and go."),
+})
+
 DISCORD = "https://discord.gg/5cQvNEBfee"
 
 TPL = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "landing.tpl.html"), encoding="utf-8").read()
