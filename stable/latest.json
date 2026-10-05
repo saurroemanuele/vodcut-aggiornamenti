@@ -1,13 +1,24 @@
 {
- "version": "1.5.156",
+ "version": "1.5.157",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.156.zip",
- "size": 7824296,
- "sha256": "163b925c1bb5ef2e79a27275390444075405617bb42c98bf36dc3cf14f5e0f66",
- "sig": "KladuyUPNieIKe0q6plsSWTJGhyppLrg9uiGyBolAkLJc13aTkgpT5NABoUhrywxOj+EsOEbSFVAhNUZBM2TDg==",
- "notes": "Miglioramento: Allunga o accorcia una clip prendendola dalla live: se l'AI ha tagliato l'inizio che serve a capire, sposti l'inizio prima (o la fine dopo) e le modifiche fatte restano. Dalla galleria e dall'editor della clip",
- "date": "2026-10-04",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.157.zip",
+ "size": 7824723,
+ "sha256": "ff51048222f33c0fc15f2f0f5c48722cd3994c0edd93267a89f2892ecfe30d1d",
+ "sig": "lTaCcyVmN/Z7Qgy5TepTSQScN7LBh+4mG18nZnAj7UWJK4JhGjiuwafC9dT92TGSN8rSpIsj5r7rk7MsX56OBw==",
+ "notes": "Miglioramento: Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
+ "date": "2026-10-05",
  "history": [
+  {
+   "version": "1.5.157",
+   "date": "2026-10-05",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
+     "en": "Viral clips: previews are no longer rebuilt every time you reopen the page, only when the clip actually changed"
+    }
+   ]
+  },
   {
    "version": "1.5.156",
    "date": "2026-10-04",
@@ -329,17 +340,6 @@
      "type": "impr",
      "text": "Clip virali dalle live: l'AI trova i momenti migliori del VOD e li trasforma in clip verticali già montate (webcam sopra, gioco sotto, sottotitoli grandi, zoom sulle reazioni), con punteggio di viralità, titolo e motivo, in una galleria stile Opus. Nuovo stile Live nel Montaggio AI: l'AI guarda parole e volume e scegli quanto deve durare il video per YouTube.",
      "en": "Viral clips from streams: the AI finds the best moments of your VOD and turns them into ready-made vertical clips (webcam on top, gameplay below, big captions, zooms on reactions), with a virality score, title and reason, in an Opus-style gallery. New Live style in AI Edit: the AI looks at words and volume, and you choose how long the YouTube video should be."
-    }
-   ]
-  },
-  {
-   "version": "1.5.127",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Animazioni AI migliori: l'AI usa 10 nuovi componenti premium (imbuto, linea del tempo, formula, classifica, torta, citazione e altri) e disegna su misura solo le idee che non coprono, controllandole a occhio prima di metterle. Negli effetti su misura puoi allegare uno screenshot di esempio da replicare.",
-     "en": "Better AI animations: the AI uses 10 new premium components (funnel, timeline, formula, ranking, pie, quote and more) and custom-designs only the ideas they don't cover, visually checking them before adding them. In custom effects you can attach an example screenshot to replicate."
     }
    ]
   }

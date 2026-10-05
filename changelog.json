@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.157",
+  "date": "2026-10-05",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
+    "en": "Viral clips: previews are no longer rebuilt every time you reopen the page, only when the clip actually changed"
+   }
+  ]
+ },
+ {
   "version": "1.5.156",
   "date": "2026-10-04",
   "items": [
