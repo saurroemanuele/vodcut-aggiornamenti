@@ -316,6 +316,24 @@ figure { margin: 0; }
   .flow { grid-template-columns: 1fr; }
 }
 
+/* capitoli chiari: sfondo bianco, stesso stile a linee */
+.chap.w { background: #FFFFFF; color: var(--p-ink); }
+.chap.w + .chap.w::before { background: linear-gradient(90deg, transparent, var(--p-line) 20%, var(--p-line) 80%, transparent); }
+.chap.w + .chap:not(.w)::before, .chap:not(.w) + .chap.w::before { display: none; }
+.chap.w .k { color: var(--blue); }
+.chap.w .lead, .chap.w .feats dd, .chap.w .price p, .chap.w .os-row small, .chap.w .first-d summary, .chap.w .first-d ol, .chap.w .mk, .chap.w .priv { color: var(--p-ink-2); }
+.chap.w h2 { color: var(--p-ink); }
+.chap.w .feats div, .chap.w .inline-list.col li, .chap.w .os-row { border-color: var(--p-line) !important; }
+.chap.w .inline-list.col li { color: var(--p-ink); }
+.chap.w .price > div + div { border-color: var(--p-line); }
+.chap.w .price h3 { color: var(--blue); }
+.chap.w .soon { color: var(--p-ink) !important; }
+.chap.w .first-d b, .chap.w .lead b { color: var(--p-ink) !important; }
+.chap.w .bleed img { -webkit-mask-image: none; mask-image: none; box-shadow: 0 0 0 1px rgba(10,22,56,.08), 0 40px 90px -30px rgba(10,22,56,.45); }
+.chap.w .bleed::before { background: radial-gradient(closest-side, rgba(30,107,255,.22), transparent); }
+.chap.w .bleed.right img { max-height: none; }
+.chap.w#download .phone input[type=email] { background: #fff; color: var(--p-ink); box-shadow: inset 0 0 0 1px var(--p-line); }
+
 .rv { opacity: 0; transform: translateY(14px); transition: opacity .7s ease, transform .7s ease; }
 .rv.in { opacity: 1; transform: none; }
 
@@ -400,7 +418,7 @@ figure { margin: 0; }
   </div>
 </div>
 
-<section class="chap" id="prodotto">
+<section class="chap w" id="prodotto">
   <div class="wrap chap-grid">
     <div class="chap-tx rv">
       <span class="k">Clip AI</span>
@@ -430,7 +448,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="grafica">
+<section class="chap w" id="grafica">
   <div class="wrap chap-grid flip">
     <figure class="bleed left rv"><img src="shots/design.webp" width="2000" height="1250" alt="La grafica di NoonFrame con una miniatura" loading="lazy"></figure>
     <div class="chap-tx rv">
@@ -473,7 +491,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="prezzo">
+<section class="chap w" id="prezzo">
   <div class="wrap">
     <div class="chap-head rv"><div><span class="k">Prezzo</span><h2>Gratis. L'AI solo se la usi.</h2></div></div>
     <div class="price rv">
@@ -483,7 +501,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="download">
+<section class="chap w" id="download">
   <div class="wrap dlx">
     <div class="rv">
       <h2>Scarica NoonFrame.</h2>
