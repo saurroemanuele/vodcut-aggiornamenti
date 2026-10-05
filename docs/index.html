@@ -309,6 +309,19 @@ figure { margin: 0; }
 .price h3 { margin: 0; font-size: 14px; font-weight: 600; color: var(--blue-hi); }
 .price .pv { margin-top: 14px; font-size: clamp(40px, 5vw, 64px); font-weight: 650; letter-spacing: -.05em; line-height: 1; }
 .price p { margin: 16px 0 0; color: var(--fg-2); max-width: 460px; }
+.plans { margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--line-2); display: grid; grid-template-columns: repeat(3, 1fr); }
+.plan { padding: 0 32px; }
+.plan:first-child { padding-left: 0; }
+.plan + .plan { border-left: 1px solid var(--line-2); }
+.plan h3 { margin: 0; font-size: 14px; font-weight: 600; color: var(--blue-hi); }
+.plan .pp { margin-top: 12px; font-size: clamp(32px, 3.6vw, 44px); font-weight: 650; letter-spacing: -.045em; line-height: 1; font-variant-numeric: tabular-nums; }
+.plan .pp small { font-size: 15px; font-weight: 500; letter-spacing: -.01em; margin-left: 4px; color: var(--fg-2); }
+.plan p { margin: 12px 0 0; color: var(--fg-2); font-size: 15px; }
+.plan .pc { color: var(--fg); font-weight: 600; }
+.plan .yr { font-size: 14px; }
+.plans-foot { margin-top: 36px; display: grid; gap: 6px; font-size: 15px; color: var(--fg-2); max-width: 760px; }
+.plans-foot p { margin: 0; }
+.plans-foot .soon { margin-top: 10px; }
 .dlx { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .dlx > * { min-width: 0; }
 .dlx .os-row { background: transparent; box-shadow: none; border-radius: 0; padding: 18px 0; border-top: 1px solid var(--line-2); }
@@ -334,6 +347,9 @@ figure { margin: 0; }
 @media (max-width: 640px) {
   .chap { padding: 80px 0; }
   .feats, .price { grid-template-columns: 1fr; }
+  .plans { grid-template-columns: 1fr; padding-top: 8px; }
+  .plan, .plan:first-child { padding: 28px 0 0; }
+  .plan + .plan { border-left: 0; border-top: 1px solid var(--line-2); margin-top: 28px; }
   .price > div + div { padding: 32px 0 0; border-left: 0; border-top: 1px solid var(--line-2); margin-top: 32px; }
   .price > div { padding-right: 0; }
   .inline-list { flex-direction: column; align-items: center; }
@@ -352,6 +368,10 @@ figure { margin: 0; }
 .chap.w .inline-list.col li { color: var(--p-ink); }
 .chap.w .price > div + div { border-color: var(--p-line); }
 .chap.w .price h3 { color: var(--blue); }
+.chap.w .plan h3 { color: var(--blue); }
+.chap.w .plans, .chap.w .plan + .plan { border-color: var(--p-line); }
+.chap.w .plan p, .chap.w .plan .pp small, .chap.w .plans-foot { color: var(--p-ink-2); }
+.chap.w .plan .pc, .chap.w .plans-foot b { color: var(--p-ink); }
 .chap.w .soon { color: var(--p-ink) !important; }
 .chap.w .first-d b, .chap.w .lead b { color: var(--p-ink) !important; }
 .chap.w .bleed img { -webkit-mask-image: none; mask-image: none; box-shadow: 0 0 0 1px rgba(10,22,56,.08), 0 40px 90px -30px rgba(10,22,56,.45); }
@@ -550,7 +570,17 @@ figure { margin: 0; }
     <div class="chap-head rv"><div><span class="k">Prezzo</span><h2>Gratis. L'AI solo se la usi.</h2></div></div>
     <div class="price rv">
       <div><h3>Gratis, per sempre</h3><div class="pv">0 €</div><p>Editor, grafica, sottotitoli, rimozione sfondo, esportazione senza filigrana. Gira sul tuo computer.</p></div>
-      <div><h3>Crediti AI</h3><div class="pv">A consumo</div><p>Per clip AI, immagini e video AI usi i crediti: ne ricevi alcuni in regalo appena entri. Oppure collega le tue chiavi AI e paghi direttamente il servizio.</p><p class="soon"><i></i><span>Abbonamenti con più crediti in arrivo, con un'offerta di lancio per chi c'è dall'inizio.</span></p></div>
+      <div><h3>Crediti AI</h3><div class="pv">A consumo</div><p>Per clip AI, immagini e video AI usi i crediti: ne ricevi alcuni in regalo appena entri. Oppure collega le tue chiavi AI e paghi direttamente il servizio.</p></div>
+    </div>
+    <div class="plans rv">
+      <div class="plan"><h3>Starter</h3><div class="pp">11,99 €<small>/mese</small></div><p class="pc">1.000 crediti al mese</p><p>Per iniziare con l'AI.</p><p class="yr">Oppure 119,90 € all'anno: 2 mesi gratis.</p></div>
+      <div class="plan"><h3>Pro</h3><div class="pp">29,99 €<small>/mese</small></div><p class="pc">2.800 crediti al mese</p><p>Per chi pubblica ogni giorno. Fino a 12 generazioni insieme.</p><p class="yr">Oppure 299,90 € all'anno: 2 mesi gratis.</p></div>
+      <div class="plan"><h3>Ultimate</h3><div class="pp">69,99 €<small>/mese</small></div><p class="pc">6.500 crediti al mese</p><p>Tutti i modelli video premium. Fino a 30 generazioni insieme.</p><p class="yr">Oppure 699,90 € all'anno: 2 mesi gratis.</p></div>
+    </div>
+    <div class="plans-foot rv">
+      <p><b>Ricariche una tantum:</b> 500 crediti a 5,99 €, 1.500 crediti a 14,99 €. Non scadono.</p>
+      <p>Prezzi in euro, IVA inclusa. L'abbonamento si rinnova da solo e lo disdici quando vuoi, dall'app. <a href="termini.html">Pagamenti, disdetta e rimborsi</a></p>
+      <p class="soon"><i></i><span>I piani si attivano dall'app a breve, con un'offerta di lancio per chi c'è dall'inizio.</span></p>
     </div>
   </div>
 </section>

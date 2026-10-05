@@ -215,6 +215,23 @@ S.update({
 })
 
 # ------------------------------------------------------------------ SEO
+# piani (stessi prezzi di credits_plans / credits_packs su Supabase: se cambiano li', cambiarli anche qui)
+S.update({
+    "pr_soon": ("I piani si attivano dall'app a breve, con un'offerta di lancio per chi c'è dall'inizio.", "Plans will be available in the app soon, with a launch offer for early users."),
+    "pl_mo": ("/mese", "/month"),
+    "pl1_p": ("11,99 €", "€11.99"), "pl1_c": ("1.000 crediti al mese", "1,000 credits a month"), "pl1_t": ("Per iniziare con l'AI.", "To get started with AI."),
+    "pl1_y": ("Oppure 119,90 € all'anno: 2 mesi gratis.", "Or €119.90 a year: 2 months free."),
+    "pl2_p": ("29,99 €", "€29.99"), "pl2_c": ("2.800 crediti al mese", "2,800 credits a month"), "pl2_t": ("Per chi pubblica ogni giorno. Fino a 12 generazioni insieme.", "For daily creators. Up to 12 generations at once."),
+    "pl2_y": ("Oppure 299,90 € all'anno: 2 mesi gratis.", "Or €299.90 a year: 2 months free."),
+    "pl3_p": ("69,99 €", "€69.99"), "pl3_c": ("6.500 crediti al mese", "6,500 credits a month"), "pl3_t": ("Tutti i modelli video premium. Fino a 30 generazioni insieme.", "All premium video models. Up to 30 generations at once."),
+    "pl3_y": ("Oppure 699,90 € all'anno: 2 mesi gratis.", "Or €699.90 a year: 2 months free."),
+    "pl_top_k": ("Ricariche una tantum:", "One-time top-ups:"),
+    "pl_top": ("500 crediti a 5,99 €, 1.500 crediti a 14,99 €. Non scadono.", "500 credits for €5.99, 1,500 credits for €14.99. They don't expire."),
+    "pl_note": ("Prezzi in euro, IVA inclusa. L'abbonamento si rinnova da solo e lo disdici quando vuoi, dall'app.",
+                "Prices in euros, VAT included. Your plan renews automatically and you can cancel anytime from the app."),
+    "pl_terms": ("Pagamenti, disdetta e rimborsi", "Payments, cancellation and refunds"),
+})
+
 S.update({
     "title": ("Clip AI gratis dalle tue live per TikTok e Shorts | NoonFrame",
               "Free AI clips from your streams for TikTok & Shorts | NoonFrame"),
