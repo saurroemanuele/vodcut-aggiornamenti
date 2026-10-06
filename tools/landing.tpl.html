@@ -356,6 +356,19 @@ figure { margin: 0; }
 
 /* capitoli chiari: sfondo bianco, stesso stile a linee */
 .chap.w { background: #FFFFFF; color: var(--p-ink); }
+/* passaggi sfumati tra capitoli scuri e chiari (niente tagli netti): il colore scivola passando per un blu morbido */
+:root { --blend: 260px; --mix-d: #0E1F4A; --mix-m: #4F74CF; --mix-l: #C9D8FF; }
+.reel, .chap:not(.w) { background-color: var(--ink-0); }
+:is(.chap, .reel):is(.from-d, .from-w, .to-d, .to-w) { background-image: var(--g-top, none), var(--g-bot, none); background-repeat: no-repeat; background-size: 100% var(--blend);
+  background-position: top, bottom; }
+.chap.w.from-d { --g-top: linear-gradient(var(--mix-m), var(--mix-l) 32%, #F2F6FF 62%, #FFFFFF); }
+.chap.w.to-d { --g-bot: linear-gradient(#FFFFFF, #F2F6FF 38%, var(--mix-l) 68%, var(--mix-m)); }
+.from-w { --g-top: linear-gradient(var(--mix-m), var(--mix-d) 45%, #08112A 75%, var(--ink-0)); }
+.to-w { --g-bot: linear-gradient(var(--ink-0), #08112A 25%, var(--mix-d) 55%, var(--mix-m)); }
+.from-d, .from-w { padding-top: calc(var(--blend) * .72); }
+.to-d, .to-w { padding-bottom: calc(var(--blend) * .72); }
+.from-d::before, .from-w::before { display: none !important; }
+@media (max-width: 640px) { :root { --blend: 180px; } }
 .chap.w + .chap.w::before { background: linear-gradient(90deg, transparent, var(--p-line) 20%, var(--p-line) 80%, transparent); }
 .chap.w + .chap:not(.w)::before, .chap:not(.w) + .chap.w::before { display: none; }
 .chap.w .k { color: var(--blue); }
@@ -484,12 +497,12 @@ figure { margin: 0; }
   </div>
 </div>
 
-<section class="reel" aria-label="{{reel_h}}">
+<section class="reel to-w" aria-label="{{reel_h}}">
   <div class="wrap center rv"><h2 class="reel-h">{{reel_h}}</h2><p class="lead">{{reel_p}}</p></div>
   <div class="reel-track rv" aria-hidden="true"><div class="reel-row"><figure class="rc"><img src="{{P}}shots/reel0.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>96</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel1.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>93</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel2.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>91</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel3.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>88</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel4.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>86</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel5.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>82</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel6.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>94</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel7.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>90</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel8.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>87</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel9.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>85</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel10.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>89</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel11.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>84</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel0.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>96</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel1.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>93</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel2.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>91</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel3.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>88</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel4.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>86</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel5.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>82</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel6.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>94</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel7.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>90</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel8.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>87</b><span>Shorts</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel9.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>85</b><span>Reels</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel10.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>89</b><span>TikTok</span></figcaption></figure><figure class="rc"><img src="{{P}}shots/reel11.webp" width="360" height="640" alt="" loading="lazy"><figcaption><b>84</b><span>Shorts</span></figcaption></figure></div></div>
 </section>
 
-<section class="chap w" id="prodotto">
+<section class="chap w from-d to-d" id="prodotto">
   <div class="wrap chap-grid">
     <div class="chap-tx rv">
       <span class="k">{{b1h}}</span>
@@ -506,7 +519,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="editor">
+<section class="chap from-w to-w" id="editor">
   <div class="wrap">
     <div class="chap-head rv">
       <div><span class="k">{{ed2_k}}</span><h2>{{ed2_h}}</h2></div>
@@ -519,7 +532,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap w" id="grafica">
+<section class="chap w from-d to-d" id="grafica">
   <div class="wrap chap-grid flip">
     <figure class="bleed left rv"><img src="{{P}}shots/design.webp" width="2000" height="1250" alt="{{shot_alt4}}" loading="lazy"></figure>
     <div class="chap-tx rv">
@@ -531,7 +544,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="video-ai">
+<section class="chap from-w" id="video-ai">
   <div class="wrap">
     <div class="chap-head rv">
       <div><span class="k">{{ai_k}}</span><h2>{{ai_h}}</h2></div>
@@ -546,7 +559,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="community">
+<section class="chap to-w" id="community">
   <div class="wrap cm">
     <div class="rv">
       <span class="k">{{cm_k}}</span>
@@ -562,7 +575,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap w" id="prezzo">
+<section class="chap w from-d" id="prezzo">
   <div class="wrap">
     <div class="chap-head rv"><div><span class="k">{{pr_k}}</span><h2>{{pr2_h}}</h2></div></div>
     <div class="price rv">
@@ -582,7 +595,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap w" id="download">
+<section class="chap w to-d" id="download">
   <div class="wrap dlx">
     <div class="rv">
       <h2>{{dl_h}}</h2>
@@ -617,7 +630,7 @@ figure { margin: 0; }
   </div>
 </section>
 
-<section class="chap" id="domande">
+<section class="chap from-w" id="domande">
   <div class="wrap">
     <div class="chap-head rv"><div><h2>{{faq2_h}}</h2></div></div>
     <div class="faq rv">
