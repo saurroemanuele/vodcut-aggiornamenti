@@ -1,13 +1,29 @@
 {
- "version": "1.5.159",
+ "version": "1.5.160",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.159.zip",
- "size": 7834717,
- "sha256": "9449cfdb658e579c15248828f3a564c14ff4cfa58daec9b0195d5a9553cade65",
- "sig": "GhFrXIEHVxTPCW7qXCTTRGkXYtRlxVZY27x22VNnryIFfhyQPFZ9DjNsW98MmwAzeyxyumtn3eJ3O+QE+4pwDA==",
- "notes": "Correzione: Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta\nMiglioramento: Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.160.zip",
+ "size": 7835844,
+ "sha256": "d9f7af58ddb99738f80cf44c65f12436fc103e575a4e73cd27504b2c99cfc414",
+ "sig": "pjfWLZUnQSdSwfsMDsNH5vN/ruwn6GM9FGPsv5i4EdGfmiDurM1U+gHAannl23fCSZv5MP/6jQu/vcLLFI45DA==",
+ "notes": "Correzione: Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori\nMiglioramento: Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
  "date": "2026-10-06",
  "history": [
+  {
+   "version": "1.5.160",
+   "date": "2026-10-06",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori",
+     "en": "Q/W (trim before/after the playhead) no longer shows an error when the selected item is not under the playhead: it trims the clip under the playhead; simple hints no longer show up as errors"
+    },
+    {
+     "type": "impr",
+     "text": "Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
+     "en": "Clip transcript now at the top of the Text panel, showing only the clip's text; zooms: apply the effect or magnification to the following zooms, and new zooms start with the last effect you chose; more varied TikTok/Reels/Shorts suggestions"
+    }
+   ]
+  },
   {
    "version": "1.5.159",
    "date": "2026-10-06",
@@ -339,17 +355,6 @@
      "type": "impr",
      "text": "Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
      "en": "Much cleaner AI background removal: a new edge model (hair, shoulders), no more halo around the person even on low-quality video, and about 3x faster cutouts."
-    }
-   ]
-  },
-  {
-   "version": "1.5.130",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
-     "en": "Kick VOD downloads: newer VODs (links with IDs like 01a1…), which Kick stores in a different system, now work too."
     }
    ]
   }

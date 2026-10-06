@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.160",
+  "date": "2026-10-06",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori",
+    "en": "Q/W (trim before/after the playhead) no longer shows an error when the selected item is not under the playhead: it trims the clip under the playhead; simple hints no longer show up as errors"
+   },
+   {
+    "type": "impr",
+    "text": "Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
+    "en": "Clip transcript now at the top of the Text panel, showing only the clip's text; zooms: apply the effect or magnification to the following zooms, and new zooms start with the last effect you chose; more varied TikTok/Reels/Shorts suggestions"
+   }
+  ]
+ },
+ {
   "version": "1.5.159",
   "date": "2026-10-06",
   "items": [
