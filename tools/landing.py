@@ -215,6 +215,18 @@ S.update({
 })
 
 # ------------------------------------------------------------------ SEO
+# landing v4 (una pagina scura, cinque parti)
+S.update({
+    "nav_what": ("Cosa fa", "What it does"),
+    "t_h": ("Tutto quello che ti serve. In un'app.", "Everything you need. In one app."),
+    "t_p": ("Dalla live alla clip pubblicata, senza saltare tra quattro programmi diversi.", "From stream to published clip, without jumping between four different apps."),
+    "pr_free_n": ("Gratis", "Free"),
+    "pr_free_c": ("Per sempre", "Forever"),
+    "dl_free_p2": ("Gratis, senza filigrana. Entri con Google e parti.", "Free, no watermark. Sign in with Google and go."),
+    "dl_win_b": ("Scarica per Windows", "Download for Windows"),
+    "dl_mac_b": ("Scarica per Mac", "Download for Mac"),
+})
+
 # piani (stessi prezzi di credits_plans / credits_packs su Supabase: se cambiano li', cambiarli anche qui)
 S.update({
     "pr_soon": ("I piani si attivano dall'app a breve, con un'offerta di lancio per chi c'è dall'inizio.", "Plans will be available in the app soon, with a launch offer for early users."),
