@@ -418,21 +418,34 @@ const L = {
   types: { feat: 'Novità', impr: 'Miglioramenti', fix: 'Correzioni' }, copied: 'Copiato', pressCopy: 'Premi Ctrl+C', copy: 'Copia',
 };
 const REDIRECT = true;
+let GOING = false;
 const DL = {
   win: 'https://github.com/saurroemanuele/vodcut-aggiornamenti/releases/latest/download/Noonframe-Setup.exe',
   mac: 'https://github.com/saurroemanuele/vodcut-aggiornamenti/releases/latest/download/NoonFrame-Mac.zip',
 };
 const tpl = document.getElementById('logo-tpl');
 document.querySelectorAll('[data-logo]').forEach((a) => a.prepend(tpl.content.cloneNode(true)));
-document.querySelectorAll('[data-dl]').forEach((a) => { a.href = DL[a.dataset.dl]; });
+document.querySelectorAll('[data-dl]').forEach((a) => { a.href = DL[a.dataset.dl]; a.addEventListener('click', () => hit('dl', a.dataset.dl)); });
 
 document.querySelectorAll('[data-lang]').forEach((a) => a.addEventListener('click', () => { try { localStorage.setItem('nuvora.lang', a.dataset.lang); } catch (e) { /* */ } }));
 if (REDIRECT) (function () {
   let saved = null;
   try { saved = localStorage.getItem('nuvora.lang'); } catch (e) { /* */ }
   const want = saved || ((navigator.language || 'it').toLowerCase().startsWith('it') ? 'it' : 'en');
-  if (want !== L.lang) { const a = document.querySelector('[data-lang="' + want + '"]'); if (a) location.replace(a.href); }
+  if (want !== L.lang) { const a = document.querySelector('[data-lang="' + want + '"]'); if (a) { GOING = true; location.replace(a.href); } }
 })();
+
+// visite anonime per il pannello: niente cookie, niente dati personali, l'IP non si salva. Chi chiede di non essere tracciato non viene contato
+const HIT = 'https://jhoidpugjjvvkjccyrxg.supabase.co/functions/v1/site-hit';
+const QS = new URLSearchParams(location.search);
+function hit(k, d) {
+  if (!REDIRECT || GOING || navigator.globalPrivacyControl || navigator.doNotTrack === '1') return;
+  try {
+    const b = JSON.stringify({ k, d: d || '', p: location.pathname, l: L.lang, r: document.referrer, us: QS.get('utm_source') || QS.get('ref'), um: QS.get('utm_medium'), uc: QS.get('utm_campaign'), w: innerWidth });
+    if (!(navigator.sendBeacon && navigator.sendBeacon(HIT, b))) fetch(HIT, { method: 'POST', body: b, keepalive: true, mode: 'no-cors' });
+  } catch (e) { /* le statistiche non devono mai rompere la pagina */ }
+}
+hit('view');
 
 // barra con sfondo quando si scorre; l'app si raddrizza mentre scorri
 const nav = document.getElementById('nav'), shot = document.getElementById('shot');
@@ -456,6 +469,7 @@ const os = /Mac|iPhone|iPad/i.test(plat + ua) ? 'mac' : /Win/i.test(plat + ua) ?
 const mobile = /Android|iPhone|iPad|Mobile/i.test(ua);
 const main = document.getElementById('dl-main');
 const note = document.getElementById('dl-note');
+main.addEventListener('click', () => { if (main.href.indexOf('#') < 0) hit('dl', os); });
 if (os && !mobile) {
   main.href = DL[os];
   main.querySelector('span').textContent = os === 'mac' ? L.dlMac : L.dlWin;
@@ -481,7 +495,7 @@ form.addEventListener('submit', async (e) => {
     const j = await r.json().catch(() => ({}));
     if (r.status === 429) throw new Error(L.rate);
     if (!r.ok) throw new Error(j.error === 'email' ? L.badEmail : L.fail);
-    msg.textContent = j.status === 'pending' ? L.queued : L.sent; msg.classList.add('ok');
+    msg.textContent = j.status === 'pending' ? L.queued : L.sent; msg.classList.add('ok'); hit('mail');
     form.reset();
   } catch (er) { msg.textContent = er.message || L.fail; msg.classList.add('err'); }
   btn.disabled = false;
@@ -495,7 +509,7 @@ function pick(i, focus) {
   if (focus) tabs[i].focus();
 }
 tabs.forEach((t, i) => {
-  t.addEventListener('click', () => pick(i));
+  t.addEventListener('click', () => { pick(i); hit('tab', ['clip', 'editor', 'grafica', 'video-ai'][i]); });
   t.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); pick((i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length, true); } });
 });
 if (os && !mobile) { const me = document.getElementById('os-' + os); me.classList.add('me'); me.parentNode.prepend(me); }
@@ -505,6 +519,9 @@ const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
 
 const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.1 });
 document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+// fin dove arrivano: prezzi e download visti (una volta per visita)
+const seen = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { hit('seen', e.target.id); seen.unobserve(e.target); } }), { threshold: 0.35 });
+['prezzo', 'download'].forEach((id) => { const el = document.getElementById(id); if (el) seen.observe(el); });
 
 fetch('https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/changelog.json', { cache: 'no-store' })
   .then((r) => r.ok ? r.json() : Promise.reject())
