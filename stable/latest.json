@@ -1,13 +1,29 @@
 {
- "version": "1.5.158",
+ "version": "1.5.159",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.158.zip",
- "size": 7829986,
- "sha256": "a91e608554cd3046de872e5db94cd2bd22b6339e073db337cd274f1e29e5bc1b",
- "sig": "Q16J5MepgyTNyvPDS769LME84PFFDC7/mo4I7+AlscZR9uAubKK/viLDD4SakloBNsWZjib9aDfTTsdPoMmiDQ==",
- "notes": "Correzione: Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS\nMiglioramento: Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.159.zip",
+ "size": 7834717,
+ "sha256": "9449cfdb658e579c15248828f3a564c14ff4cfa58daec9b0195d5a9553cade65",
+ "sig": "GhFrXIEHVxTPCW7qXCTTRGkXYtRlxVZY27x22VNnryIFfhyQPFZ9DjNsW98MmwAzeyxyumtn3eJ3O+QE+4pwDA==",
+ "notes": "Correzione: Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta\nMiglioramento: Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
  "date": "2026-10-06",
  "history": [
+  {
+   "version": "1.5.159",
+   "date": "2026-10-06",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta",
+     "en": "AI keys on Mac never go through the command line anymore; downloaded models are verified with their fingerprint"
+    },
+    {
+     "type": "impr",
+     "text": "Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
+     "en": "Security: stricter checks on the files the app can open and on projects received from others; license updated with payments, cancellation and refunds"
+    }
+   ]
+  },
   {
    "version": "1.5.158",
    "date": "2026-10-06",
@@ -334,17 +350,6 @@
      "type": "impr",
      "text": "Download dei VOD di Kick: ora funzionano anche i VOD nuovi (link con ID tipo 01a1…), che Kick salva in un sistema diverso.",
      "en": "Kick VOD downloads: newer VODs (links with IDs like 01a1…), which Kick stores in a different system, now work too."
-    }
-   ]
-  },
-  {
-   "version": "1.5.129",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Risolto il download dei VOD di Kick da link (errore 404): ora NoonFrame li trova anche quando Kick cambia indirizzo.",
-     "en": "Fixed downloading Kick VODs from a link (404 error): NoonFrame now finds them even when Kick changes its address."
     }
    ]
   }

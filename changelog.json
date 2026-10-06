@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.159",
+  "date": "2026-10-06",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta",
+    "en": "AI keys on Mac never go through the command line anymore; downloaded models are verified with their fingerprint"
+   },
+   {
+    "type": "impr",
+    "text": "Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
+    "en": "Security: stricter checks on the files the app can open and on projects received from others; license updated with payments, cancellation and refunds"
+   }
+  ]
+ },
+ {
   "version": "1.5.158",
   "date": "2026-10-06",
   "items": [
