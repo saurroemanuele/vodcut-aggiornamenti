@@ -1,13 +1,30 @@
 {
- "version": "1.5.160",
+ "version": "1.5.161",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.160.zip",
- "size": 7835844,
- "sha256": "d9f7af58ddb99738f80cf44c65f12436fc103e575a4e73cd27504b2c99cfc414",
- "sig": "pjfWLZUnQSdSwfsMDsNH5vN/ruwn6GM9FGPsv5i4EdGfmiDurM1U+gHAannl23fCSZv5MP/6jQu/vcLLFI45DA==",
- "notes": "Correzione: Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori\nMiglioramento: Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
- "date": "2026-10-06",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.161.zip",
+ "size": 7836535,
+ "sha256": "4697576d26e5adda1893f458317fb327f4cd4890b21777e76c67f035beb8ad01",
+ "sig": "FT1pffJkZLeEbrKduOF/JXeH49yozAlTPyv83H9DLqnwb+LVqI4azApkz87wokRnkfjTB76henWYCUFgQLmMAA==",
+ "notes": "Correzione: Aggiungere un video mentre se ne prepara un altro non mostra più un errore\nMiglioramento: I video grandi entrano subito nella traccia principale: l'anteprima leggera si prepara dopo, in background",
+ "date": "2026-10-07",
  "history": [
+  {
+   "version": "1.5.161",
+   "date": "2026-10-07",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Aggiungere un video mentre se ne prepara un altro non mostra più un errore",
+     "en": "Adding a video while another one is being prepared no longer shows an error"
+    },
+    {
+     "type": "impr",
+     "text": "I video grandi entrano subito nella traccia principale: l'anteprima leggera si prepara dopo, in background",
+     "en": "Large videos now go straight into the main track: the light preview is prepared afterwards, in the background"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.160",
    "date": "2026-10-06",
@@ -344,17 +361,6 @@
      "type": "impr",
      "text": "La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
      "en": "The «From a live» section is now its own page: just the VOD upload, without tabs or the project list."
-    }
-   ]
-  },
-  {
-   "version": "1.5.131",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
-     "en": "Much cleaner AI background removal: a new edge model (hair, shoulders), no more halo around the person even on low-quality video, and about 3x faster cutouts."
     }
    ]
   }
