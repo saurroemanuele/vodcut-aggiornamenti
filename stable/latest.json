@@ -1,13 +1,29 @@
 {
- "version": "1.5.162",
+ "version": "1.5.163",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.162.zip",
- "size": 7837366,
- "sha256": "e7d5b6adfaf6ece103c78bfda762b9b4747c1c12e1184c3c60346c1344dfd467",
- "sig": "ZQNbk/NfalTuEX6JRbFo902qePI68OWVrgsJc8j9pcWo+3FwmXX8Zi65A/rtWGAga4rKBlIrTItwg9bD85IhCg==",
- "notes": "Correzione: Aggiungere un video mentre se ne prepara un altro non mostra più un errore\nMiglioramento: Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.163.zip",
+ "size": 7837912,
+ "sha256": "e4ece59e05db0b721e46f27b1b3e7c3b78e5a6e567a250e4469ce268d859f556",
+ "sig": "vN/Tbby8CXZGbl9hP27gy5X1EvuJKbCxZrFYlrEWnVCcbkdSjLxdH7k88YzeZqrWrALjymG+OToywZ+TM6aZBA==",
+ "notes": "Correzione: Le pagine di pagamento e di gestione dell'abbonamento si aprono anche con Stripe\nMiglioramento: Termini e privacy aggiornati per i pagamenti con Stripe",
  "date": "2026-10-08",
  "history": [
+  {
+   "version": "1.5.163",
+   "date": "2026-10-08",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Le pagine di pagamento e di gestione dell'abbonamento si aprono anche con Stripe",
+     "en": "Payment and subscription management pages now also open with Stripe"
+    },
+    {
+     "type": "impr",
+     "text": "Termini e privacy aggiornati per i pagamenti con Stripe",
+     "en": "Terms and privacy updated for Stripe payments"
+    }
+   ]
+  },
   {
    "version": "1.5.162",
    "date": "2026-10-08",
@@ -349,17 +365,6 @@
      "type": "impr",
      "text": "Scegli lo stile: ora la pagina scorre fino in fondo, c'è l'opzione «Nessuno» per tagli e zoom, ed è scritto chiaro che tagli e zoom sono gratis (fatti sul tuo computer, senza AI).",
      "en": "Choose the style: the page now scrolls to the bottom, there's a «None» option for cuts and zooms, and it says clearly that cuts and zooms are free (done on your computer, no AI)."
-    }
-   ]
-  },
-  {
-   "version": "1.5.132",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
-     "en": "The «From a live» section is now its own page: just the VOD upload, without tabs or the project list."
     }
    ]
   }
