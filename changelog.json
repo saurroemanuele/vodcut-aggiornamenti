@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.162",
+  "date": "2026-10-08",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Aggiungere un video mentre se ne prepara un altro non mostra più un errore",
+    "en": "Adding a video while another one is being prepared no longer shows an error"
+   },
+   {
+    "type": "impr",
+    "text": "Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+    "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
+   }
+  ]
+ },
+ {
   "version": "1.5.160",
   "date": "2026-10-06",
   "items": [

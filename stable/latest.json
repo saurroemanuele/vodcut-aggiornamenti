@@ -1,13 +1,29 @@
 {
- "version": "1.5.160",
+ "version": "1.5.162",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.160.zip",
- "size": 7835844,
- "sha256": "d9f7af58ddb99738f80cf44c65f12436fc103e575a4e73cd27504b2c99cfc414",
- "sig": "pjfWLZUnQSdSwfsMDsNH5vN/ruwn6GM9FGPsv5i4EdGfmiDurM1U+gHAannl23fCSZv5MP/6jQu/vcLLFI45DA==",
- "notes": "Correzione: Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori\nMiglioramento: Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
- "date": "2026-10-06",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.162.zip",
+ "size": 7837366,
+ "sha256": "e7d5b6adfaf6ece103c78bfda762b9b4747c1c12e1184c3c60346c1344dfd467",
+ "sig": "ZQNbk/NfalTuEX6JRbFo902qePI68OWVrgsJc8j9pcWo+3FwmXX8Zi65A/rtWGAga4rKBlIrTItwg9bD85IhCg==",
+ "notes": "Correzione: Aggiungere un video mentre se ne prepara un altro non mostra più un errore\nMiglioramento: Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+ "date": "2026-10-08",
  "history": [
+  {
+   "version": "1.5.162",
+   "date": "2026-10-08",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Aggiungere un video mentre se ne prepara un altro non mostra più un errore",
+     "en": "Adding a video while another one is being prepared no longer shows an error"
+    },
+    {
+     "type": "impr",
+     "text": "Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+     "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
+    }
+   ]
+  },
   {
    "version": "1.5.160",
    "date": "2026-10-06",
@@ -344,17 +360,6 @@
      "type": "impr",
      "text": "La sezione «Dalla live» ora è una pagina a sé: solo il caricamento del VOD, senza tab e senza la lista dei progetti.",
      "en": "The «From a live» section is now its own page: just the VOD upload, without tabs or the project list."
-    }
-   ]
-  },
-  {
-   "version": "1.5.131",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Rimuovi sfondo con l'AI molto più pulito: nuovo modello per i bordi (capelli, spalle), niente più alone attorno alla persona anche con video di bassa qualità, e ritaglio circa 3 volte più veloce.",
-     "en": "Much cleaner AI background removal: a new edge model (hair, shoulders), no more halo around the person even on low-quality video, and about 3x faster cutouts."
     }
    ]
   }

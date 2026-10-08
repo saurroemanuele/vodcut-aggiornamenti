@@ -1,16 +1,16 @@
 {
- "version": "1.5.161",
+ "version": "1.5.162",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.161.zip",
- "size": 7836535,
- "sha256": "4697576d26e5adda1893f458317fb327f4cd4890b21777e76c67f035beb8ad01",
- "sig": "FT1pffJkZLeEbrKduOF/JXeH49yozAlTPyv83H9DLqnwb+LVqI4azApkz87wokRnkfjTB76henWYCUFgQLmMAA==",
- "notes": "Correzione: Aggiungere un video mentre se ne prepara un altro non mostra più un errore\nMiglioramento: I video grandi entrano subito nella traccia principale: l'anteprima leggera si prepara dopo, in background",
- "date": "2026-10-07",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.162.zip",
+ "size": 7837366,
+ "sha256": "e7d5b6adfaf6ece103c78bfda762b9b4747c1c12e1184c3c60346c1344dfd467",
+ "sig": "ZQNbk/NfalTuEX6JRbFo902qePI68OWVrgsJc8j9pcWo+3FwmXX8Zi65A/rtWGAga4rKBlIrTItwg9bD85IhCg==",
+ "notes": "Correzione: Aggiungere un video mentre se ne prepara un altro non mostra più un errore\nMiglioramento: Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+ "date": "2026-10-08",
  "history": [
   {
-   "version": "1.5.161",
-   "date": "2026-10-07",
+   "version": "1.5.162",
+   "date": "2026-10-08",
    "items": [
     {
      "type": "fix",
@@ -19,11 +19,10 @@
     },
     {
      "type": "impr",
-     "text": "I video grandi entrano subito nella traccia principale: l'anteprima leggera si prepara dopo, in background",
-     "en": "Large videos now go straight into the main track: the light preview is prepared afterwards, in the background"
+     "text": "Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
+     "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.160",
