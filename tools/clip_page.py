@@ -1,0 +1,493 @@
+"""Genera la pagina delle clip dal web: docs/clip.html (italiano) e docs/en/clip.html (inglese).
+python3 tools/clip_page.py"""
+import json
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+T = {
+    "it": {
+        "lang": "it", "title": "Clip AI dalla tua live, anche dal telefono | NoonFrame",
+        "desc": "Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.",
+        "home": "./", "other": "en/clip.html", "otherLabel": "EN", "privacy": "privacy.html", "terms": "termini.html", "dl": "./#download",
+        "h1": "Clip virali dalla tua live.<br>Anche dal telefono.",
+        "sub": "Incolla il link della live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.",
+        "ph": "Link della live (Twitch, Kick o YouTube)", "go": "Trova le clip",
+        "note": "150 crediti gratis per iniziare · accesso con Google",
+        "how1": "Incolla il link", "how1d": "Il VOD della live, anche di ore.",
+        "how2": "L'AI sceglie", "how2d": "I momenti più forti, con un punteggio per piattaforma.",
+        "how3": "Scarica e pubblica", "how3d": "Clip verticali con sottotitoli, in pochi minuti.",
+    },
+    "en": {
+        "lang": "en", "title": "AI clips from your stream, even from your phone | NoonFrame",
+        "desc": "Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.",
+        "home": "./", "other": "../clip.html", "otherLabel": "IT", "privacy": "privacy.html", "terms": "terms.html", "dl": "./#download",
+        "h1": "Viral clips from your stream.<br>Even from your phone.",
+        "sub": "Paste your stream link: AI finds the best moments and edits them vertically with captions, ready for TikTok, Reels and Shorts.",
+        "ph": "Stream link (Twitch, Kick or YouTube)", "go": "Find clips",
+        "note": "150 free credits to start · sign in with Google",
+        "how1": "Paste the link", "how1d": "Your stream VOD, even hours long.",
+        "how2": "AI picks", "how2d": "The strongest moments, scored for each platform.",
+        "how3": "Download and post", "how3d": "Vertical clips with captions, in minutes.",
+    },
+}
+
+# testi usati dal codice della pagina
+JS = {
+    "it": {
+        "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo non sembra il link di una live: usa twitch.tv/videos/…, kick.com/canale/videos/… o un link di YouTube.",
+        "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.",
+        "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico la live", "prepare": "Analizzo la live", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"},
+        "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"],
+        "working": "Sto lavorando sulla tua live", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.",
+        "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta",
+        "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio",
+        "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova",
+        "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata",
+        "editT": "Vuoi ritoccarle?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip, gratis.",
+        "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.",
+        "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.",
+        "costNote": "Costo: circa {n} crediti per ogni ora di live. Hai {b} crediti.",
+        "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.",
+        "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
+    },
+    "en": {
+        "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This doesn't look like a stream link: use twitch.tv/videos/…, kick.com/channel/videos/… or a YouTube link.",
+        "loginFirst": "Sign in with Google to continue: your stream starts right after.",
+        "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the stream", "prepare": "Analyzing the stream", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"},
+        "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"],
+        "working": "Working on your stream", "leave": "You can close this page: we'll email you when your clips are ready.",
+        "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready",
+        "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score",
+        "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again",
+        "history": "Your streams", "open": "Open", "statusDone": "Ready", "statusRun": "In progress", "statusFail": "Failed", "statusCancel": "Cancelled",
+        "editT": "Want to tweak them?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip, for free.",
+        "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.",
+        "noCredits": "You've used your free credits. Top-ups are coming in a few days: we'll let you know by email.",
+        "costNote": "Cost: about {n} credits per hour of stream. You have {b} credits.",
+        "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.",
+        "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime.",
+    },
+}
+
+PAGE = r"""<!doctype html>
+<html lang="{lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="https://noonframe.com/{canon}">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:image" content="https://noonframe.com/shots/og.png">
+<meta name="theme-color" content="#050A1C">
+<link rel="icon" href="{root}favicon.png">
+<style>
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url({root}fonts/inter-latin-wght-normal.woff2) format("woff2"); }
+:root { --ink-0:#050A1C; --ink-1:#0A1430; --ink-2:#0F1C40; --blue:#1E6BFF; --blue-hi:#4C8DFF; --sky:#8CC2FF; --fg:#F2F6FF; --fg-2:#A6B4D4; --fg-3:#6C7DA6;
+  --line:rgba(160,190,255,.10); --line-2:rgba(160,190,255,.18); --score:#22C55E; --hook:#FFD60A; --err:#F87171;
+  --body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; background: var(--ink-0); color: var(--fg); font: 16px/1.55 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(70% 45% at 50% -8%, rgba(30,107,255,.32), transparent 70%), radial-gradient(45% 40% at 90% 80%, rgba(76,141,255,.07), transparent 70%); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--blue-hi); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(960px, 100% - 32px); margin-inline: auto; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 20px; border-radius: 13px; font: 600 15.5px/1 var(--body);
+  text-decoration: none; border: 0; cursor: pointer; transition: background .2s, transform .15s, opacity .2s; white-space: nowrap; color: var(--fg); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .55; cursor: default; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-primary { background: var(--blue); color: #fff; box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 10px 30px -12px rgba(30,107,255,.95); }
+.btn-primary:hover:not(:disabled) { background: var(--blue-hi); }
+.btn-ghost { background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px var(--line-2); }
+.btn-ghost:hover { background: rgba(255,255,255,.1); }
+.btn-sm { height: 36px; padding: 0 13px; border-radius: 10px; font-size: 14px; }
+.btn-white { background: #fff; color: #0A1638; }
+.link { background: none; border: 0; padding: 0; color: var(--fg-2); font: inherit; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+
+header { position: sticky; top: 0; z-index: 10; background: rgba(5,10,28,.72); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+header .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
+.brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 650; font-size: 16px; letter-spacing: -.02em; text-decoration: none; }
+.brand img { width: 26px; height: 26px; }
+.grow { flex: 1; }
+.lang { font-size: 12px; font-weight: 600; color: var(--fg-3); text-decoration: none; padding: 5px 8px; border-radius: 8px; background: rgba(255,255,255,.05); }
+.who { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--fg-2); }
+.cred { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 999px; background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px var(--line-2);
+  font-weight: 600; color: var(--fg); font-variant-numeric: tabular-nums; font-size: 13.5px; }
+.cred i { width: 8px; height: 8px; border-radius: 50%; background: var(--hook); box-shadow: 0 0 10px rgba(255,214,10,.7); }
+.avatar { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; background: var(--ink-2); }
+
+.hero { padding: 54px 0 10px; text-align: center; }
+h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-height: 1.02; font-weight: 650; letter-spacing: -.05em; text-wrap: balance;
+  background: linear-gradient(180deg, #fff 35%, #A9C2F5); -webkit-background-clip: text; background-clip: text; color: transparent; padding-bottom: .05em; }
+.sub { max-width: 560px; margin: 18px auto 0; font-size: clamp(16px, 2vw, 18.5px); color: var(--fg-2); text-wrap: pretty; }
+
+.ask { max-width: 620px; margin: 30px auto 0; padding: 8px; border-radius: 20px; background: rgba(10,20,48,.75); box-shadow: inset 0 0 0 1px var(--line-2), 0 30px 80px -40px rgba(30,107,255,.8);
+  display: flex; gap: 8px; }
+.ask input { flex: 1; min-width: 0; height: 52px; padding: 0 16px; border: 0; border-radius: 14px; background: rgba(255,255,255,.05); color: var(--fg); font: 16px var(--body); }
+.ask input::placeholder { color: var(--fg-3); }
+.ask input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--blue-hi); }
+.ask .btn { height: 52px; border-radius: 14px; }
+.hint { margin: 12px auto 0; font-size: 13.5px; color: var(--fg-3); min-height: 1.4em; }
+.hint.err { color: var(--err); }
+.plats { display: flex; justify-content: center; gap: 18px; margin-top: 18px; color: var(--fg-3); font-size: 13px; }
+.plats span { display: inline-flex; align-items: center; gap: 6px; }
+.plats svg { width: 16px; height: 16px; }
+
+.how { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 46px 0 0; }
+.how div { padding: 18px; border-radius: 16px; background: rgba(255,255,255,.03); box-shadow: inset 0 0 0 1px var(--line); }
+.how b { display: block; font-size: 15.5px; letter-spacing: -.01em; }
+.how b em { font-style: normal; color: var(--sky); margin-right: 6px; font-variant-numeric: tabular-nums; }
+.how p { margin: 4px 0 0; font-size: 14px; color: var(--fg-2); }
+
+.panel { margin: 30px auto 0; max-width: 620px; padding: 24px; border-radius: 22px; background: rgba(10,20,48,.8); box-shadow: inset 0 0 0 1px var(--line-2); }
+.panel h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; line-height: 1.25; }
+.panel .src { margin: 6px 0 0; font-size: 13.5px; color: var(--fg-3); word-break: break-all; }
+.bar { position: relative; height: 8px; margin: 20px 0 10px; border-radius: 99px; background: rgba(255,255,255,.07); overflow: hidden; }
+.bar i { position: absolute; inset: 0 auto 0 0; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--sky)); transition: width .8s cubic-bezier(.2,.7,.2,1); }
+.bar i::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); animation: shine 1.6s infinite; }
+@keyframes shine { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+.stage { display: flex; justify-content: space-between; font-size: 14px; color: var(--fg-2); font-variant-numeric: tabular-nums; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 18px; }
+.steps span { font-size: 12px; color: var(--fg-3); padding-top: 8px; border-top: 2px solid rgba(255,255,255,.08); }
+.steps span.on { color: var(--fg); border-color: var(--blue-hi); }
+.steps span.ok { color: var(--fg-2); border-color: var(--score); }
+.leave { margin: 18px 0 0; font-size: 14px; color: var(--fg-2); }
+.panel .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; align-items: center; }
+.msg-err { color: var(--err); font-size: 15px; margin: 10px 0 0; }
+
+.done-h { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 36px 0 14px; flex-wrap: wrap; }
+.done-h h2 { margin: 0; font-size: clamp(24px, 4vw, 32px); letter-spacing: -.035em; line-height: 1.1; }
+.done-h h2 span { color: var(--score); font-variant-numeric: tabular-nums; }
+.done-h p { margin: 6px 0 0; font-size: 14px; color: var(--fg-3); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.clip { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(10,20,48,.85); box-shadow: inset 0 0 0 1px var(--line-2); }
+.vid { position: relative; aspect-ratio: 9 / 16; background: #000; }
+.vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.play { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; border: 0; padding: 0; background: linear-gradient(180deg, transparent 55%, rgba(5,10,28,.55)); cursor: pointer; }
+.play span { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.92); box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: transform .15s; }
+.play:hover span { transform: scale(1.06); }
+.play svg { width: 22px; height: 22px; margin-left: 3px; fill: #0A1638; }
+.badge { position: absolute; top: 10px; left: 10px; z-index: 2; display: inline-flex; align-items: baseline; gap: 4px; padding: 5px 9px; border-radius: 10px;
+  background: rgba(5,10,28,.78); backdrop-filter: blur(8px); font-weight: 700; font-size: 17px; color: var(--score); font-variant-numeric: tabular-nums; pointer-events: none; }
+.badge small { font-size: 11px; font-weight: 600; color: var(--fg-2); }
+.clip .body { padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.clip h3 { margin: 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -.01em; }
+.pf { display: inline-flex; align-self: flex-start; align-items: center; gap: 6px; font-size: 12.5px; color: var(--fg-2); padding: 4px 9px; border-radius: 999px; background: rgba(255,255,255,.06); }
+.pf b { color: var(--fg); }
+.clip details { font-size: 13.5px; color: var(--fg-2); }
+.clip summary { cursor: pointer; color: var(--fg-3); font-size: 13px; }
+.clip details p { margin: 6px 0 0; }
+.clip .btn { margin-top: auto; height: 42px; font-size: 14.5px; }
+
+.edit { margin: 28px 0 0; padding: 24px; border-radius: 22px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center;
+  background: linear-gradient(135deg, #1E6BFF, #3B4FD8); box-shadow: 0 30px 70px -35px rgba(30,107,255,.9); }
+.edit h3 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
+.edit p { margin: 6px 0 0; font-size: 15px; color: rgba(255,255,255,.85); max-width: 52ch; }
+.edit .ok { grid-column: 1 / -1; margin: 0; font-size: 14px; color: #fff; }
+
+.hist { margin: 44px 0 0; }
+.hist h2 { font-size: 15px; color: var(--fg-3); font-weight: 600; margin: 0 0 10px; }
+.hist ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.hist li { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+.hist li .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hist li .s { font-size: 12.5px; color: var(--fg-3); }
+.hist li .s.done { color: var(--score); }
+.hist li .s.failed { color: var(--err); }
+
+footer { margin: 70px 0 0; padding: 26px 0 40px; border-top: 1px solid var(--line); font-size: 13px; color: var(--fg-3); }
+footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--fg-3); }
+.hide { display: none !important; }
+
+@media (max-width: 640px) {
+  .hero { padding-top: 34px; }
+  .ask { flex-direction: column; padding: 8px; }
+  .ask .btn { width: 100%; }
+  .ask input { flex: none; }
+  .how { grid-template-columns: 1fr; gap: 8px; margin-top: 34px; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .clip .body { padding: 11px 11px 13px; }
+  .clip h3 { font-size: 14px; }
+  .clip details { display: none; }
+  .edit { grid-template-columns: 1fr; padding: 20px; }
+  .edit .btn { width: 100%; }
+  .who .mail { display: none; }
+  .panel { padding: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { .bar i, .bar i::after { transition: none; animation: none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="{home}"><img src="{root}logo.png" alt="" width="26" height="26">NoonFrame</a>
+  <span class="grow"></span>
+  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><img class="avatar" id="av" alt=""><button class="link" id="out" type="button"></button></span>
+  <button class="btn btn-ghost btn-sm hide" id="in" type="button"></button>
+  <a class="lang" href="{other}" lang="{otherLang}">{otherLabel}</a>
+</div></header>
+
+<main class="wrap">
+  <section class="hero" id="hero">
+    <h1>{h1}</h1>
+    <p class="sub">{sub}</p>
+    <form class="ask" id="ask" novalidate>
+      <input id="url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="{ph}" aria-label="{ph}">
+      <button class="btn btn-primary" id="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg><span>{go}</span></button>
+    </form>
+    <p class="hint" id="hint" role="status">{note}</p>
+    <div class="plats" aria-hidden="true">
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2 2.5 6v14h5v3h3l3-3h4L22 15.5V2H4zm16 12.5-3 3h-5l-3 3v-3H5V4h15v10.5zM16 7h2v6h-2V7zm-5 0h2v6h-2V7z"/></svg>Twitch</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
+      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg>YouTube</span>
+    </div>
+    <div class="how">
+      <div><b><em>1</em>{how1}</b><p>{how1d}</p></div>
+      <div><b><em>2</em>{how2}</b><p>{how2d}</p></div>
+      <div><b><em>3</em>{how3}</b><p>{how3d}</p></div>
+    </div>
+  </section>
+
+  <section id="run" class="panel hide" aria-live="polite"></section>
+  <section id="done" class="hide"></section>
+  <section id="hist" class="hist hide"></section>
+</main>
+
+<footer><div class="wrap"><span>© NoonFrame</span><a href="{privacy}">Privacy</a><a href="{terms}">{termsLabel}</a><a href="{home}">noonframe.com</a></div></footer>
+
+<script>
+const L = {js};
+const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
+const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
+const FN = SB + '/functions/v1/webclip';
+const DLFN = SB + '/functions/v1/download-link';
+const LINKS = [/^https:\/\/(www\.|m\.)?twitch\.tv\/videos\/\d{5,14}(\?\S*)?$/, /^https:\/\/(www\.)?kick\.com\/[A-Za-z0-9_\-]{2,30}\/videos\/[0-9a-fA-F\-]{8,40}(\?\S*)?$/,
+  /^https:\/\/(www\.|m\.)?youtube\.com\/(watch\?v=|live\/)[\w\-]{11}([&?]\S*)?$/, /^https:\/\/youtu\.be\/[\w\-]{11}(\?\S*)?$/];
+const mobile = /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent || '');
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const store = { get(k) { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (e) { return null; } },
+  set(k, v) { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+const once = { get(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { v == null ? sessionStorage.removeItem(k) : sessionStorage.setItem(k, v); } catch (e) {} } };
+
+// ---- accesso con Google (lo stesso account dell'app)
+let S = store.get('nf.sess');
+function fromHash() {
+  if (!location.hash || location.hash.length < 10) return;
+  const p = new URLSearchParams(location.hash.slice(1));
+  if (p.get('access_token')) {
+    S = { at: p.get('access_token'), rt: p.get('refresh_token'), exp: Date.now() / 1000 + Number(p.get('expires_in') || 3600) };
+    store.set('nf.sess', S);
+  }
+  if (p.get('error_description')) setHint(p.get('error_description'), true);
+  history.replaceState(null, '', location.pathname + location.search);
+}
+async function token() {
+  if (!S) return null;
+  if (S.exp - 90 > Date.now() / 1000) return S.at;
+  try {
+    const r = await fetch(SB + '/auth/v1/token?grant_type=refresh_token', { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ refresh_token: S.rt }) });
+    if (!r.ok) throw new Error('refresh');
+    const j = await r.json();
+    S = { at: j.access_token, rt: j.refresh_token, exp: Date.now() / 1000 + Number(j.expires_in || 3600) };
+    store.set('nf.sess', S);
+    return S.at;
+  } catch (e) { S = null; store.set('nf.sess', null); return null; }
+}
+function login() {
+  location.href = SB + '/auth/v1/authorize?provider=google&redirect_to=' + encodeURIComponent(location.origin + location.pathname + location.search);
+}
+function logout() { S = null; store.set('nf.sess', null); location.href = location.pathname; }
+function me() {
+  try { const p = JSON.parse(atob(S.at.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))); return { email: p.email || '', pic: (p.user_metadata || {}).avatar_url || '' }; } catch (e) { return { email: '', pic: '' }; }
+}
+
+async function call(op, body) {
+  const t = await token();
+  if (!t) { showSignedOut(); throw new Error('auth'); }
+  let r;
+  try { r = await fetch(FN, { method: 'POST', headers: { Authorization: 'Bearer ' + t, apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify(Object.assign({ op }, body || {})) }); }
+  catch (e) { const x = new Error(L.net); x.net = true; throw x; }
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); throw new Error('auth'); }
+  if (!r.ok) { const x = new Error(j.error || L.err); x.code = j.code; throw x; }
+  return j;
+}
+
+// ---- interfaccia
+function setHint(t, err) { const h = $('hint'); h.textContent = t; h.classList.toggle('err', !!err); }
+function showSignedOut() { $('who').classList.add('hide'); $('in').classList.remove('hide'); }
+function showSignedIn(bal) {
+  $('in').classList.add('hide'); $('who').classList.remove('hide');
+  const m = me(); $('bal').textContent = bal == null ? '…' : bal; $('bal').parentNode.title = L.credits;
+  if (m.pic) { $('av').src = m.pic; $('av').alt = m.email; } else $('av').classList.add('hide');
+}
+$('in').textContent = L.login; $('out').textContent = L.logout;
+$('in').onclick = login; $('out').onclick = logout;
+
+let current = null, timer = null, perHour = 30;
+const stageIdx = { queued: 0, start: 0, download: 0, prepare: 1, clips: 2, render: 3, upload: 3, done: 4 };
+
+function renderRun(j) {
+  const el = $('run');
+  el.classList.remove('hide');
+  $('done').classList.add('hide');
+  if (j.status === 'failed' || j.status === 'cancelled') {
+    el.innerHTML = '<h2>' + esc(j.status === 'cancelled' ? L.cancel : L.failed) + '</h2><p class="src">' + esc(j.title || j.url) + '</p>'
+      + '<p class="msg-err">' + esc(j.status === 'cancelled' ? L.cancelled : j.error || L.err) + '</p>'
+      + '<div class="row"><button class="btn btn-primary" id="retry" type="button">' + esc(L.retry) + '</button></div>';
+    $('retry').onclick = () => { $('url').value = j.url; showAsk(); $('url').focus(); };
+    return;
+  }
+  const p = Math.round((j.progress || 0) * 100), si = stageIdx[j.stage] ?? 0;
+  el.innerHTML = '<h2>' + esc(L.working) + '</h2><p class="src">' + esc(j.title || j.url) + '</p>'
+    + '<div class="bar"><i style="width:' + Math.max(3, p) + '%"></i></div>'
+    + '<div class="stage"><span>' + esc(L.stages[j.stage] || j.message || L.stages.queued) + '</span><span>' + p + '%</span></div>'
+    + '<div class="steps">' + L.steps.map((s, i) => '<span class="' + (i < si ? 'ok' : i === si ? 'on' : '') + '">' + esc(s) + '</span>').join('') + '</div>'
+    + '<p class="leave">' + esc(L.leave) + '</p>'
+    + '<div class="row"><button class="link" id="cancel" type="button">' + esc(L.cancel) + '</button>'
+    + (j.credits ? '<span class="src" style="margin:0">' + esc(L.credUsed.replace('{n}', j.credits)) + '</span>' : '') + '</div>';
+  $('cancel').onclick = async () => { try { await call('cancel', { job: j.id }); poll(j.id, true); } catch (e) {} };
+}
+
+function bestPf(pf) {
+  if (!pf) return null;
+  const names = { tiktok: 'TikTok', reels: 'Reels', shorts: 'Shorts' };
+  let k = null; for (const x of Object.keys(names)) if (pf[x] != null && (k == null || pf[x] > pf[k])) k = x;
+  return k ? names[k] : null;
+}
+function fileName(c, j) { return ('noonframe-clip-' + String(c.n).padStart(2, '0')) + '.mp4'; }
+
+function renderDone(j) {
+  $('run').classList.add('hide');
+  const el = $('done');
+  el.classList.remove('hide');
+  const n = j.clips.length;
+  el.innerHTML = '<div class="done-h"><div><h2><span>' + n + '</span> ' + esc(n === 1 ? L.readyOne : L.ready) + '</h2>'
+    + '<p>' + esc((j.title ? L.from + ' ' + j.title + ' · ' : '') + L.expire) + '</p></div>'
+    + '<button class="btn btn-ghost btn-sm" id="again" type="button">' + esc(L.again) + '</button></div>'
+    + '<div class="grid">' + j.clips.map((c) => {
+      const pf = bestPf(c.pf);
+      const dl = c.video ? c.video + (c.video.includes('?') ? '&' : '?') + 'download=' + encodeURIComponent(fileName(c, j)) : '';
+      return '<article class="clip"><div class="vid">' + (c.score != null ? '<span class="badge">' + Math.round(c.score) + '<small>/100</small></span>' : '')
+        + '<video playsinline preload="none"' + (c.poster ? ' poster="' + esc(c.poster) + '"' : '') + ' src="' + esc(c.video || '') + '"></video><button class="play" type="button" aria-label="Play"><span><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span></button></div>'
+        + '<div class="body"><h3>' + esc(c.name || ('Clip ' + c.n)) + '</h3>'
+        + (pf ? '<span class="pf">' + esc(L.best) + ' <b>' + pf + '</b></span>' : '')
+        + (c.why ? '<details><summary>' + esc(L.why) + '</summary><p>' + esc(c.why) + '</p></details>' : '')
+        + (dl ? '<a class="btn btn-primary" href="' + esc(dl) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>' + esc(L.download) + '</a>' : '')
+        + '</div></article>';
+    }).join('') + '</div>'
+    + '<aside class="edit"><div><h3>' + esc(L.editT) + '</h3><p>' + esc(L.editD) + '</p></div>'
+    + (mobile ? '<button class="btn btn-white" id="sendpc" type="button">' + esc(L.editMob) + '</button>' : '<a class="btn btn-white" href="{dl}">' + esc(L.editDesk) + '</a>')
+    + '<p class="ok hide" id="sentok">' + esc(L.editSent) + '</p></aside>';
+  $('again').onclick = () => { history.replaceState(null, '', location.pathname); showAsk(); $('url').value = ''; $('url').focus(); };
+  // una clip alla volta: quando ne parte una, le altre si fermano
+  el.querySelectorAll('video').forEach((v) => v.addEventListener('play', () => el.querySelectorAll('video').forEach((o) => { if (o !== v) o.pause(); })));
+  el.querySelectorAll('.play').forEach((b) => b.addEventListener('click', () => { const v = b.previousElementSibling; v.controls = true; b.remove(); v.play().catch(() => {}); }));
+  const sp = $('sendpc');
+  if (sp) sp.onclick = async () => {
+    sp.disabled = true;
+    try {
+      const r = await fetch(DLFN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: me().email, lang: L.lang, marketing: false, source: 'clip-web', website: '' }) });
+      if (!r.ok) throw new Error();
+      $('sentok').classList.remove('hide'); sp.classList.add('hide');
+    } catch (e) { sp.disabled = false; }
+  };
+}
+
+function showAsk() { $('hero').classList.remove('hide'); $('run').classList.add('hide'); $('done').classList.add('hide'); setHint(costNote()); }
+let bal = null;
+function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{b}', bal == null ? '…' : bal) : '{note}'; }
+
+async function poll(id, now) {
+  clearTimeout(timer);
+  try {
+    const r = await call('status', { job: id });
+    bal = r.balance; showSignedIn(bal);
+    current = r.job;
+    if (current.status === 'done' && current.expired) { showAsk(); $('url').value = current.url; setHint(L.expired); loadHist(); return; }
+    if (current.status === 'done') { $('hero').classList.add('hide'); renderDone(current); loadHist(); return; }
+    $('hero').classList.add('hide');
+    renderRun(current);
+    if (current.status === 'queued' || current.status === 'running') timer = setTimeout(() => poll(id), 4000);
+    else loadHist();
+  } catch (e) {
+    if (e.message === 'auth') return;
+    if (e.net) timer = setTimeout(() => poll(id), 6000);
+    else { showAsk(); setHint(e.message, true); }
+  }
+}
+
+async function loadHist() {
+  try {
+    const r = await call('status', {});
+    bal = r.balance; perHour = r.perHour || perHour; showSignedIn(bal);
+    const list = (r.jobs || []).filter((j) => !current || j.id !== current.id);
+    const el = $('hist');
+    if (!list.length) { el.classList.add('hide'); return r; }
+    const st = { done: L.statusDone, running: L.statusRun, queued: L.statusRun, failed: L.statusFail, cancelled: L.statusCancel };
+    el.innerHTML = '<h2>' + esc(L.history) + '</h2><ul>' + list.map((j) => '<li><span class="t">' + esc(j.title || j.url) + '</span><span class="s ' + esc(j.status) + '">'
+      + esc(st[j.status] || j.status) + (j.status === 'done' ? ' · ' + j.clips.length : '') + '</span>'
+      + (j.status === 'done' || j.status === 'running' || j.status === 'queued' ? '<a class="btn btn-ghost btn-sm" href="?job=' + esc(j.id) + '">' + esc(L.open) + '</a>' : '') + '</li>').join('') + '</ul>';
+    el.classList.remove('hide');
+    return r;
+  } catch (e) { return null; }
+}
+
+$('ask').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const url = $('url').value.trim();
+  if (!LINKS.some((rx) => rx.test(url))) { setHint(L.badLink, true); $('url').focus(); return; }
+  if (!S) { once.set('nf.pending', url); setHint(L.loginFirst); setTimeout(login, 600); return; }
+  const b = $('go'); b.disabled = true;
+  try {
+    const r = await call('start', { url, lang: '' });
+    history.replaceState(null, '', '?job=' + r.job.id);
+    perHour = r.perHour || perHour;
+    poll(r.job.id);
+  } catch (e) {
+    if (e.message !== 'auth') setHint(e.code === 'credits' ? L.noCredits : e.message, true);
+  } finally { b.disabled = false; }
+});
+
+(async function boot() {
+  fromHash();
+  const job = new URLSearchParams(location.search).get('job');
+  if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); return; }
+  showSignedIn(null);
+  const pending = once.get('nf.pending');
+  if (pending) { once.set('nf.pending', null); $('url').value = pending; }
+  if (job && /^[0-9a-f-]{36}$/i.test(job)) { poll(job); return; }
+  await loadHist();
+  setHint(costNote());
+  if (pending) $('ask').requestSubmit();
+})();
+</script>
+</body>
+</html>
+"""
+
+
+def build():
+    for lg, t in T.items():
+        root = "" if lg == "it" else "../"
+        html = PAGE
+        html = html.replace("{js}", json.dumps(JS[lg], ensure_ascii=False))
+        vals = dict(t, root=root, canon=("clip.html" if lg == "it" else "en/clip.html"), otherLang=("en" if lg == "it" else "it"),
+                    termsLabel=("Termini" if lg == "it" else "Terms"))
+        for k, v in vals.items():
+            html = html.replace("{" + k + "}", v)
+        out = os.path.join(ROOT, "docs", "clip.html" if lg == "it" else "en/clip.html")
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(html)
+        print("scritto", out)
+
+
+if __name__ == "__main__":
+    build()
