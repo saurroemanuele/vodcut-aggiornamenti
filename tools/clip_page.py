@@ -1,5 +1,7 @@
 """Genera la pagina delle clip dal web: docs/clip.html (italiano) e docs/en/clip.html (inglese).
 python3 tools/clip_page.py"""
+import base64
+import hashlib
 import json
 import os
 
@@ -274,6 +276,8 @@ footer a { color: var(--fg-3); }
 <footer><div class="wrap"><span>© NoonFrame</span><a href="{privacy}">Privacy</a><a href="{terms}">{termsLabel}</a><a href="{home}">noonframe.com</a></div></footer>
 
 <script>
+// la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
+if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
 const L = {js};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
@@ -293,7 +297,9 @@ let S = store.get('nf.sess');
 function fromHash() {
   if (!location.hash || location.hash.length < 10) return;
   const p = new URLSearchParams(location.hash.slice(1));
-  if (p.get('access_token')) {
+  let asked = 0; try { asked = Number(sessionStorage.getItem('nf.login') || 0); sessionStorage.removeItem('nf.login'); } catch (e) {}
+  // accetta un accesso solo se l'ha chiesto questa scheda da poco (un link preparato da altri non ti fa entrare nel suo account)
+  if (p.get('access_token') && asked && Date.now() - asked < 15 * 60000) {
     S = { at: p.get('access_token'), rt: p.get('refresh_token'), exp: Date.now() / 1000 + Number(p.get('expires_in') || 3600) };
     store.set('nf.sess', S);
   }
@@ -313,6 +319,7 @@ async function token() {
   } catch (e) { S = null; store.set('nf.sess', null); return null; }
 }
 function login() {
+  try { sessionStorage.setItem('nf.login', String(Date.now())); } catch (e) {}
   location.href = SB + '/auth/v1/authorize?provider=google&redirect_to=' + encodeURIComponent(location.origin + location.pathname + location.search);
 }
 function logout() { S = null; store.set('nf.sess', null); location.href = location.pathname; }
@@ -531,6 +538,13 @@ def build():
                     termsLabel=("Termini" if lg == "it" else "Terms"))
         for k, v in vals.items():
             html = html.replace("{" + k + "}", v)
+        # CSP: solo lo script di questa pagina puo' girare (impronta sha256), niente script inseriti da fuori
+        a = html.index("<script>") + len("<script>")
+        b = html.index("</script>", a)
+        digest = base64.b64encode(hashlib.sha256(html[a:b].encode("utf-8")).digest()).decode()
+        assert html.count("<script") == 1
+        assert "script-src 'self' 'unsafe-inline'" in html
+        html = html.replace("script-src 'self' 'unsafe-inline'", "script-src 'sha256-" + digest + "'")
         out = os.path.join(ROOT, "docs", "clip.html" if lg == "it" else "en/clip.html")
         with open(out, "w", encoding="utf-8") as f:
             f.write(html)
