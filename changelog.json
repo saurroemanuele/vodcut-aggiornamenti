@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.165",
+  "date": "2026-10-09",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Se la creazione delle clip si interrompe, riprovando si riparte dai momenti già trovati: niente nuova ricerca e niente crediti scalati di nuovo",
+    "en": "If clip creation stops, trying again picks up from the moments already found: no new search and no credits charged again"
+   }
+  ]
+ },
+ {
   "version": "1.5.164",
   "date": "2026-10-09",
   "items": [
