@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-mSrcLtCT2UvbBsVRjY0xLmYE2xDtR0RKR9JEH9qo814='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-pDExdgRocKPq1t6HaD671HyS4Tk1Ad/NVPNN+a/mzuw='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -82,6 +82,43 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .est .cost b { color: var(--hook); font-variant-numeric: tabular-nums; }
 .est .acts { grid-column: 1 / -1; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .est .acts .btn { flex: 1; min-width: 180px; }
+.set { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 14px; display: grid; gap: 16px; }
+.set h4 { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: var(--fg-2); }
+.kinds { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.kind { appearance: none; border: 0; cursor: pointer; text-align: left; padding: 10px; border-radius: 13px; background: rgba(255,255,255,.03); box-shadow: inset 0 0 0 1px var(--line-2); color: var(--fg); font: inherit; display: grid; gap: 8px; align-content: start; }
+.kind[aria-checked="true"] { background: rgba(30,107,255,.14); box-shadow: inset 0 0 0 2px var(--blue-hi); }
+.kind b { font-size: 13px; line-height: 1.25; font-weight: 600; }
+.kind small { font-size: 11.5px; line-height: 1.3; color: var(--fg-3); }
+.ph9 { position: relative; width: 30px; height: 52px; border-radius: 6px; background: #13224A; box-shadow: inset 0 0 0 1.5px rgba(160,190,255,.35); overflow: hidden; }
+.ph9 i, .ph9 u { position: absolute; display: block; }
+.ph9.podcast i { left: 50%; top: 13px; width: 11px; height: 11px; margin-left: -5.5px; border-radius: 50%; background: var(--sky); }
+.ph9.podcast u { left: 50%; bottom: -6px; width: 24px; height: 22px; margin-left: -12px; border-radius: 12px 12px 0 0; background: var(--sky); }
+.ph9.gaming i { left: 0; right: 0; top: 0; height: 40%; background: rgba(140,194,255,.55); }
+.ph9.gaming u { left: 0; right: 0; bottom: 0; height: 60%; background: repeating-linear-gradient(135deg, #2A4C9A 0 5px, #1E3A7A 5px 10px); }
+.ph9.fit i { left: 0; right: 0; top: 0; bottom: 0; background: rgba(140,194,255,.18); filter: blur(1px); }
+.ph9.fit u { left: 0; right: 0; top: 50%; height: 14px; margin-top: -7px; background: var(--sky); }
+.ph9.auto { display: grid; place-items: center; color: var(--hook); }
+.ph9.auto svg { width: 16px; height: 16px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { appearance: none; border: 0; cursor: pointer; padding: 8px 11px; border-radius: 11px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--fg); font: inherit; display: grid; gap: 4px; justify-items: center; min-width: 88px; }
+.chip[aria-checked="true"] { box-shadow: inset 0 0 0 2px var(--blue-hi); background: rgba(30,107,255,.14); }
+.chip small { font-size: 11.5px; color: var(--fg-3); }
+.chip { overflow: hidden; }
+.smp { font-weight: 900; font-size: 13px; letter-spacing: .01em; color: #fff; text-shadow: 0 0 2px #000, 0 1px 2px #000; white-space: nowrap; }
+.smp em { font-style: normal; }
+.smp.box { background: rgba(0,0,0,.7); padding: 1px 5px; border-radius: 4px; text-shadow: none; }
+.smp.hbox { background: #fff; color: #111; padding: 1px 6px; border-radius: 6px; text-shadow: none; }
+.smp.low { text-transform: none; font-weight: 800; }
+.segs { display: flex; flex-wrap: wrap; gap: 14px 22px; }
+.seg { display: inline-flex; padding: 3px; border-radius: 11px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); gap: 2px; }
+.seg button { appearance: none; border: 0; cursor: pointer; padding: 7px 12px; border-radius: 8px; background: none; color: var(--fg-2); font: inherit; font-size: 13.5px; }
+.seg button[aria-pressed="true"] { background: var(--blue); color: #fff; }
+.tog { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--fg-2); cursor: pointer; margin-bottom: 10px; }
+.tog input { width: 18px; height: 18px; accent-color: var(--blue); }
+.hooks.off { opacity: .4; pointer-events: none; }
+.set input.q { width: 100%; height: 44px; border-radius: 12px; border: 0; padding: 0 13px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--fg); font: inherit; font-size: 14.5px; }
+.set input.q::placeholder { color: var(--fg-3); }
+.set :focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
 .est .warn { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--err); }
 .panel { margin: 30px auto 0; max-width: 620px; padding: 24px; border-radius: 22px; background: rgba(10,20,48,.8); box-shadow: inset 0 0 0 1px var(--line-2); }
 .panel h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; line-height: 1.25; }
@@ -150,6 +187,9 @@ footer a { color: var(--fg-3); }
   .ask input { flex: none; }
   .est { grid-template-columns: 104px 1fr; gap: 12px; }
   .est img, .est .ph { width: 104px; }
+  .kinds { grid-template-columns: repeat(2, 1fr); }
+  .chip { min-width: 0; flex: 1 1 40%; padding: 8px 6px; }
+  .smp { font-size: 12px; }
   .how { grid-template-columns: 1fr; gap: 8px; margin-top: 34px; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .clip .body { padding: 11px 11px 13px; }
@@ -204,7 +244,7 @@ footer a { color: var(--fg-3); }
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
-const L = {"login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video. Top-ups are coming in a few days: we'll let you know by email.", "hours": "h", "loginFirst": "Sign in with Google to continue: your stream starts right after.", "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.", "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"}, "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"], "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.", "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready", "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score", "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again", "history": "Your streams", "open": "Open", "statusDone": "Ready", "statusRun": "In progress", "statusFail": "Failed", "statusCancel": "Cancelled", "editT": "Want to tweak them and spend less?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip. And clips cost much less: your PC does transcription and editing for free.", "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.", "noCredits": "You've used your free credits. Top-ups are coming in a few days: we'll let you know by email.", "costNote": "Cost: 1 credit per minute of video. You have {b} credits.", "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.", "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime."};
+const L = {"login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video. Top-ups are coming in a few days: we'll let you know by email.", "hours": "h", "loginFirst": "Sign in with Google to continue: your stream starts right after.", "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.", "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"}, "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"], "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.", "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready", "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score", "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again", "history": "Your streams", "open": "Open", "statusDone": "Ready", "statusRun": "In progress", "statusFail": "Failed", "statusCancel": "Cancelled", "editT": "Want to tweak them and spend less?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip. And clips cost much less: your PC does transcription and editing for free.", "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.", "noCredits": "You've used your free credits. Top-ups are coming in a few days: we'll let you know by email.", "costNote": "Cost: 1 credit per minute of video. You have {b} credits.", "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.", "setT": "How you want them", "kindT": "What kind of video?", "kindAuto": "Automatic", "kindAutoPod": "Looks like a podcast", "kindAutoGame": "Looks like gaming", "kindAutoNo": "The AI decides", "kinds": {"podcast": ["Podcast · interview", "Person full screen"], "gaming": ["Gaming with webcam", "Webcam on top, game below"], "fit": ["Whole video", "Blurred background above and below"]}, "subsT": "Captions", "subStyles": {"classico": "Classic", "verde": "Green", "riquadro": "Box", "pulito": "Clean", "impatto": "Impact"}, "posT": "Position", "pos": {"auto": "Automatic", "centro": "Middle", "basso": "Bottom"}, "wordsT": "Words at a time", "words": {"parola": "One", "poche": "A few", "frase": "Sentence"}, "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"}, "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT", "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime."};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -402,10 +442,55 @@ function fmtDur(sec) {
   return h ? h + ' ' + L.hours + ' ' + String(m % 60).padStart(2, '0') + ' ' + L.min : m + ' ' + L.min;
 }
 let estFor = null;
+// impostazioni come nel tool (ricordate su questo dispositivo)
+const DEF_OPTS = { mode: 'auto', subs: { style: 'classico', pos: 'auto', words: 'poche' }, hook: { on: true, style: 'classico' }, prompt: '' };
+let OPTS = (() => { const o = store.get('nf.opts') || {}; return { ...DEF_OPTS, ...o, subs: { ...DEF_OPTS.subs, ...(o.subs || {}) }, hook: { ...DEF_OPTS.hook, ...(o.hook || {}) }, prompt: '' }; })();
+const saveOpts = () => store.set('nf.opts', { mode: OPTS.mode, subs: OPTS.subs, hook: OPTS.hook });
+const SUB_LOOK = { classico: ['', '#FFD60A'], verde: ['', '#3DDC84'], riquadro: ['box', '#FFD60A'], pulito: ['low', '#FFFFFF'], impatto: ['', '#FF5A1F'] };
+const HOOK_LOOK = { classico: ['', '#FFD60A'], verde: ['', '#3DDC84'], box: ['hbox', '#FF3B30'], neon: ['', '#FF4FD8'], pulito: ['low', '#3DDC84'], impatto: ['', '#FF5A1F'] };
+function sample(txt, look) {
+  if (look[0] === 'low') txt = txt.charAt(0) + txt.slice(1).toLowerCase();
+  const w = txt.split(' '), last = w.pop();
+  return '<span class="smp ' + look[0] + '">' + esc(w.join(' ')) + ' <em style="color:' + look[1] + '">' + esc(last) + '</em></span>';
+}
+function settingsHtml(kind) {
+  const auto = kind === 'podcast' ? L.kindAutoPod : kind === 'gaming' ? L.kindAutoGame : L.kindAutoNo;
+  const kindBtn = (k, name, sub) => '<button type="button" class="kind" role="radio" data-k="' + k + '" aria-checked="' + (OPTS.mode === k) + '"><span class="ph9 ' + k + '">'
+    + (k === 'auto' ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg>' : '<i></i><u></u>') + '</span><b>' + esc(name) + '</b><small>' + esc(sub) + '</small></button>';
+  const seg = (key, opts) => '<div class="seg" role="group">' + Object.entries(opts).map(([k, l]) => '<button type="button" data-seg="' + key + '" data-v="' + k + '" aria-pressed="' + (OPTS.subs[key] === k) + '">' + esc(l) + '</button>').join('') + '</div>';
+  return '<div class="set" id="set">'
+    + '<div><h4>' + esc(L.kindT) + '</h4><div class="kinds" role="radiogroup" aria-label="' + esc(L.kindT) + '">' + kindBtn('auto', L.kindAuto, auto)
+    + Object.entries(L.kinds).map(([k, v]) => kindBtn(k, v[0], v[1])).join('') + '</div></div>'
+    + '<div><h4>' + esc(L.subsT) + '</h4><div class="chips" role="radiogroup" aria-label="' + esc(L.subsT) + '">'
+    + Object.entries(L.subStyles).map(([k, l]) => '<button type="button" class="chip" role="radio" data-sub="' + k + '" aria-checked="' + (OPTS.subs.style === k) + '">' + sample(L.subSample, SUB_LOOK[k]) + '<small>' + esc(l) + '</small></button>').join('')
+    + '</div><div class="segs" style="margin-top:12px"><div><h4>' + esc(L.posT) + '</h4>' + seg('pos', L.pos) + '</div><div><h4>' + esc(L.wordsT) + '</h4>' + seg('words', L.words) + '</div></div></div>'
+    + '<div><h4>' + esc(L.hookT) + '</h4><label class="tog"><input type="checkbox" id="hookon"' + (OPTS.hook.on ? ' checked' : '') + '> ' + esc(L.hookOn) + '</label>'
+    + '<div class="chips hooks' + (OPTS.hook.on ? '' : ' off') + '" role="radiogroup" aria-label="' + esc(L.hookT) + '">'
+    + Object.entries(L.hookStyles).map(([k, l]) => '<button type="button" class="chip" role="radio" data-hook="' + k + '" aria-checked="' + (OPTS.hook.style === k) + '">' + sample(L.hookSample, HOOK_LOOK[k]) + '<small>' + esc(l) + '</small></button>').join('')
+    + '</div></div>'
+    + '<div><h4>' + esc(L.promptT) + '</h4><input class="q" id="optq" maxlength="200" placeholder="' + esc(L.promptPh) + '" value="' + esc(OPTS.prompt) + '"></div>'
+    + '</div>';
+}
+function bindSettings(box) {
+  const set = box.querySelector('#set'); if (!set) return;
+  set.addEventListener('click', (ev) => {
+    const t = ev.target.closest('button'); if (!t) return;
+    if (t.dataset.k) { OPTS.mode = t.dataset.k; set.querySelectorAll('.kind').forEach((x) => x.setAttribute('aria-checked', String(x === t))); }
+    else if (t.dataset.sub) { OPTS.subs.style = t.dataset.sub; set.querySelectorAll('[data-sub]').forEach((x) => x.setAttribute('aria-checked', String(x === t))); }
+    else if (t.dataset.hook) { OPTS.hook.style = t.dataset.hook; set.querySelectorAll('[data-hook]').forEach((x) => x.setAttribute('aria-checked', String(x === t))); }
+    else if (t.dataset.seg) { OPTS.subs[t.dataset.seg] = t.dataset.v; set.querySelectorAll('[data-seg="' + t.dataset.seg + '"]').forEach((x) => x.setAttribute('aria-pressed', String(x === t))); }
+    else return;
+    saveOpts();
+  });
+  const on = set.querySelector('#hookon');
+  on.addEventListener('change', () => { OPTS.hook.on = on.checked; set.querySelector('.hooks').classList.toggle('off', !on.checked); saveOpts(); });
+  const q = set.querySelector('#optq');
+  q.addEventListener('input', () => { OPTS.prompt = q.value.slice(0, 200); });
+}
 async function startJob(url) {
   const b = $('estgo'); if (b) b.disabled = true;
   try {
-    const r = await call('start', { url, lang: '' });
+    const r = await call('start', { url, lang: '', opts: OPTS });
     history.replaceState(null, '', '?job=' + r.job.id);
     perHour = r.perHour || perHour;
     $('est').classList.add('hide');
@@ -425,9 +510,11 @@ async function estimate(url) {
     box.innerHTML = (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
       + '<div><h3>' + esc(r.title || url) + '</h3><p class="meta">' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</p>'
       + '<p class="cost"><b>' + esc(L.estT.replace('{c}', r.cost)) + '</b> · ' + esc(L.estHave.replace('{b}', r.balance)) + '</p></div>'
+      + (r.enough ? settingsHtml(r.kind) : '')
       + (r.enough ? '<div class="acts"><button class="btn btn-primary" id="estgo" type="button">' + esc(L.estGo) + ' · ' + r.cost + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>'
         : '<p class="warn">' + esc(L.estShort) + '</p><div class="acts"><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
     box.classList.remove('hide'); setHint('');
+    bindSettings(box);
     if ($('estgo')) $('estgo').onclick = () => startJob(url);
     $('estno').onclick = () => { box.classList.add('hide'); setHint(costNote()); $('url').select(); };
   } catch (e) {
