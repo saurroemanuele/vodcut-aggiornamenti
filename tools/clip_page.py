@@ -39,6 +39,7 @@ JS = {
     "it": {
         "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "hours": "h",
         "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.",
+        "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.",
         "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"},
         "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"],
         "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.",
@@ -56,6 +57,7 @@ JS = {
     "en": {
         "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video. Top-ups are coming in a few days: we'll let you know by email.", "hours": "h",
         "loginFirst": "Sign in with Google to continue: your stream starts right after.",
+        "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.",
         "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"},
         "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"],
         "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.",
@@ -297,14 +299,16 @@ let S = store.get('nf.sess');
 function fromHash() {
   if (!location.hash || location.hash.length < 10) return;
   const p = new URLSearchParams(location.hash.slice(1));
-  let asked = 0; try { asked = Number(sessionStorage.getItem('nf.login') || 0); sessionStorage.removeItem('nf.login'); } catch (e) {}
+  let asked = 0, back = '';
+  try { asked = Number(localStorage.getItem('nf.login') || 0); back = localStorage.getItem('nf.back') || ''; localStorage.removeItem('nf.login'); localStorage.removeItem('nf.back'); } catch (e) {}
   // accetta un accesso solo se l'ha chiesto questa scheda da poco (un link preparato da altri non ti fa entrare nel suo account)
   if (p.get('access_token') && asked && Date.now() - asked < 15 * 60000) {
     S = { at: p.get('access_token'), rt: p.get('refresh_token'), exp: Date.now() / 1000 + Number(p.get('expires_in') || 3600) };
     store.set('nf.sess', S);
   }
   if (p.get('error_description')) setHint(p.get('error_description'), true);
-  history.replaceState(null, '', location.pathname + location.search);
+  // si torna sempre sull'indirizzo ufficiale della pagina: qui si rimettono i parametri che c'erano (es. ?job=)
+  history.replaceState(null, '', location.pathname + (location.search || (/^\?[\w=&%.-]{0,200}$/.test(back) ? back : '')));
 }
 async function token() {
   if (!S) return null;
@@ -318,9 +322,19 @@ async function token() {
     return S.at;
   } catch (e) { S = null; store.set('nf.sess', null); return null; }
 }
+const HOME = 'https://noonframe.com/{canon}';     // l'indirizzo esatto autorizzato per il ritorno da Google (noonframe.com/clip senza .html non lo e')
+const IN_APP = /Instagram|FBAN|FBAV|FB_IAB|TikTok|musical_ly|Bytedance|Snapchat|LinkedInApp|\bLine\//i.test(navigator.userAgent || '');
 function login() {
-  try { sessionStorage.setItem('nf.login', String(Date.now())); } catch (e) {}
-  location.href = SB + '/auth/v1/authorize?provider=google&redirect_to=' + encodeURIComponent(location.origin + location.pathname + location.search);
+  if (IN_APP) {
+    // dentro Instagram, TikTok & co. Google blocca l'accesso: si apre la pagina nel browser vero
+    const here = HOME + location.search;
+    if (/Android/i.test(navigator.userAgent || '')) { location.href = 'intent://' + here.replace(/^https:\/\//, '') + '#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=' + encodeURIComponent(here) + ';end'; }
+    try { navigator.clipboard.writeText(here).catch(() => {}); } catch (e) {}
+    setHint(L.inApp, true);
+    return;
+  }
+  try { localStorage.setItem('nf.login', String(Date.now())); localStorage.setItem('nf.back', location.search || ''); } catch (e) {}
+  location.href = SB + '/auth/v1/authorize?provider=google&redirect_to=' + encodeURIComponent(HOME);
 }
 function logout() { S = null; store.set('nf.sess', null); location.href = location.pathname; }
 function me() {
