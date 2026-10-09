@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>Email di NoonFrame</title>
+<link rel="icon" href="favicon.png">
+<style>
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(fonts/inter-latin-wght-normal.woff2) format("woff2"); }
+:root { --ink:#050A1C; --card:#0A1430; --blue:#1E6BFF; --blue-hi:#4C8DFF; --fg:#F2F6FF; --fg2:#A6B4D4; --line:rgba(160,190,255,.16); --ok:#22C55E; --err:#F87171; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; background: var(--ink); color: var(--fg); font: 16px/1.55 "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+  background-image: radial-gradient(70% 45% at 50% -8%, rgba(30,107,255,.3), transparent 70%); }
+main { width: min(440px, 100%); padding: 28px 24px; border-radius: 22px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line), 0 40px 80px -30px #000; display: grid; gap: 14px; }
+img { width: 40px; height: 40px; }
+h1 { margin: 0; font-size: 22px; letter-spacing: -.02em; }
+p { margin: 0; color: var(--fg2); }
+b { color: var(--fg); font-weight: 600; word-break: break-all; }
+button { height: 48px; border: 0; border-radius: 13px; background: var(--blue); color: #fff; font: 600 15.5px/1 inherit; font-family: inherit; cursor: pointer; }
+button:hover:not(:disabled) { background: var(--blue-hi); }
+button:disabled { opacity: .6; cursor: default; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--blue-hi); outline-offset: 3px; }
+a { color: var(--blue-hi); }
+.ok { color: var(--ok); } .err { color: var(--err); }
+.hide { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <img src="logo.png" alt="NoonFrame">
+  <h1 id="h">Non vuoi più ricevere le nostre email?</h1>
+  <p id="p">Smetteremo di mandare email come promozioni e novità a <b id="em"></b>. Le email necessarie per il tuo account (per esempio le ricevute dei pagamenti) continuano ad arrivare.</p>
+  <button id="go" type="button">Sì, non mandatemi più email</button>
+  <p id="msg" role="status"></p>
+  <p><a href="./">Torna a noonframe.com</a></p>
+</main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search), e = (q.get('e') || '').trim(), t = (q.get('t') || '').trim();
+  var go = document.getElementById('go'), msg = document.getElementById('msg');
+  document.getElementById('em').textContent = e || '—';
+  // il link non resta nella cronologia con l'indirizzo email dentro
+  try { history.replaceState(null, '', location.pathname); } catch (x) {}
+  if (!/^[^\s@]+@[^\s@]+$/.test(e) || !/^[0-9a-f]{32}$/i.test(t)) {
+    go.className = 'hide'; msg.className = 'err'; msg.textContent = 'Questo link non è completo. Apri di nuovo il link dall\'email, oppure rispondi all\'email scrivendo "disiscrivimi".';
+    return;
+  }
+  go.onclick = function () {
+    go.disabled = true; msg.className = ''; msg.textContent = 'Un attimo…';
+    fetch('https://jhoidpugjjvvkjccyrxg.supabase.co/rest/v1/rpc/mail_unsubscribe', {
+      method: 'POST', headers: { apikey: 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR', 'Content-Type': 'application/json' }, body: JSON.stringify({ e: e, t: t })
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (j && j.ok) {
+        go.className = 'hide'; document.getElementById('h').textContent = 'Fatto: niente più email';
+        document.getElementById('p').textContent = 'Non riceverai più promozioni e novità da NoonFrame. Se cambi idea, scrivici rispondendo a una nostra email.';
+        msg.className = 'ok'; msg.textContent = '';
+      } else { go.disabled = false; msg.className = 'err'; msg.textContent = 'Questo link non è valido. Apri di nuovo il link dall\'email.'; }
+    }).catch(function () { go.disabled = false; msg.className = 'err'; msg.textContent = 'Connessione non riuscita: riprova tra poco.'; });
+  };
+})();
+</script>
+</body>
+</html>
