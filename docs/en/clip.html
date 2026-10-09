@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-NaP78YZ6rlnVhkFyLoM+HIp/WZBqr/OhplRV6EJtfzY='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-EmPdGtjIknD7ydN/5bIIO9lB7l7z4wS4sxnm8f+OQFA='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -402,7 +402,8 @@ function bestPf(pf) {
 }
 function fileName(c, j) { return ('noonframe-clip-' + String(c.n).padStart(2, '0')) + '.mp4'; }
 
-const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now());
+const EDIT_FROM = Date.parse('2026-10-09T18:10:00Z');   // i lavori fatti prima non hanno la copia sul server per le modifiche
+const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now() && Date.parse(j.created_at || 0) > EDIT_FROM);
 function renderDone(j) {
   const busy = (c) => !!(j.editing && j.editing.n === c.n);
   $('run').classList.add('hide');

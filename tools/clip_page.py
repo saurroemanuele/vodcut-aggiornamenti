@@ -500,7 +500,8 @@ function bestPf(pf) {
 }
 function fileName(c, j) { return ('noonframe-clip-' + String(c.n).padStart(2, '0')) + '.mp4'; }
 
-const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now());
+const EDIT_FROM = Date.parse('2026-10-09T18:10:00Z');   // i lavori fatti prima non hanno la copia sul server per le modifiche
+const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now() && Date.parse(j.created_at || 0) > EDIT_FROM);
 function renderDone(j) {
   const busy = (c) => !!(j.editing && j.editing.n === c.n);
   $('run').classList.add('hide');
