@@ -1,13 +1,29 @@
 {
- "version": "1.5.163",
+ "version": "1.5.164",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.163.zip",
- "size": 7837912,
- "sha256": "e4ece59e05db0b721e46f27b1b3e7c3b78e5a6e567a250e4469ce268d859f556",
- "sig": "vN/Tbby8CXZGbl9hP27gy5X1EvuJKbCxZrFYlrEWnVCcbkdSjLxdH7k88YzeZqrWrALjymG+OToywZ+TM6aZBA==",
- "notes": "Correzione: Le pagine di pagamento e di gestione dell'abbonamento si aprono anche con Stripe\nMiglioramento: Termini e privacy aggiornati per i pagamenti con Stripe",
- "date": "2026-10-08",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.164.zip",
+ "size": 7839138,
+ "sha256": "8ed69e0002ddafab4e6349866ae7132f2652efc9275a63ec97da456f216370ef",
+ "sig": "FXXjku7BDbugFhbmQ2zPx3zWUDKnSEknR3x8ZQSIHTmCiMBe22AoCyOQML98pqiJ4Vyw5jbD33JYtNTN+tq1Bg==",
+ "notes": "Correzione: Risolto l'errore che fermava la creazione delle clip dopo la trascrizione\nMiglioramento: Clip più affidabili: la creazione delle clip non si blocca più su video con un'impaginazione già scelta, e la trascrizione non si interrompe se parte due volte",
+ "date": "2026-10-09",
  "history": [
+  {
+   "version": "1.5.164",
+   "date": "2026-10-09",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Risolto l'errore che fermava la creazione delle clip dopo la trascrizione",
+     "en": "Fixed the error that stopped clip creation after transcription"
+    },
+    {
+     "type": "impr",
+     "text": "Clip più affidabili: la creazione delle clip non si blocca più su video con un'impaginazione già scelta, e la trascrizione non si interrompe se parte due volte",
+     "en": "More reliable clips: clip creation no longer stops on videos with a layout already chosen, and transcription no longer breaks if it starts twice"
+    }
+   ]
+  },
   {
    "version": "1.5.163",
    "date": "2026-10-08",
@@ -354,17 +370,6 @@
      "type": "impr",
      "text": "Zoom automatici più intelligenti: se in quel momento nel riquadro della webcam non c'è nessuno (scena solo cam, webcam vuota, altra scena) lo zoom non viene messo, così non inquadra più il vuoto. Vale anche per gli zoom del montaggio AI.",
      "en": "Smarter automatic zooms: if nobody is in the webcam box at that moment (full-cam scene, empty webcam, another scene) the zoom is skipped, so it no longer frames an empty spot. Also applies to AI edit zooms."
-    }
-   ]
-  },
-  {
-   "version": "1.5.133",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Scegli lo stile: ora la pagina scorre fino in fondo, c'è l'opzione «Nessuno» per tagli e zoom, ed è scritto chiaro che tagli e zoom sono gratis (fatti sul tuo computer, senza AI).",
-     "en": "Choose the style: the page now scrolls to the bottom, there's a «None» option for cuts and zooms, and it says clearly that cuts and zooms are free (done on your computer, no AI)."
     }
    ]
   }

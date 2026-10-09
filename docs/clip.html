@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-jMj1JQ61iYlcRL2IDctUH+ILfUQCkUkloZVjR+i9J9M='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-Mz20MZtGaIdzjZ1WGdq2IZOiLzS6bnaIQ7Vzoshbnfo='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Clip AI dalla tua live, anche dal telefono | NoonFrame</title>
 <meta name="description" content="Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.">
@@ -171,6 +171,30 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .clip details p { margin: 6px 0 0; }
 .clip .btn { margin-top: auto; height: 42px; font-size: 14.5px; }
 
+.cacts { display: flex; gap: 8px; margin-top: auto; }
+.cacts .btn-primary { flex: 1; }
+.cacts .btn-ed { flex: none; height: 42px; padding: 0 12px; border-radius: 12px; font-size: 14px; }
+.vbusy { position: absolute; inset: 0; z-index: 3; display: grid; place-content: center; justify-items: center; gap: 10px; padding: 14px; text-align: center; background: rgba(5,10,28,.82); backdrop-filter: blur(4px); font-size: 13.5px; color: var(--fg-2); }
+.vbusy b { color: var(--fg); font-size: 14.5px; }
+.spin { width: 28px; height: 28px; border-radius: 50%; border: 3px solid rgba(255,255,255,.12); border-top-color: var(--sky); animation: rot .9s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+.cerr { margin: 0; font-size: 13px; color: var(--err); }
+.edlg { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: rgba(2,6,18,.72); backdrop-filter: blur(6px); }
+.edlg .ebox { width: min(620px, 100%); max-height: calc(100dvh - 32px); overflow: auto; border-radius: 22px; background: #0A1430; box-shadow: inset 0 0 0 1px var(--line-2), 0 40px 80px -30px #000; padding: 20px; display: grid; gap: 16px; }
+.edlg h2 { margin: 0; font-size: 19px; letter-spacing: -.02em; }
+.edlg h4 { margin: 0 0 8px; font-size: 13px; font-weight: 600; color: var(--fg-2); }
+.edlg .kinds { grid-template-columns: repeat(4, 1fr); }
+.edlg input.q { width: 100%; height: 44px; border-radius: 12px; border: 0; padding: 0 13px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--fg); font: inherit; font-size: 15px; }
+.edlg input.q:disabled { opacity: .4; }
+.trims { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: center; }
+.trim { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--fg-2); }
+.trim b { min-width: 74px; text-align: center; color: var(--fg); font-variant-numeric: tabular-nums; }
+.trim button { appearance: none; border: 0; cursor: pointer; width: 38px; height: 34px; border-radius: 10px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--fg); font: inherit; font-size: 13px; }
+.edlg .foot { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: sticky; bottom: -20px; margin: 0 -20px -20px; padding: 14px 20px 20px; background: #0A1430; border-top: 1px solid var(--line); }
+.edlg .foot small { flex: 1 1 100%; font-size: 13px; color: var(--fg-3); }
+.edlg .foot .btn-primary { flex: 1; }
+.edlg .foot .btn { height: 46px; }
+.edlg :focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
 .edit { margin: 28px 0 0; padding: 24px; border-radius: 22px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center;
   background: linear-gradient(135deg, #1E6BFF, #3B4FD8); box-shadow: 0 30px 70px -35px rgba(30,107,255,.9); }
 .edit h3 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
@@ -207,6 +231,12 @@ footer a { color: var(--fg-3); }
   .clip h3 { font-size: 14px; }
   .clip details { display: none; }
   .edit { grid-template-columns: 1fr; padding: 20px; }
+  .edlg { padding: 0; place-items: end stretch; }
+  .edlg .ebox { border-radius: 22px 22px 0 0; max-height: 92dvh; }
+  .edlg .kinds { grid-template-columns: repeat(2, 1fr); }
+  .cacts { flex-direction: column; }
+  .cacts .btn-primary { flex: none; }
+  .cacts .btn-ed { width: 100%; }
   .edit .btn { width: 100%; }
   .who .mail { display: none; }
   .panel { padding: 20px; }
@@ -255,7 +285,7 @@ footer a { color: var(--fg-3); }
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
-const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
+const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "ed": {"btn": "Modifica", "t": "Modifica la clip", "lay": "Impaginazione", "lays": {"auto": ["Automatica", "Come l'ha scelta l'AI"], "split": ["Webcam + gioco", "Webcam sopra, gioco sotto"], "full": ["Tutto schermo", "Persona o gioco a tutto schermo"], "fit": ["Intero", "Sfondo sfocato sopra e sotto"]}, "title": "Titolo d'apertura", "noTitle": "Senza titolo", "subs": "Sottotitoli", "noSubs": "Nessuno", "keep": "Come ora", "trim": "Inizio e fine", "start": "Inizio", "end": "Fine", "earlier": "prima", "later": "dopo", "len": "Durata: {d}", "free": "Modifiche gratis rimaste per questa clip: {n}", "paid": "Questa modifica costa {c} crediti", "save": "Rifai la clip", "cancel": "Annulla", "working": "Rifaccio la clip", "done": "Clip aggiornata", "same": "Non hai cambiato niente", "until": "Puoi modificare le clip fino al {d}"}, "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -372,7 +402,9 @@ function bestPf(pf) {
 }
 function fileName(c, j) { return ('noonframe-clip-' + String(c.n).padStart(2, '0')) + '.mp4'; }
 
+const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now());
 function renderDone(j) {
+  const busy = (c) => !!(j.editing && j.editing.n === c.n);
   $('run').classList.add('hide');
   const el = $('done');
   el.classList.remove('hide');
@@ -384,17 +416,22 @@ function renderDone(j) {
       const pf = bestPf(c.pf);
       const dl = c.video ? c.video + (c.video.includes('?') ? '&' : '?') + 'download=' + encodeURIComponent(fileName(c, j)) : '';
       return '<article class="clip"><div class="vid">' + (c.score != null ? '<span class="badge">' + Math.round(c.score) + '<small>/100</small></span>' : '')
-        + '<video playsinline preload="none"' + (c.poster ? ' poster="' + esc(c.poster) + '"' : '') + ' src="' + esc(c.video || '') + '"></video><button class="play" type="button" aria-label="Play"><span><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span></button></div>'
+        + '<video playsinline preload="none"' + (c.poster ? ' poster="' + esc(c.poster) + '"' : '') + ' src="' + esc(c.video || '') + '"></video><button class="play" type="button" aria-label="Play"><span><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span></button>'
+        + (busy(c) ? '<div class="vbusy" role="status"><span class="spin"></span><b>' + esc(L.ed.working) + '</b><span>' + esc(j.editing.message || '') + ' · ' + Math.round((j.editing.progress || 0) * 100) + '%</span></div>' : '') + '</div>'
         + '<div class="body"><h3>' + esc(c.name || ('Clip ' + c.n)) + '</h3>'
         + (pf ? '<span class="pf">' + esc(L.best) + ' <b>' + pf + '</b></span>' : '')
         + (c.why ? '<details><summary>' + esc(L.why) + '</summary><p>' + esc(c.why) + '</p></details>' : '')
-        + (dl ? '<a class="btn btn-primary" href="' + esc(dl) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>' + esc(L.download) + '</a>' : '')
-        + '</div></article>';
+        + (j.editErr && j.editErr.n === c.n ? '<p class="cerr">' + esc(j.editErr.error) + '</p>' : '')
+        + '<div class="cacts">'
+        + (dl && !busy(c) ? '<a class="btn btn-primary" href="' + esc(dl) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>' + esc(L.download) + '</a>' : '')
+        + (canEdit(j) ? '<button class="btn btn-ghost btn-ed" type="button" data-ed="' + c.n + '"' + (j.editing ? ' disabled' : '') + '>' + esc(L.ed.btn) + '</button>' : '')
+        + '</div></div></article>';
     }).join('') + '</div>'
     + '<aside class="edit"><div><h3>' + esc(L.editT) + '</h3><p>' + esc(L.editD) + '</p></div>'
     + (mobile ? '<button class="btn btn-white" id="sendpc" type="button">' + esc(L.editMob) + '</button>' : '<a class="btn btn-white" href="./#download">' + esc(L.editDesk) + '</a>')
     + '<p class="ok hide" id="sentok">' + esc(L.editSent) + '</p></aside>';
   $('again').onclick = () => { history.replaceState(null, '', location.pathname); showAsk(); $('url').value = ''; $('url').focus(); };
+  el.querySelectorAll('[data-ed]').forEach((b) => b.addEventListener('click', () => openEdit(j, j.clips.find((c) => c.n === Number(b.dataset.ed)))));
   // una clip alla volta: quando ne parte una, le altre si fermano
   el.querySelectorAll('video').forEach((v) => v.addEventListener('play', () => el.querySelectorAll('video').forEach((o) => { if (o !== v) o.pause(); })));
   el.querySelectorAll('.play').forEach((b) => b.addEventListener('click', () => { const v = b.previousElementSibling; v.controls = true; b.remove(); v.play().catch(() => {}); }));
@@ -420,7 +457,14 @@ async function poll(id, now) {
     bal = r.balance; showSignedIn(bal);
     current = r.job;
     if (current.status === 'done' && current.expired) { showAsk(); $('url').value = current.url; setHint(L.expired); loadHist(); return; }
-    if (current.status === 'done') { $('hero').classList.add('hide'); renderDone(current); loadHist(); return; }
+    if (current.status === 'done') {
+      $('hero').classList.add('hide');
+      const was = editingN; editingN = current.editing ? current.editing.n : null;
+      if (!(document.querySelector('.edlg'))) renderDone(current);
+      if (current.editing) { timer = setTimeout(() => poll(id), 4000); return; }
+      if (was != null && !current.editErr) toast(L.ed.done);
+      loadHist(); return;
+    }
     $('hero').classList.add('hide');
     renderRun(current);
     if (current.status === 'queued' || current.status === 'running') timer = setTimeout(() => poll(id), 4000);
@@ -430,6 +474,81 @@ async function poll(id, now) {
     if (e.net) timer = setTimeout(() => poll(id), 6000);
     else { showAsk(); setHint(e.message, true); }
   }
+}
+
+let editingN = null;
+function toast(t) { const d = document.createElement('div'); d.className = 'hint'; d.setAttribute('role', 'status'); d.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;background:#13224A;color:#F2F6FF;padding:10px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4)'; d.textContent = t; document.body.append(d); setTimeout(() => d.remove(), 2600); }
+function openEdit(j, c) {
+  if (!c || j.editing) return;
+  const st = { layout: c.layout || 'auto', hook: c.hook || '', hookOff: !c.hook, subs: null, da: 0, db: 0 };
+  const startLay = st.layout, startHook = st.hook, startOff = st.hookOff;
+  const fmt = (v) => (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v) + ' s';
+  const durOf = () => Math.max(0, Math.round((c.dur || 0) - st.da + st.db));
+  const dlg = document.createElement('div');
+  dlg.className = 'edlg';
+  dlg.innerHTML = '<div class="ebox" role="dialog" aria-modal="true" aria-label="' + esc(L.ed.t) + '">'
+    + '<h2>' + esc(L.ed.t) + ' · ' + esc(c.name || ('Clip ' + c.n)) + '</h2>'
+    + '<div><h4>' + esc(L.ed.lay) + '</h4><div class="kinds" role="radiogroup">' + Object.entries(L.ed.lays).map(([k, v]) => '<button type="button" class="kind" role="radio" data-lay="' + k + '" aria-checked="' + (st.layout === k) + '"><span class="ph9 ' + ({ auto: 'auto', split: 'gaming', full: 'podcast', fit: 'fit' }[k]) + '">'
+      + (k === 'auto' ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg>' : '<i></i><u></u>') + '</span><b>' + esc(v[0]) + '</b><small>' + esc(v[1]) + '</small></button>').join('') + '</div></div>'
+    + '<div><h4>' + esc(L.ed.title) + '</h4><input class="q" id="edhook" maxlength="80" value="' + esc(st.hook) + '"' + (st.hookOff ? ' disabled' : '') + '><label class="tog" style="margin:10px 0 0"><input type="checkbox" id="edhookoff"' + (st.hookOff ? ' checked' : '') + '> ' + esc(L.ed.noTitle) + '</label></div>'
+    + '<div><h4>' + esc(L.ed.subs) + '</h4><div class="chips" role="radiogroup"><button type="button" class="chip" role="radio" data-es="keep" aria-checked="true"><span class="smp">' + esc(L.ed.keep) + '</span><small>&nbsp;</small></button>'
+      + Object.entries(L.subStyles).map(([k, l]) => '<button type="button" class="chip" role="radio" data-es="' + k + '" aria-checked="false">' + sample(L.subSample, SUB_LOOK[k]) + '<small>' + esc(l) + '</small></button>').join('')
+      + '<button type="button" class="chip" role="radio" data-es="off" aria-checked="false"><span class="smp low">—</span><small>' + esc(L.ed.noSubs) + '</small></button></div>'
+      + '<div class="segs" style="margin-top:12px" id="edpos" hidden><div><h4>' + esc(L.posT) + '</h4><div class="seg" role="group">' + Object.entries(L.pos).map(([k, l]) => '<button type="button" data-ep="' + k + '" aria-pressed="' + (k === 'auto') + '">' + esc(l) + '</button>').join('') + '</div></div></div></div>'
+    + '<div><h4>' + esc(L.ed.trim) + '</h4><div class="trims">'
+      + '<span class="trim">' + esc(L.ed.start) + ' <button type="button" data-t="da" data-d="-5" aria-label="' + esc(L.ed.start + ' 5 s ' + L.ed.earlier) + '">−5</button><b id="tda">' + fmt(0) + '</b><button type="button" data-t="da" data-d="5" aria-label="' + esc(L.ed.start + ' 5 s ' + L.ed.later) + '">+5</button></span>'
+      + '<span class="trim">' + esc(L.ed.end) + ' <button type="button" data-t="db" data-d="-5" aria-label="' + esc(L.ed.end + ' 5 s ' + L.ed.earlier) + '">−5</button><b id="tdb">' + fmt(0) + '</b><button type="button" data-t="db" data-d="5" aria-label="' + esc(L.ed.end + ' 5 s ' + L.ed.later) + '">+5</button></span>'
+      + '<small class="trim" id="tlen">' + esc(L.ed.len.replace('{d}', durOf() + ' s')) + '</small></div></div>'
+    + '<div class="foot"><small>' + esc(c.editsLeft > 0 ? L.ed.free.replace('{n}', c.editsLeft) : L.ed.paid.replace('{c}', j.editCost || 3)) + '</small>'
+      + '<button class="btn btn-ghost" type="button" id="edno">' + esc(L.ed.cancel) + '</button><button class="btn btn-primary" type="button" id="edgo">' + esc(L.ed.save) + '</button></div>'
+    + '</div>';
+  document.body.append(dlg);
+  const box = dlg.querySelector('.ebox');
+  const close = () => { dlg.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (ev) => { if (ev.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  dlg.addEventListener('click', (ev) => { if (ev.target === dlg) close(); });
+  box.addEventListener('click', (ev) => {
+    const t = ev.target.closest('button'); if (!t) return;
+    if (t.dataset.lay) { st.layout = t.dataset.lay; box.querySelectorAll('[data-lay]').forEach((x) => x.setAttribute('aria-checked', String(x === t))); }
+    else if (t.dataset.es) {
+      box.querySelectorAll('[data-es]').forEach((x) => x.setAttribute('aria-checked', String(x === t)));
+      st.subs = t.dataset.es === 'keep' ? null : t.dataset.es === 'off' ? { on: false } : { style: t.dataset.es, pos: (st.subs && st.subs.pos) || 'auto', words: 'poche' };
+      box.querySelector('#edpos').hidden = !(st.subs && st.subs.style);
+    } else if (t.dataset.ep) { if (st.subs && st.subs.style) st.subs.pos = t.dataset.ep; box.querySelectorAll('[data-ep]').forEach((x) => x.setAttribute('aria-pressed', String(x === t))); }
+    else if (t.dataset.t) {
+      const k = t.dataset.t, v = st[k] + Number(t.dataset.d);
+      if (Math.abs(v) > 30) return;
+      const old = st[k]; st[k] = v;
+      if (durOf() < 5 || durOf() > 180) { st[k] = old; return; }
+      box.querySelector('#t' + k).textContent = fmt(st[k]);
+      box.querySelector('#tlen').textContent = L.ed.len.replace('{d}', durOf() + ' s');
+    }
+  });
+  const hk = box.querySelector('#edhook'), off = box.querySelector('#edhookoff');
+  hk.addEventListener('input', () => { st.hook = hk.value; });
+  off.addEventListener('change', () => { st.hookOff = off.checked; hk.disabled = off.checked; if (!off.checked) hk.focus(); });
+  box.querySelector('#edno').onclick = close;
+  const go = box.querySelector('#edgo');
+  go.onclick = async () => {
+    const ch = {};
+    if (st.layout !== startLay) ch.layout = st.layout;
+    const hookNow = st.hookOff ? '' : st.hook.trim();
+    if (st.hookOff !== startOff || (!st.hookOff && hookNow !== startHook.trim())) ch.hook = hookNow;
+    if (st.subs) ch.subs = st.subs;
+    if (st.da) ch.da = st.da;
+    if (st.db) ch.db = st.db;
+    if (!Object.keys(ch).length) { toast(L.ed.same); return; }
+    go.disabled = true;
+    try {
+      const r = await call('edit', { job: j.id, n: c.n, changes: ch });
+      close();
+      current = r.job; bal = r.balance; showSignedIn(bal); editingN = c.n;
+      renderDone(current);
+      clearTimeout(timer); timer = setTimeout(() => poll(j.id), 3000);
+    } catch (e) { go.disabled = false; if (e.message !== 'auth') toast(e.message); }
+  };
+  (box.querySelector('[data-lay][aria-checked="true"]') || go).focus();
 }
 
 async function loadHist() {

@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.164",
+  "date": "2026-10-09",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Risolto l'errore che fermava la creazione delle clip dopo la trascrizione",
+    "en": "Fixed the error that stopped clip creation after transcription"
+   },
+   {
+    "type": "impr",
+    "text": "Clip più affidabili: la creazione delle clip non si blocca più su video con un'impaginazione già scelta, e la trascrizione non si interrompe se parte due volte",
+    "en": "More reliable clips: clip creation no longer stops on videos with a layout already chosen, and transcription no longer breaks if it starts twice"
+   }
+  ]
+ },
+ {
   "version": "1.5.163",
   "date": "2026-10-08",
   "items": [
