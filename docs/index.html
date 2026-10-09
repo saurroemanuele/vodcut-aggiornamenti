@@ -174,6 +174,8 @@ figure { margin: 0; }
 .plan p { margin: 12px 0 0; color: var(--fg-2); font-size: 14.5px; line-height: 1.5; }
 .plan .pc { color: var(--fg); font-weight: 600; }
 .plan .yr { font-size: 13px; color: var(--fg-3); }
+.plan { display: flex; flex-direction: column; }
+.plan .pbuy { margin-top: auto; align-self: flex-start; } .plan p:last-of-type { margin-bottom: 18px; }
 .plans-foot { margin: 28px auto 0; max-width: 760px; text-align: center; font-size: 14.5px; color: var(--fg-2); display: grid; gap: 6px; }
 .plans-foot p { margin: 0; }
 .plans-foot b { color: var(--fg); font-weight: 600; }
@@ -354,15 +356,15 @@ footer nav a:hover { color: var(--fg); }
   <div class="wrap">
     <div class="center rv"><h2>Gratis. L'AI solo se la usi.</h2><p class="lead">Per clip AI, immagini e video AI usi i crediti: ne ricevi alcuni in regalo appena entri. Oppure collega le tue chiavi AI e paghi direttamente il servizio.</p></div>
     <div class="plans4 rv">
-      <div class="plan"><h3>Gratis</h3><div class="pp">0 €</div><p class="pc">Per sempre</p><p>Editor, grafica, sottotitoli, rimozione sfondo, esportazione senza filigrana. Gira sul tuo computer.</p></div>
-      <div class="plan"><h3>Starter</h3><div class="pp">11,99 €<small>/mese</small></div><p class="pc">1.000 crediti al mese</p><p>Per iniziare con l'AI.</p><p class="yr">Oppure 119,90 € all'anno: 2 mesi gratis.</p></div>
-      <div class="plan hi"><h3>Pro</h3><div class="pp">29,99 €<small>/mese</small></div><p class="pc">2.800 crediti al mese</p><p>Per chi pubblica ogni giorno. Fino a 12 generazioni insieme.</p><p class="yr">Oppure 299,90 € all'anno: 2 mesi gratis.</p></div>
-      <div class="plan"><h3>Ultimate</h3><div class="pp">69,99 €<small>/mese</small></div><p class="pc">6.500 crediti al mese</p><p>Tutti i modelli video premium. Fino a 30 generazioni insieme.</p><p class="yr">Oppure 699,90 € all'anno: 2 mesi gratis.</p></div>
+      <div class="plan"><h3>Gratis</h3><div class="pp">0 €</div><p class="pc">Per sempre</p><p>Editor, grafica, sottotitoli, rimozione sfondo, esportazione senza filigrana. Gira sul tuo computer.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html">Inizia gratis</a></div>
+      <div class="plan"><h3>Starter</h3><div class="pp">11,99 €<small>/mese</small></div><p class="pc">1.000 crediti al mese</p><p>Per iniziare con l'AI.</p><p class="yr">Oppure 119,90 € all'anno: 2 mesi gratis.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html?compra=plan-starter">Abbonati</a></div>
+      <div class="plan hi"><h3>Pro</h3><div class="pp">29,99 €<small>/mese</small></div><p class="pc">2.800 crediti al mese</p><p>Per chi pubblica ogni giorno. Fino a 12 generazioni insieme.</p><p class="yr">Oppure 299,90 € all'anno: 2 mesi gratis.</p><a class="btn btn-primary btn-sm pbuy" href="clip.html?compra=plan-pro">Abbonati</a></div>
+      <div class="plan"><h3>Ultimate</h3><div class="pp">69,99 €<small>/mese</small></div><p class="pc">6.500 crediti al mese</p><p>Tutti i modelli video premium. Fino a 30 generazioni insieme.</p><p class="yr">Oppure 699,90 € all'anno: 2 mesi gratis.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html?compra=plan-ultimate">Abbonati</a></div>
     </div>
     <div class="plans-foot rv">
-      <p><b>Ricariche una tantum:</b> 500 crediti a 5,99 €, 1.500 crediti a 14,99 €. Non scadono.</p>
-      <p>Prezzi in euro, IVA inclusa. L'abbonamento si rinnova da solo e lo disdici quando vuoi, dall'app. <a href="termini.html">Pagamenti, disdetta e rimborsi</a></p>
-      <p class="soon"><i></i><span>I piani si attivano dall'app a breve, con un'offerta di lancio per chi c'è dall'inizio.</span></p>
+      <p><b>Ricariche una tantum:</b> <a href="clip.html?compra=pack-s">500 crediti a 5,99 €</a>, <a href="clip.html?compra=pack-l">1.500 crediti a 14,99 €</a>. Non scadono.</p>
+      <p>Prezzi in euro, IVA inclusa. L'abbonamento si rinnova da solo e lo disdici quando vuoi. <a href="termini.html">Pagamenti, disdetta e rimborsi</a></p>
+      <p class="soon"><i></i><span>Compri qui sul sito o dall'app, con lo stesso account Google. Pagamento sicuro con Stripe.</span></p>
     </div>
   </div>
 </section>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-0EPZu6n/hn9bJYo0MqBTt6jbMXuHe9TzSGAxnhFnQxg='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-Y244bM5+bGP1HlsLwYI4+482a0Gvsz0Hz4llvl9vUaU='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Clip AI dalla tua live, anche dal telefono | NoonFrame</title>
 <meta name="description" content="Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.">
@@ -154,7 +154,10 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
 .clip { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(10,20,48,.85); box-shadow: inset 0 0 0 1px var(--line-2); }
 .vid { position: relative; aspect-ratio: 9 / 16; background: #000; }
-.vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #000; }
+.vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+/* a schermo intero la clip resta verticale (barre nere ai lati), mai tagliata per riempire lo schermo */
+.vid video:fullscreen { object-fit: contain !important; width: 100%; height: 100%; }
+.vid video:-webkit-full-screen { object-fit: contain !important; width: 100%; height: 100%; }
 .play { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; border: 0; padding: 0; background: linear-gradient(180deg, transparent 55%, rgba(5,10,28,.55)); cursor: pointer; }
 .play span { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.92); box-shadow: 0 10px 30px rgba(0,0,0,.45); transition: transform .15s; }
 .play:hover span { transform: scale(1.06); }
@@ -195,6 +198,29 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .edlg .foot .btn-primary { flex: 1; }
 .edlg .foot .btn { height: 46px; }
 .edlg :focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
+.topup { height: 32px; padding: 0 12px; font-size: 13.5px; }
+.bdlg .ebox { width: min(720px, 100%); }
+.bdlg #bbody { display: grid; gap: 22px; }
+.bdlg .foot small { font-size: 12.5px; }
+.bhead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.bhead p { margin: 0; color: var(--fg-2); font-size: 14px; }
+.bsec h3 { margin: 0; font-size: 15px; }
+.bsec > p { margin: 2px 0 12px; color: var(--fg-3); font-size: 13.5px; }
+.btop { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.bitems { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.bitem { position: relative; display: grid; gap: 4px; align-content: start; padding: 14px; border-radius: 16px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line-2); }
+.bitem.hl { box-shadow: inset 0 0 0 2px var(--blue-hi); }
+.bitem .nm { font-weight: 600; font-size: 14.5px; }
+.bitem .pr { font-size: 24px; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.bitem .pr small { font-size: 13px; font-weight: 500; color: var(--fg-3); }
+.bitem .cr { color: var(--sky); font-size: 13.5px; font-weight: 600; }
+.bitem .tg, .bitem ul { color: var(--fg-3); font-size: 12.5px; margin: 0; }
+.bitem ul { padding-left: 16px; }
+.bitem .btn { margin-top: 8px; height: 40px; font-size: 14.5px; }
+.bitem .pop { position: absolute; top: -9px; right: 12px; background: var(--blue); color: #fff; font-size: 11.5px; font-weight: 600; padding: 2px 8px; border-radius: 99px; }
+.bmsg { margin: 0; padding: 10px 12px; border-radius: 12px; background: rgba(255,214,10,.08); color: var(--hook); font-size: 14px; }
+.bmsg.err { background: rgba(248,113,113,.1); color: var(--err); }
+.bsecure { margin: 0; color: var(--fg-3); font-size: 12.5px; }
 .edit { margin: 28px 0 0; padding: 24px; border-radius: 22px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center;
   background: linear-gradient(135deg, #1E6BFF, #3B4FD8); box-shadow: 0 30px 70px -35px rgba(30,107,255,.9); }
 .edit h3 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
@@ -248,7 +274,7 @@ footer a { color: var(--fg-3); }
 <header><div class="wrap">
   <a class="brand" href="./"><img src="logo.png" alt="" width="26" height="26">NoonFrame</a>
   <span class="grow"></span>
-  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><img class="avatar" id="av" alt=""><button class="link" id="out" type="button"></button></span>
+  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><button class="btn btn-primary btn-sm topup" id="topup" type="button"></button><img class="avatar" id="av" alt=""><button class="link" id="out" type="button"></button></span>
   <button class="btn btn-ghost btn-sm hide" id="in" type="button"></button>
   <a class="lang" href="en/clip.html" lang="en">EN</a>
 </div></header>
@@ -285,7 +311,7 @@ footer a { color: var(--fg-3); }
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
-const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "ed": {"btn": "Modifica", "t": "Modifica la clip", "lay": "Impaginazione", "lays": {"auto": ["Automatica", "Come l'ha scelta l'AI"], "split": ["Webcam + gioco", "Webcam sopra, gioco sotto"], "full": ["Tutto schermo", "Persona o gioco a tutto schermo"], "fit": ["Intero", "Sfondo sfocato sopra e sotto"]}, "title": "Titolo d'apertura", "noTitle": "Senza titolo", "subs": "Sottotitoli", "noSubs": "Nessuno", "keep": "Come ora", "trim": "Inizio e fine", "start": "Inizio", "end": "Fine", "earlier": "prima", "later": "dopo", "len": "Durata: {d}", "free": "Modifiche gratis rimaste per questa clip: {n}", "paid": "Questa modifica costa {c} crediti", "save": "Rifai la clip", "cancel": "Annulla", "working": "Rifaccio la clip", "done": "Clip aggiornata", "same": "Non hai cambiato niente", "until": "Puoi modificare le clip fino al {d}"}, "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
+const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti: ricarica per continuare.", "buy": {"btn": "Ricarica", "t": "Ricarica i crediti", "have": "Ne hai {b}", "packs": "Ricarica una volta", "packsD": "Paghi una volta, i crediti non scadono.", "plans": "Abbonamento", "plansD": "Crediti nuovi ogni mese, disdici quando vuoi.", "month": "Mensile", "year": "Annuale", "save": "risparmi {p}%", "perMonth": "/mese", "perYear": "/anno", "credits": "crediti", "perMo": "crediti al mese", "go": "Compra", "sub": "Abbonati", "wait": "Apro il pagamento…", "ok": "Pagamento riuscito: i crediti arrivano in pochi secondi.", "ko": "Pagamento annullato: non ti è stato addebitato nulla.", "secure": "Pagamento sicuro con Stripe (carta, Apple Pay, Google Pay). Hai un codice sconto? Lo inserisci nella pagina di pagamento.", "close": "Chiudi", "load": "Carico i prezzi…", "loadErr": "Prezzi non disponibili: riprova tra poco.", "minutes": "≈ {h} di video", "popular": "Il più scelto"}, "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "ed": {"btn": "Modifica", "t": "Modifica la clip", "lay": "Impaginazione", "lays": {"auto": ["Automatica", "Come l'ha scelta l'AI"], "split": ["Webcam + gioco", "Webcam sopra, gioco sotto"], "full": ["Tutto schermo", "Persona o gioco a tutto schermo"], "fit": ["Intero", "Sfondo sfocato sopra e sotto"]}, "title": "Titolo d'apertura", "noTitle": "Senza titolo", "subs": "Sottotitoli", "noSubs": "Nessuno", "keep": "Come ora", "trim": "Inizio e fine", "start": "Inizio", "end": "Fine", "earlier": "prima", "later": "dopo", "len": "Durata: {d}", "free": "Modifiche gratis rimaste per questa clip: {n}", "paid": "Questa modifica costa {c} crediti", "save": "Rifai la clip", "cancel": "Annulla", "working": "Rifaccio la clip", "done": "Clip aggiornata", "same": "Non hai cambiato niente", "until": "Puoi modificare le clip fino al {d}"}, "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -368,6 +394,8 @@ function showSignedIn(bal) {
 }
 $('in').textContent = L.login; $('out').textContent = L.logout;
 $('in').onclick = login; $('out').onclick = logout;
+$('topup').textContent = L.buy.btn; $('topup').onclick = () => openBuy(null);
+$('bal').parentNode.style.cursor = 'pointer'; $('bal').parentNode.onclick = () => openBuy(null);
 
 let current = null, timer = null, perHour = 30;
 const stageIdx = { queued: 0, start: 0, download: 0, prepare: 1, clips: 2, render: 3, upload: 3, done: 4 };
@@ -440,7 +468,7 @@ function renderDone(j) {
   if (sp) sp.onclick = async () => {
     sp.disabled = true;
     try {
-      const r = await fetch(DLFN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: me().email, lang: L.lang, marketing: false, source: 'clip-web', website: '' }) });
+      const r = await fetch(DLFN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: me().email, lang: LANG, marketing: false, source: 'clip-web', website: '' }) });
       if (!r.ok) throw new Error();
       $('sentok').classList.remove('hide'); sp.classList.add('hide');
     } catch (e) { sp.disabled = false; }
@@ -479,6 +507,92 @@ async function poll(id, now) {
 
 let editingN = null;
 function toast(t) { const d = document.createElement('div'); d.className = 'hint'; d.setAttribute('role', 'status'); d.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:60;background:#13224A;color:#F2F6FF;padding:10px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4)'; d.textContent = t; document.body.append(d); setTimeout(() => d.remove(), 2600); }
+// ---- ricariche e abbonamenti (pagamento su Stripe; i crediti arrivano solo dal webhook firmato)
+const PAYFN = SB + '/functions/v1/pay';
+const LANG = document.documentElement.lang === 'en' ? 'en' : 'it';
+let CAT = null;
+async function payCall(body) {
+  const t = await token();
+  if (!t) { login(); throw new Error('auth'); }
+  let r;
+  try { r = await fetch(PAYFN, { method: 'POST', headers: { Authorization: 'Bearer ' + t, apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify(body) }); }
+  catch (e) { throw new Error(L.net); }
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); login(); throw new Error('auth'); }
+  if (!r.ok) { const x = new Error((j.error && j.error.message) || L.err); x.code = j.code || (j.error && j.error.code); throw x; }
+  return j;
+}
+async function catalog() {
+  if (CAT) return CAT;
+  const r = await fetch(PAYFN, { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ op: 'catalog' }) });
+  if (!r.ok) throw new Error(L.buy.loadErr);
+  CAT = await r.json();
+  return CAT;
+}
+const eur = (v) => new Intl.NumberFormat(LANG === 'en' ? 'en-IE' : 'it-IT', { style: 'currency', currency: 'EUR' }).format(Number(v || 0));
+function openBuy(want) {
+  if (!S) { login(); return; }
+  if (document.querySelector('.bdlg')) return;
+  const B = L.buy;
+  let period = want && want.period === 'year' ? 'year' : 'month';
+  const dlg = document.createElement('div');
+  dlg.className = 'edlg bdlg';
+  dlg.innerHTML = '<div class="ebox" role="dialog" aria-modal="true" aria-label="' + esc(B.t) + '"><div class="bhead"><h2>' + esc(B.t) + '</h2><p>' + esc(B.have.replace('{b}', bal == null ? '…' : bal)) + '</p></div><div id="bbody"><p class="bsecure">' + esc(B.load) + '</p></div>'
+    + '<div class="foot"><small>' + esc(B.secure) + '</small><button class="btn btn-ghost" type="button" id="bclose">' + esc(B.close) + '</button></div></div>';
+  document.body.append(dlg);
+  const prevFocus = document.activeElement;
+  const close = () => { dlg.remove(); document.removeEventListener('keydown', onKey); try { prevFocus && prevFocus.focus(); } catch (e) {} };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) close(); });
+  dlg.querySelector('#bclose').onclick = close;
+  const body = dlg.querySelector('#bbody');
+  const hours = (cr) => { const m = Math.round(cr / Math.max(1, perHour) * 60); return m >= 60 ? (Math.round(m / 6) / 10).toString().replace('.', LANG === 'en' ? '.' : ',') + ' h' : m + ' min'; };
+  const paint = () => {
+    const c = CAT || { plans: [], packs: [] };
+    const tg = (x) => (LANG === 'en' ? x.tagline_en : x.tagline) || '';
+    const perks = (x) => (LANG === 'en' ? x.perks_en : x.perks) || [];
+    const hl = (k, id) => want && want.kind === k && want.id === id ? ' hl' : '';
+    const maxSave = Math.max(0, ...c.plans.filter((p) => p.price_year_eur).map((p) => Math.round((1 - p.price_year_eur / (p.price_eur * 12)) * 100)));
+    body.innerHTML = '<div class="bmsg hide" id="bmsg" role="status"></div>'
+      + (c.packs.length ? '<section class="bsec"><h3>' + esc(B.packs) + '</h3><p>' + esc(B.packsD) + '</p><div class="bitems">' + c.packs.map((x) =>
+        '<div class="bitem' + hl('pack', x.id) + '"><span class="nm">' + esc(x.name) + '</span><span class="pr">' + esc(eur(x.price_eur)) + '</span><span class="cr">' + x.credits + ' ' + esc(B.credits) + '</span><span class="tg">' + esc(tg(x) || B.minutes.replace('{h}', hours(x.credits))) + '</span>'
+        + '<button class="btn btn-primary" type="button" data-buy="pack" data-id="' + esc(x.id) + '">' + esc(B.go) + '</button></div>').join('') + '</div></section>' : '')
+      + (c.plans.length ? '<section class="bsec"><div class="btop"><div><h3>' + esc(B.plans) + '</h3><p style="margin:2px 0 0;color:var(--fg-3);font-size:13.5px">' + esc(B.plansD) + '</p></div>'
+        + '<div class="seg" role="group"><button type="button" data-per="month" aria-pressed="' + (period === 'month') + '">' + esc(B.month) + '</button><button type="button" data-per="year" aria-pressed="' + (period === 'year') + '">' + esc(B.year) + (maxSave ? ' · ' + esc(B.save.replace('{p}', maxSave)) : '') + '</button></div></div>'
+        + '<div class="bitems" style="margin-top:12px">' + c.plans.map((x, i) => {
+          const yr = period === 'year' && x.price_year_eur;
+          return '<div class="bitem' + hl('plan', x.id) + '">' + (i === 1 && c.plans.length > 2 ? '<span class="pop">' + esc(B.popular) + '</span>' : '') + '<span class="nm">' + esc(x.name) + '</span><span class="pr">' + esc(eur(yr ? x.price_year_eur : x.price_eur)) + '<small>' + esc(yr ? B.perYear : B.perMonth) + '</small></span>'
+            + '<span class="cr">' + x.monthly + ' ' + esc(B.perMo) + '</span>' + (tg(x) ? '<span class="tg">' + esc(tg(x)) + '</span>' : '')
+            + (perks(x).length ? '<ul>' + perks(x).map((k) => '<li>' + esc(k) + '</li>').join('') + '</ul>' : '')
+            + '<button class="btn ' + (i === 1 ? 'btn-primary' : 'btn-ghost') + '" type="button" data-buy="plan" data-id="' + esc(x.id) + '">' + esc(B.sub) + '</button></div>';
+        }).join('') + '</div></section>' : '');
+    body.querySelectorAll('[data-per]').forEach((b) => b.onclick = () => { period = b.dataset.per; paint(); });
+    body.querySelectorAll('[data-buy]').forEach((b) => b.onclick = async () => {
+      const msg = body.querySelector('#bmsg');
+      body.querySelectorAll('[data-buy]').forEach((x) => { x.disabled = true; });
+      const lab = b.textContent; b.textContent = B.wait;
+      try {
+        const r = await payCall({ op: 'buy', item: { kind: b.dataset.buy, id: b.dataset.id, period }, lang: LANG, back: 'clip' });
+        if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; }
+        if (r.changed) { msg.textContent = B.ok; msg.className = 'bmsg'; setTimeout(loadHist, 3000); }
+      } catch (e) {
+        if (e.message === 'auth') return;
+        msg.textContent = e.message; msg.className = 'bmsg' + (e.code === 'sales_soon' ? '' : ' err');
+      }
+      b.textContent = lab; body.querySelectorAll('[data-buy]').forEach((x) => { x.disabled = false; });
+    });
+    const f = body.querySelector('.hl .btn') || body.querySelector('[data-buy]');
+    if (f) try { f.focus({ preventScroll: true }); } catch (e) {}
+  };
+  catalog().then(paint).catch((e) => { body.innerHTML = '<p class="bmsg err">' + esc(e.message || B.loadErr) + '</p>'; });
+}
+function wantFrom(q) {
+  // ?compra=pack-s | plan-pro | plan-pro-year (dalla pagina dei prezzi del sito)
+  const m = /^(pack|plan)-([a-z0-9_]{1,30})(?:-(month|year))?$/.exec(q || '');
+  return m ? { kind: m[1], id: m[2], period: m[3] || 'month' } : null;
+}
+
 function openEdit(j, c) {
   if (!c || j.editing) return;
   const st = { layout: c.layout || 'auto', hook: c.hook || '', hookOff: !c.hook, subs: null, da: 0, db: 0 };
@@ -627,6 +741,7 @@ async function startJob(url) {
     poll(r.job.id);
   } catch (e) {
     if (e.message !== 'auth') setHint(e.code === 'credits' ? L.noCredits : e.message, true);
+    if (e.code === 'credits') openBuy(null);
     if (b) b.disabled = false;
   }
 }
@@ -643,11 +758,12 @@ async function estimate(url) {
       + '<p class="cost"><b>' + esc(L.estT.replace('{c}', r.cost)) + '</b> · ' + esc(L.estHave.replace('{b}', r.balance)) + '</p></div>'
       + (r.enough ? settingsHtml(r.kind) : '')
       + (r.enough ? '<div class="acts"><button class="btn btn-primary" id="estgo" type="button">' + esc(L.estGo) + ' · ' + r.cost + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>'
-        : '<p class="warn">' + esc(L.estShort) + '</p><div class="acts"><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
+        : '<p class="warn">' + esc(L.estShort) + '</p><div class="acts"><button class="btn btn-primary" id="estbuy" type="button">' + esc(L.buy.btn) + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
     box.classList.remove('hide'); setHint('');
     if (r.enough) { $('hero').classList.add('step2'); try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {} }
     bindSettings(box);
     if ($('estgo')) $('estgo').onclick = () => startJob(url);
+    if ($('estbuy')) $('estbuy').onclick = () => openBuy(null);
     $('estno').onclick = () => { box.classList.add('hide'); $('hero').classList.remove('step2'); estFor = null; setHint(costNote()); $('url').select(); };
   } catch (e) {
     if (e.message !== 'auth') setHint(e.message, true);
@@ -671,8 +787,14 @@ $('url').addEventListener('input', () => {
 (async function boot() {
   fromHash();
   const job = new URLSearchParams(location.search).get('job');
-  if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); return; }
+  const qs = new URLSearchParams(location.search), paid = qs.get('pagamento'), want = wantFrom(qs.get('compra'));
+  // senza accesso: si entra con Google e si torna qui con lo stesso ?compra= (lo ricorda login())
+  if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); if (want) { setHint(L.loginFirst); setTimeout(login, 700); } return; }
+  if (paid || want) { qs.delete('pagamento'); qs.delete('compra'); history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '')); }
   showSignedIn(null);
+  if (paid === 'ok') { toast(L.buy.ok); [4000, 10000, 25000].forEach((t) => setTimeout(loadHist, t)); }
+  if (paid === 'annullato') toast(L.buy.ko);
+  if (want) setTimeout(() => openBuy(want), 300);
   const pending = once.get('nf.pending');
   if (pending) { once.set('nf.pending', null); $('url').value = pending; }
   if (job && /^[0-9a-f-]{36}$/i.test(job)) { poll(job); return; }

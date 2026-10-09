@@ -174,6 +174,8 @@ figure { margin: 0; }
 .plan p { margin: 12px 0 0; color: var(--fg-2); font-size: 14.5px; line-height: 1.5; }
 .plan .pc { color: var(--fg); font-weight: 600; }
 .plan .yr { font-size: 13px; color: var(--fg-3); }
+.plan { display: flex; flex-direction: column; }
+.plan .pbuy { margin-top: auto; align-self: flex-start; } .plan p:last-of-type { margin-bottom: 18px; }
 .plans-foot { margin: 28px auto 0; max-width: 760px; text-align: center; font-size: 14.5px; color: var(--fg-2); display: grid; gap: 6px; }
 .plans-foot p { margin: 0; }
 .plans-foot b { color: var(--fg); font-weight: 600; }
@@ -354,15 +356,15 @@ footer nav a:hover { color: var(--fg); }
   <div class="wrap">
     <div class="center rv"><h2>Free. AI only if you use it.</h2><p class="lead">AI clips, images and AI video use credits: you get some free when you sign up. Or connect your own AI keys and pay the provider directly.</p></div>
     <div class="plans4 rv">
-      <div class="plan"><h3>Free</h3><div class="pp">0 €</div><p class="pc">Forever</p><p>Editor, design, subtitles, background removal, export with no watermark. Runs on your computer.</p></div>
-      <div class="plan"><h3>Starter</h3><div class="pp">€11.99<small>/month</small></div><p class="pc">1,000 credits a month</p><p>To get started with AI.</p><p class="yr">Or €119.90 a year: 2 months free.</p></div>
-      <div class="plan hi"><h3>Pro</h3><div class="pp">€29.99<small>/month</small></div><p class="pc">2,800 credits a month</p><p>For daily creators. Up to 12 generations at once.</p><p class="yr">Or €299.90 a year: 2 months free.</p></div>
-      <div class="plan"><h3>Ultimate</h3><div class="pp">€69.99<small>/month</small></div><p class="pc">6,500 credits a month</p><p>All premium video models. Up to 30 generations at once.</p><p class="yr">Or €699.90 a year: 2 months free.</p></div>
+      <div class="plan"><h3>Free</h3><div class="pp">0 €</div><p class="pc">Forever</p><p>Editor, design, subtitles, background removal, export with no watermark. Runs on your computer.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html">Start free</a></div>
+      <div class="plan"><h3>Starter</h3><div class="pp">€11.99<small>/month</small></div><p class="pc">1,000 credits a month</p><p>To get started with AI.</p><p class="yr">Or €119.90 a year: 2 months free.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html?compra=plan-starter">Subscribe</a></div>
+      <div class="plan hi"><h3>Pro</h3><div class="pp">€29.99<small>/month</small></div><p class="pc">2,800 credits a month</p><p>For daily creators. Up to 12 generations at once.</p><p class="yr">Or €299.90 a year: 2 months free.</p><a class="btn btn-primary btn-sm pbuy" href="clip.html?compra=plan-pro">Subscribe</a></div>
+      <div class="plan"><h3>Ultimate</h3><div class="pp">€69.99<small>/month</small></div><p class="pc">6,500 credits a month</p><p>All premium video models. Up to 30 generations at once.</p><p class="yr">Or €699.90 a year: 2 months free.</p><a class="btn btn-ghost btn-sm pbuy" href="clip.html?compra=plan-ultimate">Subscribe</a></div>
     </div>
     <div class="plans-foot rv">
-      <p><b>One-time top-ups:</b> 500 credits for €5.99, 1,500 credits for €14.99. They don't expire.</p>
-      <p>Prices in euros, VAT included. Your plan renews automatically and you can cancel anytime from the app. <a href="terms.html">Payments, cancellation and refunds</a></p>
-      <p class="soon"><i></i><span>Plans will be available in the app soon, with a launch offer for early users.</span></p>
+      <p><b>One-time top-ups:</b> <a href="clip.html?compra=pack-s">500 credits for €5.99</a>, <a href="clip.html?compra=pack-l">1,500 credits for €14.99</a>. They don't expire.</p>
+      <p>Prices in euros, VAT included. Your plan renews automatically and you can cancel anytime. <a href="terms.html">Payments, cancellation and refunds</a></p>
+      <p class="soon"><i></i><span>Buy here on the site or in the app, with the same Google account. Secure payment with Stripe.</span></p>
     </div>
   </div>
 </section>
