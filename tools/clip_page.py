@@ -10,11 +10,11 @@ T = {
         "lang": "it", "title": "Clip AI dalla tua live, anche dal telefono | NoonFrame",
         "desc": "Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.",
         "home": "./", "other": "en/clip.html", "otherLabel": "EN", "privacy": "privacy.html", "terms": "termini.html", "dl": "./#download",
-        "h1": "Clip virali dalla tua live.<br>Anche dal telefono.",
-        "sub": "Incolla il link della live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.",
-        "ph": "Link della live (Twitch, Kick o YouTube)", "go": "Trova le clip",
+        "h1": "Clip virali dai tuoi video.<br>Anche dal telefono.",
+        "sub": "Incolla il link di un video YouTube o di una live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.",
+        "ph": "Link del video o della live (YouTube, Twitch, Kick)", "go": "Trova le clip",
         "note": "150 crediti gratis per iniziare · accesso con Google",
-        "how1": "Incolla il link", "how1d": "Il VOD della live, anche di ore.",
+        "how1": "Incolla il link", "how1d": "Un video YouTube o il VOD di una live, anche di ore.",
         "how2": "L'AI sceglie", "how2d": "I momenti più forti, con un punteggio per piattaforma.",
         "how3": "Scarica e pubblica", "how3d": "Clip verticali con sottotitoli, in pochi minuti.",
     },
@@ -22,11 +22,11 @@ T = {
         "lang": "en", "title": "AI clips from your stream, even from your phone | NoonFrame",
         "desc": "Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.",
         "home": "./", "other": "../clip.html", "otherLabel": "IT", "privacy": "privacy.html", "terms": "terms.html", "dl": "./#download",
-        "h1": "Viral clips from your stream.<br>Even from your phone.",
-        "sub": "Paste your stream link: AI finds the best moments and edits them vertically with captions, ready for TikTok, Reels and Shorts.",
-        "ph": "Stream link (Twitch, Kick or YouTube)", "go": "Find clips",
+        "h1": "Viral clips from your videos.<br>Even from your phone.",
+        "sub": "Paste a YouTube video or stream link: AI finds the best moments and edits them vertically with captions, ready for TikTok, Reels and Shorts.",
+        "ph": "Video or stream link (YouTube, Twitch, Kick)", "go": "Find clips",
         "note": "150 free credits to start · sign in with Google",
-        "how1": "Paste the link", "how1d": "Your stream VOD, even hours long.",
+        "how1": "Paste the link", "how1d": "A YouTube video or a stream VOD, even hours long.",
         "how2": "AI picks", "how2d": "The strongest moments, scored for each platform.",
         "how3": "Download and post", "how3d": "Vertical clips with captions, in minutes.",
     },
@@ -35,11 +35,11 @@ T = {
 # testi usati dal codice della pagina
 JS = {
     "it": {
-        "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo non sembra il link di una live: usa twitch.tv/videos/…, kick.com/canale/videos/… o un link di YouTube.",
+        "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.", "hours": "h",
         "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.",
-        "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico la live", "prepare": "Analizzo la live", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"},
+        "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"},
         "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"],
-        "working": "Sto lavorando sulla tua live", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.",
+        "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.",
         "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta",
         "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio",
         "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova",
@@ -47,16 +47,16 @@ JS = {
         "editT": "Vuoi ritoccarle?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip, gratis.",
         "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.",
         "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.",
-        "costNote": "Costo: circa {n} crediti per ogni ora di live. Hai {b} crediti.",
+        "costNote": "Costo: circa {n} crediti per ogni ora di video. Hai {b} crediti.",
         "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.",
         "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
     },
     "en": {
-        "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This doesn't look like a stream link: use twitch.tv/videos/…, kick.com/channel/videos/… or a YouTube link.",
+        "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video. Top-ups are coming in a few days: we'll let you know by email.", "hours": "h",
         "loginFirst": "Sign in with Google to continue: your stream starts right after.",
-        "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the stream", "prepare": "Analyzing the stream", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"},
+        "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"},
         "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"],
-        "working": "Working on your stream", "leave": "You can close this page: we'll email you when your clips are ready.",
+        "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.",
         "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready",
         "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score",
         "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again",
@@ -64,7 +64,7 @@ JS = {
         "editT": "Want to tweak them?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip, for free.",
         "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.",
         "noCredits": "You've used your free credits. Top-ups are coming in a few days: we'll let you know by email.",
-        "costNote": "Cost: about {n} credits per hour of stream. You have {b} credits.",
+        "costNote": "Cost: about {n} credits per hour of video. You have {b} credits.",
         "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.",
         "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime.",
     },
@@ -75,7 +75,7 @@ PAGE = r"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -146,6 +146,15 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .how b em { font-style: normal; color: var(--sky); margin-right: 6px; font-variant-numeric: tabular-nums; }
 .how p { margin: 4px 0 0; font-size: 14px; color: var(--fg-2); }
 
+.est { max-width: 620px; margin: 16px auto 0; padding: 12px; border-radius: 18px; background: rgba(10,20,48,.8); box-shadow: inset 0 0 0 1px var(--line-2); display: grid; grid-template-columns: 132px 1fr; gap: 14px; text-align: left; align-items: center; }
+.est img, .est .ph { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 11px; background: var(--ink-2); }
+.est h3 { margin: 0; font-size: 15.5px; line-height: 1.3; letter-spacing: -.01em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.est .meta { margin: 3px 0 0; font-size: 13px; color: var(--fg-3); }
+.est .cost { margin: 8px 0 0; font-size: 14px; color: var(--fg-2); }
+.est .cost b { color: var(--hook); font-variant-numeric: tabular-nums; }
+.est .acts { grid-column: 1 / -1; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.est .acts .btn { flex: 1; min-width: 180px; }
+.est .warn { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--err); }
 .panel { margin: 30px auto 0; max-width: 620px; padding: 24px; border-radius: 22px; background: rgba(10,20,48,.8); box-shadow: inset 0 0 0 1px var(--line-2); }
 .panel h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; line-height: 1.25; }
 .panel .src { margin: 6px 0 0; font-size: 13.5px; color: var(--fg-3); word-break: break-all; }
@@ -211,6 +220,8 @@ footer a { color: var(--fg-3); }
   .ask { flex-direction: column; padding: 8px; }
   .ask .btn { width: 100%; }
   .ask input { flex: none; }
+  .est { grid-template-columns: 104px 1fr; gap: 12px; }
+  .est img, .est .ph { width: 104px; }
   .how { grid-template-columns: 1fr; gap: 8px; margin-top: 34px; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .clip .body { padding: 11px 11px 13px; }
@@ -241,6 +252,7 @@ footer a { color: var(--fg-3); }
       <input id="url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="{ph}" aria-label="{ph}">
       <button class="btn btn-primary" id="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg><span>{go}</span></button>
     </form>
+    <div class="est hide" id="est" aria-live="polite"></div>
     <p class="hint" id="hint" role="status">{note}</p>
     <div class="plats" aria-hidden="true">
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2 2.5 6v14h5v3h3l3-3h4L22 15.5V2H4zm16 12.5-3 3h-5l-3 3v-3H5V4h15v10.5zM16 7h2v6h-2V7zm-5 0h2v6h-2V7z"/></svg>Twitch</span>
@@ -440,20 +452,56 @@ async function loadHist() {
   } catch (e) { return null; }
 }
 
+function fmtDur(sec) {
+  const m = Math.round(sec / 60), h = Math.floor(m / 60);
+  return h ? h + ' ' + L.hours + ' ' + String(m % 60).padStart(2, '0') + ' ' + L.min : m + ' ' + L.min;
+}
+let estFor = null;
+async function startJob(url) {
+  const b = $('estgo'); if (b) b.disabled = true;
+  try {
+    const r = await call('start', { url, lang: '' });
+    history.replaceState(null, '', '?job=' + r.job.id);
+    perHour = r.perHour || perHour;
+    $('est').classList.add('hide');
+    poll(r.job.id);
+  } catch (e) {
+    if (e.message !== 'auth') setHint(e.code === 'credits' ? L.noCredits : e.message, true);
+    if (b) b.disabled = false;
+  }
+}
+async function estimate(url) {
+  const box = $('est'), b = $('go');
+  box.classList.add('hide'); setHint(L.checking); b.disabled = true; estFor = url;
+  try {
+    const r = await call('estimate', { url });
+    if (estFor !== url) return;
+    bal = r.balance; showSignedIn(bal);
+    box.innerHTML = (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
+      + '<div><h3>' + esc(r.title || url) + '</h3><p class="meta">' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</p>'
+      + '<p class="cost"><b>' + esc(L.estT.replace('{c}', r.cost)) + '</b> · ' + esc(L.estHave.replace('{b}', r.balance)) + '</p></div>'
+      + (r.enough ? '<div class="acts"><button class="btn btn-primary" id="estgo" type="button">' + esc(L.estGo) + ' · ' + r.cost + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>'
+        : '<p class="warn">' + esc(L.estShort) + '</p><div class="acts"><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
+    box.classList.remove('hide'); setHint('');
+    if ($('estgo')) $('estgo').onclick = () => startJob(url);
+    $('estno').onclick = () => { box.classList.add('hide'); setHint(costNote()); $('url').select(); };
+  } catch (e) {
+    if (e.message !== 'auth') setHint(e.message, true);
+  } finally { b.disabled = false; }
+}
+
 $('ask').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const url = $('url').value.trim();
   if (!LINKS.some((rx) => rx.test(url))) { setHint(L.badLink, true); $('url').focus(); return; }
   if (!S) { once.set('nf.pending', url); setHint(L.loginFirst); setTimeout(login, 600); return; }
-  const b = $('go'); b.disabled = true;
-  try {
-    const r = await call('start', { url, lang: '' });
-    history.replaceState(null, '', '?job=' + r.job.id);
-    perHour = r.perHour || perHour;
-    poll(r.job.id);
-  } catch (e) {
-    if (e.message !== 'auth') setHint(e.code === 'credits' ? L.noCredits : e.message, true);
-  } finally { b.disabled = false; }
+  estimate(url);
+});
+// incollando un link valido la stima parte da sola
+$('url').addEventListener('input', () => {
+  const url = $('url').value.trim();
+  $('est').classList.add('hide');
+  if (S && url !== estFor && LINKS.some((rx) => rx.test(url))) estimate(url);
 });
 
 (async function boot() {
