@@ -1,13 +1,29 @@
 {
- "version": "1.5.166",
+ "version": "1.5.167",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.166.zip",
- "size": 7839771,
- "sha256": "92bf08559aae47cf4da13146c6abb25d946c0c57fdb1a076d9e7d67285384ed0",
- "sig": "YWMjRzAkeCkmQqwky6zYa/egPgEe+eZMoyQr82EkTRNe0xmYNkUthr0WeC3LAZq3kV7U7PpEIF5yS4nYpsO6CQ==",
- "notes": "Correzione: Il tasto per comprare non si rimpicciolisce più quando la finestra è bassa\nMiglioramento: La finestra per comprare crediti e piani si legge bene anche sugli schermi bassi",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.167.zip",
+ "size": 7840122,
+ "sha256": "e09e0d1958b37ff9a7b3c89894ab7b48fe72075122e7b15a476e441ca6a40bb5",
+ "sig": "KskujBN2Ps5/CXzw052Ksn9047RiCHzRachmwxFhCa2l/+zO8WQmtQiMY4SVRZKXGTr7GELKX9LL1FihTsnkAA==",
+ "notes": "Correzione: Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano\nMiglioramento: Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
  "date": "2026-10-09",
  "history": [
+  {
+   "version": "1.5.167",
+   "date": "2026-10-09",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano",
+     "en": "When applying a zoom to all, the ones before the selected zoom or with keyframes stayed unchanged"
+    },
+    {
+     "type": "impr",
+     "text": "Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
+     "en": "Zoom: «Apply to all» now really applies to every zoom in the video (effect and magnification)"
+    }
+   ]
+  },
   {
    "version": "1.5.166",
    "date": "2026-10-09",
@@ -364,17 +380,6 @@
      "type": "impr",
      "text": "Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
      "en": "Reports sent from projects with long lives now arrive: before, they stayed stuck in the queue on your computer."
-    }
-   ]
-  },
-  {
-   "version": "1.5.136",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
-     "en": "Much faster transcription for long lives: it works in chunks, several at once, and if you close the app or an update arrives it resumes where it left off instead of starting over."
     }
    ]
   }

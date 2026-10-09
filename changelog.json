@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.167",
+  "date": "2026-10-09",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano",
+    "en": "When applying a zoom to all, the ones before the selected zoom or with keyframes stayed unchanged"
+   },
+   {
+    "type": "impr",
+    "text": "Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
+    "en": "Zoom: «Apply to all» now really applies to every zoom in the video (effect and magnification)"
+   }
+  ]
+ },
+ {
   "version": "1.5.166",
   "date": "2026-10-09",
   "items": [
