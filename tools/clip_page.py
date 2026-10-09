@@ -50,7 +50,7 @@ JS = {
         "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.",
         "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.",
         "noCredits": "Hai finito i crediti gratuiti. Le ricariche arrivano tra pochi giorni: ti avvisiamo per email.",
-        "costNote": "Costo: 1 credito per ogni minuto di video. Hai {b} crediti.",
+        "costNote": "Incolla il link: poi scegli formato, sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.",
         "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.",
         "setT": "Come le vuoi", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI",
         "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]},
@@ -75,7 +75,7 @@ JS = {
         "editT": "Want to tweak them and spend less?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip. And clips cost much less: your PC does transcription and editing for free.",
         "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.",
         "noCredits": "You've used your free credits. Top-ups are coming in a few days: we'll let you know by email.",
-        "costNote": "Cost: 1 credit per minute of video. You have {b} credits.",
+        "costNote": "Paste the link, then pick format, captions and title. Cost: 1 credit per minute of video, you have {b} credits.",
         "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.",
         "setT": "How you want them", "kindT": "What kind of video?", "kindAuto": "Automatic", "kindAutoPod": "Looks like a podcast", "kindAutoGame": "Looks like gaming", "kindAutoNo": "The AI decides",
         "kinds": {"podcast": ["Podcast · interview", "Person full screen"], "gaming": ["Gaming with webcam", "Webcam on top, game below"], "fit": ["Whole video", "Blurred background above and below"]},
@@ -605,6 +605,8 @@ async function estimate(url) {
         : '<p class="warn">' + esc(L.estShort) + '</p><div class="acts"><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
     box.classList.remove('hide'); setHint('');
     bindSettings(box);
+    // sul telefono la scheda con le impostazioni si porta in vista
+    try { if (window.innerWidth < 760) box.scrollIntoView({ behavior: 'smooth', block: 'start' }); } catch (e) {}
     if ($('estgo')) $('estgo').onclick = () => startJob(url);
     $('estno').onclick = () => { box.classList.add('hide'); setHint(costNote()); $('url').select(); };
   } catch (e) {
