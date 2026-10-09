@@ -201,6 +201,14 @@ figure { margin: 0; }
 .cmd button { height: 28px; padding: 0 10px; border-radius: 8px; border: 0; background: rgba(255,255,255,.12); color: var(--fg); font: 600 12px var(--body); cursor: pointer; }
 .phone { max-width: 460px; margin: 32px auto 0; text-align: left; }
 .phone.in-hero { margin: 26px auto 0; }
+.mclip { margin: 28px auto 0; max-width: 460px; }
+.mclip-go { width: 100%; height: 54px; font-size: 16.5px; border-radius: 14px; }
+.mclip-sub { margin: 12px 0 0; font-size: 14px; color: var(--fg-2); }
+.pc-alt { max-width: 460px; margin: 18px auto 0; text-align: left; }
+.pc-alt summary { cursor: pointer; text-align: center; font-size: 14px; color: var(--fg-3); text-decoration: underline; text-underline-offset: 3px; list-style: none; }
+.pc-alt summary::-webkit-details-marker { display: none; }
+.pc-alt, .pc-alt summary { border: 0 !important; padding-top: 0 !important; } .pc-alt summary { display: block !important; } .pc-alt summary::after, .pc-alt summary::before { display: none !important; content: none !important; }
+.pc-alt .phone.in-hero { margin-top: 14px; }
 .ph-back { margin-top: 24px; }
 .phone p { margin: 0 0 10px; font-size: 14.5px; color: var(--fg-2); }
 .phone form { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -289,12 +297,13 @@ footer nav a:hover { color: var(--fg); }
 <main id="main">
 <div class="hero" id="top">
   <div class="wrap hero-in">
-    <a class="pill" href="#prodotto"><b>New</b><span>AI clips with the best platform for each clip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a>
+    <a class="pill" href="clip.html"><b>New</b><span>AI clips from your phone, nothing to install</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></a>
     <h1>The AI studio<br>for creators.</h1>
     <p class="sub">Viral clips from your Twitch, Kick and YouTube streams, video editor, design and AI video. In one free app for Windows and Mac.</p>
     <div class="cta">
       <a class="btn btn-primary only-desk" id="dl-main" href="#download"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span>Download NoonFrame</span></a>
       <a class="btn btn-ghost only-desk" href="#download" id="dl-other">All downloads</a>
+      <a class="btn btn-ghost only-desk" href="clip.html" id="dl-web">Clips online</a>
       <a class="btn btn-primary only-mob" href="#download" id="dl-phone">Send me the link for my computer</a>
     </div>
     <p class="note" id="dl-note">Windows 10 and 11 · macOS 13 or later · Sign in with Google</p>
@@ -411,7 +420,7 @@ footer nav a:hover { color: var(--fg); }
 
 <script>
 const L = {
-  getLink: 'Get the link', lang: 'en', dlMac: 'Download for Mac', dlWin: 'Download for Windows', otherWin: 'On Windows?', otherMac: 'On a Mac?',
+  clipCta: 'Create clips on your phone', clipSub: 'Paste a YouTube video or stream link: AI finds the best moments. 150 free credits.', pcAlt: 'Prefer your computer? We\'ll email you the link', clipHdr: 'Create clips', getLink: 'Get the link', lang: 'en', dlMac: 'Download for Mac', dlWin: 'Download for Windows', otherWin: 'On Windows?', otherMac: 'On a Mac?',
   noteMac: 'macOS 13 or later · 358 MB · Sign in with Google', noteWin: 'Windows 10 and 11 · 155 MB · Sign in with Google',
   mobile: 'NoonFrame runs on Windows and Mac computers: we\'ll email you the link.',
   sending: 'Sending…', sent: 'Done! Check your inbox (and spam) and open the email on your computer.', queued: 'Got it! We\'ll send you the link shortly: open it on your computer.',
@@ -481,13 +490,19 @@ if (os && !mobile) {
 if (mobile) document.body.classList.add('mobile');
 // dal telefono: il modulo per farsi mandare il link sta subito sotto il titolo, senza scorrere
 if (mobile) {
+  // dal telefono la prima scelta e' creare le clip qui sul web; il link per il PC resta come seconda strada
   const ph = document.getElementById('phone'), cta = document.querySelector('.hero .cta');
+  const box = document.createElement('div'); box.className = 'mclip';
+  box.innerHTML = '<a class="btn btn-primary mclip-go" href="clip.html"></a><p class="mclip-sub"></p>';
+  box.querySelector('a').textContent = L.clipCta; box.querySelector('p').textContent = L.clipSub;
+  const alt = document.createElement('details'); alt.className = 'pc-alt';
+  const sm = document.createElement('summary'); sm.textContent = L.pcAlt; alt.append(sm);
   const back = document.createElement('a');
-  back.className = 'btn btn-primary only-mob ph-back'; back.href = '#top'; back.textContent = L.getLink;
-  ph.before(back); cta.after(ph); ph.classList.add('in-hero'); cta.style.display = 'none'; note.style.display = 'none';
-  const hb = document.querySelector('header .btn-sm'); hb.textContent = L.getLink; hb.href = '#top';
-  const focusMail = () => setTimeout(() => document.getElementById('ph-email').focus({ preventScroll: true }), 450);
-  hb.addEventListener('click', focusMail); back.addEventListener('click', focusMail);
+  back.className = 'btn btn-primary only-mob ph-back'; back.href = 'clip.html'; back.textContent = L.clipCta;
+  ph.before(back); cta.after(box); box.after(alt); alt.append(ph); ph.classList.add('in-hero'); cta.style.display = 'none'; note.style.display = 'none';
+  const hb = document.querySelector('header .btn-sm'); hb.textContent = L.clipHdr; hb.href = 'clip.html';
+  alt.addEventListener('toggle', () => { if (alt.open) setTimeout(() => document.getElementById('ph-email').focus({ preventScroll: true }), 150); });
+  [box.querySelector('a'), back, hb].forEach((x) => x.addEventListener('click', () => hit('dl', 'web')));
 }
 document.getElementById('dl-phone').addEventListener('click', () => setTimeout(() => document.getElementById('ph-email').focus({ preventScroll: true }), 450));
 
