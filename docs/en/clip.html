@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-EmPdGtjIknD7ydN/5bIIO9lB7l7z4wS4sxnm8f+OQFA='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-3noIxj/SkS6yLEtRflMnuvuIZ5v4cYlQfHBJ4lam1FA='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -262,7 +262,7 @@ footer a { color: var(--fg-3); }
       <button class="btn btn-primary" id="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg><span>Find clips</span></button>
     </form>
     <div class="est hide" id="est" aria-live="polite"></div>
-    <p class="hint" id="hint" role="status">150 free credits to start · sign in with Google</p>
+    <p class="hint" id="hint" role="status">120 free credits to start · sign in with Google</p>
     <div class="plats" aria-hidden="true">
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2 2.5 6v14h5v3h3l3-3h4L22 15.5V2H4zm16 12.5-3 3h-5l-3 3v-3H5V4h15v10.5zM16 7h2v6h-2V7zm-5 0h2v6h-2V7z"/></svg>Twitch</span>
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
@@ -449,7 +449,7 @@ function renderDone(j) {
 
 function showAsk() { $('hero').classList.remove('hide', 'step2'); $('est').classList.add('hide'); $('run').classList.add('hide'); $('done').classList.add('hide'); setHint(costNote()); }
 let bal = null;
-function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{b}', bal == null ? '…' : bal) : '150 free credits to start · sign in with Google'; }
+function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{b}', bal == null ? '…' : bal) : '120 free credits to start · sign in with Google'; }
 
 async function poll(id, now) {
   clearTimeout(timer);
