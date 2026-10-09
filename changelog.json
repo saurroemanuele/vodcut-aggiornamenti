@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.166",
+  "date": "2026-10-09",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Il tasto per comprare non si rimpicciolisce più quando la finestra è bassa",
+    "en": "The buy button no longer shrinks when the window is short"
+   },
+   {
+    "type": "impr",
+    "text": "La finestra per comprare crediti e piani si legge bene anche sugli schermi bassi",
+    "en": "The credits and plans window now reads well on short screens too"
+   }
+  ]
+ },
+ {
   "version": "1.5.165",
   "date": "2026-10-09",
   "items": [

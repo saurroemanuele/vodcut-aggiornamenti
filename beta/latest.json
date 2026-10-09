@@ -1,13 +1,29 @@
 {
- "version": "1.5.165",
+ "version": "1.5.166",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.165.zip",
- "size": 7839625,
- "sha256": "e8d1004157bce2634cfaf2158dbefe2e7b63b2462bb34a92a625f70f331ee13a",
- "sig": "U9s1+w1mEyNQ0qEC+LLWmqxhVxTzKHqHrAKIJb/MIDhkt8NN51oucLa1QK7YI+S1CPM/Jvt42DsNIN8V1N8PAw==",
- "notes": "Miglioramento: Se la creazione delle clip si interrompe, riprovando si riparte dai momenti già trovati: niente nuova ricerca e niente crediti scalati di nuovo",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.166.zip",
+ "size": 7839771,
+ "sha256": "92bf08559aae47cf4da13146c6abb25d946c0c57fdb1a076d9e7d67285384ed0",
+ "sig": "YWMjRzAkeCkmQqwky6zYa/egPgEe+eZMoyQr82EkTRNe0xmYNkUthr0WeC3LAZq3kV7U7PpEIF5yS4nYpsO6CQ==",
+ "notes": "Correzione: Il tasto per comprare non si rimpicciolisce più quando la finestra è bassa\nMiglioramento: La finestra per comprare crediti e piani si legge bene anche sugli schermi bassi",
  "date": "2026-10-09",
  "history": [
+  {
+   "version": "1.5.166",
+   "date": "2026-10-09",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Il tasto per comprare non si rimpicciolisce più quando la finestra è bassa",
+     "en": "The buy button no longer shrinks when the window is short"
+    },
+    {
+     "type": "impr",
+     "text": "La finestra per comprare crediti e piani si legge bene anche sugli schermi bassi",
+     "en": "The credits and plans window now reads well on short screens too"
+    }
+   ]
+  },
   {
    "version": "1.5.165",
    "date": "2026-10-09",
@@ -359,17 +375,6 @@
      "type": "impr",
      "text": "Trascrizione delle live lunghe molto più veloce: si fa a pezzi, più pezzi insieme, e se chiudi l'app o arriva un aggiornamento riparte da dove era arrivata invece che da capo.",
      "en": "Much faster transcription for long lives: it works in chunks, several at once, and if you close the app or an update arrives it resumes where it left off instead of starting over."
-    }
-   ]
-  },
-  {
-   "version": "1.5.135",
-   "date": "2026-10-03",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Keyframe anche per lo stile dei testi (colore, contorno, bagliore, parole evidenziate, sfondo) e rotazione e 3D, anche con i keyframe, per i video sopra la live.",
-     "en": "Keyframes for text style too (colour, outline, glow, highlighted words, background), plus rotation and 3D, keyframes included, for videos on top of the live."
     }
    ]
   }
