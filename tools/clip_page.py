@@ -1117,7 +1117,8 @@ async function maybeUpsell() {
 function keepRef() {
   const q = new URLSearchParams(location.search), c = q.get('ref');
   if (!c) return;
-  if (/^[A-Za-z0-9]{4,10}$/.test(c)) store.set('nf.ref', { c: c.toUpperCase(), at: Date.now() });
+  // inviti sospesi: il codice si toglie dall'indirizzo e non si salva
+  store.set('nf.ref', null);
   q.delete('ref'); history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
 }
 async function claimRef() {
@@ -1188,7 +1189,6 @@ function openProfile() {
     body.innerHTML = '<div class="pstats"><div><b>' + Number(w.balance || 0).toLocaleString(LANG === 'en' ? 'en' : 'it') + '</b><span>' + esc(P.credits) + '</span></div><div><b>' + (c.clips || 0) + '</b><span>' + esc(P.clips) + '</span></div><div><b>' + esc(hrs) + '</b><span>' + esc(P.hours) + '</span></div></div>'
       + '<div class="pplan"><div><span class="muted">' + esc(P.plan) + '</span><b>' + esc(paid ? (d.planName || w.plan) : P.free) + '</b>' + (planLine ? '<small>' + esc(planLine) + '</small>' : '') + '</div>'
       + '<div class="pplan-a"><button class="btn btn-primary btn-sm" type="button" id="ptop">' + esc(paid ? P.topup : P.upgrade) + '</button>' + (sub ? '<button class="btn btn-ghost btn-sm" type="button" id="pman">' + esc(P.manage) + '</button>' : '') + '</div></div>'
-      + '<section class="pref hide" id="pref"></section>'
       + '<section class="prep"><div class="prep-h"><h3>' + esc(P.reports) + '</h3><button class="link" type="button" id="pfb">' + esc(P.newFb) + '</button></div>'
       + ((d.reports || []).length ? '<ul>' + d.reports.map((r) => '<li><div class="prep-t"><span class="rk ' + esc(r.kind) + '">' + esc(P.kinds[r.kind] || r.kind) + '</span>' + st(r) + '<time>' + esc(fmtDay(r.at)) + '</time></div><p>' + esc(r.text) + '</p>'
           + (r.replies || []).map((x) => '<div class="prep-r"><b>' + esc(P.reply) + '</b><p>' + esc(x.body) + '</p></div>').join('') + '</li>').join('') + '</ul>'
@@ -1200,7 +1200,6 @@ function openProfile() {
     const pm = body.querySelector('#pman'); if (pm) pm.onclick = async () => { pm.disabled = true; try { const r = await payCall({ op: 'portal' }); if (r.url && /^https:\/\/(billing\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; } } catch (e) { if (e.message !== 'auth') toast(e.message); } pm.disabled = false; };
     body.querySelector('#pfb').onclick = () => { close(); openFeedback(); };
     body.querySelector('#pout').onclick = logout;
-    refBox(body.querySelector('#pref'));
   }).catch((e) => { if (e.message === 'auth') { close(); return; } body.innerHTML = '<p class="bmsg err">' + esc(e.message) + '</p><button class="link plogout" type="button" id="pout">' + esc(P.logout) + '</button>'; body.querySelector('#pout').onclick = logout; });
 }
 // immagine allegata: ridotta nel browser (lato lungo 1600 px, JPEG) prima di mandarla
@@ -1573,7 +1572,6 @@ $('url').addEventListener('input', () => {
   if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); if (want) { setHint(L.loginFirst); setTimeout(login, 700); } return; }
   if (paid || want) { qs.delete('pagamento'); qs.delete('compra'); history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '')); }
   showSignedIn(null);
-  claimRef();
   if (paid === 'ok') { step('clip_paid'); toast(L.buy.ok); [4000, 10000, 25000].forEach((t) => setTimeout(loadHist, t)); }
   if (paid === 'annullato') toast(L.buy.ko);
   if (want) setTimeout(() => openBuy(want), 300);
