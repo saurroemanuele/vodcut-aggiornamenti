@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-P8WNcoLJkj/pSEymUZD+Z0HBUmCGroRwrFmBxpD5gTY='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-bTK8odsNV2AyYs5OzbiMTWLxk39k0m+8ke5f38dPKvs='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Clip AI dalla tua live, anche dal telefono | NoonFrame</title>
 <meta name="description" content="Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.">
@@ -22,10 +22,11 @@
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; min-height: 100vh; background: var(--ink-0); color: var(--fg); font: 16px/1.55 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  background: radial-gradient(70% 45% at 50% -8%, rgba(30,107,255,.32), transparent 70%), radial-gradient(45% 40% at 90% 80%, rgba(76,141,255,.07), transparent 70%); }
+  background: radial-gradient(60% 50% at 50% -6%, rgba(30,107,255,.42), transparent 70%), radial-gradient(40% 35% at 85% 20%, rgba(76,141,255,.10), transparent 70%), radial-gradient(45% 40% at 10% 85%, rgba(76,141,255,.07), transparent 70%); }
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--blue-hi); outline-offset: 3px; border-radius: 6px; }
-.wrap { width: min(960px, 100% - 32px); margin-inline: auto; }
+.wrap { width: min(1080px, 100% - 32px); margin-inline: auto; }
+main.wrap { width: min(980px, 100% - 32px); }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 48px; padding: 0 20px; border-radius: 13px; font: 600 15.5px/1 var(--body);
   text-decoration: none; border: 0; cursor: pointer; transition: background .2s, transform .15s, opacity .2s; white-space: nowrap; color: var(--fg); }
 .btn:active { transform: translateY(1px); }
@@ -44,7 +45,10 @@ header .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; font-weight: 650; font-size: 16px; letter-spacing: -.02em; text-decoration: none; }
 .brand img { width: 26px; height: 26px; }
 .grow { flex: 1; }
-.lang { font-size: 12px; font-weight: 600; color: var(--fg-3); text-decoration: none; padding: 5px 8px; border-radius: 8px; background: rgba(255,255,255,.05); }
+.langs { display: inline-flex; gap: 2px; padding: 3px; border-radius: 9px; background: rgba(255,255,255,.05); font-size: 12px; font-weight: 600; }
+.lang { padding: 4px 8px; border-radius: 7px; color: var(--fg-3); text-decoration: none; }
+.lang.on { background: rgba(255,255,255,.1); color: var(--fg); }
+.lang:not(.on):hover { color: var(--fg); }
 .who { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--fg-2); }
 .cred { display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 999px; background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px var(--line-2);
   font-weight: 600; color: var(--fg); font-variant-numeric: tabular-nums; font-size: 13.5px; }
@@ -73,6 +77,26 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .how b { display: block; font-size: 15.5px; letter-spacing: -.01em; }
 .how b em { font-style: normal; color: var(--sky); margin-right: 6px; font-variant-numeric: tabular-nums; }
 .how p { margin: 4px 0 0; font-size: 14px; color: var(--fg-2); }
+.kick { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 22px; padding: 4px 14px 4px 4px; border-radius: 999px; background: rgba(255,255,255,.05); box-shadow: inset 0 0 0 1px var(--line-2); font-size: 13px; color: var(--fg-2); max-width: 100%; }
+.kick b { padding: 3px 9px; border-radius: 999px; background: var(--blue); color: #fff; font-size: 12px; font-weight: 600; flex: none; }
+.kick span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.reels { display: flex; justify-content: center; align-items: center; gap: 2%; margin: 44px auto 0; max-width: 820px; perspective: 1200px; }
+.reels figure { position: relative; margin: 0; width: 17%; flex: none; transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.reels img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 14px; box-shadow: 0 0 0 1px rgba(160,190,255,.18), 0 30px 60px -24px rgba(0,0,0,.9); background: var(--ink-2); }
+.reels figure:nth-child(1) { transform: translateY(6%) rotate(-5deg); } .reels figure:nth-child(5) { transform: translateY(6%) rotate(5deg); }
+.reels figure:nth-child(2) { transform: translateY(-2%) rotate(-2deg); } .reels figure:nth-child(4) { transform: translateY(-2%) rotate(2deg); }
+.reels figure.mid { width: 20%; transform: translateY(-8%); z-index: 1; }
+.reels figure.mid img { box-shadow: 0 0 0 1px rgba(140,194,255,.45), 0 40px 80px -24px rgba(30,107,255,.75); }
+.reels figure span { position: absolute; top: 8px; left: 8px; padding: 3px 7px; border-radius: 8px; background: rgba(5,10,28,.78); color: var(--score); font: 700 12px/1 var(--body); font-variant-numeric: tabular-nums; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: inset 0 0 0 1px rgba(34,197,94,.35); }
+@media (hover: hover) { .reels:hover figure.mid { transform: translateY(-11%) scale(1.03); } }
+.how div { text-align: left; display: grid; grid-template-columns: auto 1fr; column-gap: 12px; align-items: start; }
+.how div i { grid-row: span 2; width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center; background: rgba(30,107,255,.14); color: var(--sky); box-shadow: inset 0 0 0 1px rgba(76,141,255,.25); }
+.how div i svg { width: 19px; height: 19px; }
+.hero.step2 > .kick, .hero.step2 > .reels { display: none; }
+@media (max-width: 640px) { .reels { gap: 3%; margin-top: 34px; } .reels figure { width: 28%; } .reels figure.mid { width: 33%; } .reels figure:nth-child(1), .reels figure:nth-child(5) { display: none; } .kick { font-size: 12px; } }
+@media (max-width: 480px) { header:has(#who:not(.hide)) .brand .bt, header:has(#who:not(.hide)) .langs { display: none; } }
+@media (max-width: 420px) { .brand .bt { display: none; } .fbk { width: 46px; height: 46px; padding: 0; justify-content: center; } .fbk span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
+@media (prefers-reduced-motion: reduce) { .reels figure { transition: none; } }
 
 .est { max-width: 620px; margin: 16px auto 0; padding: 12px; border-radius: 18px; background: rgba(10,20,48,.8); box-shadow: inset 0 0 0 1px var(--line-2); display: grid; grid-template-columns: 132px 1fr; gap: 14px; text-align: left; align-items: center; }
 .est img, .est .ph { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 11px; background: var(--ink-2); }
@@ -199,6 +223,86 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .edlg .foot .btn { height: 46px; }
 .edlg :focus-visible { outline: 2px solid var(--sky); outline-offset: 2px; }
 .topup { height: 32px; padding: 0 12px; font-size: 13.5px; }
+.avbtn { position: relative; width: 34px; height: 34px; padding: 0; border: 0; border-radius: 50%; background: linear-gradient(140deg, #4C8DFF, #1E6BFF); color: #fff; cursor: pointer; display: grid; place-items: center; flex: none; box-shadow: 0 0 0 2px rgba(255,255,255,.08); transition: box-shadow .15s; }
+.avbtn:hover { box-shadow: 0 0 0 2px rgba(140,194,255,.55); }
+.avbtn .avatar { position: absolute; inset: 0; width: 100%; height: 100%; }
+.avi { font: 700 14px/1 var(--body); }
+/* feedback: sempre a portata di pollice */
+.fbk { position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 30; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 16px 0 13px; border: 0; border-radius: 999px;
+  background: rgba(15,28,64,.92); color: var(--fg); font: 600 14px/1 var(--body); cursor: pointer; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 0 1px var(--line-2), 0 14px 34px -12px rgba(0,0,0,.8); transition: transform .15s, background .15s; }
+.fbk:hover { background: rgba(30,107,255,.95); transform: translateY(-1px); }
+.fbk svg { width: 18px; height: 18px; }
+.edlg .bx { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(255,255,255,.06); color: var(--fg-2); display: grid; place-items: center; cursor: pointer; z-index: 2; }
+.edlg .bx:hover { background: rgba(255,255,255,.12); color: var(--fg); }
+.edlg .bx svg { width: 15px; height: 15px; }
+/* profilo */
+.pdlg .ebox, .fdlg .ebox { width: min(560px, 100%); padding: 0; gap: 0; position: relative; }
+.phead { display: flex; gap: 16px; align-items: center; padding: 26px 24px 20px; background: radial-gradient(90% 140% at 0% 0%, rgba(30,107,255,.28), transparent 60%); border-bottom: 1px solid var(--line); }
+.pav { position: relative; width: 64px; height: 64px; border-radius: 50%; flex: none; display: grid; place-items: center; overflow: hidden; background: linear-gradient(140deg, #4C8DFF, #1E6BFF); box-shadow: 0 0 0 3px rgba(255,255,255,.08); }
+.pav img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pav b { font-size: 26px; }
+.pwho { min-width: 0; padding-right: 30px; }
+.pwho h2 { margin: 0; font-size: 21px; letter-spacing: -.02em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pwho p { margin: 2px 0 0; color: var(--fg-2); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pwho .psince { color: var(--fg-3); font-size: 12.5px; }
+.pbody { padding: 18px 24px 22px; display: grid; gap: 16px; }
+.pstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.pstats div { display: grid; gap: 2px; padding: 12px; border-radius: 14px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line); }
+.pstats b { font-size: 22px; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.pstats span { font-size: 12px; color: var(--fg-3); }
+.pplan { display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 14px 16px; border-radius: 16px; background: linear-gradient(120deg, rgba(30,107,255,.16), rgba(30,107,255,.03)); box-shadow: inset 0 0 0 1px rgba(76,141,255,.3); }
+.pplan > div:first-child { display: grid; gap: 1px; }
+.pplan .muted { font-size: 12px; color: var(--fg-3); }
+.pplan b { font-size: 17px; }
+.pplan small { font-size: 12.5px; color: var(--fg-2); }
+.pplan-a { display: flex; gap: 8px; flex-wrap: wrap; }
+.prep-h { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.prep h3 { margin: 0; font-size: 15px; }
+.prep ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; max-height: 300px; overflow: auto; }
+.prep li { padding: 12px 14px; border-radius: 14px; background: #0B1638; box-shadow: inset 0 0 0 1px var(--line); }
+.prep li p { margin: 6px 0 0; font-size: 14px; color: var(--fg-2); white-space: pre-wrap; overflow-wrap: anywhere; }
+.prep-t { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12px; }
+.prep-t time { margin-left: auto; color: var(--fg-3); }
+.rk { padding: 2px 8px; border-radius: 99px; font-weight: 650; background: rgba(255,255,255,.08); color: var(--fg-2); }
+.rk.bug { background: rgba(248,113,113,.14); color: #FCA5A5; } .rk.idea { background: rgba(140,194,255,.14); color: var(--sky); }
+.rst { padding: 2px 8px; border-radius: 99px; background: rgba(255,214,10,.12); color: var(--hook); font-weight: 600; }
+.rst.fatta { background: rgba(34,197,94,.14); color: #5BE0A7; } .rst.chiusa, .rst.rifiutata { background: rgba(255,255,255,.07); color: var(--fg-3); }
+.prep-r { margin-top: 10px; padding: 10px 12px; border-radius: 12px; background: rgba(30,107,255,.12); border-left: 3px solid var(--blue-hi); }
+.prep-r b { font-size: 12px; color: var(--sky); }
+.prep-r p { margin: 4px 0 0 !important; color: var(--fg) !important; }
+.pempty { margin: 0; font-size: 14px; color: var(--fg-3); }
+.plinks { display: grid; gap: 8px; }
+.plinks a { display: grid; gap: 2px; padding: 12px 14px; border-radius: 14px; text-decoration: none; background: rgba(255,255,255,.04); box-shadow: inset 0 0 0 1px var(--line); transition: background .15s; }
+.plinks a:hover { background: rgba(255,255,255,.08); }
+.plinks b { font-size: 14.5px; } .plinks span { font-size: 12.5px; color: var(--fg-3); }
+.plogout { justify-self: start; color: var(--fg-3); }
+/* feedback */
+.fhead { padding: 26px 24px 16px; background: radial-gradient(90% 140% at 0% 0%, rgba(30,107,255,.24), transparent 60%); border-bottom: 1px solid var(--line); }
+.fhead h2 { margin: 0; padding-right: 36px; font-size: 21px; letter-spacing: -.02em; }
+.fhead p { margin: 6px 0 0; color: var(--fg-2); font-size: 14px; }
+.fbody { padding: 18px 24px 22px; display: grid; gap: 12px; }
+.fkinds { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.fkind { display: grid; gap: 3px; text-align: left; padding: 12px 14px; border: 0; border-radius: 14px; background: #0B1638; color: var(--fg); font: inherit; cursor: pointer; box-shadow: inset 0 0 0 1px var(--line-2); }
+.fkind b { font-size: 14.5px; } .fkind span { font-size: 12.5px; color: var(--fg-3); line-height: 1.4; }
+.fkind[aria-checked="true"] { box-shadow: inset 0 0 0 2px var(--blue-hi); background: rgba(30,107,255,.12); }
+.fkind.bug[aria-checked="true"] { box-shadow: inset 0 0 0 2px #F87171; background: rgba(248,113,113,.10); }
+.fbody textarea { width: 100%; min-height: 130px; resize: vertical; border: 0; border-radius: 14px; padding: 12px 14px; background: #0B1638; color: var(--fg); font: 15px/1.5 var(--body); box-shadow: inset 0 0 0 1px var(--line-2); }
+.fbody textarea:focus { outline: none; box-shadow: inset 0 0 0 2px var(--blue-hi); }
+.fextra { display: flex; gap: 10px 16px; flex-wrap: wrap; align-items: center; font-size: 13.5px; color: var(--fg-2); }
+.fshot { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; color: var(--sky); }
+.fshot img { width: 34px; height: 34px; object-fit: cover; border-radius: 8px; }
+.fjob { margin: 0; }
+.fmsg { margin: 0; min-height: 0; font-size: 13.5px; } .fmsg.err { color: var(--err); }
+.fact { display: flex; gap: 8px; flex-wrap: wrap; }
+.fact .btn-primary { flex: 1; }
+.fok { display: grid; justify-items: center; text-align: center; gap: 8px; padding: 10px 0 4px; }
+.fok-i { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: rgba(34,197,94,.16); color: #5BE0A7; }
+.fok-i svg { width: 28px; height: 28px; }
+.fok h3 { margin: 4px 0 0; font-size: 20px; } .fok p { margin: 0; color: var(--fg-2); font-size: 14px; max-width: 40ch; }
+.fok .fact { width: 100%; margin-top: 8px; }
+@media (max-width: 640px) { .fbk { right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); height: 42px; padding: 0 14px 0 12px; } .fkinds { grid-template-columns: 1fr; } .pstats b { font-size: 19px; } .phead { padding: 22px 18px 16px; } .pbody, .fbody { padding: 16px 18px 18px; } .fhead { padding: 22px 18px 14px; } }
+@media (prefers-reduced-motion: reduce) { .fbk { transition: none; } }
 .bdlg .ebox { width: min(760px, 100%); padding: 0; gap: 0; position: relative; }
 .bx { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(255,255,255,.06); color: var(--fg-2); display: grid; place-items: center; cursor: pointer; z-index: 2; }
 .bx:hover { background: rgba(255,255,255,.12); color: var(--fg); }
@@ -291,15 +395,16 @@ footer a { color: var(--fg-3); }
 </head>
 <body>
 <header><div class="wrap">
-  <a class="brand" href="./"><img src="logo.png" alt="" width="26" height="26">NoonFrame</a>
+  <a class="brand" href="./"><img src="logo.png" alt="" width="26" height="26"><span class="bt">NoonFrame</span></a>
   <span class="grow"></span>
-  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><button class="btn btn-primary btn-sm topup" id="topup" type="button"></button><img class="avatar" id="av" alt=""><button class="link" id="out" type="button"></button></span>
+  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><button class="btn btn-primary btn-sm topup" id="topup" type="button"></button><button class="avbtn" id="me" type="button" aria-haspopup="dialog"><img class="avatar hide" id="av" alt=""><span class="avi" id="avi" aria-hidden="true"></span></button></span>
   <button class="btn btn-ghost btn-sm hide" id="in" type="button"></button>
-  <a class="lang" href="en/clip.html" lang="en">EN</a>
+  <span class="langs"><a class="lang on" aria-current="true">IT</a><a class="lang" href="en/clip.html" lang="en">EN</a></span>
 </div></header>
 
 <main class="wrap">
   <section class="hero" id="hero">
+    <p class="kick"><b>Nuovo</b><span>Dalla live alle clip in pochi minuti, senza installare niente</span></p>
     <h1>Clip virali dai tuoi video.<br>Anche dal telefono.</h1>
     <p class="sub">Incolla il link di un video YouTube o di una live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.</p>
     <form class="ask" id="ask" novalidate>
@@ -313,10 +418,17 @@ footer a { color: var(--fg-3); }
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg>YouTube</span>
     </div>
+    <div class="reels" aria-hidden="true">
+      <figure><img src="shots/reel1.webp" alt="" width="360" height="640" loading="lazy"><span>84</span></figure>
+      <figure><img src="shots/reel3.webp" alt="" width="360" height="640" loading="lazy"><span>91</span></figure>
+      <figure class="mid"><img src="shots/reel0.webp" alt="" width="360" height="640"><span>97</span></figure>
+      <figure><img src="shots/reel5.webp" alt="" width="360" height="640" loading="lazy"><span>89</span></figure>
+      <figure><img src="shots/reel7.webp" alt="" width="360" height="640" loading="lazy"><span>82</span></figure>
+    </div>
     <div class="how">
-      <div><b><em>1</em>Incolla il link</b><p>Un video YouTube o il VOD di una live, anche di ore.</p></div>
-      <div><b><em>2</em>L'AI sceglie</b><p>I momenti più forti, con un punteggio per piattaforma.</p></div>
-      <div><b><em>3</em>Scarica e pubblica</b><p>Clip verticali con sottotitoli, in pochi minuti.</p></div>
+      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></i><b><em>1</em>Incolla il link</b><p>Un video YouTube o il VOD di una live, anche di ore.</p></div>
+      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></svg></i><b><em>2</em>L'AI sceglie</b><p>I momenti più forti, con un punteggio per piattaforma.</p></div>
+      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></i><b><em>3</em>Scarica e pubblica</b><p>Clip verticali con sottotitoli, in pochi minuti.</p></div>
     </div>
   </section>
 
@@ -325,12 +437,13 @@ footer a { color: var(--fg-3); }
   <section id="hist" class="hist hide"></section>
 </main>
 
+<button class="fbk" id="fbk" type="button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h6M9 14h4"/></svg><span id="fbkl"></span></button>
 <footer><div class="wrap"><span>© NoonFrame</span><a href="privacy.html">Privacy</a><a href="termini.html">Termini</a><a href="./">noonframe.com</a></div></footer>
 
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
-const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti: ricarica per continuare.", "buy": {"btn": "Ricarica", "t": "Crediti NoonFrame", "lead": "Un credito = un minuto di video trasformato in clip. Scegli come averli.", "have": "Hai {b}", "packs": "Ricarica", "manage": "Gestisci abbonamento", "planNow": "Piano {p}", "mine": "Il tuo piano", "change": "Passa a questo", "changed": "Piano cambiato: la differenza la calcola Stripe, i crediti arrivano in pochi secondi.", "hasSub": "Hai già un abbonamento: per cambiarlo o disdirlo apri la sua pagina.", "billedYear": "{p} all'anno, pagati una volta", "perMoN": "{n} crediti al mese", "once": "Pagamento singolo", "never": "I crediti non scadono", "best": "Conviene di più", "packsD": "Paghi una volta, i crediti non scadono.", "plans": "Abbonamento", "plansD": "Crediti nuovi ogni mese, disdici quando vuoi.", "month": "Mensile", "year": "Annuale", "save": "risparmi {p}%", "perMonth": "/mese", "perYear": "/anno", "credits": "crediti", "perMo": "crediti al mese", "go": "Compra", "sub": "Abbonati", "wait": "Apro il pagamento…", "ok": "Pagamento riuscito: i crediti arrivano in pochi secondi.", "ko": "Pagamento annullato: non ti è stato addebitato nulla.", "secure": "Pagamento sicuro con Stripe · carta, Apple Pay, Google Pay · codici sconto nella pagina di pagamento", "close": "Chiudi", "load": "Carico i prezzi…", "loadErr": "Prezzi non disponibili: riprova tra poco.", "minutes": "≈ {h} di video in clip", "popular": "Il più scelto"}, "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "ed": {"btn": "Modifica", "t": "Modifica la clip", "lay": "Impaginazione", "lays": {"auto": ["Automatica", "Come l'ha scelta l'AI"], "split": ["Webcam + gioco", "Webcam sopra, gioco sotto"], "full": ["Tutto schermo", "Persona o gioco a tutto schermo"], "fit": ["Intero", "Sfondo sfocato sopra e sotto"]}, "title": "Titolo d'apertura", "noTitle": "Senza titolo", "subs": "Sottotitoli", "noSubs": "Nessuno", "keep": "Come ora", "trim": "Inizio e fine", "start": "Inizio", "end": "Fine", "earlier": "prima", "later": "dopo", "len": "Durata: {d}", "free": "Modifiche gratis rimaste per questa clip: {n}", "paid": "Questa modifica costa {c} crediti", "save": "Rifai la clip", "cancel": "Annulla", "working": "Rifaccio la clip", "done": "Clip aggiornata", "same": "Non hai cambiato niente", "until": "Puoi modificare le clip fino al {d}"}, "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
+const L = {"login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video.", "hours": "h", "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.", "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.", "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"}, "steps": ["Scarico", "Trascrivo", "Scelgo i momenti", "Monto le clip"], "working": "Sto lavorando sul tuo video", "leave": "Puoi chiudere la pagina: ti mandiamo un'email quando le clip sono pronte.", "cancel": "Annulla", "cancelled": "Annullato: i crediti ti sono stati restituiti.", "ready": "clip pronte", "readyOne": "clip pronta", "from": "Dalla live", "download": "Scarica", "best": "Ottima per", "why": "Perché funziona", "score": "punteggio", "again": "Fai le clip di un'altra live", "failed": "Non è andata", "retry": "Riprova", "history": "Le tue live", "open": "Apri", "statusDone": "Pronte", "statusRun": "In corso", "statusFail": "Non riuscita", "statusCancel": "Annullata", "editT": "Vuoi ritoccarle e spendere meno?", "editD": "Con NoonFrame sul computer cambi sottotitoli, tagli, zoom e grafica di ogni clip. E le clip costano molto meno: trascrizione e montaggio li fa gratis il tuo PC.", "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.", "noCredits": "Hai finito i crediti: ricarica per continuare.", "pf": {"title": "Il tuo profilo", "since": "Su NoonFrame da {d}", "credits": "Crediti", "clips": "Clip create", "hours": "Video trasformato", "plan": "Piano", "free": "Gratis", "renews": "Si rinnova il {d}", "ends": "Attivo fino al {d}", "monthly": "{n} crediti al mese", "topup": "Ricarica crediti", "manage": "Gestisci abbonamento", "upgrade": "Scegli un piano", "reports": "Le tue segnalazioni", "noReports": "Non hai ancora mandato segnalazioni o idee.", "newFb": "Manda un feedback", "reply": "Risposta del team", "app": "Scarica l'app per computer", "appD": "Editor completo, grafica e clip direttamente sul tuo computer", "discord": "Entra nella community su Discord", "discordD": "Aiuto, consigli e anteprime delle novità", "logout": "Esci", "close": "Chiudi", "load": "Carico il profilo…", "st": {"nuova": "Ricevuta", "approvata": "Presa in carico", "in_lavorazione": "In lavorazione", "in_beta": "In prova", "fatta": "Risolta", "chiusa": "Chiusa", "rifiutata": "Chiusa"}, "kinds": {"bug": "Problema", "idea": "Idea"}, "inVer": "nella versione {v}"}, "fb": {"btn": "Feedback", "title": "Aiutaci a migliorare NoonFrame", "lead": "Lo leggiamo tutti, davvero. Ti rispondiamo qui, nel tuo profilo, e per email.", "kinds": {"bug": ["Qualcosa non va", "Un errore, una clip sbagliata, un pulsante che non risponde"], "idea": ["Idea o modifica", "Una funzione che vorresti, qualcosa da cambiare o migliorare"]}, "ph": {"bug": "Cosa è successo? Cosa stavi facendo e cosa ti aspettavi?", "idea": "Cosa vorresti? Più dettagli ci dai, prima lo costruiamo"}, "shot": "Aggiungi uno screenshot", "shotOk": "Screenshot allegato", "shotRm": "Togli", "job": "Allega il lavoro che hai aperto", "send": "Manda", "sending": "Invio…", "ok": "Ricevuto, grazie!", "okD": "Trovi la tua segnalazione nel profilo: lì vedi a che punto è e le nostre risposte.", "see": "Vedi nel profilo", "again": "Mandane un'altra", "short": "Scrivi qualche parola in più.", "login": "Accedi con Google per mandarci un feedback: così possiamo risponderti."}, "buy": {"btn": "Ricarica", "t": "Crediti NoonFrame", "lead": "Un credito = un minuto di video trasformato in clip. Scegli come averli.", "have": "Hai {b}", "packs": "Ricarica", "manage": "Gestisci abbonamento", "planNow": "Piano {p}", "mine": "Il tuo piano", "change": "Passa a questo", "changed": "Piano cambiato: la differenza la calcola Stripe, i crediti arrivano in pochi secondi.", "hasSub": "Hai già un abbonamento: per cambiarlo o disdirlo apri la sua pagina.", "billedYear": "{p} all'anno, pagati una volta", "perMoN": "{n} crediti al mese", "once": "Pagamento singolo", "never": "I crediti non scadono", "best": "Conviene di più", "packsD": "Paghi una volta, i crediti non scadono.", "plans": "Abbonamento", "plansD": "Crediti nuovi ogni mese, disdici quando vuoi.", "month": "Mensile", "year": "Annuale", "save": "risparmi {p}%", "perMonth": "/mese", "perYear": "/anno", "credits": "crediti", "perMo": "crediti al mese", "go": "Compra", "sub": "Abbonati", "wait": "Apro il pagamento…", "ok": "Pagamento riuscito: i crediti arrivano in pochi secondi.", "ko": "Pagamento annullato: non ti è stato addebitato nulla.", "secure": "Pagamento sicuro con Stripe · carta, Apple Pay, Google Pay · codici sconto nella pagina di pagamento", "close": "Chiudi", "load": "Carico i prezzi…", "loadErr": "Prezzi non disponibili: riprova tra poco.", "minutes": "≈ {h} di video in clip", "popular": "Il più scelto"}, "costNote": "Incolla il link: poi scegli sottotitoli e titolo. Costo: 1 credito per ogni minuto di video, hai {b} crediti.", "expire": "Le clip restano disponibili per 7 giorni.", "net": "Connessione assente: riprovo…", "err": "Qualcosa non ha funzionato: riprova tra poco.", "ed": {"btn": "Modifica", "t": "Modifica la clip", "lay": "Impaginazione", "lays": {"auto": ["Automatica", "Come l'ha scelta l'AI"], "split": ["Webcam + gioco", "Webcam sopra, gioco sotto"], "full": ["Tutto schermo", "Persona o gioco a tutto schermo"], "fit": ["Intero", "Sfondo sfocato sopra e sotto"]}, "title": "Titolo d'apertura", "noTitle": "Senza titolo", "subs": "Sottotitoli", "noSubs": "Nessuno", "keep": "Come ora", "trim": "Inizio e fine", "start": "Inizio", "end": "Fine", "earlier": "prima", "later": "dopo", "len": "Durata: {d}", "free": "Modifiche gratis rimaste per questa clip: {n}", "paid": "Questa modifica costa {c} crediti", "save": "Rifai la clip", "cancel": "Annulla", "working": "Rifaccio la clip", "done": "Clip aggiornata", "same": "Non hai cambiato niente", "until": "Puoi modificare le clip fino al {d}"}, "setT": "Come le vuoi", "stepsT": ["Video", "Stile", "Clip"], "back": "Cambia video", "autoNote": "L'impaginazione la sceglie l'AI clip per clip: webcam sopra e gioco sotto quando giochi, persona a tutto schermo quando parli.", "kindT": "Che video è?", "kindAuto": "Automatico", "kindAutoPod": "Sembra un podcast", "kindAutoGame": "Sembra gaming", "kindAutoNo": "Lo capisce l'AI", "kinds": {"podcast": ["Podcast · intervista", "Persona a tutto schermo"], "gaming": ["Gaming con webcam", "Webcam sopra, gioco sotto"], "fit": ["Video intero", "Sfondo sfocato sopra e sotto"]}, "subsT": "Sottotitoli", "subStyles": {"classico": "Classico", "verde": "Verde", "riquadro": "Riquadro", "pulito": "Pulito", "impatto": "Impatto"}, "posT": "Posizione", "pos": {"auto": "Automatica", "centro": "Al centro", "basso": "In basso"}, "wordsT": "Parole per volta", "words": {"parola": "Una", "poche": "Poche", "frase": "Frase"}, "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"}, "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO", "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi."};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -388,7 +501,7 @@ function login() {
 }
 function logout() { S = null; store.set('nf.sess', null); location.href = location.pathname; }
 function me() {
-  try { const p = JSON.parse(atob(S.at.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))); return { email: p.email || '', pic: (p.user_metadata || {}).avatar_url || '' }; } catch (e) { return { email: '', pic: '' }; }
+  try { const p = JSON.parse(atob(S.at.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))); const um = p.user_metadata || {}; return { email: p.email || '', pic: um.avatar_url || um.picture || '', name: um.full_name || um.name || '' }; } catch (e) { return { email: '', pic: '', name: '' }; }
 }
 
 async function call(op, body) {
@@ -409,10 +522,13 @@ function showSignedOut() { $('who').classList.add('hide'); $('in').classList.rem
 function showSignedIn(bal) {
   $('in').classList.add('hide'); $('who').classList.remove('hide');
   const m = me(); $('bal').textContent = bal == null ? '…' : bal; $('bal').parentNode.title = L.credits;
-  if (m.pic) { $('av').src = m.pic; $('av').alt = m.email; } else $('av').classList.add('hide');
+  $('avi').textContent = ((m.name || m.email || '?').trim()[0] || '?').toUpperCase();
+  if (m.pic) { $('av').onload = () => { $('av').classList.remove('hide'); $('avi').classList.add('hide'); }; $('av').onerror = () => { $('av').classList.add('hide'); $('avi').classList.remove('hide'); }; $('av').src = m.pic; $('av').alt = ''; }
 }
-$('in').textContent = L.login; $('out').textContent = L.logout;
-$('in').onclick = login; $('out').onclick = logout;
+$('in').textContent = L.login;
+$('in').onclick = login;
+$('me').setAttribute('aria-label', L.pf.title); $('me').onclick = () => openProfile();
+$('fbkl').textContent = L.fb.btn; $('fbk').onclick = () => openFeedback();
 $('topup').textContent = L.buy.btn; $('topup').onclick = () => openBuy(null);
 $('bal').parentNode.style.cursor = 'pointer'; $('bal').parentNode.onclick = () => openBuy(null);
 
@@ -549,6 +665,124 @@ async function catalog() {
   return CAT;
 }
 const eur = (v) => new Intl.NumberFormat(LANG === 'en' ? 'en-IE' : 'it-IT', { style: 'currency', currency: 'EUR' }).format(Number(v || 0));
+// ---- funzioni del database con l'accesso dell'utente (profilo, feedback)
+async function rpc(fn, body) {
+  const t = await token();
+  if (!t) { showSignedOut(); throw new Error('auth'); }
+  let r;
+  try { r = await fetch(SB + '/rest/v1/rpc/' + fn, { method: 'POST', headers: { Authorization: 'Bearer ' + t, apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify(body || {}) }); }
+  catch (e) { throw new Error(L.net); }
+  const j = await r.json().catch(() => ({}));
+  if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); throw new Error('auth'); }
+  if (!r.ok) throw new Error((j && j.message && !/^auth$/.test(j.message) ? j.message : L.err));
+  return j;
+}
+const DISCORD = 'https://discord.gg/5cQvNEBfee';
+const fmtDay = (iso) => { try { return new Date(iso).toLocaleDateString(LANG === 'en' ? 'en-GB' : 'it-IT', { day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) { return ''; } };
+function dialog(cls, label, html) {
+  const dlg = document.createElement('div');
+  dlg.className = 'edlg ' + cls;
+  dlg.innerHTML = '<div class="ebox" role="dialog" aria-modal="true" aria-label="' + esc(label) + '"><button class="bx" type="button" data-close aria-label="' + esc(L.pf.close) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' + html + '</div>';
+  document.body.append(dlg);
+  const prev = document.activeElement;
+  const close = () => { dlg.remove(); document.removeEventListener('keydown', onKey); try { prev && prev.focus(); } catch (e) {} };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  document.addEventListener('keydown', onKey);
+  dlg.addEventListener('click', (e) => { if (e.target === dlg || e.target.closest('[data-close]')) close(); });
+  setTimeout(() => { const f = dlg.querySelector('[data-focus]') || dlg.querySelector('.bx'); try { f.focus(); } catch (e) {} }, 30);
+  return { dlg, close };
+}
+function openProfile() {
+  if (!S) { login(); return; }
+  if (document.querySelector('.pdlg')) return;
+  const P = L.pf, m = me();
+  const { dlg, close } = dialog('pdlg', P.title, '<div class="phead"><span class="pav">' + (m.pic ? '<img src="' + esc(m.pic) + '" alt="" referrerpolicy="no-referrer">' : '') + '<b>' + esc(((m.name || m.email || '?').trim()[0] || '?').toUpperCase()) + '</b></span>'
+    + '<div class="pwho"><h2>' + esc(m.name || m.email.split('@')[0]) + '</h2><p>' + esc(m.email) + '</p><p class="psince" id="psince"></p></div></div><div class="pbody" id="pbody"><p class="bsecure">' + esc(P.load) + '</p></div>');
+  const img = dlg.querySelector('.pav img'); if (img) { img.onload = () => dlg.querySelector('.pav b').classList.add('hide'); img.onerror = () => img.remove(); }
+  const body = dlg.querySelector('#pbody');
+  rpc('web_profile').then((d) => {
+    const w = d.wallet || { balance: bal || 0, plan: 'free' }, sub = d.sub, c = d.clips || {};
+    if (d.since) dlg.querySelector('#psince').textContent = P.since.replace('{d}', fmtDay(d.since));
+    bal = w.balance; showSignedIn(bal);
+    const hrs = (c.minutes || 0) >= 60 ? (Math.round((c.minutes || 0) / 6) / 10).toString().replace('.', LANG === 'en' ? '.' : ',') + ' h' : (c.minutes || 0) + ' min';
+    const paid = w.plan && w.plan !== 'free';
+    const planLine = sub ? (sub.ends ? P.ends.replace('{d}', fmtDay(sub.ends)) : sub.renews ? P.renews.replace('{d}', fmtDay(sub.renews)) : '') : '';
+    const st = (r) => '<span class="rst ' + esc(r.status) + '">' + esc(P.st[r.status] || r.status) + (r.status === 'fatta' && r.version && r.version !== 'web' ? ' · ' + esc(P.inVer.replace('{v}', r.version)) : '') + '</span>';
+    body.innerHTML = '<div class="pstats"><div><b>' + Number(w.balance || 0).toLocaleString(LANG === 'en' ? 'en' : 'it') + '</b><span>' + esc(P.credits) + '</span></div><div><b>' + (c.clips || 0) + '</b><span>' + esc(P.clips) + '</span></div><div><b>' + esc(hrs) + '</b><span>' + esc(P.hours) + '</span></div></div>'
+      + '<div class="pplan"><div><span class="muted">' + esc(P.plan) + '</span><b>' + esc(paid ? (d.planName || w.plan) : P.free) + '</b>' + (planLine ? '<small>' + esc(planLine) + '</small>' : '') + '</div>'
+      + '<div class="pplan-a"><button class="btn btn-primary btn-sm" type="button" id="ptop">' + esc(paid ? P.topup : P.upgrade) + '</button>' + (sub ? '<button class="btn btn-ghost btn-sm" type="button" id="pman">' + esc(P.manage) + '</button>' : '') + '</div></div>'
+      + '<section class="prep"><div class="prep-h"><h3>' + esc(P.reports) + '</h3><button class="link" type="button" id="pfb">' + esc(P.newFb) + '</button></div>'
+      + ((d.reports || []).length ? '<ul>' + d.reports.map((r) => '<li><div class="prep-t"><span class="rk ' + esc(r.kind) + '">' + esc(P.kinds[r.kind] || r.kind) + '</span>' + st(r) + '<time>' + esc(fmtDay(r.at)) + '</time></div><p>' + esc(r.text) + '</p>'
+          + (r.replies || []).map((x) => '<div class="prep-r"><b>' + esc(P.reply) + '</b><p>' + esc(x.body) + '</p></div>').join('') + '</li>').join('') + '</ul>'
+        : '<p class="muted pempty">' + esc(P.noReports) + '</p>') + '</section>'
+      + '<nav class="plinks"><a href="' + DISCORD + '" target="_blank" rel="noopener noreferrer"><b>' + esc(P.discord) + '</b><span>' + esc(P.discordD) + '</span></a>'
+      + (mobile ? '' : '<a href="./#download"><b>' + esc(P.app) + '</b><span>' + esc(P.appD) + '</span></a>') + '</nav>'
+      + '<button class="link plogout" type="button" id="pout">' + esc(P.logout) + '</button>';
+    body.querySelector('#ptop').onclick = () => { close(); openBuy(paid ? { kind: 'pack', id: '' } : null); };
+    const pm = body.querySelector('#pman'); if (pm) pm.onclick = async () => { pm.disabled = true; try { const r = await payCall({ op: 'portal' }); if (r.url && /^https:\/\/(billing\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; } } catch (e) { if (e.message !== 'auth') toast(e.message); } pm.disabled = false; };
+    body.querySelector('#pfb').onclick = () => { close(); openFeedback(); };
+    body.querySelector('#pout').onclick = logout;
+  }).catch((e) => { if (e.message === 'auth') { close(); return; } body.innerHTML = '<p class="bmsg err">' + esc(e.message) + '</p><button class="link plogout" type="button" id="pout">' + esc(P.logout) + '</button>'; body.querySelector('#pout').onclick = logout; });
+}
+// immagine allegata: ridotta nel browser (lato lungo 1600 px, JPEG) prima di mandarla
+function shrinkImage(file) {
+  return new Promise((res, rej) => {
+    if (!/^image\/(png|jpeg|webp|gif)$/.test(file.type) || file.size > 25e6) { rej(new Error('img')); return; }
+    const fr = new FileReader();
+    fr.onerror = () => rej(new Error('img'));
+    fr.onload = () => { const im = new Image();
+      im.onload = () => { const k = Math.min(1, 1600 / Math.max(im.width, im.height)); const c = document.createElement('canvas'); c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); res(c.toDataURL('image/jpeg', 0.82)); };
+      im.onerror = () => rej(new Error('img')); im.src = fr.result; };
+    fr.readAsDataURL(file);
+  });
+}
+function openFeedback(kind) {
+  if (!S) { setHint(L.fb.login); try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {} setTimeout(login, 900); return; }
+  if (document.querySelector('.fdlg')) return;
+  const F = L.fb;
+  let k = kind === 'bug' ? 'bug' : 'idea', shot = null;
+  const job = new URLSearchParams(location.search).get('job');
+  const { dlg, close } = dialog('fdlg', F.title, '<div class="fhead"><h2>' + esc(F.title) + '</h2><p>' + esc(F.lead) + '</p></div><div class="fbody" id="fbody"></div>');
+  const body = dlg.querySelector('#fbody');
+  const form = () => {
+    body.innerHTML = '<div class="fkinds" role="radiogroup">' + Object.entries(F.kinds).map(([id, [t, d]]) => '<button type="button" role="radio" class="fkind ' + id + '" data-k="' + id + '" aria-checked="' + (k === id) + '"><b>' + esc(t) + '</b><span>' + esc(d) + '</span></button>').join('') + '</div>'
+      + '<textarea id="ftext" maxlength="4000" rows="5" data-focus placeholder="' + esc(F.ph[k]) + '" aria-label="' + esc(F.title) + '"></textarea>'
+      + '<div class="fextra"><label class="fshot"><input type="file" accept="image/png,image/jpeg,image/webp" id="ffile" hidden><span id="fshotl">' + esc(F.shot) + '</span></label>'
+      + (job && /^[0-9a-f-]{36}$/i.test(job) ? '<label class="tog fjob"><input type="checkbox" id="fjob" checked> ' + esc(F.job) + '</label>' : '') + '</div>'
+      + '<p class="fmsg" id="fmsg" role="status"></p><div class="fact"><button class="btn btn-primary" type="button" id="fsend">' + esc(F.send) + '</button></div>';
+    const ta = body.querySelector('#ftext');
+    try { const draft = once.get('nf.fbdraft'); if (draft) ta.value = draft; } catch (e) {}
+    ta.addEventListener('input', () => once.set('nf.fbdraft', ta.value));
+    body.querySelectorAll('[data-k]').forEach((b) => b.onclick = () => { k = b.dataset.k; body.querySelectorAll('[data-k]').forEach((x) => x.setAttribute('aria-checked', String(x === b))); ta.placeholder = F.ph[k]; ta.focus(); });
+    const fl = body.querySelector('#ffile'), lbl = body.querySelector('#fshotl');
+    const paintShot = () => { lbl.innerHTML = shot ? '<img src="' + shot + '" alt=""> ' + esc(F.shotOk) + ' · <u>' + esc(F.shotRm) + '</u>' : esc(F.shot); };
+    fl.onchange = async () => { const f = fl.files && fl.files[0]; fl.value = ''; if (!f) return; try { shot = await shrinkImage(f); } catch (e) { shot = null; } paintShot(); };
+    lbl.parentNode.addEventListener('click', (e) => { if (shot && e.target.tagName === 'U') { e.preventDefault(); shot = null; paintShot(); } });
+    paintShot();
+    const send = body.querySelector('#fsend'), msg = body.querySelector('#fmsg');
+    send.onclick = async () => {
+      const tx = ta.value.trim();
+      if (tx.length < 3) { msg.textContent = F.short; msg.className = 'fmsg err'; ta.focus(); return; }
+      send.disabled = true; send.textContent = F.sending; msg.textContent = ''; msg.className = 'fmsg';
+      const jb = body.querySelector('#fjob');
+      try {
+        await rpc('web_feedback', { p: { kind: k, text: tx, image: shot, job: jb && jb.checked ? job : null, screen: job ? 'clip-web-job' : 'clip-web', ua: navigator.userAgent, lang: LANG, w: innerWidth, h: innerHeight,
+          os: (/(Android|iPhone|iPad|Windows|Mac OS X|Linux)/.exec(navigator.userAgent) || ['web'])[0] } });
+        once.set('nf.fbdraft', null);
+        body.innerHTML = '<div class="fok"><span class="fok-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><h3>' + esc(F.ok) + '</h3><p>' + esc(F.okD) + '</p>'
+          + '<div class="fact"><button class="btn btn-primary" type="button" id="fsee">' + esc(F.see) + '</button><button class="btn btn-ghost" type="button" id="fagain">' + esc(F.again) + '</button></div></div>';
+        body.querySelector('#fsee').onclick = () => { close(); openProfile(); };
+        body.querySelector('#fagain').onclick = () => { shot = null; form(); };
+      } catch (e) {
+        if (e.message === 'auth') { close(); return; }
+        msg.textContent = e.message; msg.className = 'fmsg err'; send.disabled = false; send.textContent = F.send;
+      }
+    };
+  };
+  form();
+}
+
 function openBuy(want) {
   if (!S) { login(); return; }
   if (document.querySelector('.bdlg')) return;
