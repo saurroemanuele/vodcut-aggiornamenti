@@ -15,7 +15,7 @@ T = {
         "h1": "Clip virali dai tuoi video.<br>Anche dal telefono.",
         "sub": "Incolla il link di un video YouTube o di una live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.",
         "ph": "Link del video o della live (YouTube, Twitch, Kick)", "go": "Trova le clip",
-        "note": "120 crediti gratis per iniziare · accesso con Google",
+        "note": "Il primo video è gratis: 120 crediti di benvenuto, circa 2 ore di video · accesso con Google",
         "kickB": "Nuovo", "kick": "Dalla live alle clip in pochi minuti, senza installare niente",
         "how1": "Incolla il link", "how1d": "Un video YouTube o il VOD di una live, anche di ore.",
         "how2": "L'AI sceglie", "how2d": "I momenti più forti, con un punteggio per piattaforma.",
@@ -28,7 +28,7 @@ T = {
         "h1": "Viral clips from your videos.<br>Even from your phone.",
         "sub": "Paste a YouTube video or stream link: AI finds the best moments and edits them vertically with captions, ready for TikTok, Reels and Shorts.",
         "ph": "Video or stream link (YouTube, Twitch, Kick)", "go": "Find clips",
-        "note": "120 free credits to start · sign in with Google",
+        "note": "Your first video is free: 120 welcome credits, about 2 hours of video · sign in with Google",
         "kickB": "New", "kick": "From stream to clips in minutes, nothing to install",
         "how1": "Paste the link", "how1d": "A YouTube video or a stream VOD, even hours long.",
         "how2": "AI picks", "how2d": "The strongest moments, scored for each platform.",
@@ -53,6 +53,7 @@ JS = {
         "editDesk": "Scarica NoonFrame", "editMob": "Mandami il link per il PC", "editSent": "Fatto: ti abbiamo mandato il link via email, aprilo dal computer.",
         "noCredits": "Hai finito i crediti: ricarica per continuare.",
         "cg": {"viral": "su 100 di viralità", "pfh": "Dove funziona meglio", "pfnote": "Stima dell'AI su cosa piace di solito su ogni piattaforma: provala dove ha il punteggio più alto.", "dur": "Durata", "inLive": "Nel video", "hook": "Scritta d'apertura", "edit": "Modifica", "extend": "Allunga", "extendTip": "Aggiungi il contesto prima o il finale dopo, prendendolo dal video", "dl": "Scarica", "prev": "Clip precedente", "next": "Clip successiva", "close": "Chiudi", "since": "da {t}", "open": "Apri la clip", "noEdit": "Le modifiche dal sito valgono per 7 giorni dalla creazione"},
+        "cv": {"free": "Gratis con i crediti di benvenuto", "peekCost": "Userà {c} crediti", "peekFree": "Appena entri hai 120 crediti gratis: questo video ne usa {c}.", "peekPaid": "Questo video usa {c} crediti: con i 120 gratis puoi provare su un video fino a 2 ore.", "peekGo": "Crea le clip gratis", "peekGoPaid": "Accedi e continua", "peekLogin": "Ti serve solo l'accesso con Google: poi le clip partono subito.", "proofW": "{n} clip create questa settimana", "proofT": "{n} clip create finora", "mail": "Ti mandiamo un'email a {e} appena sono pronte: puoi chiudere la pagina.", "tipsT": "Mentre aspetti", "tips": ["Pubblica per prime le clip con il punteggio più alto.", "Meglio 1 o 2 clip al giorno per una settimana che 10 tutte insieme.", "Rispondi ai commenti nella prima ora: le piattaforme lo premiano."], "dcT": "Entra nella community su Discord", "dcD": "Altri creator condividono le clip che funzionano: consigli, aiuto e novità in anteprima.", "dcGo": "Entra su Discord", "offEnds": "Scade tra {t}", "offGo": "Prendi l'offerta · {p}", "offCr": "{c} crediti a {p}", "offAll": "Vedi tutti i piani", "saved": "Circa {h} di lavoro risparmiato", "savedD": "Il tempo per guardare il video, trovare i momenti e montare {n} clip a mano.", "upT": "Ti piacciono? Falle ogni settimana", "upD": "Con {p} hai {c} crediti al mese, circa {h} di video. Disdici quando vuoi.", "upGo": "Vedi i piani", "upNo": "Non ora", "refT": "Invita un amico", "refD": "Quando un amico che inviti crea le sue prime clip, ricevete {c} crediti a testa.", "refCopy": "Copia link", "refCopied": "Link copiato", "refShare": "Condividi", "refStat": "Invitati: {n} · Premi ricevuti: {r}", "refMax": "Vale per {m} amici al massimo.", "refShareT": "Prova NoonFrame: clip virali dai tuoi video con l'AI. Con questo link riceviamo 60 crediti in più a testa.", "refOk": "Invito registrato: quando crei le tue prime clip ricevete 60 crediti in più a testa."},
         "pf": {"title": "Il tuo profilo", "since": "Su NoonFrame da {d}", "credits": "Crediti", "clips": "Clip create", "hours": "Video trasformato", "plan": "Piano", "free": "Gratis", "renews": "Si rinnova il {d}", "ends": "Attivo fino al {d}", "monthly": "{n} crediti al mese", "topup": "Ricarica crediti", "manage": "Gestisci abbonamento", "upgrade": "Scegli un piano", "reports": "Le tue segnalazioni", "noReports": "Non hai ancora mandato segnalazioni o idee.", "newFb": "Manda un feedback", "reply": "Risposta del team", "app": "Scarica l'app per computer", "appD": "Editor completo, grafica e clip direttamente sul tuo computer", "discord": "Entra nella community su Discord", "discordD": "Aiuto, consigli e anteprime delle novità", "logout": "Esci", "close": "Chiudi", "load": "Carico il profilo…", "st": {"nuova": "Ricevuta", "approvata": "Presa in carico", "in_lavorazione": "In lavorazione", "in_beta": "In prova", "fatta": "Risolta", "chiusa": "Chiusa", "rifiutata": "Chiusa"}, "kinds": {"bug": "Problema", "idea": "Idea"}, "inVer": "nella versione {v}"},
         "fb": {"btn": "Feedback", "title": "Aiutaci a migliorare NoonFrame", "lead": "Lo leggiamo tutti, davvero. Ti rispondiamo qui, nel tuo profilo, e per email.", "kinds": {"bug": ["Qualcosa non va", "Un errore, una clip sbagliata, un pulsante che non risponde"], "idea": ["Idea o modifica", "Una funzione che vorresti, qualcosa da cambiare o migliorare"]}, "ph": {"bug": "Cosa è successo? Cosa stavi facendo e cosa ti aspettavi?", "idea": "Cosa vorresti? Più dettagli ci dai, prima lo costruiamo"}, "shot": "Aggiungi uno screenshot", "shotOk": "Screenshot allegato", "shotRm": "Togli", "job": "Allega il lavoro che hai aperto", "send": "Manda", "sending": "Invio…", "ok": "Ricevuto, grazie!", "okD": "Trovi la tua segnalazione nel profilo: lì vedi a che punto è e le nostre risposte.", "see": "Vedi nel profilo", "again": "Mandane un'altra", "short": "Scrivi qualche parola in più.", "login": "Accedi con Google per mandarci un feedback: così possiamo risponderti."},
         "buy": {"btn": "Ricarica", "t": "Crediti NoonFrame", "lead": "Un credito = un minuto di video trasformato in clip. Scegli come averli.", "have": "Hai {b}", "packs": "Ricarica", "manage": "Gestisci abbonamento", "planNow": "Piano {p}", "mine": "Il tuo piano", "change": "Passa a questo", "changed": "Piano cambiato: la differenza la calcola Stripe, i crediti arrivano in pochi secondi.", "hasSub": "Hai già un abbonamento: per cambiarlo o disdirlo apri la sua pagina.", "billedYear": "{p} all'anno, pagati una volta", "perMoN": "{n} crediti al mese", "once": "Pagamento singolo", "never": "I crediti non scadono", "best": "Conviene di più", "packsD": "Paghi una volta, i crediti non scadono.", "plans": "Abbonamento", "plansD": "Crediti nuovi ogni mese, disdici quando vuoi.", "month": "Mensile", "year": "Annuale", "save": "risparmi {p}%", "perMonth": "/mese", "perYear": "/anno", "credits": "crediti", "perMo": "crediti al mese", "go": "Compra", "sub": "Abbonati", "wait": "Apro il pagamento…", "ok": "Pagamento riuscito: i crediti arrivano in pochi secondi.", "ko": "Pagamento annullato: non ti è stato addebitato nulla.", "secure": "Pagamento sicuro con Stripe · carta, Apple Pay, Google Pay · codici sconto nella pagina di pagamento", "close": "Chiudi", "load": "Carico i prezzi…", "loadErr": "Prezzi non disponibili: riprova tra poco.", "minutes": "≈ {h} di video in clip", "popular": "Il più scelto"},
@@ -86,6 +87,7 @@ JS = {
         "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.",
         "noCredits": "You're out of credits: top up to continue.",
         "cg": {"viral": "out of 100 virality", "pfh": "Where it works best", "pfnote": "AI estimate of what usually performs on each platform: post it where it scores highest.", "dur": "Length", "inLive": "In the video", "hook": "Opening title", "edit": "Edit", "extend": "Extend", "extendTip": "Add context before or the ending after, taken from the video", "dl": "Download", "prev": "Previous clip", "next": "Next clip", "close": "Close", "since": "at {t}", "open": "Open clip", "noEdit": "Edits from the site are available for 7 days after creation"},
+        "cv": {"free": "Free with your welcome credits", "peekCost": "Will use {c} credits", "peekFree": "You get 120 free credits when you sign in: this video uses {c}.", "peekPaid": "This video uses {c} credits: with the 120 free ones you can try a video up to 2 hours long.", "peekGo": "Create clips for free", "peekGoPaid": "Sign in and continue", "peekLogin": "Just sign in with Google: your clips start right after.", "proofW": "{n} clips made this week", "proofT": "{n} clips made so far", "mail": "We'll email {e} as soon as they're ready: you can close this page.", "tipsT": "While you wait", "tips": ["Post the clips with the highest score first.", "1 or 2 clips a day for a week beats 10 at once.", "Reply to comments in the first hour: platforms reward it."], "dcT": "Join the Discord community", "dcD": "Other creators share the clips that work: tips, help and early looks at new features.", "dcGo": "Join Discord", "offEnds": "Ends in {t}", "offGo": "Get the offer · {p}", "offCr": "{c} credits for {p}", "offAll": "See all plans", "saved": "About {h} of work saved", "savedD": "The time to watch the video, find the moments and edit {n} clips by hand.", "upT": "Like them? Make them every week", "upD": "With {p} you get {c} credits a month, about {h} of video. Cancel anytime.", "upGo": "See plans", "upNo": "Not now", "refT": "Invite a friend", "refD": "When a friend you invite makes their first clips, you both get {c} credits.", "refCopy": "Copy link", "refCopied": "Link copied", "refShare": "Share", "refStat": "Invited: {n} · Rewards earned: {r}", "refMax": "Up to {m} friends.", "refShareT": "Try NoonFrame: viral clips from your videos with AI. With this link we both get 60 extra credits.", "refOk": "Invite saved: when you make your first clips you both get 60 extra credits."},
         "pf": {"title": "Your profile", "since": "On NoonFrame since {d}", "credits": "Credits", "clips": "Clips made", "hours": "Video turned into clips", "plan": "Plan", "free": "Free", "renews": "Renews on {d}", "ends": "Active until {d}", "monthly": "{n} credits a month", "topup": "Top up credits", "manage": "Manage subscription", "upgrade": "Choose a plan", "reports": "Your feedback", "noReports": "You haven't sent any reports or ideas yet.", "newFb": "Send feedback", "reply": "Reply from the team", "app": "Get the desktop app", "appD": "Full editor, design and clips right on your computer", "discord": "Join the Discord community", "discordD": "Help, tips and early looks at new features", "logout": "Sign out", "close": "Close", "load": "Loading your profile…", "st": {"nuova": "Received", "approvata": "Accepted", "in_lavorazione": "In progress", "in_beta": "In testing", "fatta": "Fixed", "chiusa": "Closed", "rifiutata": "Closed"}, "kinds": {"bug": "Problem", "idea": "Idea"}, "inVer": "in version {v}"},
         "fb": {"btn": "Feedback", "title": "Help us make NoonFrame better", "lead": "We read every message. We'll reply here, in your profile, and by email.", "kinds": {"bug": ["Something's wrong", "An error, a wrong clip, a button that doesn't respond"], "idea": ["Idea or change", "A feature you'd like, something to change or improve"]}, "ph": {"bug": "What happened? What were you doing and what did you expect?", "idea": "What would you like? The more detail, the sooner we build it"}, "shot": "Add a screenshot", "shotOk": "Screenshot attached", "shotRm": "Remove", "job": "Attach the job you have open", "send": "Send", "sending": "Sending…", "ok": "Got it, thanks!", "okD": "You'll find it in your profile, with its status and our replies.", "see": "See in profile", "again": "Send another", "short": "Write a few more words.", "login": "Sign in with Google to send feedback, so we can reply to you."},
         "buy": {"btn": "Top up", "t": "NoonFrame credits", "lead": "One credit = one minute of video turned into clips. Choose how to get them.", "have": "You have {b}", "packs": "Top-up", "manage": "Manage subscription", "planNow": "{p} plan", "mine": "Your plan", "change": "Switch to this", "changed": "Plan changed: Stripe works out the difference, credits arrive in a few seconds.", "hasSub": "You already have a subscription: open its page to change or cancel it.", "billedYear": "{p} a year, billed once", "perMoN": "{n} credits a month", "once": "One-time payment", "never": "Credits never expire", "best": "Best value", "packsD": "Pay once, credits never expire.", "plans": "Subscription", "plansD": "Fresh credits every month, cancel anytime.", "month": "Monthly", "year": "Yearly", "save": "save {p}%", "perMonth": "/mo", "perYear": "/yr", "credits": "credits", "perMo": "credits per month", "go": "Buy", "sub": "Subscribe", "wait": "Opening checkout…", "ok": "Payment complete: your credits arrive in a few seconds.", "ko": "Payment cancelled: you haven't been charged.", "secure": "Secure payment with Stripe · card, Apple Pay, Google Pay · discount codes on the payment page", "close": "Close", "load": "Loading prices…", "loadErr": "Prices unavailable: try again shortly.", "minutes": "≈ {h} of video into clips", "popular": "Most popular"},
@@ -547,6 +549,51 @@ html.noscroll { overflow: hidden; }
 footer { margin: 70px 0 0; padding: 26px 0 40px; border-top: 1px solid var(--line); font-size: 13px; color: var(--fg-3); }
 footer .wrap { display: flex; gap: 16px; flex-wrap: wrap; }
 footer a { color: var(--fg-3); }
+/* conversione: prova senza accesso, contatore, offerta, attesa, invito */
+.proof { display: flex; justify-content: center; align-items: center; gap: 9px; margin: 14px 0 0; font-size: 13.5px; color: var(--fg-2); }
+.proof i { width: 8px; height: 8px; border-radius: 50%; background: var(--score); box-shadow: 0 0 0 4px rgba(61,220,132,.16); animation: pulse 2.4s ease-in-out infinite; }
+.proof b { color: var(--fg); font-variant-numeric: tabular-nums; }
+@keyframes pulse { 50% { box-shadow: 0 0 0 7px rgba(61,220,132,0); } }
+.est .freeb { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 4px 10px; border-radius: 99px; background: rgba(61,220,132,.14); color: #5BE0A7; font-size: 13px; font-weight: 650; }
+.est .freeb svg { width: 14px; height: 14px; }
+.est .pk { grid-column: 1 / -1; margin: 0; font-size: 13.5px; color: var(--fg-2); }
+.offer { grid-column: 1 / -1; position: relative; display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; padding: 16px 18px; border-radius: 16px; text-align: left;
+  background: linear-gradient(120deg, rgba(255,214,10,.16), rgba(255,159,67,.06)); box-shadow: inset 0 0 0 1.5px rgba(255,214,10,.45); }
+.offer .ob { justify-self: start; padding: 2px 9px; border-radius: 99px; background: var(--hook); color: #1A1300; font-size: 12px; font-weight: 750; }
+.offer h4 { margin: 0; font-size: 16px; letter-spacing: -.01em; color: var(--fg); }
+.offer p { margin: 0; font-size: 13.5px; color: var(--fg-2); }
+.offer .oc { font-variant-numeric: tabular-nums; color: var(--hook); font-weight: 600; }
+.offer .btn { grid-column: 2; grid-row: 1 / span 4; height: 46px; white-space: nowrap; background: var(--hook); color: #1A1300; }
+.offer .btn:hover { filter: brightness(1.08); }
+.bbody .offer { margin: 0; }
+.waitx { display: grid; gap: 12px; margin-top: 20px; }
+.mailn { display: flex; gap: 10px; align-items: flex-start; margin: 18px 0 0; padding: 12px 14px; border-radius: 14px; background: rgba(30,107,255,.1); font-size: 14px; color: var(--fg-2); }
+.mailn svg { width: 18px; height: 18px; flex: none; margin-top: 2px; color: var(--sky); }
+.mailn b { color: var(--fg); font-weight: 600; overflow-wrap: anywhere; }
+.tips { padding: 14px 16px; border-radius: 14px; background: rgba(255,255,255,.035); box-shadow: inset 0 0 0 1px var(--line); }
+.tips h3 { margin: 0 0 8px; font-size: 14px; color: var(--fg); }
+.tips ul { margin: 0; padding-left: 18px; display: grid; gap: 5px; font-size: 13.5px; color: var(--fg-2); }
+.dcard { display: flex; gap: 14px; align-items: center; padding: 14px 16px; border-radius: 14px; text-decoration: none; background: linear-gradient(120deg, rgba(88,101,242,.26), rgba(88,101,242,.06)); box-shadow: inset 0 0 0 1px rgba(124,134,255,.4); }
+.dcard svg { width: 30px; height: 30px; flex: none; color: #A5ADFF; }
+.dcard div { flex: 1; display: grid; gap: 2px; }
+.dcard b { font-size: 14.5px; color: var(--fg); } .dcard span { font-size: 12.5px; color: var(--fg-2); }
+.dcard em { font-style: normal; flex: none; padding: 8px 12px; border-radius: 10px; background: #5865F2; color: #fff; font-size: 13px; font-weight: 650; }
+.saved { display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; padding: 5px 12px 5px 8px; border-radius: 99px; background: rgba(61,220,132,.12); color: #5BE0A7; font-size: 13.5px; font-weight: 600; }
+.saved svg { width: 16px; height: 16px; }
+.upsell { position: fixed; left: 50%; bottom: calc(80px + env(safe-area-inset-bottom)); z-index: 45; width: min(440px, calc(100% - 32px)); transform: translateX(-50%); padding: 18px 18px 16px; border-radius: 18px;
+  background: #0E1B45; box-shadow: inset 0 0 0 1px rgba(76,141,255,.45), 0 30px 60px -20px #000; display: grid; gap: 8px; animation: upin .28s ease-out; }
+.upsell h3 { margin: 0; padding-right: 30px; font-size: 16.5px; letter-spacing: -.01em; }
+.upsell p { margin: 0; font-size: 14px; color: var(--fg-2); }
+.upsell .ua { display: flex; gap: 8px; margin-top: 6px; } .upsell .ua .btn-primary { flex: 1; }
+.upsell .bx { top: 10px; right: 10px; width: 30px; height: 30px; }
+@keyframes upin { from { opacity: 0; transform: translate(-50%, 12px); } }
+.pref { padding: 14px 16px; border-radius: 16px; background: linear-gradient(120deg, rgba(61,220,132,.13), rgba(61,220,132,.02)); box-shadow: inset 0 0 0 1px rgba(61,220,132,.32); display: grid; gap: 8px; }
+.pref h3 { margin: 0; font-size: 15px; } .pref p { margin: 0; font-size: 13.5px; color: var(--fg-2); }
+.pref .rl { display: flex; gap: 8px; flex-wrap: wrap; }
+.pref input { flex: 1 1 200px; min-width: 0; height: 40px; border: 0; border-radius: 11px; padding: 0 12px; background: #0B1638; color: var(--fg); font: 13.5px var(--body); box-shadow: inset 0 0 0 1px var(--line-2); }
+.pref small { font-size: 12px; color: var(--fg-3); }
+@media (max-width: 640px) { .offer { grid-template-columns: 1fr; } .offer .btn { grid-column: 1; grid-row: auto; width: 100%; margin-top: 6px; } .dcard em { display: none; } }
+@media (prefers-reduced-motion: reduce) { .proof i, .upsell { animation: none; } }
 .hide { display: none !important; }
 
 @media (max-width: 640px) {
@@ -603,6 +650,7 @@ footer a { color: var(--fg-3); }
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
       <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg>YouTube</span>
     </div>
+    <p class="proof hide" id="proof"><i aria-hidden="true"></i><span id="proofn"></span></p>
     <div class="reels" aria-hidden="true">
       <figure><img src="{root}shots/reel1.webp" alt="" width="360" height="640" loading="lazy"><span>84</span></figure>
       <figure><img src="{root}shots/reel3.webp" alt="" width="360" height="640" loading="lazy"><span>91</span></figure>
@@ -681,6 +729,7 @@ function login() {
     setHint(L.inApp, true);
     return;
   }
+  step('clip_login');
   try { localStorage.setItem('nf.login', String(Date.now())); localStorage.setItem('nf.back', location.search || ''); } catch (e) {}
   location.href = SB + '/auth/v1/authorize?provider=google&redirect_to=' + encodeURIComponent(HOME);
 }
@@ -736,9 +785,11 @@ function renderRun(j) {
     + '<div class="bar"><i style="width:' + Math.max(3, p) + '%"></i></div>'
     + '<div class="stage"><span>' + esc(L.stages[j.stage] || j.message || L.stages.queued) + '</span><span>' + p + '%</span></div>'
     + '<div class="steps">' + L.steps.map((s, i) => '<span class="' + (i < si ? 'ok' : i === si ? 'on' : '') + '">' + esc(s) + '</span>').join('') + '</div>'
-    + '<p class="leave">' + esc(L.leave) + '</p>'
+    + (me().email ? '<p class="mailn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>' + esc(L.cv.mail).replace('{e}', '<b>' + esc(me().email) + '</b>') + '</span></p>' : '<p class="leave">' + esc(L.leave) + '</p>')
     + '<div class="row"><button class="link" id="cancel" type="button">' + esc(L.cancel) + '</button>'
-    + (j.credits ? '<span class="src" style="margin:0">' + esc(L.credUsed.replace('{n}', j.credits)) + '</span>' : '') + '</div>';
+    + (j.credits ? '<span class="src" style="margin:0">' + esc(L.credUsed.replace('{n}', j.credits)) + '</span>' : '') + '</div>'
+    + '<div class="waitx"><div class="tips"><h3>' + esc(L.cv.tipsT) + '</h3><ul>' + L.cv.tips.map((t) => '<li>' + esc(t) + '</li>').join('') + '</ul></div>'
+    + '<a class="dcard" href="' + DISCORD + '" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.5 5.3A17 17 0 0 0 15.3 4l-.5 1.1a15.7 15.7 0 0 0-5.6 0L8.7 4a17 17 0 0 0-4.2 1.3C1.8 9.3 1.1 13.2 1.4 17a17 17 0 0 0 5.2 2.6l1.1-1.8c-.6-.2-1.2-.5-1.7-.8l.4-.3a12.2 12.2 0 0 0 11.2 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.8a17 17 0 0 0 5.2-2.6c.4-4.4-.7-8.3-3.1-11.7zM8.5 14.7c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1zm7 0c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1z"/></svg><div><b>' + esc(L.cv.dcT) + '</b><span>' + esc(L.cv.dcD) + '</span></div><em>' + esc(L.cv.dcGo) + '</em></a></div>';
   $('cancel').onclick = async () => { try { await call('cancel', { job: j.id }); poll(j.id, true); } catch (e) {} };
 }
 
@@ -787,7 +838,8 @@ function renderDone(j) {
   // ordinate per punteggio, come nella galleria dell'app
   const list = j.clips.slice().sort((x, y) => (y.score ?? -1) - (x.score ?? -1) || x.a - y.a);
   el.innerHTML = '<div class="done-h"><div><h2><span>' + n + '</span> ' + esc(n === 1 ? L.readyOne : L.ready) + '</h2>'
-    + '<p>' + esc((j.title ? L.from + ' ' + j.title + ' · ' : '') + L.expire) + '</p></div>'
+    + '<p>' + esc((j.title ? L.from + ' ' + j.title + ' · ' : '') + L.expire) + '</p>'
+    + (n ? '<span class="saved" title="' + esc(L.cv.savedD.replace('{n}', n)) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>' + esc(L.cv.saved.replace('{h}', fmtH((Number(j.duration) || 0) / 60 + n * 10))) + '</span>' : '') + '</div>'
     + '<button class="btn btn-ghost btn-sm" id="again" type="button">' + esc(L.again) + '</button></div>'
     + '<div class="cg-grid">' + list.map((c, i) => {
       const pf = bestPfKey(c.pf), dl = dlUrl(c, j), b = busy(c);
@@ -810,6 +862,7 @@ function renderDone(j) {
     + '<p class="ok hide" id="sentok">' + esc(L.editSent) + '</p></aside>';
   $('again').onclick = () => { history.replaceState(null, '', location.pathname); showAsk(); $('url').value = ''; $('url').focus(); };
   el.querySelectorAll('[data-stop]').forEach((x) => x.addEventListener('click', (e) => e.stopPropagation()));
+  el.querySelectorAll('a.cg-ib').forEach((x) => x.addEventListener('click', () => maybeUpsell()));
   el.querySelectorAll('[data-ed]').forEach((x) => x.addEventListener('click', () => openEdit(j, j.clips.find((c) => c.n === Number(x.dataset.ed)))));
   el.querySelectorAll('.cg-card').forEach((card) => {
     const c = list[+card.dataset.i];
@@ -865,6 +918,7 @@ function openPlayer(j, list, idx) {
       + (list.length > 1 ? '<button class="cg-mnav r" type="button" data-go="1" aria-label="' + esc(G.next) + '">' + ICO.r + '</button>' : '') + '</div>';
     bg.querySelector('[data-x]').onclick = close;
     bg.querySelectorAll('[data-go]').forEach((b) => b.onclick = () => go(+b.dataset.go));
+    bg.querySelectorAll('.cg-mbtns a').forEach((a) => a.addEventListener('click', () => maybeUpsell()));
     const eb = bg.querySelector('[data-act=edit]'); if (eb) eb.onclick = () => { close(); openEdit(j, x); };
     const xb = bg.querySelector('[data-act=ext]'); if (xb) xb.onclick = () => { close(); openEdit(j, x); setTimeout(() => { const t = document.querySelector('.edlg .trims'); if (t) { t.scrollIntoView({ block: 'center', behavior: 'smooth' }); const f = t.querySelector('button'); if (f) f.focus({ preventScroll: true }); } }, 80); };
     // sul telefono si passa da una clip all'altra scorrendo di lato sul video
@@ -890,6 +944,7 @@ async function poll(id, now) {
     if (current.status === 'done' && current.expired) { showAsk(); $('url').value = current.url; setHint(L.expired); loadHist(); return; }
     if (current.status === 'done') {
       $('hero').classList.add('hide');
+      step('clip_done', current.id);
       const was = editingN; editingN = current.editing ? current.editing.n : null;
       if (!(document.querySelector('.edlg'))) renderDone(current);
       if (current.editing) { timer = setTimeout(() => poll(id), 4000); return; }
@@ -932,6 +987,148 @@ async function catalog() {
   return CAT;
 }
 const eur = (v) => new Intl.NumberFormat(LANG === 'en' ? 'en-IE' : 'it-IT', { style: 'currency', currency: 'EUR' }).format(Number(v || 0));
+// ---- conversione (prova senza accesso, contatore, offerta, invito) e statistiche anonime del percorso
+const PUBFN = SB + '/functions/v1/webclip-pub';
+const HITFN = SB + '/functions/v1/site-hit';
+const CV = L.cv;
+// visite anonime per il pannello (niente cookie, niente dati personali); chi chiede di non essere tracciato non viene contato
+function hit(k, d) {
+  if (navigator.globalPrivacyControl || navigator.doNotTrack === '1') return;
+  try {
+    const q = new URLSearchParams(location.search);
+    const b = JSON.stringify({ k, d: d || '', p: location.pathname, l: LANG, r: document.referrer, us: q.get('utm_source'), um: q.get('utm_medium'), uc: q.get('utm_campaign'), w: innerWidth });
+    if (!(navigator.sendBeacon && navigator.sendBeacon(HITFN, b))) fetch(HITFN, { method: 'POST', body: b, keepalive: true, mode: 'no-cors' }).catch(() => {});
+  } catch (e) { /* le statistiche non devono mai rompere la pagina */ }
+}
+// un passo del percorso conta una volta per scheda (o per lavoro)
+function step(d, key) { const k = 'nf.step.' + d + (key ? '.' + key : ''); if (once.get(k)) return; once.set(k, '1'); hit('tab', d); }
+async function pub(op, body, auth) {
+  const h = { apikey: KEY, 'Content-Type': 'application/json' };
+  if (auth) { const t = await token(); if (!t) throw new Error('auth'); h.Authorization = 'Bearer ' + t; }
+  let r;
+  try { r = await fetch(PUBFN, { method: 'POST', headers: h, body: JSON.stringify(Object.assign({ op }, body || {})) }); }
+  catch (e) { throw new Error(L.net); }
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) { const x = new Error(j.error || L.err); x.code = j.code; throw x; }
+  return j;
+}
+const fmtH = (min) => { min = Math.max(1, Math.round(min)); return min >= 60 ? (Math.round(min / 6) / 10).toString().replace('.', LANG === 'en' ? '.' : ',') + ' h' : min + ' min'; };
+const leftTxt = (ms) => { const t = Math.max(0, Math.floor(ms / 1000)), h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, x = t % 60; return (h ? h + 'h ' : '') + String(m).padStart(h ? 2 : 1, '0') + 'm ' + String(x).padStart(2, '0') + 's'; };
+async function loadProof() {
+  try {
+    const r = await pub('stats');
+    // il numero si mostra solo quando dice qualcosa (sotto le 30 clip meglio niente)
+    const w = Number(r.week) || 0, t = Number(r.total) || 0, n = w >= 30 ? w : t >= 30 ? t : 0;
+    if (!n) return;
+    const txt = (w >= 30 ? CV.proofW : CV.proofT).split('{n}');
+    $('proofn').innerHTML = esc(txt[0]) + '<b>' + n.toLocaleString(LANG === 'en' ? 'en' : 'it') + '</b>' + esc(txt[1] || '');
+    $('proof').classList.remove('hide');
+  } catch (e) {}
+}
+// prova senza accesso: si vede il video, quanto costa e che e' gratis; l'accesso con Google solo quando si crea
+let peekFor = null;
+async function peek(url) {
+  const box = $('est'), b = $('go');
+  if (peekFor === url && !box.classList.contains('hide')) return;
+  peekFor = url; box.classList.add('hide'); setHint(L.checking); b.disabled = true;
+  step('clip_paste');
+  try {
+    const r = await pub('peek', { url });
+    if (peekFor !== url) return;
+    box.innerHTML = (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
+      + '<div><h3>' + esc(r.title || url) + '</h3><p class="meta">' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</p>'
+      + (r.free ? '<span class="freeb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>' + esc(CV.free) + '</span>'
+        : '<p class="cost"><b>' + esc(CV.peekCost.replace('{c}', r.cost)) + '</b></p>') + '</div>'
+      + '<p class="pk">' + esc((r.free ? CV.peekFree : CV.peekPaid).replace('{c}', r.cost)) + ' ' + esc(CV.peekLogin) + '</p>'
+      + '<div class="acts"><button class="btn btn-primary" id="peekgo" type="button">' + esc(r.free ? CV.peekGo : CV.peekGoPaid) + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>';
+    box.classList.remove('hide'); setHint('');
+    $('peekgo').onclick = () => { once.set('nf.pending', url); step('clip_login'); setHint(L.loginFirst); login(); };
+    $('estno').onclick = () => { box.classList.add('hide'); peekFor = null; setHint('{note}'); $('url').select(); };
+  } catch (e) {
+    if (peekFor !== url) return;
+    peekFor = null;
+    // se la lettura non riesce si entra comunque: la stima vera la fa la pagina dopo l'accesso
+    if (e.code === 'rate' || e.code === 'down' || e.code === 'off') { once.set('nf.pending', url); setHint(L.loginFirst); setTimeout(login, 900); }
+    else setHint(e.message, true);
+  } finally { b.disabled = false; }
+}
+// offerta della prima ricarica (24 ore, si apre quando i crediti non bastano)
+let OFF = null, offAt = 0;
+async function getOffer(need) {
+  if (Date.now() - offAt < 60000 && (OFF || !need)) return OFF;
+  try { const r = await pub('offer', { need: need || 0, lang: LANG }, true); OFF = r.offer && r.offer.endsAt && Date.parse(r.offer.endsAt) > Date.now() ? r.offer : null; offAt = Date.now(); }
+  catch (e) { OFF = null; }
+  return OFF;
+}
+function offerHtml(o) {
+  return '<div class="offer" data-offer>' + (o.badge && !String(o.title || '').includes(o.badge) ? '<span class="ob">' + esc(o.badge) + '</span>' : '')
+    + '<h4>' + esc(o.title || '') + '</h4><p>' + esc(o.subtitle || CV.offCr.replace('{c}', Number(o.credits || 0).toLocaleString(LANG === 'en' ? 'en' : 'it')).replace('{p}', eur(o.price))) + '</p>'
+    + '<p class="oc" data-left>' + esc(CV.offEnds.replace('{t}', leftTxt(Date.parse(o.endsAt) - Date.now()))) + '</p>'
+    + '<button class="btn" type="button" data-buy="offer" data-id="' + esc(o.id) + '">' + esc(CV.offGo.replace('{p}', eur(o.price))) + '</button></div>';
+}
+// conto alla rovescia dell'offerta (si ferma da solo quando la scheda sparisce)
+function tickOffer(root) {
+  const el = root.querySelector('[data-offer] [data-left]'); if (!el || !OFF) return;
+  const end = Date.parse(OFF.endsAt);
+  const t = setInterval(() => { if (!document.body.contains(el)) { clearInterval(t); return; } const ms = end - Date.now(); if (ms <= 0) { clearInterval(t); const c = el.closest('[data-offer]'); if (c) c.remove(); OFF = null; return; } el.textContent = CV.offEnds.replace('{t}', leftTxt(ms)); }, 1000);
+}
+async function buyOffer(btn, id) {
+  btn.disabled = true; const lab = btn.textContent; btn.textContent = L.buy.wait; step('clip_buy');
+  try {
+    const r = await payCall({ op: 'buy', item: { kind: 'offer', id, period: 'month' }, lang: LANG, back: 'clip' });
+    if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; }
+  } catch (e) { if (e.message !== 'auth') toast(e.message); }
+  btn.disabled = false; btn.textContent = lab;
+}
+// dopo il primo download, a chi non ha un piano: una proposta, una volta per sessione
+async function maybeUpsell() {
+  if (once.get('nf.upsell') || document.querySelector('.upsell')) return;
+  once.set('nf.upsell', '1');
+  try {
+    const [st, cat] = await Promise.all([payCall({ op: 'status' }), catalog()]);
+    if (st && st.sub) return;
+    const p = (cat.plans || [])[0]; if (!p) return;
+    await new Promise((r) => setTimeout(r, 1400));   // prima parte il download
+    const d = document.createElement('div');
+    d.className = 'upsell'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', CV.upT);
+    d.innerHTML = '<button class="bx" type="button" data-x aria-label="' + esc(L.pf.close) + '">' + ICO.x + '</button><h3>' + esc(CV.upT) + '</h3><p>'
+      + esc(CV.upD.replace('{p}', p.name + ' (' + eur(p.price_eur) + L.buy.perMonth + ')').replace('{c}', Number(p.monthly).toLocaleString(LANG === 'en' ? 'en' : 'it')).replace('{h}', fmtH(p.monthly / Math.max(1, perHour) * 60)))
+      + '</p><div class="ua"><button class="btn btn-primary btn-sm" type="button" data-go>' + esc(CV.upGo) + '</button><button class="btn btn-ghost btn-sm" type="button" data-x>' + esc(CV.upNo) + '</button></div>';
+    document.body.append(d);
+    d.querySelectorAll('[data-x]').forEach((x) => x.onclick = () => d.remove());
+    d.querySelector('[data-go]').onclick = () => { d.remove(); openBuy({ kind: 'plan', id: p.id, period: 'month' }); };
+    setTimeout(() => { if (document.body.contains(d)) d.remove(); }, 30000);
+  } catch (e) {}
+}
+// invito: ?ref=CODICE si ricorda (anche attraverso l'accesso con Google) e si registra dopo l'accesso
+function keepRef() {
+  const q = new URLSearchParams(location.search), c = q.get('ref');
+  if (!c) return;
+  if (/^[A-Za-z0-9]{4,10}$/.test(c)) store.set('nf.ref', { c: c.toUpperCase(), at: Date.now() });
+  q.delete('ref'); history.replaceState(null, '', location.pathname + (q.toString() ? '?' + q : ''));
+}
+async function claimRef() {
+  const r = store.get('nf.ref');
+  if (!r || !r.c) return;
+  if (Date.now() - (r.at || 0) > 7 * 864e5) { store.set('nf.ref', null); return; }
+  try { const j = await rpc('web_ref_claim', { code: r.c }); store.set('nf.ref', null); if (j && j.ok) toast(CV.refOk); }
+  catch (e) { if (e.message !== L.net) store.set('nf.ref', null); }
+}
+function refBox(box) {
+  rpc('web_ref').then((d) => {
+    if (!d || !d.code || !document.body.contains(box)) return;
+    const link = 'https://noonframe.com/' + (LANG === 'en' ? 'en/' : '') + 'clip.html?ref=' + encodeURIComponent(d.code);
+    box.innerHTML = '<h3>' + esc(CV.refT) + '</h3><p>' + esc(CV.refD.replace('{c}', d.reward || 60)) + '</p>'
+      + '<div class="rl"><input readonly value="' + esc(link) + '" aria-label="' + esc(CV.refT) + '"><button class="btn btn-primary btn-sm" type="button" data-copy>' + esc(CV.refCopy) + '</button>'
+      + (navigator.share ? '<button class="btn btn-ghost btn-sm" type="button" data-share>' + esc(CV.refShare) + '</button>' : '') + '</div>'
+      + '<small>' + esc(CV.refStat.replace('{n}', d.invited || 0).replace('{r}', d.rewarded || 0) + ' · ' + CV.refMax.replace('{m}', d.max || 20)) + '</small>';
+    box.classList.remove('hide');
+    const inp = box.querySelector('input'), cp = box.querySelector('[data-copy]');
+    inp.onfocus = () => inp.select();
+    cp.onclick = async () => { try { await navigator.clipboard.writeText(link); } catch (e) { inp.select(); try { document.execCommand('copy'); } catch (x) {} } cp.textContent = CV.refCopied; setTimeout(() => { cp.textContent = CV.refCopy; }, 2000); };
+    const sh = box.querySelector('[data-share]'); if (sh) sh.onclick = () => navigator.share({ title: 'NoonFrame', text: CV.refShareT, url: link }).catch(() => {});
+  }).catch(() => {});
+}
 // ---- funzioni del database con l'accesso dell'utente (profilo, feedback)
 async function rpc(fn, body) {
   const t = await token();
@@ -978,6 +1175,7 @@ function openProfile() {
     body.innerHTML = '<div class="pstats"><div><b>' + Number(w.balance || 0).toLocaleString(LANG === 'en' ? 'en' : 'it') + '</b><span>' + esc(P.credits) + '</span></div><div><b>' + (c.clips || 0) + '</b><span>' + esc(P.clips) + '</span></div><div><b>' + esc(hrs) + '</b><span>' + esc(P.hours) + '</span></div></div>'
       + '<div class="pplan"><div><span class="muted">' + esc(P.plan) + '</span><b>' + esc(paid ? (d.planName || w.plan) : P.free) + '</b>' + (planLine ? '<small>' + esc(planLine) + '</small>' : '') + '</div>'
       + '<div class="pplan-a"><button class="btn btn-primary btn-sm" type="button" id="ptop">' + esc(paid ? P.topup : P.upgrade) + '</button>' + (sub ? '<button class="btn btn-ghost btn-sm" type="button" id="pman">' + esc(P.manage) + '</button>' : '') + '</div></div>'
+      + '<section class="pref hide" id="pref"></section>'
       + '<section class="prep"><div class="prep-h"><h3>' + esc(P.reports) + '</h3><button class="link" type="button" id="pfb">' + esc(P.newFb) + '</button></div>'
       + ((d.reports || []).length ? '<ul>' + d.reports.map((r) => '<li><div class="prep-t"><span class="rk ' + esc(r.kind) + '">' + esc(P.kinds[r.kind] || r.kind) + '</span>' + st(r) + '<time>' + esc(fmtDay(r.at)) + '</time></div><p>' + esc(r.text) + '</p>'
           + (r.replies || []).map((x) => '<div class="prep-r"><b>' + esc(P.reply) + '</b><p>' + esc(x.body) + '</p></div>').join('') + '</li>').join('') + '</ul>'
@@ -989,6 +1187,7 @@ function openProfile() {
     const pm = body.querySelector('#pman'); if (pm) pm.onclick = async () => { pm.disabled = true; try { const r = await payCall({ op: 'portal' }); if (r.url && /^https:\/\/(billing\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; } } catch (e) { if (e.message !== 'auth') toast(e.message); } pm.disabled = false; };
     body.querySelector('#pfb').onclick = () => { close(); openFeedback(); };
     body.querySelector('#pout').onclick = logout;
+    refBox(body.querySelector('#pref'));
   }).catch((e) => { if (e.message === 'auth') { close(); return; } body.innerHTML = '<p class="bmsg err">' + esc(e.message) + '</p><button class="link plogout" type="button" id="pout">' + esc(P.logout) + '</button>'; body.querySelector('#pout').onclick = logout; });
 }
 // immagine allegata: ridotta nel browser (lato lungo 1600 px, JPEG) prima di mandarla
@@ -1054,7 +1253,7 @@ function openBuy(want) {
   if (!S) { login(); return; }
   if (document.querySelector('.bdlg')) return;
   const B = L.buy;
-  let tab = want && want.kind === 'pack' ? 'packs' : 'plans', period = want && want.period === 'year' ? 'year' : 'month', sub = null, note = null;
+  let tab = want && want.kind === 'pack' ? 'packs' : 'plans', period = want && want.period === 'year' ? 'year' : 'month', sub = null, note = null, off = null;
   const dlg = document.createElement('div');
   dlg.className = 'edlg bdlg';
   dlg.innerHTML = '<div class="ebox" role="dialog" aria-modal="true" aria-labelledby="bttl">'
@@ -1092,6 +1291,7 @@ function openBuy(want) {
     const save = Math.max(0, ...c.plans.filter((p) => p.price_year_eur).map((p) => Math.round((1 - p.price_year_eur / (p.price_eur * 12)) * 100)));
     const popId = c.plans.length >= 3 ? c.plans[Math.floor(c.plans.length / 2)].id : (c.plans[0] || {}).id;
     let html = (note ? '<div class="bmsg' + (note.err ? ' err' : '') + '" role="status"><span>' + esc(note.t) + '</span>' + (note.portal ? '<button class="btn btn-ghost btn-sm" type="button" data-portal>' + esc(B.manage) + '</button>' : '') + '</div>' : '')
+      + (off ? offerHtml(off) : '')
       + '<div class="btabs" role="tablist"><button type="button" role="tab" data-tab="plans" aria-selected="' + (tab === 'plans') + '">' + esc(B.plans) + '</button><button type="button" role="tab" data-tab="packs" aria-selected="' + (tab === 'packs') + '">' + esc(B.packs) + '</button></div>';
     if (tab === 'plans') {
       html += '<div class="bper"><div class="seg" role="group"><button type="button" data-per="month" aria-pressed="' + (period === 'month') + '">' + esc(B.month) + '</button><button type="button" data-per="year" aria-pressed="' + (period === 'year') + '">' + esc(B.year) + (save ? '<em>−' + save + '%</em>' : '') + '</button></div></div>'
@@ -1117,12 +1317,13 @@ function openBuy(want) {
       }).join('') + '</div>';
     }
     body.innerHTML = html;
+    tickOffer(body);
     body.querySelectorAll('[data-tab]').forEach((b) => b.onclick = () => { tab = b.dataset.tab; note = null; paint(); });
     body.querySelectorAll('[data-per]').forEach((b) => b.onclick = () => { period = b.dataset.per; paint(); });
     const pb = body.querySelector('[data-portal]'); if (pb) pb.onclick = () => portal(pb);
     body.querySelectorAll('[data-buy]').forEach((b) => b.onclick = async () => {
       body.querySelectorAll('[data-buy]').forEach((x) => { x.disabled = true; });
-      const lab = b.textContent; b.textContent = B.wait;
+      const lab = b.textContent; b.textContent = B.wait; step('clip_buy');
       try {
         const r = await payCall({ op: 'buy', item: { kind: b.dataset.buy, id: b.dataset.id, period }, lang: LANG, back: 'clip' });
         if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; }
@@ -1137,7 +1338,7 @@ function openBuy(want) {
     });
     if (!dlg.contains(document.activeElement) || document.activeElement === document.body) { const f = body.querySelector('.hl [data-buy]') || body.querySelector('.pop [data-buy]'); if (f) try { f.focus({ preventScroll: true }); } catch (e) {} }
   };
-  Promise.all([catalog(), payCall({ op: 'status' }).catch(() => ({}))]).then(([, st]) => { sub = (st && st.sub) || null; paint(); paintManage(); })
+  Promise.all([catalog(), payCall({ op: 'status' }).catch(() => ({})), getOffer(0)]).then(([, st, o]) => { sub = (st && st.sub) || null; off = o; paint(); paintManage(); })
     .catch((e) => { body.innerHTML = '<p class="bmsg err">' + esc(e.message || B.loadErr) + '</p>'; });
 }
 function wantFrom(q) {
@@ -1289,6 +1490,7 @@ async function startJob(url) {
   try {
     const r = await call('start', { url, lang: '', opts: OPTS });
     history.replaceState(null, '', '?job=' + r.job.id);
+    step('clip_start', r.job.id);
     perHour = r.perHour || perHour;
     $('est').classList.add('hide');
     poll(r.job.id);
@@ -1316,7 +1518,16 @@ async function estimate(url) {
     if (r.enough) { $('hero').classList.add('step2'); try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {} }
     bindSettings(box);
     if ($('estgo')) $('estgo').onclick = () => startJob(url);
-    if ($('estbuy')) $('estbuy').onclick = () => openBuy(null);
+    if ($('estbuy')) {
+      $('estbuy').onclick = () => openBuy(null);
+      getOffer(r.cost).then((o) => {
+        if (!o || estFor !== url || !document.body.contains($('estbuy'))) return;
+        $('estbuy').textContent = L.cv.offAll; $('estbuy').className = 'btn btn-ghost';
+        box.querySelector('.acts').insertAdjacentHTML('beforebegin', offerHtml(o));
+        const ob = box.querySelector('[data-offer] [data-buy]'); ob.onclick = () => buyOffer(ob, o.id);
+        tickOffer(box);
+      });
+    }
     $('estno').onclick = () => { box.classList.add('hide'); $('hero').classList.remove('step2'); estFor = null; setHint(costNote()); $('url').select(); };
   } catch (e) {
     if (e.message !== 'auth') setHint(e.message, true);
@@ -1327,25 +1538,30 @@ $('ask').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const url = $('url').value.trim();
   if (!LINKS.some((rx) => rx.test(url))) { setHint(L.badLink, true); $('url').focus(); return; }
-  if (!S) { once.set('nf.pending', url); setHint(L.loginFirst); setTimeout(login, 600); return; }
+  if (!S) { peek(url); return; }
   estimate(url);
 });
 // incollando un link valido la stima parte da sola
 $('url').addEventListener('input', () => {
   const url = $('url').value.trim();
+  if (!S) { if (url !== peekFor) { $('est').classList.add('hide'); if (LINKS.some((rx) => rx.test(url))) peek(url); } return; }
   $('est').classList.add('hide');
-  if (S && url !== estFor && LINKS.some((rx) => rx.test(url))) estimate(url);
+  if (url !== estFor && LINKS.some((rx) => rx.test(url))) { step('clip_paste'); estimate(url); }
 });
 
 (async function boot() {
   fromHash();
+  keepRef();
+  hit('view');
+  loadProof();
   const job = new URLSearchParams(location.search).get('job');
   const qs = new URLSearchParams(location.search), paid = qs.get('pagamento'), want = wantFrom(qs.get('compra'));
   // senza accesso: si entra con Google e si torna qui con lo stesso ?compra= (lo ricorda login())
   if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); if (want) { setHint(L.loginFirst); setTimeout(login, 700); } return; }
   if (paid || want) { qs.delete('pagamento'); qs.delete('compra'); history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '')); }
   showSignedIn(null);
-  if (paid === 'ok') { toast(L.buy.ok); [4000, 10000, 25000].forEach((t) => setTimeout(loadHist, t)); }
+  claimRef();
+  if (paid === 'ok') { step('clip_paid'); toast(L.buy.ok); [4000, 10000, 25000].forEach((t) => setTimeout(loadHist, t)); }
   if (paid === 'annullato') toast(L.buy.ko);
   if (want) setTimeout(() => openBuy(want), 300);
   const pending = once.get('nf.pending');
