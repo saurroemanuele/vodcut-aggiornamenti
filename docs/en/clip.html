@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-7WJQbi/EnI6kwDbeKS2t4EM5KVo+0dfTeEjuse8cmYk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-mftBrjK+rfxntgP2IgShQc2wHy+wuo8K7Q8AaetWKIQ='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -176,6 +176,83 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .done-h h2 span { color: var(--score); font-variant-numeric: tabular-nums; }
 .done-h p { margin: 6px 0 0; font-size: 14px; color: var(--fg-3); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+/* galleria delle clip, come nell'app */
+html.noscroll { overflow: hidden; }
+.cg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px 18px; }
+.cg-card { display: flex; flex-direction: column; gap: 10px; outline: none; border-radius: 16px; cursor: pointer; }
+.cg-pv { position: relative; aspect-ratio: 9 / 16; border-radius: 16px; overflow: hidden; background: #000; box-shadow: inset 0 0 0 1px var(--line-2); transition: transform .18s, box-shadow .18s; }
+.cg-pv img, .cg-pv .cg-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cg-nopv { position: absolute; inset: 0; background: linear-gradient(160deg, #0F1C40, #050A1C); }
+.cg-card:hover .cg-pv { transform: translateY(-2px); box-shadow: 0 14px 34px -10px rgba(0,0,0,.7), inset 0 0 0 1px rgba(140,194,255,.35); }
+.cg-card:focus-visible .cg-pv { box-shadow: 0 0 0 2px var(--blue-hi); }
+.cg-playi { position: absolute; left: 50%; top: 50%; width: 52px; height: 52px; margin: -26px 0 0 -26px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.9); color: #0A1638; box-shadow: 0 10px 30px rgba(0,0,0,.45); opacity: 0; transform: scale(.9); transition: opacity .18s, transform .18s; }
+.cg-playi svg { width: 20px; height: 20px; margin-left: 3px; }
+.cg-card:hover .cg-playi { opacity: 1; transform: scale(1); }
+.cg-card:hover .cg-vid ~ .cg-playi, .cg-pv:has(.cg-vid) .cg-playi { opacity: 0; }
+@media (hover: none) { .cg-playi { opacity: .92; transform: scale(1); width: 44px; height: 44px; margin: -22px 0 0 -22px; } }
+.cg-badge { position: absolute; top: 10px; left: 10px; padding: 4px 9px; border-radius: 8px; background: rgba(5,10,28,.78); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-size: 11.5px; font-weight: 700; color: var(--fg); }
+.cg-pf { position: absolute; bottom: 10px; left: 10px; padding: 4px 9px; border-radius: 8px; background: rgba(5,10,28,.78); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-size: 11.5px; font-weight: 700; color: var(--sky); }
+.cg-time { position: absolute; bottom: 10px; right: 10px; display: grid; justify-items: end; gap: 1px; padding: 4px 8px; border-radius: 8px; background: rgba(5,10,28,.78); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); font-size: 11px; color: var(--fg-2); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.cg-time b { color: var(--fg); font-size: 12px; }
+.cg-meta { display: flex; flex-direction: column; gap: 6px; padding: 0 2px; }
+.cg-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cg-score { font-size: 30px; font-weight: 800; letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.cg-acts { display: flex; gap: 2px; }
+.cg-ib { width: 36px; height: 36px; border-radius: 10px; border: 0; background: none; color: var(--fg-2); display: grid; place-items: center; cursor: pointer; text-decoration: none; }
+.cg-ib:hover:not(:disabled) { background: rgba(255,255,255,.08); color: var(--fg); }
+.cg-ib:disabled { opacity: .4; cursor: default; }
+.cg-ib svg { width: 18px; height: 18px; }
+.cg-name { margin: 0; font-size: 14.5px; line-height: 1.3; letter-spacing: -.01em; }
+.cg-why { margin: 0; font-size: 12.5px; line-height: 1.45; color: var(--fg-2); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+/* finestra della clip */
+.cg-modal-bg { position: fixed; inset: 0; z-index: 55; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(2,6,18,.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.cg-modal { position: relative; display: flex; align-items: stretch; gap: 28px; padding: 22px 60px; max-width: min(1040px, 100%); max-height: 100%; }
+.cg-mstage { height: min(82vh, 780px); aspect-ratio: 9 / 16; border-radius: 18px; overflow: hidden; background: #000; box-shadow: 0 30px 80px -20px rgba(0,0,0,.8), 0 0 0 1px rgba(160,190,255,.14); flex-shrink: 0; }
+.cg-mvid { width: 100%; height: 100%; display: block; background: #000; object-fit: contain; }
+.cg-mnone { position: relative; width: 100%; height: 100%; display: grid; place-items: center; }
+.cg-mnone img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(.45); }
+.cg-mnone span { position: relative; color: var(--fg-2); }
+.cg-minfo { width: 340px; display: flex; flex-direction: column; gap: 12px; padding: 12px 0; overflow: auto; }
+.cg-mscore { display: flex; align-items: baseline; gap: 8px; }
+.cg-mscore b { font-size: 54px; font-weight: 800; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+.cg-mscore span { color: var(--fg-3); font-size: 14px; }
+.cg-mscore em { margin-left: auto; font-style: normal; font-size: 12.5px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
+.cg-minfo h2 { margin: 0; font-size: 21px; line-height: 1.25; letter-spacing: -.015em; }
+.cg-mwhy { margin: 0; color: var(--fg-2); line-height: 1.5; font-size: 15px; }
+.cg-pfbox { display: flex; flex-direction: column; gap: 8px; padding: 13px 14px; border-radius: 14px; background: rgba(10,20,48,.9); box-shadow: inset 0 0 0 1px var(--line-2); }
+.cg-pfh { font-size: 12.5px; font-weight: 700; color: var(--fg-2); }
+.cg-pfrow { display: grid; grid-template-columns: 58px 1fr 28px; align-items: center; gap: 10px; font-size: 13px; color: var(--fg-2); }
+.cg-pfrow b { text-align: right; font-variant-numeric: tabular-nums; color: var(--fg); }
+.cg-pfbar { height: 6px; border-radius: 3px; background: rgba(255,255,255,.08); overflow: hidden; }
+.cg-pfbar > div { height: 100%; border-radius: 3px; background: var(--fg-3); }
+.cg-pfrow.best { color: var(--fg); font-weight: 700; }
+.cg-pfrow.best .cg-pfbar > div { background: var(--blue); }
+.cg-pfwhy { margin: 2px 0 0; font-size: 13px; line-height: 1.45; color: var(--fg-2); }
+.cg-pfnote { margin: 0; font-size: 11.5px; color: var(--fg-3); line-height: 1.4; }
+.cg-mfacts { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 2px 0 0; font-size: 13px; }
+.cg-mfacts dt { color: var(--fg-3); }
+.cg-mfacts dd { margin: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.cg-mbtns { display: flex; gap: 8px; margin-top: auto; flex-wrap: wrap; padding-top: 6px; }
+.cg-mbtns .btn { height: 44px; padding: 0 14px; font-size: 14.5px; gap: 7px; }
+.cg-mbtns .btn svg { width: 16px; height: 16px; }
+.cg-mx { position: absolute; top: 4px; right: 4px; width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgba(255,255,255,.08); color: var(--fg); display: grid; place-items: center; cursor: pointer; z-index: 2; }
+.cg-mx svg, .cg-mnav svg { width: 18px; height: 18px; }
+.cg-mnav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,.08); color: var(--fg); display: grid; place-items: center; cursor: pointer; }
+.cg-mx:hover, .cg-mnav:hover { background: rgba(255,255,255,.16); }
+.cg-mnav.l { left: 4px; } .cg-mnav.r { right: 4px; }
+@media (max-width: 860px) {
+  .cg-modal-bg { padding: 0; align-items: stretch; }
+  .cg-modal { flex-direction: column; gap: 14px; padding: 56px 16px 20px; width: 100%; max-width: none; overflow: auto; }
+  .cg-mstage { height: auto; width: min(100%, calc(62vh * 9 / 16)); align-self: center; }
+  .cg-minfo { width: auto; overflow: visible; padding: 0; }
+  .cg-mscore b { font-size: 44px; }
+  .cg-mx { top: 10px; right: 12px; }
+  .cg-mnav { top: calc(56px + 31vh); }
+  .cg-mnav.l { left: 8px; } .cg-mnav.r { right: 8px; }
+  .cg-mbtns .btn { flex: 1; }
+}
+@media (max-width: 640px) { .cg-grid { grid-template-columns: 1fr 1fr; gap: 18px 12px; } .cg-score { font-size: 24px; } .cg-ib { width: 32px; height: 32px; } .cg-why { -webkit-line-clamp: 2; } }
+@media (prefers-reduced-motion: reduce) { .cg-pv, .cg-playi { transition: none; } }
 .clip { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(10,20,48,.85); box-shadow: inset 0 0 0 1px var(--line-2); }
 .vid { position: relative; aspect-ratio: 9 / 16; background: #000; }
 .vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
@@ -443,7 +520,7 @@ footer a { color: var(--fg-3); }
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
-const L = {"login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h", "loginFirst": "Sign in with Google to continue: your stream starts right after.", "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.", "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"}, "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"], "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.", "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready", "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score", "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again", "history": "Your streams", "open": "Open", "statusDone": "Ready", "statusRun": "In progress", "statusFail": "Failed", "statusCancel": "Cancelled", "editT": "Want to tweak them and spend less?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip. And clips cost much less: your PC does transcription and editing for free.", "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.", "noCredits": "You're out of credits: top up to continue.", "pf": {"title": "Your profile", "since": "On NoonFrame since {d}", "credits": "Credits", "clips": "Clips made", "hours": "Video turned into clips", "plan": "Plan", "free": "Free", "renews": "Renews on {d}", "ends": "Active until {d}", "monthly": "{n} credits a month", "topup": "Top up credits", "manage": "Manage subscription", "upgrade": "Choose a plan", "reports": "Your feedback", "noReports": "You haven't sent any reports or ideas yet.", "newFb": "Send feedback", "reply": "Reply from the team", "app": "Get the desktop app", "appD": "Full editor, design and clips right on your computer", "discord": "Join the Discord community", "discordD": "Help, tips and early looks at new features", "logout": "Sign out", "close": "Close", "load": "Loading your profile…", "st": {"nuova": "Received", "approvata": "Accepted", "in_lavorazione": "In progress", "in_beta": "In testing", "fatta": "Fixed", "chiusa": "Closed", "rifiutata": "Closed"}, "kinds": {"bug": "Problem", "idea": "Idea"}, "inVer": "in version {v}"}, "fb": {"btn": "Feedback", "title": "Help us make NoonFrame better", "lead": "We read every message. We'll reply here, in your profile, and by email.", "kinds": {"bug": ["Something's wrong", "An error, a wrong clip, a button that doesn't respond"], "idea": ["Idea or change", "A feature you'd like, something to change or improve"]}, "ph": {"bug": "What happened? What were you doing and what did you expect?", "idea": "What would you like? The more detail, the sooner we build it"}, "shot": "Add a screenshot", "shotOk": "Screenshot attached", "shotRm": "Remove", "job": "Attach the job you have open", "send": "Send", "sending": "Sending…", "ok": "Got it, thanks!", "okD": "You'll find it in your profile, with its status and our replies.", "see": "See in profile", "again": "Send another", "short": "Write a few more words.", "login": "Sign in with Google to send feedback, so we can reply to you."}, "buy": {"btn": "Top up", "t": "NoonFrame credits", "lead": "One credit = one minute of video turned into clips. Choose how to get them.", "have": "You have {b}", "packs": "Top-up", "manage": "Manage subscription", "planNow": "{p} plan", "mine": "Your plan", "change": "Switch to this", "changed": "Plan changed: Stripe works out the difference, credits arrive in a few seconds.", "hasSub": "You already have a subscription: open its page to change or cancel it.", "billedYear": "{p} a year, billed once", "perMoN": "{n} credits a month", "once": "One-time payment", "never": "Credits never expire", "best": "Best value", "packsD": "Pay once, credits never expire.", "plans": "Subscription", "plansD": "Fresh credits every month, cancel anytime.", "month": "Monthly", "year": "Yearly", "save": "save {p}%", "perMonth": "/mo", "perYear": "/yr", "credits": "credits", "perMo": "credits per month", "go": "Buy", "sub": "Subscribe", "wait": "Opening checkout…", "ok": "Payment complete: your credits arrive in a few seconds.", "ko": "Payment cancelled: you haven't been charged.", "secure": "Secure payment with Stripe · card, Apple Pay, Google Pay · discount codes on the payment page", "close": "Close", "load": "Loading prices…", "loadErr": "Prices unavailable: try again shortly.", "minutes": "≈ {h} of video into clips", "popular": "Most popular"}, "costNote": "Paste the link, then pick captions and title. Cost: 1 credit per minute of video, you have {b} credits.", "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.", "ed": {"btn": "Edit", "t": "Edit clip", "lay": "Layout", "lays": {"auto": ["Automatic", "As the AI picked it"], "split": ["Webcam + game", "Webcam on top, game below"], "full": ["Full screen", "Person or game full screen"], "fit": ["Whole video", "Blurred background above and below"]}, "title": "Opening title", "noTitle": "No title", "subs": "Captions", "noSubs": "None", "keep": "As now", "trim": "Start and end", "start": "Start", "end": "End", "earlier": "earlier", "later": "later", "len": "Length: {d}", "free": "Free edits left for this clip: {n}", "paid": "This edit costs {c} credits", "save": "Remake clip", "cancel": "Cancel", "working": "Remaking the clip", "done": "Clip updated", "same": "You didn't change anything", "until": "You can edit clips until {d}"}, "setT": "How you want them", "stepsT": ["Video", "Style", "Clips"], "back": "Change video", "autoNote": "The AI picks the layout clip by clip: webcam on top and game below when you play, person full screen when you talk.", "kindT": "What kind of video?", "kindAuto": "Automatic", "kindAutoPod": "Looks like a podcast", "kindAutoGame": "Looks like gaming", "kindAutoNo": "The AI decides", "kinds": {"podcast": ["Podcast · interview", "Person full screen"], "gaming": ["Gaming with webcam", "Webcam on top, game below"], "fit": ["Whole video", "Blurred background above and below"]}, "subsT": "Captions", "subStyles": {"classico": "Classic", "verde": "Green", "riquadro": "Box", "pulito": "Clean", "impatto": "Impact"}, "posT": "Position", "pos": {"auto": "Automatic", "centro": "Middle", "basso": "Bottom"}, "wordsT": "Words at a time", "words": {"parola": "One", "poche": "A few", "frase": "Sentence"}, "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"}, "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT", "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime."};
+const L = {"login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h", "loginFirst": "Sign in with Google to continue: your stream starts right after.", "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.", "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"}, "steps": ["Download", "Transcribe", "Pick moments", "Edit clips"], "working": "Working on your video", "leave": "You can close this page: we'll email you when your clips are ready.", "cancel": "Cancel", "cancelled": "Cancelled: your credits have been refunded.", "ready": "clips ready", "readyOne": "clip ready", "from": "From", "download": "Download", "best": "Great for", "why": "Why it works", "score": "score", "again": "Clip another stream", "failed": "That didn't work", "retry": "Try again", "history": "Your streams", "open": "Open", "statusDone": "Ready", "statusRun": "In progress", "statusFail": "Failed", "statusCancel": "Cancelled", "editT": "Want to tweak them and spend less?", "editD": "With NoonFrame on your computer you can change captions, cuts, zooms and graphics of every clip. And clips cost much less: your PC does transcription and editing for free.", "editDesk": "Download NoonFrame", "editMob": "Email me the PC link", "editSent": "Done: we emailed you the link, open it on your computer.", "noCredits": "You're out of credits: top up to continue.", "cg": {"viral": "out of 100 virality", "pfh": "Where it works best", "pfnote": "AI estimate of what usually performs on each platform: post it where it scores highest.", "dur": "Length", "inLive": "In the video", "hook": "Opening title", "edit": "Edit", "extend": "Extend", "extendTip": "Add context before or the ending after, taken from the video", "dl": "Download", "prev": "Previous clip", "next": "Next clip", "close": "Close", "since": "at {t}", "open": "Open clip", "noEdit": "Edits from the site are available for 7 days after creation"}, "pf": {"title": "Your profile", "since": "On NoonFrame since {d}", "credits": "Credits", "clips": "Clips made", "hours": "Video turned into clips", "plan": "Plan", "free": "Free", "renews": "Renews on {d}", "ends": "Active until {d}", "monthly": "{n} credits a month", "topup": "Top up credits", "manage": "Manage subscription", "upgrade": "Choose a plan", "reports": "Your feedback", "noReports": "You haven't sent any reports or ideas yet.", "newFb": "Send feedback", "reply": "Reply from the team", "app": "Get the desktop app", "appD": "Full editor, design and clips right on your computer", "discord": "Join the Discord community", "discordD": "Help, tips and early looks at new features", "logout": "Sign out", "close": "Close", "load": "Loading your profile…", "st": {"nuova": "Received", "approvata": "Accepted", "in_lavorazione": "In progress", "in_beta": "In testing", "fatta": "Fixed", "chiusa": "Closed", "rifiutata": "Closed"}, "kinds": {"bug": "Problem", "idea": "Idea"}, "inVer": "in version {v}"}, "fb": {"btn": "Feedback", "title": "Help us make NoonFrame better", "lead": "We read every message. We'll reply here, in your profile, and by email.", "kinds": {"bug": ["Something's wrong", "An error, a wrong clip, a button that doesn't respond"], "idea": ["Idea or change", "A feature you'd like, something to change or improve"]}, "ph": {"bug": "What happened? What were you doing and what did you expect?", "idea": "What would you like? The more detail, the sooner we build it"}, "shot": "Add a screenshot", "shotOk": "Screenshot attached", "shotRm": "Remove", "job": "Attach the job you have open", "send": "Send", "sending": "Sending…", "ok": "Got it, thanks!", "okD": "You'll find it in your profile, with its status and our replies.", "see": "See in profile", "again": "Send another", "short": "Write a few more words.", "login": "Sign in with Google to send feedback, so we can reply to you."}, "buy": {"btn": "Top up", "t": "NoonFrame credits", "lead": "One credit = one minute of video turned into clips. Choose how to get them.", "have": "You have {b}", "packs": "Top-up", "manage": "Manage subscription", "planNow": "{p} plan", "mine": "Your plan", "change": "Switch to this", "changed": "Plan changed: Stripe works out the difference, credits arrive in a few seconds.", "hasSub": "You already have a subscription: open its page to change or cancel it.", "billedYear": "{p} a year, billed once", "perMoN": "{n} credits a month", "once": "One-time payment", "never": "Credits never expire", "best": "Best value", "packsD": "Pay once, credits never expire.", "plans": "Subscription", "plansD": "Fresh credits every month, cancel anytime.", "month": "Monthly", "year": "Yearly", "save": "save {p}%", "perMonth": "/mo", "perYear": "/yr", "credits": "credits", "perMo": "credits per month", "go": "Buy", "sub": "Subscribe", "wait": "Opening checkout…", "ok": "Payment complete: your credits arrive in a few seconds.", "ko": "Payment cancelled: you haven't been charged.", "secure": "Secure payment with Stripe · card, Apple Pay, Google Pay · discount codes on the payment page", "close": "Close", "load": "Loading prices…", "loadErr": "Prices unavailable: try again shortly.", "minutes": "≈ {h} of video into clips", "popular": "Most popular"}, "costNote": "Paste the link, then pick captions and title. Cost: 1 credit per minute of video, you have {b} credits.", "expire": "Clips stay available for 7 days.", "net": "No connection: retrying…", "err": "Something went wrong: try again shortly.", "ed": {"edited": "Edited", "btn": "Edit", "t": "Edit clip", "lay": "Layout", "lays": {"auto": ["Automatic", "As the AI picked it"], "split": ["Webcam + game", "Webcam on top, game below"], "full": ["Full screen", "Person or game full screen"], "fit": ["Whole video", "Blurred background above and below"]}, "title": "Opening title", "noTitle": "No title", "subs": "Captions", "noSubs": "None", "keep": "As now", "trim": "Start and end", "start": "Start", "end": "End", "earlier": "earlier", "later": "later", "len": "Length: {d}", "free": "Free edits left for this clip: {n}", "paid": "This edit costs {c} credits", "save": "Remake clip", "cancel": "Cancel", "working": "Remaking the clip", "done": "Clip updated", "same": "You didn't change anything", "until": "You can edit clips until {d}"}, "setT": "How you want them", "stepsT": ["Video", "Style", "Clips"], "back": "Change video", "autoNote": "The AI picks the layout clip by clip: webcam on top and game below when you play, person full screen when you talk.", "kindT": "What kind of video?", "kindAuto": "Automatic", "kindAutoPod": "Looks like a podcast", "kindAutoGame": "Looks like gaming", "kindAutoNo": "The AI decides", "kinds": {"podcast": ["Podcast · interview", "Person full screen"], "gaming": ["Gaming with webcam", "Webcam on top, game below"], "fit": ["Whole video", "Blurred background above and below"]}, "subsT": "Captions", "subStyles": {"classico": "Classic", "verde": "Green", "riquadro": "Box", "pulito": "Clean", "impatto": "Impact"}, "posT": "Position", "pos": {"auto": "Automatic", "centro": "Middle", "basso": "Bottom"}, "wordsT": "Words at a time", "words": {"parola": "One", "poche": "A few", "frase": "Sentence"}, "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"}, "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT", "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime."};
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -567,38 +644,76 @@ function fileName(c, j) { return ('noonframe-clip-' + String(c.n).padStart(2, '0
 
 const EDIT_FROM = Date.parse('2026-10-09T18:10:00Z');   // i lavori fatti prima non hanno la copia sul server per le modifiche
 const canEdit = (j) => !!(j.editUntil && new Date(j.editUntil).getTime() > Date.now() && Date.parse(j.created_at || 0) > EDIT_FROM);
+const scoreColor = (v) => (v == null ? 'var(--fg-3)' : v >= 90 ? '#3DDC84' : v >= 75 ? '#A3E635' : v >= 60 ? '#FFD60A' : '#FF9F43');
+const mmss = (t) => { t = Math.max(0, Math.round(t || 0)); return String(Math.floor(t / 60)).padStart(2, '0') + ':' + String(t % 60).padStart(2, '0'); };
+const hms = (t) => { t = Math.max(0, Math.round(t || 0)); const hh = Math.floor(t / 3600); return (hh ? hh + ':' : '') + String(Math.floor(t / 60) % 60).padStart(hh ? 2 : 1, '0') + ':' + String(t % 60).padStart(2, '0'); };
+const PF_NAME = { tiktok: 'TikTok', reels: 'Reels', shorts: 'Shorts' };
+function bestPfKey(pf) {
+  if (!pf) return null;
+  const e = Object.entries(pf).filter(([k, v]) => PF_NAME[k] && v != null).sort((x, y) => y[1] - x[1]);
+  return e.length && e[0][1] - (e[1] ? e[1][1] : 0) >= 3 ? e[0][0] : null;   // quasi pari: nessuna piattaforma in evidenza (come nell'app)
+}
+const dlUrl = (c, j) => (c.video ? c.video + (c.video.includes('?') ? '&' : '?') + 'download=' + encodeURIComponent(fileName(c, j)) : '');
+const ICO = {
+  dl: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
+  cut: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg>',
+  ext: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>',
+  play: '<svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg>',
+  l: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>',
+  r: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>',
+  x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>' };
+function pfBoxHtml(c) {
+  if (!c.pf) return '';
+  const best = bestPfKey(c.pf), G = L.cg;
+  return '<div class="cg-pfbox"><div class="cg-pfh">' + esc(G.pfh) + '</div>'
+    + Object.keys(PF_NAME).map((k) => '<div class="cg-pfrow' + (best === k ? ' best' : '') + '"><span>' + PF_NAME[k] + '</span><div class="cg-pfbar"><div style="width:' + Math.max(0, Math.min(100, +c.pf[k] || 0)) + '%"></div></div><b>' + (c.pf[k] ?? '–') + '</b></div>').join('')
+    + (c.pfWhy ? '<p class="cg-pfwhy">' + esc(c.pfWhy) + '</p>' : '') + '<p class="cg-pfnote">' + esc(G.pfnote) + '</p></div>';
+}
 function renderDone(j) {
   const busy = (c) => !!(j.editing && j.editing.n === c.n);
+  const G = L.cg, edit = canEdit(j);
   $('run').classList.add('hide');
   const el = $('done');
   el.classList.remove('hide');
   const n = j.clips.length;
+  // ordinate per punteggio, come nella galleria dell'app
+  const list = j.clips.slice().sort((x, y) => (y.score ?? -1) - (x.score ?? -1) || x.a - y.a);
   el.innerHTML = '<div class="done-h"><div><h2><span>' + n + '</span> ' + esc(n === 1 ? L.readyOne : L.ready) + '</h2>'
     + '<p>' + esc((j.title ? L.from + ' ' + j.title + ' · ' : '') + L.expire) + '</p></div>'
     + '<button class="btn btn-ghost btn-sm" id="again" type="button">' + esc(L.again) + '</button></div>'
-    + '<div class="grid">' + j.clips.map((c) => {
-      const pf = bestPf(c.pf);
-      const dl = c.video ? c.video + (c.video.includes('?') ? '&' : '?') + 'download=' + encodeURIComponent(fileName(c, j)) : '';
-      return '<article class="clip"><div class="vid">' + (c.score != null ? '<span class="badge">' + Math.round(c.score) + '<small>/100</small></span>' : '')
-        + '<video playsinline preload="none"' + (c.poster ? ' poster="' + esc(c.poster) + '"' : '') + ' src="' + esc(c.video || '') + '"></video><button class="play" type="button" aria-label="Play"><span><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span></button>'
-        + (busy(c) ? '<div class="vbusy" role="status"><span class="spin"></span><b>' + esc(L.ed.working) + '</b><span>' + esc(j.editing.message || '') + ' · ' + Math.round((j.editing.progress || 0) * 100) + '%</span></div>' : '') + '</div>'
-        + '<div class="body"><h3>' + esc(c.name || ('Clip ' + c.n)) + '</h3>'
-        + (pf ? '<span class="pf">' + esc(L.best) + ' <b>' + pf + '</b></span>' : '')
-        + (c.why ? '<details><summary>' + esc(L.why) + '</summary><p>' + esc(c.why) + '</p></details>' : '')
-        + (j.editErr && j.editErr.n === c.n ? '<p class="cerr">' + esc(j.editErr.error) + '</p>' : '')
-        + '<div class="cacts">'
-        + (dl && !busy(c) ? '<a class="btn btn-primary" href="' + esc(dl) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>' + esc(L.download) + '</a>' : '')
-        + (canEdit(j) ? '<button class="btn btn-ghost btn-ed" type="button" data-ed="' + c.n + '"' + (j.editing ? ' disabled' : '') + '>' + esc(L.ed.btn) + '</button>' : '')
-        + '</div></div></article>';
+    + '<div class="cg-grid">' + list.map((c, i) => {
+      const pf = bestPfKey(c.pf), dl = dlUrl(c, j), b = busy(c);
+      return '<article class="cg-card" tabindex="0" data-i="' + i + '" aria-label="' + esc(G.open + ': ' + (c.name || ('Clip ' + c.n))) + '">'
+        + '<div class="cg-pv">' + (c.poster ? '<img src="' + esc(c.poster) + '" alt="" loading="lazy">' : '<span class="cg-nopv"></span>')
+        + '<span class="cg-playi" aria-hidden="true">' + ICO.play + '</span>'
+        + (c.v ? '<span class="cg-badge">' + esc(L.ed.edited || 'Modificata') + '</span>' : '')
+        + (pf ? '<span class="cg-pf">' + PF_NAME[pf] + '</span>' : '')
+        + '<span class="cg-time"><b>' + mmss(c.dur) + '</b><span>' + esc(G.since.replace('{t}', hms(c.a))) + '</span></span>'
+        + (b ? '<div class="vbusy" role="status"><span class="spin"></span><b>' + esc(L.ed.working) + '</b><span>' + esc(j.editing.message || '') + ' · ' + Math.round((j.editing.progress || 0) * 100) + '%</span></div>' : '') + '</div>'
+        + '<div class="cg-meta"><div class="cg-row"><b class="cg-score" style="color:' + scoreColor(c.score) + '">' + (c.score != null ? Math.round(c.score) : '–') + '</b><div class="cg-acts">'
+        + (dl && !b ? '<a class="cg-ib" href="' + esc(dl) + '" aria-label="' + esc(G.dl) + '" title="' + esc(G.dl) + '" data-stop>' + ICO.dl + '</a>' : '')
+        + (edit ? '<button class="cg-ib" type="button" data-ed="' + c.n + '" aria-label="' + esc(G.edit) + '" title="' + esc(G.edit) + '" data-stop' + (j.editing ? ' disabled' : '') + '>' + ICO.cut + '</button>' : '')
+        + '</div></div><h3 class="cg-name">' + esc(c.name || ('Clip ' + c.n)) + '</h3>'
+        + (c.why ? '<p class="cg-why">' + esc(c.why) + '</p>' : '')
+        + (j.editErr && j.editErr.n === c.n ? '<p class="cerr">' + esc(j.editErr.error) + '</p>' : '') + '</div></article>';
     }).join('') + '</div>'
     + '<aside class="edit"><div><h3>' + esc(L.editT) + '</h3><p>' + esc(L.editD) + '</p></div>'
     + (mobile ? '<button class="btn btn-white" id="sendpc" type="button">' + esc(L.editMob) + '</button>' : '<a class="btn btn-white" href="./#download">' + esc(L.editDesk) + '</a>')
     + '<p class="ok hide" id="sentok">' + esc(L.editSent) + '</p></aside>';
   $('again').onclick = () => { history.replaceState(null, '', location.pathname); showAsk(); $('url').value = ''; $('url').focus(); };
-  el.querySelectorAll('[data-ed]').forEach((b) => b.addEventListener('click', () => openEdit(j, j.clips.find((c) => c.n === Number(b.dataset.ed)))));
-  // una clip alla volta: quando ne parte una, le altre si fermano
-  el.querySelectorAll('video').forEach((v) => v.addEventListener('play', () => el.querySelectorAll('video').forEach((o) => { if (o !== v) o.pause(); })));
-  el.querySelectorAll('.play').forEach((b) => b.addEventListener('click', () => { const v = b.previousElementSibling; v.controls = true; b.remove(); v.play().catch(() => {}); }));
+  el.querySelectorAll('[data-stop]').forEach((x) => x.addEventListener('click', (e) => e.stopPropagation()));
+  el.querySelectorAll('[data-ed]').forEach((x) => x.addEventListener('click', () => openEdit(j, j.clips.find((c) => c.n === Number(x.dataset.ed)))));
+  el.querySelectorAll('.cg-card').forEach((card) => {
+    const c = list[+card.dataset.i];
+    card.addEventListener('click', () => openPlayer(j, list, +card.dataset.i));
+    card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); } });
+    // anteprima muta al passaggio del mouse (solo con il mouse, come nell'app)
+    if (!mobile && c.video && !busy(c)) {
+      const pv = card.querySelector('.cg-pv'); let v = null;
+      pv.addEventListener('pointerenter', (e) => { if (e.pointerType !== 'mouse') return; if (!v) { v = document.createElement('video'); v.className = 'cg-vid'; v.muted = true; v.loop = true; v.playsInline = true; v.preload = 'auto'; v.src = c.video; pv.append(v); } try { v.currentTime = 0; } catch (x) {} v.play().catch(() => {}); });
+      pv.addEventListener('pointerleave', () => { if (v) v.pause(); });
+    }
+  });
   const sp = $('sendpc');
   if (sp) sp.onclick = async () => {
     sp.disabled = true;
@@ -608,6 +723,50 @@ function renderDone(j) {
       $('sentok').classList.remove('hide'); sp.classList.add('hide');
     } catch (e) { sp.disabled = false; }
   };
+}
+
+// finestra della clip: guardarla con l'audio, punteggio, motivo e dove funziona meglio (identica all'app)
+function openPlayer(j, list, idx) {
+  if (document.querySelector('.cg-modal-bg')) return;
+  const G = L.cg;
+  const bg = document.createElement('div');
+  bg.className = 'cg-modal-bg';
+  const prev = document.activeElement;
+  const close = () => { const v = bg.querySelector('video'); if (v) v.pause(); bg.remove(); removeEventListener('keydown', key); document.documentElement.classList.remove('noscroll'); try { prev && prev.focus(); } catch (e) {} };
+  const key = (e) => { if (e.key === 'Escape') close(); else if (e.key === 'ArrowRight' && !/INPUT|TEXTAREA/.test((e.target || {}).tagName || '')) go(1); else if (e.key === 'ArrowLeft' && !/INPUT|TEXTAREA/.test((e.target || {}).tagName || '')) go(-1); };
+  const go = (d) => { if (list.length < 2) return; idx = (idx + d + list.length) % list.length; draw(); };
+  function draw() {
+    const x = list[idx], busy = !!(j.editing && j.editing.n === x.n), edit = canEdit(j) && !j.editing, dl = dlUrl(x, j);
+    bg.innerHTML = '<div class="cg-modal" role="dialog" aria-modal="true" aria-label="' + esc(x.name || ('Clip ' + x.n)) + '">'
+      + '<button class="cg-mx" type="button" data-x aria-label="' + esc(G.close) + '">' + ICO.x + '</button>'
+      + (list.length > 1 ? '<button class="cg-mnav l" type="button" data-go="-1" aria-label="' + esc(G.prev) + '">' + ICO.l + '</button>' : '')
+      + '<div class="cg-mstage">' + (x.video && !busy ? '<video class="cg-mvid" src="' + esc(x.video) + '"' + (x.poster ? ' poster="' + esc(x.poster) + '"' : '') + ' controls autoplay playsinline></video>'
+        : '<div class="cg-mnone">' + (x.poster ? '<img src="' + esc(x.poster) + '" alt="">' : '') + '<span>' + esc(busy ? L.ed.working : L.err) + '</span></div>') + '</div>'
+      + '<div class="cg-minfo">'
+      + '<div class="cg-mscore"><b style="color:' + scoreColor(x.score) + '">' + (x.score != null ? Math.round(x.score) : '–') + '</b><span>' + esc(G.viral) + '</span>' + (list.length > 1 ? '<em>' + (idx + 1) + ' / ' + list.length + '</em>' : '') + '</div>'
+      + '<h2>' + esc(x.name || ('Clip ' + x.n)) + '</h2>'
+      + (x.why ? '<p class="cg-mwhy">' + esc(x.why) + '</p>' : '')
+      + pfBoxHtml(x)
+      + '<dl class="cg-mfacts"><dt>' + esc(G.dur) + '</dt><dd>' + mmss(x.dur) + '</dd><dt>' + esc(G.inLive) + '</dt><dd>' + hms(x.a) + ' – ' + hms(x.b) + '</dd>'
+      + (x.hook ? '<dt>' + esc(G.hook) + '</dt><dd>' + esc(x.hook) + '</dd>' : '') + '</dl>'
+      + '<div class="cg-mbtns">'
+      + (edit ? '<button class="btn btn-primary" type="button" data-act="edit">' + ICO.cut + esc(G.edit) + '</button><button class="btn btn-ghost" type="button" data-act="ext" title="' + esc(G.extendTip) + '">' + ICO.ext + esc(G.extend) + '</button>' : '')
+      + (dl && !busy ? '<a class="btn ' + (edit ? 'btn-ghost' : 'btn-primary') + '" href="' + esc(dl) + '">' + ICO.dl + esc(G.dl) + '</a>' : '') + '</div>'
+      + (!canEdit(j) ? '<p class="cg-pfnote">' + esc(G.noEdit) + '</p>' : '')
+      + '</div>'
+      + (list.length > 1 ? '<button class="cg-mnav r" type="button" data-go="1" aria-label="' + esc(G.next) + '">' + ICO.r + '</button>' : '') + '</div>';
+    bg.querySelector('[data-x]').onclick = close;
+    bg.querySelectorAll('[data-go]').forEach((b) => b.onclick = () => go(+b.dataset.go));
+    const eb = bg.querySelector('[data-act=edit]'); if (eb) eb.onclick = () => { close(); openEdit(j, x); };
+    const xb = bg.querySelector('[data-act=ext]'); if (xb) xb.onclick = () => { close(); openEdit(j, x); setTimeout(() => { const t = document.querySelector('.edlg .trims'); if (t) { t.scrollIntoView({ block: 'center', behavior: 'smooth' }); const f = t.querySelector('button'); if (f) f.focus({ preventScroll: true }); } }, 80); };
+    // sul telefono si passa da una clip all'altra scorrendo di lato sul video
+    const st = bg.querySelector('.cg-mstage'); let sx = null;
+    st.addEventListener('touchstart', (e) => { sx = e.touches[0].clientX; }, { passive: true });
+    st.addEventListener('touchend', (e) => { if (sx == null) return; const dx = e.changedTouches[0].clientX - sx; sx = null; if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1); }, { passive: true });
+    const f = bg.querySelector('.cg-mx'); try { f.focus({ preventScroll: true }); } catch (e) {}
+  }
+  bg.addEventListener('pointerdown', (e) => { if (e.target === bg) close(); });
+  document.body.append(bg); document.documentElement.classList.add('noscroll'); addEventListener('keydown', key); draw();
 }
 
 function showAsk() { $('hero').classList.remove('hide', 'step2'); $('est').classList.add('hide'); $('run').classList.add('hide'); $('done').classList.add('hide'); setHint(costNote()); }
