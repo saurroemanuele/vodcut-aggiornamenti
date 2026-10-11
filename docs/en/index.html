@@ -421,6 +421,8 @@ footer nav a:hover { color: var(--fg); }
 </footer>
 
 <script>
+// la pagina non si apre dentro altri siti (niente click rubati)
+if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
 const L = {
   clipCta: 'Create clips on your phone', clipSub: 'Paste a YouTube video or stream link: AI finds the best moments. Your first video is free.', pcAlt: 'Prefer your computer? We\'ll email you the link', clipHdr: 'Create clips', getLink: 'Get the link', lang: 'en', dlMac: 'Download for Mac', dlWin: 'Download for Windows', otherWin: 'On Windows?', otherMac: 'On a Mac?',
   noteMac: 'macOS 13 or later · 358 MB · Sign in with Google', noteWin: 'Windows 10 and 11 · 155 MB · Sign in with Google',
