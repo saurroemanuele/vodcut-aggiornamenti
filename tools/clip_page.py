@@ -39,7 +39,7 @@ T = {
 # testi usati dal codice della pagina
 JS = {
     "it": {
-        "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video.", "hours": "h",
+        "login": "Accedi con Google", "logout": "Esci", "credits": "crediti", "badLink": "Questo link non va bene: usa un video di YouTube, twitch.tv/videos/… o kick.com/canale/videos/….", "twChan": "Questo è il link del canale: su Twitch apri la live finita (nella sezione Video) e copia il link della replica, tipo twitch.tv/videos/….", "twClip": "Questa è una clip di Twitch: serve il link della live intera, tipo twitch.tv/videos/….", "kickChan": "Questo è il link del canale: su Kick apri la live finita tra i video del canale e copia il suo link, tipo kick.com/canale/videos/….", "kickClip": "Questa è una clip di Kick: serve il link della live intera, tipo kick.com/canale/videos/….", "checking": "Leggo il video…", "estT": "Userà {c} crediti", "estHave": "Ne hai {b}", "estGo": "Crea le clip", "estChange": "Cambia link", "estShort": "Non hai abbastanza crediti per questo video.", "hours": "h",
         "loginFirst": "Accedi con Google per continuare: la tua live parte subito dopo.",
         "inApp": "Google non permette l'accesso dentro l'app che stai usando. Tocca ⋯ in alto e scegli \"Apri nel browser\" (Safari o Chrome). Il link è già copiato: puoi anche incollarlo nel browser.",
         "stages": {"queued": "In coda", "start": "Preparo il lavoro", "download": "Scarico il video", "prepare": "Analizzo il video", "clips": "Trascrivo e scelgo i momenti", "render": "Monto le clip", "upload": "Quasi pronto", "done": "Pronte"},
@@ -73,7 +73,7 @@ JS = {
         "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
     },
     "en": {
-        "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h",
+        "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "twChan": "This is the channel link: on Twitch open the finished stream (in the Videos section) and copy the replay link, like twitch.tv/videos/….", "twClip": "This is a Twitch clip: we need the link to the whole stream, like twitch.tv/videos/….", "kickChan": "This is the channel link: on Kick open the finished stream among the channel's videos and copy its link, like kick.com/channel/videos/….", "kickClip": "This is a Kick clip: we need the link to the whole stream, like kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h",
         "loginFirst": "Sign in with Google to continue: your stream starts right after.",
         "inApp": "Google doesn't allow sign-in inside the app you're using. Tap ⋯ at the top and choose \"Open in browser\" (Safari or Chrome). The link is already copied: you can also paste it in your browser.",
         "stages": {"queued": "Queued", "start": "Getting ready", "download": "Downloading the video", "prepare": "Analyzing the video", "clips": "Transcribing and picking moments", "render": "Editing the clips", "upload": "Almost done", "done": "Ready"},
@@ -701,6 +701,43 @@ const FN = SB + '/functions/v1/webclip';
 const DLFN = SB + '/functions/v1/download-link';
 const LINKS = [/^https:\/\/(www\.|m\.)?twitch\.tv\/videos\/\d{5,14}(\?\S*)?$/, /^https:\/\/(www\.)?kick\.com\/[A-Za-z0-9_\-]{2,30}\/videos\/[0-9a-fA-F\-]{8,40}(\?\S*)?$/,
   /^https:\/\/(www\.|m\.)?youtube\.com\/(watch\?v=|live\/)[\w\-]{11}([&?]\S*)?$/, /^https:\/\/youtu\.be\/[\w\-]{11}(\?\S*)?$/];
+// i link incollati come capita (senza https, con /video/ o /v/, dal player, con testo intorno) diventano quello giusto
+function normLink(raw) {
+  let s = String(raw || '').trim();
+  const inText = s.match(/https?:\/\/[^\s<>"']+/i); if (inText) s = inText[0];
+  if (!/^https?:\/\//i.test(s) && /^(www\.|m\.)?(twitch\.tv|player\.twitch\.tv|clips\.twitch\.tv|kick\.com|youtube\.com|youtu\.be)\//i.test(s)) s = 'https://' + s;
+  let u; try { u = new URL(s.replace(/^http:/i, 'https:')); } catch (e) { return { url: String(raw || '').trim() }; }
+  const h = u.hostname.toLowerCase().replace(/^(www|m|mobile)\./, ''), p = u.pathname.replace(/\/+$/, '');
+  if (h === 'twitch.tv' || h === 'player.twitch.tv') {
+    const id = (p.match(/^\/(?:\w{2,30}\/)?(?:videos?|v)\/(\d{5,14})$/) || [])[1] || (h === 'player.twitch.tv' && ((u.searchParams.get('video') || '').replace(/^v/, '').match(/^\d{5,14}$/) || [])[0]);
+    if (id) return { url: 'https://www.twitch.tv/videos/' + id };
+    if (/\/clip\//.test(p)) return { err: 'twClip' };
+    if (h === 'twitch.tv' && /^\/\w{2,30}(\/(videos|about|schedule))?$/.test(p)) return { err: 'twChan' };
+  }
+  if (h === 'clips.twitch.tv') return { err: 'twClip' };
+  if (h === 'kick.com') {
+    const m = p.match(/^\/([A-Za-z0-9_\-]{2,30})\/videos\/([0-9a-fA-F\-]{8,40})$/);
+    if (m) return { url: 'https://kick.com/' + m[1] + '/videos/' + m[2] };
+    if (/\/clips?\//.test(p) || u.searchParams.get('clip')) return { err: 'kickClip' };
+    if (/^\/[A-Za-z0-9_\-]{2,30}(\/videos)?$/.test(p)) return { err: 'kickChan' };
+  }
+  if (h === 'youtube.com' || h === 'music.youtube.com') {
+    const v = u.searchParams.get('v'), m = p.match(/^\/(?:live|shorts|embed)\/([\w\-]{11})$/);
+    const id = (v && /^[\w\-]{11}$/.test(v) ? v : null) || (m && m[1]);
+    if (id) return { url: 'https://www.youtube.com/watch?v=' + id };
+  }
+  if (h === 'youtu.be') { const m = p.match(/^\/([\w\-]{11})$/); if (m) return { url: 'https://www.youtube.com/watch?v=' + m[1] }; }
+  return { url: s };
+}
+// legge il campo e lo sistema: restituisce il link buono, oppure null (e mostra cosa non va)
+function readLink(show) {
+  const f = $('url'), n = normLink(f.value);
+  if (n.err) { if (show) setHint(L[n.err], true); return null; }
+  const ok = LINKS.some((rx) => rx.test(n.url));
+  if (ok && n.url !== f.value.trim()) f.value = n.url;
+  if (ok && $('hint').classList.contains('err')) setHint(costNote());   // il link ora va bene: via l'avviso di prima
+  return ok ? n.url : null;
+}
 const mobile = /Android|iPhone|iPad|Mobile/i.test(navigator.userAgent || '');
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -1613,17 +1650,18 @@ async function estimate(url) {
 
 $('ask').addEventListener('submit', async (ev) => {
   ev.preventDefault();
-  const url = $('url').value.trim();
-  if (!LINKS.some((rx) => rx.test(url))) { setHint(L.badLink, true); $('url').focus(); return; }
+  const url = readLink(true);
+  if (!url) { if (!normLink($('url').value).err) setHint(L.badLink, true); $('url').focus(); return; }
   if (!S) { peek(url); return; }
   estimate(url);
 });
 // incollando un link valido la stima parte da sola
-$('url').addEventListener('input', () => {
-  const url = $('url').value.trim();
-  if (!S) { if (url !== peekFor) { $('est').classList.add('hide'); if (LINKS.some((rx) => rx.test(url))) peek(url); } return; }
+$('url').addEventListener('input', (ev) => {
+  // mentre si scrive a mano non si mostrano errori: solo quando si incolla
+  const url = readLink(ev.inputType === 'insertFromPaste' || ev.inputType === 'insertReplacementText') || '';
+  if (!S) { if (url !== peekFor) { $('est').classList.add('hide'); if (url) peek(url); } return; }
   $('est').classList.add('hide');
-  if (url !== estFor && LINKS.some((rx) => rx.test(url))) { step('clip_paste'); estimate(url); }
+  if (url && url !== estFor) { step('clip_paste'); estimate(url); }
 });
 
 (async function boot() {
