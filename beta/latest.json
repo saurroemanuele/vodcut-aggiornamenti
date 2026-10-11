@@ -1,13 +1,25 @@
 {
- "version": "1.5.167",
+ "version": "1.5.168",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.167.zip",
- "size": 7840122,
- "sha256": "e09e0d1958b37ff9a7b3c89894ab7b48fe72075122e7b15a476e441ca6a40bb5",
- "sig": "KskujBN2Ps5/CXzw052Ksn9047RiCHzRachmwxFhCa2l/+zO8WQmtQiMY4SVRZKXGTr7GELKX9LL1FihTsnkAA==",
- "notes": "Correzione: Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano\nMiglioramento: Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
- "date": "2026-10-09",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.168.zip",
+ "size": 7842888,
+ "sha256": "f5a749a4fca32fe61bbe2715ff7ea497e5307272d27cfce820112907491d0502",
+ "sig": "Gio00UUN4ybgD/i9daAB9XuTsPAXuvwhTX7g2gNKZlC/VoPpZfXYNG1vpjnm+7+chYZCBBchsWDQn/p6cDFlDQ==",
+ "notes": "Miglioramento: Clip di podcast e interviste: l'inquadratura segue ogni stacco di camera e la persona che si vede; con due persone lontane o nessuno si vede il video intero",
+ "date": "2026-10-11",
  "history": [
+  {
+   "version": "1.5.168",
+   "date": "2026-10-11",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip di podcast e interviste: l'inquadratura segue ogni stacco di camera e la persona che si vede; con due persone lontane o nessuno si vede il video intero",
+     "en": "Podcast and interview clips: framing follows every camera cut and the person on screen; with two people far apart or nobody, the whole video is shown"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.167",
    "date": "2026-10-09",
@@ -369,17 +381,6 @@
      "type": "impr",
      "text": "Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
      "en": "Better viral clips and zooms: clips no longer inherit the live's automatic zooms, zooms only when your face is visible, the webcam fills the screen properly, a deep swoosh on zooms; AI editing replaces automatic zooms; subtitle language (detected better and switchable in one click, also for clip titles and captions); title styles you can brand; more natural clip copy."
-    }
-   ]
-  },
-  {
-   "version": "1.5.137",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
-     "en": "Reports sent from projects with long lives now arrive: before, they stayed stuck in the queue on your computer."
     }
    ]
   }
