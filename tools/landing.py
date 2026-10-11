@@ -238,7 +238,7 @@ S.update({
     "pl3_p": ("69,99 €", "€69.99"), "pl3_c": ("6.500 crediti al mese", "6,500 credits a month"), "pl3_t": ("Tutti i modelli video premium. Fino a 30 generazioni insieme.", "All premium video models. Up to 30 generations at once."),
     "pl3_y": ("Oppure 699,90 € all'anno: 2 mesi gratis.", "Or €699.90 a year: 2 months free."),
     "pl_top_k": ("Ricariche una tantum:", "One-time top-ups:"),
-    "pl_top": ("500 crediti a 5,99 €, 1.500 crediti a 14,99 €. Non scadono.", "500 credits for €5.99, 1,500 credits for €14.99. They don't expire."),
+    "pl_top": ("400 crediti a 5,99 €, 1.200 crediti a 14,99 €. Non scadono.", "400 credits for €5.99, 1,200 credits for €14.99. They don't expire."),
     "pl_note": ("Prezzi in euro, IVA inclusa. L'abbonamento si rinnova da solo e lo disdici quando vuoi, dall'app.",
                 "Prices in euros, VAT included. Your plan renews automatically and you can cancel anytime from the app."),
     "pl_terms": ("Pagamenti, disdetta e rimborsi", "Payments, cancellation and refunds"),
