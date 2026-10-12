@@ -1,13 +1,25 @@
 {
- "version": "1.5.170",
+ "version": "1.5.171",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.170.zip",
- "size": 7850404,
- "sha256": "8b132095ea1afcc871b4603ad73dd6470db03d39e670f917c5ef8b55a9b8cf76",
- "sig": "rziAssM0b0UlAZy5b9pp1WmVgNyKlZQzedWoLTfFabhNGOioxjYCpR7ozL5ouZLZNOsR2a9kiBP8clorUc8qDA==",
- "notes": "Miglioramento: Nuova sezione Clip veloci: incolli il link o scegli il video e arrivano direttamente le clip verticali, senza passare dal montaggio della live",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.171.zip",
+ "size": 7854472,
+ "sha256": "9a62b7a8ae027e8cd76ee920a16134199850b67893341a2ccf5763ade9ded142",
+ "sig": "2soOVB1CyVDhkcRz0fywqg6RXOMhTnwrsa9hwpaWUgq9YtOyePk0rp6SwkuvTg1FmLVl+0By7vQakuYEUC59AA==",
+ "notes": "Miglioramento: Clip delle live con più persone (chiamate, live a confronto, podcast): niente più impaginazione da gaming. La regia segue chi parla: stacco appena qualcuno inizia a parlare, due persone una sopra l'altra con il titolo in mezzo, chi parla a tutto schermo nei momenti giusti e avvicinamento quando alza la voce.",
  "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.171",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip delle live con più persone (chiamate, live a confronto, podcast): niente più impaginazione da gaming. La regia segue chi parla: stacco appena qualcuno inizia a parlare, due persone una sopra l'altra con il titolo in mezzo, chi parla a tutto schermo nei momenti giusti e avvicinamento quando alza la voce.",
+     "en": "Clips from lives with several people (calls, debates, podcasts): no more gaming layout. The edit follows whoever is talking: it cuts as soon as someone starts speaking, two people stacked with the title in the middle, the speaker full screen at the right moments and a punch-in when they raise their voice."
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.170",
    "date": "2026-10-12",
@@ -372,17 +384,6 @@
      "type": "impr",
      "text": "Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
      "en": "Subtitle language: the menu shows the language they're actually written in and, if it isn't the one you chose, there's a button to rewrite them right away (before, choosing «Italian» did nothing)."
-    }
-   ]
-  },
-  {
-   "version": "1.5.140",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
-     "en": "New «Start over» button (Project → Automatic edits): the same VOD goes back to how it was when imported, without redoing the transcript and webcam."
     }
    ]
   }
