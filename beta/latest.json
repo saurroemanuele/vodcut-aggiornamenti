@@ -1,13 +1,25 @@
 {
- "version": "1.5.171",
+ "version": "1.5.172",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.171.zip",
- "size": 7854472,
- "sha256": "9a62b7a8ae027e8cd76ee920a16134199850b67893341a2ccf5763ade9ded142",
- "sig": "2soOVB1CyVDhkcRz0fywqg6RXOMhTnwrsa9hwpaWUgq9YtOyePk0rp6SwkuvTg1FmLVl+0By7vQakuYEUC59AA==",
- "notes": "Miglioramento: Clip delle live con più persone (chiamate, live a confronto, podcast): niente più impaginazione da gaming. La regia segue chi parla: stacco appena qualcuno inizia a parlare, due persone una sopra l'altra con il titolo in mezzo, chi parla a tutto schermo nei momenti giusti e avvicinamento quando alza la voce.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.172.zip",
+ "size": 11659064,
+ "sha256": "686a87f3bea4448283aa493ee547e26e2b352ac388da727ab723d7ac65e75546",
+ "sig": "jEbi82mOdoSx80ZskoTACKBmZkBPZasXHpD9rCV+z04i/EBwD+kpUuvgRbBikzW7VpRZwX4842e10jOBdHYjBg==",
+ "notes": "Miglioramento: Clip delle live con più persone, rifatte: una rete neurale guarda la bocca e ascolta la voce insieme per capire chi parla davvero. Ognuno resta sempre nello stesso posto (chi è sopra resta sopra), stacco solo quando parla qualcuno che non si vede, full cam e avvicinamenti nei momenti giusti, meno cambi di camera. Sottotitoli più piccoli e mai sulle facce (in mezzo tra i due, o sotto il mento). Aprire una clip di una live lunga non prepara più l'anteprima di tutta la live: solo i pezzi della clip, in pochi secondi.",
  "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.172",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip delle live con più persone, rifatte: una rete neurale guarda la bocca e ascolta la voce insieme per capire chi parla davvero. Ognuno resta sempre nello stesso posto (chi è sopra resta sopra), stacco solo quando parla qualcuno che non si vede, full cam e avvicinamenti nei momenti giusti, meno cambi di camera. Sottotitoli più piccoli e mai sulle facce (in mezzo tra i due, o sotto il mento). Aprire una clip di una live lunga non prepara più l'anteprima di tutta la live: solo i pezzi della clip, in pochi secondi.",
+     "en": "Clips from streams with several people, redone: a neural network watches the mouth and listens to the voice together to tell who is really speaking. Everyone stays in the same place (whoever is on top stays on top), cuts only when someone who isn't visible starts talking, full-cam and punch-ins at the right moments, fewer camera changes. Smaller subtitles, never on faces (between the two, or under the chin). Opening a clip of a long stream no longer prepares a preview of the whole stream: only the clip's parts, in a few seconds."
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.171",
    "date": "2026-10-12",
@@ -373,17 +385,6 @@
      "type": "impr",
      "text": "Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
      "en": "Viral clips: new «Subtitles» button to choose in advance where they go (below the cam, in the middle, at the bottom), how many words at a time, font and colours; by default they pop in with a few words at a time. Also applies to clips already made."
-    }
-   ]
-  },
-  {
-   "version": "1.5.141",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
-     "en": "Subtitle language: the menu shows the language they're actually written in and, if it isn't the one you chose, there's a button to rewrite them right away (before, choosing «Italian» did nothing)."
     }
    ]
   }
