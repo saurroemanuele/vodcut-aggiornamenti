@@ -1,13 +1,25 @@
 {
- "version": "1.5.172",
+ "version": "1.5.173",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.172.zip",
- "size": 11659064,
- "sha256": "686a87f3bea4448283aa493ee547e26e2b352ac388da727ab723d7ac65e75546",
- "sig": "jEbi82mOdoSx80ZskoTACKBmZkBPZasXHpD9rCV+z04i/EBwD+kpUuvgRbBikzW7VpRZwX4842e10jOBdHYjBg==",
- "notes": "Miglioramento: Clip delle live con più persone, rifatte: una rete neurale guarda la bocca e ascolta la voce insieme per capire chi parla davvero. Ognuno resta sempre nello stesso posto (chi è sopra resta sopra), stacco solo quando parla qualcuno che non si vede, full cam e avvicinamenti nei momenti giusti, meno cambi di camera. Sottotitoli più piccoli e mai sulle facce (in mezzo tra i due, o sotto il mento). Aprire una clip di una live lunga non prepara più l'anteprima di tutta la live: solo i pezzi della clip, in pochi secondi.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.173.zip",
+ "size": 11659206,
+ "sha256": "f2ab3fba0689958d8cacdc4a4422317f798f813b08bf97ee18217740a468fef4",
+ "sig": "XDgu/O9eB5/9dvYwtlc+fVpeS2O+7XJMHsSYWvqiCXX3p5+PkriWsvrIiPguEKGcXzfpyY9AgkaAp9UcKOFCCw==",
+ "notes": "Miglioramento: Clip con più persone: gli avvicinamenti stringono davvero sul viso, e i sottotitoli quando la faccia riempie lo schermo vanno sopra la testa invece che sul mento.",
  "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.173",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip con più persone: gli avvicinamenti stringono davvero sul viso, e i sottotitoli quando la faccia riempie lo schermo vanno sopra la testa invece che sul mento.",
+     "en": "Clips with several people: punch-ins now really tighten on the face, and when the face fills the screen the subtitles go above the head instead of over the chin."
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.172",
    "date": "2026-10-12",
@@ -374,17 +386,6 @@
      "type": "impr",
      "text": "Clip: scritta d'apertura più pulita (niente alone, accenti non più tagliati), parola evidenziata gialla di base; quando si vede solo la webcam la scritta va in alto",
      "en": "Clips: cleaner opening title (no halo, accents no longer clipped), highlighted word yellow by default; when only the webcam is visible the title moves to the top"
-    }
-   ]
-  },
-  {
-   "version": "1.5.142",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
-     "en": "Viral clips: new «Subtitles» button to choose in advance where they go (below the cam, in the middle, at the bottom), how many words at a time, font and colours; by default they pop in with a few words at a time. Also applies to clips already made."
     }
    ]
   }
