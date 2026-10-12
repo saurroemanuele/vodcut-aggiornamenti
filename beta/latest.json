@@ -1,13 +1,25 @@
 {
- "version": "1.5.169",
+ "version": "1.5.170",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.169.zip",
- "size": 7844317,
- "sha256": "63b4a9c3168ab674b908574246da7194a0bce5cadbb633a2f6e2ac9032e8d246",
- "sig": "UkFs9hRw/k3TCS3mLPh9W+FyvdBS9Og5jTig4vUlk0Z8JCmVRwjyVIMZW1NvrzAkxvL56dCPabsyoj5UZCtABQ==",
- "notes": "Miglioramento: Clip di podcast, interviste e live con più persone (anche a griglia): l'inquadratura segue chi sta parlando e cambia solo quando parla un altro",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.170.zip",
+ "size": 7850404,
+ "sha256": "8b132095ea1afcc871b4603ad73dd6470db03d39e670f917c5ef8b55a9b8cf76",
+ "sig": "rziAssM0b0UlAZy5b9pp1WmVgNyKlZQzedWoLTfFabhNGOioxjYCpR7ozL5ouZLZNOsR2a9kiBP8clorUc8qDA==",
+ "notes": "Miglioramento: Nuova sezione Clip veloci: incolli il link o scegli il video e arrivano direttamente le clip verticali, senza passare dal montaggio della live",
  "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.170",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuova sezione Clip veloci: incolli il link o scegli il video e arrivano direttamente le clip verticali, senza passare dal montaggio della live",
+     "en": "New Quick clips section: paste a link or pick a video and get vertical clips straight away, without editing the whole stream"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.169",
    "date": "2026-10-12",
@@ -371,17 +383,6 @@
      "type": "impr",
      "text": "Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
      "en": "New «Start over» button (Project → Automatic edits): the same VOD goes back to how it was when imported, without redoing the transcript and webcam."
-    }
-   ]
-  },
-  {
-   "version": "1.5.139",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
-     "en": "Cleaner AI edit cuts: they never cut in the middle of a word (even with a prompt) and don't leave tiny pieces between cuts, so the video no longer jumps constantly."
     }
    ]
   }
