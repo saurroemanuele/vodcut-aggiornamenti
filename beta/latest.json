@@ -1,13 +1,25 @@
 {
- "version": "1.5.168",
+ "version": "1.5.169",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.168.zip",
- "size": 7842888,
- "sha256": "f5a749a4fca32fe61bbe2715ff7ea497e5307272d27cfce820112907491d0502",
- "sig": "Gio00UUN4ybgD/i9daAB9XuTsPAXuvwhTX7g2gNKZlC/VoPpZfXYNG1vpjnm+7+chYZCBBchsWDQn/p6cDFlDQ==",
- "notes": "Miglioramento: Clip di podcast e interviste: l'inquadratura segue ogni stacco di camera e la persona che si vede; con due persone lontane o nessuno si vede il video intero",
- "date": "2026-10-11",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.169.zip",
+ "size": 7844317,
+ "sha256": "63b4a9c3168ab674b908574246da7194a0bce5cadbb633a2f6e2ac9032e8d246",
+ "sig": "UkFs9hRw/k3TCS3mLPh9W+FyvdBS9Og5jTig4vUlk0Z8JCmVRwjyVIMZW1NvrzAkxvL56dCPabsyoj5UZCtABQ==",
+ "notes": "Miglioramento: Clip di podcast, interviste e live con più persone (anche a griglia): l'inquadratura segue chi sta parlando e cambia solo quando parla un altro",
+ "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.169",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip di podcast, interviste e live con più persone (anche a griglia): l'inquadratura segue chi sta parlando e cambia solo quando parla un altro",
+     "en": "Clips from podcasts, interviews and multi-person streams (grids too): framing follows whoever is speaking and only switches when someone else talks"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.168",
    "date": "2026-10-11",
@@ -370,17 +382,6 @@
      "type": "impr",
      "text": "Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
      "en": "Cleaner AI edit cuts: they never cut in the middle of a word (even with a prompt) and don't leave tiny pieces between cuts, so the video no longer jumps constantly."
-    }
-   ]
-  },
-  {
-   "version": "1.5.138",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
-     "en": "Better viral clips and zooms: clips no longer inherit the live's automatic zooms, zooms only when your face is visible, the webcam fills the screen properly, a deep swoosh on zooms; AI editing replaces automatic zooms; subtitle language (detected better and switchable in one click, also for clip titles and captions); title styles you can brand; more natural clip copy."
     }
    ]
   }

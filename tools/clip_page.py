@@ -1022,6 +1022,7 @@ function showAsk() { $('hero').classList.remove('hide', 'step2'); $('est').class
 let bal = null;
 function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{m}', String(Math.round(perHour / 6) / 10).replace('.', LANG === 'en' ? '.' : ',')).replace('{b}', bal == null ? '…' : bal) : '{note}'; }
 
+let editKey = null;   // modifica in corso gia' disegnata (lavoro:clip)
 async function poll(id, now) {
   clearTimeout(timer);
   try {
@@ -1033,8 +1034,12 @@ async function poll(id, now) {
       $('hero').classList.add('hide');
       step('clip_done', current.id);
       const was = editingN; editingN = current.editing ? current.editing.n : null;
-      if (!(document.querySelector('.edlg'))) renderDone(current);
+      // durante una modifica si aggiorna solo la barra della clip che si sta rifacendo: niente pagina ridisegnata ogni 4 secondi
+      const busyEl = current.editing && editKey === id + ':' + current.editing.n ? document.querySelector('.vbusy span:last-child') : null;
+      if (busyEl) busyEl.textContent = (current.editing.message || '') + ' · ' + Math.round((current.editing.progress || 0) * 100) + '%';
+      else if (!(document.querySelector('.edlg'))) { renderDone(current); editKey = current.editing ? id + ':' + current.editing.n : null; }
       if (current.editing) { timer = setTimeout(() => poll(id), 4000); return; }
+      editKey = null;
       if (was != null && !current.editErr) toast(L.ed.done);
       loadHist(); return;
     }

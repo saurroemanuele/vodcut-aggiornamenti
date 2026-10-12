@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-iSoPSOEP8tVpGevf61oohRjIKw617IcsfKOTOWx9Fgo='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-2HPlcRA8FwsUBdAopTnUx7KQZgnE+qXMze3gKX5crZ0='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -912,6 +912,7 @@ function showAsk() { $('hero').classList.remove('hide', 'step2'); $('est').class
 let bal = null;
 function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{m}', String(Math.round(perHour / 6) / 10).replace('.', LANG === 'en' ? '.' : ',')).replace('{b}', bal == null ? '…' : bal) : 'Your first video is free, up to 30 minutes · sign in with Google'; }
 
+let editKey = null;   // modifica in corso gia' disegnata (lavoro:clip)
 async function poll(id, now) {
   clearTimeout(timer);
   try {
@@ -923,8 +924,12 @@ async function poll(id, now) {
       $('hero').classList.add('hide');
       step('clip_done', current.id);
       const was = editingN; editingN = current.editing ? current.editing.n : null;
-      if (!(document.querySelector('.edlg'))) renderDone(current);
+      // durante una modifica si aggiorna solo la barra della clip che si sta rifacendo: niente pagina ridisegnata ogni 4 secondi
+      const busyEl = current.editing && editKey === id + ':' + current.editing.n ? document.querySelector('.vbusy span:last-child') : null;
+      if (busyEl) busyEl.textContent = (current.editing.message || '') + ' · ' + Math.round((current.editing.progress || 0) * 100) + '%';
+      else if (!(document.querySelector('.edlg'))) { renderDone(current); editKey = current.editing ? id + ':' + current.editing.n : null; }
       if (current.editing) { timer = setTimeout(() => poll(id), 4000); return; }
+      editKey = null;
       if (was != null && !current.editErr) toast(L.ed.done);
       loadHist(); return;
     }
