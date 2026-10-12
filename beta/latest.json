@@ -1,13 +1,30 @@
 {
- "version": "1.5.173",
+ "version": "1.5.174",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.173.zip",
- "size": 11659206,
- "sha256": "f2ab3fba0689958d8cacdc4a4422317f798f813b08bf97ee18217740a468fef4",
- "sig": "XDgu/O9eB5/9dvYwtlc+fVpeS2O+7XJMHsSYWvqiCXX3p5+PkriWsvrIiPguEKGcXzfpyY9AgkaAp9UcKOFCCw==",
- "notes": "Miglioramento: Clip con più persone: gli avvicinamenti stringono davvero sul viso, e i sottotitoli quando la faccia riempie lo schermo vanno sopra la testa invece che sul mento.",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.174.zip",
+ "size": 11667011,
+ "sha256": "adb15a65cab31417c398953d468dd61226a1fa10d833eb672d24bdab89d8d239",
+ "sig": "xL71RXUx8ENAs6mCojta1fYgeoxvtto3NfF1GEaFTF0hIo0VlLekPZ5mUaFV6HwmmFbBquS9czYo9p6IyYK8DA==",
+ "notes": "Correzione: I link incollati scritti male (con «\\» al posto di «/», senza https o con del testo intorno) ora si aprono lo stesso, nell'app e sul sito\nMiglioramento: Errori del download spiegati in modo chiaro (connessione, video privato, link del canale o di una playlist), e nel campo del link si può incollare anche il percorso di un video del computer",
  "date": "2026-10-12",
  "history": [
+  {
+   "version": "1.5.174",
+   "date": "2026-10-12",
+   "items": [
+    {
+     "type": "fix",
+     "text": "I link incollati scritti male (con «\\» al posto di «/», senza https o con del testo intorno) ora si aprono lo stesso, nell'app e sul sito",
+     "en": "Badly pasted links (with «\\» instead of «/», without https or with text around them) now open anyway, in the app and on the website"
+    },
+    {
+     "type": "impr",
+     "text": "Errori del download spiegati in modo chiaro (connessione, video privato, link del canale o di una playlist), e nel campo del link si può incollare anche il percorso di un video del computer",
+     "en": "Download errors explained clearly (connection, private video, channel or playlist link), and the link field also accepts the path of a video on your computer"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.173",
    "date": "2026-10-12",
@@ -375,17 +392,6 @@
      "type": "impr",
      "text": "Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
      "en": "Clips: clicking Find clips no longer makes the status bar jump between search and previews: first it searches, then it prepares previews"
-    }
-   ]
-  },
-  {
-   "version": "1.5.143",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: scritta d'apertura più pulita (niente alone, accenti non più tagliati), parola evidenziata gialla di base; quando si vede solo la webcam la scritta va in alto",
-     "en": "Clips: cleaner opening title (no halo, accents no longer clipped), highlighted word yellow by default; when only the webcam is visible the title moves to the top"
     }
    ]
   }

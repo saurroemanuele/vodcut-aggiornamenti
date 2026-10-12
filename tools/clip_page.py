@@ -714,8 +714,11 @@ const LINKS = [/^https:\/\/(www\.|m\.)?twitch\.tv\/videos\/\d{5,14}(\?\S*)?$/, /
   /^https:\/\/(www\.|m\.)?youtube\.com\/(watch\?v=|live\/)[\w\-]{11}([&?]\S*)?$/, /^https:\/\/youtu\.be\/[\w\-]{11}(\?\S*)?$/];
 // i link incollati come capita (senza https, con /video/ o /v/, dal player, con testo intorno) diventano quello giusto
 function normLink(raw) {
-  let s = String(raw || '').trim();
-  const inText = s.match(/https?:\/\/[^\s<>"']+/i); if (inText) s = inText[0];
+  // come lo sistemerebbe il browser: barra rovesciata al posto di "/", "https:/" o "ttps://", spazi invisibili
+  let s = String(raw || '').replace(/[​-‏⁠﻿]/g, '').trim().replace(/\\/g, '/');
+  const inText = s.match(/(?:^|[^A-Za-z])(h?t?tps?:?\/{1,3}[^\s<>"']+)/i); if (inText) s = inText[1];
+  const sch = s.match(/^([A-Za-z]{3,7})(:?\/*|:)/);
+  if (sch && sch[2] && /^(https?|htps?|ttps?|htttps?|hhttps?|httsp|htpps|httpss|hhtps)$/i.test(sch[1])) s = 'https://' + s.slice(sch[0].length).replace(/^\/+/, '');
   if (!/^https?:\/\//i.test(s) && /^(www\.|m\.)?(twitch\.tv|player\.twitch\.tv|clips\.twitch\.tv|kick\.com|youtube\.com|youtu\.be)\//i.test(s)) s = 'https://' + s;
   let u; try { u = new URL(s.replace(/^http:/i, 'https:')); } catch (e) { return { url: String(raw || '').trim() }; }
   const h = u.hostname.toLowerCase().replace(/^(www|m|mobile)\./, ''), p = u.pathname.replace(/\/+$/, '');
