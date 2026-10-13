@@ -1,13 +1,127 @@
 {
- "version": "1.5.167",
+ "version": "1.5.176",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.167.zip",
- "size": 7840122,
- "sha256": "e09e0d1958b37ff9a7b3c89894ab7b48fe72075122e7b15a476e441ca6a40bb5",
- "sig": "KskujBN2Ps5/CXzw052Ksn9047RiCHzRachmwxFhCa2l/+zO8WQmtQiMY4SVRZKXGTr7GELKX9LL1FihTsnkAA==",
- "notes": "Correzione: Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano\nMiglioramento: Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
- "date": "2026-10-09",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.176.zip",
+ "size": 11695122,
+ "sha256": "2ec97d4bfd43e96975a487d0c4dd3ffc44ae1338b553406ac9edaa3dcb0d7d08",
+ "sig": "ePHTIccvrRuXfb1PguuorhVH0FkhIXBRTrV2n4kE3F2F8v9releSVx/eoh2XYjj50Tp7oZUsf9JTKUWANSF8AQ==",
+ "notes": "Correzione: Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)\nMiglioramento: Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
+ "date": "2026-10-13",
  "history": [
+  {
+   "version": "1.5.176",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)",
+     "en": "Much faster clips on long streams with several people: each clip is analyzed from a light copy of its part of the stream instead of re-reading the whole stream dozens of times (on a 2.5-hour stream one clip could take 5–10 minutes and the bar looked stuck at 87%)"
+    },
+    {
+     "type": "impr",
+     "text": "Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
+     "en": "Clips show up in the gallery one at a time as soon as they're ready, with «Editing clip 3 of 12» and a moving bar; the AI reads several parts of the stream at once, so finding the moments is about 3 times faster"
+    }
+   ]
+  },
+  {
+   "version": "1.5.175",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Chiamate e live con più persone: ognuno resta nel suo riquadro anche quando la live cambia disposizione, niente chat al posto delle persone; le clip finiscono a fine frase; a tutto schermo i sottotitoli stanno sotto il mento, mai sopra la testa o sopra il badge",
+     "en": "Calls and streams with several people: everyone stays in their own frame even when the stream changes layout, no chat instead of people; clips end at the end of a sentence; in full screen the subtitles sit below the chin, never over the head or the badge"
+    },
+    {
+     "type": "impr",
+     "text": "Stile delle clip in 4 passaggi prima di crearle: titolo d'apertura, sottotitoli (font, grandezza, colori, sfondo, bordo, parole per volta, entrata) e badge social con il nome del tuo canale Twitch, Kick o YouTube, che entra con un'animazione e un woosh dove lo metti nell'anteprima 9:16. Gli stili si salvano con un nome",
+     "en": "Clip style in 4 steps before creating clips: opening title, subtitles (font, size, colors, background, outline, words at a time, entrance) and a social badge with your Twitch, Kick or YouTube channel name that comes in with an animation and a whoosh wherever you place it in the 9:16 preview. Styles can be saved with a name"
+    }
+   ]
+  },
+  {
+   "version": "1.5.174",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "fix",
+     "text": "I link incollati scritti male (con «\\» al posto di «/», senza https o con del testo intorno) ora si aprono lo stesso, nell'app e sul sito",
+     "en": "Badly pasted links (with «\\» instead of «/», without https or with text around them) now open anyway, in the app and on the website"
+    },
+    {
+     "type": "impr",
+     "text": "Errori del download spiegati in modo chiaro (connessione, video privato, link del canale o di una playlist), e nel campo del link si può incollare anche il percorso di un video del computer",
+     "en": "Download errors explained clearly (connection, private video, channel or playlist link), and the link field also accepts the path of a video on your computer"
+    }
+   ]
+  },
+  {
+   "version": "1.5.173",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip con più persone: gli avvicinamenti stringono davvero sul viso, e i sottotitoli quando la faccia riempie lo schermo vanno sopra la testa invece che sul mento.",
+     "en": "Clips with several people: punch-ins now really tighten on the face, and when the face fills the screen the subtitles go above the head instead of over the chin."
+    }
+   ]
+  },
+  {
+   "version": "1.5.172",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip delle live con più persone, rifatte: una rete neurale guarda la bocca e ascolta la voce insieme per capire chi parla davvero. Ognuno resta sempre nello stesso posto (chi è sopra resta sopra), stacco solo quando parla qualcuno che non si vede, full cam e avvicinamenti nei momenti giusti, meno cambi di camera. Sottotitoli più piccoli e mai sulle facce (in mezzo tra i due, o sotto il mento). Aprire una clip di una live lunga non prepara più l'anteprima di tutta la live: solo i pezzi della clip, in pochi secondi.",
+     "en": "Clips from streams with several people, redone: a neural network watches the mouth and listens to the voice together to tell who is really speaking. Everyone stays in the same place (whoever is on top stays on top), cuts only when someone who isn't visible starts talking, full-cam and punch-ins at the right moments, fewer camera changes. Smaller subtitles, never on faces (between the two, or under the chin). Opening a clip of a long stream no longer prepares a preview of the whole stream: only the clip's parts, in a few seconds."
+    }
+   ]
+  },
+  {
+   "version": "1.5.171",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip delle live con più persone (chiamate, live a confronto, podcast): niente più impaginazione da gaming. La regia segue chi parla: stacco appena qualcuno inizia a parlare, due persone una sopra l'altra con il titolo in mezzo, chi parla a tutto schermo nei momenti giusti e avvicinamento quando alza la voce.",
+     "en": "Clips from lives with several people (calls, debates, podcasts): no more gaming layout. The edit follows whoever is talking: it cuts as soon as someone starts speaking, two people stacked with the title in the middle, the speaker full screen at the right moments and a punch-in when they raise their voice."
+    }
+   ]
+  },
+  {
+   "version": "1.5.170",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nuova sezione Clip veloci: incolli il link o scegli il video e arrivano direttamente le clip verticali, senza passare dal montaggio della live",
+     "en": "New Quick clips section: paste a link or pick a video and get vertical clips straight away, without editing the whole stream"
+    }
+   ]
+  },
+  {
+   "version": "1.5.169",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip di podcast, interviste e live con più persone (anche a griglia): l'inquadratura segue chi sta parlando e cambia solo quando parla un altro",
+     "en": "Clips from podcasts, interviews and multi-person streams (grids too): framing follows whoever is speaking and only switches when someone else talks"
+    }
+   ]
+  },
+  {
+   "version": "1.5.168",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip di podcast e interviste: l'inquadratura segue ogni stacco di camera e la persona che si vede; con due persone lontane o nessuno si vede il video intero",
+     "en": "Podcast and interview clips: framing follows every camera cut and the person on screen; with two people far apart or nobody, the whole video is shown"
+    }
+   ]
+  },
   {
    "version": "1.5.167",
    "date": "2026-10-09",
@@ -281,105 +395,6 @@
      "type": "impr",
      "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
      "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
-    }
-   ]
-  },
-  {
-   "version": "1.5.145",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: sottotitoli attaccati sotto la webcam, sotto il titolo finché c'è e in basso durante gli zoom sulla faccia; riconosce le scene solo cam (niente zoom nel vuoto, persona a tutto schermo); niente zoom che parte a metà titolo; le clip nuove escono nella lingua scelta e il menu mostra la lingua vera",
-     "en": "Clips: subtitles hug the webcam, sit under the title while it shows and move down during face zooms; full-cam scenes are detected (no zooms into empty space, person full screen); no zoom starting mid-title; new clips use the chosen language and the menu shows the real one"
-    }
-   ]
-  },
-  {
-   "version": "1.5.144",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
-     "en": "Clips: clicking Find clips no longer makes the status bar jump between search and previews: first it searches, then it prepares previews"
-    }
-   ]
-  },
-  {
-   "version": "1.5.143",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: scritta d'apertura più pulita (niente alone, accenti non più tagliati), parola evidenziata gialla di base; quando si vede solo la webcam la scritta va in alto",
-     "en": "Clips: cleaner opening title (no halo, accents no longer clipped), highlighted word yellow by default; when only the webcam is visible the title moves to the top"
-    }
-   ]
-  },
-  {
-   "version": "1.5.142",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali: nuovo pulsante «Sottotitoli» per scegliere prima dove metterli (sotto la cam, al centro, in basso), quante parole per volta, font e colori; di base escono a pop con poche parole per volta. Vale anche per le clip già fatte.",
-     "en": "Viral clips: new «Subtitles» button to choose in advance where they go (below the cam, in the middle, at the bottom), how many words at a time, font and colours; by default they pop in with a few words at a time. Also applies to clips already made."
-    }
-   ]
-  },
-  {
-   "version": "1.5.141",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Lingua dei sottotitoli: il menu mostra la lingua in cui sono scritti davvero e, se non è quella scelta, c'è il pulsante per riscriverli subito (prima scegliendo «Italiano» non succedeva niente).",
-     "en": "Subtitle language: the menu shows the language they're actually written in and, if it isn't the one you chose, there's a button to rewrite them right away (before, choosing «Italian» did nothing)."
-    }
-   ]
-  },
-  {
-   "version": "1.5.140",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Nuovo pulsante «Ricomincia da zero» (Progetto → Modifiche automatiche): lo stesso VOD torna come appena importato, senza rifare trascrizione e webcam.",
-     "en": "New «Start over» button (Project → Automatic edits): the same VOD goes back to how it was when imported, without redoing the transcript and webcam."
-    }
-   ]
-  },
-  {
-   "version": "1.5.139",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Tagli del montaggio AI più puliti: non tagliano mai più a metà parola (anche con un prompt) e non lasciano pezzi cortissimi tra un taglio e l'altro, così il video non salta di continuo.",
-     "en": "Cleaner AI edit cuts: they never cut in the middle of a word (even with a prompt) and don't leave tiny pieces between cuts, so the video no longer jumps constantly."
-    }
-   ]
-  },
-  {
-   "version": "1.5.138",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali e zoom migliori: le clip non ereditano più gli zoom automatici della live, zoom solo quando si vede la faccia, la webcam riempie bene lo schermo, swoosh profondo sugli zoom; il montaggio AI sostituisce gli zoom automatici; lingua dei sottotitoli (riconosciuta meglio e cambiabile con un clic, anche per titoli e scritte delle clip); stili dei titoli personalizzabili con il tuo brand; copy delle clip più naturali.",
-     "en": "Better viral clips and zooms: clips no longer inherit the live's automatic zooms, zooms only when your face is visible, the webcam fills the screen properly, a deep swoosh on zooms; AI editing replaces automatic zooms; subtitle language (detected better and switchable in one click, also for clip titles and captions); title styles you can brand; more natural clip copy."
-    }
-   ]
-  },
-  {
-   "version": "1.5.137",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Le segnalazioni mandate da progetti con live lunghe ora arrivano: prima restavano bloccate in coda sul computer.",
-     "en": "Reports sent from projects with long lives now arrive: before, they stayed stuck in the queue on your computer."
     }
    ]
   }
