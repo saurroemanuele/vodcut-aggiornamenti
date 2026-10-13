@@ -1,13 +1,30 @@
 {
- "version": "1.5.174",
+ "version": "1.5.175",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.174.zip",
- "size": 11667011,
- "sha256": "adb15a65cab31417c398953d468dd61226a1fa10d833eb672d24bdab89d8d239",
- "sig": "xL71RXUx8ENAs6mCojta1fYgeoxvtto3NfF1GEaFTF0hIo0VlLekPZ5mUaFV6HwmmFbBquS9czYo9p6IyYK8DA==",
- "notes": "Correzione: I link incollati scritti male (con «\\» al posto di «/», senza https o con del testo intorno) ora si aprono lo stesso, nell'app e sul sito\nMiglioramento: Errori del download spiegati in modo chiaro (connessione, video privato, link del canale o di una playlist), e nel campo del link si può incollare anche il percorso di un video del computer",
- "date": "2026-10-12",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.175.zip",
+ "size": 11692226,
+ "sha256": "f39a506b648ec15ab8bb1563a174c8e5fc16dd4dc709833feb6a2e34a969529d",
+ "sig": "Lnh6pPlRBo3SI7Zq63aL9uvmIvGlD97LCn6C7oDOAWOdjbOrz8PE1GBeRRvWBMNJWZjcKQ7Nzdm66Q7CxMqsCQ==",
+ "notes": "Correzione: Chiamate e live con più persone: ognuno resta nel suo riquadro anche quando la live cambia disposizione, niente chat al posto delle persone; le clip finiscono a fine frase; a tutto schermo i sottotitoli stanno sotto il mento, mai sopra la testa o sopra il badge\nMiglioramento: Stile delle clip in 4 passaggi prima di crearle: titolo d'apertura, sottotitoli (font, grandezza, colori, sfondo, bordo, parole per volta, entrata) e badge social con il nome del tuo canale Twitch, Kick o YouTube, che entra con un'animazione e un woosh dove lo metti nell'anteprima 9:16. Gli stili si salvano con un nome",
+ "date": "2026-10-13",
  "history": [
+  {
+   "version": "1.5.175",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Chiamate e live con più persone: ognuno resta nel suo riquadro anche quando la live cambia disposizione, niente chat al posto delle persone; le clip finiscono a fine frase; a tutto schermo i sottotitoli stanno sotto il mento, mai sopra la testa o sopra il badge",
+     "en": "Calls and streams with several people: everyone stays in their own frame even when the stream changes layout, no chat instead of people; clips end at the end of a sentence; in full screen the subtitles sit below the chin, never over the head or the badge"
+    },
+    {
+     "type": "impr",
+     "text": "Stile delle clip in 4 passaggi prima di crearle: titolo d'apertura, sottotitoli (font, grandezza, colori, sfondo, bordo, parole per volta, entrata) e badge social con il nome del tuo canale Twitch, Kick o YouTube, che entra con un'animazione e un woosh dove lo metti nell'anteprima 9:16. Gli stili si salvano con un nome",
+     "en": "Clip style in 4 steps before creating clips: opening title, subtitles (font, size, colors, background, outline, words at a time, entrance) and a social badge with your Twitch, Kick or YouTube channel name that comes in with an animation and a whoosh wherever you place it in the 9:16 preview. Styles can be saved with a name"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.174",
    "date": "2026-10-12",
@@ -381,17 +398,6 @@
      "type": "impr",
      "text": "Clip: sottotitoli attaccati sotto la webcam, sotto il titolo finché c'è e in basso durante gli zoom sulla faccia; riconosce le scene solo cam (niente zoom nel vuoto, persona a tutto schermo); niente zoom che parte a metà titolo; le clip nuove escono nella lingua scelta e il menu mostra la lingua vera",
      "en": "Clips: subtitles hug the webcam, sit under the title while it shows and move down during face zooms; full-cam scenes are detected (no zooms into empty space, person full screen); no zoom starting mid-title; new clips use the chosen language and the menu shows the real one"
-    }
-   ]
-  },
-  {
-   "version": "1.5.144",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: cliccando Trova le clip la barra non salta più tra ricerca e anteprime: prima cerca, poi prepara le anteprime",
-     "en": "Clips: clicking Find clips no longer makes the status bar jump between search and previews: first it searches, then it prepares previews"
     }
    ]
   }
