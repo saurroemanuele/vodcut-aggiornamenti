@@ -1,13 +1,30 @@
 {
- "version": "1.5.175",
+ "version": "1.5.176",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.175.zip",
- "size": 11692226,
- "sha256": "f39a506b648ec15ab8bb1563a174c8e5fc16dd4dc709833feb6a2e34a969529d",
- "sig": "Lnh6pPlRBo3SI7Zq63aL9uvmIvGlD97LCn6C7oDOAWOdjbOrz8PE1GBeRRvWBMNJWZjcKQ7Nzdm66Q7CxMqsCQ==",
- "notes": "Correzione: Chiamate e live con più persone: ognuno resta nel suo riquadro anche quando la live cambia disposizione, niente chat al posto delle persone; le clip finiscono a fine frase; a tutto schermo i sottotitoli stanno sotto il mento, mai sopra la testa o sopra il badge\nMiglioramento: Stile delle clip in 4 passaggi prima di crearle: titolo d'apertura, sottotitoli (font, grandezza, colori, sfondo, bordo, parole per volta, entrata) e badge social con il nome del tuo canale Twitch, Kick o YouTube, che entra con un'animazione e un woosh dove lo metti nell'anteprima 9:16. Gli stili si salvano con un nome",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.176.zip",
+ "size": 11695122,
+ "sha256": "2ec97d4bfd43e96975a487d0c4dd3ffc44ae1338b553406ac9edaa3dcb0d7d08",
+ "sig": "ePHTIccvrRuXfb1PguuorhVH0FkhIXBRTrV2n4kE3F2F8v9releSVx/eoh2XYjj50Tp7oZUsf9JTKUWANSF8AQ==",
+ "notes": "Correzione: Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)\nMiglioramento: Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
  "date": "2026-10-13",
  "history": [
+  {
+   "version": "1.5.176",
+   "date": "2026-10-13",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)",
+     "en": "Much faster clips on long streams with several people: each clip is analyzed from a light copy of its part of the stream instead of re-reading the whole stream dozens of times (on a 2.5-hour stream one clip could take 5–10 minutes and the bar looked stuck at 87%)"
+    },
+    {
+     "type": "impr",
+     "text": "Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
+     "en": "Clips show up in the gallery one at a time as soon as they're ready, with «Editing clip 3 of 12» and a moving bar; the AI reads several parts of the stream at once, so finding the moments is about 3 times faster"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.175",
    "date": "2026-10-13",
@@ -387,17 +404,6 @@
      "type": "impr",
      "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
      "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
-    }
-   ]
-  },
-  {
-   "version": "1.5.145",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: sottotitoli attaccati sotto la webcam, sotto il titolo finché c'è e in basso durante gli zoom sulla faccia; riconosce le scene solo cam (niente zoom nel vuoto, persona a tutto schermo); niente zoom che parte a metà titolo; le clip nuove escono nella lingua scelta e il menu mostra la lingua vera",
-     "en": "Clips: subtitles hug the webcam, sit under the title while it shows and move down during face zooms; full-cam scenes are detected (no zooms into empty space, person full screen); no zoom starting mid-title; new clips use the chosen language and the menu shows the real one"
     }
    ]
   }
