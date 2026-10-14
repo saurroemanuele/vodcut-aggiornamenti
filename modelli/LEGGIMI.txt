@@ -7,3 +7,5 @@ mano_punti.onnx        MediaPipe Hands hand landmark (Google LLC), ONNX di PINTO
                        https://github.com/google-ai-edge/mediapipe
                        https://github.com/PINTO0309/hand-gesture-recognition-using-onnx
 Testo completo della licenza: https://www.apache.org/licenses/LICENSE-2.0
+voce_wespeaker_resnet34.onnx  WeSpeaker ResNet34-LM (VoxCeleb), impronta della voce per capire chi parla - CC BY 4.0
+                       https://github.com/wenet-e2e/wespeaker (licenza: https://creativecommons.org/licenses/by/4.0/)
