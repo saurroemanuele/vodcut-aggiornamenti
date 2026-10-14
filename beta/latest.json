@@ -1,13 +1,30 @@
 {
- "version": "1.5.177",
+ "version": "1.5.178",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.177.zip",
- "size": 11698809,
- "sha256": "86864a9a1b331c932f2fa83717d11ca958a381111b16c469e84f79cdd5f49a41",
- "sig": "wb46scIX0LiQP1OoviPQcqrgbTF2Q2AQo3g9EZbeSkAEJp2MelvVotM428cuwttcoDi0w6xR2Iwn+rBCatqvDg==",
- "notes": "Miglioramento: Badge delle clip: puoi mettere la tua immagine (anche solo il logo), scegliere la trasparenza e quando entra (inizio, metà, fine o al secondo che vuoi) e per quanti secondi resta. Nuovo stile Intervista per sottotitoli e titolo. I sottotitoli si spostano subito sotto quando compare un'immagine o un video sopra la clip",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.178.zip",
+ "size": 11700009,
+ "sha256": "82fdf34833fcfb80c213c3b136f65b3c3ed8b925818ec68f5677685140c28aab",
+ "sig": "BHrh21z0Y7k85GTo+xV+SHAOGgetKZ6xlLenlt8zsZ2O9RotaqI7Y7H6nBLWaeNFdXGoMrO1aqJElFe6iWn8Bw==",
+ "notes": "Correzione: L'immagine scelta per il badge non compariva: restava il logo di Kick\nMiglioramento: Badge delle clip: la tua immagine si vede subito nell'anteprima e nei badge (NoonFrame ne tiene una copia, quindi resta anche se sposti il file); con «Solo logo» e la tua immagine sparisce la scelta della piattaforma",
  "date": "2026-10-14",
  "history": [
+  {
+   "version": "1.5.178",
+   "date": "2026-10-14",
+   "items": [
+    {
+     "type": "fix",
+     "text": "L'immagine scelta per il badge non compariva: restava il logo di Kick",
+     "en": "The image chosen for the badge didn't show up: the Kick logo stayed"
+    },
+    {
+     "type": "impr",
+     "text": "Badge delle clip: la tua immagine si vede subito nell'anteprima e nei badge (NoonFrame ne tiene una copia, quindi resta anche se sposti il file); con «Solo logo» e la tua immagine sparisce la scelta della piattaforma",
+     "en": "Clip badge: your image shows right away in the preview and in the badges (NoonFrame keeps a copy, so it stays even if you move the file); with «Logo only» and your image the platform choice is hidden"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.177",
    "date": "2026-10-14",
@@ -385,17 +402,6 @@
      "type": "impr",
      "text": "Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
      "en": "Fixed the Mac crash when opening the live clips: face detection was used by two jobs at once and closed the app"
-    }
-   ]
-  },
-  {
-   "version": "1.5.147",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
-     "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
     }
    ]
   }
