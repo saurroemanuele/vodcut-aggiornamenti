@@ -706,6 +706,16 @@ footer a { color: var(--fg-3); }
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
 if (window.top !== window.self) { document.documentElement.style.display = 'none'; try { window.top.location = window.location.href; } catch (e) {} }
 const L = {js};
+// messaggi del server (in italiano): sulla pagina inglese diventano inglesi; un errore italiano sconosciuto diventa quello generico
+function tx(s, fb) {
+  if (!s || !L.srv || !Object.keys(L.srv).length) return s;
+  const k = String(s).trim().replace(/[.\s]+$/, '').replace(/\u2019/g, "'");
+  if (L.srv[k]) return L.srv[k];
+  let m = k.match(/^Preparo le clip \((\d+)\/(\d+)\)$/); if (m) return 'Preparing the clips (' + m[1] + '/' + m[2] + ')';
+  m = k.match(/^Le clip si possono cambiare per (\d+) giorni/); if (m) return 'Clips can be changed for ' + m[1] + ' days: make the clips again, or use the NoonFrame desktop app';
+  if (/^Pagamento non avviato/.test(k)) return L.srv['Pagamento non avviato: riprova'];
+  return /\b(non|riprova|sono|della|delle|questo|questa|ancora|ricarica|crediti|di|da|del|gli|una|uno|clip non)\b|[\u00e0\u00e8\u00e9\u00ec\u00f2\u00f9]|[a-z]' /i.test(k) ? (fb == null ? L.err : fb) : s;
+}
 const SB = 'https://jhoidpugjjvvkjccyrxg.supabase.co';
 const KEY = 'sb_publishable_vam6nGEE5qCrRCXknhoWqQ_GvrpnvzR';
 const FN = SB + '/functions/v1/webclip';
@@ -815,7 +825,7 @@ async function call(op, body) {
   catch (e) { const x = new Error(L.net); x.net = true; throw x; }
   const j = await r.json().catch(() => ({}));
   if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); throw new Error('auth'); }
-  if (!r.ok) { const x = new Error(j.error || L.err); x.code = j.code; throw x; }
+  if (!r.ok) { const x = new Error(tx(j.error) || L.err); x.code = j.code; throw x; }
   return j;
 }
 
@@ -844,7 +854,7 @@ function renderRun(j) {
   $('done').classList.add('hide');
   if (j.status === 'failed' || j.status === 'cancelled') {
     el.innerHTML = '<h2>' + esc(j.status === 'cancelled' ? L.cancel : L.failed) + '</h2><p class="src">' + esc(j.title || j.url) + '</p>'
-      + '<p class="msg-err">' + esc(j.status === 'cancelled' ? L.cancelled : j.error || L.err) + '</p>'
+      + '<p class="msg-err">' + esc(j.status === 'cancelled' ? L.cancelled : tx(j.error) || L.err) + '</p>'
       + '<div class="row"><button class="btn btn-primary" id="retry" type="button">' + esc(L.retry) + '</button></div>';
     $('retry').onclick = () => { $('url').value = j.url; showAsk(); $('url').focus(); };
     return;
@@ -852,7 +862,7 @@ function renderRun(j) {
   const p = Math.round((j.progress || 0) * 100), si = stageIdx[j.stage] ?? 0;
   el.innerHTML = '<h2>' + esc(L.working) + '</h2><p class="src">' + esc(j.title || j.url) + '</p>'
     + '<div class="bar"><i style="width:' + Math.max(3, p) + '%"></i></div>'
-    + '<div class="stage"><span>' + esc(L.stages[j.stage] || j.message || L.stages.queued) + '</span><span>' + p + '%</span></div>'
+    + '<div class="stage"><span>' + esc(L.stages[j.stage] || tx(j.message, '') || L.stages.queued) + '</span><span>' + p + '%</span></div>'
     + '<div class="steps">' + L.steps.map((s, i) => '<span class="' + (i < si ? 'ok' : i === si ? 'on' : '') + '">' + esc(s) + '</span>').join('') + '</div>'
     + (me().email ? '<p class="mailn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>' + esc(L.cv.mail).replace('{e}', '<b>' + esc(me().email) + '</b>') + '</span></p>' : '<p class="leave">' + esc(L.leave) + '</p>')
     + '<div class="row"><button class="link" id="cancel" type="button">' + esc(L.cancel) + '</button>'
@@ -933,13 +943,13 @@ function renderDone(j) {
         + (c.v ? '<span class="cg-badge">' + esc(L.ed.edited || 'Modificata') + '</span>' : '')
         + (pf ? '<span class="cg-pf">' + PF_NAME[pf] + '</span>' : '')
         + '<span class="cg-time"><b>' + mmss(c.dur) + '</b><span>' + esc(G.since.replace('{t}', hms(c.a))) + '</span></span>'
-        + (b ? '<div class="vbusy" role="status"><span class="spin"></span><b>' + esc(L.ed.working) + '</b><span>' + esc(j.editing.message || '') + ' · ' + Math.round((j.editing.progress || 0) * 100) + '%</span></div>' : '') + '</div>'
+        + (b ? '<div class="vbusy" role="status"><span class="spin"></span><b>' + esc(L.ed.working) + '</b><span>' + esc(tx(j.editing.message, '') || '') + ' · ' + Math.round((j.editing.progress || 0) * 100) + '%</span></div>' : '') + '</div>'
         + '<div class="cg-meta"><div class="cg-row"><b class="cg-score" style="color:' + scoreColor(c.score) + '">' + (c.score != null ? Math.round(c.score) : '–') + '</b><div class="cg-acts">'
         + (dl && !b ? '<a class="cg-ib" href="' + esc(dl) + '" aria-label="' + esc(G.dl) + '" title="' + esc(G.dl) + '" data-stop>' + ICO.dl + '</a>' : '')
         + (edit && !c.locked ? '<button class="cg-ib" type="button" data-ed="' + c.n + '" aria-label="' + esc(G.edit) + '" title="' + esc(G.edit) + '" data-stop' + (j.editing ? ' disabled' : '') + '>' + ICO.cut + '</button>' : '')
         + '</div></div><h3 class="cg-name">' + esc(c.name || ('Clip ' + c.n)) + '</h3>'
         + (c.why ? '<p class="cg-why">' + esc(c.why) + '</p>' : '')
-        + (j.editErr && j.editErr.n === c.n ? '<p class="cerr">' + esc(j.editErr.error) + '</p>' : '') + '</div></article>';
+        + (j.editErr && j.editErr.n === c.n ? '<p class="cerr">' + esc(tx(j.editErr.error)) + '</p>' : '') + '</div></article>';
     }).join('') + '</div>'
     + '<aside class="edit"><div><h3>' + esc(L.editT) + '</h3><p>' + esc(L.editD) + '</p></div>'
     + (mobile ? '<button class="btn btn-white" id="sendpc" type="button">' + esc(L.editMob) + '</button>' : '<a class="btn btn-white" href="{dl}">' + esc(L.editDesk) + '</a>')
@@ -1039,7 +1049,7 @@ async function poll(id, now) {
       const was = editingN; editingN = current.editing ? current.editing.n : null;
       // durante una modifica si aggiorna solo la barra della clip che si sta rifacendo: niente pagina ridisegnata ogni 4 secondi
       const busyEl = current.editing && editKey === id + ':' + current.editing.n ? document.querySelector('.vbusy span:last-child') : null;
-      if (busyEl) busyEl.textContent = (current.editing.message || '') + ' · ' + Math.round((current.editing.progress || 0) * 100) + '%';
+      if (busyEl) busyEl.textContent = (tx(current.editing.message, '') || '') + ' · ' + Math.round((current.editing.progress || 0) * 100) + '%';
       else if (!(document.querySelector('.edlg'))) { renderDone(current); editKey = current.editing ? id + ':' + current.editing.n : null; }
       if (current.editing) { timer = setTimeout(() => poll(id), 4000); return; }
       editKey = null;
@@ -1071,7 +1081,7 @@ async function payCall(body) {
   catch (e) { throw new Error(L.net); }
   const j = await r.json().catch(() => ({}));
   if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); login(); throw new Error('auth'); }
-  if (!r.ok) { const x = new Error((j.error && j.error.message) || L.err); x.code = j.code || (j.error && j.error.code); throw x; }
+  if (!r.ok) { const x = new Error(tx(j.error && j.error.message) || L.err); x.code = j.code || (j.error && j.error.code); throw x; }
   return j;
 }
 async function catalog() {
@@ -1104,7 +1114,7 @@ async function pub(op, body, auth) {
   try { r = await fetch(PUBFN, { method: 'POST', headers: h, body: JSON.stringify(Object.assign({ op }, body || {})) }); }
   catch (e) { throw new Error(L.net); }
   const j = await r.json().catch(() => ({}));
-  if (!r.ok) { const x = new Error(j.error || L.err); x.code = j.code; throw x; }
+  if (!r.ok) { const x = new Error(tx(j.error) || L.err); x.code = j.code; throw x; }
   return j;
 }
 const fmtH = (min) => { min = Math.max(1, Math.round(min)); return min >= 60 ? (Math.round(min / 6) / 10).toString().replace('.', LANG === 'en' ? '.' : ',') + ' h' : min + ' min'; };
@@ -1269,7 +1279,7 @@ async function rpc(fn, body) {
   catch (e) { throw new Error(L.net); }
   const j = await r.json().catch(() => ({}));
   if (r.status === 401) { S = null; store.set('nf.sess', null); showSignedOut(); throw new Error('auth'); }
-  if (!r.ok) throw new Error((j && j.message && !/^auth$/.test(j.message) ? j.message : L.err));
+  if (!r.ok) throw new Error((j && j.message && !/^auth$/.test(j.message) ? tx(j.message) : L.err));
   return j;
 }
 const DISCORD = 'https://discord.gg/5cQvNEBfee';
@@ -1307,7 +1317,7 @@ function askDelete(body, w, sub, close) {
       if (!t) throw new Error('auth');
       const r = await fetch(SB + '/functions/v1/account', { method: 'POST', headers: { Authorization: 'Bearer ' + t, apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ op: 'delete', confirm: 'ELIMINA' }) });
       const j = await r.json().catch(() => ({}));
-      if (!r.ok) throw new Error(j.error || L.err);
+      if (!r.ok) throw new Error(tx(j.error) || L.err);
       S = null; store.set('nf.sess', null); close(); showSignedOut(); toast(P.delOk); setTimeout(() => { location.href = location.pathname; }, 2700);
     } catch (e) {
       err.textContent = e.message === 'auth' ? L.err : (e.message || L.err); err.hidden = false;
@@ -1738,12 +1748,121 @@ $('url').addEventListener('input', (ev) => {
 </html>
 """
 
+# messaggi che arrivano dal server (funzioni e worker) in italiano: sulla pagina inglese si mostrano tradotti
+SRV_EN = {
+    # webclip / webclip-pub
+    "Le clip dal web sono in pausa per qualche ora: riprova piu' tardi, oppure usa l'app NoonFrame sul computer": "Web clips are paused for a few hours: try again later, or use the NoonFrame desktop app",
+    "Le clip dal web sono in pausa per qualche ora: riprova piu' tardi": "Web clips are paused for a few hours: try again later",
+    "Troppe richieste in poco tempo: aspetta un attimo e riprova": "Too many requests in a short time: wait a moment and try again",
+    "Servizio momentaneamente occupato: riprova tra poco": "The service is busy right now: try again shortly",
+    "Il lavoro si e' interrotto da parte nostra: i crediti ti sono stati restituiti. Riprova": "The job stopped on our side: your credits have been refunded. Please try again",
+    "Non sono riuscito a cambiare la clip: riprova": "I couldn't change the clip: please try again",
+    "Non sono riuscito a cambiare la clip: riprova tra poco": "I couldn't change the clip: try again shortly",
+    "Accedi con Google per creare le clip": "Sign in with Google to create clips",
+    "Account bloccato": "Account blocked",
+    "Preparo le clip": "Preparing the clips",
+    "Crediti non sufficienti": "Not enough credits",
+    "Non hai abbastanza crediti per questo video": "You don't have enough credits for this video",
+    "Qualcosa non ha funzionato da parte nostra: i crediti ti sono stati restituiti. Riprova tra poco": "Something went wrong on our side: your credits have been refunded. Try again shortly",
+    "Pronte": "Ready",
+    "Pronta": "Ready",
+    "Incolla il link di un video o di una live su YouTube, Twitch o Kick": "Paste the link of a video or stream on YouTube, Twitch or Kick",
+    "Le clip dal web stanno per arrivare: riprova tra poco": "Web clips are almost here: try again shortly",
+    "Hai gia' una live in lavorazione: aspetta che finisca": "You already have a video in progress: wait for it to finish",
+    "Hai raggiunto il limite di live per oggi: riprova domani": "You've reached today's video limit: try again tomorrow",
+    "In questo momento ci sono tante live in lavorazione: riprova tra qualche minuto": "Lots of videos are being processed right now: try again in a few minutes",
+    "Non hai abbastanza crediti per creare clip": "You don't have enough credits to create clips",
+    "In coda": "Queued",
+    "Non riesco a creare il lavoro: riprova": "I couldn't start the job: please try again",
+    "Il server delle clip non risponde: riprova tra poco": "The clip server isn't responding: try again shortly",
+    "La prova gratis vale per video fino a 1 ora: scegli un video piu' corto, oppure ricarica per usare questo": "The free trial works for videos up to 1 hour: pick a shorter video, or top up to use this one",
+    "Le prove gratis di oggi sono finite: torna domani, oppure ricarica per creare le clip subito": "Today's free trials are used up: come back tomorrow, or top up to create clips right away",
+    "Non riesco a leggere questo video: riprova tra poco": "I can't read this video: try again shortly",
+    "Non riesco a sapere quanto dura questo video: prova con un altro link": "I can't tell how long this video is: try another link",
+    "Il video e' troppo corto per trovare delle clip: servono almeno 2 minuti": "The video is too short to find clips: it needs to be at least 2 minutes",
+    "Per ora le clip dal web funzionano con video fino a 6 ore. Per quelli piu' lunghi usa l'app NoonFrame sul computer": "For now web clips work with videos up to 6 hours. For longer ones use the NoonFrame desktop app",
+    "Per ora le clip dal web funzionano con live fino a 6 ore. Per quelle piu' lunghe usa l'app NoonFrame sul computer": "For now web clips work with streams up to 6 hours. For longer ones use the NoonFrame desktop app",
+    "Lavoro non valido": "Invalid job",
+    "Lavoro non trovato": "Job not found",
+    "Le modifiche stanno per arrivare: riprova tra poco": "Editing is almost here: try again shortly",
+    "Queste clip non si possono piu' cambiare": "These clips can no longer be changed",
+    "Sto gia' cambiando una clip: aspetta che finisca": "I'm already changing a clip: wait for it to finish",
+    "Clip non trovata": "Clip not found",
+    "Questa clip e' bloccata: sbloccale tutte con un piano o una ricarica": "This clip is locked: unlock them all with a plan or a top-up",
+    "Non hai cambiato niente": "You haven't changed anything",
+    "Non hai abbastanza crediti per un'altra modifica": "You don't have enough credits for another edit",
+    "Annullato": "Cancelled",
+    "Annullato da chi l'ha chiesto": "Cancelled",
+    "Lavoro chiuso": "Job closed",
+    "Durata della live non valida": "Invalid video length",
+    "Qualcosa non ha funzionato: riprova tra poco": "Something went wrong: try again shortly",
+    "Richiesta non valida": "Invalid request",
+    "Richiesta troppo grande": "Request too large",
+    "Operazione sconosciuta": "Unknown operation",
+    "Solo POST": "Invalid request",
+    # worker
+    "Questo link non e' supportato: incolla il link di un video o di una live su YouTube, Twitch o Kick": "This link isn't supported: paste the link of a video or stream on YouTube, Twitch or Kick",
+    "Questo link non e' supportato: incolla il link del VOD della live su Twitch, Kick o YouTube": "This link isn't supported: paste the stream VOD link from Twitch, Kick or YouTube",
+    "Non riesco a leggere questo video: controlla il link": "I can't read this video: check the link",
+    "La live e' ancora in corso: riprova quando e' finita e il video e' disponibile": "The stream is still live: try again once it's over and the video is available",
+    "La live e' ancora in corso: riprova quando e' finita e il VOD e' disponibile": "The stream is still live: try again once it's over and the VOD is available",
+    "YouTube in questo momento non ci lascia leggere questo video. Riprova tra qualche minuto, oppure usa l'app NoonFrame sul computer": "YouTube won't let us read this video right now. Try again in a few minutes, or use the NoonFrame desktop app",
+    "Questa live non e' pubblica (privata o solo per abbonati): rendila visibile a tutti e riprova": "This stream isn't public (private or subscribers only): make it visible to everyone and try again",
+    "Non trovo questa live: controlla il link (deve essere il VOD della live, non il canale)": "I can't find this stream: check the link (it must be the stream VOD, not the channel)",
+    "Non ho trovato momenti abbastanza forti per una clip: prova con una live piu' lunga o piu' parlata": "I didn't find moments strong enough for a clip: try a longer or more talkative video",
+    "Le modifiche per queste clip non sono piu' disponibili: rifai le clip del video": "Edits for these clips are no longer available: make the clips again",
+    "La clip deve durare almeno 5 secondi": "A clip must be at least 5 seconds long",
+    "La clip puo' durare al massimo 3 minuti": "A clip can be at most 3 minutes long",
+    "Riapro la clip": "Opening the clip",
+    "Cambio inizio e fine": "Changing start and end",
+    "Aggiorno la clip": "Updating the clip",
+    "Scrivo il titolo": "Writing the title",
+    "Rifaccio il video": "Re-rendering the video",
+    "Quasi pronta": "Almost ready",
+    "Quasi pronto": "Almost ready",
+    "Preparo il lavoro": "Getting ready",
+    "Scarico il video": "Downloading the video",
+    "Scarico la live": "Downloading the stream",
+    "Analizzo il video": "Analyzing the video",
+    "Analizzo la live": "Analyzing the stream",
+    "Non riesco a scaricare questo video. Controlla il link e riprova": "I can't download this video. Check the link and try again",
+    "Non riesco a scaricare questa live. Controlla il link e riprova": "I can't download this stream. Check the link and try again",
+    "Trascrivo e cerco i momenti migliori": "Transcribing and picking the best moments",
+    "Cerco i momenti migliori": "Picking the best moments",
+    "Non sono riuscito a trovare le clip in questo video. Riprova tra poco": "I couldn't find clips in this video. Try again shortly",
+    "Scrivo i titoli": "Writing the titles",
+    "Rifinisco le clip": "Polishing the clips",
+    # pagamenti e account
+    "Accedi con un account per comprare": "Sign in to buy",
+    "Pagamenti momentaneamente non disponibili: riprova tra poco": "Payments are temporarily unavailable: try again shortly",
+    "Le ricariche non sono ancora in vendita: riprova tra poco": "Top-ups aren't on sale yet: try again shortly",
+    "Pagamento non avviato: riprova": "Payment not started: please try again",
+    "I piani si aprono tra pochi giorni: sei in lista, ti avvisiamo per email appena sono disponibili (con un'offerta di lancio)": "Plans open in a few days: you're on the list, we'll email you as soon as they're available (with a launch offer)",
+    "Piano non disponibile": "Plan not available",
+    "Questo piano non ha il pagamento annuale": "This plan has no yearly billing",
+    "Per cambiare piano apri «Gestisci abbonamento»": "To change plan open «Manage subscription»",
+    "È già il tuo piano": "This is already your plan",
+    "Abbonamento non trovato: riprova": "Subscription not found: please try again",
+    "Ricarica non disponibile": "Top-up not available",
+    "Offerta scaduta o non disponibile": "Offer expired or not available",
+    "Offerta non disponibile": "Offer not available",
+    "L'offerta è per chi non ha ancora un abbonamento": "The offer is for people without a subscription",
+    "Acquisto non valido": "Invalid purchase",
+    "Non hai un abbonamento attivo": "You don't have an active subscription",
+    "Pagina dell'abbonamento non disponibile: riprova": "Subscription page not available: please try again",
+    "I pagamenti non sono ancora attivi: riprova tra poco": "Payments aren't active yet: try again shortly",
+    "Non riesco a chiudere il tuo abbonamento in questo momento: riprova tra poco": "I can't cancel your subscription right now: try again shortly",
+    "Non sono riuscito a eliminare l'account: riprova tra poco": "I couldn't delete the account: try again shortly",
+    "Conferma l'eliminazione dell'account": "Confirm account deletion",
+    "Accedi di nuovo per eliminare l'account": "Sign in again to delete the account",
+}
+
 
 def build():
     for lg, t in T.items():
         root = "" if lg == "it" else "../"
         html = PAGE
-        html = html.replace("{js}", json.dumps(JS[lg], ensure_ascii=False))
+        html = html.replace("{js}", json.dumps(dict(JS[lg], srv=(SRV_EN if lg == "en" else {})), ensure_ascii=False))
         vals = dict(t, root=root, canon=("clip.html" if lg == "it" else "en/clip.html"), otherLang=("en" if lg == "it" else "it"),
                     termsLabel=("Termini" if lg == "it" else "Terms"),
                     langsHtml=('<a class="lang on" aria-current="true">IT</a><a class="lang" href="en/clip.html" lang="en">EN</a>' if lg == "it" else '<a class="lang" href="../clip.html" lang="it">IT</a><a class="lang on" aria-current="true">EN</a>'))
