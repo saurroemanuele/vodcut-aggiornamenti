@@ -1,13 +1,25 @@
 {
- "version": "1.5.176",
+ "version": "1.5.177",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.176.zip",
- "size": 11695122,
- "sha256": "2ec97d4bfd43e96975a487d0c4dd3ffc44ae1338b553406ac9edaa3dcb0d7d08",
- "sig": "ePHTIccvrRuXfb1PguuorhVH0FkhIXBRTrV2n4kE3F2F8v9releSVx/eoh2XYjj50Tp7oZUsf9JTKUWANSF8AQ==",
- "notes": "Correzione: Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)\nMiglioramento: Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
- "date": "2026-10-13",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.177.zip",
+ "size": 11698809,
+ "sha256": "86864a9a1b331c932f2fa83717d11ca958a381111b16c469e84f79cdd5f49a41",
+ "sig": "wb46scIX0LiQP1OoviPQcqrgbTF2Q2AQo3g9EZbeSkAEJp2MelvVotM428cuwttcoDi0w6xR2Iwn+rBCatqvDg==",
+ "notes": "Miglioramento: Badge delle clip: puoi mettere la tua immagine (anche solo il logo), scegliere la trasparenza e quando entra (inizio, metà, fine o al secondo che vuoi) e per quanti secondi resta. Nuovo stile Intervista per sottotitoli e titolo. I sottotitoli si spostano subito sotto quando compare un'immagine o un video sopra la clip",
+ "date": "2026-10-14",
  "history": [
+  {
+   "version": "1.5.177",
+   "date": "2026-10-14",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Badge delle clip: puoi mettere la tua immagine (anche solo il logo), scegliere la trasparenza e quando entra (inizio, metà, fine o al secondo che vuoi) e per quanti secondi resta. Nuovo stile Intervista per sottotitoli e titolo. I sottotitoli si spostano subito sotto quando compare un'immagine o un video sopra la clip",
+     "en": "Clip badge: add your own image (even just a logo), pick its transparency and when it appears (start, middle, end or at the second you choose) and how many seconds it stays. New Interview style for captions and title. Captions move right below when an image or video appears over the clip"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.176",
    "date": "2026-10-13",
@@ -384,17 +396,6 @@
      "type": "impr",
      "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
      "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
-    }
-   ]
-  },
-  {
-   "version": "1.5.146",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
-     "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
     }
    ]
   }
