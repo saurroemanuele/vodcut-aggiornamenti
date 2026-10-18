@@ -1,75 +1,23 @@
 {
- "version": "1.5.180",
+ "version": "1.5.181",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.180.zip",
- "size": 11725329,
- "sha256": "88d945308722b6761236b10a4e19adeb510b41539df3ded7bf1dac7f89e6356e",
- "sig": "+vOh6Lu9xlCwkRG4rw6pUf4neWWA7wl9DRz0EyM328qevNUw2kmRFc6d8Bbhb17e/mIE6yIw50ElNR9dTH+9AA==",
- "notes": "Correzione: Le visual con delle facce dentro (foto, articoli) non vengono più divise in due come se fossero persone; le scene di passaggio senza persone (città, uffici) vanno a tutto schermo invece che piccole con lo sfondo sfocato; l'inquadratura cambia esattamente allo stacco della scena; le stesse persone vengono riconosciute anche quando il video passa a un'altra stanza o a un'inquadratura larga\nMiglioramento: Clip da interviste e podcast montate come i creator: dopo l'apertura con i due e il titolo sulla linea in mezzo si vede a tutto schermo chi parla (anche le domande brevi), con i due solo ogni tanto per la reazione; zoom sulla persona più stretti, che riempiono davvero lo schermo; le visual del video (articoli, schede di YouTube, foto) si vedono intere e grandi in una fascia con i sottotitoli subito sotto, i video verticali del telefono a tutto schermo; il titolo d'apertura sta sotto la persona o sotto la visual, come nei video di riferimento",
- "date": "2026-10-15",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.181.zip",
+ "size": 11695794,
+ "sha256": "a02c44a757350420d5eadb65119abfe05db3589cafab7ce86964f50b26264d86",
+ "sig": "B+BkS0g7r+7lQQ2V+r9pQbg9+gjsPvZvsa0zMsaXUqmNioptsNC/dt01EmcG5hINRA9V9SxcHDJcmtF9uz0YAA==",
+ "notes": "Correzione: Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+ "date": "2026-10-18",
  "history": [
   {
-   "version": "1.5.180",
-   "date": "2026-10-15",
+   "version": "1.5.181",
+   "date": "2026-10-18",
    "items": [
     {
      "type": "fix",
-     "text": "Le visual con delle facce dentro (foto, articoli) non vengono più divise in due come se fossero persone; le scene di passaggio senza persone (città, uffici) vanno a tutto schermo invece che piccole con lo sfondo sfocato; l'inquadratura cambia esattamente allo stacco della scena; le stesse persone vengono riconosciute anche quando il video passa a un'altra stanza o a un'inquadratura larga",
-     "en": "Visuals with faces in them (photos, articles) are no longer split in two as if they were people; b-roll scenes without people (cities, offices) go full screen instead of small with a blurred background; the framing changes exactly at the scene cut; the same people are recognized even when the video moves to another room or a wide shot"
-    },
-    {
-     "type": "impr",
-     "text": "Clip da interviste e podcast montate come i creator: dopo l'apertura con i due e il titolo sulla linea in mezzo si vede a tutto schermo chi parla (anche le domande brevi), con i due solo ogni tanto per la reazione; zoom sulla persona più stretti, che riempiono davvero lo schermo; le visual del video (articoli, schede di YouTube, foto) si vedono intere e grandi in una fascia con i sottotitoli subito sotto, i video verticali del telefono a tutto schermo; il titolo d'apertura sta sotto la persona o sotto la visual, come nei video di riferimento",
-     "en": "Interview and podcast clips edited like creators do: after the opening with both people and the title on the middle line, whoever is talking is shown full screen (short questions too), with both people only now and then for reactions; tighter zooms that really fill the screen; video visuals (articles, YouTube cards, photos) are shown whole and large in a band with subtitles right below, vertical phone videos fill the screen; the opening title sits under the person or under the visual, like in the reference videos"
+     "text": "Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+     "en": "More reliable downloads from links on Windows: if the antivirus or OneDrive blocks the temporary files NoonFrame retries on its own and picks up where it left off, and files being downloaded have short names"
     }
-   ],
-   "channel": "beta"
-  },
-  {
-   "version": "1.5.179",
-   "date": "2026-10-14",
-   "items": [
-    {
-     "type": "fix",
-     "text": "I video senza webcam non usano più per sbaglio una webcam ricordata da un'altra live; gli stacchi di inquadratura cadono esattamente sul cambio di scena; i video di YouTube in AV1 si leggono anche dove prima non si aprivano.",
-     "en": "Videos without a webcam no longer mistakenly use a webcam remembered from another stream; shot changes land exactly on the scene cut; AV1 YouTube videos are read even where they used to fail to open."
-    },
-    {
-     "type": "impr",
-     "text": "Clip da interviste e podcast molto più curate: il titolo d'apertura non copre mai le facce (va in mezzo sotto il mento o sulla linea tra le due persone); badge social con la posizione automatica (dove non copre facce, titolo e sottotitoli); zoom sempre su chi parla, ricontrollato anche con la voce, con inquadrature che seguono la persona senza sgranare; grafiche e visual del video mostrate intere al momento giusto; inizio e fine delle clip rifiniti parola per parola, con il contesto; sottotitoli più precisi (parole spezzate unite, parole sbagliate corrette, nomi presi dal titolo del video); più clip dai video parlati (circa una ogni 3 minuti).",
-     "en": "Much better clips from interviews and podcasts: the opening title never covers faces (it sits in the middle under the chin or on the line between two people); automatic position for the social badge (where it covers no faces, title or subtitles); zooms always on whoever is talking, double-checked by voice, with framing that follows the person without getting blurry; video graphics and visuals shown whole at the right moment; clip starts and ends refined word by word, with context; more accurate subtitles (split words joined, wrong words fixed, names taken from the video title); more clips from talk videos (about one every 3 minutes)."
-    }
-   ],
-   "channel": "beta"
-  },
-  {
-   "version": "1.5.178",
-   "date": "2026-10-14",
-   "items": [
-    {
-     "type": "fix",
-     "text": "L'immagine scelta per il badge non compariva: restava il logo di Kick",
-     "en": "The image chosen for the badge didn't show up: the Kick logo stayed"
-    },
-    {
-     "type": "impr",
-     "text": "Badge delle clip: la tua immagine si vede subito nell'anteprima e nei badge (NoonFrame ne tiene una copia, quindi resta anche se sposti il file); con «Solo logo» e la tua immagine sparisce la scelta della piattaforma",
-     "en": "Clip badge: your image shows right away in the preview and in the badges (NoonFrame keeps a copy, so it stays even if you move the file); with «Logo only» and your image the platform choice is hidden"
-    }
-   ],
-   "channel": "beta"
-  },
-  {
-   "version": "1.5.177",
-   "date": "2026-10-14",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Badge delle clip: puoi mettere la tua immagine (anche solo il logo), scegliere la trasparenza e quando entra (inizio, metà, fine o al secondo che vuoi) e per quanti secondi resta. Nuovo stile Intervista per sottotitoli e titolo. I sottotitoli si spostano subito sotto quando compare un'immagine o un video sopra la clip",
-     "en": "Clip badge: add your own image (even just a logo), pick its transparency and when it appears (start, middle, end or at the second you choose) and how many seconds it stays. New Interview style for captions and title. Captions move right below when an image or video appears over the clip"
-    }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.176",
@@ -414,6 +362,39 @@
      "type": "impr",
      "text": "Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
      "en": "Clips: new Zoom button in the gallery to choose how many zooms per clip (Auto, none or 1 to 5), for existing and future clips"
+    }
+   ]
+  },
+  {
+   "version": "1.5.149",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: niente più clip dalla schermata starting soon, pause o fine live; la webcam si riconosce guardando un fotogramma al secondo (basta vedere lo streamer nel suo riquadro una volta per non passare a solo cam); le clip finite in formato gioco per sbaglio si correggono da sole",
+     "en": "Clips: no more clips from starting soon, BRB or outro screens; webcam detection checks one frame per second (seeing the streamer in their box once keeps the cam layout); clips wrongly set to game layout fix themselves"
+    }
+   ]
+  },
+  {
+   "version": "1.5.148",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
+     "en": "Fixed the Mac crash when opening the live clips: face detection was used by two jobs at once and closed the app"
+    }
+   ]
+  },
+  {
+   "version": "1.5.147",
+   "date": "2026-10-04",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
+     "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
     }
    ]
   }

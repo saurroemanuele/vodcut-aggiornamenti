@@ -1,13 +1,24 @@
 {
- "version": "1.5.176",
+ "version": "1.5.181",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.176.zip",
- "size": 11695122,
- "sha256": "2ec97d4bfd43e96975a487d0c4dd3ffc44ae1338b553406ac9edaa3dcb0d7d08",
- "sig": "ePHTIccvrRuXfb1PguuorhVH0FkhIXBRTrV2n4kE3F2F8v9releSVx/eoh2XYjj50Tp7oZUsf9JTKUWANSF8AQ==",
- "notes": "Correzione: Clip molto più veloci sulle live lunghe con più persone: ogni clip si analizza da una copia leggera del suo pezzo di live invece di rileggere la live intera decine di volte (su una live di 2 ore e mezza una clip poteva richiedere 5-10 minuti e la barra sembrava ferma all'87%)\nMiglioramento: Le clip compaiono nella galleria una alla volta appena sono pronte, con «Monto la clip 3 di 12» e la barra che si muove; l'AI legge più pezzi della live insieme, quindi trovare i momenti è circa 3 volte più veloce",
- "date": "2026-10-13",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.181.zip",
+ "size": 11695794,
+ "sha256": "a02c44a757350420d5eadb65119abfe05db3589cafab7ce86964f50b26264d86",
+ "sig": "B+BkS0g7r+7lQQ2V+r9pQbg9+gjsPvZvsa0zMsaXUqmNioptsNC/dt01EmcG5hINRA9V9SxcHDJcmtF9uz0YAA==",
+ "notes": "Correzione: Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+ "date": "2026-10-18",
  "history": [
+  {
+   "version": "1.5.181",
+   "date": "2026-10-18",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+     "en": "More reliable downloads from links on Windows: if the antivirus or OneDrive blocks the temporary files NoonFrame retries on its own and picks up where it left off, and files being downloaded have short names"
+    }
+   ]
+  },
   {
    "version": "1.5.176",
    "date": "2026-10-13",
@@ -384,17 +395,6 @@
      "type": "impr",
      "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
      "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
-    }
-   ]
-  },
-  {
-   "version": "1.5.146",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: la webcam torna sempre (il controllo solo cam scambiava per solo cam scene normali con facce nel gioco, le clip già fatte si correggono da sole); i sottotitoli compaiono appena finisce il titolo; il menu dei tre puntini si chiude quando scorri o cambi pagina",
-     "en": "Clips: the webcam is always back (the full-cam check mistook normal scenes with in-game faces for full cam, existing clips fix themselves); subtitles appear right after the title; the three-dots menu closes when you scroll or change page"
     }
    ]
   }

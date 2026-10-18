@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.181",
+  "date": "2026-10-18",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+    "en": "More reliable downloads from links on Windows: if the antivirus or OneDrive blocks the temporary files NoonFrame retries on its own and picks up where it left off, and files being downloaded have short names"
+   }
+  ]
+ },
+ {
   "version": "1.5.176",
   "date": "2026-10-13",
   "items": [
