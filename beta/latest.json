@@ -1,13 +1,30 @@
 {
- "version": "1.5.181",
+ "version": "1.5.182",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.181.zip",
- "size": 11695794,
- "sha256": "a02c44a757350420d5eadb65119abfe05db3589cafab7ce86964f50b26264d86",
- "sig": "B+BkS0g7r+7lQQ2V+r9pQbg9+gjsPvZvsa0zMsaXUqmNioptsNC/dt01EmcG5hINRA9V9SxcHDJcmtF9uz0YAA==",
- "notes": "Correzione: Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato, e i file in download hanno nomi corti",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.182.zip",
+ "size": 11726702,
+ "sha256": "5731c603f6c89a954f0af6292dcc0104ffeffe6f1d293458784a0bb551d21796",
+ "sig": "200T6t/wcBjZoDIx7SFWyCSb7/NC4pEtP5cNtwPQFitSPABmrAHy+k09I6a3JI7qezk10/JkaHfefVlVMDrsBQ==",
+ "notes": "Correzione: Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato\nMiglioramento: Le novità della beta restano (badge personalizzati, montaggio interviste e podcast)",
  "date": "2026-10-18",
  "history": [
+  {
+   "version": "1.5.182",
+   "date": "2026-10-18",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato",
+     "en": "More reliable downloads from links on Windows: if the antivirus or OneDrive blocks the temporary files NoonFrame retries on its own and picks up where it left off"
+    },
+    {
+     "type": "impr",
+     "text": "Le novità della beta restano (badge personalizzati, montaggio interviste e podcast)",
+     "en": "The beta features stay (custom badges, interview and podcast editing)"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.181",
    "date": "2026-10-18",
@@ -384,17 +401,6 @@
      "type": "impr",
      "text": "Risolto il crash su Mac aprendo le clip della live: il riconoscimento dei visi veniva usato da due lavori insieme e faceva chiudere l'app",
      "en": "Fixed the Mac crash when opening the live clips: face detection was used by two jobs at once and closed the app"
-    }
-   ]
-  },
-  {
-   "version": "1.5.147",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: tornano gli zoom sulla webcam con lo swoosh, solo quando parla o reagisce lo streamer (non quando parla il gioco o il video della reaction), con i sottotitoli che scendono sotto; i sottotitoli scelti escono uguali all'anteprima (parola detta colorata); le clip già fatte si aggiornano da sole",
-     "en": "Clips: webcam zooms with swoosh are back, only when the streamer talks or reacts (not game or reacted-video audio), with subtitles moving down; chosen subtitles now match the preview (spoken word colored); existing clips update themselves"
     }
    ]
   }
