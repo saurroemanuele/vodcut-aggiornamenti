@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.187",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Nell'editor verticale puoi scegliere il ritaglio guardando il video originale intero: trascini il riquadro e vedi subito cosa finisce nella clip",
+    "en": "In the vertical editor you can choose the crop while looking at the whole original video: drag the box and see right away what ends up in the clip"
+   }
+  ]
+ },
+ {
   "version": "1.5.186",
   "date": "2026-10-19",
   "items": [
