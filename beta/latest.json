@@ -1,13 +1,25 @@
 {
- "version": "1.5.186",
+ "version": "1.5.187",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.186.zip",
- "size": 11809423,
- "sha256": "6442cacc467643e29a5753416dbaf3d7b02c5aece94613a1cb00c12d57c8aac9",
- "sig": "fxeA23DlaZRIqcapRaN1ATIDaHmMIxylcJPv6FYwuKYOEmUquLUo/I6PcnYw8/bM7nLQ57PWIfFtgzuS9+2YDg==",
- "notes": "Correzione: Trascrizione: un pezzo di video rovinato non ferma più tutto\nCorrezione: Trascrizione sui Mac senza il filtro delle pause (onnxruntime) che si fermava\nCorrezione: Salvataggio del progetto: la finestra per scegliere dove salvare non dà più errore\nCorrezione: La schermata della webcam non resta più ferma su «Un attimo…»\nCorrezione: Download dai link più tolleranti con le connessioni lente\nMiglioramento: L'AI di NoonFrame ora funziona solo con i crediti del tuo account: niente più chiavi API da collegare",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.187.zip",
+ "size": 11810082,
+ "sha256": "eafaf397825f25e67c1d90a32cc4d3c3f33911a7293ae879ef44311e5d2b77e5",
+ "sig": "8OgKoExZ78BgMBURrtX9xsg2Tt+TK70mg7zub1zoODNEvJjIf8R8TTqXzdOhrN4Uvzsh9Pi27ZA3Dp4K7JzhDA==",
+ "notes": "Miglioramento: Nell'editor verticale puoi scegliere il ritaglio guardando il video originale intero: trascini il riquadro e vedi subito cosa finisce nella clip",
  "date": "2026-10-19",
  "history": [
+  {
+   "version": "1.5.187",
+   "date": "2026-10-19",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Nell'editor verticale puoi scegliere il ritaglio guardando il video originale intero: trascini il riquadro e vedi subito cosa finisce nella clip",
+     "en": "In the vertical editor you can choose the crop while looking at the whole original video: drag the box and see right away what ends up in the clip"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.186",
    "date": "2026-10-19",
@@ -429,17 +441,6 @@
      "type": "impr",
      "text": "Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
      "en": "Payments: plans, top-ups and offers are bought with Lemon Squeezy's secure checkout; credits arrive by themselves as soon as the payment goes through; new 'Manage subscription' for card, invoices and cancellation"
-    }
-   ]
-  },
-  {
-   "version": "1.5.152",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
-     "en": "Editor: if the picture freezes while time keeps going, the player recovers by itself and, if needed, switches to a lighter preview; the mouse wheel on the timeline moves back and forth in time (Shift + wheel scrolls the tracks)"
     }
    ]
   }
