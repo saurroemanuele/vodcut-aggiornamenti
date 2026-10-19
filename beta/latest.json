@@ -27,8 +27,7 @@
      "text": "Clip: iniziano e finiscono su frasi che hanno senso (via i pezzetti staccati da lunghe pause, la domanda prima della risposta, mai una frase lasciata a metà)",
      "en": "Clips: start and end on sentences that make sense (no bits cut off by long pauses, the question before the answer, never a half sentence)"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.183",
@@ -44,12 +43,11 @@
      "text": "Clip di gaming come quelle dei clipper: la webcam dello streamer intera sopra e il gioco grande sotto, anche con altre webcam nella live (watch party, compagni, ospiti) o con la webcam che cambia posto nei video montati. Stile automatico per tipo di video: nel gaming titolo piccolo in maiuscolo con le parole chiave colorate e sottotitoli in maiuscolo, nelle interviste e nei podcast lo stile intervista (si spegne in Stile delle clip)",
      "en": "Gaming clips like the ones clippers make: the streamer's whole webcam on top and the game big below, even with other webcams in the stream (watch parties, teammates, guests) or a webcam that moves around in edited videos. Automatic style by video type: gaming clips get a small all-caps title with the key words in color and all-caps subtitles, interviews and podcasts get the interview style (turn it off in Clip style)"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.182",
-   "date": "2026-10-18",
+   "date": "2026-10-19",
    "items": [
     {
      "type": "fix",
@@ -61,8 +59,7 @@
      "text": "Le novità della beta restano (badge personalizzati, montaggio interviste e podcast)",
      "en": "The beta features stay (custom badges, interview and podcast editing)"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.181",

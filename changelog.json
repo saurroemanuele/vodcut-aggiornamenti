@@ -1,5 +1,58 @@
 [
  {
+  "version": "1.5.184",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Clip di gaming: il titolo d'apertura non copre più la faccia quando il video è a tutto schermo",
+    "en": "Gaming clips: the opening title no longer covers the face in full-screen shots"
+   },
+   {
+    "type": "fix",
+    "text": "Il titolo d'apertura resta a schermo per tutto il suo tempo anche quando si tolgono le pause",
+    "en": "The opening title stays on screen for its full time even when pauses are removed"
+   },
+   {
+    "type": "impr",
+    "text": "Clip: iniziano e finiscono su frasi che hanno senso (via i pezzetti staccati da lunghe pause, la domanda prima della risposta, mai una frase lasciata a metà)",
+    "en": "Clips: start and end on sentences that make sense (no bits cut off by long pauses, the question before the answer, never a half sentence)"
+   }
+  ]
+ },
+ {
+  "version": "1.5.183",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Nel gaming niente zoom che portano la faccia a tutto schermo sopra il gioco; quando il video montato mostra una faccia a tutto schermo la clip la mostra intera",
+    "en": "In gaming clips no more zooms that put the face full screen over the game; when an edited video shows a face full screen, the clip shows it whole"
+   },
+   {
+    "type": "impr",
+    "text": "Clip di gaming come quelle dei clipper: la webcam dello streamer intera sopra e il gioco grande sotto, anche con altre webcam nella live (watch party, compagni, ospiti) o con la webcam che cambia posto nei video montati. Stile automatico per tipo di video: nel gaming titolo piccolo in maiuscolo con le parole chiave colorate e sottotitoli in maiuscolo, nelle interviste e nei podcast lo stile intervista (si spegne in Stile delle clip)",
+    "en": "Gaming clips like the ones clippers make: the streamer's whole webcam on top and the game big below, even with other webcams in the stream (watch parties, teammates, guests) or a webcam that moves around in edited videos. Automatic style by video type: gaming clips get a small all-caps title with the key words in color and all-caps subtitles, interviews and podcasts get the interview style (turn it off in Clip style)"
+   }
+  ]
+ },
+ {
+  "version": "1.5.182",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Download dai link più affidabile su Windows: se l'antivirus o OneDrive bloccano i file temporanei NoonFrame riprova da solo e riprende da dove era arrivato",
+    "en": "More reliable downloads from links on Windows: if the antivirus or OneDrive blocks the temporary files NoonFrame retries on its own and picks up where it left off"
+   },
+   {
+    "type": "impr",
+    "text": "Le novità della beta restano (badge personalizzati, montaggio interviste e podcast)",
+    "en": "The beta features stay (custom badges, interview and podcast editing)"
+   }
+  ]
+ },
+ {
   "version": "1.5.181",
   "date": "2026-10-18",
   "items": [
