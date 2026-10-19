@@ -1,5 +1,41 @@
 [
  {
+  "version": "1.5.186",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Trascrizione: un pezzo di video rovinato non ferma più tutto",
+    "en": "Transcription: a damaged piece of video no longer stops everything"
+   },
+   {
+    "type": "fix",
+    "text": "Trascrizione sui Mac senza il filtro delle pause (onnxruntime) che si fermava",
+    "en": "Transcription on Macs without the pause filter (onnxruntime) no longer stops"
+   },
+   {
+    "type": "fix",
+    "text": "Salvataggio del progetto: la finestra per scegliere dove salvare non dà più errore",
+    "en": "Saving a project: the save dialog no longer errors"
+   },
+   {
+    "type": "fix",
+    "text": "La schermata della webcam non resta più ferma su «Un attimo…»",
+    "en": "The webcam screen no longer gets stuck on «One moment…»"
+   },
+   {
+    "type": "fix",
+    "text": "Download dai link più tolleranti con le connessioni lente",
+    "en": "Downloads from links more tolerant of slow connections"
+   },
+   {
+    "type": "impr",
+    "text": "L'AI di NoonFrame ora funziona solo con i crediti del tuo account: niente più chiavi API da collegare",
+    "en": "NoonFrame's AI now runs only on your account credits: no more API keys to connect"
+   }
+  ]
+ },
+ {
   "version": "1.5.185",
   "date": "2026-10-19",
   "items": [

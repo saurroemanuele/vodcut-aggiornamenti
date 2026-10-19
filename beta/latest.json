@@ -42,8 +42,7 @@
      "text": "L'AI di NoonFrame ora funziona solo con i crediti del tuo account: niente più chiavi API da collegare",
      "en": "NoonFrame's AI now runs only on your account credits: no more API keys to connect"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.185",
