@@ -1,13 +1,50 @@
 {
- "version": "1.5.185",
+ "version": "1.5.186",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.185.zip",
- "size": 11743851,
- "sha256": "04101b4675395fbde5e99cf2fec043ef071a032f3d982d3d0222adf7c2aaebed",
- "sig": "blnrX49I7YBcbsgfioKveZFfYEc6lIaYhFk1NPTTHlRXHwBSAmKca8wdcVbkHqcMeQgBPiG6EUUaa8KLFWGDDw==",
- "notes": "Correzione: Esportazione: niente più «Errore audio, Cannot select channel layout» sui Mac quando l'audio del video cambia formato a metà",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.186.zip",
+ "size": 11809423,
+ "sha256": "6442cacc467643e29a5753416dbaf3d7b02c5aece94613a1cb00c12d57c8aac9",
+ "sig": "fxeA23DlaZRIqcapRaN1ATIDaHmMIxylcJPv6FYwuKYOEmUquLUo/I6PcnYw8/bM7nLQ57PWIfFtgzuS9+2YDg==",
+ "notes": "Correzione: Trascrizione: un pezzo di video rovinato non ferma più tutto\nCorrezione: Trascrizione sui Mac senza il filtro delle pause (onnxruntime) che si fermava\nCorrezione: Salvataggio del progetto: la finestra per scegliere dove salvare non dà più errore\nCorrezione: La schermata della webcam non resta più ferma su «Un attimo…»\nCorrezione: Download dai link più tolleranti con le connessioni lente\nMiglioramento: L'AI di NoonFrame ora funziona solo con i crediti del tuo account: niente più chiavi API da collegare",
  "date": "2026-10-19",
  "history": [
+  {
+   "version": "1.5.186",
+   "date": "2026-10-19",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Trascrizione: un pezzo di video rovinato non ferma più tutto",
+     "en": "Transcription: a damaged piece of video no longer stops everything"
+    },
+    {
+     "type": "fix",
+     "text": "Trascrizione sui Mac senza il filtro delle pause (onnxruntime) che si fermava",
+     "en": "Transcription on Macs without the pause filter (onnxruntime) no longer stops"
+    },
+    {
+     "type": "fix",
+     "text": "Salvataggio del progetto: la finestra per scegliere dove salvare non dà più errore",
+     "en": "Saving a project: the save dialog no longer errors"
+    },
+    {
+     "type": "fix",
+     "text": "La schermata della webcam non resta più ferma su «Un attimo…»",
+     "en": "The webcam screen no longer gets stuck on «One moment…»"
+    },
+    {
+     "type": "fix",
+     "text": "Download dai link più tolleranti con le connessioni lente",
+     "en": "Downloads from links more tolerant of slow connections"
+    },
+    {
+     "type": "impr",
+     "text": "L'AI di NoonFrame ora funziona solo con i crediti del tuo account: niente più chiavi API da collegare",
+     "en": "NoonFrame's AI now runs only on your account credits: no more API keys to connect"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.185",
    "date": "2026-10-19",
@@ -404,17 +441,6 @@
      "type": "impr",
      "text": "Editor: se l'immagine resta ferma mentre il tempo va avanti il lettore si sblocca da solo e, se serve, passa a un'anteprima più leggera; la rotella del mouse sulla timeline va avanti e indietro nel tempo (Maiusc + rotella per scorrere le tracce)",
      "en": "Editor: if the picture freezes while time keeps going, the player recovers by itself and, if needed, switches to a lighter preview; the mouse wheel on the timeline moves back and forth in time (Shift + wheel scrolls the tracks)"
-    }
-   ]
-  },
-  {
-   "version": "1.5.151",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
-     "en": "Editor: if the preview freezes on a frame (smooth preview after cuts, seen on Mac with long lives) it notices within 2-3 seconds and continues from the live at the same point"
     }
    ]
   }
