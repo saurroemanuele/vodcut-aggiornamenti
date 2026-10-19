@@ -1,13 +1,24 @@
 {
- "version": "1.5.184",
+ "version": "1.5.185",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.184.zip",
- "size": 11743455,
- "sha256": "16d05dd813820f7cb91d7a0a2c63355d00fd2d110e686eb81b48c67fc7a42f7d",
- "sig": "dh7Vrouuxz0Bt6bbc4Tqcete8N9x7EoOAVrkekL3Fl4J8QoePiDkPVSUQ3X2aVeaSAeEnisDxg0T6A9f95Q8BA==",
- "notes": "Correzione: Clip di gaming: il titolo d'apertura non copre più la faccia quando il video è a tutto schermo\nCorrezione: Il titolo d'apertura resta a schermo per tutto il suo tempo anche quando si tolgono le pause\nMiglioramento: Clip: iniziano e finiscono su frasi che hanno senso (via i pezzetti staccati da lunghe pause, la domanda prima della risposta, mai una frase lasciata a metà)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.185.zip",
+ "size": 11743851,
+ "sha256": "04101b4675395fbde5e99cf2fec043ef071a032f3d982d3d0222adf7c2aaebed",
+ "sig": "blnrX49I7YBcbsgfioKveZFfYEc6lIaYhFk1NPTTHlRXHwBSAmKca8wdcVbkHqcMeQgBPiG6EUUaa8KLFWGDDw==",
+ "notes": "Correzione: Esportazione: niente più «Errore audio, Cannot select channel layout» sui Mac quando l'audio del video cambia formato a metà",
  "date": "2026-10-19",
  "history": [
+  {
+   "version": "1.5.185",
+   "date": "2026-10-19",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Esportazione: niente più «Errore audio, Cannot select channel layout» sui Mac quando l'audio del video cambia formato a metà",
+     "en": "Export: no more «Audio error, Cannot select channel layout» on Mac when the video's audio changes format halfway"
+    }
+   ]
+  },
   {
    "version": "1.5.184",
    "date": "2026-10-19",
@@ -404,17 +415,6 @@
      "type": "impr",
      "text": "Editor: se l'anteprima si blocca su un fotogramma (anteprima fluida dopo i tagli, capitava su Mac con live lunghe) si accorge da sola in 2-3 secondi e continua dalla live dallo stesso punto",
      "en": "Editor: if the preview freezes on a frame (smooth preview after cuts, seen on Mac with long lives) it notices within 2-3 seconds and continues from the live at the same point"
-    }
-   ]
-  },
-  {
-   "version": "1.5.150",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip: nuovo pulsante Zoom nella galleria per scegliere quanti zoom per clip (Auto, nessuno o da 1 a 5), vale per le clip fatte e per le prossime",
-     "en": "Clips: new Zoom button in the gallery to choose how many zooms per clip (Auto, none or 1 to 5), for existing and future clips"
     }
    ]
   }

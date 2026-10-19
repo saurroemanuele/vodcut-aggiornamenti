@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.5.185",
+  "date": "2026-10-19",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Esportazione: niente più «Errore audio, Cannot select channel layout» sui Mac quando l'audio del video cambia formato a metà",
+    "en": "Export: no more «Audio error, Cannot select channel layout» on Mac when the video's audio changes format halfway"
+   }
+  ]
+ },
+ {
   "version": "1.5.184",
   "date": "2026-10-19",
   "items": [
