@@ -1,13 +1,30 @@
 {
- "version": "1.5.187",
+ "version": "1.5.188",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.187.zip",
- "size": 11810082,
- "sha256": "eafaf397825f25e67c1d90a32cc4d3c3f33911a7293ae879ef44311e5d2b77e5",
- "sig": "8OgKoExZ78BgMBURrtX9xsg2Tt+TK70mg7zub1zoODNEvJjIf8R8TTqXzdOhrN4Uvzsh9Pi27ZA3Dp4K7JzhDA==",
- "notes": "Miglioramento: Nell'editor verticale puoi scegliere il ritaglio guardando il video originale intero: trascini il riquadro e vedi subito cosa finisce nella clip",
- "date": "2026-10-19",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.188.zip",
+ "size": 11811423,
+ "sha256": "3e8a44d0d63a87eea8709b33d081d5b8ad616b17874f0291a336a9a1cd5e9784",
+ "sig": "STNpZ8ltMyP0EIL8FecdWMRGEHum0v3ZByFnz8/2wUHrGQjouZP8lwzeBVAG5yL2gBbLSxLc9RiFTvS29vvCAA==",
+ "notes": "Correzione: Disco del computer pieno: ora l'app lo dice chiaramente e spiega cosa fare, invece di errori come Failed to fetch\nMiglioramento: Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
+ "date": "2026-10-20",
  "history": [
+  {
+   "version": "1.5.188",
+   "date": "2026-10-20",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Disco del computer pieno: ora l'app lo dice chiaramente e spiega cosa fare, invece di errori come Failed to fetch",
+     "en": "Computer disk full: the app now says so clearly and explains what to do, instead of errors like Failed to fetch"
+    },
+    {
+     "type": "impr",
+     "text": "Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
+     "en": "Clear message when a video has no speech (fashion shows, music): no pointless clip search"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.187",
    "date": "2026-10-19",
@@ -429,17 +446,6 @@
      "type": "impr",
      "text": "Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
      "en": "Profile: new Plan and billing section with plan, renewal or cancellation, credits and 'Manage subscription' (card, invoices, cancellation); the link is also in the profile photo menu"
-    }
-   ]
-  },
-  {
-   "version": "1.5.153",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
-     "en": "Payments: plans, top-ups and offers are bought with Lemon Squeezy's secure checkout; credits arrive by themselves as soon as the payment goes through; new 'Manage subscription' for card, invoices and cancellation"
     }
    ]
   }
