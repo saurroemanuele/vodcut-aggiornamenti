@@ -1,13 +1,45 @@
 {
- "version": "1.5.188",
+ "version": "1.5.189",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.188.zip",
- "size": 11811423,
- "sha256": "3e8a44d0d63a87eea8709b33d081d5b8ad616b17874f0291a336a9a1cd5e9784",
- "sig": "STNpZ8ltMyP0EIL8FecdWMRGEHum0v3ZByFnz8/2wUHrGQjouZP8lwzeBVAG5yL2gBbLSxLc9RiFTvS29vvCAA==",
- "notes": "Correzione: Disco del computer pieno: ora l'app lo dice chiaramente e spiega cosa fare, invece di errori come Failed to fetch\nMiglioramento: Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
- "date": "2026-10-20",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.189.zip",
+ "size": 11813795,
+ "sha256": "b3544e1f635fc0d3a686ddacdfc7ae7e22964fb647c375e5ea00cad7715aecfc",
+ "sig": "fNyurtpOkCRYzkeFgJGm+bFUv+egCzMzZMQJGgNpY5Jd2yxlVkcNuk3FGyHLfClEH3c+rhW8XptMjtgk1wYGDg==",
+ "notes": "Correzione: Tagli più veloci: niente più attesa dell'anteprima a ogni taglio\nCorrezione: Barre nere che funzionano anche con webcam e gioco spostati a mano\nMiglioramento: Clip preferite con la stellina, in cima alla galleria\nMiglioramento: Ritaglio della webcam spostabile anche nell'impaginazione Webcam\nMiglioramento: Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
+ "date": "2026-10-22",
  "history": [
+  {
+   "version": "1.5.189",
+   "date": "2026-10-22",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Tagli più veloci: niente più attesa dell'anteprima a ogni taglio",
+     "en": "Faster cuts: no more waiting for the preview after every cut"
+    },
+    {
+     "type": "fix",
+     "text": "Barre nere che funzionano anche con webcam e gioco spostati a mano",
+     "en": "Black bars now work even with webcam and game moved by hand"
+    },
+    {
+     "type": "impr",
+     "text": "Clip preferite con la stellina, in cima alla galleria",
+     "en": "Favorite clips with the star, at the top of the gallery"
+    },
+    {
+     "type": "impr",
+     "text": "Ritaglio della webcam spostabile anche nell'impaginazione Webcam",
+     "en": "Webcam crop can be moved in the Webcam layout too"
+    },
+    {
+     "type": "impr",
+     "text": "Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
+     "en": "Extend a clip: see the chosen part right away even with videos the browser can't play"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.188",
    "date": "2026-10-20",
@@ -435,17 +467,6 @@
      "type": "impr",
      "text": "Clip a mano: scegli un momento qualsiasi della live, anche uno che l'AI non ha preso, e diventa una clip montata come le altre. Lingua della live da scegliere prima di cercare le clip. Per ogni clip l'AI indica dove può funzionare meglio: TikTok, Reels o Shorts",
      "en": "Manual clips: pick any moment of the stream, even one the AI didn't pick, and it becomes an edited clip like the others. Choose the stream language before finding clips. For each clip the AI shows where it could work best: TikTok, Reels or Shorts"
-    }
-   ]
-  },
-  {
-   "version": "1.5.154",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
-     "en": "Profile: new Plan and billing section with plan, renewal or cancellation, credits and 'Manage subscription' (card, invoices, cancellation); the link is also in the profile photo menu"
     }
    ]
   }
