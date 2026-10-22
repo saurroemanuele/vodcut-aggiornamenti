@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.5.190",
+  "date": "2026-10-22",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Anteprima fluida più affidabile dopo tagli veloci uno dopo l'altro",
+    "en": "More reliable smooth preview after quick cuts one after another"
+   },
+   {
+    "type": "impr",
+    "text": "Clip verticali: scegli il ritaglio di webcam e gioco sul video originale, spostandoli e ingrandendoli come vuoi (anche la webcam, niente più teste tagliate)",
+    "en": "Vertical clips: choose the webcam and game crop on the original video, moving and resizing them freely (the webcam too, no more cut-off heads)"
+   }
+  ]
+ },
+ {
   "version": "1.5.189",
   "date": "2026-10-22",
   "items": [
