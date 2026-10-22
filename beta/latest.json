@@ -1,13 +1,25 @@
 {
- "version": "1.5.190",
+ "version": "1.5.191",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.190.zip",
- "size": 11815901,
- "sha256": "6f55060dd74f4c08e4cf06f17abb9fc00b958c3eec62126df757f29e54de4e18",
- "sig": "MGymjH/nU/tOTZHXHObHb1RBJl7TzYKwXjhdGwa+XCnkt5OyMbk7I1N+MHtsfuOvL3cr7y1MpXEz+SVPchN6BQ==",
- "notes": "Correzione: Anteprima fluida più affidabile dopo tagli veloci uno dopo l'altro\nMiglioramento: Clip verticali: scegli il ritaglio di webcam e gioco sul video originale, spostandoli e ingrandendoli come vuoi (anche la webcam, niente più teste tagliate)",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.191.zip",
+ "size": 11816412,
+ "sha256": "6f7d283cc139d7f145a6b76de1ea6a15ec5a085ac871f1cd882a3b63eecb969b",
+ "sig": "P/EQKIMx6R6IfcUbzbkrDP2/gEbEN+M/lMvLtNhRMihWFcBZEdZnLgdzqkgM56ULJ5EUqKBuHB5sI9Z8hYj5Bw==",
+ "notes": "Miglioramento: Piani: lo sconto sul primo mese si vede e si applica su ogni piano, non solo sul primo",
  "date": "2026-10-22",
  "history": [
+  {
+   "version": "1.5.191",
+   "date": "2026-10-22",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Piani: lo sconto sul primo mese si vede e si applica su ogni piano, non solo sul primo",
+     "en": "Plans: the first-month discount is shown and applied on every plan, not just the first"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.5.190",
    "date": "2026-10-22",
@@ -454,17 +466,6 @@
      "type": "impr",
      "text": "Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
      "en": "Viral clips: previews are no longer rebuilt every time you reopen the page, only when the clip actually changed"
-    }
-   ]
-  },
-  {
-   "version": "1.5.156",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Allunga o accorcia una clip prendendola dalla live: se l'AI ha tagliato l'inizio che serve a capire, sposti l'inizio prima (o la fine dopo) e le modifiche fatte restano. Dalla galleria e dall'editor della clip",
-     "en": "Lengthen or shorten a clip using the stream: if the AI cut the start you need for context, move the start earlier (or the end later) and your edits stay. From the gallery and the clip editor"
     }
    ]
   }
