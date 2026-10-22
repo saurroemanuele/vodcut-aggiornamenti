@@ -1,5 +1,52 @@
 [
  {
+  "version": "1.5.189",
+  "date": "2026-10-22",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Tagli più veloci: niente più attesa dell'anteprima a ogni taglio",
+    "en": "Faster cuts: no more waiting for the preview after every cut"
+   },
+   {
+    "type": "fix",
+    "text": "Barre nere che funzionano anche con webcam e gioco spostati a mano",
+    "en": "Black bars now work even with webcam and game moved by hand"
+   },
+   {
+    "type": "impr",
+    "text": "Clip preferite con la stellina, in cima alla galleria",
+    "en": "Favorite clips with the star, at the top of the gallery"
+   },
+   {
+    "type": "impr",
+    "text": "Ritaglio della webcam spostabile anche nell'impaginazione Webcam",
+    "en": "Webcam crop can be moved in the Webcam layout too"
+   },
+   {
+    "type": "impr",
+    "text": "Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
+    "en": "Extend a clip: see the chosen part right away even with videos the browser can't play"
+   }
+  ]
+ },
+ {
+  "version": "1.5.188",
+  "date": "2026-10-22",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Disco del computer pieno: ora l'app lo dice chiaramente e spiega cosa fare, invece di errori come Failed to fetch",
+    "en": "Computer disk full: the app now says so clearly and explains what to do, instead of errors like Failed to fetch"
+   },
+   {
+    "type": "impr",
+    "text": "Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
+    "en": "Clear message when a video has no speech (fashion shows, music): no pointless clip search"
+   }
+  ]
+ },
+ {
   "version": "1.5.187",
   "date": "2026-10-19",
   "items": [

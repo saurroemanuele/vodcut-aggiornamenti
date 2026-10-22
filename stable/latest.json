@@ -1,13 +1,60 @@
 {
- "version": "1.5.187",
+ "version": "1.5.189",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.187.zip",
- "size": 11810082,
- "sha256": "eafaf397825f25e67c1d90a32cc4d3c3f33911a7293ae879ef44311e5d2b77e5",
- "sig": "8OgKoExZ78BgMBURrtX9xsg2Tt+TK70mg7zub1zoODNEvJjIf8R8TTqXzdOhrN4Uvzsh9Pi27ZA3Dp4K7JzhDA==",
- "notes": "Miglioramento: Nell'editor verticale puoi scegliere il ritaglio guardando il video originale intero: trascini il riquadro e vedi subito cosa finisce nella clip",
- "date": "2026-10-19",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.189.zip",
+ "size": 11813795,
+ "sha256": "b3544e1f635fc0d3a686ddacdfc7ae7e22964fb647c375e5ea00cad7715aecfc",
+ "sig": "fNyurtpOkCRYzkeFgJGm+bFUv+egCzMzZMQJGgNpY5Jd2yxlVkcNuk3FGyHLfClEH3c+rhW8XptMjtgk1wYGDg==",
+ "notes": "Correzione: Tagli più veloci: niente più attesa dell'anteprima a ogni taglio\nCorrezione: Barre nere che funzionano anche con webcam e gioco spostati a mano\nMiglioramento: Clip preferite con la stellina, in cima alla galleria\nMiglioramento: Ritaglio della webcam spostabile anche nell'impaginazione Webcam\nMiglioramento: Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
+ "date": "2026-10-22",
  "history": [
+  {
+   "version": "1.5.189",
+   "date": "2026-10-22",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Tagli più veloci: niente più attesa dell'anteprima a ogni taglio",
+     "en": "Faster cuts: no more waiting for the preview after every cut"
+    },
+    {
+     "type": "fix",
+     "text": "Barre nere che funzionano anche con webcam e gioco spostati a mano",
+     "en": "Black bars now work even with webcam and game moved by hand"
+    },
+    {
+     "type": "impr",
+     "text": "Clip preferite con la stellina, in cima alla galleria",
+     "en": "Favorite clips with the star, at the top of the gallery"
+    },
+    {
+     "type": "impr",
+     "text": "Ritaglio della webcam spostabile anche nell'impaginazione Webcam",
+     "en": "Webcam crop can be moved in the Webcam layout too"
+    },
+    {
+     "type": "impr",
+     "text": "Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
+     "en": "Extend a clip: see the chosen part right away even with videos the browser can't play"
+    }
+   ]
+  },
+  {
+   "version": "1.5.188",
+   "date": "2026-10-22",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Disco del computer pieno: ora l'app lo dice chiaramente e spiega cosa fare, invece di errori come Failed to fetch",
+     "en": "Computer disk full: the app now says so clearly and explains what to do, instead of errors like Failed to fetch"
+    },
+    {
+     "type": "impr",
+     "text": "Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
+     "en": "Clear message when a video has no speech (fashion shows, music): no pointless clip search"
+    }
+   ]
+  },
   {
    "version": "1.5.187",
    "date": "2026-10-19",
@@ -418,28 +465,6 @@
      "type": "impr",
      "text": "Clip a mano: scegli un momento qualsiasi della live, anche uno che l'AI non ha preso, e diventa una clip montata come le altre. Lingua della live da scegliere prima di cercare le clip. Per ogni clip l'AI indica dove può funzionare meglio: TikTok, Reels o Shorts",
      "en": "Manual clips: pick any moment of the stream, even one the AI didn't pick, and it becomes an edited clip like the others. Choose the stream language before finding clips. For each clip the AI shows where it could work best: TikTok, Reels or Shorts"
-    }
-   ]
-  },
-  {
-   "version": "1.5.154",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Profilo: nuova sezione Piano e pagamenti con piano, rinnovo o disdetta, crediti e 'Gestisci abbonamento' (carta, fatture, disdetta); il link c'è anche nel menu della foto profilo",
-     "en": "Profile: new Plan and billing section with plan, renewal or cancellation, credits and 'Manage subscription' (card, invoices, cancellation); the link is also in the profile photo menu"
-    }
-   ]
-  },
-  {
-   "version": "1.5.153",
-   "date": "2026-10-04",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Pagamenti: abbonamenti, ricariche e offerte si comprano con il pagamento sicuro di Lemon Squeezy; i crediti arrivano da soli appena il pagamento va a buon fine; nuovo 'Gestisci abbonamento' per carta, fatture e disdetta",
-     "en": "Payments: plans, top-ups and offers are bought with Lemon Squeezy's secure checkout; credits arrive by themselves as soon as the payment goes through; new 'Manage subscription' for card, invoices and cancellation"
     }
    ]
   }

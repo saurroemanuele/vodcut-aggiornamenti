@@ -37,12 +37,11 @@
      "text": "Allunga la clip: vedi subito la parte scelta anche con video che il browser non legge",
      "en": "Extend a clip: see the chosen part right away even with videos the browser can't play"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.188",
-   "date": "2026-10-20",
+   "date": "2026-10-22",
    "items": [
     {
      "type": "fix",
@@ -54,8 +53,7 @@
      "text": "Messaggio chiaro quando un video non ha parlato (sfilate, musica): niente ricerca inutile delle clip",
      "en": "Clear message when a video has no speech (fashion shows, music): no pointless clip search"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.5.187",
