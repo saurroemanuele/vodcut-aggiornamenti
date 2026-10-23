@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-WLmeHm2qTPgulk5XaTCmxyxiufBj65r3R+/MUsv56Do='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-JdDjjxP+AgJyLXe1GamG8oMI2tsTmqRXXBVk0/RdQx0='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Clip AI dalla tua live, anche dal telefono | NoonFrame</title>
 <meta name="description" content="Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.">
@@ -157,6 +157,16 @@ h1 { margin: 0 auto; max-width: 15ch; font-size: clamp(36px, 7.2vw, 64px); line-
 .est .warn { grid-column: 1 / -1; margin: 0; font-size: 14px; color: var(--err); }
 .est.pwon { align-items: start; scroll-margin-top: 76px; }
 .est.pwon .cost { display: none; }
+.est.pwon > img, .est.pwon > .ph, .est.pwon > div:not(.pw):not(.stp) { display: none; }
+.pw { overflow: hidden; }
+.pwhero { position: relative; margin: -18px -16px 16px; aspect-ratio: 16 / 10; overflow: hidden; background: var(--ink-2); }
+.est .pwhero img { position: absolute; left: -8%; top: -8%; width: 116%; height: 116%; max-width: none; aspect-ratio: auto; border-radius: 0; object-fit: cover; filter: blur(14px) saturate(1.2) brightness(.75); }
+.pwhero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,10,28,.15) 0%, rgba(5,10,28,.35) 55%, rgba(8,18,52,.95) 100%); }
+.pwlock { position: absolute; z-index: 1; left: 50%; top: 42%; transform: translate(-50%, -50%); width: 62px; height: 62px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.14); box-shadow: inset 0 0 0 1px rgba(255,255,255,.3), 0 10px 30px rgba(0,0,0,.35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); color: #fff; }
+.pwlock svg { width: 28px; height: 28px; }
+.pwcap { position: absolute; z-index: 1; left: 16px; right: 16px; bottom: 12px; text-align: left; display: flex; flex-direction: column; gap: 3px; }
+.pwcap b { font-size: 15.5px; line-height: 1.3; color: #fff; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+.pwcap span { font-size: 12.5px; color: rgba(255,255,255,.75); }
 .pw { grid-column: 1 / -1; display: flex; flex-direction: column; align-items: stretch; text-align: center; padding: 18px 16px 6px; margin: 2px -2px 0; border-radius: 16px; background: linear-gradient(180deg, rgba(30,107,255,.16), rgba(30,107,255,.04)); box-shadow: inset 0 0 0 1px rgba(76,141,255,.35); }
 .pw .freeb { align-self: center; margin: 0 0 10px; }
 .pw h4 { margin: 0; font-size: 20px; line-height: 1.25; letter-spacing: -.02em; color: var(--fg); }
@@ -1579,8 +1589,11 @@ async function startJob(url) {
 }
 // paywall delle clip online: chi e' gratis vede il suo video riconosciuto, lo sblocca con la ricarica piu' piccola che basta, oppure si porta il link dell'app per il PC
 const ICO_OK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
-function pwHtml() {
-  return '<div class="pw"><span class="freeb">' + ICO_OK + esc(CV.pwBadge) + '</span><h4>' + esc(CV.pwT) + '</h4><p>' + esc(CV.pwD) + '</p>'
+function pwHtml(r) {
+  const lock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
+  return '<div class="pw"><div class="pwhero">' + (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '') + '<span class="pwlock">' + lock + '</span>'
+    + '<div class="pwcap"><b>' + esc(r.title || '') + '</b><span>' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</span></div></div>'
+    + '<span class="freeb">' + ICO_OK + esc(CV.pwBadge) + '</span><h4>' + esc(CV.pwT) + '</h4><p>' + esc(CV.pwD) + '</p>'
     + '<button class="btn btn-primary" id="pwbuy" type="button">' + esc(L.buy.wait) + '</button><p class="pwcr" id="pwcr"></p>'
     + '<button class="link pwplans" id="pwplans" type="button">' + esc(CV.pwPlans) + '</button>'
     + '<div class="pwor"><span>' + esc(CV.pwOr) + '</span></div>'
@@ -1635,7 +1648,7 @@ async function estimate(url) {
       + '<p class="cost"><b>' + esc(L.estT.replace('{c}', r.cost)) + '</b> · ' + esc(L.estHave.replace('{b}', r.balance)) + '</p></div>'
       + (r.enough ? settingsHtml(r.kind) : '')
       + (r.enough ? '<div class="acts"><button class="btn btn-primary" id="estgo" type="button">' + esc(L.estGo) + ' · ' + r.cost + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>'
-        : r.trialOut ? pwHtml()
+        : r.trialOut ? pwHtml(r)
         : '<p class="warn">' + esc(r.trialLong ? L.cv.trialLong : L.estShort) + '</p><div class="acts"><button class="btn btn-primary" id="estbuy" type="button">' + esc(L.buy.btn) + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>');
     box.classList.remove('hide'); setHint('');
     if (r.enough) { $('hero').classList.add('step2'); try { window.scrollTo({ top: 0, behavior: 'smooth' }); } catch (e) {} }
