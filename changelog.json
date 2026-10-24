@@ -1,5 +1,16 @@
 [
  {
+  "version": "1.6.0",
+  "date": "2026-10-24",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Aggiornamenti più sicuri: nuova chiave di firma",
+    "en": "Safer updates: new signing key"
+   }
+  ]
+ },
+ {
   "version": "1.5.191",
   "date": "2026-10-22",
   "items": [

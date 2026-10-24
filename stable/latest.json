@@ -1,13 +1,26 @@
 {
- "version": "1.5.191",
+ "version": "1.6.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.5.191.zip",
- "size": 11816412,
- "sha256": "6f7d283cc139d7f145a6b76de1ea6a15ec5a085ac871f1cd882a3b63eecb969b",
- "sig": "P/EQKIMx6R6IfcUbzbkrDP2/gEbEN+M/lMvLtNhRMihWFcBZEdZnLgdzqkgM56ULJ5EUqKBuHB5sI9Z8hYj5Bw==",
- "notes": "Miglioramento: Piani: lo sconto sul primo mese si vede e si applica su ogni piano, non solo sul primo",
- "date": "2026-10-22",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.6.0.zip",
+ "size": 11816593,
+ "sha256": "455940a0d3473fbf9c93628af36998fe1830885c5e5a8f8c91ebea0ef24ac812",
+ "sigs": {
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "SWwbmVzuQuKkma2gFl9QGnndg7NmLER0hOJM4fyB0PRJ0xqTxtPYqfC0AShtu3zr4Y5E7RFMLVTq7pfnkc4SBA=="
+ },
+ "notes": "Miglioramento: Aggiornamenti più sicuri: nuova chiave di firma",
+ "date": "2026-10-24",
  "history": [
+  {
+   "version": "1.6.0",
+   "date": "2026-10-24",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Aggiornamenti più sicuri: nuova chiave di firma",
+     "en": "Safer updates: new signing key"
+    }
+   ]
+  },
   {
    "version": "1.5.191",
    "date": "2026-10-22",
@@ -456,17 +469,7 @@
      "en": "Clip format: choose right away between the person full screen or the whole video with a blurred background, also for all existing clips. In podcasts and videos without a webcam, clips start full screen on the person, and automatic zooms become gentle push-ins on the face"
     }
    ]
-  },
-  {
-   "version": "1.5.157",
-   "date": "2026-10-05",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip virali: le anteprime non si rifanno più ogni volta che riapri la pagina, solo se la clip è cambiata davvero",
-     "en": "Viral clips: previews are no longer rebuilt every time you reopen the page, only when the clip actually changed"
-    }
-   ]
   }
- ]
+ ],
+ "sig": "rN6u4k8WZK16tHrmz0JK+qWd3UXTfoUA4KZWYzUpJMYZT2SWeCu0EfD6XpFc+VLHusVSAXqGMSDDG9bF/6SOAQ=="
 }
