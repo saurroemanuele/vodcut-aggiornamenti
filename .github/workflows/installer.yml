@@ -52,12 +52,14 @@ jobs:
         if: env.SKIP != '1'
         run: |
           mkdir -p prev
-          gh release download -R "$GITHUB_REPOSITORY" -p 'Noonframe-Setup.exe' -p 'Noonframe-Mac.zip' -D prev
+          # i nomi dei file sono cambiati nel tempo (Noonframe / NoonFrame): si prende quello che c'e'
+          gh release download -R "$GITHUB_REPOSITORY" -p '*-Setup.exe' -p '*-Mac.zip' -D prev
+          mv prev/*-Setup.exe prev/setup.exe && mv prev/*-Mac.zip prev/mac.zip
 
       - name: Installer Windows
         if: env.SKIP != '1'
         run: |
-          7z x prev/Noonframe-Setup.exe -obase -y >/dev/null
+          7z x prev/setup.exe -obase -y >/dev/null
           test -f base/python/python.exe && test -d base/ffmpeg
           mkdir -p w/installer w/offline
           mv base/python w/offline/python
@@ -72,16 +74,17 @@ jobs:
       - name: Pacchetto Mac
         if: env.SKIP != '1'
         run: |
-          mkdir mac && unzip -q prev/Noonframe-Mac.zip -d mac
-          APP=mac/Noonframe.app
+          mkdir mac && unzip -q prev/mac.zip -d mac
+          APP=$(ls -d mac/*.app | head -n 1)
           test -d "$APP/Contents/Resources/app"
           rm -rf "$APP/Contents/Resources/app"
           unzip -q app.zip -d "$APP/Contents/Resources/app"
           sed -i -E "s#(<key>CFBundle(Short)?VersionString</key><string>)[^<]*#\1$V#; s#(<key>CFBundleVersion</key><string>)[^<]*#\1$V#" "$APP/Contents/Info.plist"
-          (cd mac && zip -qry -9 ../out/Noonframe-Mac.zip Noonframe.app)
+          (cd mac && zip -qry -9 ../out/NoonFrame-Mac.zip "$(basename "$APP")")
 
       - name: Pubblica come ultima release
         if: env.SKIP != '1'
         run: |
-          gh release create "installer-$V" out/Noonframe-Setup.exe out/Noonframe-Mac.zip -R "$GITHUB_REPOSITORY" \
+          # stessi nomi dei link del sito: releases/latest/download/Noonframe-Setup.exe e NoonFrame-Mac.zip
+          gh release create "installer-$V" out/Noonframe-Setup.exe out/NoonFrame-Mac.zip -R "$GITHUB_REPOSITORY" \
             --title "NoonFrame $V" --notes "Installer di NoonFrame $V per Windows e Mac." --latest
