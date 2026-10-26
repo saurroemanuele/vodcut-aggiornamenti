@@ -60,7 +60,6 @@ body.top .pg { width: min(860px, 100%); height: min(720px, calc(100vh - 48px)); 
 .pg-or { display: flex; align-items: center; gap: 12px; margin: 16px 0 14px; font-size: 12px; color: var(--t2); }
 .pg-or::before, .pg-or::after { content: ""; flex: 1; height: 1px; background: var(--gline); }
 .pg-pe { min-height: 40px; }
-.pg-taxid { margin-top: 12px; }
 .pg-terms { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; padding: 12px; border-radius: 12px; border: 1px solid var(--gline); background: var(--glass); font-size: 12px; line-height: 1.5; color: var(--t2); cursor: pointer; }
 .pg-terms input { margin: 2px 0 0; width: 16px; height: 16px; accent-color: var(--ac); flex: none; cursor: pointer; }
 .pg-terms a { color: var(--tx); font-weight: 700; }

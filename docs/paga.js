@@ -7,14 +7,14 @@
   'use strict';
   var T = {
     it: { payment: 'Pagamento', total_today: 'Totale oggi', have_code: 'Hai un codice sconto?', code_ph: 'Codice sconto', apply: 'Applica', code_bad: 'Questo codice non esiste o è scaduto',
-      by_stripe: 'Pagamento gestito da Stripe', no_card_data: 'I dati della carta non passano dai server di NoonFrame.', or_card: 'oppure paga con la carta', need_vat: 'Mi serve la fattura con Partita IVA', no_vat: 'Niente fattura con Partita IVA',
+      by_stripe: 'Pagamento gestito da Stripe', no_card_data: 'I dati della carta non passano dai server di NoonFrame.', or_card: 'oppure paga con la carta',
       terms: 'Accetto i Termini di vendita. Chiedo di avere subito i crediti e so che, una volta usati, perdo il diritto di recesso di 14 giorni.', terms_link: 'Termini di vendita',
       pay_x: 'Paga {p}', renews_auto: 'Si rinnova da solo · disdici quando vuoi', one_time: 'Pagamento una tantum', sub_monthly: 'Abbonamento mensile', sub_yearly: 'Abbonamento annuale', topup: 'Ricarica',
       renews: 'Poi {p} ogni mese dal {date}. Disdici quando vuoi da Account: resta attivo fino a fine periodo.', renews_y: 'Poi {p} ogni anno dal {date}. Disdici quando vuoi da Account: resta attivo fino a fine periodo.',
       vat_incl: 'Prezzi IVA inclusa', vat_of: 'di cui IVA {r}%', discount: 'Codice {code}', processing: 'Pagamento in corso…', to_paypal: 'Ti porto su PayPal…', adding: 'Sto aggiungendo i crediti…', dont_close: 'Non chiudere NoonFrame',
       bank_title: 'Conferma il pagamento', bank_sub: 'Verifica della tua banca · 3D Secure', bank_text: 'Ti abbiamo mandato una notifica nell\'app della banca. Approva il pagamento di {p} a NoonFrame.', other_method: 'Annulla e scegli un altro metodo',
       welcome: 'Benvenuto in {plan}!', welcome_text: 'L\'abbonamento è attivo. L\'assistente AI e le Clip veloci senza logo sono già sbloccati.', added: 'Crediti aggiunti', added_text: 'Puoi usarli subito per l\'AI e le Clip veloci. Non scadono.',
-      got: '+{g} crediti · ora ne hai {n}', receipt: 'Ricevuta e fattura inviate a {email} · le trovi anche in Account', back_edit: 'Torna a montare',
+      got: '+{g} crediti · ora ne hai {n}', back_edit: 'Torna a montare',
       paypal_wait: 'Completa il pagamento nella finestra di PayPal', paypal_wait_t: 'Appena PayPal conferma, i crediti arrivano da soli.',
       err_declined: 'La carta è stata rifiutata', err_declined_t: 'La banca non ha autorizzato il pagamento. Prova un\'altra carta o un altro metodo: non ti abbiamo addebitato niente.',
       err_funds: 'Fondi insufficienti', err_funds_t: 'Sulla carta non c\'è abbastanza credito. Prova un\'altra carta o un altro metodo.',
@@ -25,14 +25,14 @@
       copy_details: 'Copia i dettagli per il supporto', copied: 'Copiato', test: 'Prova', card_number: 'Numero della carta', expiry: 'Scadenza', cvc: 'Codice di sicurezza', name_on_card: 'Nome sulla carta', zip: 'CAP',
       test_cards: 'Carte di prova: 4242 va a buon fine, 3184 chiede la banca, 0002 rifiutata, 9995 fondi insufficienti. Codice NOON20.' },
     en: { payment: 'Payment', total_today: 'Total today', have_code: 'Have a discount code?', code_ph: 'Discount code', apply: 'Apply', code_bad: 'This code doesn\'t exist or has expired',
-      by_stripe: 'Payment handled by Stripe', no_card_data: 'Card details never touch NoonFrame\'s servers.', or_card: 'or pay by card', need_vat: 'I need an invoice with a VAT number', no_vat: 'No VAT invoice',
+      by_stripe: 'Payment handled by Stripe', no_card_data: 'Card details never touch NoonFrame\'s servers.', or_card: 'or pay by card',
       terms: 'I accept the Terms of sale. I want the credits right away and understand that once used I lose the 14-day right of withdrawal.', terms_link: 'Terms of sale',
       pay_x: 'Pay {p}', renews_auto: 'Renews automatically · cancel anytime', one_time: 'One-time payment', sub_monthly: 'Monthly subscription', sub_yearly: 'Yearly subscription', topup: 'Top-up',
       renews: 'Then {p} every month from {date}. Cancel anytime in Account: it stays active until the end of the period.', renews_y: 'Then {p} every year from {date}. Cancel anytime in Account: it stays active until the end of the period.',
       vat_incl: 'Prices include VAT', vat_of: 'incl. {r}% VAT', discount: 'Code {code}', processing: 'Processing payment…', to_paypal: 'Taking you to PayPal…', adding: 'Adding your credits…', dont_close: 'Don\'t close NoonFrame',
       bank_title: 'Confirm the payment', bank_sub: 'Your bank\'s check · 3D Secure', bank_text: 'We sent a notification to your bank app. Approve the {p} payment to NoonFrame.', other_method: 'Cancel and choose another method',
       welcome: 'Welcome to {plan}!', welcome_text: 'Your subscription is active. The AI assistant and logo-free Quick clips are unlocked.', added: 'Credits added', added_text: 'Use them right away for AI and Quick clips. They never expire.',
-      got: '+{g} credits · you now have {n}', receipt: 'Receipt and invoice sent to {email} · also in Account', back_edit: 'Back to editing',
+      got: '+{g} credits · you now have {n}', back_edit: 'Back to editing',
       paypal_wait: 'Finish paying in the PayPal window', paypal_wait_t: 'As soon as PayPal confirms, your credits arrive on their own.',
       err_declined: 'Your card was declined', err_declined_t: 'Your bank didn\'t authorise the payment. Try another card or method: you haven\'t been charged.',
       err_funds: 'Insufficient funds', err_funds_t: 'There isn\'t enough credit on the card. Try another card or method.',
@@ -43,14 +43,14 @@
       copy_details: 'Copy details for support', copied: 'Copied', test: 'Test', card_number: 'Card number', expiry: 'Expiry', cvc: 'Security code', name_on_card: 'Name on card', zip: 'Postal code',
       test_cards: 'Test cards: 4242 succeeds, 3184 asks your bank, 0002 declined, 9995 insufficient funds. Code NOON20.' },
     fr: { payment: 'Paiement', total_today: 'Total aujourd\'hui', have_code: 'Tu as un code promo ?', code_ph: 'Code promo', apply: 'Appliquer', code_bad: 'Ce code n\'existe pas ou a expiré',
-      by_stripe: 'Paiement géré par Stripe', no_card_data: 'Les données de carte ne passent pas par les serveurs de NoonFrame.', or_card: 'ou paie par carte', need_vat: 'J\'ai besoin d\'une facture avec n° de TVA', no_vat: 'Pas de facture avec n° de TVA',
+      by_stripe: 'Paiement géré par Stripe', no_card_data: 'Les données de carte ne passent pas par les serveurs de NoonFrame.', or_card: 'ou paie par carte',
       terms: 'J\'accepte les Conditions de vente. Je demande les crédits tout de suite et je sais qu\'une fois utilisés, je perds le droit de rétractation de 14 jours.', terms_link: 'Conditions de vente',
       pay_x: 'Payer {p}', renews_auto: 'Renouvellement automatique · résilie quand tu veux', one_time: 'Paiement unique', sub_monthly: 'Abonnement mensuel', sub_yearly: 'Abonnement annuel', topup: 'Recharge',
       renews: 'Puis {p} chaque mois à partir du {date}. Résilie quand tu veux dans Compte : il reste actif jusqu\'à la fin de la période.', renews_y: 'Puis {p} chaque année à partir du {date}. Résilie quand tu veux dans Compte : il reste actif jusqu\'à la fin de la période.',
       vat_incl: 'Prix TTC', vat_of: 'dont TVA {r} %', discount: 'Code {code}', processing: 'Paiement en cours…', to_paypal: 'Je t\'emmène sur PayPal…', adding: 'J\'ajoute tes crédits…', dont_close: 'Ne ferme pas NoonFrame',
       bank_title: 'Confirme le paiement', bank_sub: 'Vérification de ta banque · 3D Secure', bank_text: 'Nous avons envoyé une notification dans l\'app de ta banque. Approuve le paiement de {p} à NoonFrame.', other_method: 'Annuler et choisir un autre moyen',
       welcome: 'Bienvenue dans {plan} !', welcome_text: 'L\'abonnement est actif. L\'assistant IA et les Clips rapides sans logo sont débloqués.', added: 'Crédits ajoutés', added_text: 'Utilise-les tout de suite pour l\'IA et les Clips rapides. Ils n\'expirent pas.',
-      got: '+{g} crédits · tu en as maintenant {n}', receipt: 'Reçu et facture envoyés à {email} · aussi dans Compte', back_edit: 'Retour au montage',
+      got: '+{g} crédits · tu en as maintenant {n}', back_edit: 'Retour au montage',
       paypal_wait: 'Termine le paiement dans la fenêtre PayPal', paypal_wait_t: 'Dès que PayPal confirme, les crédits arrivent tout seuls.',
       err_declined: 'Ta carte a été refusée', err_declined_t: 'Ta banque n\'a pas autorisé le paiement. Essaie une autre carte ou un autre moyen : rien n\'a été débité.',
       err_funds: 'Fonds insuffisants', err_funds_t: 'Le solde de la carte est insuffisant. Essaie une autre carte ou un autre moyen.',
@@ -61,14 +61,14 @@
       copy_details: 'Copier les détails pour le support', copied: 'Copié', test: 'Test', card_number: 'Numéro de carte', expiry: 'Expiration', cvc: 'Code de sécurité', name_on_card: 'Nom sur la carte', zip: 'Code postal',
       test_cards: 'Cartes de test : 4242 réussit, 3184 demande la banque, 0002 refusée, 9995 fonds insuffisants. Code NOON20.' },
     de: { payment: 'Zahlung', total_today: 'Heute fällig', have_code: 'Hast du einen Rabattcode?', code_ph: 'Rabattcode', apply: 'Anwenden', code_bad: 'Dieser Code existiert nicht oder ist abgelaufen',
-      by_stripe: 'Zahlung über Stripe', no_card_data: 'Kartendaten laufen nie über die Server von NoonFrame.', or_card: 'oder mit Karte zahlen', need_vat: 'Ich brauche eine Rechnung mit USt-IdNr.', no_vat: 'Keine Rechnung mit USt-IdNr.',
+      by_stripe: 'Zahlung über Stripe', no_card_data: 'Kartendaten laufen nie über die Server von NoonFrame.', or_card: 'oder mit Karte zahlen',
       terms: 'Ich akzeptiere die Verkaufsbedingungen. Ich möchte die Credits sofort und weiß, dass ich nach der Nutzung mein 14-tägiges Widerrufsrecht verliere.', terms_link: 'Verkaufsbedingungen',
       pay_x: '{p} bezahlen', renews_auto: 'Verlängert sich automatisch · jederzeit kündbar', one_time: 'Einmalzahlung', sub_monthly: 'Monatsabo', sub_yearly: 'Jahresabo', topup: 'Aufladung',
       renews: 'Danach {p} monatlich ab {date}. Jederzeit unter Konto kündbar: bleibt bis zum Ende des Zeitraums aktiv.', renews_y: 'Danach {p} jährlich ab {date}. Jederzeit unter Konto kündbar: bleibt bis zum Ende des Zeitraums aktiv.',
       vat_incl: 'Preise inkl. MwSt.', vat_of: 'inkl. {r} % MwSt.', discount: 'Code {code}', processing: 'Zahlung läuft…', to_paypal: 'Weiter zu PayPal…', adding: 'Credits werden hinzugefügt…', dont_close: 'NoonFrame nicht schließen',
       bank_title: 'Zahlung bestätigen', bank_sub: 'Prüfung deiner Bank · 3D Secure', bank_text: 'Wir haben eine Mitteilung an deine Banking-App geschickt. Bestätige die Zahlung von {p} an NoonFrame.', other_method: 'Abbrechen und andere Methode wählen',
       welcome: 'Willkommen bei {plan}!', welcome_text: 'Dein Abo ist aktiv. KI-Assistent und Schnelle Clips ohne Logo sind freigeschaltet.', added: 'Credits hinzugefügt', added_text: 'Sofort nutzbar für KI und Schnelle Clips. Sie verfallen nicht.',
-      got: '+{g} Credits · du hast jetzt {n}', receipt: 'Beleg und Rechnung an {email} gesendet · auch unter Konto', back_edit: 'Zurück zum Schneiden',
+      got: '+{g} Credits · du hast jetzt {n}', back_edit: 'Zurück zum Schneiden',
       paypal_wait: 'Schließ die Zahlung im PayPal-Fenster ab', paypal_wait_t: 'Sobald PayPal bestätigt, kommen die Credits von selbst.',
       err_declined: 'Deine Karte wurde abgelehnt', err_declined_t: 'Deine Bank hat die Zahlung nicht freigegeben. Versuch eine andere Karte oder Methode: Dir wurde nichts berechnet.',
       err_funds: 'Unzureichende Deckung', err_funds_t: 'Auf der Karte ist nicht genug Guthaben. Versuch eine andere Karte oder Methode.',
@@ -79,14 +79,14 @@
       copy_details: 'Details für den Support kopieren', copied: 'Kopiert', test: 'Test', card_number: 'Kartennummer', expiry: 'Ablaufdatum', cvc: 'Prüfnummer', name_on_card: 'Name auf der Karte', zip: 'PLZ',
       test_cards: 'Testkarten: 4242 klappt, 3184 fragt die Bank, 0002 abgelehnt, 9995 keine Deckung. Code NOON20.' },
     pt: { payment: 'Pagamento', total_today: 'Total hoje', have_code: 'Tem um código de desconto?', code_ph: 'Código de desconto', apply: 'Aplicar', code_bad: 'Este código não existe ou expirou',
-      by_stripe: 'Pagamento processado pela Stripe', no_card_data: 'Os dados do cartão não passam pelos servidores da NoonFrame.', or_card: 'ou pague com cartão', need_vat: 'Preciso de nota fiscal com CNPJ', no_vat: 'Sem nota fiscal com CNPJ',
+      by_stripe: 'Pagamento processado pela Stripe', no_card_data: 'Os dados do cartão não passam pelos servidores da NoonFrame.', or_card: 'ou pague com cartão',
       terms: 'Aceito os Termos de venda. Peço os créditos agora e sei que, depois de usados, perco o direito de arrependimento de 14 dias.', terms_link: 'Termos de venda',
       pay_x: 'Pagar {p}', renews_auto: 'Renova automaticamente · cancele quando quiser', one_time: 'Pagamento único', sub_monthly: 'Assinatura mensal', sub_yearly: 'Assinatura anual', topup: 'Recarga',
       renews: 'Depois {p} por mês a partir de {date}. Cancele quando quiser em Conta: fica ativa até o fim do período.', renews_y: 'Depois {p} por ano a partir de {date}. Cancele quando quiser em Conta: fica ativa até o fim do período.',
       vat_incl: 'Preços com impostos incluídos', vat_of: 'inclui {r}% de impostos', discount: 'Código {code}', processing: 'Processando o pagamento…', to_paypal: 'Levando você para o PayPal…', adding: 'Adicionando os créditos…', dont_close: 'Não feche o NoonFrame',
       bank_title: 'Confirme o pagamento', bank_sub: 'Verificação do seu banco · 3D Secure', bank_text: 'Enviamos uma notificação para o app do seu banco. Aprove o pagamento de {p} para a NoonFrame.', other_method: 'Cancelar e escolher outro método',
       welcome: 'Boas-vindas ao {plan}!', welcome_text: 'A assinatura está ativa. O assistente de IA e os Clips rápidos sem logo já estão liberados.', added: 'Créditos adicionados', added_text: 'Você já pode usá-los na IA e nos Clips rápidos. Eles não expiram.',
-      got: '+{g} créditos · agora você tem {n}', receipt: 'Recibo e nota enviados para {email} · também em Conta', back_edit: 'Voltar a editar',
+      got: '+{g} créditos · agora você tem {n}', back_edit: 'Voltar a editar',
       paypal_wait: 'Conclua o pagamento na janela do PayPal', paypal_wait_t: 'Assim que o PayPal confirmar, os créditos chegam sozinhos.',
       err_declined: 'O cartão foi recusado', err_declined_t: 'O banco não autorizou o pagamento. Tente outro cartão ou método: nada foi cobrado.',
       err_funds: 'Saldo insuficiente', err_funds_t: 'O cartão não tem saldo suficiente. Tente outro cartão ou método.',
@@ -97,14 +97,14 @@
       copy_details: 'Copiar os detalhes para o suporte', copied: 'Copiado', test: 'Teste', card_number: 'Número do cartão', expiry: 'Validade', cvc: 'Código de segurança', name_on_card: 'Nome no cartão', zip: 'CEP',
       test_cards: 'Cartões de teste: 4242 aprovado, 3184 pede o banco, 0002 recusado, 9995 saldo insuficiente. Código NOON20.' },
     es: { payment: 'Pago', total_today: 'Total hoy', have_code: '¿Tienes un código de descuento?', code_ph: 'Código de descuento', apply: 'Aplicar', code_bad: 'Este código no existe o ha caducado',
-      by_stripe: 'Pago gestionado por Stripe', no_card_data: 'Los datos de la tarjeta no pasan por los servidores de NoonFrame.', or_card: 'o paga con tarjeta', need_vat: 'Necesito factura con NIF/CIF', no_vat: 'Sin factura con NIF/CIF',
+      by_stripe: 'Pago gestionado por Stripe', no_card_data: 'Los datos de la tarjeta no pasan por los servidores de NoonFrame.', or_card: 'o paga con tarjeta',
       terms: 'Acepto los Términos de venta. Pido los créditos ya y sé que, una vez usados, pierdo el derecho de desistimiento de 14 días.', terms_link: 'Términos de venta',
       pay_x: 'Pagar {p}', renews_auto: 'Se renueva solo · cancela cuando quieras', one_time: 'Pago único', sub_monthly: 'Suscripción mensual', sub_yearly: 'Suscripción anual', topup: 'Recarga',
       renews: 'Después {p} cada mes desde el {date}. Cancela cuando quieras en Cuenta: sigue activo hasta el final del periodo.', renews_y: 'Después {p} cada año desde el {date}. Cancela cuando quieras en Cuenta: sigue activo hasta el final del periodo.',
       vat_incl: 'Precios con IVA incluido', vat_of: 'IVA {r} % incluido', discount: 'Código {code}', processing: 'Procesando el pago…', to_paypal: 'Te llevo a PayPal…', adding: 'Añadiendo los créditos…', dont_close: 'No cierres NoonFrame',
       bank_title: 'Confirma el pago', bank_sub: 'Verificación de tu banco · 3D Secure', bank_text: 'Te hemos enviado una notificación a la app del banco. Aprueba el pago de {p} a NoonFrame.', other_method: 'Cancelar y elegir otro método',
       welcome: '¡Bienvenido a {plan}!', welcome_text: 'La suscripción está activa. El asistente de IA y los Clips rápidos sin logo ya están desbloqueados.', added: 'Créditos añadidos', added_text: 'Puedes usarlos ya para la IA y los Clips rápidos. No caducan.',
-      got: '+{g} créditos · ahora tienes {n}', receipt: 'Recibo y factura enviados a {email} · también en Cuenta', back_edit: 'Volver a editar',
+      got: '+{g} créditos · ahora tienes {n}', back_edit: 'Volver a editar',
       paypal_wait: 'Termina el pago en la ventana de PayPal', paypal_wait_t: 'En cuanto PayPal confirme, los créditos llegan solos.',
       err_declined: 'Tu tarjeta ha sido rechazada', err_declined_t: 'Tu banco no ha autorizado el pago. Prueba otra tarjeta u otro método: no te hemos cobrado nada.',
       err_funds: 'Fondos insuficientes', err_funds_t: 'La tarjeta no tiene saldo suficiente. Prueba otra tarjeta u otro método.',
@@ -213,7 +213,7 @@
     var btn = el('button', 'btn', t('back_edit'));
     btn.addEventListener('click', function () { if (embed) tell('close'); else try { window.close(); } catch (e) { /* */ } });
     showState([c, el('h3', null, isPlan ? t('welcome', { plan: P.plan || P.name || 'NoonFrame' }) : t('added')), el('p', null, isPlan ? t('welcome_text') : t('added_text')), gotLine,
-      embed || !back ? btn : null]);   // (ricevuta e fattura: solo quando saranno attive su Stripe)
+      embed || !back ? btn : null]);
     tell('done', { kind: P.kind || '' });
     try { sessionStorage.removeItem('nf-pay'); } catch (e) { /* */ }
   }
@@ -229,7 +229,7 @@
   });
   $('x').addEventListener('click', function () { if (busy) return; if (embed) tell('close'); else try { window.close(); } catch (e) { /* */ } });
 
-  // ---------------------------------------------------------------- codice sconto e Partita IVA
+  // ---------------------------------------------------------------- codice sconto
   $('codeq').addEventListener('click', function () { $('code').hidden = false; $('codeq').hidden = true; $('codein').focus(); });
   var applyCode = null;   // (codice) => Promise<boolean>
   $('codego').addEventListener('click', function () {
@@ -239,13 +239,6 @@
     applyCode(v).then(function (ok) { $('codego').disabled = false; $('codeerr').hidden = ok; if (ok) $('codein').value = ''; });
   });
   $('codein').addEventListener('keydown', function (e) { if (e.key === 'Enter') $('codego').click(); });
-  var showTax = null;   // () => monta il campo della Partita IVA
-  $('vatq').addEventListener('click', function () {
-    var box = $('taxid'), on = box.hidden;
-    box.hidden = !on;
-    $('vatq').textContent = t(on ? 'no_vat' : 'need_vat');
-    if (on && showTax) { showTax(); showTax = null; }
-  });
 
   // ---------------------------------------------------------------- PayPal: nel foglio dell'app si apre la sua finestra
   if (embed && !paypalWin) {
@@ -259,7 +252,6 @@
       showState([el('div', 'pg-spin'), el('p', 'big', t('paypal_wait')), el('p', 'muted', t('paypal_wait_t')), cancel]);
     });
   }
-  if (paypalWin) $('vatq').hidden = true;
   $('or').hidden = $('paypal').hidden;   // "oppure paga con la carta" solo se sopra c'e' un altro modo di pagare
 
   // ritorno da PayPal (o da un'altra pagina della banca): il pagamento e' fatto, i crediti arrivano dal server
@@ -310,8 +302,6 @@
     var pe = checkout.createPaymentElement({ layout: 'tabs' });
     pe.mount('#pe');
     pe.on('ready', function () { $('pay').disabled = false; tell('ready'); });
-    // Partita IVA e ragione sociale (Stripe le mette in fattura)
-    showTax = function () { try { checkout.createTaxIdElement().mount('#taxid'); } catch (e) { $('vatq').hidden = true; $('taxid').hidden = true; } };
     var pay = async function () {
       clearErr();
       if (!paypalWin && !$('terms').checked) return fail('terms');
@@ -351,7 +341,6 @@
     field('expiry', { en: 'MM / YY', de: 'MM / JJ' }[LANG] || 'MM / AA', false, 'mexp'); field('cvc', 'CVC', false, 'mcvc');
     box.appendChild(el('p', 'hint', t('test_cards')));
     applyCode = function (code) { return new Promise(function (res) { setTimeout(function () { var ok = code.toUpperCase() === 'NOON20'; if (ok) { off = 0.2; paint(); } res(ok); }, 400); }); };
-    showTax = function () { var l = el('label', 'w'); var i = el('input'); i.placeholder = 'IT12345678901'; l.appendChild(i); $('taxid').appendChild(l); $('taxid').classList.add('pg-mock'); };
     paint();
     $('pay').disabled = false;
     tell('ready');
