@@ -194,12 +194,17 @@
   var errInfo = '';
   function fail(key, info) {
     hideState(); setBusy(false);
+    if (key === 'terms') {   // la casella e' accanto a Paga: la si evidenzia invece del riquadro d'errore
+      var l = $('termsl'); l.classList.remove('need'); void l.offsetWidth; l.classList.add('need');
+      $('terms').setAttribute('aria-invalid', 'true'); $('terms').focus(); return;
+    }
     $('errt').textContent = t('err_' + key); $('errx').textContent = t('err_' + key + '_t');
     errInfo = info || ''; $('copy').hidden = !errInfo; $('copy').textContent = t('copy_details');
     $('err').hidden = false;
     $('err').scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
   function clearErr() { $('err').hidden = true; }
+  $('terms').addEventListener('change', function () { $('termsl').classList.remove('need'); $('terms').removeAttribute('aria-invalid'); });
   $('copy').addEventListener('click', function () {
     var b = $('copy');
     (navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(errInfo) : Promise.reject()).then(function () { b.textContent = t('copied'); }, function () { b.textContent = errInfo; });
