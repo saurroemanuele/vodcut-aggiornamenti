@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<!-- pagamento sicuro di NoonFrame: il modulo della carta e' di Stripe (Stripe.js), i dati della carta non passano da noi -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://*.js.stripe.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.stripe.com; font-src 'self' data:; connect-src https://api.stripe.com https://*.stripe.com; frame-src https://js.stripe.com https://*.js.stripe.com https://hooks.stripe.com https://*.stripe.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>NoonFrame · Pagamento</title>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="paga.css">
+<script src="paga.js" defer></script>
+</head>
+<body>
+<div class="pg" id="pg">
+  <aside class="pg-l">
+    <div class="pg-brand"><img src="logo.png" alt=""><span>NoonFrame</span><em class="pg-test" id="test" hidden data-t="test">Prova</em></div>
+    <div class="pg-kind" id="kind"></div>
+    <h1 class="pg-name" id="name"></h1>
+    <div class="pg-det" id="det"></div>
+    <div class="pg-rows" id="rows"></div>
+    <div class="pg-tot"><span data-t="total_today">Totale oggi</span><b id="total"></b></div>
+    <p class="pg-renew" id="renew" hidden></p>
+    <button type="button" class="pg-link" id="codeq" data-t="have_code">Hai un codice sconto?</button>
+    <div class="pg-code" id="code" hidden>
+      <input id="codein" autocomplete="off" spellcheck="false" maxlength="40" data-tp="code_ph">
+      <button type="button" id="codego" data-t="apply">Applica</button>
+    </div>
+    <p class="pg-code-err" id="codeerr" hidden data-t="code_bad">Questo codice non esiste o è scaduto</p>
+    <div class="pg-grow"></div>
+    <div class="pg-foot"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span data-t="by_stripe">Pagamento gestito da Stripe</span></div>
+    <p class="pg-foot2" data-t="no_card_data">I dati della carta non passano dai server di NoonFrame.</p>
+  </aside>
+  <main class="pg-r">
+    <header class="pg-h"><h2 data-t="payment">Pagamento</h2><button type="button" class="pg-x" id="x" aria-label="Chiudi"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
+    <div class="pg-scroll" id="scroll">
+      <div class="pg-express" id="express">
+        <button type="button" class="pg-paypal" id="paypal" hidden aria-label="PayPal"><b>Pay</b><i>Pal</i></button>
+        <div id="ece"></div>
+      </div>
+      <div class="pg-or" id="or"><span data-t="or_card">oppure paga con la carta</span></div>
+      <div id="pe" class="pg-pe"></div>
+      <div id="mockpe" class="pg-mock" hidden></div>
+      <button type="button" class="pg-link" id="vatq" data-t="need_vat">Mi serve la fattura con Partita IVA</button>
+      <div id="taxid" class="pg-taxid" hidden></div>
+      <label class="pg-terms"><input type="checkbox" id="terms"><span id="termst"></span></label>
+      <div class="pg-err" id="err" hidden><b id="errt"></b><span id="errx"></span><button type="button" class="pg-copy" id="copy" hidden data-t="copy_details">Copia i dettagli per il supporto</button></div>
+    </div>
+    <footer class="pg-f">
+      <button type="button" class="pg-pay" id="pay" disabled><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span id="payt"></span></button>
+      <small id="payn"></small>
+    </footer>
+  </main>
+  <div class="pg-state" id="state" hidden></div>
+</div>
+</body>
+</html>
