@@ -21,7 +21,7 @@
       err_3ds_no: 'La banca ha rifiutato il pagamento', err_3ds_no_t: 'Non ti abbiamo addebitato niente. Prova un altro metodo o contatta la banca.',
       err_3ds_time: 'La banca non ha confermato in tempo', err_3ds_time_t: 'Il pagamento è stato annullato e non ti è stato addebitato niente. Riprova o usa un altro metodo.',
       err_check: 'Controlla i dati della carta', err_check_t: 'Numero, scadenza e codice di sicurezza devono essere completi.', err_terms: 'Accetta i Termini di vendita', err_terms_t: 'Spunta la casella qui sopra prima di pagare.',
-      err_load: 'Il pagamento non si è aperto', err_load_t: 'Chiudi e riprova tra un attimo: non ti abbiamo addebitato niente.', err_expired: 'Il pagamento è scaduto', err_expired_t: 'Chiudi e riprova: non ti abbiamo addebitato niente.',
+      err_load: 'Il pagamento non si è aperto', err_load_t: 'Chiudi e riprova tra un attimo: non ti abbiamo addebitato niente.', err_expired: 'Il pagamento è scaduto', err_expired_t: 'Chiudi e riprova: non ti abbiamo addebitato niente.', err_pp: 'PayPal non ha confermato il pagamento', err_pp_t: 'Non ti abbiamo addebitato niente. Riprova con PayPal, oppure chiudi questa finestra e paga con la carta.', checking: 'Controllo il pagamento…',
       copy_details: 'Copia i dettagli per il supporto', copied: 'Copiato', test: 'Prova', card_number: 'Numero della carta', expiry: 'Scadenza', cvc: 'Codice di sicurezza', name_on_card: 'Nome sulla carta', zip: 'CAP',
       test_cards: 'Carte di prova: 4242 va a buon fine, 3184 chiede la banca, 0002 rifiutata, 9995 fondi insufficienti. Codice NOON20.' },
     en: { payment: 'Payment', total_today: 'Total today', have_code: 'Have a discount code?', code_ph: 'Discount code', apply: 'Apply', code_bad: 'This code doesn\'t exist or has expired',
@@ -39,7 +39,7 @@
       err_3ds_no: 'Your bank rejected the payment', err_3ds_no_t: 'You haven\'t been charged. Try another method or contact your bank.',
       err_3ds_time: 'Your bank didn\'t confirm in time', err_3ds_time_t: 'The payment was cancelled and you haven\'t been charged. Try again or use another method.',
       err_check: 'Check your card details', err_check_t: 'Number, expiry and security code must be complete.', err_terms: 'Accept the Terms of sale', err_terms_t: 'Tick the box above before paying.',
-      err_load: 'The payment didn\'t open', err_load_t: 'Close and try again in a moment: you haven\'t been charged.', err_expired: 'The payment has expired', err_expired_t: 'Close and try again: you haven\'t been charged.',
+      err_load: 'The payment didn\'t open', err_load_t: 'Close and try again in a moment: you haven\'t been charged.', err_expired: 'The payment has expired', err_expired_t: 'Close and try again: you haven\'t been charged.', err_pp: 'PayPal didn\'t confirm the payment', err_pp_t: 'You haven\'t been charged. Try PayPal again, or close this window and pay by card.', checking: 'Checking the payment…',
       copy_details: 'Copy details for support', copied: 'Copied', test: 'Test', card_number: 'Card number', expiry: 'Expiry', cvc: 'Security code', name_on_card: 'Name on card', zip: 'Postal code',
       test_cards: 'Test cards: 4242 succeeds, 3184 asks your bank, 0002 declined, 9995 insufficient funds. Code NOON20.' },
     fr: { payment: 'Paiement', total_today: 'Total aujourd\'hui', have_code: 'Tu as un code promo ?', code_ph: 'Code promo', apply: 'Appliquer', code_bad: 'Ce code n\'existe pas ou a expiré',
@@ -57,7 +57,7 @@
       err_3ds_no: 'Ta banque a refusé le paiement', err_3ds_no_t: 'Rien n\'a été débité. Essaie un autre moyen ou contacte ta banque.',
       err_3ds_time: 'Ta banque n\'a pas confirmé à temps', err_3ds_time_t: 'Le paiement a été annulé et rien n\'a été débité. Réessaie ou utilise un autre moyen.',
       err_check: 'Vérifie les données de la carte', err_check_t: 'Numéro, date d\'expiration et code de sécurité doivent être complets.', err_terms: 'Accepte les Conditions de vente', err_terms_t: 'Coche la case ci-dessus avant de payer.',
-      err_load: 'Le paiement ne s\'est pas ouvert', err_load_t: 'Ferme et réessaie dans un instant : rien n\'a été débité.', err_expired: 'Le paiement a expiré', err_expired_t: 'Ferme et réessaie : rien n\'a été débité.',
+      err_load: 'Le paiement ne s\'est pas ouvert', err_load_t: 'Ferme et réessaie dans un instant : rien n\'a été débité.', err_expired: 'Le paiement a expiré', err_expired_t: 'Ferme et réessaie : rien n\'a été débité.', err_pp: 'PayPal n\'a pas confirmé le paiement', err_pp_t: 'Rien n\'a été débité. Réessaie avec PayPal, ou ferme cette fenêtre et paie par carte.', checking: 'Je vérifie le paiement…',
       copy_details: 'Copier les détails pour le support', copied: 'Copié', test: 'Test', card_number: 'Numéro de carte', expiry: 'Expiration', cvc: 'Code de sécurité', name_on_card: 'Nom sur la carte', zip: 'Code postal',
       test_cards: 'Cartes de test : 4242 réussit, 3184 demande la banque, 0002 refusée, 9995 fonds insuffisants. Code NOON20.' },
     de: { payment: 'Zahlung', total_today: 'Heute fällig', have_code: 'Hast du einen Rabattcode?', code_ph: 'Rabattcode', apply: 'Anwenden', code_bad: 'Dieser Code existiert nicht oder ist abgelaufen',
@@ -75,7 +75,7 @@
       err_3ds_no: 'Deine Bank hat die Zahlung abgelehnt', err_3ds_no_t: 'Dir wurde nichts berechnet. Versuch eine andere Methode oder kontaktiere deine Bank.',
       err_3ds_time: 'Deine Bank hat nicht rechtzeitig bestätigt', err_3ds_time_t: 'Die Zahlung wurde abgebrochen, dir wurde nichts berechnet. Versuch es erneut oder nutze eine andere Methode.',
       err_check: 'Prüf deine Kartendaten', err_check_t: 'Nummer, Ablaufdatum und Prüfnummer müssen vollständig sein.', err_terms: 'Akzeptiere die Verkaufsbedingungen', err_terms_t: 'Hak das Kästchen oben an, bevor du zahlst.',
-      err_load: 'Die Zahlung hat sich nicht geöffnet', err_load_t: 'Schließ und versuch es gleich noch einmal: Dir wurde nichts berechnet.', err_expired: 'Die Zahlung ist abgelaufen', err_expired_t: 'Schließ und versuch es erneut: Dir wurde nichts berechnet.',
+      err_load: 'Die Zahlung hat sich nicht geöffnet', err_load_t: 'Schließ und versuch es gleich noch einmal: Dir wurde nichts berechnet.', err_expired: 'Die Zahlung ist abgelaufen', err_expired_t: 'Schließ und versuch es erneut: Dir wurde nichts berechnet.', err_pp: 'PayPal hat die Zahlung nicht bestätigt', err_pp_t: 'Dir wurde nichts berechnet. Versuch es noch einmal mit PayPal oder schließ dieses Fenster und zahl mit Karte.', checking: 'Zahlung wird geprüft…',
       copy_details: 'Details für den Support kopieren', copied: 'Kopiert', test: 'Test', card_number: 'Kartennummer', expiry: 'Ablaufdatum', cvc: 'Prüfnummer', name_on_card: 'Name auf der Karte', zip: 'PLZ',
       test_cards: 'Testkarten: 4242 klappt, 3184 fragt die Bank, 0002 abgelehnt, 9995 keine Deckung. Code NOON20.' },
     pt: { payment: 'Pagamento', total_today: 'Total hoje', have_code: 'Tem um código de desconto?', code_ph: 'Código de desconto', apply: 'Aplicar', code_bad: 'Este código não existe ou expirou',
@@ -93,7 +93,7 @@
       err_3ds_no: 'O banco recusou o pagamento', err_3ds_no_t: 'Nada foi cobrado. Tente outro método ou fale com o seu banco.',
       err_3ds_time: 'O banco não confirmou a tempo', err_3ds_time_t: 'O pagamento foi cancelado e nada foi cobrado. Tente de novo ou use outro método.',
       err_check: 'Confira os dados do cartão', err_check_t: 'Número, validade e código de segurança precisam estar completos.', err_terms: 'Aceite os Termos de venda', err_terms_t: 'Marque a caixa acima antes de pagar.',
-      err_load: 'O pagamento não abriu', err_load_t: 'Feche e tente de novo daqui a pouco: nada foi cobrado.', err_expired: 'O pagamento expirou', err_expired_t: 'Feche e tente de novo: nada foi cobrado.',
+      err_load: 'O pagamento não abriu', err_load_t: 'Feche e tente de novo daqui a pouco: nada foi cobrado.', err_expired: 'O pagamento expirou', err_expired_t: 'Feche e tente de novo: nada foi cobrado.', err_pp: 'O PayPal não confirmou o pagamento', err_pp_t: 'Nada foi cobrado. Tente de novo com o PayPal ou feche esta janela e pague com cartão.', checking: 'Verificando o pagamento…',
       copy_details: 'Copiar os detalhes para o suporte', copied: 'Copiado', test: 'Teste', card_number: 'Número do cartão', expiry: 'Validade', cvc: 'Código de segurança', name_on_card: 'Nome no cartão', zip: 'CEP',
       test_cards: 'Cartões de teste: 4242 aprovado, 3184 pede o banco, 0002 recusado, 9995 saldo insuficiente. Código NOON20.' },
     es: { payment: 'Pago', total_today: 'Total hoy', have_code: '¿Tienes un código de descuento?', code_ph: 'Código de descuento', apply: 'Aplicar', code_bad: 'Este código no existe o ha caducado',
@@ -111,7 +111,7 @@
       err_3ds_no: 'Tu banco ha rechazado el pago', err_3ds_no_t: 'No te hemos cobrado nada. Prueba otro método o contacta con tu banco.',
       err_3ds_time: 'Tu banco no ha confirmado a tiempo', err_3ds_time_t: 'El pago se ha cancelado y no te hemos cobrado nada. Vuelve a intentarlo o usa otro método.',
       err_check: 'Revisa los datos de la tarjeta', err_check_t: 'Número, caducidad y código de seguridad deben estar completos.', err_terms: 'Acepta los Términos de venta', err_terms_t: 'Marca la casilla de arriba antes de pagar.',
-      err_load: 'El pago no se ha abierto', err_load_t: 'Cierra y vuelve a intentarlo en un momento: no te hemos cobrado nada.', err_expired: 'El pago ha caducado', err_expired_t: 'Cierra y vuelve a intentarlo: no te hemos cobrado nada.',
+      err_load: 'El pago no se ha abierto', err_load_t: 'Cierra y vuelve a intentarlo en un momento: no te hemos cobrado nada.', err_expired: 'El pago ha caducado', err_expired_t: 'Cierra y vuelve a intentarlo: no te hemos cobrado nada.', err_pp: 'PayPal no ha confirmado el pago', err_pp_t: 'No te hemos cobrado nada. Vuelve a intentarlo con PayPal o cierra esta ventana y paga con tarjeta.', checking: 'Comprobando el pago…',
       copy_details: 'Copiar los detalles para soporte', copied: 'Copiado', test: 'Prueba', card_number: 'Número de tarjeta', expiry: 'Caducidad', cvc: 'Código de seguridad', name_on_card: 'Nombre en la tarjeta', zip: 'Código postal',
       test_cards: 'Tarjetas de prueba: 4242 funciona, 3184 pide el banco, 0002 rechazada, 9995 fondos insuficientes. Código NOON20.' },
   };
@@ -259,8 +259,12 @@
   }
   $('or').hidden = $('paypal').hidden;   // "oppure paga con la carta" solo se sopra c'e' un altro modo di pagare
 
-  // ritorno da PayPal (o da un'altra pagina della banca): il pagamento e' fatto, i crediti arrivano dal server
-  if (back) { done(); return; }
+  // ritorno da PayPal (o da un'altra pagina della banca): Stripe riporta qui anche quando il pagamento NON e' andato
+  // (annullato o rifiutato su PayPal). Prima si chiede a Stripe lo stato vero: completato = fatto; se no lo si dice e si
+  // puo' riprovare (senza ripartire da solo verso PayPal). Pagine aperte prima di questa versione (senza i dati): come prima
+  var recheck = back && !!P.cs && !!P.pk;
+  if (back && !recheck) { done(); return; }
+  if (recheck) spinning(t('checking'));
   if (!P.cs && !mock) { fail('load'); $('pay').disabled = true; return; }
 
   // ---------------------------------------------------------------- prove senza Stripe (mock=1): le carte di prova del mockup
@@ -291,6 +295,10 @@
     var lr = await checkout.loadActions();
     if (lr.type !== 'success') return fail('load', (lr.error && lr.error.message) || 'loadActions');
     var actions = lr.actions;
+    if (recheck) {
+      var s0 = actions.getSession(), st0 = s0 && s0.status && s0.status.type;
+      if (st0 !== 'complete' && st0 !== 'expired') { hideState(); fail('pp', [st0 || 'open', s0 && s0.id].filter(Boolean).join(' · ')); }
+    }
     var paint = function (ss) {
       if (!ss) return;
       if (ss.status && ss.status.type === 'expired') return fail('expired');
@@ -315,7 +323,8 @@
       setBusy(true);
       spinning(paypalWin ? t('to_paypal') : t('processing'), t('dont_close'));
       // PayPal (finestra a parte) va sulla sua pagina; la carta resta qui (3D Secure compreso, lo mostra Stripe)
-      if (paypalWin) { try { sessionStorage.setItem('nf-pay', JSON.stringify({ lang: P.lang, theme: P.theme, kind: P.kind, name: P.name, plan: P.plan, period: P.period, email: P.email })); } catch (e) { /* */ } }
+      // al ritorno da PayPal servono anche la sessione e la chiave pubblica, per chiedere a Stripe com'e' andata
+      if (paypalWin) { try { sessionStorage.setItem('nf-pay', JSON.stringify({ lang: P.lang, theme: P.theme, kind: P.kind, name: P.name, plan: P.plan, period: P.period, email: P.email, cs: P.cs, pk: P.pk, method: P.method })); } catch (e) { /* */ } }
       var r = await actions.confirm(paypalWin ? {} : { redirect: 'if_required' });
       if (r && r.type === 'error') {
         var e = r.error || {}, code = String(e.code || ''), dc = String(e.declineCode || e.decline_code || '');
@@ -326,7 +335,7 @@
     };
     $('pay').addEventListener('click', function () { if (!busy) pay().catch(function (e) { fail('declined', String(e && e.message || e)); }); });
     // finestra di PayPal: i Termini li hai gia' accettati nel foglio, si va subito su PayPal
-    if (paypalWin) pe.on('ready', function () { pay().catch(function (e) { fail('declined', String(e && e.message || e)); }); });
+    if (paypalWin && !recheck) pe.on('ready', function () { pay().catch(function (e) { fail('declined', String(e && e.message || e)); }); });
   }
 
   // ---------------------------------------------------------------- modalita' prova senza Stripe
