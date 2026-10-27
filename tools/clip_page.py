@@ -111,7 +111,7 @@ JS = {
         "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"},
         "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO",
         "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
-        "v2": {"signin": "Accedi", "signup": "Registrati", "styleBtn": "Il mio stile", "styAuto": "Stile automatico", "styAutoC": "Automatico", "styNew": "Crea il tuo", "styPop": "Stile delle clip", "styManage": "Gestisci", "styFoot": "Momenti, tagli e zoom li sceglie sempre NoonFrame. Lo stile decide solo come appaiono le clip.", "styAutoD": "Ci pensa NoonFrame: sottotitoli gialli in stile Classico e titolo d'apertura. Va bene per quasi tutti i video.", "styNewBtn": "Crea il tuo stile", "styMineD": "Le modifiche si salvano da sole e valgono per le prossime clip, su questo dispositivo.", "styDel": "Elimina il mio stile", "webPrice": "Dal browser: da {p}, oppure con un piano · Gratis nell'app", "free": "Gratis", "hrs": "≈ {n} ore", "hr1": "≈ 1 ora", "mins": "≈ {n} min", "ofLive": "di live", "ofLiveMo": "di live al mese", "sbUp": "Passa a {p}", "sbTop": "Ricarica", "sbHrs": "{h} di live dal web", "recent": "Recenti", "nClips": "{n} clip", "newLink": "Nuovo link", "dlAll": "Scarica tutte", "sorted": "Ordinate per punteggio: quanto la clip può funzionare da sola", "expIn": "Scade tra {n} giorni", "expTom": "Scade domani", "expToday": "Scade oggi", "delIn": "Si cancella tra {n} giorni", "delTom": "Si cancella domani", "delToday": "Si cancella oggi", "projEmpty": "Qui trovi le live che trasformi in clip. Incolla il primo link dalla Home.", "projGo": "Vai alla Home", "projIn": "Accedi per vedere i tuoi progetti.", "stepDone": "fatto", "untitled": "Video senza titolo", "plansT": "Crediti e piani", "plansD": "Sul web trovare le clip costa circa {n} crediti per ogni ora di live. Nell'app sul computer costa molto meno.", "meT": "Il tuo piano", "meFree": "Con un piano hai crediti nuovi ogni mese", "meNext": "Crediti nuovi ogni mese", "subsT": "Abbonamenti", "subsD": "Crediti nuovi ogni mese. Disdici quando vuoi.", "monthly": "Mensile", "yearly": "Annuale", "freeMo": "{n} mesi gratis", "crMo": "{n} crediti al mese", "billM": "Fatturato ogni mese", "billY": "{p} fatturati ogni anno", "firstMo": "il primo mese, poi {p}", "goTo": "Passa a {p}", "current": "Piano attuale", "popular": "Il più scelto", "mine": "Il tuo piano", "packsT": "Ricarica crediti", "packsD": "Una tantum, senza abbonamento. I crediti ricaricati non scadono.", "packCr": "{n} crediti · non scadono", "per100": "{p} ogni 100", "best": "Il migliore", "conv": "Conviene", "rule": "1 ora di live ≈ {n} crediti", "secure": "Pagamento sicuro con Stripe", "vat": "Prezzi IVA inclusa", "anytime": "Disdici quando vuoi", "manage": "Gestisci abbonamento", "perMo": "/mese", "pay": "Pagamento", "payFail": "Il pagamento non si è aperto", "payFailD": "Controlla la connessione e riprova: non ti abbiamo addebitato niente.", "close": "Chiudi", "payGot": "Pagamento ricevuto: i crediti arrivano tra qualche secondo", "planOn": "Piano attivo: {p}", "plusCr": "+{n} crediti", "paypalNo": "PayPal non è disponibile: paga con la carta", "payNo": "Pagamento non avviato: riprova"},
+        "v2": {"peekPay": "Per questo video basta la ricarica da {p}, oppure un piano. Gratis lo fai con NoonFrame sul computer.", "sbLock": "Le clip dal web si sbloccano da {p}. Nell'app per computer sono gratis.", "sbUnlock": "Sblocca da {p}", "signin": "Accedi", "signup": "Registrati", "styleBtn": "Il mio stile", "styAuto": "Stile automatico", "styAutoC": "Automatico", "styNew": "Crea il tuo", "styPop": "Stile delle clip", "styManage": "Gestisci", "styFoot": "Momenti, tagli e zoom li sceglie sempre NoonFrame. Lo stile decide solo come appaiono le clip.", "styAutoD": "Ci pensa NoonFrame: sottotitoli gialli in stile Classico e titolo d'apertura. Va bene per quasi tutti i video.", "styNewBtn": "Crea il tuo stile", "styMineD": "Le modifiche si salvano da sole e valgono per le prossime clip, su questo dispositivo.", "styDel": "Elimina il mio stile", "webPrice": "Dal browser: da {p}, oppure con un piano · Gratis nell'app", "free": "Gratis", "hrs": "≈ {n} ore", "hr1": "≈ 1 ora", "mins": "≈ {n} min", "ofLive": "di live", "ofLiveMo": "di live al mese", "sbUp": "Passa a {p}", "sbTop": "Ricarica", "sbHrs": "{h} di live dal web", "recent": "Recenti", "nClips": "{n} clip", "newLink": "Nuovo link", "dlAll": "Scarica tutte", "sorted": "Ordinate per punteggio: quanto la clip può funzionare da sola", "expIn": "Scade tra {n} giorni", "expTom": "Scade domani", "expToday": "Scade oggi", "delIn": "Si cancella tra {n} giorni", "delTom": "Si cancella domani", "delToday": "Si cancella oggi", "projEmpty": "Qui trovi le live che trasformi in clip. Incolla il primo link dalla Home.", "projGo": "Vai alla Home", "projIn": "Accedi per vedere i tuoi progetti.", "stepDone": "fatto", "untitled": "Video senza titolo", "plansT": "Crediti e piani", "plansD": "Sul web trovare le clip costa circa {n} crediti per ogni ora di live. Nell'app sul computer costa molto meno.", "meT": "Il tuo piano", "meFree": "Con un piano hai crediti nuovi ogni mese", "meNext": "Crediti nuovi ogni mese", "subsT": "Abbonamenti", "subsD": "Crediti nuovi ogni mese. Disdici quando vuoi.", "monthly": "Mensile", "yearly": "Annuale", "freeMo": "{n} mesi gratis", "crMo": "{n} crediti al mese", "billM": "Fatturato ogni mese", "billY": "{p} fatturati ogni anno", "firstMo": "il primo mese, poi {p}", "goTo": "Passa a {p}", "current": "Piano attuale", "popular": "Il più scelto", "mine": "Il tuo piano", "packsT": "Ricarica crediti", "packsD": "Una tantum, senza abbonamento. I crediti ricaricati non scadono.", "packCr": "{n} crediti · non scadono", "per100": "{p} ogni 100", "best": "Il migliore", "conv": "Conviene", "rule": "1 ora di live ≈ {n} crediti", "secure": "Pagamento sicuro con Stripe", "vat": "Prezzi IVA inclusa", "anytime": "Disdici quando vuoi", "manage": "Gestisci abbonamento", "perMo": "/mese", "pay": "Pagamento", "payFail": "Il pagamento non si è aperto", "payFailD": "Controlla la connessione e riprova: non ti abbiamo addebitato niente.", "close": "Chiudi", "payGot": "Pagamento ricevuto: i crediti arrivano tra qualche secondo", "planOn": "Piano attivo: {p}", "plusCr": "+{n} crediti", "paypalNo": "PayPal non è disponibile: paga con la carta", "payNo": "Pagamento non avviato: riprova"},
     },
     "en": {
         "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "twChan": "This is the channel link: on Twitch open the finished stream (in the Videos section) and copy the replay link, like twitch.tv/videos/….", "twClip": "This is a Twitch clip: we need the link to the whole stream, like twitch.tv/videos/….", "kickChan": "This is the channel link: on Kick open the finished stream among the channel's videos and copy its link, like kick.com/channel/videos/….", "kickClip": "This is a Kick clip: we need the link to the whole stream, like kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h",
@@ -146,7 +146,7 @@ JS = {
         "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"},
         "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT",
         "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime.",
-        "v2": {"signin": "Log in", "signup": "Sign up", "styleBtn": "My style", "styAuto": "Automatic style", "styAutoC": "Automatic", "styNew": "Create yours", "styPop": "Clip style", "styManage": "Manage", "styFoot": "NoonFrame always picks the moments, cuts and zooms. The style only decides how your clips look.", "styAutoD": "NoonFrame takes care of it: yellow Classic captions and an opening title. It works for almost every video.", "styNewBtn": "Create your style", "styMineD": "Changes save on their own and apply to your next clips on this device.", "styDel": "Delete my style", "webPrice": "In the browser: from {p}, or with a plan · Free in the app", "free": "Free", "hrs": "≈ {n} hours", "hr1": "≈ 1 hour", "mins": "≈ {n} min", "ofLive": "of streams", "ofLiveMo": "of streams a month", "sbUp": "Switch to {p}", "sbTop": "Top up", "sbHrs": "{h} of streams on the web", "recent": "Recent", "nClips": "{n} clips", "newLink": "New link", "dlAll": "Download all", "sorted": "Sorted by score: how well the clip can work on its own", "expIn": "Expires in {n} days", "expTom": "Expires tomorrow", "expToday": "Expires today", "delIn": "Deletes in {n} days", "delTom": "Deletes tomorrow", "delToday": "Deletes today", "projEmpty": "Streams you turn into clips show up here. Paste your first link on Home.", "projGo": "Go to Home", "projIn": "Sign in to see your projects.", "stepDone": "done", "untitled": "Untitled video", "plansT": "Credits and plans", "plansD": "On the web, finding clips costs about {n} credits per hour of stream. In the desktop app it costs much less.", "meT": "Your plan", "meFree": "With a plan you get fresh credits every month", "meNext": "Fresh credits every month", "subsT": "Subscriptions", "subsD": "Fresh credits every month. Cancel anytime.", "monthly": "Monthly", "yearly": "Yearly", "freeMo": "{n} months free", "crMo": "{n} credits a month", "billM": "Billed monthly", "billY": "{p} billed yearly", "firstMo": "for the first month, then {p}", "goTo": "Switch to {p}", "current": "Current plan", "popular": "Most popular", "mine": "Your plan", "packsT": "Top up credits", "packsD": "One-time, no subscription. Top-up credits never expire.", "packCr": "{n} credits · never expire", "per100": "{p} per 100", "best": "Best value", "conv": "Good deal", "rule": "1 stream hour ≈ {n} credits", "secure": "Secure payment with Stripe", "vat": "Prices include VAT", "anytime": "Cancel anytime", "manage": "Manage subscription", "perMo": "/mo", "pay": "Payment", "payFail": "The payment didn't open", "payFailD": "Check your connection and try again: you haven't been charged.", "close": "Close", "payGot": "Payment received: your credits arrive in a few seconds", "planOn": "Plan active: {p}", "plusCr": "+{n} credits", "paypalNo": "PayPal isn't available: pay by card", "payNo": "Payment didn't start: try again"},
+        "v2": {"peekPay": "A {p} top-up covers this video, or pick a plan. It's free with NoonFrame on your computer.", "sbLock": "Web clips unlock from {p}. They're free in the desktop app.", "sbUnlock": "Unlock from {p}", "signin": "Log in", "signup": "Sign up", "styleBtn": "My style", "styAuto": "Automatic style", "styAutoC": "Automatic", "styNew": "Create yours", "styPop": "Clip style", "styManage": "Manage", "styFoot": "NoonFrame always picks the moments, cuts and zooms. The style only decides how your clips look.", "styAutoD": "NoonFrame takes care of it: yellow Classic captions and an opening title. It works for almost every video.", "styNewBtn": "Create your style", "styMineD": "Changes save on their own and apply to your next clips on this device.", "styDel": "Delete my style", "webPrice": "In the browser: from {p}, or with a plan · Free in the app", "free": "Free", "hrs": "≈ {n} hours", "hr1": "≈ 1 hour", "mins": "≈ {n} min", "ofLive": "of streams", "ofLiveMo": "of streams a month", "sbUp": "Switch to {p}", "sbTop": "Top up", "sbHrs": "{h} of streams on the web", "recent": "Recent", "nClips": "{n} clips", "newLink": "New link", "dlAll": "Download all", "sorted": "Sorted by score: how well the clip can work on its own", "expIn": "Expires in {n} days", "expTom": "Expires tomorrow", "expToday": "Expires today", "delIn": "Deletes in {n} days", "delTom": "Deletes tomorrow", "delToday": "Deletes today", "projEmpty": "Streams you turn into clips show up here. Paste your first link on Home.", "projGo": "Go to Home", "projIn": "Sign in to see your projects.", "stepDone": "done", "untitled": "Untitled video", "plansT": "Credits and plans", "plansD": "On the web, finding clips costs about {n} credits per hour of stream. In the desktop app it costs much less.", "meT": "Your plan", "meFree": "With a plan you get fresh credits every month", "meNext": "Fresh credits every month", "subsT": "Subscriptions", "subsD": "Fresh credits every month. Cancel anytime.", "monthly": "Monthly", "yearly": "Yearly", "freeMo": "{n} months free", "crMo": "{n} credits a month", "billM": "Billed monthly", "billY": "{p} billed yearly", "firstMo": "for the first month, then {p}", "goTo": "Switch to {p}", "current": "Current plan", "popular": "Most popular", "mine": "Your plan", "packsT": "Top up credits", "packsD": "One-time, no subscription. Top-up credits never expire.", "packCr": "{n} credits · never expire", "per100": "{p} per 100", "best": "Best value", "conv": "Good deal", "rule": "1 stream hour ≈ {n} credits", "secure": "Secure payment with Stripe", "vat": "Prices include VAT", "anytime": "Cancel anytime", "manage": "Manage subscription", "perMo": "/mo", "pay": "Payment", "payFail": "The payment didn't open", "payFailD": "Check your connection and try again: you haven't been charged.", "close": "Close", "payGot": "Payment received: your credits arrive in a few seconds", "planOn": "Plan active: {p}", "plusCr": "+{n} credits", "paypalNo": "PayPal isn't available: pay by card", "payNo": "Payment didn't start: try again"},
     },
 }
 
@@ -1391,6 +1391,7 @@ const TONE = { starter: 't-g', pro: 't-b', ultimate: 't-v' };
 const tone = (plans, p) => TONE[p.id] || ['t-g', 't-b', 't-v'][Math.max(0, (plans || []).indexOf(p)) % 3];
 // piano dell'utente (per la barra a sinistra e la pagina dei piani)
 let PLAN = null, PLANID = 'free', TOP = null, planP = null;
+let PAID = null;   // ha mai pagato (ricarica o piano): sul web le clip sono solo per chi ha pagato
 function loadPlan(force) {
   if (!S) return Promise.resolve();
   if (planP && !force) return planP;
@@ -1408,12 +1409,13 @@ function paintSide() {
   const box = $('sbcred');
   if (!S || bal == null) { box.classList.add('hide'); return; }
   const b = Number(bal) || 0, frac = Math.max(0, Math.min(1, PLAN && PLAN.monthly ? b / PLAN.monthly : b / Math.max(b, perHour)));
-  const hrs = liveHrs(b);
+  const lock = PAID === false && minPack(), hrs = lock ? '' : liveHrs(b);
   box.innerHTML = '<div class="r"><b>' + esc(PLAN ? PLAN.name : V.free) + '</b><span>' + nfmt(b) + ' ' + esc(L.credits) + '</span></div>'
-    + '<div class="bar2"><i style="width:' + (frac * 100).toFixed(1) + '%"></i></div>' + (hrs ? '<small>' + esc(V.sbHrs.replace('{h}', hrs)) + '</small>' : '')
-    + '<button class="btn btn-primary btn-sm" type="button" id="sbup">' + esc(PLAN || !TOP ? V.sbTop : V.sbUp.replace('{p}', TOP.name)) + '</button>';
+    + '<div class="bar2"><i style="width:' + (frac * 100).toFixed(1) + '%"></i></div>'
+    + (lock ? '<small>' + esc(V.sbLock.replace('{p}', eur(lock.price_eur))) + '</small>' : hrs ? '<small>' + esc(V.sbHrs.replace('{h}', hrs)) + '</small>' : '')
+    + '<button class="btn btn-primary btn-sm" type="button" id="sbup">' + esc(lock ? V.sbUnlock.replace('{p}', eur(lock.price_eur)) : PLAN || !TOP ? V.sbTop : V.sbUp.replace('{p}', TOP.name)) + '</button>';
   box.classList.remove('hide');
-  $('sbup').onclick = () => openBuy(PLAN ? { kind: 'pack', id: '' } : null);
+  $('sbup').onclick = () => openBuy(PLAN || lock ? { kind: 'pack', id: '' } : null);
   $('ringv').setAttribute('stroke-dasharray', (frac * 100).toFixed(1) + ' 100');
   $('pmhrs').textContent = hrs;
 }
@@ -1687,11 +1689,15 @@ function openPlayer(j, list, idx) {
 function showAsk() { $('hero').classList.remove('hide', 'step2'); $('est').classList.add('hide'); $('run').classList.add('hide'); $('done').classList.add('hide'); setHint(costNote()); }
 let bal = null;
 // senza accesso: "Dal browser: da 2,99 €…" con la ricarica piu' piccola del catalogo (il "pass" del mockup)
+function minPack(cost) {
+  const ps = ((CAT && CAT.packs) || []).slice().sort((a, b) => a.price_eur - b.price_eur);
+  return cost ? ps.find((x) => Number(x.credits) >= cost) || null : ps[0] || null;
+}
 function webPrice() {
   const p = CAT && (CAT.packs || []).slice().sort((a, b) => a.price_eur - b.price_eur)[0];
   return p ? L.v2.webPrice.replace('{p}', eur(p.price_eur)) : '{note}';
 }
-function costNote() { return S ? L.costNote.replace('{n}', perHour).replace('{m}', String(Math.round(perHour / 6) / 10).replace('.', LANG === 'en' ? '.' : ',')).replace('{b}', bal == null ? '…' : bal) : webPrice(); }
+function costNote() { return S && PAID !== false ? L.costNote.replace('{n}', perHour).replace('{m}', String(Math.round(perHour / 6) / 10).replace('.', LANG === 'en' ? '.' : ',')).replace('{b}', bal == null ? '…' : bal) : webPrice(); }
 
 let editKey = null;   // modifica in corso gia' disegnata (lavoro:clip)
 async function poll(id, now) {
@@ -1800,12 +1806,14 @@ async function peek(url) {
   try {
     const r = await pub('peek', { url });
     if (peekFor !== url) return;
+    await catalog().catch(() => null);
+    const pk = minPack(r.cost);
     box.innerHTML = (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
       + '<div><h3>' + esc(r.title || url) + '</h3><p class="meta">' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</p>'
-      + (r.free && !r.trialOut ? '<span class="freeb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>' + esc(CV.free) + '</span>'
-        : '<p class="cost"><b>' + esc(CV.peekCost.replace('{c}', r.cost)) + '</b></p>') + '</div>'
-      + '<p class="pk">' + esc((r.trialOut ? CV.peekPw : r.free ? CV.peekFree : CV.peekPaid).replace('{c}', r.cost)) + (r.free && !r.trialOut ? ' ' + esc(CV.peekLogin) : '') + '</p>'
-      + '<div class="acts"><button class="btn btn-primary" id="peekgo" type="button">' + esc(r.free && !r.trialOut ? CV.peekGo : CV.peekGoPaid) + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>';
+      + '<p class="cost"><b>' + esc(CV.peekCost.replace('{c}', r.cost)) + '</b></p></div>'
+      // sul web le clip non sono mai gratis: si dice subito quanto serve per questo video (gratis nell'app)
+      + '<p class="pk">' + esc(pk ? V.peekPay.replace('{p}', eur(pk.price_eur)) : CV.peekPw) + '</p>'
+      + '<div class="acts"><button class="btn btn-primary" id="peekgo" type="button">' + esc(CV.peekGoPaid) + '</button><button class="link" id="estno" type="button">' + esc(L.estChange) + '</button></div>';
     box.classList.remove('hide'); setHint('');
     $('peekgo').onclick = () => { once.set('nf.pending', url); step('clip_login'); setHint(L.loginFirst); login(); };
     $('estno').onclick = () => { box.classList.add('hide'); peekFor = null; setHint(webPrice()); $('url').select(); };
@@ -2368,7 +2376,7 @@ let JOBS = null;
 async function loadHist() {
   try {
     const r = await call('status', {});
-    perHour = r.perHour || perHour; showSignedIn(r.balance);
+    perHour = r.perHour || perHour; if (typeof r.paid === 'boolean') PAID = r.paid; showSignedIn(r.balance);
     JOBS = (r.jobs || []).filter((j) => !(j.status === 'done' && j.expired));
     $('nprj').textContent = JOBS.length || '';
     const list = JOBS.filter((j) => !current || j.id !== current.id).slice(0, 6);
@@ -2548,7 +2556,7 @@ async function estimate(url) {
   try {
     const r = await call('estimate', { url });
     if (estFor !== url) return;
-    bal = r.balance; showSignedIn(bal);
+    bal = r.balance; PAID = !r.trialOut; showSignedIn(bal);
     const stp = '<div class="stp"><ol>' + L.stepsT.map((t, i) => '<li class="' + (i === 0 ? 'ok' : i === 1 ? 'on' : '') + '"><i>' + (i === 0 ? '✓' : i + 1) + '</i>' + esc(t) + '</li>').join('') + '</ol></div>';
     box.innerHTML = stp + (r.thumbnail ? '<img src="' + esc(r.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
       + '<div><h3>' + esc(r.title || url) + '</h3><p class="meta">' + esc([r.channel, fmtDur(r.duration)].filter(Boolean).join(' · ')) + '</p>'
@@ -2622,6 +2630,7 @@ $('url').addEventListener('input', (ev) => {
   if (pending) { once.set('nf.pending', null); $('url').value = pending; }
   if (job && /^[0-9a-f-]{36}$/i.test(job)) { poll(job); return; }
   await loadHist();
+  if (PAID === false) await catalog().catch(() => null);
   setHint(costNote());
   if (pending || lk) $('ask').requestSubmit();
 })();
@@ -2632,6 +2641,7 @@ $('url').addEventListener('input', (ev) => {
 
 # messaggi che arrivano dal server (funzioni e worker) in italiano: sulla pagina inglese si mostrano tradotti
 SRV_EN = {
+    "Le clip dal web si sbloccano con una ricarica o con un piano. Gratis le fai con NoonFrame sul computer.": "Web clips unlock with a top-up or a plan. They're free with NoonFrame on your computer.",
     # webclip / webclip-pub
     "Le clip dal web sono in pausa per qualche ora: riprova piu' tardi, oppure usa l'app NoonFrame sul computer": "Web clips are paused for a few hours: try again later, or use the NoonFrame desktop app",
     "Le clip dal web sono in pausa per qualche ora: riprova piu' tardi": "Web clips are paused for a few hours: try again later",
