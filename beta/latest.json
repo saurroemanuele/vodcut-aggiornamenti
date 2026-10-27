@@ -1,15 +1,32 @@
 {
- "version": "1.7.1",
+ "version": "1.7.2",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.1.zip",
- "size": 12487363,
- "sha256": "0b129f3fc59a2ae83cb9b417159055af65af3cd618a9ff828226421aa133a60b",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.2.zip",
+ "size": 12488132,
+ "sha256": "785ff04ae16e544831a2ce0ee5a9416e718f5bbbc16e5087e2b3fb6b8434d38b",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "XHHJzMB11/2WEELUdNCZGOoVBDQRbZg+655ZrqPcsLmIf7Et/3msXLUjDHVx9tFVrnSQNySyWCAI7lJxNwcSBQ=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "PgPWkzBaDIRYdmtY7HlQSgWVgDW7t6fuAnCd5jAnuXgQ9yXfAEUgvsYUxaYIu0OVU6cpns0Ux16MQNDq+COXAQ=="
  },
- "notes": "Novità: Abbonamento e pagamenti: anche le ricariche, con la ricevuta di Stripe\nCorrezione: Un piano attivo senza abbonamento ora è spiegato invece di risultare vuoto\nMiglioramento: I tuoi pagamenti anche senza abbonamento",
+ "notes": "Miglioramento: La Home e i progetti si aprono subito, anche con tante clip\nMiglioramento: Mentre i progetti caricano si vede un'anteprima animata",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.2",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "impr",
+     "text": "La Home e i progetti si aprono subito, anche con tante clip",
+     "en": "Home and projects open instantly, even with lots of clips"
+    },
+    {
+     "type": "impr",
+     "text": "Mentre i progetti caricano si vede un'anteprima animata",
+     "en": "An animated preview shows while projects load"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.1",
    "date": "2026-10-27",
@@ -500,23 +517,7 @@
      "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
     }
    ]
-  },
-  {
-   "version": "1.5.160",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori",
-     "en": "Q/W (trim before/after the playhead) no longer shows an error when the selected item is not under the playhead: it trims the clip under the playhead; simple hints no longer show up as errors"
-    },
-    {
-     "type": "impr",
-     "text": "Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
-     "en": "Clip transcript now at the top of the Text panel, showing only the clip's text; zooms: apply the effect or magnification to the following zooms, and new zooms start with the last effect you chose; more varied TikTok/Reels/Shorts suggestions"
-    }
-   ]
   }
  ],
- "sig": "z5Blvm8Jm7tKVP9obTG5kRJmwsOrrCmo5+yGumIeeIXJ0/MP0o4h2Xc9q57G1Q8W24eWSbMPravljhlRmp5kCw=="
+ "sig": "9Mbnomr2tezX7mWvE/Q6XomIPVcIYTmzFVu2Zcg6lhf/fcS4YWclfgiPHcY8pXQpYad6MP33IgDmGQEwiIEdDA=="
 }
