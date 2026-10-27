@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--ac);text-decoration:none}a:hover{color:var(--ink)}
+html{scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:rgba(127,140,170,.35) transparent}
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(127,140,170,.32);border-radius:10px;border:3px solid transparent;background-clip:padding-box}::-webkit-scrollbar-thumb:hover{background-color:rgba(127,140,170,.55)}
+html.nf-inner{scrollbar-width:none}html.nf-inner header{padding-top:58px!important}html.nf-inner::-webkit-scrollbar{display:none}
+.lp{--bg:#F7F8FB;--ink:#0C1222;--t2:#4B5568;--t3:#5D6779;--ac:#1F6BFF;--card:rgba(255,255,255,.7);--line:rgba(12,18,34,.08);--glass:rgba(255,255,255,.62);--gline:rgba(255,255,255,.85);--btn:#0C1222;--btnt:#FFFFFF;--sky:radial-gradient(120% 70% at 50% 0%,#C7DAFF 0%,#E4ECFB 45%,rgba(247,248,251,0) 80%);--soft:radial-gradient(80% 90% at 15% 10%,#CFE0FF 0%,rgba(207,224,255,0) 60%),radial-gradient(70% 80% at 90% 100%,#F4E3DA 0%,rgba(244,227,218,0) 60%),#EEF2F9;--shadow:0 40px 100px -40px rgba(20,40,90,.45);--blob1:rgba(140,180,255,.55);--blob2:rgba(246,214,198,.6);--blob3:rgba(120,160,255,.45);--glows:radial-gradient(45% 22% at 88% 18%,rgba(120,165,255,.35) 0%,rgba(120,165,255,0) 70%),radial-gradient(45% 22% at 8% 42%,rgba(244,210,195,.45) 0%,rgba(244,210,195,0) 70%),radial-gradient(45% 22% at 90% 66%,rgba(120,165,255,.3) 0%,rgba(120,165,255,0) 70%),radial-gradient(45% 22% at 10% 90%,rgba(160,190,255,.35) 0%,rgba(160,190,255,0) 70%);--horizon:radial-gradient(70% 55% at 50% 105%,#9DBEFF 0%,#C9DAFF 35%,rgba(201,218,255,0) 70%),radial-gradient(50% 35% at 20% 100%,rgba(246,217,200,.8) 0%,rgba(246,217,200,0) 70%)}
+.lp[data-theme="dark"]{--bg:#07090E;--ink:#F2F4F8;--t2:#A3AAB8;--t3:#8A92A1;--ac:#4A8BFF;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.08);--glass:rgba(255,255,255,.06);--gline:rgba(255,255,255,.12);--btn:#F2F4F8;--btnt:#0C1222;--sky:radial-gradient(120% 70% at 50% 0%,#132A5C 0%,#0B1428 45%,rgba(7,9,14,0) 80%);--soft:radial-gradient(80% 90% at 15% 10%,rgba(47,123,255,.28) 0%,rgba(47,123,255,0) 60%),radial-gradient(70% 80% at 90% 100%,rgba(120,140,200,.16) 0%,rgba(120,140,200,0) 60%),#0D1018;--shadow:0 40px 100px -40px rgba(0,0,0,.8);--blob1:rgba(31,90,230,.32);--blob2:rgba(90,120,210,.2);--blob3:rgba(47,123,255,.28);--glows:radial-gradient(45% 22% at 88% 18%,rgba(47,123,255,.2) 0%,rgba(47,123,255,0) 70%),radial-gradient(45% 22% at 8% 42%,rgba(110,130,190,.14) 0%,rgba(110,130,190,0) 70%),radial-gradient(45% 22% at 90% 66%,rgba(47,123,255,.18) 0%,rgba(47,123,255,0) 70%),radial-gradient(45% 22% at 10% 90%,rgba(110,130,190,.14) 0%,rgba(110,130,190,0) 70%);--horizon:radial-gradient(70% 55% at 50% 108%,rgba(47,123,255,.75) 0%,rgba(31,79,184,.35) 35%,rgba(19,48,110,0) 70%),radial-gradient(40% 30% at 50% 100%,rgba(140,185,255,.35) 0%,rgba(140,185,255,0) 70%)}
+.wp{--wp:radial-gradient(60% 50% at 78% 18%,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 60%),radial-gradient(90% 60% at 20% 110%,#F6D9C8 0%,rgba(246,217,200,0) 60%),linear-gradient(180deg,#1A47C9 0%,#3C74F0 34%,#8DB2FF 62%,#DCE6FF 84%,#F2E4DC 100%);--wglass:rgba(255,255,255,.5);--wline:rgba(255,255,255,.7);--wink:#0C1222;--wt3:#4B5568;--wcard:rgba(255,255,255,.6)}
+.wp[data-wp="notte"]{--wp:radial-gradient(50% 40% at 75% 15%,rgba(110,160,255,.35) 0%,rgba(110,160,255,0) 70%),radial-gradient(90% 60% at 30% 110%,rgba(47,123,255,.55) 0%,rgba(47,123,255,0) 65%),linear-gradient(180deg,#04060D 0%,#0A1430 45%,#13306E 80%,#1F4FB8 100%);--wglass:rgba(18,22,32,.5);--wline:rgba(255,255,255,.14);--wink:#F2F4F8;--wt3:#A3AAB8;--wcard:rgba(255,255,255,.07)}
+</style>
+</helmet>
+<sc-if value="{{ phone }}" hint-placeholder-val="{{ false }}">
+<div style="height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:0 20px;box-sizing:border-box;background:{{ stageBg }}">
+<div style="position:relative;width:406px;height:860px;flex:none;box-sizing:border-box;padding:8px;border-radius:60px;transform:scale({{ phoneScale }});transform-origin:center;background:#0B0C0F;border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 0 0 2px #2A2D33,0 50px 100px -30px rgba(0,0,0,.6)">
+<div style="position:absolute;top:19px;left:50%;transform:translateX(-50%);width:120px;height:34px;border-radius:999px;background:#000;z-index:2;pointer-events:none"></div>
+<iframe src="Landing%20v2.dc.html?inner=1" title="Anteprima telefono" style="display:block;width:390px;height:844px;border:0;border-radius:52px;background:#fff"></iframe>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ notPhone }}" hint-placeholder-val="{{ true }}">
+<div class="lp" data-theme="{{ theme }}" style="position:relative;isolation:isolate;min-height:100vh;background:var(--bg);color:var(--ink)">
+<div style="position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden">
+<div style="position:absolute;top:-25vh;left:-20vw;width:70vw;height:70vw;border-radius:50%;background:var(--blob1);filter:blur(120px)"></div>
+<div style="position:absolute;top:20vh;right:-25vw;width:60vw;height:60vw;border-radius:50%;background:var(--blob2);filter:blur(130px)"></div>
+<div style="position:absolute;bottom:-40vh;left:15vw;width:65vw;height:65vw;border-radius:50%;background:var(--blob3);filter:blur(140px)"></div>
+</div>
+
+<header style="position:sticky;top:0;z-index:20;display:flex;justify-content:center;padding:{{ hdrTop }}px 16px 12px">
+<nav style="width:100%;max-width:960px;display:flex;align-items:center;gap:16px;padding:6px 6px 6px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--gline);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4)">
+<a href="#top" style="display:flex;align-items:center;gap:7px;color:var(--ink);font-weight:700;font-size:14px"><img src="web/logo.png" alt="" style="width:20px;height:20px"><span>NoonFrame</span></a>
+<div style="flex:1;display:{{ navLinks }};justify-content:center;gap:2px;flex-wrap:wrap">
+<a href="#come-funziona" style="padding:7px 12px;color:var(--t2);font-size:13px;font-weight:500" style-hover="color:var(--ink)">Come funziona</a>
+<a href="#faq" style="padding:7px 12px;color:var(--t2);font-size:13px;font-weight:500" style-hover="color:var(--ink)">Domande</a>
+</div>
+<div style="margin-left:auto;display:flex;align-items:center;gap:4px">
+<a href="#" style="display:{{ navLogin }};padding:7px 12px;color:var(--ink);font-size:13px;font-weight:600">Accedi</a>
+<a onClick="{{ navGo }}" href="#scarica" style="padding:8px 16px;border-radius:999px;background:var(--btn);color:var(--btnt);font-size:13px;font-weight:600" style-hover="opacity:.88;color:var(--btnt)">{{ navCta }}</a>
+</div>
+</nav>
+</header>
+
+<section id="top" style="margin-top:-64px;padding:160px 20px 0;background:var(--sky);display:flex;flex-direction:column;align-items:center;text-align:center">
+<h1 style="margin:0;max-width:720px;font-size:clamp(34px,5vw,58px);line-height:1.06;letter-spacing:-.035em;font-weight:600;text-wrap:balance">Dalla live alle clip, mentre fai altro.</h1>
+<div style="margin:32px 0;width:min(420px,70%);height:1px;background:linear-gradient(90deg,rgba(127,140,170,0),rgba(127,140,170,.45),rgba(127,140,170,0))"></div>
+<p style="margin:0;max-width:480px;font-size:16px;line-height:1.7;color:var(--t2);text-wrap:pretty">Incolla il link di una live. NoonFrame trova i momenti migliori e li prepara in verticale, pronti per i social.</p>
+<form onSubmit="{{ goClip }}" style="margin-top:44px;width:100%;max-width:560px;box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:6px 6px 6px 20px;border-radius:999px;background:var(--glass);border:1px solid var(--gline);backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);box-shadow:var(--shadow)">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--t3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"></path></svg>
+<input value="{{ link }}" onInput="{{ onLink }}" placeholder="Incolla il link di una live" style="flex:1;min-width:0;height:40px;border:0;outline:0;background:transparent;color:var(--ink);font:500 15px Manrope,sans-serif;text-align:left">
+<button type="submit" style="height:44px;padding:0 22px;border:0;border-radius:999px;background:var(--ac);color:#fff;font:700 14px Manrope,sans-serif;cursor:pointer;white-space:nowrap">Crea le clip</button>
+</form>
+<sc-if value="{{ notNarrowL }}" hint-placeholder-val="{{ true }}">
+<div id="scarica" style="margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center">
+<a href="#" style="display:flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;background:var(--btn);color:var(--btnt);font-size:14px;font-weight:600" style-hover="opacity:.88;color:var(--btnt)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"></path></svg>{{ ctaPrimary }}</a>
+</div>
+</sc-if>
+<sc-if value="{{ narrowL }}" hint-placeholder-val="{{ false }}">
+<div id="scarica-m" style="margin-top:16px;width:100%;max-width:560px;display:flex;flex-direction:column;gap:10px;align-items:center;scroll-margin-top:120px">
+<sc-if value="{{ lClosed }}" hint-placeholder-val="{{ true }}">
+<button onClick="{{ lOpenIt }}" style="display:flex;align-items:center;gap:8px;height:36px;padding:0 6px;border:0;background:none;color:var(--t2);font:500 13px Manrope,sans-serif;cursor:pointer"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M8 20h8M12 16v4"></path></svg>Hai un computer? <span style="color:var(--ink);font-weight:700">Ricevi l'app gratis ›</span></button>
+</sc-if>
+<sc-if value="{{ lIsOpen }}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{ lNotSent }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ lSend }}" style="width:100%;box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:5px 5px 5px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--gline);backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);box-shadow:var(--shadow)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--t3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M4 6h16v12H4zM4 7l8 6 8-6"></path></svg><input type="email" value="{{ lEmail }}" onInput="{{ lOnEmail }}" placeholder="La tua email" style="flex:1;min-width:0;height:42px;border:0;outline:0;background:transparent;color:var(--ink);font:500 15px Manrope,sans-serif"><button type="submit" style="height:42px;padding:0 18px;border:0;border-radius:21px;background:var(--ac);color:#fff;font:700 13.5px Manrope,sans-serif;cursor:pointer;white-space:nowrap">Invia link</button></form>
+</sc-if>
+<sc-if value="{{ lSent }}" hint-placeholder-val="{{ false }}"><div style="width:100%;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:8px 8px 8px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--gline)"><span style="width:26px;height:26px;flex:none;border-radius:50%;background:rgba(61,201,120,.18);color:#3DC978;display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span style="flex:1;min-width:0;text-align:left;font-size:13px;line-height:1.35"><span style="display:block;font-weight:700">Link inviato</span><span style="display:block;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ lSentTo }}</span></span><button onClick="{{ lReset }}" style="height:32px;padding:0 12px;border:0;border-radius:16px;background:var(--glass2);color:var(--ink);font:600 12px Manrope,sans-serif;cursor:pointer">Cambia</button></div></sc-if>
+<div style="font-size:12.5px;color:var(--t3)">L'app è per Windows e Mac: ti mandiamo il link via email.</div>
+</sc-if>
+</div>
+</sc-if>
+
+<div class="wp" data-wp="{{ wp }}" style="position:relative;margin-top:72px;width:100%;max-width:1040px;aspect-ratio:{{ mFrameAR }};border-radius:18px;overflow:hidden;background:var(--wp);box-shadow:var(--shadow);text-align:left">
+<div style="position:absolute;top:0;left:0;right:0;height:26px;display:flex;align-items:center;gap:16px;padding:0 14px;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:#fff;font-size:11px;font-weight:600">
+<img src="web/logo.png" alt="" style="width:13px;height:13px"><span style="font-weight:700">NoonFrame</span><span style="opacity:.8;display:{{ mDesk }}">File</span><span style="opacity:.8;display:{{ mDesk }}">Vista</span><span style="margin-left:auto;opacity:.9">mar 27 ott 21:14</span>
+</div>
+<div style="position:absolute;left:{{ mStreamL }};top:{{ mStreamT }};width:{{ mStreamW }};aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#151A26;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.12);display:flex;flex-direction:column">
+<div style="height:24px;flex:none;display:flex;align-items:center;gap:6px;padding:0 10px;background:#1C2230;color:#A3AAB8;font-size:10px;font-weight:600"><span style="width:8px;height:8px;border-radius:50%;background:#3A4254"></span><span style="width:8px;height:8px;border-radius:50%;background:#3A4254"></span><span style="width:8px;height:8px;border-radius:50%;background:#3A4254"></span><span style="margin-left:8px">twitch.tv · Live 22 ottobre</span></div>
+<div style="position:relative;flex:1">
+<sc-if value="{{ heroPhoto }}" hint-placeholder-val="{{ true }}">
+<image-slot id="lp-hero-stream" shape="rect" placeholder="Trascina qui uno screenshot di una live" style="position:absolute;inset:0"></image-slot>
+</sc-if>
+<div style="position:absolute;top:10px;left:10px;display:flex;align-items:center;gap:6px;padding:4px 9px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:10px;font-weight:700;pointer-events:none"><span style="width:6px;height:6px;border-radius:50%;background:#FF4D4D"></span><span>LIVE · 3:12:40</span></div>
+</div>
+</div>
+<div style="position:absolute;box-sizing:border-box;right:{{ mPanelR }};top:{{ mPanelT }};width:{{ mPanelW }};display:flex;flex-direction:column;gap:9px;padding:14px;border-radius:16px;background:var(--wglass);border:1px solid var(--wline);backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 30px 60px -24px rgba(10,20,60,.45);color:var(--wink)">
+<div style="display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700"><img src="web/logo.png" alt="" style="width:16px;height:16px"><span>NoonFrame</span><span style="margin-left:auto;font-size:10px;font-weight:600;color:var(--wt3)">{{ scanLabel }}</span></div>
+<div style="height:3px;border-radius:3px;background:rgba(127,140,170,.25);overflow:hidden"><div style="height:100%;width:{{ scanPct }}%;background:linear-gradient(90deg,#6CB2FF,#1F6BFF);border-radius:3px;transition:width .4s"></div></div>
+<div style="font-size:13px;font-weight:700;margin-top:2px">Trovati 5 momenti</div>
+<sc-for list="{{ heroClips }}" as="c" hint-placeholder-count="3">
+<div style="display:flex;align-items:center;gap:9px;padding:6px;border-radius:10px;background:var(--wcard)">
+<div style="width:30px;height:53px;flex:none;border-radius:6px;background:#13306E url({{ c.img }}) center/118% auto no-repeat"></div>
+<div style="min-width:0;flex:1"><div style="font-size:11px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ c.title }}</div><div style="font-size:10px;color:var(--wt3);margin-top:1px">{{ c.meta }}</div></div>
+</div>
+</sc-for>
+<div style="margin-top:4px;padding:8px;border-radius:999px;background:#1F6BFF;color:#fff;font-size:11px;font-weight:700;text-align:center">Apri le clip</div>
+</div>
+<div style="position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:min(440px,58%);display:{{ mPill }};align-items:center;gap:8px;padding:5px 5px 5px 14px;border-radius:999px;background:var(--wglass);border:1px solid var(--wline);backdrop-filter:blur(30px) saturate(1.5);-webkit-backdrop-filter:blur(30px) saturate(1.5);box-shadow:0 20px 40px -20px rgba(10,20,60,.45);color:var(--wink)">
+<span style="flex:1;min-width:0;font-size:11px;color:var(--wt3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Incolla un link: le clip arrivano da sole</span>
+<span style="padding:7px 12px;border-radius:999px;background:#1F6BFF;color:#fff;font-size:11px;font-weight:700;white-space:nowrap">Crea le clip</span>
+</div>
+</div>
+
+<div style="margin:64px 0 0;display:flex;flex-direction:column;align-items:center;gap:14px">
+<div style="font-size:12px;font-weight:500;color:var(--t3)">Prende le live da qui, pubblica le clip lì</div>
+<div style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center;align-items:center">
+<sc-for list="{{ platforms }}" as="p" hint-placeholder-count="6">
+<div style="display:flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--t2)"><span style="width:22px;height:22px;border-radius:50%;background:{{ p.color }};display:flex;align-items:center;justify-content:center"><span style="width:11px;height:11px;background:url({{ p.icon }}) center/contain no-repeat"></span></span><span>{{ p.name }}</span></div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section id="come-funziona" style="padding:160px 20px 40px;display:flex;flex-direction:column;align-items:center;scroll-margin-top:80px">
+<div style="width:100%;max-width:960px">
+<div style="text-align:center">
+<div style="font-size:12px;font-weight:600;color:var(--ac);letter-spacing:.02em">Come funziona</div>
+<h2 style="margin:10px auto 0;max-width:520px;font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:600;text-wrap:balance">Quattro passaggi. Tre li fa NoonFrame.</h2>
+</div>
+
+<div style="margin-top:96px;display:flex;flex-direction:column;gap:120px">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:64px;align-items:center">
+<div>
+<div style="font-size:12px;font-weight:600;color:var(--t3)">01 · Tu</div>
+<h3 style="margin:8px 0 0;font-size:clamp(20px,2.2vw,24px);line-height:1.2;letter-spacing:-.02em;font-weight:600">Incolla il link</h3>
+<p style="margin:12px 0 0;max-width:340px;font-size:15px;line-height:1.65;color:var(--t2);text-wrap:pretty">Una live di Twitch, YouTube o Kick, oppure un video dal computer. Non devi scaricare niente a mano.</p>
+</div>
+<div style="position:relative;aspect-ratio:5/4;display:flex;align-items:center;justify-content:center">
+<div style="width:100%;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#0E1117;border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 6px rgba(10,20,50,.12),0 40px 80px -30px rgba(10,20,50,.5)">
+<div style="height:30px;flex:none;display:flex;align-items:center;gap:7px;padding:0 12px;background:#151920;border-bottom:1px solid rgba(255,255,255,.06)"><span style="width:10px;height:10px;border-radius:50%;background:#FF5F57"></span><span style="width:10px;height:10px;border-radius:50%;background:#FEBC2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#28C840"></span><span style="flex:1;text-align:center;margin-right:44px;font-size:11px;font-weight:600;color:#7C8699">NoonFrame</span></div>
+<div style="padding:36px 28px 32px;display:flex;flex-direction:column;align-items:center;gap:18px;color:#E8EDF6">
+<div style="text-align:center"><div style="font-size:15px;font-weight:700">Clip veloci</div><div style="font-size:11px;color:#7C8699;margin-top:4px">Da una live o da un video lungo alle clip verticali</div></div>
+<div style="width:100%;max-width:340px;display:flex;align-items:center;gap:8px;padding:4px 4px 4px 14px;border-radius:999px;background:#1D222C;border:1px solid rgba(255,255,255,.08)">
+<span style="flex:1;min-width:0;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">twitch.tv/videos/2281944<span style="color:#6CB2FF">|</span></span>
+<span style="padding:7px 13px;border-radius:999px;background:#2F8BFF;color:#fff;font-size:11px;font-weight:700;white-space:nowrap">Crea le clip</span>
+</div>
+<div style="width:100%;max-width:340px;border-radius:12px;overflow:hidden;background:#151920;border:1px solid rgba(255,255,255,.06)">
+<div style="position:relative;aspect-ratio:16/9;background:#1D222C url(uploads/pasted-1793074135691-0.png) 50% 38%/110% auto no-repeat">
+<span style="position:absolute;top:8px;left:8px;padding:3px 7px;border-radius:999px;background:rgba(0,0,0,.6);font-size:9px;font-weight:700;color:#fff">3:12:40</span>
+</div>
+<div style="display:flex;align-items:center;gap:10px;padding:10px 12px">
+<div style="min-width:0;flex:1"><div style="font-size:12px;font-weight:700">Live 22 ottobre · Fortnite</div><div style="font-size:10px;color:#7C8699;margin-top:3px">16:9 · 3:12:40 · Twitch</div></div>
+<span style="font-size:10px;font-weight:700;color:#34D399">Pronta</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:64px;align-items:center">
+<div style="position:relative;aspect-ratio:5/4;display:flex;align-items:center;justify-content:center">
+<div style="width:100%;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#0E1117;border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 6px rgba(10,20,50,.12),0 40px 80px -30px rgba(10,20,50,.5)">
+<div style="height:30px;flex:none;display:flex;align-items:center;gap:7px;padding:0 12px;background:#151920;border-bottom:1px solid rgba(255,255,255,.06)"><span style="width:10px;height:10px;border-radius:50%;background:#FF5F57"></span><span style="width:10px;height:10px;border-radius:50%;background:#FEBC2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#28C840"></span><span style="flex:1;text-align:center;margin-right:44px;font-size:11px;font-weight:600;color:#7C8699">Live 22 ottobre · Elden Ring</span></div>
+<div style="padding:22px 22px 24px;color:#E8EDF6">
+<div style="display:flex;align-items:baseline;justify-content:space-between"><span style="font-size:14px;font-weight:700">5 momenti trovati</span><span style="font-size:10px;color:#7C8699">0:00 – 3:12:40</span></div>
+<div style="position:relative;margin-top:14px;height:38px;border-radius:7px;background:#151920;overflow:hidden;border:1px solid rgba(255,255,255,.05)">
+<div style="position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(160,180,220,.16) 0 2px,transparent 2px 5px);opacity:.7"></div>
+<sc-for list="{{ moments }}" as="m" hint-placeholder-count="5">
+<div style="position:absolute;top:0;bottom:0;left:{{ m.left }}%;width:{{ m.w }}%;background:#2F8BFF;border-radius:2px;box-shadow:0 0 12px rgba(47,139,255,.7)"></div>
+</sc-for>
+</div>
+<div style="margin-top:16px;display:flex;flex-direction:column">
+<sc-for list="{{ momentList }}" as="m" hint-placeholder-count="3">
+<div style="display:flex;align-items:center;gap:12px;padding:9px 0;border-top:1px solid rgba(255,255,255,.06);font-size:12px"><span style="width:22px;height:38px;flex:none;border-radius:4px;background:#1D222C url({{ m.img }}) center/118% auto no-repeat"></span><span style="font-weight:600;color:#6CB2FF;width:52px;font-variant-numeric:tabular-nums">{{ m.t }}</span><span style="flex:1;font-weight:600">{{ m.title }}</span><span style="color:#7C8699;font-variant-numeric:tabular-nums">{{ m.d }}</span></div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style="font-size:12px;font-weight:600;color:var(--t3)">02 · NoonFrame</div>
+<h3 style="margin:8px 0 0;font-size:clamp(20px,2.2vw,24px);line-height:1.2;letter-spacing:-.02em;font-weight:600">Trova i momenti migliori</h3>
+<p style="margin:12px 0 0;max-width:340px;font-size:15px;line-height:1.65;color:var(--t2);text-wrap:pretty">Guarda tutta la live al posto tuo e ti propone i passaggi da clip, già tagliati. Tre ore diventano cinque minuti da scegliere.</p>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:64px;align-items:center">
+<div>
+<div style="font-size:12px;font-weight:600;color:var(--t3)">03 · NoonFrame</div>
+<h3 style="margin:8px 0 0;font-size:clamp(20px,2.2vw,24px);line-height:1.2;letter-spacing:-.02em;font-weight:600">Prepara le clip in verticale</h3>
+<p style="margin:12px 0 0;max-width:340px;font-size:15px;line-height:1.65;color:var(--t2);text-wrap:pretty">Formato 9:16, sottotitoli, zoom sui momenti forti e via pause ed errori. Se vuoi cambiare qualcosa, apri l'editor.</p>
+</div>
+<div style="position:relative;aspect-ratio:1/1">
+<div style="position:absolute;left:0;top:16%;width:90%;display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#0E1117;border:1px solid rgba(255,255,255,.09);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 6px rgba(10,20,50,.12),0 40px 80px -30px rgba(10,20,50,.5)">
+<div style="height:30px;flex:none;display:flex;align-items:center;gap:7px;padding:0 12px;background:#151920;border-bottom:1px solid rgba(255,255,255,.06)"><span style="width:10px;height:10px;border-radius:50%;background:#FF5F57"></span><span style="width:10px;height:10px;border-radius:50%;background:#FEBC2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#28C840"></span><span style="flex:1;text-align:center;margin-right:44px;font-size:11px;font-weight:600;color:#7C8699">Editor</span></div>
+<div style="position:relative;aspect-ratio:905/348"><image-slot id="lp-step3-timeline" shape="rect" fit="cover" src="uploads/pasted-1793073151059-0.png" placeholder="Trascina uno screenshot della timeline" style="position:absolute;top:-2.5%;left:-1.5%;width:103%;height:105%"></image-slot></div>
+</div>
+<div style="position:absolute;right:0;bottom:0;box-sizing:border-box;width:40%;aspect-ratio:71.6/147.6;border-radius:42px;padding:7px;background:#0B0C0F;border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 0 0 1.5px #2A2D33,0 2px 6px rgba(10,20,50,.15),0 50px 90px -30px rgba(10,20,50,.55)">
+<div style="position:relative;width:100%;height:100%;border-radius:35px;overflow:hidden;background:#111"><div style="position:absolute;top:9px;left:50%;transform:translateX(-50%);width:30%;height:16px;border-radius:999px;background:#000;z-index:2"></div>
+<image-slot id="lp-step3-clip" shape="rect" fit="cover" src="uploads/pasted-1793072714336-0.png" placeholder="Trascina una clip verticale" style="position:absolute;top:-4%;left:-3%;width:106%;height:105.5%"></image-slot>
+</div>
+</div>
+</div>
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:64px;align-items:center">
+<div style="position:relative;display:flex;align-items:center;justify-content:center;padding:12px 0">
+<div style="position:relative;box-sizing:border-box;width:min(300px,70%);aspect-ratio:71.6/147.6;border-radius:42px;padding:7px;background:#0B0C0F;border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 0 0 1.5px #2A2D33,0 2px 6px rgba(10,20,50,.15),0 50px 90px -30px rgba(10,20,50,.55)">
+<div class="wp" data-wp="notte" style="position:relative;width:100%;height:100%;border-radius:35px;overflow:hidden;background:var(--wp);display:flex;flex-direction:column;align-items:center;color:#fff"><div style="position:absolute;top:9px;left:50%;transform:translateX(-50%);width:30%;height:16px;border-radius:999px;background:#000;z-index:2"></div>
+<div style="margin-top:16%;font-size:11px;font-weight:600;opacity:.85">martedì 27 ottobre</div>
+<div style="font-size:clamp(40px,5vw,58px);font-weight:600;letter-spacing:-.03em;line-height:1">21:14</div>
+<div style="margin-top:auto;margin-bottom:12%;width:90%;display:flex;flex-direction:column;gap:6px">
+<sc-for list="{{ posts }}" as="p" hint-placeholder-count="3">
+<div style="display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:16px;background:rgba(255,255,255,.16);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);border:1px solid rgba(255,255,255,.12)">
+<span style="width:26px;height:26px;flex:none;border-radius:7px;background:{{ p.color }};display:flex;align-items:center;justify-content:center"><span style="width:12px;height:12px;background:url({{ p.icon }}) center/contain no-repeat"></span></span>
+<div style="flex:1;min-width:0"><div style="display:flex;gap:6px;font-size:10px;font-weight:700"><span style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.account }}</span><span style="font-weight:500;opacity:.7">{{ p.when }}</span></div><div style="font-size:10px;opacity:.85;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.note }}</div></div>
+</div>
+</sc-for>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div style="font-size:12px;font-weight:600;color:var(--t3)">04 · Tu</div>
+<h3 style="margin:8px 0 0;font-size:clamp(20px,2.2vw,24px);line-height:1.2;letter-spacing:-.02em;font-weight:600">Scegli e pubblica</h3>
+<p style="margin:12px 0 0;max-width:340px;font-size:15px;line-height:1.65;color:var(--t2);text-wrap:pretty">Tieni le clip che ti piacciono e mandale su TikTok, Shorts e Reels, ognuna con lo stile del suo account. Niente esce senza la tua conferma.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
+<section id="faq" style="padding:160px 20px 40px;display:flex;justify-content:center;scroll-margin-top:80px">
+<div style="width:100%;max-width:640px">
+<h2 style="margin:0;text-align:center;font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:600">Domande</h2>
+<div style="margin-top:40px;display:flex;flex-direction:column">
+<sc-for list="{{ faqs }}" as="f" hint-placeholder-count="4">
+<div style="border-bottom:1px solid var(--line)">
+<button onClick="{{ f.toggle }}" style="width:100%;display:flex;align-items:center;gap:16px;padding:20px 0;background:none;border:none;color:var(--ink);font:600 15px Manrope,sans-serif;text-align:left;cursor:pointer"><span style="flex:1">{{ f.q }}</span><span style="font-size:18px;font-weight:400;color:var(--t3)">{{ f.sign }}</span></button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><p style="margin:0 0 20px;max-width:560px;font-size:14px;line-height:1.65;color:var(--t2)">{{ f.a }}</p></sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+</sc-if>
+
+<section style="padding:200px 20px 0;background:var(--horizon);display:flex;flex-direction:column;align-items:center">
+<div style="display:flex;flex-direction:column;align-items:center;text-align:center;padding-bottom:200px">
+<h2 style="margin:0;max-width:560px;font-size:clamp(30px,4.4vw,52px);line-height:1.06;letter-spacing:-.035em;font-weight:600;text-wrap:balance">La tua ultima live è già piena di clip.</h2>
+<p style="margin:16px 0 0;font-size:15px;color:var(--t2)">Scaricala e incolla il primo link.</p>
+<sc-if value="{{ notNarrowL }}" hint-placeholder-val="{{ true }}"><a href="#" style="margin-top:28px;padding:12px 22px;border-radius:999px;background:var(--btn);color:var(--btnt);font-size:14px;font-weight:600" style-hover="opacity:.88;color:var(--btnt)">{{ ctaPrimary }}</a></sc-if>
+<sc-if value="{{ narrowL }}" hint-placeholder-val="{{ false }}">
+<div style="margin-top:24px;width:100%;max-width:420px;display:flex;flex-direction:column;gap:10px;align-items:center">
+<sc-if value="{{ lNotSent }}" hint-placeholder-val="{{ true }}">
+<form onSubmit="{{ lSend }}" style="width:100%;box-sizing:border-box;display:flex;align-items:center;gap:8px;padding:5px 5px 5px 16px;border-radius:999px;background:var(--glass);border:1px solid var(--gline);backdrop-filter:blur(24px) saturate(1.5);-webkit-backdrop-filter:blur(24px) saturate(1.5);box-shadow:var(--shadow)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--t3)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M4 6h16v12H4zM4 7l8 6 8-6"></path></svg><input type="email" value="{{ lEmail }}" onInput="{{ lOnEmail }}" placeholder="La tua email" style="flex:1;min-width:0;height:42px;border:0;outline:0;background:transparent;color:var(--ink);font:500 15px Manrope,sans-serif"><button type="submit" style="height:42px;padding:0 18px;border:0;border-radius:21px;background:var(--ac);color:#fff;font:700 13.5px Manrope,sans-serif;cursor:pointer;white-space:nowrap">Invia link</button></form>
+</sc-if>
+<sc-if value="{{ lSent }}" hint-placeholder-val="{{ false }}"><div style="width:100%;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:8px 8px 8px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--gline)"><span style="width:26px;height:26px;flex:none;border-radius:50%;background:rgba(61,201,120,.18);color:#3DC978;display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span style="flex:1;min-width:0;text-align:left;font-size:13px;line-height:1.35"><span style="display:block;font-weight:700">Link inviato</span><span style="display:block;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ lSentTo }}</span></span><button onClick="{{ lReset }}" style="height:32px;padding:0 12px;border:0;border-radius:16px;background:var(--glass2);color:var(--ink);font:600 12px Manrope,sans-serif;cursor:pointer">Cambia</button></div></sc-if>
+<div style="font-size:12.5px;color:var(--t3)">L'app è per Windows e Mac: ti mandiamo il link via email.</div>
+</div>
+</sc-if>
+</div>
+<footer style="width:100%;padding:0 0 32px;display:flex;justify-content:center">
+<div style="width:100%;max-width:960px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--t3)">
+<div style="display:flex;align-items:center;gap:7px;color:var(--ink);font-weight:700"><img src="web/logo.png" alt="" style="width:16px;height:16px"><span>NoonFrame</span></div>
+<span>© 2026</span>
+<div style="margin-left:auto;display:flex;gap:18px;flex-wrap:wrap">
+<a href="#" style="color:var(--t3)">Privacy</a>
+<a href="#" style="color:var(--t3)">Termini</a>
+<a href="#" style="color:var(--t3)">Contatti</a>
+</div>
+</div>
+</footer>
+</section>
+
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;anteprima&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;desktop&quot;,&quot;telefono&quot;],&quot;default&quot;:&quot;desktop&quot;,&quot;tsType&quot;:&quot;'desktop'|'telefono'&quot;},&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auto&quot;,&quot;light&quot;,&quot;dark&quot;],&quot;default&quot;:&quot;auto&quot;,&quot;tsType&quot;:&quot;'auto'|'light'|'dark'&quot;},&quot;wallpaper&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;segue il tema&quot;,&quot;alba&quot;,&quot;notte&quot;],&quot;default&quot;:&quot;segue il tema&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;heroVisual&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;foto&quot;,&quot;semplice&quot;],&quot;default&quot;:&quot;foto&quot;,&quot;tsType&quot;:&quot;'foto'|'semplice'&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { theme: (typeof localStorage !== 'undefined' && localStorage.getItem('nf-theme')) || 'light', open: 0, scan: 18, os: /Mac/i.test(navigator.platform || navigator.userAgent) ? 'mac' : 'win' };
+  componentDidMount() {
+    try { if (new URLSearchParams(location.search).get('inner') === '1' || (function(){ try { return !!(window.frameElement && window.frameElement.title === 'Anteprima telefono'); } catch (e) { return false; } })()) document.documentElement.classList.add('nf-inner'); } catch (e) {}
+    this.onRs = () => this.setState({ narrow: window.innerWidth < 640, vh: window.innerHeight }); this.onRs(); window.addEventListener('resize', this.onRs);
+    this.onTheme = e => this.setState({ theme: (e && e.detail) || localStorage.getItem('nf-theme') || 'light' });
+    window.addEventListener('nf-theme', this.onTheme);
+    window.addEventListener('storage', this.onTheme);
+    this.t = setInterval(() => this.setState(s => ({ scan: s.scan >= 100 ? 18 : Math.min(100, s.scan + 6) })), 500);
+  }
+  componentWillUnmount() { window.removeEventListener('nf-theme', this.onTheme); window.removeEventListener('storage', this.onTheme); clearInterval(this.t); }
+  renderVals() {
+    const P = this.props, s = this.state;
+    const theme = P.theme && P.theme !== 'auto' ? P.theme : (s.theme === 'dark' ? 'dark' : 'light');
+    const wpP = P.wallpaper ?? 'segue il tema';
+    const wp = wpP === 'alba' || wpP === 'notte' ? wpP : (theme === 'dark' ? 'notte' : 'alba');
+    const faqs = [
+      ['È gratis?', 'Sì, puoi iniziare gratis. Se ti servono più clip o l\'assistente AI, nell\'app trovi i piani.'],
+      ['Da quali piattaforme prende le live?', 'Twitch, YouTube e Kick. Puoi anche caricare un video che hai già sul computer.'],
+      ['Pubblica da solo senza chiedermelo?', 'No. NoonFrame ti propone le clip, ma niente viene pubblicato finché non lo confermi tu.'],
+      ['Su che computer funziona?', 'Su Windows e su Mac.']
+    ].map(([q, a], i) => ({ q, a, open: s.open === i, sign: s.open === i ? '–' : '+', toggle: () => this.setState({ open: s.open === i ? -1 : i }) }));
+    const B = 'web/badges/';
+    let inner = (function(){ try { return !!(window.frameElement && window.frameElement.title === 'Anteprima telefono'); } catch (e) { return false; } })(); try { if (new URLSearchParams(location.search).get('inner') === '1') inner = true; } catch (e) {}
+    const phone = !inner && P.anteprima === 'telefono';
+    return {
+      theme, wp, phone, notPhone: !phone, phoneScale: Math.min(1, ((s.vh || 900) - 32) / 860).toFixed(3), stageBg: theme === 'dark' ? '#05070B' : '#E9ECF2',
+      navLinks: s.narrow ? 'none' : 'flex', narrowL: !!s.narrow, navCta: s.narrow ? 'Ricevi il link' : 'Scarica gratis',
+      navGo: e => { if (!s.narrow) return; e.preventDefault(); this.setState({ lOpen: true }); const el = document.getElementById('scarica-m'); if (el) { const y = el.getBoundingClientRect().top + window.scrollY - 140; window.scrollTo(0, y); setTimeout(() => { const i = el.querySelector('input'); if (i) i.focus({ preventScroll: true }); }, 500); } },
+      lClosed: !s.lOpen, lIsOpen: !!s.lOpen, lOpenIt: () => { this.setState({ lOpen: true }); setTimeout(() => { const el = document.getElementById('scarica-m'); const i = el && el.querySelector('input'); if (i) i.focus(); }, 60); },
+      lSentTo: 'a ' + (s.lSent || '') + ' · aprilo dal computer', lReset: () => this.setState({ lSent: null }), notNarrowL: !s.narrow, lEmail: s.lEmail || '', lOnEmail: e => this.setState({ lEmail: e.target.value }), lSent: !!s.lSent, lNotSent: !s.lSent, lSend: e => { e.preventDefault(); const v = (s.lEmail || '').trim(); if (!/.+@.+\..+/.test(v)) return; this.setState({ lSent: v }); }, lSentText: '✓ Link inviato a ' + (s.lSent || '') + '. Aprilo dal computer.', hdrTop: inner ? 58 : 12,
+      mFrameAR: s.narrow ? '3/5' : '16/10', mDesk: s.narrow ? 'none' : 'inline', mPill: s.narrow ? 'none' : 'flex',
+      mStreamL: s.narrow ? '5%' : '6%', mStreamT: s.narrow ? '9%' : '13%', mStreamW: s.narrow ? '90%' : '56%',
+      mPanelR: s.narrow ? '8%' : '5%', mPanelT: s.narrow ? '34%' : '10%', mPanelW: s.narrow ? '84%' : '31%', navLogin: s.narrow ? 'none' : 'block',
+      link: s.link || '',
+      onLink: e => this.setState({ link: e.target.value }),
+      goClip: e => { e.preventDefault(); location.href = 'Web%20clip.dc.html?link=' + encodeURIComponent(s.link || ''); },
+      heroPhoto: (P.heroVisual ?? 'foto') === 'foto',
+      showFaq: P.showFaq ?? true,
+      ctaPrimary: s.os === 'mac' ? 'Scarica per Mac' : 'Scarica per Windows',
+      ctaNote: s.os === 'mac' ? 'Gratis · anche per Windows' : 'Gratis · anche per Mac',
+      scanPct: s.scan,
+      scanLabel: s.scan >= 100 ? 'Fatto' : 'Analisi ' + s.scan + '%',
+      heroClips: [
+        { title: 'Il facepalm in diretta', meta: '9:16 · 0:28', img: 'uploads/pasted-1793073631249-0.png' },
+        { title: 'Non si ferma fino alla fine', meta: '9:16 · 0:41', img: 'uploads/pasted-1793073659366-0.png' },
+        { title: '"Ragazzi…"', meta: '9:16 · 0:19', img: 'uploads/pasted-1793073805173-0.png' }
+      ],
+      platforms: [
+        { name: 'Twitch', color: '#9146FF', icon: B + 'twitch-on.png' },
+        { name: 'YouTube', color: '#FF0033', icon: B + 'youtube-on.png' },
+        { name: 'Kick', color: '#1E9E3A', icon: B + 'kick-on.png' },
+        { name: 'TikTok', color: '#111318', icon: B + 'tiktok-free.png' },
+        { name: 'Instagram', color: '#D62976', icon: B + 'instagram-on.png' },
+        { name: 'X', color: '#111318', icon: B + 'x-on.png' }
+      ],
+      moments: [{ left: 6, w: 2 }, { left: 22, w: 3 }, { left: 34, w: 1.6 }, { left: 66, w: 2.4 }, { left: 81, w: 2 }],
+      momentList: [
+        { t: '12:47', title: 'Il facepalm in diretta', d: '0:28', img: 'uploads/pasted-1793073631249-0.png' },
+        { t: '1:04:10', title: 'Non si ferma fino alla fine', d: '0:41', img: 'uploads/pasted-1793073659366-0.png' },
+        { t: '2:31:05', title: '"Ragazzi…"', d: '0:19', img: 'uploads/pasted-1793073805173-0.png' }
+      ],
+      posts: [
+        { account: 'TikTok · @marco.gioca', when: 'ora', note: 'Clip pubblicata: "Ascolta questa assurdità"', preset: 'TikTok · stile Gaming', status: 'Pubblicata', stColor: theme === 'dark' ? '#3DC978' : '#1E9E5A', color: '#111318', icon: B + 'tiktok-free.png' },
+        { account: 'YouTube · Marco Gioca', when: '2 min fa', note: 'Short programmato per domani alle 18:00', preset: 'Shorts · stile Pulito', status: 'Alle 18:00', stColor: 'var(--ac)', color: '#FF0033', icon: B + 'youtube-on.png' },
+        { account: 'Instagram · @marcogioca', when: '5 min fa', note: 'Reel pronto: tocca per confermare', preset: 'Reels · stile Gaming', status: 'Da confermare', stColor: 'var(--t3)', color: '#D62976', icon: B + 'instagram-on.png' }
+      ],
+      faqs
+    };
+  }
+}
+</script>
+</body>
+</html>

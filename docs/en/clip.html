@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-eUlYoOl3BweK2J9//qcrsgnDx50jTn8s0fAdtC4WI44='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-wDHIlUWo0y77h5HGWyoqwA9g9o5r1GApVBQxnOPshI4='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>AI clips from your stream, even from your phone | NoonFrame</title>
 <meta name="description" content="Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.">
@@ -1690,6 +1690,9 @@ $('url').addEventListener('input', (ev) => {
 (async function boot() {
   fromHash();
   keepRef();
+  // dalla landing: ?link=<live> riempie il campo (e si toglie dall'indirizzo); con l'accesso fatto parte la stima, come un invio
+  const lk = (new URLSearchParams(location.search).get('link') || '').trim().slice(0, 500);
+  if (lk) { $('url').value = lk; const q0 = new URLSearchParams(location.search); q0.delete('link'); history.replaceState(null, '', location.pathname + (q0.toString() ? '?' + q0 : '')); }
   hit('view');
   loadProof();
   const job = new URLSearchParams(location.search).get('job');
@@ -1706,7 +1709,7 @@ $('url').addEventListener('input', (ev) => {
   if (job && /^[0-9a-f-]{36}$/i.test(job)) { poll(job); return; }
   await loadHist();
   setHint(costNote());
-  if (pending) $('ask').requestSubmit();
+  if (pending || lk) $('ask').requestSubmit();
 })();
 </script>
 </body>

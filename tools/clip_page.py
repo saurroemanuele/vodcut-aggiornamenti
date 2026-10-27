@@ -1800,6 +1800,9 @@ $('url').addEventListener('input', (ev) => {
 (async function boot() {
   fromHash();
   keepRef();
+  // dalla landing: ?link=<live> riempie il campo (e si toglie dall'indirizzo); con l'accesso fatto parte la stima, come un invio
+  const lk = (new URLSearchParams(location.search).get('link') || '').trim().slice(0, 500);
+  if (lk) { $('url').value = lk; const q0 = new URLSearchParams(location.search); q0.delete('link'); history.replaceState(null, '', location.pathname + (q0.toString() ? '?' + q0 : '')); }
   hit('view');
   loadProof();
   const job = new URLSearchParams(location.search).get('job');
@@ -1816,7 +1819,7 @@ $('url').addEventListener('input', (ev) => {
   if (job && /^[0-9a-f-]{36}$/i.test(job)) { poll(job); return; }
   await loadHist();
   setHint(costNote());
-  if (pending) $('ask').requestSubmit();
+  if (pending || lk) $('ask').requestSubmit();
 })();
 </script>
 </body>
