@@ -1,15 +1,32 @@
 {
- "version": "1.7.5",
+ "version": "1.7.6",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.5.zip",
- "size": 12501673,
- "sha256": "8d57e44ea69565dfbc680fb897b0dc010743e581bf51f7098359a3eb4df23553",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.6.zip",
+ "size": 12501858,
+ "sha256": "48715edf48d4cd5d57d6503e9dd85fe851422628f258bb295b79377dba844448",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "Jh3fvB/hiOzJSSs+TMUhPbOh8/GJ3RRSfpEDXK7l7mg9fP4QMRRmFQ3Co6QgeShe4qqaVWh9/PQ5mFsEYkPRAA=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "aU3qB2Bc6N4FLF4Bx3nsctcmGkq2piMwNfhSVE/V2QiQdUcZBXxyqX41M7xCRG3gaPS6UuCKrpu+UESpKgZ1Cg=="
  },
- "notes": "Novità: Crediti e piani con un nuovo look: vedi quante ore di live ti danno i crediti di ogni piano e di ogni ricarica\nCorrezione: Il pulsante Aggiornamenti nel menu del profilo non sposta più le scritte e non perde l'icona\nMiglioramento: Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
+ "notes": "Miglioramento: Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)\nMiglioramento: Pagina dei piani più pulita",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.6",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)",
+     "en": "Plans and paywall: each plan has its own color (Starter green, Pro blue, Ultimate purple)"
+    },
+    {
+     "type": "impr",
+     "text": "Pagina dei piani più pulita",
+     "en": "Cleaner plans page"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.5",
    "date": "2026-10-27",
@@ -509,18 +526,7 @@
      "en": "The credits and plans window now reads well on short screens too"
     }
    ]
-  },
-  {
-   "version": "1.5.165",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Se la creazione delle clip si interrompe, riprovando si riparte dai momenti già trovati: niente nuova ricerca e niente crediti scalati di nuovo",
-     "en": "If clip creation stops, trying again picks up from the moments already found: no new search and no credits charged again"
-    }
-   ]
   }
  ],
- "sig": "YpCkPC07lI1VbuPEIT1l7h/RSasZzJGHk993vcjatZPWE9rNoPBkF24mMQXSEyScoR13XuYeiXciSh0z8PbOAA=="
+ "sig": "Z6y2ID9Gm4XkniP82KgtXE2zUUwSfY826LwI9uA4kOkvETj51GnfSUY8kyDUTQdMpSOYNOpTLBYJQIoaskkiCA=="
 }
