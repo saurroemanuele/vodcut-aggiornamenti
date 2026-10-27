@@ -24,7 +24,7 @@ T = {
         "navHome": "Home",
         "navProj": "Progetti",
         "navStyle": "Preset",
-        "navStyleSub": "Il mio stile",
+        "navStyleSub": "Automatico",
         "keepT": "I video restano 7 giorni",
         "keepD": "Sul web i progetti si cancellano da soli. Nell'app li tieni per sempre.",
         "appBtn": "Scarica l'app",
@@ -38,8 +38,8 @@ T = {
         "mOut": "Esci",
         "projT": "Progetti",
         "projD": "Le live che hai trasformato in clip dal browser. Restano 7 giorni.",
-        "styleT": "Il mio stile",
-        "styleD": "Sottotitoli, titolo d'apertura e cosa cercare: valgono per le prossime clip e li ricordiamo su questo dispositivo.",
+        "styleT": "Stile delle clip",
+        "styleD": "Come appaiono le clip: lo stile automatico di NoonFrame oppure il tuo. Vale per le prossime clip.",
     },
     "en": {
         "lang": "en", "title": "AI clips from your stream, even from your phone | NoonFrame",
@@ -57,7 +57,7 @@ T = {
         "navHome": "Home",
         "navProj": "Projects",
         "navStyle": "Presets",
-        "navStyleSub": "My style",
+        "navStyleSub": "Automatic",
         "keepT": "Videos stay for 7 days",
         "keepD": "On the web, projects delete themselves. In the app you keep them forever.",
         "appBtn": "Get the app",
@@ -71,8 +71,8 @@ T = {
         "mOut": "Sign out",
         "projT": "Projects",
         "projD": "Streams you turned into clips in the browser. They stay for 7 days.",
-        "styleT": "My style",
-        "styleD": "Captions, opening title and what to look for: they apply to your next clips and we remember them on this device.",
+        "styleT": "Clip style",
+        "styleD": "How your clips look: NoonFrame's automatic style or your own. It applies to your next clips.",
     },
 }
 
@@ -111,7 +111,7 @@ JS = {
         "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"},
         "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO",
         "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
-        "v2": {"signin": "Accedi", "signup": "Registrati", "styleBtn": "Il mio stile", "styleAll": "Tutte le impostazioni dello stile", "styleH": "Sottotitoli", "webPrice": "Dal browser: da {p}, oppure con un piano · Gratis nell'app", "free": "Gratis", "hrs": "≈ {n} ore", "hr1": "≈ 1 ora", "mins": "≈ {n} min", "ofLive": "di live", "ofLiveMo": "di live al mese", "sbUp": "Passa a {p}", "sbTop": "Ricarica", "sbHrs": "{h} di live dal web", "recent": "Recenti", "nClips": "{n} clip", "newLink": "Nuovo link", "dlAll": "Scarica tutte", "sorted": "Ordinate per punteggio: quanto la clip può funzionare da sola", "expIn": "Scade tra {n} giorni", "expTom": "Scade domani", "expToday": "Scade oggi", "delIn": "Si cancella tra {n} giorni", "delTom": "Si cancella domani", "delToday": "Si cancella oggi", "projEmpty": "Qui trovi le live che trasformi in clip. Incolla il primo link dalla Home.", "projGo": "Vai alla Home", "projIn": "Accedi per vedere i tuoi progetti.", "stepDone": "fatto", "untitled": "Video senza titolo", "plansT": "Crediti e piani", "plansD": "Sul web trovare le clip costa circa {n} crediti per ogni ora di live. Nell'app sul computer costa molto meno.", "meT": "Il tuo piano", "meFree": "Con un piano hai crediti nuovi ogni mese", "meNext": "Crediti nuovi ogni mese", "subsT": "Abbonamenti", "subsD": "Crediti nuovi ogni mese. Disdici quando vuoi.", "monthly": "Mensile", "yearly": "Annuale", "freeMo": "{n} mesi gratis", "crMo": "{n} crediti al mese", "billM": "Fatturato ogni mese", "billY": "{p} fatturati ogni anno", "firstMo": "il primo mese, poi {p}", "goTo": "Passa a {p}", "current": "Piano attuale", "popular": "Il più scelto", "mine": "Il tuo piano", "packsT": "Ricarica crediti", "packsD": "Una tantum, senza abbonamento. I crediti ricaricati non scadono.", "packCr": "{n} crediti · non scadono", "per100": "{p} ogni 100", "best": "Il migliore", "conv": "Conviene", "rule": "1 ora di live ≈ {n} crediti", "secure": "Pagamento sicuro con Stripe", "vat": "Prezzi IVA inclusa", "anytime": "Disdici quando vuoi", "manage": "Gestisci abbonamento", "perMo": "/mese", "pay": "Pagamento", "payFail": "Il pagamento non si è aperto", "payFailD": "Controlla la connessione e riprova: non ti abbiamo addebitato niente.", "close": "Chiudi", "payGot": "Pagamento ricevuto: i crediti arrivano tra qualche secondo", "planOn": "Piano attivo: {p}", "plusCr": "+{n} crediti", "paypalNo": "PayPal non è disponibile: paga con la carta", "payNo": "Pagamento non avviato: riprova"},
+        "v2": {"signin": "Accedi", "signup": "Registrati", "styleBtn": "Il mio stile", "styAuto": "Stile automatico", "styAutoC": "Automatico", "styNew": "Crea il tuo", "styPop": "Stile delle clip", "styManage": "Gestisci", "styFoot": "Momenti, tagli e zoom li sceglie sempre NoonFrame. Lo stile decide solo come appaiono le clip.", "styAutoD": "Ci pensa NoonFrame: sottotitoli gialli in stile Classico e titolo d'apertura. Va bene per quasi tutti i video.", "styNewBtn": "Crea il tuo stile", "styMineD": "Le modifiche si salvano da sole e valgono per le prossime clip, su questo dispositivo.", "styDel": "Elimina il mio stile", "webPrice": "Dal browser: da {p}, oppure con un piano · Gratis nell'app", "free": "Gratis", "hrs": "≈ {n} ore", "hr1": "≈ 1 ora", "mins": "≈ {n} min", "ofLive": "di live", "ofLiveMo": "di live al mese", "sbUp": "Passa a {p}", "sbTop": "Ricarica", "sbHrs": "{h} di live dal web", "recent": "Recenti", "nClips": "{n} clip", "newLink": "Nuovo link", "dlAll": "Scarica tutte", "sorted": "Ordinate per punteggio: quanto la clip può funzionare da sola", "expIn": "Scade tra {n} giorni", "expTom": "Scade domani", "expToday": "Scade oggi", "delIn": "Si cancella tra {n} giorni", "delTom": "Si cancella domani", "delToday": "Si cancella oggi", "projEmpty": "Qui trovi le live che trasformi in clip. Incolla il primo link dalla Home.", "projGo": "Vai alla Home", "projIn": "Accedi per vedere i tuoi progetti.", "stepDone": "fatto", "untitled": "Video senza titolo", "plansT": "Crediti e piani", "plansD": "Sul web trovare le clip costa circa {n} crediti per ogni ora di live. Nell'app sul computer costa molto meno.", "meT": "Il tuo piano", "meFree": "Con un piano hai crediti nuovi ogni mese", "meNext": "Crediti nuovi ogni mese", "subsT": "Abbonamenti", "subsD": "Crediti nuovi ogni mese. Disdici quando vuoi.", "monthly": "Mensile", "yearly": "Annuale", "freeMo": "{n} mesi gratis", "crMo": "{n} crediti al mese", "billM": "Fatturato ogni mese", "billY": "{p} fatturati ogni anno", "firstMo": "il primo mese, poi {p}", "goTo": "Passa a {p}", "current": "Piano attuale", "popular": "Il più scelto", "mine": "Il tuo piano", "packsT": "Ricarica crediti", "packsD": "Una tantum, senza abbonamento. I crediti ricaricati non scadono.", "packCr": "{n} crediti · non scadono", "per100": "{p} ogni 100", "best": "Il migliore", "conv": "Conviene", "rule": "1 ora di live ≈ {n} crediti", "secure": "Pagamento sicuro con Stripe", "vat": "Prezzi IVA inclusa", "anytime": "Disdici quando vuoi", "manage": "Gestisci abbonamento", "perMo": "/mese", "pay": "Pagamento", "payFail": "Il pagamento non si è aperto", "payFailD": "Controlla la connessione e riprova: non ti abbiamo addebitato niente.", "close": "Chiudi", "payGot": "Pagamento ricevuto: i crediti arrivano tra qualche secondo", "planOn": "Piano attivo: {p}", "plusCr": "+{n} crediti", "paypalNo": "PayPal non è disponibile: paga con la carta", "payNo": "Pagamento non avviato: riprova"},
     },
     "en": {
         "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "twChan": "This is the channel link: on Twitch open the finished stream (in the Videos section) and copy the replay link, like twitch.tv/videos/….", "twClip": "This is a Twitch clip: we need the link to the whole stream, like twitch.tv/videos/….", "kickChan": "This is the channel link: on Kick open the finished stream among the channel's videos and copy its link, like kick.com/channel/videos/….", "kickClip": "This is a Kick clip: we need the link to the whole stream, like kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h",
@@ -146,7 +146,7 @@ JS = {
         "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"},
         "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT",
         "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime.",
-        "v2": {"signin": "Log in", "signup": "Sign up", "styleBtn": "My style", "styleAll": "All style settings", "styleH": "Captions", "webPrice": "In the browser: from {p}, or with a plan · Free in the app", "free": "Free", "hrs": "≈ {n} hours", "hr1": "≈ 1 hour", "mins": "≈ {n} min", "ofLive": "of streams", "ofLiveMo": "of streams a month", "sbUp": "Switch to {p}", "sbTop": "Top up", "sbHrs": "{h} of streams on the web", "recent": "Recent", "nClips": "{n} clips", "newLink": "New link", "dlAll": "Download all", "sorted": "Sorted by score: how well the clip can work on its own", "expIn": "Expires in {n} days", "expTom": "Expires tomorrow", "expToday": "Expires today", "delIn": "Deletes in {n} days", "delTom": "Deletes tomorrow", "delToday": "Deletes today", "projEmpty": "Streams you turn into clips show up here. Paste your first link on Home.", "projGo": "Go to Home", "projIn": "Sign in to see your projects.", "stepDone": "done", "untitled": "Untitled video", "plansT": "Credits and plans", "plansD": "On the web, finding clips costs about {n} credits per hour of stream. In the desktop app it costs much less.", "meT": "Your plan", "meFree": "With a plan you get fresh credits every month", "meNext": "Fresh credits every month", "subsT": "Subscriptions", "subsD": "Fresh credits every month. Cancel anytime.", "monthly": "Monthly", "yearly": "Yearly", "freeMo": "{n} months free", "crMo": "{n} credits a month", "billM": "Billed monthly", "billY": "{p} billed yearly", "firstMo": "for the first month, then {p}", "goTo": "Switch to {p}", "current": "Current plan", "popular": "Most popular", "mine": "Your plan", "packsT": "Top up credits", "packsD": "One-time, no subscription. Top-up credits never expire.", "packCr": "{n} credits · never expire", "per100": "{p} per 100", "best": "Best value", "conv": "Good deal", "rule": "1 stream hour ≈ {n} credits", "secure": "Secure payment with Stripe", "vat": "Prices include VAT", "anytime": "Cancel anytime", "manage": "Manage subscription", "perMo": "/mo", "pay": "Payment", "payFail": "The payment didn't open", "payFailD": "Check your connection and try again: you haven't been charged.", "close": "Close", "payGot": "Payment received: your credits arrive in a few seconds", "planOn": "Plan active: {p}", "plusCr": "+{n} credits", "paypalNo": "PayPal isn't available: pay by card", "payNo": "Payment didn't start: try again"},
+        "v2": {"signin": "Log in", "signup": "Sign up", "styleBtn": "My style", "styAuto": "Automatic style", "styAutoC": "Automatic", "styNew": "Create yours", "styPop": "Clip style", "styManage": "Manage", "styFoot": "NoonFrame always picks the moments, cuts and zooms. The style only decides how your clips look.", "styAutoD": "NoonFrame takes care of it: yellow Classic captions and an opening title. It works for almost every video.", "styNewBtn": "Create your style", "styMineD": "Changes save on their own and apply to your next clips on this device.", "styDel": "Delete my style", "webPrice": "In the browser: from {p}, or with a plan · Free in the app", "free": "Free", "hrs": "≈ {n} hours", "hr1": "≈ 1 hour", "mins": "≈ {n} min", "ofLive": "of streams", "ofLiveMo": "of streams a month", "sbUp": "Switch to {p}", "sbTop": "Top up", "sbHrs": "{h} of streams on the web", "recent": "Recent", "nClips": "{n} clips", "newLink": "New link", "dlAll": "Download all", "sorted": "Sorted by score: how well the clip can work on its own", "expIn": "Expires in {n} days", "expTom": "Expires tomorrow", "expToday": "Expires today", "delIn": "Deletes in {n} days", "delTom": "Deletes tomorrow", "delToday": "Deletes today", "projEmpty": "Streams you turn into clips show up here. Paste your first link on Home.", "projGo": "Go to Home", "projIn": "Sign in to see your projects.", "stepDone": "done", "untitled": "Untitled video", "plansT": "Credits and plans", "plansD": "On the web, finding clips costs about {n} credits per hour of stream. In the desktop app it costs much less.", "meT": "Your plan", "meFree": "With a plan you get fresh credits every month", "meNext": "Fresh credits every month", "subsT": "Subscriptions", "subsD": "Fresh credits every month. Cancel anytime.", "monthly": "Monthly", "yearly": "Yearly", "freeMo": "{n} months free", "crMo": "{n} credits a month", "billM": "Billed monthly", "billY": "{p} billed yearly", "firstMo": "for the first month, then {p}", "goTo": "Switch to {p}", "current": "Current plan", "popular": "Most popular", "mine": "Your plan", "packsT": "Top up credits", "packsD": "One-time, no subscription. Top-up credits never expire.", "packCr": "{n} credits · never expire", "per100": "{p} per 100", "best": "Best value", "conv": "Good deal", "rule": "1 stream hour ≈ {n} credits", "secure": "Secure payment with Stripe", "vat": "Prices include VAT", "anytime": "Cancel anytime", "manage": "Manage subscription", "perMo": "/mo", "pay": "Payment", "payFail": "The payment didn't open", "payFailD": "Check your connection and try again: you haven't been charged.", "close": "Close", "payGot": "Payment received: your credits arrive in a few seconds", "planOn": "Plan active: {p}", "plusCr": "+{n} credits", "paypalNo": "PayPal isn't available: pay by card", "payNo": "Payment didn't start: try again"},
     },
 }
 
@@ -1043,6 +1043,61 @@ a.jcard:hover .jthumb { transform: translateY(-2px); box-shadow: 0 14px 30px -12
   .hero h1 { margin-left: 0; margin-right: 0; }
   #v-home:has(> #hist.hide) > .hero:not(.hide) { min-height: calc(100dvh - 210px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); display: flex; flex-direction: column; justify-content: center; }
 }
+/* stile delle clip: automatico o il mio, a schede 9:16 disegnate */
+.ask { z-index: 30; } /* il menu dello stile sopra le live recenti */
+.sty-s.auto { display: grid; place-items: center; border-radius: 50%; width: 22px; height: 22px; background: linear-gradient(140deg, #4C8DFF, #8B5CF6); color: #fff; box-shadow: none; }
+.sty-s.auto::after { display: none; }
+.sty-s.auto svg { width: 12px; height: 12px; }
+#styl { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.stym { width: 344px; padding: 14px; gap: 12px; }
+.stym-h { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 2px; font-size: 14px; color: var(--fg); }
+.stym .stym-m { width: auto; min-height: 0; padding: 4px 6px; margin: -4px -6px; border: 0; border-radius: 8px; font: 600 13px var(--body); color: var(--fg-2); }
+.stym .stc-b svg { width: 11px; height: 11px; color: inherit; }
+.stym .stc.new .stc-t > i svg { width: 18px; height: 18px; color: inherit; }
+.stym .stym-m:hover { color: var(--fg); background: none; }
+.stym-f { margin: 0; padding: 10px 2px 0; border-top: 1px solid var(--line); font-size: 12.5px; line-height: 1.45; color: var(--fg-3); }
+.stc-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.stym .stc, .stc { display: grid; gap: 7px; width: auto; min-height: 0; padding: 0; border: 0; background: none; color: var(--fg-2); font: 700 13px var(--body); text-align: center; cursor: pointer; }
+.stym .stc:hover, .stym .stc:focus-visible { background: none; }
+.stc[aria-checked="true"] { color: var(--fg); }
+.stc:focus-visible { outline: none; }
+.stc:focus-visible .stc-t { box-shadow: 0 0 0 2px var(--sky); }
+.stc-t { position: relative; display: block; aspect-ratio: 9 / 16; border-radius: 12px; overflow: hidden; transition: transform .15s, box-shadow .15s;
+  background: radial-gradient(circle at 26% 16%, rgba(255,79,216,.45), transparent 32%), radial-gradient(circle at 78% 30%, rgba(76,141,255,.55), transparent 38%), radial-gradient(circle at 50% 70%, rgba(139,92,246,.35), transparent 45%), linear-gradient(180deg, #0B1230 0%, #191451 58%, #0A0F24 100%);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+.stc-t::before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 40%; background: linear-gradient(180deg, #202A5C, #0A0F24); clip-path: polygon(0 34%, 16% 14%, 32% 30%, 52% 0, 70% 24%, 86% 8%, 100% 26%, 100% 100%, 0 100%); }
+.stc:hover .stc-t { transform: translateY(-2px); }
+.stc[aria-checked="true"] .stc-t { box-shadow: 0 0 0 2px var(--blue), 0 8px 24px -10px rgba(31,107,255,.8); }
+.stc-h, .stc-s { position: absolute; left: 4px; right: 4px; z-index: 1; text-align: center; line-height: 1.25; }
+.stc-h { top: 20%; } .stc-s { top: 60%; }
+.stc-t .smp { font-size: 9px; white-space: normal; }
+.stc-t .smp.box, .stc-t .smp.hbox { padding: 1px 4px; border-radius: 4px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.stc-b { position: absolute; top: 6px; left: 6px; z-index: 1; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(140deg, #4C8DFF, #8B5CF6); color: #fff; font-style: normal; }
+.stc-b svg { width: 11px; height: 11px; }
+.stc.new .stc-t { display: grid; place-items: center; background: rgba(var(--fg-rgb),.04); box-shadow: inset 0 0 0 1.5px rgba(var(--fg-rgb),.22); }
+.stc.new .stc-t::before { display: none; }
+.stc.new .stc-t > i { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--blue); color: #fff; }
+.stc.new .stc-t > i svg { width: 18px; height: 18px; }
+.stc.new:hover .stc-t { box-shadow: inset 0 0 0 1.5px var(--blue); }
+.set .stc-row, #slist > .stc-row { max-width: 372px; }
+#slist { display: grid; gap: 16px; align-content: start; }
+#slist > .st-d { margin: 0; max-width: 560px; font-size: 14px; line-height: 1.5; color: var(--fg-2); }
+#slist > .btn { justify-self: start; }
+#slist > .set { border-top: 1px solid var(--line); }
+.st-del { justify-self: start; padding: 4px 0; border: 0; background: none; color: var(--fg-3); font: 600 13px var(--body); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.st-del:hover { color: #FF6B6B; }
+@media (max-width: 759px) {
+  .ask .sty { flex: 0 1 auto; min-width: 0; gap: 6px; padding: 0 12px 0 8px; }
+  .ask .btn { flex: 1 1 0; min-width: 0; padding: 0 14px; white-space: nowrap; }
+  .stym { left: 0; right: 0; width: auto; scroll-margin-bottom: calc(104px + env(safe-area-inset-bottom)); }
+  /* spazio sotto il menu, così la pagina scorre oltre la barra in basso */
+  .stym::after { content: ""; position: absolute; left: 0; top: 100%; width: 1px; height: calc(104px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 370px) {
+  .ask .sty > svg { display: none; } .ask .sty { padding-right: 12px; }
+  .top { gap: 4px; padding-left: 12px; } .top .lin { padding: 0 8px; } .top .btn-sm { padding: 0 14px; }
+}
+@media (max-width: 340px) { .tb-brand span { display: none; } }
 </style>
 </head>
 <body>
@@ -1052,7 +1107,7 @@ a.jcard:hover .jthumb { transform: translateY(-2px); box-shadow: 0 14px 30px -12
   <nav class="sb-nav" aria-label="{navLabel}">
     <button class="nv on" type="button" data-view="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4z"/></svg><span>{navHome}</span></button>
     <button class="nv" type="button" data-view="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>{navProj}</span><em id="nprj"></em></button>
-    <button class="nv" type="button" data-view="style"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>{navStyle}</span><em>{navStyleSub}</em></button>
+    <button class="nv" type="button" data-view="style"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>{navStyle}</span><em id="navsty">{navStyleSub}</em></button>
   </nav>
   <span class="grow"></span>
   <div class="sb-cred hide" id="sbcred"></div>
@@ -1363,29 +1418,39 @@ function paintSide() {
   $('pmhrs').textContent = hrs;
 }
 
-// lo stile dentro la barra del link: i sottotitoli in un tocco, il resto in Preset (ricordato su questo dispositivo)
-function paintSty() { $('stys').style.setProperty('--c', (SUB_LOOK[OPTS.subs.style] || SUB_LOOK.classico)[1]); $('styl').textContent = L.v2.styleBtn; }
+// lo stile dentro la barra del link: "Stile automatico" finché l'utente non crea il suo (ricordato su questo dispositivo)
+const SPARK = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg>';
+function paintSty() {
+  const sw = $('stys'), mine = STY === 'mine';
+  sw.className = 'sty-s' + (mine ? '' : ' auto'); sw.innerHTML = mine ? '' : SPARK;
+  if (mine) sw.style.setProperty('--c', (SUB_LOOK[OPTS.subs.style] || SUB_LOOK.classico)[1]);
+  $('styl').textContent = mine ? V.styleBtn : V.styAuto;
+  $('navsty').textContent = mine ? V.styleBtn : V.styAutoC;
+}
 const stym = $('stym');
 function closeSty() { stym.classList.remove('open'); $('sty').setAttribute('aria-expanded', 'false'); }
 $('sty').onclick = (e) => {
   e.stopPropagation();
   if (stym.classList.contains('open')) { closeSty(); return; }
-  stym.innerHTML = '<div class="stym-h">' + esc(L.v2.styleH) + '</div>'
-    + Object.entries(L.subStyles).map(([k, l]) => '<button type="button" role="menuitemradio" aria-checked="' + (OPTS.subs.style === k) + '" data-s="' + k + '"><span class="stym-p">' + sample(L.subSample, SUB_LOOK[k]) + '</span><span>' + esc(l) + '</span>' + (OPTS.subs.style === k ? ICO.tick : '') + '</button>').join('')
-    + '<button type="button" role="menuitem" data-all><span></span><span>' + esc(L.v2.styleAll) + '</span>' + ICO.r + '</button>';
+  stym.innerHTML = '<div class="stym-h"><b>' + esc(V.styPop) + '</b><button type="button" class="stym-m" data-all>' + esc(V.styManage) + '</button></div>'
+    + styCards(true) + '<p class="stym-f">' + esc(V.styFoot) + '</p>';
   stym.classList.add('open'); $('sty').setAttribute('aria-expanded', 'true');
+  // sul telefono il menu non deve restare sotto la barra in basso
+  try { stym.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); } catch (err) {}
 };
 stym.addEventListener('click', (e) => {
   e.stopPropagation();
   const b = e.target.closest('button'); if (!b) return;
-  if (b.dataset.s) {
-    OPTS.subs.style = b.dataset.s; saveOpts(); paintSty();
-    document.querySelectorAll('#est [data-sub]').forEach((x) => x.setAttribute('aria-checked', String(x.dataset.sub === b.dataset.s)));
-  }
   closeSty();
-  if (b.hasAttribute('data-all')) setView('style');
+  if (b.dataset.sk) pickSty(b.dataset.sk);
+  else if (b.hasAttribute('data-all')) setView('style');
 });
-document.addEventListener('click', (e) => { if (!e.target.closest('#sty') && !e.target.closest('#stym')) closeSty(); });
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#sty') && !e.target.closest('#stym')) closeSty();
+  // le schede dello stile nella stima e in Preset
+  const c = e.target.closest('[data-sk]');
+  if (c && !c.closest('#stym')) pickSty(c.dataset.sk);
+});
 
 let current = null, timer = null, perHour = 30;
 const stageIdx = { queued: 0, start: 0, download: 0, prepare: 1, clips: 2, render: 3, upload: 3, done: 4 };
@@ -2323,7 +2388,14 @@ function paintProjects() {
   el.innerHTML = '<div class="jgrid">' + JOBS.map(jobCard).join('') + '</div>';
 }
 // Preset: lo stile delle prossime clip (lo stesso delle impostazioni prima di creare), ricordato su questo dispositivo
-function paintStyle() { const el = $('slist'); el.innerHTML = settingsHtml(null); bindSettings(el); }
+function paintStyle() {
+  const el = $('slist');
+  el.innerHTML = styCards(false) + (STY === 'mine'
+    ? '<p class="st-d">' + esc(V.styMineD) + '</p>' + settingsHtml(null, true) + '<button type="button" class="st-del" id="stdel">' + esc(V.styDel) + '</button>'
+    : '<p class="st-d">' + esc(V.styAutoD) + '</p>' + (MINE ? '' : '<button type="button" class="btn btn-primary btn-sm" data-sk="new">' + esc(V.styNewBtn) + '</button>'));
+  bindSettings(el);
+  if ($('stdel')) $('stdel').onclick = delSty;
+}
 
 function fmtDur(sec) {
   const m = Math.round(sec / 60), h = Math.floor(m / 60);
@@ -2333,7 +2405,37 @@ let estFor = null;
 // impostazioni come nel tool (ricordate su questo dispositivo)
 const DEF_OPTS = { mode: 'auto', subs: { style: 'classico', pos: 'auto', words: 'poche' }, hook: { on: true, style: 'classico' }, prompt: '' };
 let OPTS = (() => { const o = store.get('nf.opts') || {}; return { ...DEF_OPTS, ...o, mode: 'auto', subs: { ...DEF_OPTS.subs, ...(o.subs || {}) }, hook: { ...DEF_OPTS.hook, ...(o.hook || {}) }, prompt: '' }; })();
-const saveOpts = () => store.set('nf.opts', { mode: OPTS.mode, subs: OPTS.subs, hook: OPTS.hook });
+const saveOpts = () => { MINE = true; store.set('nf.opts', { mode: OPTS.mode, subs: OPTS.subs, hook: OPTS.hook }); refreshSty(); };
+// lo stile delle clip: automatico (lo sceglie NoonFrame) oppure il mio (creato dall'utente su questo dispositivo)
+let MINE = !!store.get('nf.opts');
+let STY = MINE && store.get('nf.sty') !== 'auto' ? 'mine' : 'auto';
+const runOpts = () => (STY === 'mine' ? OPTS : { ...OPTS, subs: { ...DEF_OPTS.subs }, hook: { ...DEF_OPTS.hook } });
+// il pulsante nella barra e le schede aperte (menu, stima, Preset) seguono lo stile e le sue modifiche
+function refreshSty() { paintSty(); document.querySelectorAll('.stc-row').forEach((r) => { r.outerHTML = styCards(!!r.closest('#stym')); }); }
+function setSty(v) {
+  STY = v; store.set('nf.sty', v); refreshSty();
+  if (!$('v-style').classList.contains('hide')) paintStyle();
+}
+function pickSty(k) {
+  if (k !== 'new') { setSty(k); return; }
+  OPTS.subs = { ...DEF_OPTS.subs }; OPTS.hook = { ...DEF_OPTS.hook }; saveOpts(); setSty('mine'); setView('style');
+}
+function delSty() { store.set('nf.opts', null); MINE = false; OPTS.subs = { ...DEF_OPTS.subs }; OPTS.hook = { ...DEF_OPTS.hook }; setSty('auto'); }
+// anteprima 9:16 disegnata (niente video di altri): titolo d'apertura in alto, sottotitoli sotto
+function styThumb(o, badge) {
+  return '<span class="stc-t">' + (badge ? '<i class="stc-b">' + SPARK + '</i>' : '')
+    + (o.hook.on ? '<span class="stc-h">' + sample(L.hookSample, HOOK_LOOK[o.hook.style] || HOOK_LOOK.classico) + '</span>' : '')
+    + '<span class="stc-s">' + sample(L.subSample, SUB_LOOK[o.subs.style] || SUB_LOOK.classico) + '</span></span>';
+}
+function styCards(menu) {
+  const card = (k, name, inner) => '<button type="button" class="stc' + (k === 'new' ? ' new' : '') + '" data-sk="' + k + '" role="'
+    + (k === 'new' ? (menu ? 'menuitem' : 'button') : (menu ? 'menuitemradio' : 'radio')) + '"' + (k === 'new' ? '' : ' aria-checked="' + (STY === k) + '"') + '>'
+    + inner + '<b>' + esc(name) + '</b></button>';
+  return '<div class="stc-row"' + (menu ? '' : ' role="radiogroup" aria-label="' + esc(V.styPop) + '"') + '>'
+    + card('auto', V.styAutoC, styThumb(DEF_OPTS, true))
+    + (MINE ? card('mine', V.styleBtn, styThumb(OPTS)) : card('new', V.styNew, '<span class="stc-t"><i>' + ICO.plus + '</i></span>'))
+    + '</div>';
+}
 const SUB_LOOK = { classico: ['', '#FFD60A'], verde: ['', '#3DDC84'], riquadro: ['box', '#FFD60A'], pulito: ['low', '#FFFFFF'], impatto: ['', '#FF5A1F'] };
 const HOOK_LOOK = { classico: ['', '#FFD60A'], verde: ['', '#3DDC84'], box: ['hbox', '#FF3B30'], neon: ['', '#FF4FD8'], pulito: ['low', '#3DDC84'], impatto: ['', '#FF5A1F'] };
 function sample(txt, look) {
@@ -2341,11 +2443,14 @@ function sample(txt, look) {
   const w = txt.split(' '), last = w.pop();
   return '<span class="smp ' + look[0] + '">' + esc(w.join(' ')) + ' <em style="color:' + look[1] + '">' + esc(last) + '</em></span>';
 }
-function settingsHtml(kind) {
+function settingsHtml(kind, edit) {
   const auto = kind === 'podcast' ? L.kindAutoPod : kind === 'gaming' ? L.kindAutoGame : L.kindAutoNo;
   const kindBtn = (k, name, sub) => '<button type="button" class="kind" role="radio" data-k="' + k + '" aria-checked="' + (OPTS.mode === k) + '"><span class="ph9 ' + k + '">'
     + (k === 'auto' ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.2 6.3L20.5 10l-6.3 2.2L12 18.5l-2.2-6.3L3.5 10l6.3-1.7z"/></svg>' : '<i></i><u></u>') + '</span><b>' + esc(name) + '</b><small>' + esc(sub) + '</small></button>';
   const seg = (key, opts) => '<div class="seg" role="group">' + Object.entries(opts).map(([k, l]) => '<button type="button" data-seg="' + key + '" data-v="' + k + '" aria-pressed="' + (OPTS.subs[key] === k) + '">' + esc(l) + '</button>').join('') + '</div>';
+  if (!edit) return '<div class="set" id="set"><div><h4>' + esc(V.styPop) + '</h4>' + styCards(false) + '</div>'
+    + '<div><h4>' + esc(L.promptT) + '</h4><input class="q" id="optq" maxlength="200" placeholder="' + esc(L.promptPh) + '" value="' + esc(OPTS.prompt) + '"></div>'
+    + '<p class="note">' + esc(L.autoNote) + '</p></div>';
   return '<div class="set" id="set">'
     + '<div><h4>' + esc(L.subsT) + '</h4><div class="chips" role="radiogroup" aria-label="' + esc(L.subsT) + '">'
     + Object.entries(L.subStyles).map(([k, l]) => '<button type="button" class="chip" role="radio" data-sub="' + k + '" aria-checked="' + (OPTS.subs.style === k) + '">' + sample(L.subSample, SUB_LOOK[k]) + '<small>' + esc(l) + '</small></button>').join('')
@@ -2354,8 +2459,6 @@ function settingsHtml(kind) {
     + '<div class="chips hooks' + (OPTS.hook.on ? '' : ' off') + '" role="radiogroup" aria-label="' + esc(L.hookT) + '">'
     + Object.entries(L.hookStyles).map(([k, l]) => '<button type="button" class="chip" role="radio" data-hook="' + k + '" aria-checked="' + (OPTS.hook.style === k) + '">' + sample(L.hookSample, HOOK_LOOK[k]) + '<small>' + esc(l) + '</small></button>').join('')
     + '</div></div>'
-    + '<div><h4>' + esc(L.promptT) + '</h4><input class="q" id="optq" maxlength="200" placeholder="' + esc(L.promptPh) + '" value="' + esc(OPTS.prompt) + '"></div>'
-    + '<p class="note">' + esc(L.autoNote) + '</p>'
     + '</div>';
 }
 function bindSettings(box) {
@@ -2370,14 +2473,14 @@ function bindSettings(box) {
     saveOpts();
   });
   const on = set.querySelector('#hookon');
-  on.addEventListener('change', () => { OPTS.hook.on = on.checked; set.querySelector('.hooks').classList.toggle('off', !on.checked); saveOpts(); });
+  if (on) on.addEventListener('change', () => { OPTS.hook.on = on.checked; set.querySelector('.hooks').classList.toggle('off', !on.checked); saveOpts(); });
   const q = set.querySelector('#optq');
-  q.addEventListener('input', () => { OPTS.prompt = q.value.slice(0, 200); });
+  if (q) q.addEventListener('input', () => { OPTS.prompt = q.value.slice(0, 200); });
 }
 async function startJob(url) {
   const b = $('estgo'); if (b) b.disabled = true;
   try {
-    const r = await call('start', { url, lang: '', opts: OPTS });
+    const r = await call('start', { url, lang: '', opts: runOpts() });
     history.replaceState(null, '', '?job=' + r.job.id);
     step('clip_start', r.job.id);
     perHour = r.perHour || perHour;
