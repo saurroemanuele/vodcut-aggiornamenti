@@ -1,15 +1,32 @@
 {
- "version": "1.7.3",
+ "version": "1.7.4",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.3.zip",
- "size": 12488535,
- "sha256": "b5288eab8313b71f96fd1529fd0445a65c6b7008cc97275cd9c592819bf7eb6f",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.4.zip",
+ "size": 12494265,
+ "sha256": "15630ae08fd5b14d6c33a191571d4cfa292b0fe30257b5a90463770453acf818",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "ZUNVuV8uMTAK5q9W8F5J4Xu6nfZpEGabMXcYhQWW4bgF1suJBrsoJtdAa5TSPF26c1v67zMtxRoEN7222uI6Ag=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "1FWgwwEeXHy/802keDhTriLzoRP+jxEXjXt8E0IcaAaKlTTEfPpOieX8PnTuJoftl7C/0rdcVL+UBCYHVixeDQ=="
  },
- "notes": "Correzione: Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
+ "notes": "Novità: Assistente AI: capisce cosa chiedi e fa solo quello. Se chiedi font e sottotitoli li sceglie lui, adatti al tuo video, e ti spiega perché\nMiglioramento: Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.4",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Assistente AI: capisce cosa chiedi e fa solo quello. Se chiedi font e sottotitoli li sceglie lui, adatti al tuo video, e ti spiega perché",
+     "en": "AI assistant: understands what you ask and does just that. Ask for fonts and subtitles and it picks them to suit your video, and explains why"
+    },
+    {
+     "type": "impr",
+     "text": "Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
+     "en": "Clearer messages while the AI works, and for written requests you see the maximum cost before confirming"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.3",
    "date": "2026-10-27",
@@ -497,23 +514,7 @@
      "en": "More reliable clips: clip creation no longer stops on videos with a layout already chosen, and transcription no longer breaks if it starts twice"
     }
    ]
-  },
-  {
-   "version": "1.5.163",
-   "date": "2026-10-08",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le pagine di pagamento e di gestione dell'abbonamento si aprono anche con Stripe",
-     "en": "Payment and subscription management pages now also open with Stripe"
-    },
-    {
-     "type": "impr",
-     "text": "Termini e privacy aggiornati per i pagamenti con Stripe",
-     "en": "Terms and privacy updated for Stripe payments"
-    }
-   ]
   }
  ],
- "sig": "U2yaEYKLncjnn3MxblnfDk6kVZl7kY/wTwUrWJVdYUTdMce7VWdhYw3jm/lustjOyczEnYBKGMaPLswuoMvWAg=="
+ "sig": "ty5VsMwIf1iticddKdlGg5kJdnWlUpWnmELGh9EqWjGSla2HgCrX89vih19tDbkB8UPYuQTM4Ec3z+b4tjvQAA=="
 }
