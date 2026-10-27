@@ -1,15 +1,72 @@
 {
- "version": "1.6.0",
+ "version": "1.7.0",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.6.0.zip",
- "size": 11816593,
- "sha256": "455940a0d3473fbf9c93628af36998fe1830885c5e5a8f8c91ebea0ef24ac812",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.0.zip",
+ "size": 12485778,
+ "sha256": "8c7cadca262460145daf185a59b3a487afc9f6b5cfc202fae2cd051654cb3ea7",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "SWwbmVzuQuKkma2gFl9QGnndg7NmLER0hOJM4fyB0PRJ0xqTxtPYqfC0AShtu3zr4Y5E7RFMLVTq7pfnkc4SBA=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "zN52cHy9fvgMHuUPM83eidv28S9mF/OaCCFxC0rBJ5b/plQnXLSvXfaZcjXxd/tAaha0vf2gMsefiEy0MoeADw=="
  },
- "notes": "Miglioramento: Aggiornamenti più sicuri: nuova chiave di firma",
- "date": "2026-10-24",
+ "notes": "Novità: Paghi piani e ricariche direttamente nel tool, con carta o PayPal\nNovità: Nuova pagina Il tuo abbonamento: carta, fatture e disdetta senza uscire dal tool\nNovità: Clip veloci: scegli uno o più stili, anche Auto, e l'AI li usa tutti\nNovità: Prima di ogni funzione AI vedi quanti crediti costa\nCorrezione: I progetti si riaprono con la funzione con cui li hai creati\nCorrezione: I crediti comprati si aggiornano da soli, senza cambiare pagina\nMiglioramento: Nuovo look NoonFrame in 6 lingue\nMiglioramento: Esportazione con coda, nome dei file e cartella a scelta\nMiglioramento: Cambio di piano con l'importo di oggi prima di confermare\nMiglioramento: Avvisi di errore più chiari",
+ "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.0",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Paghi piani e ricariche direttamente nel tool, con carta o PayPal",
+     "en": "Pay for plans and top-ups right in the app, by card or PayPal"
+    },
+    {
+     "type": "feat",
+     "text": "Nuova pagina Il tuo abbonamento: carta, fatture e disdetta senza uscire dal tool",
+     "en": "New Your subscription page: card, invoices and cancellation without leaving the app"
+    },
+    {
+     "type": "feat",
+     "text": "Clip veloci: scegli uno o più stili, anche Auto, e l'AI li usa tutti",
+     "en": "Quick clips: pick one or more styles, Auto included, and AI uses them all"
+    },
+    {
+     "type": "feat",
+     "text": "Prima di ogni funzione AI vedi quanti crediti costa",
+     "en": "See how many credits every AI feature costs before you use it"
+    },
+    {
+     "type": "fix",
+     "text": "I progetti si riaprono con la funzione con cui li hai creati",
+     "en": "Projects reopen with the feature you created them with"
+    },
+    {
+     "type": "fix",
+     "text": "I crediti comprati si aggiornano da soli, senza cambiare pagina",
+     "en": "Purchased credits update on their own, without changing page"
+    },
+    {
+     "type": "impr",
+     "text": "Nuovo look NoonFrame in 6 lingue",
+     "en": "New NoonFrame look in 6 languages"
+    },
+    {
+     "type": "impr",
+     "text": "Esportazione con coda, nome dei file e cartella a scelta",
+     "en": "Export queue, with file names and folder of your choice"
+    },
+    {
+     "type": "impr",
+     "text": "Cambio di piano con l'importo di oggi prima di confermare",
+     "en": "Plan changes show today's amount before you confirm"
+    },
+    {
+     "type": "impr",
+     "text": "Avvisi di errore più chiari",
+     "en": "Clearer error messages"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.6.0",
    "date": "2026-10-24",
@@ -453,23 +510,7 @@
      "en": "Security: stricter checks on the files the app can open and on projects received from others; license updated with payments, cancellation and refunds"
     }
    ]
-  },
-  {
-   "version": "1.5.158",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS",
-     "en": "Clip previews now really update after an edit. No more cryptic errors from the macOS video player"
-    },
-    {
-     "type": "impr",
-     "text": "Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
-     "en": "Clip format: choose right away between the person full screen or the whole video with a blurred background, also for all existing clips. In podcasts and videos without a webcam, clips start full screen on the person, and automatic zooms become gentle push-ins on the face"
-    }
-   ]
   }
  ],
- "sig": "rN6u4k8WZK16tHrmz0JK+qWd3UXTfoUA4KZWYzUpJMYZT2SWeCu0EfD6XpFc+VLHusVSAXqGMSDDG9bF/6SOAQ=="
+ "sig": "waln+SHA3Ou8xjGGDhakFStd4/tndgQUjWqzuv31vN46K2oYKm7w40UzY7yZjFQ73Seh4ABkXAphVzsoMd9dBg=="
 }
