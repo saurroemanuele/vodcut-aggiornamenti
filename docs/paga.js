@@ -130,7 +130,8 @@
   var L = T[LANG];
   var t = function (k, v) { var s = L[k] || T.it[k] || k; if (v) Object.keys(v).forEach(function (x) { s = s.split('{' + x + '}').join(v[x]); }); return s; };
   var LOCALE = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR', de: 'de-DE', pt: 'pt-BR', es: 'es-ES' }[LANG];
-  var embed = P.embed === '1' && /^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/.test(P.po || '');
+  // dentro un riquadro: dell'app (indirizzo locale) o della pagina delle clip su noonframe.com
+  var embed = P.embed === '1' && (/^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/.test(P.po || '') || P.po === 'https://noonframe.com');
   var paypalWin = P.method === 'paypal';
   var mock = P.mock === '1';
   var isPlan = P.kind === 'plan' || P.kind === 'plan_offer';

@@ -12,27 +12,67 @@ T = {
         "lang": "it", "title": "Clip AI dalla tua live, anche dal telefono | NoonFrame",
         "desc": "Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.",
         "home": "./", "other": "en/clip.html", "otherLabel": "EN", "privacy": "privacy.html", "terms": "termini.html", "dl": "./#download",
-        "h1": "Clip virali dai tuoi video.<br>Anche dal telefono.",
-        "sub": "Incolla il link di un video YouTube o di una live: l'AI trova i momenti migliori e li monta in verticale con i sottotitoli, pronti per TikTok, Reels e Shorts.",
-        "ph": "Link del video o della live (YouTube, Twitch, Kick)", "go": "Trova le clip",
+        "h1": "Clip veloci",
+        "sub": "Da una live o da un video lungo alle clip verticali, pronte da pubblicare",
+        "ph": "Incolla un link: le clip arrivano da sole", "go": "Crea le clip",
         "note": "Il primo video è gratis, fino a 30 minuti · accesso con Google",
         "kickB": "Nuovo", "kick": "Dalla live alle clip in pochi minuti, senza installare niente",
         "how1": "Incolla il link", "how1d": "Un video YouTube o il VOD di una live, anche di ore.",
         "how2": "L'AI sceglie", "how2d": "I momenti più forti, con un punteggio per piattaforma.",
         "how3": "Scarica e pubblica", "how3d": "Clip verticali con sottotitoli, in pochi minuti.",
+        "navLabel": "Navigazione",
+        "navHome": "Home",
+        "navProj": "Progetti",
+        "navStyle": "Preset",
+        "navStyleSub": "Il mio stile",
+        "keepT": "I video restano 7 giorni",
+        "keepD": "Sul web i progetti si cancellano da soli. Nell'app li tieni per sempre.",
+        "appBtn": "Scarica l'app",
+        "mAccount": "Impostazioni account",
+        "mPlans": "Crediti e piani",
+        "mTheme": "Tema",
+        "mDark": "Scuro",
+        "mLight": "Chiaro",
+        "mLang": "Lingua",
+        "mApp": "Scarica l'app",
+        "mOut": "Esci",
+        "projT": "Progetti",
+        "projD": "Le live che hai trasformato in clip dal browser. Restano 7 giorni.",
+        "styleT": "Il mio stile",
+        "styleD": "Sottotitoli, titolo d'apertura e cosa cercare: valgono per le prossime clip e li ricordiamo su questo dispositivo.",
     },
     "en": {
         "lang": "en", "title": "AI clips from your stream, even from your phone | NoonFrame",
         "desc": "Paste your Twitch, Kick or YouTube stream link: AI finds the best moments and gives you vertical clips ready for TikTok, Reels and Shorts.",
         "home": "./", "other": "../clip.html", "otherLabel": "IT", "privacy": "privacy.html", "terms": "terms.html", "dl": "./#download",
-        "h1": "Viral clips from your videos.<br>Even from your phone.",
-        "sub": "Paste a YouTube video or stream link: AI finds the best moments and edits them vertically with captions, ready for TikTok, Reels and Shorts.",
-        "ph": "Video or stream link (YouTube, Twitch, Kick)", "go": "Find clips",
+        "h1": "Quick clips",
+        "sub": "From a stream or a long video to vertical clips, ready to post",
+        "ph": "Paste a link: the clips show up on their own", "go": "Create clips",
         "note": "Your first video is free, up to 30 minutes · sign in with Google",
         "kickB": "New", "kick": "From stream to clips in minutes, nothing to install",
         "how1": "Paste the link", "how1d": "A YouTube video or a stream VOD, even hours long.",
         "how2": "AI picks", "how2d": "The strongest moments, scored for each platform.",
         "how3": "Download and post", "how3d": "Vertical clips with captions, in minutes.",
+        "navLabel": "Navigation",
+        "navHome": "Home",
+        "navProj": "Projects",
+        "navStyle": "Presets",
+        "navStyleSub": "My style",
+        "keepT": "Videos stay for 7 days",
+        "keepD": "On the web, projects delete themselves. In the app you keep them forever.",
+        "appBtn": "Get the app",
+        "mAccount": "Account settings",
+        "mPlans": "Credits and plans",
+        "mTheme": "Theme",
+        "mDark": "Dark",
+        "mLight": "Light",
+        "mLang": "Language",
+        "mApp": "Get the app",
+        "mOut": "Sign out",
+        "projT": "Projects",
+        "projD": "Streams you turned into clips in the browser. They stay for 7 days.",
+        "styleT": "My style",
+        "styleD": "Captions, opening title and what to look for: they apply to your next clips and we remember them on this device.",
     },
 }
 
@@ -71,6 +111,7 @@ JS = {
         "hookT": "Titolo d'apertura", "hookOn": "Scritta grande nei primi secondi", "hookStyles": {"classico": "Classico", "verde": "Verde", "box": "Riquadro", "neon": "Neon", "pulito": "Pulito", "impatto": "Impatto"},
         "promptT": "Cosa cercare", "promptPh": "Facoltativo. Es. momenti divertenti, opinioni forti, consigli pratici", "subSample": "CHE DOVREBBE", "hookSample": "NON CI CREDO",
         "min": "min", "credUsed": "{n} crediti usati", "expired": "Le clip di questa live sono scadute (restano 7 giorni). Rifalle quando vuoi.",
+        "v2": {"free": "Gratis", "hrs": "≈ {n} ore", "hr1": "≈ 1 ora", "mins": "≈ {n} min", "ofLive": "di live", "ofLiveMo": "di live al mese", "sbUp": "Passa a {p}", "sbTop": "Ricarica", "sbHrs": "{h} di live dal web", "recent": "Recenti", "nClips": "{n} clip", "newLink": "Nuovo link", "dlAll": "Scarica tutte", "sorted": "Ordinate per punteggio: quanto la clip può funzionare da sola", "expIn": "Scade tra {n} giorni", "expTom": "Scade domani", "expToday": "Scade oggi", "delIn": "Si cancella tra {n} giorni", "delTom": "Si cancella domani", "delToday": "Si cancella oggi", "projEmpty": "Qui trovi le live che trasformi in clip. Incolla il primo link dalla Home.", "projGo": "Vai alla Home", "projIn": "Accedi per vedere i tuoi progetti.", "stepDone": "fatto", "untitled": "Video senza titolo", "plansT": "Crediti e piani", "plansD": "Sul web trovare le clip costa circa {n} crediti per ogni ora di live. Nell'app sul computer costa molto meno.", "meT": "Il tuo piano", "meFree": "Con un piano hai crediti nuovi ogni mese", "meNext": "Crediti nuovi ogni mese", "subsT": "Abbonamenti", "subsD": "Crediti nuovi ogni mese. Disdici quando vuoi.", "monthly": "Mensile", "yearly": "Annuale", "freeMo": "{n} mesi gratis", "crMo": "{n} crediti al mese", "billM": "Fatturato ogni mese", "billY": "{p} fatturati ogni anno", "firstMo": "il primo mese, poi {p}", "goTo": "Passa a {p}", "current": "Piano attuale", "popular": "Il più scelto", "mine": "Il tuo piano", "packsT": "Ricarica crediti", "packsD": "Una tantum, senza abbonamento. I crediti ricaricati non scadono.", "packCr": "{n} crediti · non scadono", "per100": "{p} ogni 100", "best": "Il migliore", "conv": "Conviene", "rule": "1 ora di live ≈ {n} crediti", "secure": "Pagamento sicuro con Stripe", "vat": "Prezzi IVA inclusa", "anytime": "Disdici quando vuoi", "manage": "Gestisci abbonamento", "perMo": "/mese", "pay": "Pagamento", "payFail": "Il pagamento non si è aperto", "payFailD": "Controlla la connessione e riprova: non ti abbiamo addebitato niente.", "close": "Chiudi", "payGot": "Pagamento ricevuto: i crediti arrivano tra qualche secondo", "planOn": "Piano attivo: {p}", "plusCr": "+{n} crediti", "paypalNo": "PayPal non è disponibile: paga con la carta", "payNo": "Pagamento non avviato: riprova"},
     },
     "en": {
         "login": "Sign in with Google", "logout": "Sign out", "credits": "credits", "badLink": "This link won't work: use a YouTube video, twitch.tv/videos/… or kick.com/channel/videos/….", "twChan": "This is the channel link: on Twitch open the finished stream (in the Videos section) and copy the replay link, like twitch.tv/videos/….", "twClip": "This is a Twitch clip: we need the link to the whole stream, like twitch.tv/videos/….", "kickChan": "This is the channel link: on Kick open the finished stream among the channel's videos and copy its link, like kick.com/channel/videos/….", "kickClip": "This is a Kick clip: we need the link to the whole stream, like kick.com/channel/videos/….", "checking": "Reading the video…", "estT": "Will use {c} credits", "estHave": "You have {b}", "estGo": "Create clips", "estChange": "Change link", "estShort": "You don't have enough credits for this video.", "hours": "h",
@@ -105,6 +146,7 @@ JS = {
         "hookT": "Opening title", "hookOn": "Big text in the first seconds", "hookStyles": {"classico": "Classic", "verde": "Green", "box": "Box", "neon": "Neon", "pulito": "Clean", "impatto": "Impact"},
         "promptT": "What to look for", "promptPh": "Optional. E.g. funny moments, strong opinions, practical tips", "subSample": "WHAT SHOULD", "hookSample": "I CAN'T BELIEVE IT",
         "min": "min", "credUsed": "{n} credits used", "expired": "The clips from this stream have expired (they stay for 7 days). You can make them again anytime.",
+        "v2": {"free": "Free", "hrs": "≈ {n} hours", "hr1": "≈ 1 hour", "mins": "≈ {n} min", "ofLive": "of streams", "ofLiveMo": "of streams a month", "sbUp": "Switch to {p}", "sbTop": "Top up", "sbHrs": "{h} of streams on the web", "recent": "Recent", "nClips": "{n} clips", "newLink": "New link", "dlAll": "Download all", "sorted": "Sorted by score: how well the clip can work on its own", "expIn": "Expires in {n} days", "expTom": "Expires tomorrow", "expToday": "Expires today", "delIn": "Deletes in {n} days", "delTom": "Deletes tomorrow", "delToday": "Deletes today", "projEmpty": "Streams you turn into clips show up here. Paste your first link on Home.", "projGo": "Go to Home", "projIn": "Sign in to see your projects.", "stepDone": "done", "untitled": "Untitled video", "plansT": "Credits and plans", "plansD": "On the web, finding clips costs about {n} credits per hour of stream. In the desktop app it costs much less.", "meT": "Your plan", "meFree": "With a plan you get fresh credits every month", "meNext": "Fresh credits every month", "subsT": "Subscriptions", "subsD": "Fresh credits every month. Cancel anytime.", "monthly": "Monthly", "yearly": "Yearly", "freeMo": "{n} months free", "crMo": "{n} credits a month", "billM": "Billed monthly", "billY": "{p} billed yearly", "firstMo": "for the first month, then {p}", "goTo": "Switch to {p}", "current": "Current plan", "popular": "Most popular", "mine": "Your plan", "packsT": "Top up credits", "packsD": "One-time, no subscription. Top-up credits never expire.", "packCr": "{n} credits · never expire", "per100": "{p} per 100", "best": "Best value", "conv": "Good deal", "rule": "1 stream hour ≈ {n} credits", "secure": "Secure payment with Stripe", "vat": "Prices include VAT", "anytime": "Cancel anytime", "manage": "Manage subscription", "perMo": "/mo", "pay": "Payment", "payFail": "The payment didn't open", "payFailD": "Check your connection and try again: you haven't been charged.", "close": "Close", "payGot": "Payment received: your credits arrive in a few seconds", "planOn": "Plan active: {p}", "plusCr": "+{n} credits", "paypalNo": "PayPal isn't available: pay by card", "payNo": "Payment didn't start: try again"},
     },
 }
 
@@ -677,55 +719,374 @@ footer a { color: var(--fg-3); }
   .panel { padding: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { .bar i, .bar i::after { transition: none; animation: none; } }
+/* ---- grafica v2 (come il tool, senza l'editor): barra a sinistra, profilo in alto a destra, tema scuro e chiaro */
+@font-face { font-family: "Manrope"; font-style: normal; font-display: swap; font-weight: 200 800; src: url({root}fonts/manrope.ttf) format("truetype"); }
+:root { --body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --ink-0: #0A0C11; --ink-1: #12151C; --ink-2: #1A1E27; --fg: #F2F4F8; --fg-2: #A3AAB8; --fg-3: #7E8694; --blue: #2F7BFF; --blue-hi: #4A8BFF; --sky: #6CB2FF;
+  --line: rgba(255,255,255,.08); --line-2: rgba(255,255,255,.12); --card: rgba(255,255,255,.045); --field: rgba(255,255,255,.05); --pop: #13161D;
+  --glass: rgba(255,255,255,.055); --gline: rgba(255,255,255,.11); --side: rgba(19,22,30,.62); --fg-rgb: 255,255,255; --amb: rgba(31,107,255,.26); color-scheme: dark; }
+:root[data-theme="light"] { --ink-0: #E6EAF2; --ink-1: #F4F6FA; --ink-2: #FFFFFF; --fg: #111318; --fg-2: #5E6675; --fg-3: #5B6372; --blue: #1F6BFF; --blue-hi: #3B82F6; --sky: #1F6BFF;
+  --line: rgba(17,19,24,.08); --line-2: rgba(17,19,24,.12); --card: rgba(255,255,255,.62); --field: #FFFFFF; --pop: #FFFFFF; --glass: rgba(255,255,255,.6); --gline: rgba(17,19,24,.09);
+  --side: rgba(255,255,255,.58); --fg-rgb: 17,19,24; --amb: rgba(31,107,255,.16); --score: #16A34A; --hook: #B26A00; --err: #D4342C; color-scheme: light; }
+body { font-family: var(--body); background: var(--ink-0); }
+body::before { background: radial-gradient(55% 45% at 30% -10%, var(--amb), transparent 70%), radial-gradient(40% 40% at 100% 0%, rgba(110,130,190,.12), transparent 70%); }
+.grow { flex: 1; }
+.app { display: grid; grid-template-columns: 248px minmax(0, 1fr); gap: 12px; min-height: 100vh; padding: 12px; }
+.sb { position: sticky; top: 12px; height: calc(100vh - 24px); display: flex; flex-direction: column; gap: 8px; padding: 18px 14px 14px; border-radius: 20px; overflow: auto; scrollbar-width: none;
+  background: linear-gradient(180deg, rgba(31,107,255,.14), rgba(31,107,255,0) 38%), var(--side); border: 1px solid var(--gline); backdrop-filter: blur(28px) saturate(1.4); -webkit-backdrop-filter: blur(28px) saturate(1.4); box-shadow: inset 0 1px 0 rgba(var(--fg-rgb),.06); }
+.sb-brand { display: flex; align-items: center; gap: 9px; padding: 2px 6px 14px; font-weight: 700; font-size: 15px; letter-spacing: -.01em; text-decoration: none; color: var(--fg); }
+.sb-brand em, .tb-brand em { font-style: normal; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 99px; background: rgba(var(--fg-rgb),.1); color: var(--fg-2); }
+.sb-nav { display: grid; gap: 4px; }
+.nv { display: flex; align-items: center; gap: 12px; height: 40px; padding: 0 12px; border: 0; border-radius: 12px; background: none; color: var(--fg-2); font: 500 14.5px var(--body); cursor: pointer; text-align: left; }
+.nv svg { width: 17px; height: 17px; flex: none; }
+.nv span { flex: 1; }
+.nv em { font-style: normal; font-size: 12px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
+.nv:hover { background: rgba(var(--fg-rgb),.05); color: var(--fg); }
+.nv.on { background: rgba(var(--fg-rgb),.1); color: var(--fg); font-weight: 700; }
+.sb-cred { display: grid; gap: 8px; padding: 14px; border-radius: 16px; background: rgba(31,107,255,.1); border: 1px solid rgba(76,141,255,.35); }
+.sb-cred .r { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 13px; color: var(--fg-2); font-variant-numeric: tabular-nums; }
+.sb-cred .r b { color: var(--fg); font-size: 14px; }
+.sb-cred small { font-size: 12px; color: var(--fg-3); }
+.bar2 { height: 4px; border-radius: 2px; background: rgba(var(--fg-rgb),.12); overflow: hidden; }
+.bar2 i { display: block; height: 100%; border-radius: 2px; background: var(--blue); }
+.sb-cred .btn { width: 100%; height: 36px; }
+.sb-keep { display: grid; gap: 6px; padding: 14px; border-radius: 16px; background: rgba(var(--fg-rgb),.04); border: 1px solid var(--line); }
+.sb-keep b { display: flex; align-items: center; gap: 8px; font-size: 13.5px; }
+.sb-keep b svg { width: 15px; height: 15px; color: var(--fg-2); flex: none; }
+.sb-keep p { margin: 0; font-size: 12.5px; line-height: 1.45; color: var(--fg-2); }
+.sb-keep .btn { width: 100%; margin-top: 6px; height: 36px; }
+.sb-legal { display: flex; align-items: center; gap: 12px; padding: 4px 6px 0; font-size: 12px; }
+.sb-legal a { color: var(--fg-3); text-decoration: none; }
+.sb-legal a:hover { color: var(--fg); }
+.sb-legal .langs { margin-left: auto; }
+.langs { background: rgba(var(--fg-rgb),.06); }
+.lang.on { background: rgba(var(--fg-rgb),.12); }
+.top { position: fixed; top: 22px; right: 28px; z-index: 40; display: flex; align-items: center; gap: 10px; background: none; border-bottom: 0; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.tb-brand { display: none; }
+.mn { min-width: 0; padding: 40px 28px 64px; }
+.view { width: min(1120px, 100%); margin: 0 auto; }
+.vh { margin: 6px 0 22px; }
+.vh h2 { margin: 0; font-size: 26px; letter-spacing: -.03em; }
+.vh p { margin: 6px 0 0; font-size: 14px; color: var(--fg-2); max-width: 64ch; }
+/* profilo in alto a destra: anello dei crediti, menu al passaggio del mouse (al tocco sul telefono) */
+.who { position: relative; display: inline-flex; }
+.avbtn { position: relative; width: 42px; height: 42px; background: linear-gradient(140deg, #4C8DFF, #1E6BFF); box-shadow: none; }
+.avbtn .ring { position: absolute; inset: -4px; width: 50px; height: 50px; transform: rotate(-90deg); pointer-events: none; }
+.avbtn .ring circle { fill: none; stroke: rgba(var(--fg-rgb),.14); stroke-width: 2.5; }
+.avbtn .ring #ringv { stroke: var(--blue); stroke-linecap: round; transition: stroke-dasharray .6s; }
+.avbtn .avatar { border-radius: 50%; }
+.pm { position: absolute; right: 0; top: calc(100% + 12px); width: 290px; padding: 8px; border-radius: 18px; background: var(--pop); border: 1px solid var(--gline); box-shadow: 0 24px 50px -10px rgba(0,0,0,.45);
+  display: none; gap: 2px; z-index: 45; color: var(--fg); }
+.pm::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+.pm.open { display: grid; }
+@media (hover: hover) and (min-width: 760px) { .who:hover .pm { display: grid; } }
+.pm-h { display: grid; gap: 1px; padding: 8px 10px 10px; }
+.pm-h b { font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pm-h span { font-size: 12px; color: var(--fg-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pm-cr { display: flex; align-items: center; gap: 8px; margin: 0 2px 6px; padding: 10px; border-radius: 12px; background: rgba(var(--fg-rgb),.05); font-size: 12px; color: var(--fg-3); }
+.pm-cr .cred { height: 26px; cursor: pointer; }
+.pm-cr .link { margin-left: auto; font-size: 12.5px; color: var(--sky); text-decoration: none; font-weight: 700; }
+.pm [role=menuitem] { display: flex; align-items: center; gap: 10px; width: 100%; height: 38px; padding: 0 10px; border: 0; border-radius: 10px; background: none; color: var(--fg); font: 500 13.5px var(--body); text-decoration: none; cursor: pointer; text-align: left; }
+.pm [role=menuitem]:hover, .pm [role=menuitem]:focus-visible { background: rgba(var(--fg-rgb),.07); }
+.pm svg { width: 16px; height: 16px; flex: none; color: var(--fg-2); }
+.pm-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; height: 40px; padding: 0 6px 0 10px; font-size: 13.5px; }
+.pm-row > span:first-child { display: flex; align-items: center; gap: 10px; }
+.seg2 { display: inline-flex; padding: 2px; border-radius: 9px; background: rgba(var(--fg-rgb),.07); }
+.seg2 button { border: 0; background: none; color: var(--fg-2); font: 600 12px var(--body); padding: 5px 10px; border-radius: 7px; cursor: pointer; }
+.seg2 button.on { background: var(--ink-2); color: var(--fg); box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+.pm-legal { display: flex; gap: 14px; padding: 8px 10px 4px; margin-top: 4px; border-top: 1px solid var(--line); font-size: 11.5px; }
+.pm-legal a { color: var(--fg-3); text-decoration: none; }
+/* Home: Clip veloci */
+.hero { padding: 36px 0 0; }
+.hero h1 { max-width: none; font-size: 26px; line-height: 1.15; font-weight: 700; letter-spacing: -.025em; background: none; color: var(--fg); -webkit-text-fill-color: currentColor; padding: 0; }
+.hero .sub { margin-top: 8px; font-size: 14.5px; }
+.ask { max-width: 720px; margin: 26px auto 0; padding: 6px 6px 6px 18px; border-radius: 999px; align-items: center; background: var(--glass); border: 1px solid var(--gline); box-shadow: 0 30px 60px -40px rgba(31,107,255,.65); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+.ask:focus-within { border-color: rgba(76,141,255,.6); }
+.ask-i { width: 18px; height: 18px; flex: none; color: var(--fg-3); }
+.ask input { height: 46px; padding: 0 8px; border-radius: 0; background: none; }
+.ask input:focus { box-shadow: none; }
+.ask .btn { height: 46px; padding: 0 22px; border-radius: 999px; }
+.btn { font-family: var(--body); border-radius: 12px; }
+.btn-primary { background: var(--blue); }
+.btn-ghost { background: rgba(var(--fg-rgb),.06); }
+.btn-ghost:hover { background: rgba(var(--fg-rgb),.1); }
+.est, .panel, .edlg .ebox, .bdlg .ebox { background: var(--pop); box-shadow: inset 0 0 0 1px var(--gline), 0 30px 70px -36px rgba(0,0,0,.6); }
+.est { max-width: 720px; }
+.kind, .chip, .seg, .btabs, .trim button, .fkind, .pref input, .edlg input.q, .set input.q, .fbody textarea { background: var(--field); }
+.kind[aria-checked="true"], .chip[aria-checked="true"] { background: rgba(31,107,255,.14); }
+.chip .smp { color: #fff; }
+.chip .smp.hbox { color: #111; }
+.chip { background: #1B2233; }
+:root[data-theme="light"] .chip { background: #2A3245; color: #fff; }
+:root[data-theme="light"] .chip small { color: rgba(255,255,255,.7); }
+.stp li i { background: rgba(var(--fg-rgb),.08); }
+.pstats div, .prep li { background: var(--field); }
+.plinks a { background: rgba(var(--fg-rgb),.04); }
+.edlg { background: rgba(6,8,12,.55); }
+:root[data-theme="light"] .edlg { background: rgba(230,234,242,.6); }
+.edlg .foot { background: var(--pop); }
+.cred { background: rgba(var(--fg-rgb),.06); }
+/* Recenti e Progetti: schede delle live con la scadenza */
+.hist { margin-top: 52px; }
+.hist h2 { text-align: center; font-size: 15px; color: var(--fg); font-weight: 700; margin: 0 0 16px; }
+.hist h2 em { font-style: normal; font-weight: 500; color: var(--fg-3); margin-left: 6px; }
+.jgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 22px 18px; }
+.hist .jgrid { max-width: 840px; margin: 0 auto; }
+.jcard { display: grid; gap: 8px; text-decoration: none; color: inherit; text-align: center; border-radius: 16px; }
+.jthumb { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: linear-gradient(160deg, #1B2A4A, #2B1B4A); box-shadow: inset 0 0 0 1px var(--line-2); transition: transform .18s, box-shadow .18s; }
+.jthumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+a.jcard:hover .jthumb { transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(0,0,0,.55), inset 0 0 0 1px rgba(140,194,255,.35); }
+.jthumb em { position: absolute; padding: 4px 8px; border-radius: 8px; background: rgba(5,10,28,.78); color: #fff; font: 700 11.5px/1.2 var(--body); font-style: normal; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.jthumb .exp { top: 8px; right: 8px; }
+.jthumb .exp.soon { color: #FFD60A; }
+.jthumb .jst { left: 8px; bottom: 8px; color: var(--sky); }
+.jthumb .jst.failed, .jthumb .jst.cancelled { color: #FCA5A5; }
+.jcard b { font-size: 14px; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jcard .m { font-size: 12px; color: var(--fg-3); }
+#plist .jcard { text-align: left; }
+.pempty2 { display: grid; justify-items: center; gap: 12px; padding: 50px 20px; text-align: center; color: var(--fg-2); border-radius: 18px; border: 1px dashed var(--line-2); }
+/* analisi in corso */
+.panel { max-width: 680px; margin: 20px auto 0; padding: 20px; border-radius: 22px; }
+.rh { display: flex; gap: 14px; align-items: center; }
+.rh img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; flex: none; background: var(--ink-2); }
+.rh small { display: block; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--sky); }
+.rh h2 { margin: 2px 0 0; font-size: 18px; line-height: 1.3; overflow-wrap: anywhere; }
+.steps2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 18px; }
+.steps2 > div { display: grid; gap: 7px; font-size: 12.5px; color: var(--fg-3); }
+.steps2 i { position: relative; display: block; height: 4px; border-radius: 2px; background: rgba(var(--fg-rgb),.1); overflow: hidden; }
+.steps2 .ok i { background: var(--score); }
+.steps2 .on i::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, var(--blue), transparent); animation: shine 1.4s infinite; }
+.steps2 .on { color: var(--fg); font-weight: 600; }
+.steps2 .ok { color: var(--fg-2); }
+.steps2 em { font-style: normal; color: var(--fg-3); font-weight: 500; }
+.panel .stage { margin-top: 14px; align-items: center; }
+/* clip pronte */
+.dh { display: flex; align-items: center; gap: 12px 16px; flex-wrap: wrap; margin: 4px 0 18px; padding-right: 64px; }
+.crumb { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 1 1 320px; font-size: 22px; font-weight: 700; letter-spacing: -.025em; }
+.crumb button { padding: 0; border: 0; background: none; color: var(--fg-3); font: inherit; cursor: pointer; }
+.crumb button:hover { color: var(--fg); }
+.crumb svg { width: 16px; height: 16px; color: var(--fg-3); flex: none; }
+.crumb .t { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dh .acts { display: flex; gap: 8px; }
+.dh .btn { height: 40px; border-radius: 999px; }
+.dh .btn svg { width: 16px; height: 16px; }
+.lcard { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; padding: 12px 16px; border-radius: 16px; background: var(--card); border: 1px solid var(--gline); }
+.lcard img, .lcard .ph { width: 96px; aspect-ratio: 16 / 9; border-radius: 8px; object-fit: cover; flex: none; background: linear-gradient(160deg, #1B2A4A, #2B1B4A); }
+.lcard .x { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.lcard b { font-size: 14.5px; }
+.lcard small { font-size: 12.5px; color: var(--fg-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lcard .exp { display: inline-flex; align-items: center; gap: 6px; flex: none; font-size: 12.5px; font-weight: 600; color: #E8B931; }
+.lcard .exp svg { width: 14px; height: 14px; }
+.cnt { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 6px 0 12px; font-size: 12.5px; color: var(--fg-3); }
+.cnt b { font-size: 14px; color: var(--fg); }
+.cg-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+.saved { margin: 0 0 14px; }
+.edit { background: linear-gradient(135deg, #1E6BFF, #3B4FD8); color: #fff; }
+/* Preset */
+.scard { padding: 20px; border-radius: 20px; background: var(--card); border: 1px solid var(--gline); max-width: 820px; }
+.scard .set { border-top: 0; padding-top: 0; }
+/* Crediti e piani: prezzi veri dal catalogo, ore di live al costo del web, un colore per piano */
+.t-g { --pc: #4BE3A3; --pg: linear-gradient(135deg, #9AF7D1, #2AD49A 55%, #12B5A6); --pt: rgba(52,211,153,.14); --pb: rgba(52,211,153,.34); --pgl: rgba(16,185,129,.55); --pf: linear-gradient(90deg, #6BF0B8, #22CC90); --pft: #052E1F; }
+.t-b { --pc: #6CB2FF; --pg: linear-gradient(135deg, #8CC4FF, #3D86FF 55%, #2FD3FF); --pt: rgba(74,139,255,.18); --pb: rgba(74,139,255,.4); --pgl: rgba(47,123,255,.7); --pf: linear-gradient(90deg, #4A8BFF, #1F6BFF); --pft: #fff; }
+.t-v { --pc: #C7A2FF; --pg: linear-gradient(135deg, #DCC2FF, #A57BFF 50%, #F27BC9); --pt: rgba(155,107,255,.17); --pb: rgba(155,107,255,.4); --pgl: rgba(139,92,246,.6); --pf: linear-gradient(90deg, #A47BFF, #E05AA6); --pft: #fff; }
+:root[data-theme="light"] .t-g { --pc: #0C9F6A; --pg: linear-gradient(135deg, #12B981, #047857); --pt: rgba(16,185,129,.1); --pb: rgba(16,185,129,.45); --pgl: rgba(16,185,129,.35); }
+:root[data-theme="light"] .t-b { --pc: #1F6BFF; --pg: linear-gradient(135deg, #3B82F6, #1F4FD8); --pt: rgba(31,107,255,.08); --pb: rgba(31,107,255,.42); --pgl: rgba(31,107,255,.35); }
+:root[data-theme="light"] .t-v { --pc: #7C4DFF; --pg: linear-gradient(135deg, #8B5CF6, #DB2777); --pt: rgba(139,92,246,.1); --pb: rgba(139,92,246,.45); --pgl: rgba(139,92,246,.35); }
+.pl { display: grid; gap: 22px; padding-right: 64px; }
+.pl .vh { margin-bottom: 0; }
+.pl-me { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 16px 18px; border-radius: 16px; background: var(--card); border: 1px solid var(--gline); }
+.pl-me-l { flex: 1; min-width: 200px; display: grid; gap: 3px; }
+.pl-me-l > span { font-size: 12px; color: var(--fg-2); }
+.pl-me-l > b { font-size: 17px; }
+.pl-me-l > small { font-size: 12px; color: var(--fg-3); }
+.pl-me-r { flex: 1; min-width: 220px; display: grid; gap: 8px; }
+.pl-me-row { display: flex; justify-content: space-between; gap: 10px; font-size: 12.5px; color: var(--fg-3); }
+.pl-me-row b { font-size: 13px; color: var(--fg); }
+.pl-me-bar { height: 5px; border-radius: 3px; background: rgba(var(--fg-rgb),.12); overflow: hidden; }
+.pl-me-bar i { display: block; height: 100%; border-radius: 3px; background: var(--pf, var(--blue)); }
+.pl-sh { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: -8px; }
+.pl-sh h3 { margin: 0; font-size: 15px; }
+.pl-sh p { margin: 4px 0 0; font-size: 12.5px; color: var(--fg-2); }
+.pl-per { display: flex; padding: 3px; border-radius: 19px; background: rgba(var(--fg-rgb),.05); border: 1px solid var(--gline); }
+.pl-per button { display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 14px; border: 0; border-radius: 15px; background: none; color: var(--fg-2); font: 600 12.5px var(--body); cursor: pointer; }
+.pl-per button.on { background: rgba(var(--fg-rgb),.12); color: var(--fg); }
+:root[data-theme="light"] .pl-per button.on { background: #fff; box-shadow: inset 0 0 0 1px rgba(17,19,24,.1); }
+.pl-per em, .pl-ptag em { display: inline-flex; align-items: center; height: 18px; padding: 0 7px; border-radius: 9px; background: rgba(61,201,120,.16); color: #3DC978; font: 800 10.5px var(--body); font-style: normal; white-space: nowrap; }
+.pl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.pl-card { position: relative; display: flex; flex-direction: column; gap: 14px; padding: 22px 20px 20px; border-radius: 20px; border: 1.5px solid transparent;
+  background: radial-gradient(130% 70% at 50% 0%, var(--pt, transparent), transparent 75%) padding-box, linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(var(--ink-1), var(--ink-1)) padding-box, linear-gradient(var(--pb, var(--gline)), var(--pb, var(--gline))) border-box; }
+.pl-card.hl { background: radial-gradient(130% 70% at 50% 0%, var(--pt, transparent), transparent 75%) padding-box, radial-gradient(130% 70% at 50% 0%, var(--pt, transparent), transparent 75%) padding-box, linear-gradient(var(--card), var(--card)) padding-box, linear-gradient(var(--ink-1), var(--ink-1)) padding-box, var(--pg) border-box;
+  box-shadow: 0 24px 60px -24px var(--pgl, rgba(47,123,255,.7)); }
+.pl-top { display: flex; align-items: center; gap: 8px; min-height: 22px; }
+.pl-name { font-size: 15px; font-weight: 700; }
+.pl-badge { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 10px; background: rgba(var(--fg-rgb),.1); font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+.pl-badge.main { background: var(--pf, var(--blue)); color: var(--pft, #fff); }
+.pl-hrs { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.pl-hrs b { font-size: 34px; font-weight: 800; letter-spacing: -.04em; line-height: 1; white-space: nowrap; background: var(--pg, linear-gradient(var(--fg), var(--fg))); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.pl-hrs span { font-size: 13px; font-weight: 600; color: var(--fg-2); }
+.pl-crl { margin-top: 6px; font-size: 12px; color: var(--fg-3); }
+.pl-div { display: block; height: 1px; background: var(--gline); }
+.pl-price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.pl-price b { font-size: 22px; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.pl-price span, .pl-price s { font-size: 12.5px; color: var(--fg-3); }
+.pl-bill { margin-top: 4px; min-height: 15px; font-size: 11.5px; color: var(--fg-3); }
+.pl-perks { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; flex: 1; align-content: start; }
+.pl-perks li { display: flex; align-items: flex-start; gap: 8px; font-size: 12.5px; line-height: 1.4; color: var(--fg-2); }
+.pl-perks svg { width: 13px; height: 13px; flex: none; margin-top: 2px; color: var(--pc, var(--blue)); }
+.pl-btn { height: 42px; border: 1px solid var(--pb, var(--gline)); border-radius: 21px; background: var(--pt, rgba(var(--fg-rgb),.08)); color: var(--fg); font: 700 13.5px var(--body); cursor: pointer; }
+.pl-btn:hover:not(:disabled) { filter: brightness(1.12); }
+.pl-btn.main { background: var(--pf, var(--blue)); border-color: transparent; color: var(--pft, #fff); box-shadow: 0 12px 28px -12px var(--pgl, transparent); }
+.pl-btn.mine { background: transparent; color: var(--fg-3); cursor: default; }
+.pl-btn:disabled:not(.mine) { opacity: .55; cursor: default; }
+.pl-pgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.pl-pack { display: flex; flex-direction: column; gap: 6px; padding: 16px; border-radius: 16px; background: var(--card); border: 1px solid var(--gline); color: var(--fg); font-family: var(--body); text-align: left; cursor: pointer; transition: border-color .15s; }
+.pl-pack:hover:not(:disabled) { border-color: var(--blue); }
+.pl-pack:disabled { opacity: .55; cursor: default; }
+.pl-ptag { display: flex; align-items: center; min-height: 18px; }
+.pl-phrs { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+.pl-phrs b { font-size: 20px; font-weight: 800; letter-spacing: -.03em; white-space: nowrap; }
+.pl-phrs span { font-size: 12px; font-weight: 600; color: var(--fg-2); }
+.pl-pcr { font-size: 12px; color: var(--fg-3); }
+.pl-pfoot { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-top: 6px; }
+.pl-pfoot b { font-size: 16px; font-variant-numeric: tabular-nums; }
+.pl-pfoot small { font-size: 11.5px; color: var(--fg-3); }
+.pl-foot { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; font-size: 11.5px; color: var(--fg-3); }
+.pl-foot > span { display: inline-flex; align-items: center; gap: 6px; }
+.pl-foot svg { width: 12px; height: 12px; }
+.pl-foot .link { margin-left: auto; font-size: 12.5px; }
+.pl .offer { margin: 0; }
+.pl .bguar { margin: 0; }
+/* pagamento dentro la pagina: il modulo di Stripe sta in paga.html (stesso sito), in un riquadro */
+.co-bg { position: fixed; inset: 0; z-index: 95; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(6,8,12,.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.co-bg.out { opacity: 0; transition: opacity .16s ease; }
+.co-sheet { position: relative; width: min(860px, 100%); height: min(720px, 100%); border-radius: 22px; border: 1px solid var(--gline); background: var(--pop); box-shadow: 0 30px 80px rgba(0,0,0,.45); overflow: hidden; }
+.co-frame { width: 100%; height: 100%; border: 0; display: block; background: transparent; }
+.co-wait { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 30px; text-align: center; background: var(--pop); color: var(--fg-2); font-size: 13.5px; }
+.co-wait b { color: var(--fg); font-size: 15px; }
+.co-wait .spin { width: 28px; height: 28px; }
+/* il lettore delle clip resta scuro anche nel tema chiaro */
+.cg-modal-bg { --fg: #F2F4F8; --fg-2: #A3AAB8; --fg-3: #7E8694; --line: rgba(255,255,255,.08); --line-2: rgba(255,255,255,.12); --fg-rgb: 255,255,255; color: var(--fg); }
+.cg-pfbox { background: rgba(255,255,255,.05); }
+.tabbar { display: none; }
+@media (max-width: 1100px) { .app { grid-template-columns: 220px minmax(0, 1fr); } .mn { padding: 40px 18px 60px; } }
+/* telefono: barra in basso, testata in vetro, fogli dal basso */
+@media (max-width: 759px) {
+  .app { display: block; padding: 0; }
+  .sb { display: none; }
+  .top { left: 12px; right: 12px; top: calc(8px + env(safe-area-inset-top)); height: 54px; padding: 0 7px 0 14px; border-radius: 999px; background: var(--side); border: 1px solid var(--gline); backdrop-filter: blur(24px) saturate(1.4); -webkit-backdrop-filter: blur(24px) saturate(1.4); }
+  .tb-brand { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 15px; text-decoration: none; color: var(--fg); }
+  .avbtn { width: 38px; height: 38px; }
+  .avbtn .ring { inset: -4px; width: 46px; height: 46px; }
+  .pm { position: fixed; top: calc(70px + env(safe-area-inset-top)); right: 12px; width: min(310px, calc(100vw - 24px)); }
+  .mn { padding: calc(84px + env(safe-area-inset-top)) 16px calc(112px + env(safe-area-inset-bottom)); }
+  .tabbar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 40; padding: 6px; border-radius: 22px;
+    background: var(--side); border: 1px solid var(--gline); backdrop-filter: blur(24px) saturate(1.4); -webkit-backdrop-filter: blur(24px) saturate(1.4); box-shadow: 0 18px 40px -16px rgba(0,0,0,.5); }
+  .tabbar button { height: 50px; display: grid; place-items: center; align-content: center; gap: 3px; border: 0; border-radius: 16px; background: none; color: var(--fg-3); font: 600 11px var(--body); cursor: pointer; }
+  .tabbar svg { width: 20px; height: 20px; }
+  .tabbar button.on { color: var(--fg); background: rgba(var(--fg-rgb),.08); }
+  .hero { padding-top: 6px; text-align: left; }
+  .hero h1 { font-size: 28px; }
+  .hero .sub { margin-left: 0; }
+  .plats { justify-content: flex-start; }
+  .proof { justify-content: flex-start; }
+  .ask { flex-direction: row; flex-wrap: wrap; gap: 8px; padding: 8px 8px 8px 16px; border-radius: 22px; }
+  .ask input { flex: 1 1 calc(100% - 34px); min-width: 0; }
+  .ask .btn { width: 100%; height: 48px; }
+  .hint { text-align: left; }
+  .hist { margin-top: 36px; }
+  .hist h2 { text-align: left; }
+  .jgrid { grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+  .jcard { text-align: left; }
+  .vh h2 { font-size: 24px; }
+  .dh { padding-right: 0; }
+  .crumb { flex-basis: 100%; font-size: 19px; }
+  .dh .acts { width: 100%; }
+  .dh .acts .btn { flex: 1; }
+  .lcard { flex-wrap: wrap; }
+  .lcard .exp { width: 100%; }
+  .steps2 { grid-template-columns: 1fr 1fr; }
+  .cg-grid { grid-template-columns: 1fr 1fr; gap: 18px 12px; }
+  .pm .langs { display: inline-flex !important; }
+  .rh img { width: 104px; }
+  .pl { padding-right: 0; }
+  .pl-grid, .pl-pgrid { grid-template-columns: 1fr; }
+  .co-bg { padding: 0; align-items: flex-end; }
+  .co-sheet { width: 100%; height: 92dvh; border-radius: 24px 24px 0 0; }
+  .upsell { bottom: calc(96px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) { .steps2 .on i::after, .avbtn .ring #ringv { animation: none; transition: none; } }
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <a class="brand" href="{home}"><img src="{root}logo.png" alt="" width="26" height="26"><span class="bt">NoonFrame</span></a>
+<div class="app">
+<aside class="sb">
+  <a class="sb-brand" href="{home}"><img src="{root}logo.png" alt="" width="26" height="26"><span>NoonFrame</span><em>Web</em></a>
+  <nav class="sb-nav" aria-label="{navLabel}">
+    <button class="nv on" type="button" data-view="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4z"/></svg><span>{navHome}</span></button>
+    <button class="nv" type="button" data-view="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>{navProj}</span><em id="nprj"></em></button>
+    <button class="nv" type="button" data-view="style"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>{navStyle}</span><em>{navStyleSub}</em></button>
+  </nav>
   <span class="grow"></span>
-  <span class="who hide" id="who"><span class="cred" title=""><i></i><span id="bal">0</span></span><button class="btn btn-primary btn-sm topup" id="topup" type="button"></button><button class="avbtn" id="me" type="button" aria-haspopup="dialog"><img class="avatar hide" id="av" alt=""><span class="avi" id="avi" aria-hidden="true"></span></button></span>
-  <button class="btn btn-ghost btn-sm hide" id="in" type="button"></button>
-  <span class="langs">{langsHtml}</span>
-</div></header>
+  <div class="sb-cred hide" id="sbcred"></div>
+  <div class="sb-keep"><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>{keepT}</b><p>{keepD}</p><a class="btn btn-ghost btn-sm" href="{dl}">{appBtn}</a></div>
+  <div class="sb-legal"><a href="{privacy}">Privacy</a><a href="{terms}">{termsLabel}</a><span class="langs">{langsHtml}</span></div>
+</aside>
 
-<main class="wrap">
-  <section class="hero" id="hero">
-    <p class="kick"><b>{kickB}</b><span>{kick}</span></p>
-    <h1>{h1}</h1>
-    <p class="sub">{sub}</p>
-    <form class="ask" id="ask" novalidate>
-      <input id="url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="{ph}" aria-label="{ph}">
-      <button class="btn btn-primary" id="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg><span>{go}</span></button>
-    </form>
-    <div class="est hide" id="est" aria-live="polite"></div>
-    <p class="hint" id="hint" role="status">{note}</p>
-    <div class="plats" aria-hidden="true">
-      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2 2.5 6v14h5v3h3l3-3h4L22 15.5V2H4zm16 12.5-3 3h-5l-3 3v-3H5V4h15v10.5zM16 7h2v6h-2V7zm-5 0h2v6h-2V7z"/></svg>Twitch</span>
-      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
-      <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg>YouTube</span>
+<header class="top">
+  <a class="tb-brand" href="{home}"><img src="{root}logo.png" alt="" width="24" height="24"><span>NoonFrame</span></a>
+  <span class="grow"></span>
+  <button class="btn btn-primary btn-sm hide" id="in" type="button"></button>
+  <span class="who hide" id="who">
+    <button class="avbtn" id="me" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="pm"><svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20.5"/><circle id="ringv" cx="22" cy="22" r="20.5" pathLength="100" stroke-dasharray="0 100"/></svg><img class="avatar hide" id="av" alt=""><span class="avi" id="avi" aria-hidden="true"></span></button>
+    <div class="pm" id="pm" role="menu">
+      <div class="pm-h"><b id="pmname"></b><span id="pmmail"></span></div>
+      <div class="pm-cr"><span class="cred"><i></i><span id="bal">0</span></span><span id="pmhrs"></span><button type="button" class="link" id="topup"></button></div>
+      <button type="button" role="menuitem" data-act="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg>{mAccount}</button>
+      <button type="button" role="menuitem" data-act="plans"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.5c-.5-1-1.4-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.7 2.5 2 2.5.8 2.5 2-1 2-2.5 2c-1.1 0-2-.5-2.5-1.5M12 6.5V8M12 16v1.5"/></svg>{mPlans}</button>
+      <div class="pm-row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>{mTheme}</span><span class="seg2"><button type="button" data-theme-set="dark">{mDark}</button><button type="button" data-theme-set="light">{mLight}</button></span></div>
+      <div class="pm-row"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.4 3.5 5.2 3.5 8.5s-1.2 6.1-3.5 8.5c-2.3-2.4-3.5-5.2-3.5-8.5s1.2-6.1 3.5-8.5z"/></svg>{mLang}</span><span class="langs">{langsHtml}</span></div>
+      <a role="menuitem" href="{dl}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="11.5" rx="2"/><path d="M8.5 20h7M12 16v4"/></svg>{mApp}</a>
+      <button type="button" role="menuitem" id="fbk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg><span id="fbkl"></span></button>
+      <button type="button" role="menuitem" data-act="logout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h4.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H14M10 16l-4-4 4-4M6 12h10"/></svg>{mOut}</button>
+      <div class="pm-legal"><a href="{privacy}">Privacy</a><a href="{terms}">{termsLabel}</a></div>
     </div>
-    <p class="proof hide" id="proof"><i aria-hidden="true"></i><span id="proofn"></span></p>
-    <div class="reels" aria-hidden="true">
-      <figure><img src="{root}shots/reel1.webp" alt="" width="360" height="640" loading="lazy"><span>84</span></figure>
-      <figure><img src="{root}shots/reel3.webp" alt="" width="360" height="640" loading="lazy"><span>91</span></figure>
-      <figure class="mid"><img src="{root}shots/reel0.webp" alt="" width="360" height="640"><span>97</span></figure>
-      <figure><img src="{root}shots/reel5.webp" alt="" width="360" height="640" loading="lazy"><span>89</span></figure>
-      <figure><img src="{root}shots/reel7.webp" alt="" width="360" height="640" loading="lazy"><span>82</span></figure>
-    </div>
-    <div class="how">
-      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></i><b><em>1</em>{how1}</b><p>{how1d}</p></div>
-      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></svg></i><b><em>2</em>{how2}</b><p>{how2d}</p></div>
-      <div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></i><b><em>3</em>{how3}</b><p>{how3d}</p></div>
-    </div>
+  </span>
+</header>
+
+<main class="mn">
+  <section class="view" id="v-home">
+    <section class="hero" id="hero">
+      <h1>{h1}</h1>
+      <p class="sub">{sub}</p>
+      <form class="ask" id="ask" novalidate>
+        <svg class="ask-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+        <input id="url" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="{ph}" aria-label="{ph}">
+        <button class="btn btn-primary" id="go" type="submit"><span>{go}</span></button>
+      </form>
+      <div class="est hide" id="est" aria-live="polite"></div>
+      <p class="hint" id="hint" role="status">{note}</p>
+      <div class="plats" aria-hidden="true">
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2 2.5 6v14h5v3h3l3-3h4L22 15.5V2H4zm16 12.5-3 3h-5l-3 3v-3H5V4h15v10.5zM16 7h2v6h-2V7zm-5 0h2v6h-2V7z"/></svg>Twitch</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h6v4h2V5h2V3h8v6h-2v2h-2v2h2v2h2v6h-8v-2h-2v-2H9v4H3V3z"/></svg>Kick</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg>YouTube</span>
+      </div>
+      <p class="proof hide" id="proof"><i aria-hidden="true"></i><span id="proofn"></span></p>
+    </section>
+    <section id="run" class="panel hide" aria-live="polite"></section>
+    <section id="done" class="hide"></section>
+    <section id="hist" class="hist hide"></section>
   </section>
-
-  <section id="run" class="panel hide" aria-live="polite"></section>
-  <section id="done" class="hide"></section>
-  <section id="hist" class="hist hide"></section>
+  <section class="view hide" id="v-projects"><div class="vh"><h2>{projT}</h2><p>{projD}</p></div><div id="plist"></div></section>
+  <section class="view hide" id="v-style"><div class="vh"><h2>{styleT}</h2><p>{styleD}</p></div><div id="slist" class="scard"></div></section>
+  <section class="view hide" id="v-plans"></section>
 </main>
 
-<button class="fbk" id="fbk" type="button" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h6M9 14h4"/></svg><span id="fbkl"></span></button>
-<footer><div class="wrap"><span>© NoonFrame</span><a href="{privacy}">Privacy</a><a href="{terms}">{termsLabel}</a><a href="{home}">noonframe.com</a></div></footer>
+<nav class="tabbar" aria-label="{navLabel}">
+  <button type="button" data-view="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20h-5.5v-5.5h-5V20H4z"/></svg><span>{navHome}</span></button>
+  <button type="button" data-view="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>{navProj}</span></button>
+  <button type="button" data-view="style"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span>{navStyle}</span></button>
+</nav>
+</div>
 
 <script>
 // la pagina non si apre dentro altri siti (niente click rubati sul tasto che usa i crediti)
@@ -856,19 +1217,120 @@ async function call(op, body) {
 
 // ---- interfaccia
 function setHint(t, err) { const h = $('hint'); h.textContent = t; h.classList.toggle('err', !!err); }
-function showSignedOut() { $('who').classList.add('hide'); $('in').classList.remove('hide'); }
-function showSignedIn(bal) {
+function showSignedOut() { $('who').classList.add('hide'); $('in').classList.remove('hide'); $('sbcred').classList.add('hide'); }
+function showSignedIn(b) {
   $('in').classList.add('hide'); $('who').classList.remove('hide');
-  const m = me(); $('bal').textContent = bal == null ? '…' : bal; $('bal').parentNode.title = L.credits;
+  const m = me(); $('bal').textContent = b == null ? '…' : nfmt(b); $('bal').parentNode.title = L.credits;
+  $('pmname').textContent = m.name || (m.email || '').split('@')[0]; $('pmmail').textContent = m.email;
+  if (b != null) { bal = b; paintSide(); loadPlan(); }
   $('avi').textContent = ((m.name || m.email || '?').trim()[0] || '?').toUpperCase();
   if (m.pic) { $('av').onload = () => { $('av').classList.remove('hide'); $('avi').classList.add('hide'); }; $('av').onerror = () => { $('av').classList.add('hide'); $('avi').classList.remove('hide'); }; $('av').src = m.pic; $('av').alt = ''; }
 }
 $('in').textContent = L.login;
 $('in').onclick = login;
-$('me').setAttribute('aria-label', L.pf.title); $('me').onclick = () => openProfile();
-$('fbkl').textContent = L.fb.btn; $('fbk').onclick = () => openFeedback();
-$('topup').textContent = L.buy.btn; $('topup').onclick = () => openBuy(null);
-$('bal').parentNode.style.cursor = 'pointer'; $('bal').parentNode.onclick = () => openBuy(null);
+$('me').setAttribute('aria-label', L.pf.title);
+$('fbkl').textContent = L.fb.btn; $('fbk').onclick = () => { closeMenu(); openFeedback(); };
+$('topup').textContent = L.buy.btn; $('topup').onclick = () => { closeMenu(); openBuy(null); };
+$('bal').parentNode.onclick = () => { closeMenu(); openBuy(null); };
+
+// ---- grafica v2, come il tool senza l'editor: viste (Home, Progetti, Preset, Crediti e piani), menu del profilo, tema
+const V = L.v2, LOC = LANG_OF();
+function LANG_OF() { return document.documentElement.lang === 'en' ? 'en' : 'it'; }
+const VIEWS = ['home', 'projects', 'style', 'plans'];
+let view = 'home';
+function setView(v, o) {
+  if (!VIEWS.includes(v)) v = 'home';
+  view = v;
+  VIEWS.forEach((k) => $('v-' + k).classList.toggle('hide', k !== v));
+  document.querySelectorAll('[data-view]').forEach((b) => { const on = b.dataset.view === v; b.classList.toggle('on', on); if (on) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  closeMenu();
+  if (v === 'projects') paintProjects();
+  if (v === 'style') paintStyle();
+  if (v === 'plans') renderPlans(o && o.want);
+  try { window.scrollTo({ top: 0 }); } catch (e) {}
+}
+// Home dalla barra: si torna al campo del link (un lavoro aperto si ritrova in Recenti e in Progetti)
+function goHome() {
+  clearTimeout(timer); current = null;
+  if (new URLSearchParams(location.search).get('job')) history.replaceState(null, '', location.pathname);
+  setView('home'); showAsk(); if (S) loadHist();
+}
+document.querySelectorAll('[data-view]').forEach((b) => b.addEventListener('click', () => (b.dataset.view === 'home' ? goHome() : setView(b.dataset.view))));
+// apre un lavoro senza ricaricare la pagina (i link ?job= restano validi)
+function openJob(id) { setView('home'); history.replaceState(null, '', '?job=' + id); current = null; clearTimeout(timer); poll(id); }
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[data-job]');
+  if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+  e.preventDefault(); openJob(a.dataset.job);
+});
+
+// menu del profilo: al passaggio del mouse (CSS) o al tocco/clic
+const pm = $('pm');
+function closeMenu() { pm.classList.remove('open'); $('me').setAttribute('aria-expanded', 'false'); }
+$('me').onclick = (e) => { e.stopPropagation(); const o = !pm.classList.contains('open'); pm.classList.toggle('open', o); $('me').setAttribute('aria-expanded', String(o)); };
+document.addEventListener('click', (e) => { if (!e.target.closest('#who')) closeMenu(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+pm.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  closeMenu();
+  if (b.dataset.act === 'account') openProfile();
+  else if (b.dataset.act === 'plans') openBuy(null);
+  else if (b.dataset.act === 'logout') logout();
+});
+
+// tema scuro/chiaro: stessa chiave e stesso evento del tool
+function applyTheme(t) {
+  if (t) { try { localStorage.setItem('nf-theme', t); } catch (e) {} try { window.dispatchEvent(new CustomEvent('nf-theme', { detail: t })); } catch (e) {} }
+  let v = null; try { v = localStorage.getItem('nf-theme'); } catch (e) {}
+  if (v !== 'light' && v !== 'dark') v = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.documentElement.dataset.theme = v;
+  document.querySelectorAll('[data-theme-set]').forEach((b) => b.classList.toggle('on', b.dataset.themeSet === v));
+  const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = v === 'light' ? '#E6EAF2' : '#0A0C11';
+}
+applyTheme();
+addEventListener('storage', (e) => { if (e.key === 'nf-theme') applyTheme(); });
+document.querySelectorAll('[data-theme-set]').forEach((b) => b.addEventListener('click', (e) => { e.stopPropagation(); applyTheme(b.dataset.themeSet); }));
+
+// ore di live che stanno nei crediti, al costo del web (perHour arriva dal server)
+function liveHrs(cr) {
+  const x = (Number(cr) || 0) / Math.max(1, perHour);
+  if (!(x * 60 >= 5)) return '';
+  if (x < 1) return V.mins.replace('{n}', Math.floor(x * 60 / 5) * 5);
+  const n = x >= 10 ? Math.floor(x) : Math.floor(x * 2) / 2;
+  return n === 1 ? V.hr1 : V.hrs.replace('{n}', Number.isInteger(n) ? n.toLocaleString(LOC) : String(n).replace('.', LOC === 'en' ? '.' : ','));
+}
+const nfmt = (n) => Number(n || 0).toLocaleString(LOC);
+const topPlan = (plans) => (plans || []).find((p) => p.id === 'pro') || (plans || [])[Math.floor((plans || []).length / 2)] || null;
+const TONE = { starter: 't-g', pro: 't-b', ultimate: 't-v' };
+const tone = (plans, p) => TONE[p.id] || ['t-g', 't-b', 't-v'][Math.max(0, (plans || []).indexOf(p)) % 3];
+// piano dell'utente (per la barra a sinistra e la pagina dei piani)
+let PLAN = null, PLANID = 'free', TOP = null, planP = null;
+function loadPlan(force) {
+  if (!S) return Promise.resolve();
+  if (planP && !force) return planP;
+  planP = Promise.all([payCall({ op: 'status' }).catch(() => ({})), catalog().catch(() => null)]).then(([st, cat]) => {
+    const sub = st && st.sub;
+    PLANID = sub ? sub.plan : 'free';
+    PLAN = sub ? ((cat && cat.plans) || []).find((p) => p.id === sub.plan) || { id: sub.plan, name: sub.plan, monthly: 0 } : null;
+    TOP = cat ? topPlan(cat.plans) : null;
+    paintSide();
+  });
+  return planP;
+}
+// riquadro dei crediti nella barra a sinistra e anello intorno alla foto
+function paintSide() {
+  const box = $('sbcred');
+  if (!S || bal == null) { box.classList.add('hide'); return; }
+  const b = Number(bal) || 0, frac = Math.max(0, Math.min(1, PLAN && PLAN.monthly ? b / PLAN.monthly : b / Math.max(b, perHour)));
+  const hrs = liveHrs(b);
+  box.innerHTML = '<div class="r"><b>' + esc(PLAN ? PLAN.name : V.free) + '</b><span>' + nfmt(b) + ' ' + esc(L.credits) + '</span></div>'
+    + '<div class="bar2"><i style="width:' + (frac * 100).toFixed(1) + '%"></i></div>' + (hrs ? '<small>' + esc(V.sbHrs.replace('{h}', hrs)) + '</small>' : '')
+    + '<button class="btn btn-primary btn-sm" type="button" id="sbup">' + esc(PLAN || !TOP ? V.sbTop : V.sbUp.replace('{p}', TOP.name)) + '</button>';
+  box.classList.remove('hide');
+  $('sbup').onclick = () => openBuy(PLAN ? { kind: 'pack', id: '' } : null);
+  $('ringv').setAttribute('stroke-dasharray', (frac * 100).toFixed(1) + ' 100');
+  $('pmhrs').textContent = hrs;
+}
 
 let current = null, timer = null, perHour = 30;
 const stageIdx = { queued: 0, start: 0, download: 0, prepare: 1, clips: 2, render: 3, upload: 3, done: 4 };
@@ -885,10 +1347,10 @@ function renderRun(j) {
     return;
   }
   const p = Math.round((j.progress || 0) * 100), si = stageIdx[j.stage] ?? 0;
-  el.innerHTML = '<h2>' + esc(L.working) + '</h2><p class="src">' + esc(j.title || j.url) + '</p>'
-    + '<div class="bar"><i style="width:' + Math.max(3, p) + '%"></i></div>'
+  el.innerHTML = '<div class="rh">' + (j.thumbnail ? '<img src="' + esc(j.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '')
+    + '<div><small>' + esc(pfName(j)) + '</small><h2>' + esc(j.title || L.working) + '</h2><p class="src">' + esc(j.title ? L.working : j.url) + '</p></div></div>'
+    + '<div class="steps2">' + L.steps.map((s, i) => '<div class="' + (i < si ? 'ok' : i === si ? 'on' : '') + '"><i></i><span>' + esc(s) + (i < si ? ' <em>' + esc(V.stepDone) + '</em>' : '') + '</span></div>').join('') + '</div>'
     + '<div class="stage"><span>' + esc(L.stages[j.stage] || tx(j.message, '') || L.stages.queued) + '</span><span>' + p + '%</span></div>'
-    + '<div class="steps">' + L.steps.map((s, i) => '<span class="' + (i < si ? 'ok' : i === si ? 'on' : '') + '">' + esc(s) + '</span>').join('') + '</div>'
     + (me().email ? '<p class="mailn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>' + esc(L.cv.mail).replace('{e}', '<b>' + esc(me().email) + '</b>') + '</span></p>' : '<p class="leave">' + esc(L.leave) + '</p>')
     + '<div class="row"><button class="link" id="cancel" type="button">' + esc(L.cancel) + '</button>'
     + (j.credits ? '<span class="src" style="margin:0">' + esc(L.credUsed.replace('{n}', j.credits)) + '</span>' : '') + '</div>'
@@ -925,7 +1387,41 @@ const ICO = {
   l: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>',
   r: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>',
   x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
-  lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>' };
+  lock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>',
+  plus: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>',
+  tick: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>' };
+// piattaforma della live (dal server o dal link)
+function pfName(j) {
+  const p = String(j.platform || '') || ((String(j.url || '').match(/twitch|kick|youtu/i) || [''])[0]).toLowerCase();
+  return { twitch: 'Twitch', kick: 'Kick', youtube: 'YouTube', youtu: 'YouTube' }[p] || '';
+}
+// quando si cancella un lavoro sul web: 7 giorni dalla fine (o dalla creazione)
+function expDays(j) {
+  if (j.status !== 'done') return null;
+  const base = Date.parse(j.finished_at || j.created_at || '');
+  const t0 = Date.parse(j.expiresAt || '') || (base ? base + 7 * 864e5 : 0);
+  if (!t0) return null;
+  const d = Math.ceil((t0 - Date.now()) / 864e5);
+  return d < 0 ? null : d;
+}
+function expTxt(j, long) {
+  const d = expDays(j);
+  if (d == null) return '';
+  return d <= 0 ? (long ? V.delToday : V.expToday) : d === 1 ? (long ? V.delTom : V.expTom) : (long ? V.delIn : V.expIn).replace('{n}', d);
+}
+// scheda di una live (Recenti e Progetti)
+function jobCard(j) {
+  const poster = j.thumbnail || ((j.clips || []).find((c) => c.poster && !c.locked) || (j.clips || []).find((c) => c.poster) || {}).poster || '';
+  const exp = expTxt(j), dd = expDays(j), soon = dd != null && dd <= 1;
+  const stt = { running: L.statusRun, queued: L.statusRun, failed: L.statusFail, cancelled: L.statusCancel }[j.status];
+  const can = j.status === 'done' || j.status === 'running' || j.status === 'queued';
+  const meta = [pfName(j), j.duration ? hms(j.duration) : '', j.status === 'done' ? V.nClips.replace('{n}', (j.clips || []).length) : ''].filter(Boolean).join(' · ');
+  return (can ? '<a class="jcard" href="?job=' + esc(j.id) + '" data-job="' + esc(j.id) + '">' : '<div class="jcard">')
+    + '<span class="jthumb">' + (poster ? '<img src="' + esc(poster) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' : '')
+    + (exp ? '<em class="exp' + (soon ? ' soon' : '') + '">' + esc(exp) + '</em>' : '') + (stt ? '<em class="jst ' + esc(j.status) + '">' + esc(stt) + '</em>' : '') + '</span>'
+    + '<b>' + esc(j.title || V.untitled) + '</b><span class="m">' + esc(meta) + '</span>' + (can ? '</a>' : '</div>');
+}
 function pfBoxHtml(c) {
   if (!c.pf) return '';
   const best = bestPfKey(c.pf), G = L.cg;
@@ -945,13 +1441,18 @@ function renderDone(j) {
   // in prova: le clip oltre quelle gratis sono bloccate (si vedono, si sbloccano comprando)
   const open = list.filter((c) => !c.locked), nLock = list.length - open.length;
   const unlock = () => { step('clip_unlock'); openBuy(null); };
-  el.innerHTML = '<div class="done-h"><div><h2><span>' + n + '</span> ' + esc(n === 1 ? L.readyOne : L.ready) + '</h2>'
-    + '<p>' + esc((j.title ? L.from + ' ' + j.title + ' · ' : '') + L.expire) + '</p>'
-    + (n ? '<span class="saved" title="' + esc(L.cv.savedD.replace('{n}', n)) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>' + esc(L.cv.saved.replace('{h}', fmtH((Number(j.duration) || 0) / 60 + n * 10))) + '</span>' : '') + '</div>'
-    + '<button class="btn btn-ghost btn-sm" id="again" type="button">' + esc(L.again) + '</button></div>'
+  const exp = expTxt(j, true), dlOk = open.filter((c) => dlUrl(c, j));
+  el.innerHTML = '<div class="dh"><div class="crumb"><button type="button" id="toproj">' + esc($('v-projects').querySelector('h2').textContent) + '</button>' + ICO.r + '<span class="t">' + esc(j.title || V.untitled) + '</span></div>'
+    + '<div class="acts"><button class="btn btn-ghost btn-sm" id="again" type="button">' + ICO.plus + esc(V.newLink) + '</button>'
+    + (dlOk.length > 1 ? '<button class="btn btn-primary btn-sm" id="dlall" type="button">' + ICO.dl + esc(V.dlAll) + '</button>' : '') + '</div></div>'
+    + '<div class="lcard">' + (j.thumbnail ? '<img src="' + esc(j.thumbnail) + '" alt="" referrerpolicy="no-referrer">' : '<span class="ph"></span>')
+    + '<div class="x"><b>' + esc(L.from + (j.duration ? ' · ' + hms(j.duration) : '')) + '</b><small>' + esc([pfName(j), j.credits ? L.credUsed.replace('{n}', j.credits) : ''].filter(Boolean).join(' · ')) + '</small></div>'
+    + (exp ? '<span class="exp">' + ICO.clock + esc(exp) + '</span>' : '') + '</div>'
+    + (n ? '<span class="saved" title="' + esc(L.cv.savedD.replace('{n}', n)) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg>' + esc(L.cv.saved.replace('{h}', fmtH((Number(j.duration) || 0) / 60 + n * 10))) + '</span>' : '')
     + (nLock ? '<div class="lockbox"><div><h3>' + esc(L.cv.lockT.replace('{f}', open.length).replace('{n}', nLock)) + '</h3><p>' + esc(L.cv.lockD.replace('{t}', list.length)) + '</p></div>'
       + '<button class="btn btn-primary" type="button" id="unlockall">' + ICO.lock + esc(L.cv.lockGo) + '</button></div>' : '')
     + '<div class="nxbox hide" id="nxbox"></div>'
+    + '<div class="cnt"><b>' + esc(V.nClips.replace('{n}', n)) + '</b><span>' + esc(V.sorted) + '</span></div>'
     + '<div class="cg-grid">' + list.map((c, i) => {
       const pf = bestPfKey(c.pf), dl = c.locked ? null : dlUrl(c, j), b = busy(c);
       if (c.locked) {
@@ -979,7 +1480,14 @@ function renderDone(j) {
     + '<aside class="edit"><div><h3>' + esc(L.editT) + '</h3><p>' + esc(L.editD) + '</p></div>'
     + (mobile ? '<button class="btn btn-white" id="sendpc" type="button">' + esc(L.editMob) + '</button>' : '<a class="btn btn-white" href="{dl}">' + esc(L.editDesk) + '</a>')
     + '<p class="ok hide" id="sentok">' + esc(L.editSent) + '</p></aside>';
-  $('again').onclick = () => { history.replaceState(null, '', location.pathname); showAsk(); $('url').value = ''; $('url').focus(); };
+  $('again').onclick = () => { goHome(); $('url').value = ''; $('url').focus(); };
+  $('toproj').onclick = () => setView('projects');
+  // tutte le clip una dopo l'altra (il browser chiede il permesso la prima volta)
+  const da = $('dlall');
+  if (da) da.onclick = () => {
+    da.disabled = true;
+    dlOk.forEach((c, i) => setTimeout(() => { const a = document.createElement('a'); a.href = dlUrl(c, j); a.download = fileName(c, j); document.body.append(a); a.click(); a.remove(); if (i === dlOk.length - 1) { da.disabled = false; maybeUpsell(); } }, i * 900));
+  };
   el.querySelectorAll('[data-stop]').forEach((x) => x.addEventListener('click', (e) => e.stopPropagation()));
   el.querySelectorAll('a.cg-ib').forEach((x) => x.addEventListener('click', () => maybeUpsell()));
   el.querySelectorAll('[data-ed]').forEach((x) => x.addEventListener('click', () => openEdit(j, j.clips.find((c) => c.n === Number(x.dataset.ed)))));
@@ -1220,10 +1728,13 @@ function tickOffer(root) {
 async function buyOffer(btn, id) {
   btn.disabled = true; const lab = btn.textContent; btn.textContent = L.buy.wait; step('clip_buy');
   try {
-    const r = await payCall({ op: 'buy', item: { kind: 'offer', id, period: 'month' }, lang: LANG, back: 'clip' });
-    if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; }
+    const isPlan = !!(PLANOFF && PLANOFF.id === id), o = isPlan ? PLANOFF : OFF;
+    const info = isPlan ? { kind: 'plan_offer', name: (o && o.title) || 'NoonFrame', price: eur(o ? o.price : 0) }
+      : { kind: 'pack', name: nfmt(o && o.credits) + ' ' + L.buy.credits, price: eur(o ? o.price : 0) };
+    const r = await payInPage({ kind: 'offer', id, period: 'month' }, info, () => { loadHist(); if (estFor && view === 'home') estimate(estFor); });
+    if (r && r.changed) toast(L.buy.changed);
   } catch (e) { if (e.message !== 'auth') toast(e.message); }
-  btn.disabled = false; btn.textContent = lab;
+  if (btn.isConnected) { btn.disabled = false; btn.textContent = lab; }
 }
 // dopo le clip: quanti crediti restano e cosa serve per la prossima live (a chi non ha un abbonamento)
 async function nextBox(j) {
@@ -1442,99 +1953,209 @@ function openFeedback(kind) {
   form();
 }
 
+// ---- Crediti e piani (pagina, stile del tool): prezzi veri dal catalogo, ore di live al costo del web, un colore per piano.
+// Si paga dentro la pagina (modulo di Stripe in paga.html); i crediti arrivano solo dal webhook firmato, come prima.
 function openBuy(want) {
   if (!S) { login(); return; }
-  if (document.querySelector('.bdlg')) return;
-  const B = L.buy;
-  let tab = want && want.kind === 'pack' ? 'packs' : 'plans', period = want && want.period === 'year' ? 'year' : 'month', sub = null, note = null, off = null;
-  const dlg = document.createElement('div');
-  dlg.className = 'edlg bdlg';
-  dlg.innerHTML = '<div class="ebox" role="dialog" aria-modal="true" aria-labelledby="bttl">'
-    + '<button class="bx" type="button" id="bclose" aria-label="' + esc(B.close) + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>'
-    + '<div class="bhero"><h2 id="bttl">' + esc(B.t) + '</h2><p>' + esc(B.lead) + '</p><span class="bbal" id="bbal"><i></i><span>' + esc(B.have.replace('{b}', '')) + '</span><b>' + (bal == null ? '…' : bal) + '</b></span></div>'
-    + '<div class="bbody" id="bbody"><p class="bsecure">' + esc(B.load) + '</p></div>'
-    + '<div class="bfoot"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>' + esc(B.secure) + '</span><span id="bmanage"></span></div></div>';
-  document.body.append(dlg);
-  const prevFocus = document.activeElement;
-  const close = () => { dlg.remove(); document.removeEventListener('keydown', onKey); try { prevFocus && prevFocus.focus(); } catch (e) {} };
-  const onKey = (e) => { if (e.key === 'Escape') close(); };
-  document.addEventListener('keydown', onKey);
-  dlg.addEventListener('click', (e) => { if (e.target === dlg) close(); });
-  dlg.querySelector('#bclose').onclick = close;
-  const body = dlg.querySelector('#bbody');
-  const hours = (cr) => { const m = Math.round(cr / Math.max(1, perHour) * 60); return m >= 60 ? (Math.round(m / 6) / 10).toString().replace('.', LANG === 'en' ? '.' : ',') + ' h' : m + ' min'; };
-  const coinI = '<i></i>';
-  const portal = async (btn) => {
-    if (btn) btn.disabled = true;
-    try { const r = await payCall({ op: 'portal' }); if (r.url && /^https:\/\/(billing\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; } }
-    catch (e) { if (e.message !== 'auth') { note = { t: e.message, err: true }; paint(); } }
-    if (btn) btn.disabled = false;
-  };
-  const paintManage = () => {
-    const m = dlg.querySelector('#bmanage');
-    m.innerHTML = sub ? '<button class="link" type="button" id="bportal">' + esc(B.manage) + '</button>' : '';
-    if (sub) m.querySelector('#bportal').onclick = (e) => portal(e.currentTarget);
-    const pl = dlg.querySelector('#bbal');
-    if (sub && CAT) { const p = CAT.plans.find((x) => x.id === sub.plan); if (p && !pl.querySelector('.pl')) pl.insertAdjacentHTML('beforeend', '<span class="pl">' + esc(B.planNow.replace('{p}', p.name)) + '</span>'); }
-  };
-  const paint = () => {
-    const c = CAT || { plans: [], packs: [] };
-    const tg = (x) => (LANG === 'en' ? x.tagline_en : x.tagline) || '';
-    const perks = (x) => (LANG === 'en' ? x.perks_en : x.perks) || [];
-    const save = Math.max(0, ...c.plans.filter((p) => p.price_year_eur).map((p) => Math.round((1 - p.price_year_eur / (p.price_eur * 12)) * 100)));
-    const popId = c.plans.length >= 3 ? c.plans[Math.floor(c.plans.length / 2)].id : (c.plans[0] || {}).id;
-    let html = (note ? '<div class="bmsg' + (note.err ? ' err' : '') + '" role="status"><span>' + esc(note.t) + '</span>' + (note.portal ? '<button class="btn btn-ghost btn-sm" type="button" data-portal>' + esc(B.manage) + '</button>' : '') + '</div>' : '')
-      + (PLANOFF ? planOfferHtml(PLANOFF) : off ? offerHtml(off) : '')
-      + '<div class="btabs" role="tablist"><button type="button" role="tab" data-tab="plans" aria-selected="' + (tab === 'plans') + '">' + esc(B.plans) + '</button><button type="button" role="tab" data-tab="packs" aria-selected="' + (tab === 'packs') + '">' + esc(B.packs) + '</button></div>';
-    if (tab === 'plans') {
-      html += '<div class="bper"><div class="seg" role="group"><button type="button" data-per="month" aria-pressed="' + (period === 'month') + '">' + esc(B.month) + '</button><button type="button" data-per="year" aria-pressed="' + (period === 'year') + '">' + esc(B.year) + (save ? '<em>−' + save + '%</em>' : '') + '</button></div></div>'
-        + '<div class="bitems">' + c.plans.map((x) => {
-          const yr = period === 'year' && x.price_year_eur, mine = sub && sub.plan === x.id && (sub.period || 'month') === period, pop = x.id === popId;
-          return '<div class="bitem' + (pop ? ' pop' : '') + (want && want.kind === 'plan' && want.id === x.id ? ' hl' : '') + '">' + (pop ? '<span class="tag">' + esc(B.popular) + '</span>' : '')
-            + '<span class="nm">' + esc(x.name) + (mine ? '<span class="mine">' + esc(B.mine) + '</span>' : '') + '</span>'
-            + '<span class="pr">' + esc(eur(yr ? Math.round(x.price_year_eur / 12 * 100) / 100 : x.price_eur)) + '<small>' + esc(B.perMonth) + '</small></span>'
-            + '<span class="bsub">' + esc(yr ? B.billedYear.replace('{p}', eur(x.price_year_eur)) : tg(x)) + '</span>'
-            + '<span class="cr">' + coinI + esc(B.perMoN.replace('{n}', x.monthly.toLocaleString(LANG === 'en' ? 'en' : 'it'))) + '</span>'
-            + '<ul><li>' + esc(B.minutes.replace('{h}', hours(x.monthly))) + '</li>' + perks(x).map((k) => '<li>' + esc(k) + '</li>').join('') + '</ul><span class="gap"></span>'
-            + (mine ? '<button class="btn btn-ghost" type="button" disabled>' + esc(B.mine) + '</button>'
-              : '<button class="btn ' + (pop ? 'btn-primary' : 'btn-ghost') + '" type="button" data-buy="plan" data-id="' + esc(x.id) + '">' + esc(sub ? B.change : B.sub) + '</button>') + '</div>';
-        }).join('') + '</div>';
-    } else {
-      html += '<div class="bitems">' + c.packs.map((x, i) => {
-        const pop = i === c.packs.length - 1 && c.packs.length > 1;
-        return '<div class="bitem' + (pop ? ' pop' : '') + (want && want.kind === 'pack' && want.id === x.id ? ' hl' : '') + '">' + (pop ? '<span class="tag">' + esc(B.best) + '</span>' : '')
-          + '<span class="nm">' + esc(x.name) + '</span><span class="pr">' + esc(eur(x.price_eur)) + '</span><span class="bsub">' + esc(B.once) + '</span>'
-          + '<span class="cr">' + coinI + esc(x.credits.toLocaleString(LANG === 'en' ? 'en' : 'it') + ' ' + B.credits) + '</span>'
-          + '<ul><li>' + esc(B.minutes.replace('{h}', hours(x.credits))) + '</li><li>' + esc(B.never) + '</li></ul><span class="gap"></span>'
-          + '<button class="btn ' + (pop ? 'btn-primary' : 'btn-ghost') + '" type="button" data-buy="pack" data-id="' + esc(x.id) + '">' + esc(B.go) + ' · ' + esc(eur(x.price_eur)) + '</button></div>';
+  setView('plans', { want });
+}
+let PS = null;   // stato della pagina dei piani
+async function renderPlans(want) {
+  const el = $('v-plans'), B = L.buy;
+  el.innerHTML = '<div class="pl"><div class="vh"><h2>' + esc(V.plansT) + '</h2></div><p class="bsecure">' + esc(B.load) + '</p></div>';
+  PS = { want: want || null, period: want && want.period === 'year' ? 'year' : 'month', sub: null, note: null, off: null };
+  try {
+    const [, st, hs, o] = await Promise.all([catalog(), payCall({ op: 'status' }).catch(() => ({})), call('status', {}).catch(() => null), getOffer(0, want && want.kind === 'offer' ? want.id : null)]);
+    if (hs) { perHour = hs.perHour || perHour; showSignedIn(hs.balance); }
+    PS.sub = (st && st.sub) || null; PS.off = o;
+  } catch (e) {
+    if (e.message === 'auth') return;
+    el.querySelector('.bsecure').outerHTML = '<p class="bmsg err">' + esc(e.message || B.loadErr) + '</p>';
+    return;
+  }
+  paintPlans();
+}
+function paintPlans() {
+  const el = $('v-plans'), B = L.buy, c = CAT || { plans: [], packs: [] };
+  if (!PS || view !== 'plans') return;
+  const plans = c.plans || [], packs = c.packs || [], sub = PS.sub, mineId = sub ? sub.plan : 'free', mine = plans.find((p) => p.id === mineId);
+  const top = topPlan(plans), hasYear = plans.some((p) => p.price_year_eur), yearly = hasYear && PS.period === 'year';
+  const fm = Math.max(0, ...plans.map((p) => (p.price_year_eur && p.price_eur ? Math.round(12 - p.price_year_eur / p.price_eur) : 0)));
+  const save = Math.max(0, ...plans.map((p) => (p.price_year_eur && p.price_eur ? Math.round((1 - p.price_year_eur / (p.price_eur * 12)) * 100) : 0)));
+  const perks = (x) => (LANG === 'en' ? x.perks_en : x.perks) || [];
+  const hero = (cr, cls, label) => { const h = liveHrs(cr); return '<div class="' + cls + '"><b>' + esc(h || nfmt(cr)) + '</b><span>' + esc(h ? label : B.credits) + '</span></div>'; };
+  const b = Number(bal) || 0, frac = Math.max(0, Math.min(1, mine && mine.monthly ? b / mine.monthly : b / Math.max(b, perHour)));
+  let h = '<div class="pl ' + (mine ? tone(plans, mine) : '') + '"><div class="vh"><h2>' + esc(V.plansT) + '</h2><p>' + esc(V.plansD.replace('{n}', nfmt(perHour))) + '</p></div>';
+  if (PS.note) h += '<div class="bmsg' + (PS.note.err ? ' err' : '') + '" role="status"><span>' + esc(PS.note.t) + '</span>' + (PS.note.portal ? '<button class="btn btn-ghost btn-sm" type="button" data-portal>' + esc(B.manage) + '</button>' : '') + '</div>';
+  if (PLANOFF) h += planOfferHtml(PLANOFF); else if (PS.off) h += offerHtml(PS.off);
+  // il tuo piano e i crediti che hai
+  h += '<div class="pl-me"><div class="pl-me-l"><span>' + esc(V.meT) + '</span><b>' + esc(mine ? mine.name : V.free) + '</b><small>' + esc(mine ? V.meNext : V.meFree) + '</small></div>'
+    + '<div class="pl-me-r"><div class="pl-me-row"><b>' + nfmt(b) + ' ' + esc(B.credits) + '</b><span>' + esc(liveHrs(b) ? liveHrs(b) + ' ' + V.ofLive : '') + '</span></div><div class="pl-me-bar"><i style="width:' + (frac * 100).toFixed(1) + '%"></i></div></div></div>';
+  // abbonamenti
+  if (plans.length) {
+    h += '<div class="pl-sh"><div><h3>' + esc(V.subsT) + '</h3><p>' + esc(V.subsD) + '</p></div>'
+      + (hasYear ? '<div class="pl-per" role="tablist"><button type="button" role="tab" data-per="month" class="' + (yearly ? '' : 'on') + '" aria-selected="' + !yearly + '">' + esc(V.monthly) + '</button>'
+        + '<button type="button" role="tab" data-per="year" class="' + (yearly ? 'on' : '') + '" aria-selected="' + yearly + '">' + esc(V.yearly) + (fm >= 2 ? '<em>' + esc(V.freeMo.replace('{n}', fm)) + '</em>' : save ? '<em>−' + save + '%</em>' : '') + '</button></div>' : '') + '</div>';
+    h += '<div class="pl-grid">' + plans.map((p) => {
+      const isMine = p.id === mineId && (!sub || (sub.period || 'month') === (yearly ? 'year' : 'month')), hl = !isMine && top && p.id === top.id;
+      const y = yearly && p.price_year_eur, po = !yearly && !sub && PLANOFF && PLANOFF.plan === p.id ? PLANOFF : null;
+      const price = y ? Math.round(p.price_year_eur / 12 * 100) / 100 : po ? po.price : p.price_eur;
+      return '<div class="pl-card ' + tone(plans, p) + (isMine ? ' mine' : hl ? ' hl' : '') + '">'
+        + '<div class="pl-top"><b class="pl-name">' + esc(p.name) + '</b>' + (isMine ? '<span class="pl-badge">' + esc(V.mine) + '</span>' : hl ? '<span class="pl-badge main">' + esc(V.popular) + '</span>' : '') + '</div>'
+        + '<div>' + hero(p.monthly, 'pl-hrs', V.ofLiveMo) + (liveHrs(p.monthly) ? '<div class="pl-crl">' + esc(V.crMo.replace('{n}', nfmt(p.monthly))) + '</div>' : '') + '</div>'
+        + '<i class="pl-div"></i>'
+        + '<div><div class="pl-price"><b>' + esc(eur(price)) + '</b><span>' + esc(V.perMo) + '</span>' + (y || po ? '<s>' + esc(eur(p.price_eur)) + '</s>' : '') + '</div>'
+        + '<div class="pl-bill">' + esc(y ? V.billY.replace('{p}', eur(p.price_year_eur)) : po ? V.firstMo.replace('{p}', eur(p.price_eur) + V.perMo) : V.billM) + '</div></div>'
+        + '<ul class="pl-perks">' + perks(p).slice(0, 4).map((k) => '<li>' + ICO.tick + '<span>' + esc(k) + '</span></li>').join('') + '</ul>'
+        + (isMine ? '<button class="pl-btn mine" type="button" disabled>' + esc(V.current) + '</button>'
+          : '<button class="pl-btn' + (hl ? ' main' : '') + '" type="button" data-buy="' + (po ? 'offer' : 'plan') + '" data-id="' + esc(po ? po.id : p.id) + '" data-plan="' + esc(p.id) + '">' + esc(sub ? B.change : V.goTo.replace('{p}', p.name)) + '</button>')
+        + '</div>';
+    }).join('') + '</div>';
+  }
+  // ricariche: la scheda intera e' il pulsante
+  if (packs.length) {
+    const per100 = (k) => (k.price_eur / Math.max(1, k.credits)) * 100;
+    const best = packs.reduce((a, k) => (!a || per100(k) < per100(a) ? k : a), null);
+    h += '<div class="pl-sh"><div><h3>' + esc(V.packsT) + '</h3><p>' + esc(V.packsD) + '</p></div></div><div class="pl-pgrid">'
+      + packs.map((k, i) => {
+        const tag = best && k.id === best.id ? V.best : i === 1 && packs.length > 2 ? V.conv : '';
+        return '<button class="pl-pack" type="button" data-buy="pack" data-id="' + esc(k.id) + '"><span class="pl-ptag">' + (tag ? '<em>' + esc(tag) + '</em>' : '') + '</span>'
+          + hero(k.credits, 'pl-phrs', V.ofLive) + '<span class="pl-pcr">' + esc(V.packCr.replace('{n}', nfmt(k.credits))) + '</span>'
+          + '<span class="pl-pfoot"><b>' + esc(eur(k.price_eur)) + '</b><small>' + esc(V.per100.replace('{p}', eur(per100(k)))) + '</small></span></button>';
       }).join('') + '</div>';
+  }
+  h += '<p class="bguar">' + ICO.tick + '<span>' + esc(B.guar) + '</span></p>'
+    + '<div class="pl-foot"><span>' + ICO.clock + esc(V.rule.replace('{n}', nfmt(perHour))) + '</span><span>' + ICO.lock + esc(V.secure) + '</span><span>' + esc(V.vat) + '</span><span>' + esc(V.anytime) + '</span>'
+    + (sub ? '<button class="link" type="button" data-portal>' + esc(V.manage) + '</button>' : '') + '</div></div>';
+  el.innerHTML = h;
+  tickOffer(el);
+  el.querySelectorAll('[data-per]').forEach((x) => x.onclick = () => { PS.period = x.dataset.per; paintPlans(); });
+  el.querySelectorAll('[data-portal]').forEach((x) => x.onclick = () => portal(x));
+  el.querySelectorAll('[data-buy]').forEach((x) => x.onclick = () => {
+    const kind = x.dataset.buy, id = x.dataset.id;
+    if (x.closest('[data-offer]')) { buyOffer(x, id); return; }
+    const p = plans.find((q) => q.id === (x.dataset.plan || id)), k = packs.find((q) => q.id === id);
+    const period = kind === 'plan' && yearly ? 'year' : 'month';
+    const info = kind === 'pack' && k ? { kind: 'pack', name: nfmt(k.credits) + ' ' + B.credits, det: V.packCr.replace('{n}', nfmt(k.credits)), price: eur(k.price_eur) }
+      : kind === 'offer' && PLANOFF ? { kind: 'plan_offer', name: 'NoonFrame ' + (p ? p.name : ''), plan: p ? p.name : '', det: V.crMo.replace('{n}', nfmt(p ? p.monthly : 0)), price: eur(PLANOFF.price) }
+      : { kind: 'plan', name: 'NoonFrame ' + (p ? p.name : ''), plan: p ? p.name : '', det: V.crMo.replace('{n}', nfmt(p ? p.monthly : 0)), price: eur(period === 'year' ? p.price_year_eur : p.price_eur) };
+    buyItem({ kind, id, period }, info, x);
+  });
+  const f = el.querySelector('.pl-card.hl [data-buy]'); if (f && PS.want) try { f.focus({ preventScroll: true }); } catch (e) {}
+  if (PS.want && PS.want.kind === 'pack') { const pk = el.querySelector('.pl-pgrid'); if (pk) pk.scrollIntoView({ block: 'center' }); PS.want = null; }
+}
+// pagina sicura dell'abbonamento (Stripe o Lemon Squeezy): carta, fatture, disdetta
+async function portal(btn) {
+  if (btn) btn.disabled = true;
+  try { const r = await payCall({ op: 'portal' }); if (r.url && /^https:\/\/(billing\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; } }
+  catch (e) { if (e.message !== 'auth' && PS) { PS.note = { t: e.message, err: true }; paintPlans(); } }
+  if (btn) btn.disabled = false;
+}
+async function buyItem(item, info, btn) {
+  const all = $('v-plans').querySelectorAll('[data-buy]');
+  all.forEach((x) => { x.disabled = true; });
+  step('clip_buy');
+  try {
+    const r = await payInPage(item, info, () => { loadPlan(true); if (view === 'plans') renderPlans(null); });
+    if (r && r.changed) { PS.note = { t: L.buy.changed }; setTimeout(loadHist, 3000); loadPlan(true); paintPlans(); return; }
+  } catch (e) {
+    if (e.message === 'auth') return;
+    // ha gia' un abbonamento fatto altrove: si gestisce dalla pagina dell'abbonamento
+    PS.note = e.code === 'other_provider' || e.code === 'has_plan' || e.code === 'same_plan' ? { t: e.code === 'same_plan' ? e.message : L.buy.hasSub, portal: true } : { t: e.message, err: e.code !== 'sales_soon' };
+    paintPlans(); return;
+  }
+  all.forEach((x) => { if (!x.classList.contains('mine')) x.disabled = false; });
+}
+// pagamento: prima dentro la pagina (modulo di Stripe), se non e' attivo come prima sulla pagina di Stripe.
+// onCredited: quando il server conferma i crediti (anche dopo che il foglio e' stato chiuso)
+async function payInPage(item, info, onCredited) {
+  let r;
+  try { r = await payCall({ op: 'buy', item, lang: LANG, back: 'clip', ui: 'elements' }); }
+  catch (e) { if (e.code !== 'no_inapp') throw e; r = await payCall({ op: 'buy', item, lang: LANG, back: 'clip' }); }
+  if (r.changed) return { changed: true };
+  if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { once.set('nf.pending', estFor || ''); location.href = r.url; return { redirect: true }; }
+  const cs = String(r.clientSecret || ''), pk = String(r.pk || '');
+  if (!/^cs_(live|test)_[A-Za-z0-9]+_secret_[A-Za-z0-9_%.~-]{8,512}$/.test(cs) || !/^pk_(live|test)_\w+$/.test(pk)) throw new Error(V.payNo);
+  return paySheet(item, info, { cs, pk, test: !!r.test, mock: !!r.mock }, onCredited);
+}
+const PAY_PAGE = '{root}paga.html?v=5';
+const hashOf = (o) => Object.entries(o).filter(([, v]) => v != null && v !== '').map(([k, v]) => encodeURIComponent(k) + '=' + encodeURIComponent(String(v))).join('&');
+function paySheet(item, info, k, onCredited) {
+  const base = { lang: LANG, theme: document.documentElement.dataset.theme === 'light' ? 'light' : 'dark', kind: info.kind || item.kind, name: info.name, det: info.det, price: info.price,
+    period: item.period, plan: info.plan, email: me().email, test: k.test ? '1' : '', mock: k.mock ? '1' : '' };
+  const src = PAY_PAGE + '#' + hashOf({ ...base, cs: k.cs, pk: k.pk, po: location.origin, embed: '1' });
+  const before = { balance: Number(bal) || 0, plan: PLANID };
+  return new Promise((resolve) => {
+    let busy = false, paid = false, closed = false, polling = false, credited = false, paypalUsed = false, pwin = null;
+    const frame = document.createElement('iframe');
+    frame.className = 'co-frame'; frame.src = src; frame.title = V.pay; frame.allow = 'payment *'; frame.referrerPolicy = 'no-referrer';
+    const wait = document.createElement('div'); wait.className = 'co-wait'; wait.innerHTML = '<span class="spin"></span>';
+    const sheet = document.createElement('div'); sheet.className = 'co-sheet'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true'); sheet.setAttribute('aria-label', V.pay);
+    const bgd = document.createElement('div'); bgd.className = 'co-bg';
+    sheet.append(wait, frame); bgd.append(sheet);
+    const send = (ev, data) => { try { frame.contentWindow.postMessage({ nf: 'pay', ev, ...(data || {}) }, location.origin); } catch (e) {} };
+    const close = () => {
+      if (closed) return;
+      closed = true;
+      removeEventListener('message', onMsg); removeEventListener('keydown', onKey, true);
+      bgd.classList.add('out'); setTimeout(() => bgd.remove(), 180);
+      document.documentElement.classList.remove('noscroll');
+      if (paid && !credited) toast(V.payGot);
+      resolve({ paid, credited });
+    };
+    const onKey = (e) => { if (e.key === 'Escape' && !busy) { e.stopPropagation(); close(); } };
+    // dopo il pagamento si guarda il saldo finche' il server non conferma (al massimo 5 minuti), anche a foglio chiuso
+    const poll2 = () => {
+      if (polling) return;
+      polling = true;
+      const t0 = Date.now();
+      const tick = async () => {
+        if (credited || (closed && !paid && !paypalUsed)) return;
+        const [hs, st] = await Promise.all([call('status', {}).catch(() => null), payCall({ op: 'status' }).catch(() => null)]);
+        const nb = hs ? Number(hs.balance) || 0 : before.balance, np = st ? (st.sub ? st.sub.plan : 'free') : before.plan;
+        if (nb !== before.balance || np !== before.plan) {
+          const got = Math.max(0, nb - before.balance);
+          paid = true; credited = true;
+          if (pwin) try { pwin.close(); } catch (e) {}
+          send('credited', { got, balance: nb });
+          showSignedIn(nb); loadPlan(true);
+          if (closed) toast(np !== before.plan ? V.planOn.replace('{p}', (PLAN && PLAN.name) || np) : V.plusCr.replace('{n}', nfmt(got)));
+          if (onCredited) onCredited({ got, balance: nb, plan: np });
+          return;
+        }
+        if (Date.now() - t0 < 5 * 60 * 1000) setTimeout(tick, 2500);
+      };
+      setTimeout(tick, 1500);
+    };
+    // PayPal porta su un'altra pagina: si apre in una finestra a parte e il foglio aspetta
+    async function openPaypal() {
+      let p;
+      try { p = await payCall({ op: 'buy', item, lang: LANG, back: 'clip', ui: 'elements', method: 'paypal' }); } catch (e) { send('paypal_fail'); toast(e.message); return; }
+      if (!p.clientSecret) { toast(V.paypalNo); return; }
+      pwin = window.open(PAY_PAGE + '#' + hashOf({ ...base, cs: p.clientSecret, pk: p.pk, method: 'paypal' }), 'nfpaypal', 'width=520,height=760');
+      paypalUsed = true; poll2();
     }
-    html += '<p class="bguar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span>' + esc(B.guar) + '</span></p>'
-      + (PROOF ? '<p class="bproof">' + esc(PROOF) + '</p>' : '');
-    body.innerHTML = html;
-    tickOffer(body);
-    body.querySelectorAll('[data-tab]').forEach((b) => b.onclick = () => { tab = b.dataset.tab; note = null; paint(); });
-    body.querySelectorAll('[data-per]').forEach((b) => b.onclick = () => { period = b.dataset.per; paint(); });
-    const pb = body.querySelector('[data-portal]'); if (pb) pb.onclick = () => portal(pb);
-    body.querySelectorAll('[data-buy]').forEach((b) => b.onclick = async () => {
-      body.querySelectorAll('[data-buy]').forEach((x) => { x.disabled = true; });
-      const lab = b.textContent; b.textContent = B.wait; step('clip_buy');
-      try {
-        const r = await payCall({ op: 'buy', item: { kind: b.dataset.buy, id: b.dataset.id, period }, lang: LANG, back: 'clip' });
-        if (r.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(r.url)) { location.href = r.url; return; }
-        if (r.changed) { note = { t: B.changed }; setTimeout(loadHist, 3000); paint(); return; }
-      } catch (e) {
-        if (e.message === 'auth') return;
-        // ha gia' un abbonamento fatto altrove: si gestisce dalla pagina dell'abbonamento, che qui c'e'
-        note = e.code === 'other_provider' || e.code === 'has_plan' || e.code === 'same_plan' ? { t: e.code === 'same_plan' ? e.message : B.hasSub, portal: true } : { t: e.message, err: e.code !== 'sales_soon' };
-        paint(); return;
-      }
-      b.textContent = lab; body.querySelectorAll('[data-buy]').forEach((x) => { x.disabled = false; });
-    });
-    if (!dlg.contains(document.activeElement) || document.activeElement === document.body) { const f = body.querySelector('.hl [data-buy]') || body.querySelector('.pop [data-buy]'); if (f) try { f.focus({ preventScroll: true }); } catch (e) {} }
-  };
-  Promise.all([catalog(), payCall({ op: 'status' }).catch(() => ({})), getOffer(0, want && want.kind === 'offer' ? want.id : null)]).then(([, st, o]) => { sub = (st && st.sub) || null; off = o; paint(); paintManage(); })
-    .catch((e) => { body.innerHTML = '<p class="bmsg err">' + esc(e.message || B.loadErr) + '</p>'; });
+    const onMsg = (e) => {
+      if (e.origin !== location.origin || e.source !== frame.contentWindow || !e.data || e.data.nf !== 'pay') return;
+      const ev = e.data.ev;
+      if (ev === 'ready') wait.remove();
+      else if (ev === 'busy') busy = !!e.data.on;
+      else if (ev === 'close') close();
+      else if (ev === 'done') { paid = true; poll2(); }
+      else if (ev === 'paypal') openPaypal();
+      else if (ev === 'paypal_cancel') { if (pwin) try { pwin.close(); } catch (x) {} }
+    };
+    addEventListener('message', onMsg);
+    addEventListener('keydown', onKey, true);
+    bgd.addEventListener('click', (e) => { if (e.target === bgd && !busy) close(); });
+    // la pagina non risponde: lo si dice invece di restare sullo spinner
+    setTimeout(() => {
+      if (!wait.isConnected || closed) return;
+      wait.innerHTML = '<b>' + esc(V.payFail) + '</b><span>' + esc(V.payFailD) + '</span><button class="btn btn-ghost btn-sm" type="button">' + esc(V.close) + '</button>';
+      wait.querySelector('button').onclick = close;
+    }, 20000);
+    document.body.append(bgd); document.documentElement.classList.add('noscroll');
+  });
 }
 function wantFrom(q) {
   // ?compra=pack-s | plan-pro | plan-pro-year (dalla pagina dei prezzi del sito) | offer-<id> (sconto personale da un'email)
@@ -1617,21 +2238,32 @@ function openEdit(j, c) {
   (box.querySelector('[data-lay][aria-checked="true"]') || go).focus();
 }
 
+// le live dell'utente: Recenti nella Home (senza quella aperta) e tutte in Progetti
+let JOBS = null;
 async function loadHist() {
   try {
     const r = await call('status', {});
-    bal = r.balance; perHour = r.perHour || perHour; showSignedIn(bal);
-    const list = (r.jobs || []).filter((j) => !current || j.id !== current.id);
+    perHour = r.perHour || perHour; showSignedIn(r.balance);
+    JOBS = (r.jobs || []).filter((j) => !(j.status === 'done' && j.expired));
+    $('nprj').textContent = JOBS.length || '';
+    const list = JOBS.filter((j) => !current || j.id !== current.id).slice(0, 6);
     const el = $('hist');
+    if (view === 'projects') paintProjects();
     if (!list.length) { el.classList.add('hide'); return r; }
-    const st = { done: L.statusDone, running: L.statusRun, queued: L.statusRun, failed: L.statusFail, cancelled: L.statusCancel };
-    el.innerHTML = '<h2>' + esc(L.history) + '</h2><ul>' + list.map((j) => '<li><span class="t">' + esc(j.title || j.url) + '</span><span class="s ' + esc(j.status) + '">'
-      + esc(st[j.status] || j.status) + (j.status === 'done' ? ' · ' + j.clips.length : '') + '</span>'
-      + (j.status === 'done' || j.status === 'running' || j.status === 'queued' ? '<a class="btn btn-ghost btn-sm" href="?job=' + esc(j.id) + '">' + esc(L.open) + '</a>' : '') + '</li>').join('') + '</ul>';
+    el.innerHTML = '<h2>' + esc(V.recent) + '<em>' + JOBS.length + '</em></h2><div class="jgrid">' + list.map(jobCard).join('') + '</div>';
     el.classList.remove('hide');
     return r;
   } catch (e) { return null; }
 }
+function paintProjects() {
+  const el = $('plist');
+  if (!S) { el.innerHTML = '<div class="pempty2"><p>' + esc(V.projIn) + '</p><button class="btn btn-primary btn-sm" type="button" id="pin">' + esc(L.login) + '</button></div>'; $('pin').onclick = login; return; }
+  if (JOBS == null) { el.innerHTML = '<p class="hint">…</p>'; loadHist(); return; }
+  if (!JOBS.length) { el.innerHTML = '<div class="pempty2"><p>' + esc(V.projEmpty) + '</p><button class="btn btn-primary btn-sm" type="button" id="pgo">' + esc(V.projGo) + '</button></div>'; $('pgo').onclick = goHome; return; }
+  el.innerHTML = '<div class="jgrid">' + JOBS.map(jobCard).join('') + '</div>';
+}
+// Preset: lo stile delle prossime clip (lo stesso delle impostazioni prima di creare), ricordato su questo dispositivo
+function paintStyle() { const el = $('slist'); el.innerHTML = settingsHtml(null); bindSettings(el); }
 
 function fmtDur(sec) {
   const m = Math.round(sec / 60), h = Math.floor(m / 60);
@@ -1738,11 +2370,13 @@ async function bindPw(box, r) {
   $('pwcr').textContent = CV.pwCr.replace('{c}', Number(pk.credits).toLocaleString(LANG === 'en' ? 'en' : 'it'));
   bb.onclick = async () => {
     bb.disabled = true; const lab = bb.textContent; bb.textContent = L.buy.wait; step('pw_buy'); step('clip_buy');
+    // la ricarica si paga dentro la pagina; appena arrivano i crediti si rifà la stima dello stesso video
+    const url = estFor;
     try {
-      const x = await payCall({ op: 'buy', item: { kind: 'pack', id: pk.id, period: 'month' }, lang: LANG, back: 'clip' });
-      if (x.url && /^https:\/\/(checkout\.stripe\.com|[a-z0-9-]+\.lemonsqueezy\.com)\//.test(x.url)) { once.set('nf.pending', estFor || ''); location.href = x.url; return; }
+      await payInPage({ kind: 'pack', id: pk.id, period: 'month' }, { kind: 'pack', name: nfmt(pk.credits) + ' ' + L.buy.credits, det: V.packCr.replace('{n}', nfmt(pk.credits)), price: eur(pk.price_eur) },
+        () => { if (url && estFor === url) { estFor = null; estimate(url); } });
     } catch (e) { if (e.message !== 'auth') toast(e.message); }
-    bb.disabled = false; bb.textContent = lab;
+    if (bb.isConnected) { bb.disabled = false; bb.textContent = lab; }
   };
 }
 async function estimate(url) {
@@ -1808,7 +2442,12 @@ $('url').addEventListener('input', (ev) => {
   const job = new URLSearchParams(location.search).get('job');
   const qs = new URLSearchParams(location.search), paid = qs.get('pagamento'), want = wantFrom(qs.get('compra'));
   // senza accesso: si entra con Google e si torna qui con lo stesso ?compra= (lo ricorda login())
-  if (!S) { showSignedOut(); if (job) setHint(L.loginFirst); if (want) { setHint(L.loginFirst); setTimeout(login, 700); } return; }
+  if (!S) {
+    showSignedOut(); if (job) setHint(L.loginFirst); if (want) { setHint(L.loginFirst); setTimeout(login, 700); }
+    // dalla landing senza accesso: si vede subito il video riconosciuto e quanto costa
+    if (lk && !want) { const u = readLink(true); if (u) peek(u); }
+    return;
+  }
   if (paid || want) { qs.delete('pagamento'); qs.delete('compra'); history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : '')); }
   showSignedIn(null);
   if (paid === 'ok') { step('clip_paid'); toast(L.buy.ok); [4000, 10000, 25000].forEach((t) => setTimeout(loadHist, t)); }
