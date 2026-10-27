@@ -1,15 +1,37 @@
 {
- "version": "1.7.4",
+ "version": "1.7.5",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.4.zip",
- "size": 12494265,
- "sha256": "15630ae08fd5b14d6c33a191571d4cfa292b0fe30257b5a90463770453acf818",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.5.zip",
+ "size": 12501673,
+ "sha256": "8d57e44ea69565dfbc680fb897b0dc010743e581bf51f7098359a3eb4df23553",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "1FWgwwEeXHy/802keDhTriLzoRP+jxEXjXt8E0IcaAaKlTTEfPpOieX8PnTuJoftl7C/0rdcVL+UBCYHVixeDQ=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "Jh3fvB/hiOzJSSs+TMUhPbOh8/GJ3RRSfpEDXK7l7mg9fP4QMRRmFQ3Co6QgeShe4qqaVWh9/PQ5mFsEYkPRAA=="
  },
- "notes": "Novità: Assistente AI: capisce cosa chiedi e fa solo quello. Se chiedi font e sottotitoli li sceglie lui, adatti al tuo video, e ti spiega perché\nMiglioramento: Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
+ "notes": "Novità: Crediti e piani con un nuovo look: vedi quante ore di live ti danno i crediti di ogni piano e di ogni ricarica\nCorrezione: Il pulsante Aggiornamenti nel menu del profilo non sposta più le scritte e non perde l'icona\nMiglioramento: Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.5",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Crediti e piani con un nuovo look: vedi quante ore di live ti danno i crediti di ogni piano e di ogni ricarica",
+     "en": "Credits and plans with a new look: see how many stream hours each plan and top-up gives you"
+    },
+    {
+     "type": "fix",
+     "text": "Il pulsante Aggiornamenti nel menu del profilo non sposta più le scritte e non perde l'icona",
+     "en": "The Updates button in the profile menu no longer shifts the text or loses its icon"
+    },
+    {
+     "type": "impr",
+     "text": "Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
+     "en": "New, simpler sheet to choose a plan, monthly or yearly"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.4",
    "date": "2026-10-27",
@@ -498,23 +520,7 @@
      "en": "If clip creation stops, trying again picks up from the moments already found: no new search and no credits charged again"
     }
    ]
-  },
-  {
-   "version": "1.5.164",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Risolto l'errore che fermava la creazione delle clip dopo la trascrizione",
-     "en": "Fixed the error that stopped clip creation after transcription"
-    },
-    {
-     "type": "impr",
-     "text": "Clip più affidabili: la creazione delle clip non si blocca più su video con un'impaginazione già scelta, e la trascrizione non si interrompe se parte due volte",
-     "en": "More reliable clips: clip creation no longer stops on videos with a layout already chosen, and transcription no longer breaks if it starts twice"
-    }
-   ]
   }
  ],
- "sig": "ty5VsMwIf1iticddKdlGg5kJdnWlUpWnmELGh9EqWjGSla2HgCrX89vih19tDbkB8UPYuQTM4Ec3z+b4tjvQAA=="
+ "sig": "YpCkPC07lI1VbuPEIT1l7h/RSasZzJGHk993vcjatZPWE9rNoPBkF24mMQXSEyScoR13XuYeiXciSh0z8PbOAA=="
 }
