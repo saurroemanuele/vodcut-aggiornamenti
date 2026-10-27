@@ -153,12 +153,77 @@ jobs:
             /usr/libexec/PlistBuddy -c "Set :$k $V" "$P" 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :$k string $V" "$P"
           done
           /usr/libexec/PlistBuddy -c "Set :CFBundleIconFile NoonFrame" "$P" 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :CFBundleIconFile string NoonFrame" "$P"
-          # firma rifatta dopo le modifiche: se non e' valida ci si ferma qui e non si pubblica niente
-          xattr -cr "$APP"
-          codesign --force --deep --sign - "$APP"
-          codesign --verify --deep --strict --verbose=2 "$APP"
           grep -q "VERSION = \"$V\"" "$APP/Contents/Resources/app/engine/version.py"
-          mkdir -p out && ditto -c -k --keepParent "$APP" out/NoonFrame-Mac.zip
+          xattr -cr "$APP"
+          echo "APP=$APP" >> "$GITHUB_ENV"
+
+      # Firma con il certificato Apple di NoonFrame (Developer ID) e verifica di Apple (notarizzazione): il Mac apre
+      # NoonFrame senza avvisi. Senza i Secrets (MAC_CERT_P12, MAC_CERT_PASSWORD, NOTARY_KEY_P8) firma "ad hoc" come prima.
+      # Le chiavi stanno solo nei Secrets del repo: qui si usano in un portachiavi temporaneo che sparisce con la macchina.
+      - name: Firma
+        env:
+          MAC_CERT_P12: ${{ secrets.MAC_CERT_P12 }}
+          MAC_CERT_PASSWORD: ${{ secrets.MAC_CERT_PASSWORD }}
+          NOTARY_KEY_P8: ${{ secrets.NOTARY_KEY_P8 }}
+          NOTARY_KEY_ID: GP3DFV5D2X
+          NOTARY_ISSUER: "881e1d23-f2c4-49cd-9115-2998cb9d4ee2"
+          SIGN_ID: "Developer ID Application: Emanuele Saurro (7NXQ42D487)"
+        run: |
+          set -e
+          if [ -z "$MAC_CERT_P12" ] || [ -z "$MAC_CERT_PASSWORD" ]; then
+            echo "Secrets della firma Apple assenti: firma ad hoc (al primo avvio il Mac chiede conferma)"
+            codesign --force --deep --sign - "$APP"
+            codesign --verify --deep --strict --verbose=2 "$APP"
+            exit 0
+          fi
+          KC="$RUNNER_TEMP/firma.keychain-db"; KP=$(openssl rand -hex 16)
+          security create-keychain -p "$KP" "$KC"
+          security set-keychain-settings -lut 21600 "$KC"
+          security unlock-keychain -p "$KP" "$KC"
+          echo "$MAC_CERT_P12" | base64 --decode > "$RUNNER_TEMP/firma.p12"
+          security import "$RUNNER_TEMP/firma.p12" -k "$KC" -P "$MAC_CERT_PASSWORD" -T /usr/bin/codesign >/dev/null
+          rm -f "$RUNNER_TEMP/firma.p12"
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KP" "$KC" >/dev/null
+          security list-keychains -d user -s "$KC" $(security list-keychains -d user | tr -d '"')
+          # Python, le sue librerie e ffmpeg: con l'hardened runtime servono questi permessi (codice generato al volo,
+          # librerie caricate dal pacchetto)
+          ENT="$RUNNER_TEMP/noonframe.entitlements"
+          /usr/libexec/PlistBuddy -c "Add :com.apple.security.cs.allow-jit bool true" \
+            -c "Add :com.apple.security.cs.allow-unsigned-executable-memory bool true" \
+            -c "Add :com.apple.security.cs.disable-library-validation bool true" "$ENT" >/dev/null
+          # ogni eseguibile e libreria dentro il pacchetto (dal piu' interno), poi il pacchetto intero
+          n=0
+          while IFS= read -r -d '' f; do
+            if file -b "$f" | grep -q "Mach-O"; then
+              codesign --force --timestamp --options runtime --entitlements "$ENT" --sign "$SIGN_ID" "$f"
+              n=$((n+1))
+            fi
+          done < <(find "$APP/Contents" -type f ! -name "*.py" ! -name "*.pyc" ! -name "*.js" ! -name "*.json" ! -name "*.png" -print0)
+          echo "firmati $n eseguibili e librerie"
+          codesign --force --timestamp --options runtime --entitlements "$ENT" --sign "$SIGN_ID" "$APP"
+          codesign --verify --deep --strict --verbose=2 "$APP"
+          # verifica di Apple: se Apple non accetta, si ferma qui e non si pubblica niente (il motivo nel log)
+          if [ -n "$NOTARY_KEY_P8" ] && [ -n "$NOTARY_ISSUER" ]; then
+            printf '%s\n' "$NOTARY_KEY_P8" > "$RUNNER_TEMP/notary.p8"
+            ditto -c -k --keepParent "$APP" "$RUNNER_TEMP/notar.zip"
+            xcrun notarytool submit "$RUNNER_TEMP/notar.zip" --key "$RUNNER_TEMP/notary.p8" --key-id "$NOTARY_KEY_ID" \
+              --issuer "$NOTARY_ISSUER" --wait --timeout 90m --output-format json > "$RUNNER_TEMP/notar.json" || true
+            ST=$(jq -r .status "$RUNNER_TEMP/notar.json"); SID=$(jq -r .id "$RUNNER_TEMP/notar.json")
+            echo "verifica di Apple: $ST"
+            if [ "$ST" != "Accepted" ]; then
+              xcrun notarytool log "$SID" --key "$RUNNER_TEMP/notary.p8" --key-id "$NOTARY_KEY_ID" --issuer "$NOTARY_ISSUER" || true
+              rm -f "$RUNNER_TEMP/notary.p8"; exit 1
+            fi
+            rm -f "$RUNNER_TEMP/notary.p8" "$RUNNER_TEMP/notar.zip"
+            xcrun stapler staple "$APP"
+            spctl -a -vvv -t exec "$APP"
+          else
+            echo "manca la chiave per la verifica di Apple: firmato ma non verificato"
+          fi
+          security delete-keychain "$KC"
+
+      - name: Zip del pacchetto Mac
+        run: mkdir -p out && ditto -c -k --keepParent "$APP" out/NoonFrame-Mac.zip
 
       - uses: actions/upload-artifact@v4
         with:
