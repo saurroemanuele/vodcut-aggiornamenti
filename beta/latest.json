@@ -1,15 +1,27 @@
 {
- "version": "1.7.2",
+ "version": "1.7.3",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.2.zip",
- "size": 12488132,
- "sha256": "785ff04ae16e544831a2ce0ee5a9416e718f5bbbc16e5087e2b3fb6b8434d38b",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.3.zip",
+ "size": 12488535,
+ "sha256": "b5288eab8313b71f96fd1529fd0445a65c6b7008cc97275cd9c592819bf7eb6f",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "PgPWkzBaDIRYdmtY7HlQSgWVgDW7t6fuAnCd5jAnuXgQ9yXfAEUgvsYUxaYIu0OVU6cpns0Ux16MQNDq+COXAQ=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "ZUNVuV8uMTAK5q9W8F5J4Xu6nfZpEGabMXcYhQWW4bgF1suJBrsoJtdAa5TSPF26c1v67zMtxRoEN7222uI6Ag=="
  },
- "notes": "Miglioramento: La Home e i progetti si aprono subito, anche con tante clip\nMiglioramento: Mentre i progetti caricano si vede un'anteprima animata",
+ "notes": "Correzione: Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.3",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
+     "en": "AI Assistant: your message shows up and the cost confirmation appears right below it"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.2",
    "date": "2026-10-27",
@@ -501,23 +513,7 @@
      "en": "Terms and privacy updated for Stripe payments"
     }
    ]
-  },
-  {
-   "version": "1.5.162",
-   "date": "2026-10-08",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Aggiungere un video mentre se ne prepara un altro non mostra più un errore",
-     "en": "Adding a video while another one is being prepared no longer shows an error"
-    },
-    {
-     "type": "impr",
-     "text": "Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
-     "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
-    }
-   ]
   }
  ],
- "sig": "9Mbnomr2tezX7mWvE/Q6XomIPVcIYTmzFVu2Zcg6lhf/fcS4YWclfgiPHcY8pXQpYad6MP33IgDmGQEwiIEdDA=="
+ "sig": "U2yaEYKLncjnn3MxblnfDk6kVZl7kY/wTwUrWJVdYUTdMce7VWdhYw3jm/lustjOyczEnYBKGMaPLswuoMvWAg=="
 }
