@@ -1,15 +1,37 @@
 {
- "version": "1.7.0",
+ "version": "1.7.1",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.0.zip",
- "size": 12485778,
- "sha256": "8c7cadca262460145daf185a59b3a487afc9f6b5cfc202fae2cd051654cb3ea7",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.1.zip",
+ "size": 12487363,
+ "sha256": "0b129f3fc59a2ae83cb9b417159055af65af3cd618a9ff828226421aa133a60b",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "zN52cHy9fvgMHuUPM83eidv28S9mF/OaCCFxC0rBJ5b/plQnXLSvXfaZcjXxd/tAaha0vf2gMsefiEy0MoeADw=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "XHHJzMB11/2WEELUdNCZGOoVBDQRbZg+655ZrqPcsLmIf7Et/3msXLUjDHVx9tFVrnSQNySyWCAI7lJxNwcSBQ=="
  },
- "notes": "Novità: Paghi piani e ricariche direttamente nel tool, con carta o PayPal\nNovità: Nuova pagina Il tuo abbonamento: carta, fatture e disdetta senza uscire dal tool\nNovità: Clip veloci: scegli uno o più stili, anche Auto, e l'AI li usa tutti\nNovità: Prima di ogni funzione AI vedi quanti crediti costa\nCorrezione: I progetti si riaprono con la funzione con cui li hai creati\nCorrezione: I crediti comprati si aggiornano da soli, senza cambiare pagina\nMiglioramento: Nuovo look NoonFrame in 6 lingue\nMiglioramento: Esportazione con coda, nome dei file e cartella a scelta\nMiglioramento: Cambio di piano con l'importo di oggi prima di confermare\nMiglioramento: Avvisi di errore più chiari",
+ "notes": "Novità: Abbonamento e pagamenti: anche le ricariche, con la ricevuta di Stripe\nCorrezione: Un piano attivo senza abbonamento ora è spiegato invece di risultare vuoto\nMiglioramento: I tuoi pagamenti anche senza abbonamento",
  "date": "2026-10-27",
  "history": [
+  {
+   "version": "1.7.1",
+   "date": "2026-10-27",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Abbonamento e pagamenti: anche le ricariche, con la ricevuta di Stripe",
+     "en": "Subscription and payments: top-ups too, with the Stripe receipt"
+    },
+    {
+     "type": "fix",
+     "text": "Un piano attivo senza abbonamento ora è spiegato invece di risultare vuoto",
+     "en": "A plan active without a subscription is now explained instead of showing nothing"
+    },
+    {
+     "type": "impr",
+     "text": "I tuoi pagamenti anche senza abbonamento",
+     "en": "Your payments even without a subscription"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.0",
    "date": "2026-10-27",
@@ -494,23 +516,7 @@
      "en": "Clip transcript now at the top of the Text panel, showing only the clip's text; zooms: apply the effect or magnification to the following zooms, and new zooms start with the last effect you chose; more varied TikTok/Reels/Shorts suggestions"
     }
    ]
-  },
-  {
-   "version": "1.5.159",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta",
-     "en": "AI keys on Mac never go through the command line anymore; downloaded models are verified with their fingerprint"
-    },
-    {
-     "type": "impr",
-     "text": "Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
-     "en": "Security: stricter checks on the files the app can open and on projects received from others; license updated with payments, cancellation and refunds"
-    }
-   ]
   }
  ],
- "sig": "waln+SHA3Ou8xjGGDhakFStd4/tndgQUjWqzuv31vN46K2oYKm7w40UzY7yZjFQ73Seh4ABkXAphVzsoMd9dBg=="
+ "sig": "z5Blvm8Jm7tKVP9obTG5kRJmwsOrrCmo5+yGumIeeIXJ0/MP0o4h2Xc9q57G1Q8W24eWSbMPravljhlRmp5kCw=="
 }
