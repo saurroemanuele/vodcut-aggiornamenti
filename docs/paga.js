@@ -133,7 +133,8 @@
   // dentro un riquadro: dell'app (indirizzo locale) o della pagina delle clip su noonframe.com
   var embed = P.embed === '1' && (/^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/.test(P.po || '') || P.po === 'https://noonframe.com');
   var paypalWin = P.method === 'paypal';
-  var mock = P.mock === '1';
+  // pagamento finto (prove senza Stripe): solo dall'app o dal sito che girano in locale, mai da un link su noonframe.com
+  var mock = P.mock === '1' && /^http:\/\/(127\.0\.0\.1|localhost):\d{2,5}$/.test(P.po || '');
   var isPlan = P.kind === 'plan' || P.kind === 'plan_offer';
   var yearly = P.period === 'year';
   document.documentElement.lang = LANG;
@@ -237,6 +238,7 @@
 
   // ---------------------------------------------------------------- codice sconto
   $('codeq').addEventListener('click', function () { $('code').hidden = false; $('codeq').hidden = true; $('codein').focus(); });
+  if (!isPlan) $('codeq').hidden = true;   // sulle ricariche niente codici sconto (gli sconti passano dalle offerte)
   var applyCode = null;   // (codice) => Promise<boolean>
   $('codego').addEventListener('click', function () {
     var v = $('codein').value.trim();
@@ -259,6 +261,11 @@
     });
   }
   $('or').hidden = $('paypal').hidden;   // "oppure paga con la carta" solo se sopra c'e' un altro modo di pagare
+
+  // chiavi pubbliche dell'account Stripe di NoonFrame: con un'altra chiave la pagina non parte, cosi' nessuno puo' usare
+  // noonframe.com/paga.html per farsi pagare su un suo account Stripe. Lista vuota = controllo spento
+  var NF_PK = [];
+  if (!mock && P.pk && NF_PK.length && NF_PK.indexOf(P.pk) < 0) { fail('load', 'pk'); $('pay').disabled = true; return; }
 
   // ritorno da PayPal (o da un'altra pagina della banca): Stripe riporta qui anche quando il pagamento NON e' andato
   // (annullato o rifiutato su PayPal). Prima si chiede a Stripe lo stato vero: completato = fatto; se no lo si dice e si
