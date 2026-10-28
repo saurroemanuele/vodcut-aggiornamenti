@@ -1,15 +1,32 @@
 {
- "version": "1.7.6",
+ "version": "1.7.7",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.6.zip",
- "size": 12501858,
- "sha256": "48715edf48d4cd5d57d6503e9dd85fe851422628f258bb295b79377dba844448",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.7.zip",
+ "size": 12560319,
+ "sha256": "31bd3e4c223964620e72e4a59d25760d2b18cfea4b9366fdd4dc31ecae6018b8",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "aU3qB2Bc6N4FLF4Bx3nsctcmGkq2piMwNfhSVE/V2QiQdUcZBXxyqX41M7xCRG3gaPS6UuCKrpu+UESpKgZ1Cg=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "6h14tFEHMOSkLy9tGl5DkFNVPSqwDfXWOiSSlaO/kwWBgGtNYetp2iNKNK934Zq7A6B/bM/maT04unvXXWIPBg=="
  },
- "notes": "Miglioramento: Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)\nMiglioramento: Pagina dei piani più pulita",
+ "notes": "Novità: Senza abbonamento i video esportati hanno il marchio NoonFrame e arrivano fino a 720p e 30 fps. Con un piano escono puliti, fino a 4K e 60 fps\nMiglioramento: Quando servono più crediti o più qualità ti proponiamo Starter, anche a 8,99 € il primo mese",
  "date": "2026-10-28",
  "history": [
+  {
+   "version": "1.7.7",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Senza abbonamento i video esportati hanno il marchio NoonFrame e arrivano fino a 720p e 30 fps. Con un piano escono puliti, fino a 4K e 60 fps",
+     "en": "Without a subscription, exports carry the NoonFrame mark and go up to 720p and 30 fps. With a plan they come out clean, up to 4K and 60 fps"
+    },
+    {
+     "type": "impr",
+     "text": "Quando servono più crediti o più qualità ti proponiamo Starter, anche a 8,99 € il primo mese",
+     "en": "When you need more credits or quality we suggest Starter, also at €8.99 for the first month"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.6",
    "date": "2026-10-28",
@@ -503,23 +520,7 @@
      "en": "Zoom: «Apply to all» now really applies to every zoom in the video (effect and magnification)"
     }
    ]
-  },
-  {
-   "version": "1.5.166",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Il tasto per comprare non si rimpicciolisce più quando la finestra è bassa",
-     "en": "The buy button no longer shrinks when the window is short"
-    },
-    {
-     "type": "impr",
-     "text": "La finestra per comprare crediti e piani si legge bene anche sugli schermi bassi",
-     "en": "The credits and plans window now reads well on short screens too"
-    }
-   ]
   }
  ],
- "sig": "Z6y2ID9Gm4XkniP82KgtXE2zUUwSfY826LwI9uA4kOkvETj51GnfSUY8kyDUTQdMpSOYNOpTLBYJQIoaskkiCA=="
+ "sig": "qyrKlXRyQfvnlYQKEHhfuh9Fy9lG8M5CLT1hrA5FnEYboIKzF3QljL2qcynDuZm/2TptUT0F792YS8TSMnqoBQ=="
 }
