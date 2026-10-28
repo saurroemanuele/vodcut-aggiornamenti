@@ -83,10 +83,10 @@ body.top .pg { width: min(860px, 100%); height: min(720px, calc(100vh - 48px)); 
 .pg-f small { text-align: center; font-size: 11.5px; color: var(--t3); }
 
 /* modulo finto (prove senza Stripe): come il Payment Element */
-.pg-mock { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 12px; }
+.pg-mock { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 12px; }
 .pg-mock label { display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: 600; color: var(--t2); }
 .pg-mock label.w { grid-column: 1 / -1; }
-.pg-mock input { height: 44px; padding: 0 12px; border-radius: 11px; border: 1.5px solid var(--gline); background: var(--field); outline: none; font-size: 14px; letter-spacing: .5px; }
+.pg-mock input { min-width: 0; height: 44px; padding: 0 12px; border-radius: 11px; border: 1.5px solid var(--gline); background: var(--field); outline: none; font-size: 14px; letter-spacing: .5px; }
 .pg-mock input:focus { border-color: var(--ac); }
 .pg-mock .hint { grid-column: 1 / -1; font-size: 11.5px; color: var(--t3); }
 
@@ -106,11 +106,12 @@ body.top .pg { width: min(860px, 100%); height: min(720px, calc(100vh - 48px)); 
 
 /* telefono o finestra stretta: una colonna */
 @media (max-width: 720px) {
-  .pg { grid-template-columns: 1fr; grid-template-rows: auto 1fr; overflow: auto; }
-  .pg-l { border-right: 0; border-bottom: 1px solid var(--gline); padding: 18px 18px 16px; overflow: visible; }
+  .pg { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; overflow: auto; }   /* minmax: niente esce dai bordi su un telefono stretto */
+  .pg-l { border-right: 0; border-bottom: 1px solid var(--gline); padding: 18px 18px 16px; overflow: visible; min-height: auto; }   /* il riepilogo non si schiaccia sotto il modulo: scorre tutto il foglio */
   .pg-brand { margin-bottom: 14px; }
   .pg-grow, .pg-foot2 { display: none; }
   .pg-r { min-height: auto; }
   .pg-scroll { overflow: visible; }
+  .pg-f { position: sticky; bottom: 0; z-index: 1; background: var(--main); }   /* "Paga" sempre in vista mentre il foglio scorre */
   body.top .pg { height: auto; }
 }
