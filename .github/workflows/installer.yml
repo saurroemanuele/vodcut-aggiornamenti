@@ -8,7 +8,7 @@ name: Installer aggiornato
 on:
   push:
     branches: [main]
-    paths: ['stable/latest.json']
+    paths: ['stable/latest.json', '.github/workflows/installer.yml']   # anche quando si corregge il workflow (se l'installer c'e' gia' non fa niente)
   workflow_dispatch:
     inputs:
       rifai:
@@ -170,12 +170,22 @@ jobs:
           SIGN_ID: "Developer ID Application: Emanuele Saurro (7NXQ42D487)"
         run: |
           set -e
-          if [ -z "$MAC_CERT_P12" ] || [ -z "$MAC_CERT_PASSWORD" ]; then
-            echo "Secrets della firma Apple assenti: firma ad hoc (al primo avvio il Mac chiede conferma)"
+          # firma ad hoc: al primo avvio il Mac chiede conferma (come gli installer fino alla 1.6.0)
+          adhoc() {
+            while IFS= read -r -d '' f; do
+              if file -b "$f" | grep -q "Mach-O"; then codesign --force --sign - "$f"; fi
+            done < <(find "$APP/Contents" -type f ! -name "*.py" ! -name "*.pyc" ! -name "*.js" ! -name "*.json" ! -name "*.png" -print0)
             codesign --force --deep --sign - "$APP"
             codesign --verify --deep --strict --verbose=2 "$APP"
+          }
+          if [ -z "$MAC_CERT_P12" ] || [ -z "$MAC_CERT_PASSWORD" ]; then
+            echo "Secrets della firma Apple assenti: firma ad hoc (al primo avvio il Mac chiede conferma)"
+            adhoc
             exit 0
           fi
+          # firma Developer ID e verifica di Apple in un processo a parte: se non riesce l'installer esce lo stesso con la
+          # firma ad hoc, e il motivo finisce in un avviso del workflow (si legge anche senza accesso ai log)
+          cat > "$RUNNER_TEMP/devid.sh" <<'FIRMA'
           KC="$RUNNER_TEMP/firma.keychain-db"; KP=$(openssl rand -hex 16)
           security create-keychain -p "$KP" "$KC"
           security set-keychain-settings -lut 21600 "$KC"
@@ -221,6 +231,18 @@ jobs:
             echo "manca la chiave per la verifica di Apple: firmato ma non verificato"
           fi
           security delete-keychain "$KC"
+          FIRMA
+          if bash -e "$RUNNER_TEMP/devid.sh" > "$RUNNER_TEMP/firma.log" 2>&1; then
+            cat "$RUNNER_TEMP/firma.log"
+          else
+            cat "$RUNNER_TEMP/firma.log"
+            MSG=$(grep -iE "error|errore|verifica di apple|\"status\"|\"message\"|failed|identity|pkcs12|password" "$RUNNER_TEMP/firma.log" | tail -n 10 | tr '\n' ' ' | sed 's/%/%25/g' | cut -c1-900)
+            [ -n "$MSG" ] || MSG=$(tail -n 6 "$RUNNER_TEMP/firma.log" | tr '\n' ' ' | sed 's/%/%25/g' | cut -c1-900)
+            echo "::warning title=Firma Apple non riuscita, installer Mac con firma ad hoc::$MSG"
+            security delete-keychain "$RUNNER_TEMP/firma.keychain-db" 2>/dev/null || true
+            rm -f "$RUNNER_TEMP/notary.p8" "$RUNNER_TEMP/firma.p12" "$RUNNER_TEMP/notar.zip"
+            adhoc
+          fi
 
       - name: Zip del pacchetto Mac
         run: mkdir -p out && ditto -c -k --keepParent "$APP" out/NoonFrame-Mac.zip
