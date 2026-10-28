@@ -77,12 +77,12 @@ TX = {  # testi messi da questo script
 # sul web le clip si pagano (almeno la ricarica XS), nell'app sono gratis
 MAC_CMD = "xattr -cr /Applications/NoonFrame.app && open /Applications/NoonFrame.app"
 FAQ = {   # (domanda, risposta) oppure (domanda, risposta, True) = risposta con il comando per il Mac da copiare
-    "it": [("È gratis?", "L'app per computer sì. Le clip dal web si sbloccano da 2,99 €, e con un piano hai più crediti per l'AI."),
+    "it": [("È gratis?", "L'app per computer sì. Le clip dal web si sbloccano da 3,99 €, e con un piano hai più crediti per l'AI."),
            ("Da quali piattaforme prende le live?", "Twitch, YouTube e Kick. Puoi anche caricare un video che hai già sul computer."),
            ("Su che computer funziona?", "Su Windows e su Mac."),
            ("Come apro l'app la prima volta?", "Windows: se compare un avviso, premi Ulteriori informazioni e poi Esegui comunque. "
             "Mac: trascina NoonFrame in Applicazioni e, solo la prima volta, incolla nel Terminale", True)],
-    "en": [("Is it free?", "The desktop app is. Web clips unlock from €2.99, and a plan gives you more AI credits."),
+    "en": [("Is it free?", "The desktop app is. Web clips unlock from €3.99, and a plan gives you more AI credits."),
            ("Which platforms does it take streams from?", "Twitch, YouTube and Kick. You can also upload a video you already have on your computer."),
            ("Which computers does it run on?", "Windows and Mac."),
            ("How do I open the app the first time?", "Windows: if a warning shows up, click More info and then Run anyway. "
