@@ -1,15 +1,172 @@
 {
- "version": "1.6.0",
+ "version": "1.7.6",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.6.0.zip",
- "size": 11816593,
- "sha256": "455940a0d3473fbf9c93628af36998fe1830885c5e5a8f8c91ebea0ef24ac812",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.6.zip",
+ "size": 12501858,
+ "sha256": "48715edf48d4cd5d57d6503e9dd85fe851422628f258bb295b79377dba844448",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "SWwbmVzuQuKkma2gFl9QGnndg7NmLER0hOJM4fyB0PRJ0xqTxtPYqfC0AShtu3zr4Y5E7RFMLVTq7pfnkc4SBA=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "aU3qB2Bc6N4FLF4Bx3nsctcmGkq2piMwNfhSVE/V2QiQdUcZBXxyqX41M7xCRG3gaPS6UuCKrpu+UESpKgZ1Cg=="
  },
- "notes": "Miglioramento: Aggiornamenti più sicuri: nuova chiave di firma",
- "date": "2026-10-24",
+ "notes": "Miglioramento: Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)\nMiglioramento: Pagina dei piani più pulita",
+ "date": "2026-10-28",
  "history": [
+  {
+   "version": "1.7.6",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)",
+     "en": "Plans and paywall: each plan has its own color (Starter green, Pro blue, Ultimate purple)"
+    },
+    {
+     "type": "impr",
+     "text": "Pagina dei piani più pulita",
+     "en": "Cleaner plans page"
+    }
+   ]
+  },
+  {
+   "version": "1.7.5",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Crediti e piani con un nuovo look: vedi quante ore di live ti danno i crediti di ogni piano e di ogni ricarica",
+     "en": "Credits and plans with a new look: see how many stream hours each plan and top-up gives you"
+    },
+    {
+     "type": "fix",
+     "text": "Il pulsante Aggiornamenti nel menu del profilo non sposta più le scritte e non perde l'icona",
+     "en": "The Updates button in the profile menu no longer shifts the text or loses its icon"
+    },
+    {
+     "type": "impr",
+     "text": "Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
+     "en": "New, simpler sheet to choose a plan, monthly or yearly"
+    }
+   ]
+  },
+  {
+   "version": "1.7.4",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Assistente AI: capisce cosa chiedi e fa solo quello. Se chiedi font e sottotitoli li sceglie lui, adatti al tuo video, e ti spiega perché",
+     "en": "AI assistant: understands what you ask and does just that. Ask for fonts and subtitles and it picks them to suit your video, and explains why"
+    },
+    {
+     "type": "impr",
+     "text": "Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
+     "en": "Clearer messages while the AI works, and for written requests you see the maximum cost before confirming"
+    }
+   ]
+  },
+  {
+   "version": "1.7.3",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
+     "en": "AI Assistant: your message shows up and the cost confirmation appears right below it"
+    }
+   ]
+  },
+  {
+   "version": "1.7.2",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "impr",
+     "text": "La Home e i progetti si aprono subito, anche con tante clip",
+     "en": "Home and projects open instantly, even with lots of clips"
+    },
+    {
+     "type": "impr",
+     "text": "Mentre i progetti caricano si vede un'anteprima animata",
+     "en": "An animated preview shows while projects load"
+    }
+   ]
+  },
+  {
+   "version": "1.7.1",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Abbonamento e pagamenti: anche le ricariche, con la ricevuta di Stripe",
+     "en": "Subscription and payments: top-ups too, with the Stripe receipt"
+    },
+    {
+     "type": "fix",
+     "text": "Un piano attivo senza abbonamento ora è spiegato invece di risultare vuoto",
+     "en": "A plan active without a subscription is now explained instead of showing nothing"
+    },
+    {
+     "type": "impr",
+     "text": "I tuoi pagamenti anche senza abbonamento",
+     "en": "Your payments even without a subscription"
+    }
+   ]
+  },
+  {
+   "version": "1.7.0",
+   "date": "2026-10-28",
+   "items": [
+    {
+     "type": "feat",
+     "text": "Paghi piani e ricariche direttamente nel tool, con carta o PayPal",
+     "en": "Pay for plans and top-ups right in the app, by card or PayPal"
+    },
+    {
+     "type": "feat",
+     "text": "Nuova pagina Il tuo abbonamento: carta, fatture e disdetta senza uscire dal tool",
+     "en": "New Your subscription page: card, invoices and cancellation without leaving the app"
+    },
+    {
+     "type": "feat",
+     "text": "Clip veloci: scegli uno o più stili, anche Auto, e l'AI li usa tutti",
+     "en": "Quick clips: pick one or more styles, Auto included, and AI uses them all"
+    },
+    {
+     "type": "feat",
+     "text": "Prima di ogni funzione AI vedi quanti crediti costa",
+     "en": "See how many credits every AI feature costs before you use it"
+    },
+    {
+     "type": "fix",
+     "text": "I progetti si riaprono con la funzione con cui li hai creati",
+     "en": "Projects reopen with the feature you created them with"
+    },
+    {
+     "type": "fix",
+     "text": "I crediti comprati si aggiornano da soli, senza cambiare pagina",
+     "en": "Purchased credits update on their own, without changing page"
+    },
+    {
+     "type": "impr",
+     "text": "Nuovo look NoonFrame in 6 lingue",
+     "en": "New NoonFrame look in 6 languages"
+    },
+    {
+     "type": "impr",
+     "text": "Esportazione con coda, nome dei file e cartella a scelta",
+     "en": "Export queue, with file names and folder of your choice"
+    },
+    {
+     "type": "impr",
+     "text": "Cambio di piano con l'importo di oggi prima di confermare",
+     "en": "Plan changes show today's amount before you confirm"
+    },
+    {
+     "type": "impr",
+     "text": "Avvisi di errore più chiari",
+     "en": "Clearer error messages"
+    }
+   ]
+  },
   {
    "version": "1.6.0",
    "date": "2026-10-24",
@@ -362,114 +519,7 @@
      "en": "The credits and plans window now reads well on short screens too"
     }
    ]
-  },
-  {
-   "version": "1.5.165",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Se la creazione delle clip si interrompe, riprovando si riparte dai momenti già trovati: niente nuova ricerca e niente crediti scalati di nuovo",
-     "en": "If clip creation stops, trying again picks up from the moments already found: no new search and no credits charged again"
-    }
-   ]
-  },
-  {
-   "version": "1.5.164",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Risolto l'errore che fermava la creazione delle clip dopo la trascrizione",
-     "en": "Fixed the error that stopped clip creation after transcription"
-    },
-    {
-     "type": "impr",
-     "text": "Clip più affidabili: la creazione delle clip non si blocca più su video con un'impaginazione già scelta, e la trascrizione non si interrompe se parte due volte",
-     "en": "More reliable clips: clip creation no longer stops on videos with a layout already chosen, and transcription no longer breaks if it starts twice"
-    }
-   ]
-  },
-  {
-   "version": "1.5.163",
-   "date": "2026-10-08",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le pagine di pagamento e di gestione dell'abbonamento si aprono anche con Stripe",
-     "en": "Payment and subscription management pages now also open with Stripe"
-    },
-    {
-     "type": "impr",
-     "text": "Termini e privacy aggiornati per i pagamenti con Stripe",
-     "en": "Terms and privacy updated for Stripe payments"
-    }
-   ]
-  },
-  {
-   "version": "1.5.162",
-   "date": "2026-10-08",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Aggiungere un video mentre se ne prepara un altro non mostra più un errore",
-     "en": "Adding a video while another one is being prepared no longer shows an error"
-    },
-    {
-     "type": "impr",
-     "text": "Clip AI da un progetto vuoto: ora ti spiega che servono una live o un video lungo e ti porta a importarli; i video grandi entrano subito nella traccia principale",
-     "en": "AI clips from an empty project: it now explains you need a live stream or long video and takes you to import one; large videos go straight into the main track"
-    }
-   ]
-  },
-  {
-   "version": "1.5.160",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Q/W (taglia prima/dopo la testina) non mostra più un errore se l'elemento selezionato non è sotto la testina: taglia la clip sotto la testina; avvisi semplici non appaiono più come errori",
-     "en": "Q/W (trim before/after the playhead) no longer shows an error when the selected item is not under the playhead: it trims the clip under the playhead; simple hints no longer show up as errors"
-    },
-    {
-     "type": "impr",
-     "text": "Trascrizione delle clip in alto nel pannello Testo, con solo il testo della clip; zoom: applica l'effetto o l'ingrandimento agli zoom seguenti, e i nuovi zoom nascono con l'ultimo effetto scelto; consigli TikTok/Reels/Shorts più vari",
-     "en": "Clip transcript now at the top of the Text panel, showing only the clip's text; zooms: apply the effect or magnification to the following zooms, and new zooms start with the last effect you chose; more varied TikTok/Reels/Shorts suggestions"
-    }
-   ]
-  },
-  {
-   "version": "1.5.159",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le chiavi AI su Mac non passano più dalla riga di comando; i modelli scaricati vengono controllati con la loro impronta",
-     "en": "AI keys on Mac never go through the command line anymore; downloaded models are verified with their fingerprint"
-    },
-    {
-     "type": "impr",
-     "text": "Sicurezza: controlli più severi sui file che l'app può aprire e sui progetti ricevuti da altri; licenza aggiornata con pagamenti, disdetta e rimborsi",
-     "en": "Security: stricter checks on the files the app can open and on projects received from others; license updated with payments, cancellation and refunds"
-    }
-   ]
-  },
-  {
-   "version": "1.5.158",
-   "date": "2026-10-06",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Le anteprime delle clip si aggiornano davvero dopo una modifica. Niente più errori incomprensibili del lettore video di macOS",
-     "en": "Clip previews now really update after an edit. No more cryptic errors from the macOS video player"
-    },
-    {
-     "type": "impr",
-     "text": "Formato delle clip: scegli subito se la persona va a tutto schermo o il video intero con lo sfondo sfocato, anche per tutte le clip già fatte. Nei podcast e nei video senza webcam le clip partono a tutto schermo sulla persona, e gli zoom automatici diventano avvicinamenti leggeri sul viso",
-     "en": "Clip format: choose right away between the person full screen or the whole video with a blurred background, also for all existing clips. In podcasts and videos without a webcam, clips start full screen on the person, and automatic zooms become gentle push-ins on the face"
-    }
-   ]
   }
  ],
- "sig": "rN6u4k8WZK16tHrmz0JK+qWd3UXTfoUA4KZWYzUpJMYZT2SWeCu0EfD6XpFc+VLHusVSAXqGMSDDG9bF/6SOAQ=="
+ "sig": "Z6y2ID9Gm4XkniP82KgtXE2zUUwSfY826LwI9uA4kOkvETj51GnfSUY8kyDUTQdMpSOYNOpTLBYJQIoaskkiCA=="
 }

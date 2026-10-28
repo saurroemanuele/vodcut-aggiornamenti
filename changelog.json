@@ -1,5 +1,162 @@
 [
  {
+  "version": "1.7.6",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)",
+    "en": "Plans and paywall: each plan has its own color (Starter green, Pro blue, Ultimate purple)"
+   },
+   {
+    "type": "impr",
+    "text": "Pagina dei piani più pulita",
+    "en": "Cleaner plans page"
+   }
+  ]
+ },
+ {
+  "version": "1.7.5",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Crediti e piani con un nuovo look: vedi quante ore di live ti danno i crediti di ogni piano e di ogni ricarica",
+    "en": "Credits and plans with a new look: see how many stream hours each plan and top-up gives you"
+   },
+   {
+    "type": "fix",
+    "text": "Il pulsante Aggiornamenti nel menu del profilo non sposta più le scritte e non perde l'icona",
+    "en": "The Updates button in the profile menu no longer shifts the text or loses its icon"
+   },
+   {
+    "type": "impr",
+    "text": "Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
+    "en": "New, simpler sheet to choose a plan, monthly or yearly"
+   }
+  ]
+ },
+ {
+  "version": "1.7.4",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Assistente AI: capisce cosa chiedi e fa solo quello. Se chiedi font e sottotitoli li sceglie lui, adatti al tuo video, e ti spiega perché",
+    "en": "AI assistant: understands what you ask and does just that. Ask for fonts and subtitles and it picks them to suit your video, and explains why"
+   },
+   {
+    "type": "impr",
+    "text": "Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
+    "en": "Clearer messages while the AI works, and for written requests you see the maximum cost before confirming"
+   }
+  ]
+ },
+ {
+  "version": "1.7.3",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "fix",
+    "text": "Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
+    "en": "AI Assistant: your message shows up and the cost confirmation appears right below it"
+   }
+  ]
+ },
+ {
+  "version": "1.7.2",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "impr",
+    "text": "La Home e i progetti si aprono subito, anche con tante clip",
+    "en": "Home and projects open instantly, even with lots of clips"
+   },
+   {
+    "type": "impr",
+    "text": "Mentre i progetti caricano si vede un'anteprima animata",
+    "en": "An animated preview shows while projects load"
+   }
+  ]
+ },
+ {
+  "version": "1.7.1",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Abbonamento e pagamenti: anche le ricariche, con la ricevuta di Stripe",
+    "en": "Subscription and payments: top-ups too, with the Stripe receipt"
+   },
+   {
+    "type": "fix",
+    "text": "Un piano attivo senza abbonamento ora è spiegato invece di risultare vuoto",
+    "en": "A plan active without a subscription is now explained instead of showing nothing"
+   },
+   {
+    "type": "impr",
+    "text": "I tuoi pagamenti anche senza abbonamento",
+    "en": "Your payments even without a subscription"
+   }
+  ]
+ },
+ {
+  "version": "1.7.0",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Paghi piani e ricariche direttamente nel tool, con carta o PayPal",
+    "en": "Pay for plans and top-ups right in the app, by card or PayPal"
+   },
+   {
+    "type": "feat",
+    "text": "Nuova pagina Il tuo abbonamento: carta, fatture e disdetta senza uscire dal tool",
+    "en": "New Your subscription page: card, invoices and cancellation without leaving the app"
+   },
+   {
+    "type": "feat",
+    "text": "Clip veloci: scegli uno o più stili, anche Auto, e l'AI li usa tutti",
+    "en": "Quick clips: pick one or more styles, Auto included, and AI uses them all"
+   },
+   {
+    "type": "feat",
+    "text": "Prima di ogni funzione AI vedi quanti crediti costa",
+    "en": "See how many credits every AI feature costs before you use it"
+   },
+   {
+    "type": "fix",
+    "text": "I progetti si riaprono con la funzione con cui li hai creati",
+    "en": "Projects reopen with the feature you created them with"
+   },
+   {
+    "type": "fix",
+    "text": "I crediti comprati si aggiornano da soli, senza cambiare pagina",
+    "en": "Purchased credits update on their own, without changing page"
+   },
+   {
+    "type": "impr",
+    "text": "Nuovo look NoonFrame in 6 lingue",
+    "en": "New NoonFrame look in 6 languages"
+   },
+   {
+    "type": "impr",
+    "text": "Esportazione con coda, nome dei file e cartella a scelta",
+    "en": "Export queue, with file names and folder of your choice"
+   },
+   {
+    "type": "impr",
+    "text": "Cambio di piano con l'importo di oggi prima di confermare",
+    "en": "Plan changes show today's amount before you confirm"
+   },
+   {
+    "type": "impr",
+    "text": "Avvisi di errore più chiari",
+    "en": "Clearer error messages"
+   }
+  ]
+ },
+ {
   "version": "1.6.0",
   "date": "2026-10-24",
   "items": [

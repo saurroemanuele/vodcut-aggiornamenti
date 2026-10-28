@@ -8,11 +8,11 @@
   "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "aU3qB2Bc6N4FLF4Bx3nsctcmGkq2piMwNfhSVE/V2QiQdUcZBXxyqX41M7xCRG3gaPS6UuCKrpu+UESpKgZ1Cg=="
  },
  "notes": "Miglioramento: Piani e paywall: ogni abbonamento ha il suo colore (Starter verde, Pro blu, Ultimate viola)\nMiglioramento: Pagina dei piani più pulita",
- "date": "2026-10-27",
+ "date": "2026-10-28",
  "history": [
   {
    "version": "1.7.6",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "impr",
@@ -24,12 +24,11 @@
      "text": "Pagina dei piani più pulita",
      "en": "Cleaner plans page"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.5",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "feat",
@@ -46,12 +45,11 @@
      "text": "Nuovo foglio per scegliere un piano, più semplice, con mensile o annuale",
      "en": "New, simpler sheet to choose a plan, monthly or yearly"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.4",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "feat",
@@ -63,24 +61,22 @@
      "text": "Messaggi più chiari mentre l'AI lavora, e per le richieste scritte vedi il costo massimo prima di confermare",
      "en": "Clearer messages while the AI works, and for written requests you see the maximum cost before confirming"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.3",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "fix",
      "text": "Assistente AI: il tuo messaggio si vede e la conferma del costo compare subito sotto",
      "en": "AI Assistant: your message shows up and the cost confirmation appears right below it"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.2",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "impr",
@@ -92,12 +88,11 @@
      "text": "Mentre i progetti caricano si vede un'anteprima animata",
      "en": "An animated preview shows while projects load"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.1",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "feat",
@@ -114,12 +109,11 @@
      "text": "I tuoi pagamenti anche senza abbonamento",
      "en": "Your payments even without a subscription"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.7.0",
-   "date": "2026-10-27",
+   "date": "2026-10-28",
    "items": [
     {
      "type": "feat",
@@ -171,8 +165,7 @@
      "text": "Avvisi di errore più chiari",
      "en": "Clearer error messages"
     }
-   ],
-   "channel": "beta"
+   ]
   },
   {
    "version": "1.6.0",
