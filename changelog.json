@@ -1,5 +1,21 @@
 [
  {
+  "version": "1.7.7",
+  "date": "2026-10-28",
+  "items": [
+   {
+    "type": "feat",
+    "text": "Senza abbonamento i video esportati hanno il marchio NoonFrame e arrivano fino a 720p e 30 fps. Con un piano escono puliti, fino a 4K e 60 fps",
+    "en": "Without a subscription, exports carry the NoonFrame mark and go up to 720p and 30 fps. With a plan they come out clean, up to 4K and 60 fps"
+   },
+   {
+    "type": "impr",
+    "text": "Quando servono più crediti o più qualità ti proponiamo Starter, anche a 8,99 € il primo mese",
+    "en": "When you need more credits or quality we suggest Starter, also at €8.99 for the first month"
+   }
+  ]
+ },
+ {
   "version": "1.7.6",
   "date": "2026-10-28",
   "items": [
