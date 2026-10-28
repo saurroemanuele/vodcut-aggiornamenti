@@ -178,7 +178,7 @@ def build(lang):
 
     # pezzi che cambiano col telefono o con lo stato: classi e variabili CSS al posto della logica del mockup
     m = m.replace("{{ hdrTop }}px", "12px")
-    m = m.replace('data-theme="{{ theme }}"', 'id="lp" data-theme="light"').replace('data-wp="{{ wp }}"', 'id="wp" data-wp="alba"')
+    m = m.replace('data-theme="{{ theme }}"', 'id="lp" data-theme="dark"').replace('data-wp="{{ wp }}"', 'id="wp" data-wp="notte"')
     m = m.replace("width:{{ scanPct }}%", "width:18%").replace('<div style="height:100%;width:18%', '<div id="scanbar" style="height:100%;width:18%')
     m = m.replace("{{ scanLabel }}", f'<span id="scanlbl">{T["scan"]} 18%</span>')
     m = m.replace('onClick="{{ navGo }}" href="#scarica"', 'id="navcta" href="#scarica"')
@@ -252,7 +252,7 @@ function hit(k,d){if(!LIVE||GOING||location.hostname!=='noonframe.com'||navigato
  if(!(navigator.sendBeacon&&navigator.sendBeacon(FN+'site-hit',b)))fetch(FN+'site-hit',{method:'POST',body:b,keepalive:true,mode:'no-cors'})}catch(e){}}
 hit('view');
 var root=document.documentElement, lp=document.getElementById('lp'), wp=document.getElementById('wp');
-function theme(){var t;try{t=localStorage.getItem('nf-theme')}catch(e){}if(t!=='dark'&&t!=='light')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+function theme(){var t;try{t=localStorage.getItem('nf-theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';
  lp.setAttribute('data-theme',t);wp.setAttribute('data-wp',t==='dark'?'notte':'alba');root.classList.toggle('dark',t==='dark')}
 theme();addEventListener('nf-theme',theme);addEventListener('storage',theme);
 var mac=/Mac/i.test(navigator.platform||navigator.userAgent);
@@ -319,11 +319,10 @@ document.querySelectorAll('.js-send').forEach(function(f){f.addEventListener('su
 <meta name="twitter:description" content="{esc(T["desc"])}">
 <meta name="twitter:image" content="{og}">
 <link rel="apple-touch-icon" href="/logo.png">
-<meta name="theme-color" content="#F7F8FB" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#07090E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#07090E">
 {ld_html}"""
     return f"""<!doctype html>
-<html lang="{lang}">
+<html lang="{lang}" class="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">

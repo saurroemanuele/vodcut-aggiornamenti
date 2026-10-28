@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-v7gwrDpVKZGoVtsCG10sT9JXqq7keU+dcbVDVj3Xrow='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'sha256-/43jJo/flCYVLWlqV8SJR968h5tg6y5yhroaxmL4Lpw='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://jhoidpugjjvvkjccyrxg.supabase.co https://lh3.googleusercontent.com https://*.ytimg.com https://static-cdn.jtvnw.net https://images.kick.com; media-src https://jhoidpugjjvvkjccyrxg.supabase.co; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Clip AI dalla tua live, anche dal telefono | NoonFrame</title>
 <meta name="description" content="Incolla il link della live di Twitch, Kick o YouTube: l'AI trova i momenti migliori e ti dà clip verticali pronte per TikTok, Reels e Shorts.">
@@ -1218,7 +1218,7 @@ pm.addEventListener('click', (e) => {
 function applyTheme(t) {
   if (t) { try { localStorage.setItem('nf-theme', t); } catch (e) {} try { window.dispatchEvent(new CustomEvent('nf-theme', { detail: t })); } catch (e) {} }
   let v = null; try { v = localStorage.getItem('nf-theme'); } catch (e) {}
-  if (v !== 'light' && v !== 'dark') v = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  if (v !== 'light' && v !== 'dark') v = 'dark';   // scura di base: chiara solo se la sceglie dal menu
   document.documentElement.dataset.theme = v;
   document.querySelectorAll('[data-theme-set]').forEach((b) => b.classList.toggle('on', b.dataset.themeSet === v));
   const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = v === 'light' ? '#E6EAF2' : '#0A0C11';

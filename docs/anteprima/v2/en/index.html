@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -30,8 +30,7 @@
 <meta name="twitter:description" content="Paste a stream link: NoonFrame finds the best moments and turns them into vertical clips, ready for social. Free for Windows and Mac.">
 <meta name="twitter:image" content="https://noonframe.com/shots/og.png">
 <link rel="apple-touch-icon" href="/logo.png">
-<meta name="theme-color" content="#F7F8FB" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#07090E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#07090E">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "NoonFrame", "operatingSystem": "Windows 10, Windows 11, macOS 13+", "applicationCategory": "MultimediaApplication", "applicationSubCategory": "Video editor", "description": "Paste a stream link: NoonFrame finds the best moments and turns them into vertical clips, ready for social. Free for Windows and Mac.", "url": "https://noonframe.com/en/", "image": "https://noonframe.com/shots/og.png", "inLanguage": ["it", "en"], "downloadUrl": "https://noonframe.com/en/#download", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "NoonFrame", "url": "https://noonframe.com/"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "NoonFrame", "url": "https://noonframe.com/", "logo": "https://noonframe.com/logo.png", "email": "business@noonframe.com", "sameAs": ["https://discord.gg/5cQvNEBfee"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "The desktop app is. Web clips unlock from €2.99, and a plan gives you more AI credits."}}, {"@type": "Question", "name": "Which platforms does it take streams from?", "acceptedAnswer": {"@type": "Answer", "text": "Twitch, YouTube and Kick. You can also upload a video you already have on your computer."}}, {"@type": "Question", "name": "Which computers does it run on?", "acceptedAnswer": {"@type": "Answer", "text": "Windows and Mac."}}, {"@type": "Question", "name": "How do I open the app the first time?", "acceptedAnswer": {"@type": "Answer", "text": "Windows: if a warning shows up, click More info and then Run anyway. Mac: drag NoonFrame to Applications and, the first time only, paste this in Terminal xattr -cr /Applications/NoonFrame.app && open /Applications/NoonFrame.app"}}]}</script>
@@ -67,7 +66,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{o
 </head>
 <body>
 
-<div class="lp" id="lp" data-theme="light" style="position:relative;isolation:isolate;min-height:100vh;background:var(--bg);color:var(--ink)">
+<div class="lp" id="lp" data-theme="dark" style="position:relative;isolation:isolate;min-height:100vh;background:var(--bg);color:var(--ink)">
 <div style="position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden">
 <div style="position:absolute;top:-25vh;left:-20vw;width:70vw;height:70vw;border-radius:50%;background:var(--blob1);filter:blur(120px)"></div>
 <div style="position:absolute;top:20vh;right:-25vw;width:60vw;height:60vw;border-radius:50%;background:var(--blob2);filter:blur(130px)"></div>
@@ -117,7 +116,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{o
 </div>
 </div>
 
-<div class="wp" id="wp" data-wp="alba" style="position:relative;margin-top:72px;width:100%;max-width:1040px;aspect-ratio:var(--mFrameAR);border-radius:18px;overflow:hidden;background:var(--wp);box-shadow:var(--shadow);text-align:left">
+<div class="wp" id="wp" data-wp="notte" style="position:relative;margin-top:72px;width:100%;max-width:1040px;aspect-ratio:var(--mFrameAR);border-radius:18px;overflow:hidden;background:var(--wp);box-shadow:var(--shadow);text-align:left">
 <div style="position:absolute;top:0;left:0;right:0;height:26px;display:flex;align-items:center;gap:16px;padding:0 14px;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:#fff;font-size:11px;font-weight:600">
 <img src="/logo.png" alt="" style="width:13px;height:13px"><span style="font-weight:700">NoonFrame</span><span style="opacity:.8;display:var(--mDesk)">File</span><span style="opacity:.8;display:var(--mDesk)">View</span><span style="margin-left:auto;opacity:.9">Tue Oct 27 9:14 PM</span>
 </div>
@@ -370,7 +369,7 @@ function hit(k,d){if(!LIVE||GOING||location.hostname!=='noonframe.com'||navigato
  if(!(navigator.sendBeacon&&navigator.sendBeacon(FN+'site-hit',b)))fetch(FN+'site-hit',{method:'POST',body:b,keepalive:true,mode:'no-cors'})}catch(e){}}
 hit('view');
 var root=document.documentElement, lp=document.getElementById('lp'), wp=document.getElementById('wp');
-function theme(){var t;try{t=localStorage.getItem('nf-theme')}catch(e){}if(t!=='dark'&&t!=='light')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+function theme(){var t;try{t=localStorage.getItem('nf-theme')}catch(e){}if(t!=='dark'&&t!=='light')t='dark';
  lp.setAttribute('data-theme',t);wp.setAttribute('data-wp',t==='dark'?'notte':'alba');root.classList.toggle('dark',t==='dark')}
 theme();addEventListener('nf-theme',theme);addEventListener('storage',theme);
 var mac=/Mac/i.test(navigator.platform||navigator.userAgent);

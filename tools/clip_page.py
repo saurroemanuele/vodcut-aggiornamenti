@@ -1370,7 +1370,7 @@ pm.addEventListener('click', (e) => {
 function applyTheme(t) {
   if (t) { try { localStorage.setItem('nf-theme', t); } catch (e) {} try { window.dispatchEvent(new CustomEvent('nf-theme', { detail: t })); } catch (e) {} }
   let v = null; try { v = localStorage.getItem('nf-theme'); } catch (e) {}
-  if (v !== 'light' && v !== 'dark') v = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  if (v !== 'light' && v !== 'dark') v = 'dark';   // scura di base: chiara solo se la sceglie dal menu
   document.documentElement.dataset.theme = v;
   document.querySelectorAll('[data-theme-set]').forEach((b) => b.classList.toggle('on', b.dataset.themeSet === v));
   const m = document.querySelector('meta[name=theme-color]'); if (m) m.content = v === 'light' ? '#E6EAF2' : '#0A0C11';
