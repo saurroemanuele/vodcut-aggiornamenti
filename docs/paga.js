@@ -184,7 +184,8 @@
     rn.hidden = !isPlan;
     if (isPlan) rn.textContent = t(yearly ? 'renews_y' : 'renews', { p: s.next || s.total || '', date: nextDate() });
   }
-  summary({ items: [{ name: P.name || '', amount: P.price || '' }], total: P.price || '' });
+  // full: prezzo normale dal secondo mese (offerta sul primo mese); con Stripe lo sostituisce il rinnovo vero della sessione
+  summary({ items: [{ name: P.name || '', amount: P.price || '' }], total: P.price || '', next: P.full || '' });
 
   // ---------------------------------------------------------------- stati: in corso, banca, fatto, errore
   var busy = false;
@@ -352,7 +353,7 @@
     var money = function (n) { return n.toLocaleString(LOCALE, { style: 'currency', currency: 'EUR' }); };
     var paint = function () {
       var tot = Math.round(price * (1 - off) * 100) / 100;
-      summary({ items: [{ name: P.name || '', amount: money(price) }], discount: off ? [{ label: t('discount', { code: 'NOON20' }), amount: money(price - tot) }] : [], total: money(tot) });
+      summary({ items: [{ name: P.name || '', amount: money(price) }], discount: off ? [{ label: t('discount', { code: 'NOON20' }), amount: money(price - tot) }] : [], total: money(tot), next: P.full || '' });
     };
     $('pe').hidden = true; box.hidden = false;
     var field = function (key, ph, wide, id) {
