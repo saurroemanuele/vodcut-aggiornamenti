@@ -1,15 +1,42 @@
 {
- "version": "1.7.7",
+ "version": "1.7.8",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.7.zip",
- "size": 12560319,
- "sha256": "31bd3e4c223964620e72e4a59d25760d2b18cfea4b9366fdd4dc31ecae6018b8",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.8.zip",
+ "size": 12563154,
+ "sha256": "b72c5dc649cd034f210a5ae6bd0aa93df08ec9f6ca5632f2d6e4fa1ea4cdce6c",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "6h14tFEHMOSkLy9tGl5DkFNVPSqwDfXWOiSSlaO/kwWBgGtNYetp2iNKNK934Zq7A6B/bM/maT04unvXXWIPBg=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "V6t8hG3WtMNRc1CLc44OGMwd+TK50gIYFGl1FCwIzU9rpoyTcJdPBAuLMg68NqTHcXhjf3JoCFddp9E0y+aADQ=="
  },
- "notes": "Novità: Senza abbonamento i video esportati hanno il marchio NoonFrame e arrivano fino a 720p e 30 fps. Con un piano escono puliti, fino a 4K e 60 fps\nMiglioramento: Quando servono più crediti o più qualità ti proponiamo Starter, anche a 8,99 € il primo mese",
- "date": "2026-10-28",
+ "notes": "Correzione: Progetti ricevuti da altri: i percorsi verso cartelle di rete e indirizzi esterni vengono ignorati\nCorrezione: Senza abbonamento il marchio NoonFrame compare anche nelle anteprime delle clip\nMiglioramento: Più sicurezza: il piano salvato sul computer è protetto e si ricontrolla spesso\nMiglioramento: Gli effetti su misura girano in uno spazio più chiuso",
+ "date": "2026-10-29",
  "history": [
+  {
+   "version": "1.7.8",
+   "date": "2026-10-29",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Progetti ricevuti da altri: i percorsi verso cartelle di rete e indirizzi esterni vengono ignorati",
+     "en": "Projects from others: paths to network folders and external addresses are ignored"
+    },
+    {
+     "type": "fix",
+     "text": "Senza abbonamento il marchio NoonFrame compare anche nelle anteprime delle clip",
+     "en": "Without a plan the NoonFrame watermark also appears in clip previews"
+    },
+    {
+     "type": "impr",
+     "text": "Più sicurezza: il piano salvato sul computer è protetto e si ricontrolla spesso",
+     "en": "Better security: the plan saved on your computer is protected and checked often"
+    },
+    {
+     "type": "impr",
+     "text": "Gli effetti su misura girano in uno spazio più chiuso",
+     "en": "Custom effects run in a more locked-down space"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.7",
    "date": "2026-10-28",
@@ -503,23 +530,7 @@
      "en": "Podcast and interview clips: framing follows every camera cut and the person on screen; with two people far apart or nobody, the whole video is shown"
     }
    ]
-  },
-  {
-   "version": "1.5.167",
-   "date": "2026-10-09",
-   "items": [
-    {
-     "type": "fix",
-     "text": "Applicando lo zoom a tutti, quelli prima dello zoom scelto o con i keyframe restavano com'erano",
-     "en": "When applying a zoom to all, the ones before the selected zoom or with keyframes stayed unchanged"
-    },
-    {
-     "type": "impr",
-     "text": "Zoom: «Applica a tutti» ora vale davvero per tutti gli zoom del video (effetto e ingrandimento)",
-     "en": "Zoom: «Apply to all» now really applies to every zoom in the video (effect and magnification)"
-    }
-   ]
   }
  ],
- "sig": "qyrKlXRyQfvnlYQKEHhfuh9Fy9lG8M5CLT1hrA5FnEYboIKzF3QljL2qcynDuZm/2TptUT0F792YS8TSMnqoBQ=="
+ "sig": "9piA5iy4A+kYBIjc8XO7se8LtABrrie78oGUt2ObUsbBPihlwZmdyjTzUwPwoN1zNSFvsvKZIavchMGdFVkGDw=="
 }
