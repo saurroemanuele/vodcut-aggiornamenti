@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it" class="nf-hide">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src https://jhoidpugjjvvkjccyrxg.supabase.co; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>NoonFrame · Collega il tuo agente AI</title>
+<link rel="icon" href="favicon.png">
+<style>
+@font-face { font-family: "Inter"; font-style: normal; font-display: swap; font-weight: 100 900; src: url(fonts/inter-latin-wght-normal.woff2) format("woff2"); }
+:root { --ink:#050A1C; --card:#0A1430; --blue:#1E6BFF; --blue-hi:#4C8DFF; --fg:#F2F6FF; --fg2:#A6B4D4; --fg3:#6F7FA6; --line:rgba(160,190,255,.16); --ok:#22C55E; --err:#F87171; }
+.nf-hide body { display: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; background: var(--ink); color: var(--fg); font: 16px/1.55 "Inter", -apple-system, "Segoe UI", system-ui, sans-serif;
+  background-image: radial-gradient(70% 45% at 50% -8%, rgba(30,107,255,.3), transparent 70%); }
+main { width: min(440px, 100%); padding: 28px 24px; border-radius: 22px; background: var(--card); box-shadow: inset 0 0 0 1px var(--line), 0 40px 80px -30px #000; display: grid; gap: 14px; }
+.top { display: flex; align-items: center; gap: 10px; }
+.top img { width: 36px; height: 36px; }
+.top span { font-weight: 650; letter-spacing: -.01em; }
+h1 { margin: 4px 0 0; font-size: 22px; line-height: 1.25; letter-spacing: -.02em; overflow-wrap: anywhere; }
+p { margin: 0; color: var(--fg2); }
+.who { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line); font-size: 14px; color: var(--fg2); }
+.who b { color: var(--fg); font-weight: 600; overflow-wrap: anywhere; }
+.list { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; font-size: 15px; }
+.list li { display: flex; gap: 10px; align-items: flex-start; color: var(--fg); }
+.list li::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: 3px; border-radius: 50%; background: rgba(34,197,94,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.4l2.6 2.5L13 6.4' fill='none' stroke='%2322C55E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat; }
+.list.no li { color: var(--fg2); }
+.list.no li::before { background: rgba(248,113,113,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M6 6l6 6M12 6l-6 6' fill='none' stroke='%23F87171' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/18px no-repeat; }
+.lbl { font-size: 13px; font-weight: 600; color: var(--fg3); text-transform: uppercase; letter-spacing: .06em; margin-top: 4px; }
+.btns { display: grid; gap: 10px; margin-top: 4px; }
+button, .btn { display: flex; align-items: center; justify-content: center; height: 48px; padding: 0 16px; border: 0; border-radius: 13px; background: var(--blue); color: #fff; font: 600 15.5px/1.2 inherit; font-family: inherit; text-align: center; text-decoration: none; cursor: pointer; }
+button:hover:not(:disabled), .btn:hover { background: var(--blue-hi); }
+button.sec { background: transparent; box-shadow: inset 0 0 0 1px var(--line); color: var(--fg); }
+button.sec:hover:not(:disabled) { background: rgba(160,190,255,.08); }
+button.small { height: 34px; padding: 0 12px; font-size: 14px; border-radius: 10px; }
+button:disabled { opacity: .6; cursor: default; }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--blue-hi); outline-offset: 3px; }
+a { color: var(--blue-hi); }
+.fine { font-size: 13.5px; color: var(--fg3); }
+.err { color: var(--err); }
+.ok { color: var(--ok); }
+.agent { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line); }
+.agent div { min-width: 0; }
+.agent b { display: block; overflow-wrap: anywhere; }
+.agent small { color: var(--fg3); }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; background: var(--blue); animation: p 1s infinite alternate; vertical-align: middle; margin-right: 8px; }
+@keyframes p { to { opacity: .3; } }
+@media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
+</style>
+<script src="collega.js" defer></script>
+</head>
+<body>
+<main id="card" aria-live="polite">
+  <div class="top"><img src="logo.png" alt=""><span>NoonFrame</span></div>
+  <h1><span class="dot"></span><span id="wait">Un attimo…</span></h1>
+</main>
+</body>
+</html>
