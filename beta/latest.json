@@ -1,15 +1,32 @@
 {
- "version": "1.7.8",
+ "version": "1.7.9",
  "runtime": 1,
- "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.8.zip",
- "size": 12563154,
- "sha256": "b72c5dc649cd034f210a5ae6bd0aa93df08ec9f6ca5632f2d6e4fa1ea4cdce6c",
+ "url": "https://raw.githubusercontent.com/saurroemanuele/vodcut-aggiornamenti/main/app/vodcut-1.7.9.zip",
+ "size": 12564889,
+ "sha256": "9f00677b31fec24b908520517ddc1a0beec184695950fa0fb373b9d4cf3d6411",
  "sigs": {
-  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "V6t8hG3WtMNRc1CLc44OGMwd+TK50gIYFGl1FCwIzU9rpoyTcJdPBAuLMg68NqTHcXhjf3JoCFddp9E0y+aADQ=="
+  "Lc1v/OsmgMHltMOvh/btdXpqcHiKhteTredTc1TC1cc=": "n5vKcJ5R2nvtdyj2F86TqnXlelt1g52B3UKOEeJ3fpGzFmRmyL/KDEsXN35uuGWCLXqrbYvd/707svt+u35cCA=="
  },
- "notes": "Correzione: Progetti ricevuti da altri: i percorsi verso cartelle di rete e indirizzi esterni vengono ignorati\nCorrezione: Senza abbonamento il marchio NoonFrame compare anche nelle anteprime delle clip\nMiglioramento: Più sicurezza: il piano salvato sul computer è protetto e si ricontrolla spesso\nMiglioramento: Gli effetti su misura girano in uno spazio più chiuso",
- "date": "2026-10-29",
+ "notes": "Correzione: Se la conversione finale di un video scaricato non riesce (per esempio col disco quasi pieno), il video non si perde più: NoonFrame lo sistema o lo tiene così com'è\nCorrezione: Un lavoro che si interrompe per un errore non resta più in caricamento per sempre",
+ "date": "2026-10-30",
  "history": [
+  {
+   "version": "1.7.9",
+   "date": "2026-10-30",
+   "items": [
+    {
+     "type": "fix",
+     "text": "Se la conversione finale di un video scaricato non riesce (per esempio col disco quasi pieno), il video non si perde più: NoonFrame lo sistema o lo tiene così com'è",
+     "en": "If the final conversion of a downloaded video fails (for example with an almost full disk), the video is no longer lost: NoonFrame fixes it or keeps it as it is"
+    },
+    {
+     "type": "fix",
+     "text": "Un lavoro che si interrompe per un errore non resta più in caricamento per sempre",
+     "en": "A job that stops because of an error no longer stays loading forever"
+    }
+   ],
+   "channel": "beta"
+  },
   {
    "version": "1.7.8",
    "date": "2026-10-29",
@@ -519,18 +536,7 @@
      "en": "Clips from podcasts, interviews and multi-person streams (grids too): framing follows whoever is speaking and only switches when someone else talks"
     }
    ]
-  },
-  {
-   "version": "1.5.168",
-   "date": "2026-10-13",
-   "items": [
-    {
-     "type": "impr",
-     "text": "Clip di podcast e interviste: l'inquadratura segue ogni stacco di camera e la persona che si vede; con due persone lontane o nessuno si vede il video intero",
-     "en": "Podcast and interview clips: framing follows every camera cut and the person on screen; with two people far apart or nobody, the whole video is shown"
-    }
-   ]
   }
  ],
- "sig": "9piA5iy4A+kYBIjc8XO7se8LtABrrie78oGUt2ObUsbBPihlwZmdyjTzUwPwoN1zNSFvsvKZIavchMGdFVkGDw=="
+ "sig": "OQ4yxd5E5lKmJApVEOsFewcvzxuoX6tbvDiGOES972GqrMk2E/Veg3LiX4AmTS4MQKNDcBhVnyPA0CBOwkX2CQ=="
 }
