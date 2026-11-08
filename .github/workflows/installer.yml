@@ -36,7 +36,9 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          sparse-checkout: stable
+          sparse-checkout: |
+            stable
+            build
           sparse-checkout-cone-mode: true
       - id: v
         name: Versione stabile
@@ -45,7 +47,13 @@ jobs:
           echo "v=$V" >> "$GITHUB_OUTPUT"
           if gh release view "installer-$V" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo "esiste=1" >> "$GITHUB_OUTPUT"
-            if [ "${{ inputs.rifai }}" = "true" ]; then echo "fai=1" >> "$GITHUB_OUTPUT"; else echo "installer-$V esiste gia'"; fi
+            if [ "${{ inputs.rifai }}" = "true" ]; then echo "fai=1" >> "$GITHUB_OUTPUT"
+            else
+              # quello gia' pubblicato si controlla: se e' rotto (la 1.7.7 era troncata) si rifa'
+              gh release download "installer-$V" -R "$GITHUB_REPOSITORY" -p '*-Setup.exe' -D pub || true
+              if python3 build/nsis_ok.py pub/*-Setup.exe; then echo "installer-$V esiste gia' ed e' integro"
+              else echo "fai=1" >> "$GITHUB_OUTPUT"; echo "::warning::installer-$V rotto: lo rifaccio"; fi
+            fi
           else
             echo "fai=1" >> "$GITHUB_OUTPUT"
           fi
@@ -78,10 +86,15 @@ jobs:
 
       - name: Base dall'installer precedente
         run: |
-          mkdir -p prev
+          # il piu' recente che passa il controllo: uno rotto (la 1.7.7 pubblicata troncata) si salta
           # i nomi dei file sono cambiati nel tempo (Noonframe / NoonFrame): si prende quello che c'e'
-          gh release download -R "$GITHUB_REPOSITORY" -p '*-Setup.exe' -D prev
-          mv prev/*-Setup.exe prev/setup.exe
+          for T in $(gh release list -R "$GITHUB_REPOSITORY" --limit 15 --exclude-drafts --json tagName --jq '.[].tagName'); do
+            rm -rf prev && mkdir -p prev
+            gh release download "$T" -R "$GITHUB_REPOSITORY" -p '*-Setup.exe' -D prev || continue
+            mv prev/*-Setup.exe prev/setup.exe || continue
+            if python3 build/nsis_ok.py prev/setup.exe; then echo "base: $T"; break; fi
+          done
+          python3 build/nsis_ok.py prev/setup.exe
 
       - name: Installer Windows
         run: |
@@ -95,6 +108,7 @@ jobs:
           sed -i "s/^!define VERSION .*/!define VERSION \"$V\"/" w/installer/vodcut.nsi
           (cd w/installer && makensis -V2 vodcut.nsi)
           7z e -so w/installer/Noonframe-Setup.exe app/engine/version.py | grep -q "VERSION = \"$V\""
+          python3 build/nsis_ok.py w/installer/Noonframe-Setup.exe
           mkdir -p out && mv w/installer/Noonframe-Setup.exe out/
 
       - uses: actions/upload-artifact@v4
@@ -260,6 +274,12 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       V: ${{ needs.versione.outputs.v }}
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: build
+          sparse-checkout-cone-mode: true
+
       - uses: actions/download-artifact@v4
         with:
           path: out
@@ -268,6 +288,7 @@ jobs:
       - name: Pubblica come ultima release
         run: |
           ls -la out
+          python3 build/nsis_ok.py out/Noonframe-Setup.exe
           # stessi nomi dei link del sito: releases/latest/download/Noonframe-Setup.exe e NoonFrame-Mac.zip
           if [ "${{ needs.versione.outputs.esiste }}" = "1" ]; then
             gh release upload "installer-$V" out/Noonframe-Setup.exe out/NoonFrame-Mac.zip --clobber -R "$GITHUB_REPOSITORY"
@@ -275,3 +296,17 @@ jobs:
             gh release create "installer-$V" out/Noonframe-Setup.exe out/NoonFrame-Mac.zip -R "$GITHUB_REPOSITORY" \
               --title "NoonFrame $V" --notes "Installer di NoonFrame $V per Windows e Mac." --latest
           fi
+
+      - name: Controllo dei file pubblicati
+        run: |
+          # si riscarica quello che scarica il sito e si confronta con quello costruito: la 1.7.7 era arrivata troncata
+          (cd out && sha256sum Noonframe-Setup.exe NoonFrame-Mac.zip) > attese.txt
+          for i in 1 2 3; do
+            rm -rf chk && mkdir chk
+            gh release download "installer-$V" -R "$GITHUB_REPOSITORY" -p 'Noonframe-Setup.exe' -p 'NoonFrame-Mac.zip' -D chk
+            if (cd chk && sha256sum -c ../attese.txt) && python3 build/nsis_ok.py chk/Noonframe-Setup.exe; then exit 0; fi
+            echo "::warning::i file pubblicati non corrispondono a quelli costruiti (tentativo $i): li ricarico"
+            gh release upload "installer-$V" out/Noonframe-Setup.exe out/NoonFrame-Mac.zip --clobber -R "$GITHUB_REPOSITORY"
+          done
+          echo "::error::la release installer-$V non corrisponde ai file costruiti"
+          exit 1
