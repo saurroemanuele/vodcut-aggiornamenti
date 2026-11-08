@@ -2523,6 +2523,7 @@ function bindSettings(box) {
 }
 async function startJob(url) {
   const b = $('estgo'); if (b) b.disabled = true;
+  if ($('esterr')) $('esterr').remove();
   try {
     const r = await call('start', { url, lang: '', opts: runOpts() });
     history.replaceState(null, '', '?job=' + r.job.id);
@@ -2531,10 +2532,17 @@ async function startJob(url) {
     $('est').classList.add('hide');
     poll(r.job.id);
   } catch (e) {
-    if (e.message !== 'auth') setHint(e.code === 'credits' ? L.noCredits : e.message, true);
+    if (e.message !== 'auth') estErr(e.code === 'credits' ? L.noCredits : e.message);
     if (e.code === 'credits' || e.code === 'trial_out') openBuy(null);
     if (b) b.disabled = false;
   }
+}
+// dopo la stima la riga sotto il link e' nascosta (step2): l'errore va nel riquadro, sopra "Crea le clip"
+function estErr(t) {
+  const a = $('est').querySelector('.acts');
+  if (!a || !$('hero').classList.contains('step2')) { setHint(t, true); return; }
+  a.insertAdjacentHTML('beforebegin', '<p class="warn" id="esterr" role="alert"></p>');
+  $('esterr').textContent = t;
 }
 // paywall delle clip online: chi non ha mai pagato vede il suo video riconosciuto e lo sblocca con un abbonamento
 // (in primo piano l'offerta del primo mese, se c'e'); la ricarica e' un link sotto, l'app gratis per il PC in grigio in fondo
